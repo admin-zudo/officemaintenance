@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO Optimization -->
+    <title>Zudo Works | Upcoming Zoho Partner & Software Company</title>
+    <meta name="description"
+        content="Zudo Works is a leading software company and an upcoming Zoho Partner based in Chennai, India. We are building something amazing. Reach out for Zoho implementation and custom software development.">
+    <meta name="keywords"
+        content="Zudo Works, Zoho Partner Chennai, Software Company India, Zoho Implementation, Custom Software Development, Tech Agency Chennai">
+    <meta name="author" content="Zudo Works">
+    <meta name="robots" content="index, follow">
+
+    <!-- GEO Optimization -->
+    <meta name="geo.region" content="IN-TN">
+    <meta name="geo.placename" content="Chennai">
+    <meta name="geo.position" content="13.0841;80.2185">
+    <meta name="ICBM" content="13.0841, 80.2185">
+
+    <!-- Open Graph / Social Media (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zudo Works | Software Company & Upcoming Zoho Partner">
+    <meta property="og:description"
+        content="Based in Chennai, Zudo Works specializes in custom software solutions and Zoho implementations. Our new website is launching soon.">
+    <meta property="og:image" content="https://www.zudoworks.com/Zudo%20Works%20Logo%20SVG.svg">
+    <meta property="og:url" content="https://www.zudoworks.com">
+    <meta property="og:site_name" content="Zudo Works">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zudo Works | Upcoming Zoho Partner">
+    <meta name="twitter:description"
+        content="Leading software company in Chennai. We are building something amazing. Contact us for your requirements.">
+    <meta name="twitter:image" content="https://www.zudoworks.com/Zudo%20Works%20Logo%20SVG.svg">
+
+    <!-- AEO & Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Zudo Works",
+      "image": "https://www.zudoworks.com/Zudo%20Works%20Logo%20SVG.svg",
+      "@id": "https://www.zudoworks.com",
+      "url": "https://www.zudoworks.com",
+      "telephone": "+916385435382",
+      "email": "contact@zudoworks.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Flat no.2, Plot no.1051, I- block, 35th street, 18th main road, Anna Nagar",
+        "addressLocality": "Chennai",
+        "addressRegion": "TN",
+        "postalCode": "600100",
+        "addressCountry": "IN"
+      },
+      "description": "Zudo Works is a premium software company and an upcoming Zoho Partner specializing in custom software solutions and business automation.",
+      "sameAs": [
+        "https://www.zudoworks.com"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What services does Zudo Works provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zudo Works is a software company that provides custom software development and acts as an upcoming Zoho Partner for business solutions and implementations."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Where is Zudo Works located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zudo Works is located in Anna Nagar, Chennai, India (600100)."
+        }
+      }] 
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --zoho-red: #E42528;
+            --zoho-yellow: #F8B600;
+            --zoho-blue: #1E88E5;
+            --zoho-green: #00A859;
+            --text-main: #ffffff;
+            --text-muted: #d0d5df;
+            --card-bg: rgba(0, 0, 0, 0.4);
+            --card-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            /* Animated Dark Gradient */
+            background: linear-gradient(rgba(10, 15, 25, 0.85), rgba(10, 15, 25, 0.85)),
+                linear-gradient(-45deg, var(--zoho-red), var(--zoho-yellow), var(--zoho-blue), var(--zoho-green));
+            background-size: 100% 100%, 400% 400%;
+            animation: gradientBG 15s ease infinite;
+
+            color: var(--text-main);
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            /* strictly no scrollbar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%, 0% 50%;
+            }
+
+            50% {
+                background-position: 0% 50%, 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%, 0% 50%;
+            }
+        }
+
+        /* Ambient floating shapes to add depth to the gradient */
+        .bg-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            animation: float 20s infinite alternate ease-in-out;
+            opacity: 0.3;
+            mix-blend-mode: screen;
+        }
+
+        .shape-red {
+            width: 40vw;
+            height: 40vw;
+            background: var(--zoho-red);
+            top: -10%;
+            left: -5%;
+        }
+
+        .shape-blue {
+            width: 45vw;
+            height: 45vw;
+            background: var(--zoho-blue);
+            bottom: -15%;
+            right: -5%;
+            animation-delay: -5s;
+        }
+
+        .shape-yellow {
+            width: 35vw;
+            height: 35vw;
+            background: var(--zoho-yellow);
+            top: 10%;
+            right: 10%;
+            animation-delay: -10s;
+        }
+
+        .shape-green {
+            width: 35vw;
+            height: 35vw;
+            background: var(--zoho-green);
+            bottom: 10%;
+            left: 10%;
+            animation-delay: -15s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(5vw, 5vh) scale(1.1);
+            }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo-container {
+            width: clamp(120px, 15vh, 180px);
+            height: auto;
+            margin-bottom: 3vh;
+            animation: flyInFromInfinity 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            opacity: 0;
+            transform-origin: center;
+        }
+
+        @keyframes flyInFromInfinity {
+            0% {
+                transform: perspective(1000px) translateZ(-1500px) rotateX(80deg) rotateY(45deg) scale(0.1);
+                opacity: 0;
+            }
+
+            60% {
+                transform: perspective(1000px) translateZ(100px) rotateX(-15deg) rotateY(-10deg) scale(1.15);
+                opacity: 1;
+            }
+
+            100% {
+                transform: perspective(1000px) translateZ(0) rotateX(0) rotateY(0) scale(1);
+                opacity: 1;
+            }
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vh, 3.5rem);
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -1px;
+            margin-bottom: 2vh;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        p.subtitle {
+            font-size: clamp(1rem, 2.5vh, 1.15rem);
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 4vh;
+            max-width: 600px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .actions {
+            margin-bottom: 4vh;
+        }
+
+        .btn {
+            padding: 1.5vh 3vh;
+            border-radius: 50px;
+            font-size: clamp(0.9rem, 2vh, 1.1rem);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #ffffff;
+            color: #000000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #f0f0f0;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-info {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            padding: 2.5vh 3vh;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 550px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 2vh;
+            font-size: clamp(1rem, 2.5vh, 1.2rem);
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.5vh;
+            padding-bottom: 1.5vh;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        @media(min-width: 500px) {
+            .contact-item {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .contact-label {
+            font-size: clamp(0.75rem, 1.8vh, 0.85rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item:nth-child(2) .contact-label {
+            color: #ff8a8c;
+        }
+
+        .contact-item:nth-child(3) .contact-label {
+            color: #ffd666;
+        }
+
+        .contact-item:nth-child(4) .contact-label {
+            color: #5ce69a;
+        }
+
+        @media(min-width: 500px) {
+            .contact-label {
+                margin-bottom: 0;
+            }
+        }
+
+        .contact-email {
+            font-size: clamp(0.9rem, 2vh, 1rem);
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+            font-weight: 500;
+        }
+
+        .contact-email:hover {
+            color: #90caf9;
+            text-shadow: 0 0 10px rgba(144, 202, 249, 0.5);
+        }
+
+        /* Custom Modal Popup Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            width: 90%;
+            height: 85%;
+            max-width: 1200px;
+            border-radius: 20px;
+            position: relative;
+            transform: scale(0.9);
+            transition: transform 0.4s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 35px;
+            height: 35px;
+            background: var(--zoho-red);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            background: #b71c1c;
+            transform: scale(1.1);
+        }
+
+        .modal-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .modal-loader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            transition: opacity 0.5s ease;
+            border-radius: 20px;
+        }
+
+        .modal-loader img {
+            width: 80px;
+            animation: blinkLoader 0.8s infinite alternate ease-in-out;
+        }
+
+        @keyframes blinkLoader {
+            0% {
+                opacity: 0.2;
+                transform: scale(0.85);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.15);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-shapes">
+        <div class="shape shape-red"></div>
+        <div class="shape shape-blue"></div>
+        <div class="shape shape-yellow"></div>
+        <div class="shape shape-green"></div>
+    </div>
+
+    <div class="container">
+        <div class="hero-section">
+            <div class="logo-container">
+                <img src="Zudo_Works_Logo_SVG.svg" alt="Zudo Works Logo">
+            </div>
+
+            <h1>Zudo Works</h1>
+
+            <p class="subtitle">
+                We are building something amazing. As an upcoming Zoho Partner and premier software company, we're
+                crafting a new experience. In the meantime, you can reach out to us and book a call.
+            </p>
+
+            <div class="actions">
+                <a href="javascript:void(0);" id="booking-link" class="btn btn-primary">Book a Call</a>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <div class="contact-item">
+                    <span class="contact-label">Support</span>
+                    <a href="mailto:support@zudoworks.com" class="contact-email">support@zudoworks.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Formal</span>
+                    <a href="mailto:contact@zudoworks.com" class="contact-email">contact@zudoworks.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">General & Blog</span>
+                    <a href="mailto:info@zudoworks.com" class="contact-email">info@zudoworks.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal Popup -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModal" class="modal-close">&times;</button>
+            <div id="bookingLoader" class="modal-loader">
+                <img src="Zudo_Works_Logo_SVG.svg" alt="Loading...">
+            </div>
+            <iframe id="bookingIframe" class="modal-iframe" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function () {
+            const btn1 = document.getElementById('booking-link');
+            const modal = document.getElementById('bookingModal');
+            const closeBtn = document.getElementById('closeModal');
+            const iframe = document.getElementById('bookingIframe');
+            const loader = document.getElementById('bookingLoader');
+
+            const bookingUrl = "https://svpsalesteam.zohobookings.in/portal-embed#/472103000000028050";
+
+            if (btn1) {
+                btn1.onclick = function (e) {
+                    e.preventDefault();
+                    // Check if SDK exists as per original request, else use our perfect custom modal
+                    if (typeof Bookings !== 'undefined' && Bookings.linkModal) {
+                        Bookings.linkModal({
+                            url: bookingUrl,
+                            width: "90%",
+                            height: "85%"
+                        });
+                    } else {
+                        // Reset and show loader
+                        loader.style.opacity = '1';
+                        loader.style.pointerEvents = 'auto';
+
+                        // Launch our custom iframe modal popup
+                        iframe.src = bookingUrl;
+                        modal.classList.add('active');
+                    }
+                };
+            }
+
+            // Hide loader when iframe finishes loading
+            if (iframe) {
+                iframe.onload = function () {
+                    // Only hide if it actually loaded the target URL (not empty src)
+                    if (iframe.src && iframe.src !== window.location.href && iframe.src !== 'about:blank') {
+                        loader.style.opacity = '0';
+                        loader.style.pointerEvents = 'none';
+                    }
+                };
+            }
+
+            if (closeBtn) {
+                closeBtn.onclick = function () {
+                    modal.classList.remove('active');
+                    // Clear iframe src so it doesn't keep playing or retaining state after close
+                    setTimeout(() => { iframe.src = ''; }, 400);
+                };
+            }
+
+            // Close modal when clicking outside the content
+            window.onclick = function (event) {
+                if (event.target === modal) {
+                    modal.classList.remove('active');
+                    setTimeout(() => { iframe.src = ''; }, 400);
+                }
+            };
+        });
+    </script>
+</body>
+
+</html>
