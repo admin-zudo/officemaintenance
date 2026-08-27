@@ -443,6 +443,27 @@
             text-shadow: 0 0 10px rgba(144, 202, 249, 0.5);
         }
 
+        .social-links {
+            display: flex;
+            gap: 3vw;
+            margin-top: 3vh;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: clamp(0.75rem, 1.8vh, 1rem);
+            font-weight: 600;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
         /* Custom Modal Popup Styles */
         .modal-overlay {
             position: fixed;
@@ -590,6 +611,20 @@
                     <span class="contact-label">General & Blog</span>
                     <a href="mailto:info@zudoworks.com" class="contact-email">info@zudoworks.com</a>
                 </div>
+                <div class="contact-item" style="flex-direction: column; align-items: flex-start; text-align: left;">
+                    <span class="contact-label" style="color: #64b5f6;">Headquarters</span>
+                    <a href="https://maps.app.goo.gl/u1KiJB4Ac6zHQKq69" target="_blank" class="contact-email" style="font-size: clamp(0.65rem, 1.4vh, 0.85rem); line-height: 1.4; color: rgba(255,255,255,0.7); margin-top: 0.5vh;">
+                        Flat no.2, Plot no.1051, I-block, 35th street,<br>18th main road, Anna Nagar(W), Chennai-600040
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://x.com/zudoworks/" target="_blank">X</a>
+                <a href="https://www.facebook.com/zudoworks/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/zudoworks/" target="_blank">Instagram</a>
+                <a href="https://www.reddit.com/user/ZudoWorks/" target="_blank">Reddit</a>
+                <a href="https://www.youtube.com/@zudoworks" target="_blank">YouTube</a>
             </div>
         </div>
     </div>
