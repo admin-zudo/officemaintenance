@@ -126,7 +126,8 @@
       ]
     }
     </script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -168,13 +169,15 @@
             scrollbar-width: none;
             -ms-overflow-style: none;
             display: flex;
-            align-items: flex-start; /* Ensures content naturally flows down without clipping */
+            align-items: flex-start;
+            /* Ensures content naturally flows down without clipping */
             justify-content: center;
             position: relative;
         }
 
         body::-webkit-scrollbar {
-            display: none; /* STRICTLY NO SCROLLBAR - Chrome/Safari */
+            display: none;
+            /* STRICTLY NO SCROLLBAR - Chrome/Safari */
         }
 
         @keyframes gradientBG {
@@ -260,7 +263,8 @@
             width: 100%;
             max-width: 800px;
             padding: 40px 24px;
-            margin: auto; /* Centers perfectly vertically/horizontally when enough screen space exists */
+            margin: auto;
+            /* Centers perfectly vertically/horizontally when enough screen space exists */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -604,7 +608,7 @@
             </p>
 
             <div class="actions">
-                <a href="javascript:void(0);" id="booking-link" class="btn btn-primary">Book a Call</a>
+                <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" id="booking-link" class="btn btn-primary">Book a Call</a>
             </div>
 
             <div class="contact-info">
@@ -623,7 +627,8 @@
                 </div>
                 <div class="contact-item" style="flex-direction: column; align-items: flex-start; text-align: left;">
                     <span class="contact-label" style="color: #64b5f6;">Headquarters</span>
-                    <a href="https://maps.app.goo.gl/u1KiJB4Ac6zHQKq69" target="_blank" class="contact-email" style="font-size: clamp(0.75rem, 2.2vw, 0.9rem); line-height: 1.5; color: rgba(255,255,255,0.7); margin-top: 6px;">
+                    <a href="https://maps.app.goo.gl/u1KiJB4Ac6zHQKq69" target="_blank" class="contact-email"
+                        style="font-size: clamp(0.75rem, 2.2vw, 0.9rem); line-height: 1.5; color: rgba(255,255,255,0.7); margin-top: 6px;">
                         Flat no.2, Plot no.1051, I-block, 35th street,<br>18th main road, Anna Nagar(W), Chennai-600040
                     </a>
                 </div>
@@ -647,7 +652,7 @@
             <div id="bookingLoader" class="modal-loader">
                 <img src="Zudo_Works_Logo_SVG.svg" alt="Loading..." width="512" height="512">
             </div>
-            <iframe id="bookingIframe" class="modal-iframe" allowfullscreen></iframe>
+            <iframe id="bookingIframe" class="modal-iframe" allowfullscreen title="Zoho Bookings Calendar"></iframe>
         </div>
     </div>
 
