@@ -149,15 +149,7 @@
         }
 
         body {
-            /* Animated Dark Gradient */
-            background: linear-gradient(rgba(10, 15, 25, 0.93), rgba(10, 15, 25, 0.93)),
-                linear-gradient(-45deg,
-                    #ff0055, #ff00aa, #d400ff, #7b00ff, #2b00ff,
-                    #0055ff, #00aaff, #00ffd5, #00ff6a, #40ff00,
-                    #aaff00, #ffee00, #ffaa00, #ff5500, #ff0055);
-            /* Reduced from 1000% to 400% to prevent iOS Safari memory crash (white screen) */
-            background-size: 100% 100%, 400% 400%;
-            animation: gradientBG 12s ease infinite;
+            background-color: #0a0f19;
 
             color: var(--text-main);
             width: 100%;
@@ -181,18 +173,39 @@
             /* STRICTLY NO SCROLLBAR - Chrome/Safari */
         }
 
-        @keyframes gradientBG {
-            0% {
-                background-position: 0% 50%, 0% 50%;
-            }
+        body::before {
+            content: '';
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(-45deg,
+                    #ff0055, #ff00aa, #d400ff, #7b00ff, #2b00ff,
+                    #0055ff, #00aaff, #00ffd5, #00ff6a, #40ff00,
+                    #aaff00, #ffee00, #ffaa00, #ff5500, #ff0055);
+            background-size: 50% 50%;
+            animation: slideBG 12s ease-in-out infinite alternate;
+            z-index: -2;
+            pointer-events: none;
+            will-change: transform;
+        }
 
-            50% {
-                background-position: 0% 50%, 100% 50%;
-            }
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 15, 25, 0.93);
+            z-index: -1;
+            pointer-events: none;
+        }
 
-            100% {
-                background-position: 0% 50%, 0% 50%;
-            }
+        @keyframes slideBG {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(20%, 20%, 0); }
         }
 
         /* Ambient floating shapes to add depth to the gradient */
