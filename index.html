@@ -128,7 +128,19 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Preload the font CSS to download it in the background -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+        as="style">
+
+    <!-- Load the font asynchronously without blocking rendering -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+        media="print" onload="this.media='all'">
+
+    <!-- Fallback for browsers without JavaScript -->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap">
+    </noscript>
     <style>
         :root {
             --zoho-red: #E42528;
@@ -204,8 +216,13 @@
         }
 
         @keyframes slideBG {
-            0% { transform: translate3d(0, 0, 0); }
-            100% { transform: translate3d(20%, 20%, 0); }
+            0% {
+                transform: translate3d(0, 0, 0);
+            }
+
+            100% {
+                transform: translate3d(20%, 20%, 0);
+            }
         }
 
         /* Ambient floating shapes to add depth to the gradient */
@@ -233,7 +250,7 @@
         .shape-red {
             width: 50vw;
             height: 50vw;
-            background: radial-gradient(circle, rgba(228,37,40,0.8) 0%, rgba(228,37,40,0) 70%);
+            background: radial-gradient(circle, rgba(228, 37, 40, 0.8) 0%, rgba(228, 37, 40, 0) 70%);
             top: -15%;
             left: -10%;
         }
@@ -241,7 +258,7 @@
         .shape-blue {
             width: 55vw;
             height: 55vw;
-            background: radial-gradient(circle, rgba(30,136,229,0.8) 0%, rgba(30,136,229,0) 70%);
+            background: radial-gradient(circle, rgba(30, 136, 229, 0.8) 0%, rgba(30, 136, 229, 0) 70%);
             bottom: -20%;
             right: -10%;
             animation-delay: -2s;
@@ -250,7 +267,7 @@
         .shape-yellow {
             width: 45vw;
             height: 45vw;
-            background: radial-gradient(circle, rgba(248,182,0,0.8) 0%, rgba(248,182,0,0) 70%);
+            background: radial-gradient(circle, rgba(248, 182, 0, 0.8) 0%, rgba(248, 182, 0, 0) 70%);
             top: 5%;
             right: 5%;
             animation-delay: -4s;
@@ -259,7 +276,7 @@
         .shape-green {
             width: 45vw;
             height: 45vw;
-            background: radial-gradient(circle, rgba(0,168,89,0.8) 0%, rgba(0,168,89,0) 70%);
+            background: radial-gradient(circle, rgba(0, 168, 89, 0.8) 0%, rgba(0, 168, 89, 0) 70%);
             bottom: 5%;
             left: 5%;
             animation-delay: -6s;
@@ -622,7 +639,8 @@
             </p>
 
             <div class="actions">
-                <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" id="booking-link" class="btn btn-primary">Book a Call</a>
+                <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" id="booking-link"
+                    class="btn btn-primary">Book a Call</a>
             </div>
 
             <div class="contact-info">
