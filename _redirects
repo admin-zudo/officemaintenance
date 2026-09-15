@@ -1,5 +1,8 @@
 # Cloudflare Pages — Redirects
 # Cloudflare Pages automatically serves /404.html for unmatched routes with a 404 status.
 
+# Force WWW to Non-WWW for SEO duplicate content fix
+https://www.zudoworks.com/* https://zudoworks.com/:splat 301!
+
 # Consolidate index.html to root
 /index.html    /    301
