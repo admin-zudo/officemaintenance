@@ -1485,7 +1485,7 @@
 
                 function openBookings(e) {
                     e.preventDefault();
-                    modal.style.display = 'flex';
+                    if (modal) modal.style.display = 'flex';
 
                     if (!isLoaded && typeof Bookings !== 'undefined') {
                         Bookings.inlineEmbed({
@@ -1497,12 +1497,14 @@
                     }
                 }
 
-                closeBtn.onclick = function () {
-                    modal.style.display = 'none';
+                if (closeBtn) {
+                    closeBtn.onclick = function () {
+                        if (modal) modal.style.display = 'none';
+                    }
                 }
 
                 window.onclick = function (event) {
-                    if (event.target == modal) {
+                    if (modal && event.target == modal) {
                         modal.style.display = 'none';
                     }
                 }
