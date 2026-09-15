@@ -12,8 +12,8 @@
 - **Official Name**: Zudo Works (operated by SVP Software and Global Solutions Corporation)
 - **Type**: IT Consulting & Software Development Company, Zoho Authorized Partner
 - **Founded**: 2024
-- **Location**: Anna Nagar, Chennai, Tamil Nadu, India — PIN 600100
-- **Registered Address**: Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600100, IN
+- **Location**: Anna Nagar, Chennai, Tamil Nadu, India — PIN 600040
+- **Registered Address**: Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040, IN
 - **GEO Coordinates**: 13.0878°N, 80.2166°E
 - **Languages**: English, Tamil
 - **Currency**: INR
@@ -64,7 +64,7 @@ Manufacturing, professional services, healthcare administration, e-commerce, log
 A: Yes. Zudo Works is a Zoho Authorized Partner, certified to implement the full Zoho product ecosystem.
 
 **Q: Where is Zudo Works located?**
-A: We are based in Anna Nagar, Chennai, Tamil Nadu, India (PIN 600100).
+A: We are based in Anna Nagar, Chennai, Tamil Nadu, India (PIN 600040).
 
 **Q: Do you work with clients outside India?**
 A: Yes. While headquartered in Chennai, we serve clients internationally. All communication is in English.
