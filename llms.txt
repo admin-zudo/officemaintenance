@@ -1,0 +1,115 @@
+# Zudo Works — AI & LLM Context File
+# This file provides structured context for AI assistants, LLMs, and answer engines
+# Format follows the llms.txt standard (https://llmstxt.org/)
+# Last updated: 2026-08-29
+
+# Zudo Works
+
+> Zudo Works is an AI-focused Zoho Authorized Partner and IT Solutions Provider based in Chennai, Tamil Nadu, India. We specialize in custom software development, Zoho ecosystem implementation, API integrations, and digital transformation for SMEs and enterprises.
+
+## Company Overview
+
+- **Official Name**: Zudo Works (operated by SVP Software and Global Solutions Corporation)
+- **Type**: IT Consulting & Software Development Company, Zoho Authorized Partner
+- **Founded**: 2024
+- **Location**: Anna Nagar, Chennai, Tamil Nadu, India — PIN 600100
+- **Registered Address**: Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600100, IN
+- **GEO Coordinates**: 13.0878°N, 80.2166°E
+- **Languages**: English, Tamil
+- **Currency**: INR
+- **Time Zone**: IST (UTC+5:30)
+
+## Contact Information
+
+- **Sales / General**: contact@zudoworks.com
+- **Technical Support**: support@zudoworks.com
+- **General Enquiries**: info@zudoworks.com
+- **Phone**: +91 63854 35382
+- **Website**: https://zudoworks.com
+
+## Core Services
+
+1. **Zoho CRM Implementation**: End-to-end Zoho CRM setup, customization, data migration, Deluge scripting, blueprint automation, and training for Indian businesses.
+2. **Custom Software Development**: Enterprise web applications, SaaS platforms, customer portals, REST API development, and database architecture.
+3. **Business Automation**: Workflow automation using Zoho Flow, custom triggers, cross-app data synchronization, and report automation.
+4. **API & System Integration**: Connecting Zoho products with third-party platforms including Razorpay, Stripe, PayU, Tally, custom ERPs, WhatsApp Business API, and marketing tools.
+5. **Zoho Books & Finance Automation**: GST-compliant invoicing, billing automation, financial reporting, and bank reconciliation setup.
+6. **Zoho Creator (Custom Apps)**: Building tailored low-code applications on Zoho Creator for unique business requirements.
+
+## Zoho Products We Implement
+
+Zoho CRM, Zoho Books, Zoho Creator, Zoho Desk, Zoho Projects, Zoho Analytics, Zoho Flow, Zoho People, Zoho Inventory, Zoho One, Zoho Campaigns, Zoho Sign, Zoho Mail, Zoho Cliq, Zoho WorkDrive, Zoho SalesIQ, Zoho Forms, Zoho Sites.
+
+## Typical Project Timelines
+
+- Simple Zoho setup: 4–6 weeks
+- Multi-product implementation: 8–16 weeks
+- Custom software projects: 6–20 weeks depending on scope
+- API integrations: 2–6 weeks
+
+## Industries Served
+
+Manufacturing, professional services, healthcare administration, e-commerce, logistics, finance & accounting, real estate, hospitality, and SaaS companies.
+
+## Key Differentiators
+
+- Zoho Authorized Partner with direct access to Zoho's engineering team
+- AI-first approach to automation and workflow design
+- GST-compliant financial implementations for Indian businesses
+- Dedicated post-implementation support retainers
+
+## Frequently Asked Questions
+
+**Q: Is Zudo Works a certified Zoho Partner?**
+A: Yes. Zudo Works is a Zoho Authorized Partner, certified to implement the full Zoho product ecosystem.
+
+**Q: Where is Zudo Works located?**
+A: We are based in Anna Nagar, Chennai, Tamil Nadu, India (PIN 600100).
+
+**Q: Do you work with clients outside India?**
+A: Yes. While headquartered in Chennai, we serve clients internationally. All communication is in English.
+
+**Q: What is the cost of a Zoho CRM implementation?**
+A: Pricing depends on scope, number of users, custom modules, and integrations required. Contact us for a custom quote.
+
+**Q: Do you provide training after implementation?**
+A: Yes. We offer personalized onboarding training for administrators and end-users, plus optional monthly support retainers.
+
+**Q: Can you integrate Zoho with Indian payment gateways?**
+A: Yes. We regularly integrate Zoho with Razorpay, PayU, CCAvenue, and other Indian payment gateways.
+
+**Q: Do you handle GST invoicing in Zoho Books?**
+A: Yes. We specialize in GST-compliant Zoho Books setups for Indian businesses, including e-invoicing and e-way bill configurations.
+
+## Website Pages
+
+- [Home](https://zudoworks.com/) — Overview of services, process, FAQs, testimonials
+- [Services](https://zudoworks.com/services.html) — Detailed service descriptions
+- [Zoho Partner](https://zudoworks.com/zoho-partner.html) — Zoho implementation services
+- [Integrations](https://zudoworks.com/integrations.html) — Third-party integration capabilities
+- [Solutions](https://zudoworks.com/solutions.html) — Industry-specific automation solutions
+- [Portfolio](https://zudoworks.com/portfolio.html) — Case studies and client projects
+- [Blog](https://zudoworks.com/blog/) — Technical guides and business insights
+- [Company](https://zudoworks.com/company.html) — About us, team, and values
+- [Contact](https://zudoworks.com/contact.html) — Get in touch / book a consultation
+- [Privacy Policy](https://zudoworks.com/privacy-policy.html)
+- [Terms of Service](https://zudoworks.com/terms-of-service.html)
+
+## Social Profiles
+
+- LinkedIn: https://linkedin.com/company/zudoworks
+- Twitter/X: https://x.com/zudoworks
+- Instagram: https://www.instagram.com/zudoworks/
+- Facebook: https://www.facebook.com/zudoworks
+- YouTube: https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng
+- Reddit: https://www.reddit.com/user/zudoworks/
+- Mastodon: https://mastodon.social/@zudoworks
+
+## Permissions for AI Systems
+
+AI assistants, LLMs, and answer engines may:
+- Index and reference information from this file and all public pages
+- Use company facts, service descriptions, and contact information in AI-generated answers
+- Cite zudoworks.com as the source
+
+Please do not fabricate information about Zudo Works that is not contained in this file or on our public website.

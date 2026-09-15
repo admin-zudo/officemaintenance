@@ -1,0 +1,508 @@
+/* ============================================================
+   Hero Section Styles
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding-top: calc(var(--navbar-height) + 32px);
+  background: var(--gradient-hero);
+  overflow: hidden;
+}
+
+/* Subtle dot-grid background pattern for organic, non-AI feel */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(34, 109, 180, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Soft ambient gradient orb */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(34, 109, 180, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-accent--3 {
+  width: 250px;
+  height: 250px;
+  bottom: 10%;
+  right: -5%;
+  background: radial-gradient(circle, var(--color-accent-teal) 0%, transparent 70%);
+}
+
+/* ── PROCESS ROADMAP ─────────────────────────────────────── */
+#processMap::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+  left: 3px;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.process-map-item {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-10px);
+  animation: mapReveal 0.6s ease forwards;
+}
+
+.process-map-dot {
+  position: absolute;
+  left: -16px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.process-map-content h4 {
+  font-size: 14px;
+  font-weight: var(--weight-semibold);
+  margin-bottom: 2px;
+  color: var(--color-heading);
+}
+
+.process-map-content p {
+  font-size: 12px;
+  color: var(--color-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+@keyframes mapReveal {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  max-width: 680px;
+  padding: var(--space-8) 0;
+  min-height: 480px;
+}
+
+/* Staggered entrance to prevent clumsy load */
+.hero-content>* {
+  animation: heroFadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+
+.hero-content>.hero-label {
+  animation-delay: 0.1s;
+}
+
+.hero-content>h1 {
+  animation-delay: 0.2s;
+}
+
+.hero-content>.hero-description {
+  animation-delay: 0.3s;
+}
+
+.hero-content>.btn-group {
+  animation-delay: 0.4s;
+}
+
+.hero-content>.hero-stats {
+  animation-delay: 0.5s;
+}
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 6px 16px;
+  background-color: var(--color-primary-bg);
+  border: 1px solid rgba(34, 109, 180, 0.15);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-6);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.hero h1 {
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: 1.1;
+  margin-bottom: var(--space-6);
+  color: var(--color-heading);
+}
+
+.hero h1 .text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-muted);
+  margin-bottom: var(--space-10);
+  max-width: 560px;
+}
+
+.hero .btn-group {
+  margin-bottom: var(--space-5);
+}
+
+/* Hero stats row */
+.hero-stats {
+  display: flex;
+  gap: var(--space-10);
+  padding-top: var(--space-2);
+  border-top: var(--border-default);
+}
+
+.hero-stat {
+  text-align: left;
+}
+
+.hero-stat-value {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-heading);
+  line-height: 1;
+  margin-bottom: var(--space-1);
+}
+
+.hero-stat-label {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+/* Hero decorative background pattern */
+.hero-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.hero-pattern svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero right visual (for two-column hero) */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--space-8);
+  align-items: flex-start;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: var(--space-8);
+  animation: heroFadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s backwards;
+}
+
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-visual-inner {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Scrolling column of Zoho product icons in hero visual */
+.hero-icon-scroll-container {
+  height: 480px;
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+  /* Add fading effect at top and bottom */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+}
+
+.hero-icon-scroll-track {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  width: 100%;
+  animation: scrollVertical 105s linear infinite;
+}
+
+.hero-icon-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    /* Translate by exactly half of the track height minus half the gap */
+    transform: translateY(calc(-50% - (var(--space-4) / 2)));
+  }
+}
+
+.hero-icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2);
+  background-color: var(--color-white);
+  border: var(--border-default);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 1;
+  transition: border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-spring);
+}
+
+.hero-icon-item:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-glow-primary);
+  transform: translateY(-3px);
+}
+
+.hero-icon-item img,
+.hero-icon-item svg {
+  width: 100%;
+  height: auto;
+  max-width: 60px;
+  aspect-ratio: 1;
+  opacity: 0.8;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.hero-icon-item:hover img,
+.hero-icon-item:hover svg {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Floating accent shapes with subtle animation */
+.hero-accent {
+  position: absolute;
+  border-radius: var(--radius-lg);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.hero-accent--1 {
+  width: 120px;
+  height: 120px;
+  background-color: var(--color-primary);
+  top: -20px;
+  right: 40px;
+  transform: rotate(15deg);
+  animation: accent-float-1 8s ease-in-out infinite;
+}
+
+.hero-accent--2 {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-secondary);
+  bottom: 40px;
+  left: -20px;
+  transform: rotate(-10deg);
+  animation: accent-float-2 10s ease-in-out infinite;
+}
+
+.hero-accent--3 {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-accent-orange);
+  top: 50%;
+  right: -10px;
+  transform: rotate(25deg);
+  animation: accent-float-3 7s ease-in-out infinite;
+}
+
+@keyframes accent-float-1 {
+
+  0%,
+  100% {
+    transform: rotate(15deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(18deg) translate(-6px, -10px);
+  }
+}
+
+@keyframes accent-float-2 {
+
+  0%,
+  100% {
+    transform: rotate(-10deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(-7deg) translate(8px, -8px);
+  }
+}
+
+@keyframes accent-float-3 {
+
+  0%,
+  100% {
+    transform: rotate(25deg) translate(0, 0);
+  }
+
+  50% {
+    transform: rotate(22deg) translate(-5px, 6px);
+  }
+}
+
+/* Brand Card in Hero */
+.hero-brand-card {
+  position: relative;
+  display: flex;
+  padding-top: 47px;
+  align-items: center;
+  gap: var(--space-6);
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  max-width: 460px;
+  z-index: 5;
+  text-align: left;
+}
+
+.hero-brand-logo {
+  height: 108px;
+  width: auto;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: scale(0.9) translateY(20px);
+  animation: logoReveal 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes logoReveal {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.hero-brand-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.hero-brand-name {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  color: var(--color-heading);
+}
+
+.hero-brand-desc {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  font-weight: var(--weight-medium);
+}
+
+.hero-brand-reg {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: var(--text-xs);
+  color: var(--color-secondary);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+
+/* Added Workspace Illustration Styles */
+.hero-visual-image-col {
+  animation: heroFadeIn 1.5s ease-in-out 0.8s backwards;
+}
+
+.hero-workspace-img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.85;
+  filter: contrast(0.9) brightness(1.02);
+  /* Smooth transparent borders */
+  -webkit-mask-image: radial-gradient(circle, black 50%, transparent 95%);
+  mask-image: radial-gradient(circle, black 50%, transparent 95%);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-accent--1,
+  .hero-accent--2,
+  .hero-accent--3 {
+    animation: none;
+  }
+}

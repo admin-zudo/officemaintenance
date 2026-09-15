@@ -1,0 +1,11 @@
+/* css/helpers.css */
+.text-center { text-align: center; }
+.flex-col { display: flex; flex-direction: column; }
+.gap-4 { gap: var(--space-4); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mt-4 { margin-top: var(--space-4); }
+.text-xl { font-size: var(--text-xl); }
+.text-muted { color: var(--color-muted); }
+.justify-center { justify-content: center; }
+.p-10 { padding: var(--space-10); }
+.flex-center { display: flex; align-items: center; justify-content: center; }

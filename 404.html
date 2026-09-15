@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#226DB4">
+  <title>Page Not Found | Zudo Works</title>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'XXXXXXXXXXXXXXXXX');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+  /></noscript>
+  <meta name="description" content="The page you were looking for doesn't exist. Let's get you back on track.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/Asset/icons/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/Asset/icons/Zudo%20Works%20Logo%20SVG.svg">
+  <link rel="apple-touch-icon" href="/Asset/icons/Zudo%20Works%20Logo%20SVG.svg">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-10) var(--space-6);
+      background: var(--gradient-hero);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Animated floating blobs */
+    .error-blob {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.07;
+      animation: blobFloat 8s ease-in-out infinite;
+    }
+    .error-blob--1 {
+      width: 400px; height: 400px;
+      background: var(--color-primary);
+      top: -100px; left: -100px;
+      animation-delay: 0s;
+    }
+    .error-blob--2 {
+      width: 300px; height: 300px;
+      background: var(--color-secondary);
+      bottom: -80px; right: -80px;
+      animation-delay: 4s;
+    }
+    @keyframes blobFloat {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(20px, -20px) scale(1.05); }
+    }
+
+    .error-content {
+      position: relative;
+      z-index: 1;
+      max-width: 580px;
+    }
+
+    .error-code {
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      background: var(--gradient-text);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: var(--space-4);
+      letter-spacing: -0.04em;
+    }
+
+    .error-title {
+      font-size: var(--text-2xl);
+      font-weight: var(--weight-bold);
+      color: var(--color-heading);
+      margin-bottom: var(--space-4);
+    }
+
+    .error-description {
+      font-size: var(--text-md);
+      color: var(--color-muted);
+      line-height: var(--leading-relaxed);
+      margin-bottom: var(--space-8);
+    }
+
+    .error-actions {
+      display: flex;
+      gap: var(--space-4);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-links {
+      margin-top: var(--space-10);
+      padding-top: var(--space-8);
+      border-top: 1px solid var(--color-border);
+    }
+
+    .error-links p {
+      font-size: var(--text-sm);
+      color: var(--color-muted);
+      margin-bottom: var(--space-4);
+    }
+
+    .error-nav-links {
+      display: flex;
+      gap: var(--space-6);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-nav-links a {
+      font-size: var(--text-sm);
+      color: var(--color-primary);
+      font-weight: var(--weight-medium);
+      transition: opacity var(--transition-fast);
+    }
+
+    .error-nav-links a:hover {
+      opacity: 0.7;
+    }
+
+    /* Countdown timer bar */
+    .redirect-bar {
+      width: 100%;
+      height: 3px;
+      background: var(--color-border);
+      border-radius: 2px;
+      margin-top: var(--space-6);
+      overflow: hidden;
+    }
+
+    .redirect-bar-fill {
+      height: 100%;
+      background: var(--gradient-primary);
+      border-radius: 2px;
+      width: 100%;
+      animation: countdown 12s linear forwards;
+    }
+
+    @keyframes countdown {
+      from { width: 100%; }
+      to { width: 0%; }
+    }
+
+    .redirect-note {
+      font-size: var(--text-xs);
+      color: var(--color-muted);
+      margin-top: var(--space-3);
+      opacity: 0.8;
+    }
+
+    #countdown-num {
+      font-weight: var(--weight-semibold);
+      color: var(--color-primary);
+    }
+  </style>
+  <link rel="stylesheet" href="/css/cookie-consent.css">
+  <link rel="stylesheet" href="css/helpers.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="navbar scrolled" role="banner">
+    <div class="container">
+      <a href="/" class="navbar-logo" aria-label="Zudo Works - Home">
+        <img src="Asset/icons/Zudo%20Works%20Logo%20SVG.svg" alt="Zudo Works logo" width="160" height="40" loading="lazy">
+        <span class="navbar-logo-text">
+          <span class="navbar-logo-name">Zudo Works</span>
+          <span class="navbar-logo-tagline">AI Focused Zoho Partner &amp; IT Solutions Provider</span>
+        </span>
+      </a>
+      <nav aria-label="Main navigation"><ul class="navbar-nav" id="navbar-nav" role="menubar"><li role="none"><a href="/" class="navbar-link" role="menuitem">Home</a></li><li role="none"><a href="/services" class="navbar-link" role="menuitem">Services</a></li><li role="none"><a href="/zoho-partner" class="navbar-link" role="menuitem">Zoho Partner</a></li><li role="none"><a href="/integrations" class="navbar-link" role="menuitem">Integrations</a></li><li role="none"><a href="/solutions" class="navbar-link" role="menuitem">Solutions</a></li><li role="none"><a href="/portfolio" class="navbar-link" role="menuitem">Portfolio</a></li><li role="none"><a href="/blog/" class="navbar-link" role="menuitem">Blog</a></li><li role="none"><a href="/company" class="navbar-link" role="menuitem">Company</a></li><li role="none" class="navbar-cta"><a href="/contact" class="btn btn-primary btn-sm" role="menuitem">Talk to Us</a></li></ul></nav>
+      <button class="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-nav"><span></span><span></span><span></span></button>
+      <div class="mobile-nav-actions">
+        <a href="tel:+916385435382" class="mobile-nav-phone"><i class="fa-solid fa-phone"></i> <span class="phone-text">6385435382</span></a>
+        <a href="/contact" class="btn btn-primary btn-sm mobile-nav-cta">Talk to Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="error-page">
+      <!-- Background blobs -->
+      <div class="error-blob error-blob--1" aria-hidden="true"></div>
+      <div class="error-blob error-blob--2" aria-hidden="true"></div>
+
+      <div class="error-content">
+        <div class="error-code" aria-label="Error 404">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-description">
+          Looks like this page took a detour. It may have been moved, renamed, or never existed.
+          Let's get you back to the right place.
+        </p>
+        <div class="error-actions">
+          <a href="/" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-house" style="margin-right: var(--space-2);"></i>
+            Go to Homepage
+          </a>
+          <a href="/contact" class="btn btn-outline btn-lg">
+            <i class="fa-solid fa-envelope" style="margin-right: var(--space-2);"></i>
+            Contact Us
+          </a>
+        </div>
+
+        <div class="error-links">
+          <p>Or try one of these popular pages:</p>
+          <nav class="error-nav-links" aria-label="Helpful links">
+            <a href="/services">Services</a>
+            <a href="/zoho-partner">Zoho Partner</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/integrations">Integrations</a>
+            <a href="/blog/">Blog</a>
+            <a href="/company">About Us</a>
+          </nav>
+        </div>
+
+        <div class="redirect-bar" role="progressbar" aria-label="Auto-redirect countdown">
+          <div class="redirect-bar-fill"></div>
+        </div>
+        <p class="redirect-note">Redirecting to homepage in <span id="countdown-num">12</span> seconds&hellip;</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Auto-redirect countdown
+    var seconds = 12;
+    var countdownEl = document.getElementById('countdown-num');
+    var interval = setInterval(function () {
+      seconds--;
+      if (countdownEl) countdownEl.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(interval);
+        window.location.href = '/';
+      }
+    }, 1000);
+  </script>
+  <script src="/js/cookie-consent.js"></script>
+</body>
+</html>

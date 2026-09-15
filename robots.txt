@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# AI Bots — Allow indexing for Answer Engine Optimisation (AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /Asset/
+
+Sitemap: https://zudoworks.com/sitemap.xml
