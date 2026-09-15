@@ -6,8 +6,9 @@
   position: relative;
   min-height: 80vh;
   display: flex;
-  align-items: center;
-  padding-top: calc(var(--navbar-height) + 32px);
+  flex-direction: column;
+  padding-top: calc(var(--navbar-height) + 32px + 40px);
+  padding-bottom: 40px;
   background: var(--gradient-hero);
   overflow: hidden;
 }
@@ -99,6 +100,8 @@
 .hero .container {
   position: relative;
   z-index: 1;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .hero-content {

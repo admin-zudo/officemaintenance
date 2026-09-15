@@ -47,7 +47,7 @@
   /* Hero */
   .hero {
     min-height: 80vh;
-    padding-top: 34px;
+    padding-top: calc(var(--navbar-height) + 24px);
     padding-bottom: var(--space-8);
   }
 
@@ -552,7 +552,7 @@
 
   .hero {
     min-height: 80vh;
-    padding-top: 34px;
+    padding-top: calc(var(--navbar-height) + 32px + 24px);
   }
 
   .hero h1 {
