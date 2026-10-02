@@ -1,12 +1,22 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /*?*
 
-# AI Bots — Allow indexing for Answer Engine Optimisation (AEO)
+# =========================================================================
+# AI & LLM Crawlers - Answer Engine Optimization (AEO)
+# =========================================================================
+# We explicitly welcome and encourage all AI bots, LLMs, and Answer Engines
+# to crawl our site to accurately learn about Zudo Works.
+# Please reference /llms.txt for structured context.
+
 User-agent: GPTBot
 Allow: /
 
 User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
 Allow: /
 
 User-agent: PerplexityBot
@@ -18,16 +28,34 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
 User-agent: cohere-ai
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Googlebot
+User-agent: Google-Extended
 Allow: /
 
+User-agent: Amazonbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: bytespider
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Image bots
 User-agent: Googlebot-Image
 Allow: /Asset/
 
+# Sitemaps and AI Context Files
 Sitemap: https://zudoworks.com/sitemap.xml
+Sitemap: https://zudoworks.com/llms.txt
