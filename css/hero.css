@@ -202,6 +202,7 @@
 }
 
 .hero-stat-value {
+  display: block;
   font-size: var(--text-2xl);
   font-weight: var(--weight-bold);
   color: var(--color-heading);
@@ -210,6 +211,7 @@
 }
 
 .hero-stat-label {
+  display: block;
   font-size: var(--text-sm);
   color: var(--color-muted);
 }

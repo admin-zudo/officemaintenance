@@ -49,7 +49,7 @@
     // List of dynamic marketing variations (SEO remains safe as static HTML loads first)
     const variations = [
       {
-        headline: 'AI-Focused Zoho Partner &amp; <span class="text-gradient">IT Solutions Provider</span>',
+        headline: 'AI-Focused Zoho Implementation Experts &amp; <span class="text-gradient">IT Solutions Provider</span>',
         description: 'We help growing businesses streamline operations, automate workflows, and scale confidently with custom software development, expert Zoho implementation, and seamless system integrations.'
       },
       {

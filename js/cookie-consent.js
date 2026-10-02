@@ -47,12 +47,12 @@
     banner.innerHTML = [
       '<div class="cookie-inner">',
       '  <div class="cookie-icon" aria-hidden="true">🍪</div>',
-      '  <div class="cookie-text">',
-      '    <p>We use essential cookies to make our website work. With your permission, we may also use analytics cookies to understand how you use our site and improve your experience. See our <a href="/privacy-policy.html">Privacy Policy</a> and <a href="/terms-of-service.html">Terms of Service</a> for details.</p>',
-      '  </div>',
       '  <div class="cookie-actions">',
       '    <button id="cookie-accept" aria-label="Accept all cookies">Accept All</button>',
       '    <button id="cookie-decline" aria-label="Use essential cookies only">Essential Only</button>',
+      '  </div>',
+      '  <div class="cookie-text">',
+      '    <p>We use essential cookies to make our website work. With your permission, we may also use analytics cookies to understand how you use our site and improve your experience. See our <a href="/privacy-policy.html">Privacy Policy</a> and <a href="/terms-of-service.html">Terms of Service</a> for details.</p>',
       '  </div>',
       '</div>'
     ].join('');

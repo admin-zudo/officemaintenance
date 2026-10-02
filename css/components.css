@@ -140,7 +140,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  padding: 8px 14px;
+  padding: 8px 10px;
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
   color: var(--color-body);
@@ -484,7 +484,7 @@
 .card--portfolio .card-image i {
   font-size: 5rem;
   z-index: 1;
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
   transition: transform var(--transition-normal) ease;
 }
 

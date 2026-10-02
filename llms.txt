@@ -5,12 +5,12 @@
 
 # Zudo Works
 
-> Zudo Works is an AI-focused Zoho Authorized Partner and IT Solutions Provider based in Chennai, Tamil Nadu, India. We specialize in custom software development, Zoho ecosystem implementation, API integrations, and digital transformation for SMEs and enterprises.
+> Zudo Works is an AI-focused Zoho Implementation Experts &amp; IT Solutions Provider based in Chennai, Tamil Nadu, India. We specialize in custom software development, Zoho ecosystem implementation, API integrations, and digital transformation for SMEs and enterprises.
 
 ## Company Overview
 
 - **Official Name**: Zudo Works (operated by SVP Software and Global Solutions Corporation)
-- **Type**: IT Consulting & Software Development Company, Zoho Authorized Partner
+- **Type**: IT Consulting & Software Development Company, Zoho Implementation Experts
 - **Founded**: 2024
 - **Location**: Anna Nagar, Chennai, Tamil Nadu, India — PIN 600040
 - **Registered Address**: Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040, IN
@@ -21,9 +21,7 @@
 
 ## Contact Information
 
-- **Sales / General**: contact@zudoworks.com
-- **Technical Support**: support@zudoworks.com
-- **General Enquiries**: info@zudoworks.com
+- **Email**: admin@zudoworks.com
 - **Phone**: +91 63854 35382
 - **Website**: https://zudoworks.com
 
@@ -53,15 +51,15 @@ Manufacturing, professional services, healthcare administration, e-commerce, log
 
 ## Key Differentiators
 
-- Zoho Authorized Partner with direct access to Zoho's engineering team
+- Zoho Implementation Experts with deep expertise in the Zoho ecosystem
 - AI-first approach to automation and workflow design
 - GST-compliant financial implementations for Indian businesses
 - Dedicated post-implementation support retainers
 
 ## Frequently Asked Questions
 
-**Q: Is Zudo Works a certified Zoho Partner?**
-A: Yes. Zudo Works is a Zoho Authorized Partner, certified to implement the full Zoho product ecosystem.
+**Q: Does Zudo Works have Zoho implementation expertise?**
+A: Yes. Zudo Works has deep Zoho implementation expertise, delivering end-to-end solutions across the full Zoho product ecosystem.
 
 **Q: Where is Zudo Works located?**
 A: We are based in Anna Nagar, Chennai, Tamil Nadu, India (PIN 600040).
@@ -85,7 +83,7 @@ A: Yes. We specialize in GST-compliant Zoho Books setups for Indian businesses, 
 
 - [Home](https://zudoworks.com/) — Overview of services, process, FAQs, testimonials
 - [Services](https://zudoworks.com/services.html) — Detailed service descriptions
-- [Zoho Partner](https://zudoworks.com/zoho-partner.html) — Zoho implementation services
+- [Zoho Experts](https://zudoworks.com/zoho-partner.html) — Zoho implementation services
 - [Integrations](https://zudoworks.com/integrations.html) — Third-party integration capabilities
 - [Solutions](https://zudoworks.com/solutions.html) — Industry-specific automation solutions
 - [Portfolio](https://zudoworks.com/portfolio.html) — Case studies and client projects
@@ -97,7 +95,7 @@ A: Yes. We specialize in GST-compliant Zoho Books setups for Indian businesses, 
 
 ## Social Profiles
 
-- LinkedIn: https://linkedin.com/company/zudoworks
+- LinkedIn: https://www.linkedin.com/company/zudo-works
 - Twitter/X: https://x.com/zudoworks
 - Instagram: https://www.instagram.com/zudoworks/
 - Facebook: https://www.facebook.com/zudoworks

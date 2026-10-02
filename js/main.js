@@ -110,11 +110,11 @@
           <div class="brand-modal-info">
             <div class="brand-modal-info-row">
               <span class="brand-modal-info-label">Status</span>
-              <span class="brand-modal-info-value" style="color: var(--color-secondary);">Active Partner</span>
+              <span class="brand-modal-info-value" style="color: var(--color-secondary);">Active</span>
             </div>
             <div class="brand-modal-info-row">
               <span class="brand-modal-info-label">Zoho Relationship</span>
-              <span class="brand-modal-info-value">Authorized Partner</span>
+              <span class="brand-modal-info-value">Implementation Experts</span>
             </div>
             <div class="brand-modal-info-row">
               <span class="brand-modal-info-label">Type</span>
