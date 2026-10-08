@@ -551,3 +551,60 @@
   margin-bottom: var(--space-1);
   display: block;
 }
+/* ── Leadership & profiles (company page) ─────────────────── */
+.leader-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: var(--color-white);
+  border: var(--border-default);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+}
+
+.leader-card h3 {
+  font-size: var(--text-xl);
+  margin: 0;
+}
+
+.leader-role {
+  color: var(--color-primary);
+  font-weight: var(--weight-semibold);
+  margin: var(--space-1) 0 var(--space-4);
+}
+
+.leader-facts {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-6);
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.profile-links--center {
+  justify-content: center;
+}
+
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--space-6);
+  border: var(--border-default);
+  border-radius: var(--radius-full);
+  color: var(--color-heading);
+  font-weight: var(--weight-medium);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

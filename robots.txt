@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
-Disallow: /*?*
 
 # =========================================================================
 # AI & LLM Crawlers - Answer Engine Optimization (AEO)
@@ -56,6 +55,5 @@ Allow: /
 User-agent: Googlebot-Image
 Allow: /Asset/
 
-# Sitemaps and AI Context Files
+# Sitemap (AI context summary lives at https://zudoworks.com/llms.txt)
 Sitemap: https://zudoworks.com/sitemap.xml
-Sitemap: https://zudoworks.com/llms.txt

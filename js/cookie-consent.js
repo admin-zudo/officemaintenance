@@ -1,7 +1,9 @@
 /* ============================================================
    Cookie Consent Banner — JS
-   Stores preference in localStorage for 365 days.
-   "Accept" = analytics allowed. "Decline" = essential only.
+   Stores the visitor's choice in localStorage for 365 days and
+   applies it to Google Consent Mode v2 (defaults are set inline
+   in each page <head>). Zoho PageSense loads only after "Accept".
+   "Accept" = analytics allowed. "Essential only" = analytics off.
    ============================================================ */
 
 (function () {
@@ -9,22 +11,48 @@
 
   var COOKIE_KEY = 'zudo_cookie_consent';
   var COOKIE_EXPIRY_DAYS = 365;
+  var PAGESENSE_SRC = 'https://cdn-in.pagesense.io/js/zudoworks/a082c937db01490eb591882d194fbe5a.js';
 
-  function getConsent() {
-    return localStorage.getItem(COOKIE_KEY);
+  function read(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
   }
 
-  function setConsent(value) {
-    localStorage.setItem(COOKIE_KEY, value);
-    // Also store the date so you can re-prompt after expiry if needed
-    localStorage.setItem(COOKIE_KEY + '_date', Date.now().toString());
+  function write(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) { }
+  }
+
+  function getConsent() {
+    return read(COOKIE_KEY);
   }
 
   function hasConsentExpired() {
-    var storedDate = localStorage.getItem(COOKIE_KEY + '_date');
+    var storedDate = read(COOKIE_KEY + '_date');
     if (!storedDate) return false;
     var daysSince = (Date.now() - parseInt(storedDate, 10)) / (1000 * 60 * 60 * 24);
     return daysSince > COOKIE_EXPIRY_DAYS;
+  }
+
+  function loadPageSense() {
+    if (document.getElementById('pagesense-script')) return;
+    var s = document.createElement('script');
+    s.id = 'pagesense-script';
+    s.async = true;
+    s.src = PAGESENSE_SRC;
+    document.head.appendChild(s);
+  }
+
+  function applyConsent(value) {
+    var granted = value === 'accepted';
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: granted ? 'granted' : 'denied' });
+    }
+    if (granted) loadPageSense();
+  }
+
+  function setConsent(value) {
+    write(COOKIE_KEY, value);
+    write(COOKIE_KEY + '_date', Date.now().toString());
+    applyConsent(value);
   }
 
   function hideBanner(banner) {
@@ -34,39 +62,34 @@
     }, 500);
   }
 
-  function initCookieBanner() {
-    // Don't show if already consented and not expired
-    if (getConsent() && !hasConsentExpired()) return;
+  function showBanner() {
+    if (document.getElementById('cookie-consent')) return;
 
-    // Create banner HTML
     var banner = document.createElement('div');
     banner.id = 'cookie-consent';
-    banner.setAttribute('role', 'dialog');
-    banner.setAttribute('aria-live', 'polite');
-    banner.setAttribute('aria-label', 'Cookie consent');
+    banner.setAttribute('role', 'region');
+    banner.setAttribute('aria-label', 'Cookie preferences');
     banner.innerHTML = [
       '<div class="cookie-inner">',
       '  <div class="cookie-icon" aria-hidden="true">🍪</div>',
       '  <div class="cookie-actions">',
-      '    <button id="cookie-accept" aria-label="Accept all cookies">Accept All</button>',
-      '    <button id="cookie-decline" aria-label="Use essential cookies only">Essential Only</button>',
+      '    <button type="button" id="cookie-accept">Accept All</button>',
+      '    <button type="button" id="cookie-decline">Essential Only</button>',
       '  </div>',
       '  <div class="cookie-text">',
-      '    <p>We use essential cookies to make our website work. With your permission, we may also use analytics cookies to understand how you use our site and improve your experience. See our <a href="/privacy-policy.html">Privacy Policy</a> and <a href="/terms-of-service.html">Terms of Service</a> for details.</p>',
+      '    <p>We use essential cookies to run this site. With your consent we also use analytics cookies (Google Analytics and Zoho PageSense) to understand how the site is used. Where the law requires it, analytics stay off until you accept. See our <a href="/privacy-policy.html">Privacy Policy</a>.</p>',
       '  </div>',
       '</div>'
     ].join('');
 
     document.body.appendChild(banner);
 
-    // Trigger slide-in after short delay (allows paint)
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
         banner.classList.add('visible');
       });
     });
 
-    // Button handlers
     document.getElementById('cookie-accept').addEventListener('click', function () {
       setConsent('accepted');
       hideBanner(banner);
@@ -78,11 +101,22 @@
     });
   }
 
-  // Run after DOM is ready
+  // Lets a "Cookie settings" link reopen the banner: onclick="zudoCookieSettings()"
+  window.zudoCookieSettings = showBanner;
+
+  function init() {
+    var consent = getConsent();
+    if (consent && !hasConsentExpired()) {
+      if (consent === 'accepted') loadPageSense();
+      return;
+    }
+    showBanner();
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initCookieBanner);
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    initCookieBanner();
+    init();
   }
 
 })();

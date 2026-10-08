@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        try {
+            var zc = localStorage.getItem('zudo_cookie_consent');
+            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+        } catch (e) { }
+    </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#226DB4">
@@ -37,11 +48,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/variables.css?v=20261008">
+  <link rel="stylesheet" href="css/reset.css?v=20261008">
+  <link rel="stylesheet" href="css/base.css?v=20261008">
+  <link rel="stylesheet" href="css/components.css?v=20261008">
+  <link rel="stylesheet" href="css/responsive.css?v=20261008">
 
   <style>
     .error-page {
@@ -185,11 +196,8 @@
       color: var(--color-primary);
     }
   </style>
-  <link rel="stylesheet" href="/css/cookie-consent.css">
-  <link rel="stylesheet" href="css/helpers.css">
-    <!-- Zoho PageSense -->
-    <script id="pagesenseCode">!function(){var e="1.0",t=document,a=window,n="zps-page-screen",r=t.head||t.getElementsByTagName("head")[0],i=t.getElementById("pagesenseCode");if(!t.getElementById(n)){var o=t.createElement("style");o.type="text/css",o.id=n;var s="body { background: transparent !important; opacity: 0 !important; visibility: hidden !important; } html { opacity: 0 !important; visibility: hidden !important; }";o.styleSheet?o.styleSheet.cssText=s:o.appendChild(t.createTextNode(s)),r.firstChild?r.insertBefore(o,r.firstChild):r.appendChild(o),a._ps_conf={};var c={addScript:function(e){try{var n=t.createElement("script");if(n.type="text/javascript",n.async=!0,e.src?n.src=e.src:e.text&&(void 0!==n.text?n.text=e.text:n.appendChild(t.createTextNode(e.text))),i&&i.getAttribute){var o=i.getAttribute("nonce");o&&n.setAttribute("nonce",o)}n.onload=n.onreadystatechange=function(){this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState||(n.onload=n.onreadystatechange=null,a._ps_conf&&a._ps_conf.pauseRenderForManualActivation?clearTimeout(d):c.revealPage())},n.onerror=function(){c.revealPage()},r.appendChild(n)}catch(e){throw c.revealPage(),e}},revealPage:function(){var e=t.getElementById(n);e&&e.parentNode&&e.parentNode.removeChild(e)}},d=setTimeout((function(){c.revealPage()}),1e4),p=c.revealPage;c.revealPage=function(){clearTimeout(d),p()};try{a._ps_conf&&a._ps_conf.pauseRenderForManualActivation&&(a.pagesense=a.pagesense||[],a.pagesense.push=function(e){e&&"activate"==e[0]&&c&&c.revealPage()}),a._ps_conf?a._ps_conf.version=e:a._ps_conf={version:e},c.addScript({src:"https://cdn-in.pagesense.io/js/zudoworks/a082c937db01490eb591882d194fbe5a.js"})}catch(e){c.revealPage()}}}();
-    </script>
+  <link rel="stylesheet" href="/css/cookie-consent.css?v=20261008">
+  <link rel="stylesheet" href="css/helpers.css?v=20261008">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -280,7 +288,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </main>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261008"></script>
   <script>
     // Auto-redirect countdown
     var seconds = 12;
@@ -294,7 +302,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       }
     }, 1000);
   </script>
-  <script src="/js/cookie-consent.js"></script>
+  <script src="/js/cookie-consent.js?v=20261008"></script>
   <!-- Zoho SalesIQ Chatbot -->
   <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq41d5faa948254fbe80c22c34c3b718451e4896b7c5f3c1a47f09184669bc09db" defer></script>
 </body>

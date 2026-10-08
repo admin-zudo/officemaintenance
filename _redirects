@@ -2,3 +2,7 @@
 # Cloudflare Pages automatically serves /404.html for unmatched routes with a 404 status.
 # Consolidate index.html to root
 /index.html    /    301
+
+# Internal files that should not be served publicly
+/audit.py    /    301
+/blog/.automation-history.json    /blog/    301

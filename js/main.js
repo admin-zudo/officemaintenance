@@ -104,28 +104,28 @@
           <button class="brand-modal-close" id="brandModalClose" aria-label="Close credentials display">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
-          <img src="Asset/icons/Zudo Works Logo SVG.svg" alt="Zudo Works logo" class="brand-modal-logo">
+          <img src="/Asset/icons/Zudo%20Works%20Logo%20SVG.svg" alt="Zudo Works logo" class="brand-modal-logo">
           <h3 class="brand-modal-title" id="brand-modal-title">Zudo Works</h3>
-          <p class="brand-modal-subtitle">CORPORATION</p>
+          <p class="brand-modal-subtitle">SVP Software and Global Solutions Corporation</p>
           <div class="brand-modal-info">
             <div class="brand-modal-info-row">
               <span class="brand-modal-info-label">Status</span>
               <span class="brand-modal-info-value" style="color: var(--color-secondary);">Active</span>
             </div>
             <div class="brand-modal-info-row">
-              <span class="brand-modal-info-label">Zoho Relationship</span>
-              <span class="brand-modal-info-value">Implementation Experts</span>
+              <span class="brand-modal-info-label">Focus</span>
+              <span class="brand-modal-info-value">Zoho development &amp; custom software</span>
             </div>
             <div class="brand-modal-info-row">
               <span class="brand-modal-info-label">Type</span>
-              <span class="brand-modal-info-value">CORPORATION Company</span>
+              <span class="brand-modal-info-value">Private limited company</span>
             </div>
             <div class="brand-modal-info-row">
               <span class="brand-modal-info-label">Incorporated In</span>
               <span class="brand-modal-info-value">India</span>
             </div>
           </div>
-          <a href="company.html" class="btn btn-primary btn-sm">About the Company</a>
+          <a href="/company.html" class="btn btn-primary btn-sm">About the Company</a>
         </div>
       </div>
     `;
@@ -177,24 +177,21 @@
     const faqItems = document.querySelectorAll('.faq-question');
     if (!faqItems.length) return;
 
-    faqItems.forEach(function (btn) {
+    faqItems.forEach(function (btn, i) {
+      var item = btn.closest('.faq-item');
+      var answer = item && item.querySelector('.faq-answer');
+      if (answer) {
+        if (!answer.id) answer.id = 'faq-answer-' + (i + 1);
+        btn.setAttribute('aria-controls', answer.id);
+      }
+      btn.setAttribute('aria-expanded', item && item.classList.contains('active') ? 'true' : 'false');
+
+      // Native <button> already handles Enter and Space
       btn.addEventListener('click', function () {
-        var item = this.closest('.faq-item');
-        var isOpen = item.classList.contains('active');
-
-        // Allow multiple open or single open — here we allow multiple
-        item.classList.toggle('active');
-        var answer = item.querySelector('.faq-answer');
+        var isOpen = item.classList.toggle('active');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         if (answer) {
-          answer.style.display = isOpen ? 'none' : 'block';
-        }
-      });
-
-      // Keyboard accessibility
-      btn.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          this.click();
+          answer.style.display = isOpen ? 'block' : 'none';
         }
       });
     });

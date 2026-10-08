@@ -3,6 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        try {
+            var zc = localStorage.getItem('zudo_cookie_consent');
+            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+        } catch (e) { }
+    </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#226DB4">
@@ -35,10 +46,6 @@
   <link rel="alternate" hreflang="x-default" href="https://zudoworks.com/zoho-partner.html">
 
   <!-- GEO Targeting -->
-  <meta name="geo.region" content="IN-TN">
-  <meta name="geo.placename" content="Chennai, Tamil Nadu, India">
-  <meta name="geo.position" content="13.0878;80.2166">
-  <meta name="ICBM" content="13.0878, 80.2166">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Zoho Implementation Experts | Zudo Works">
   <meta property="og:description"
@@ -48,7 +55,6 @@
   <meta property="og:site_name" content="Zudo Works">
   <meta property="og:image" content="https://zudoworks.com/Asset/icons/Zudo%20Works%20Logo%20SVG.svg">
   <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="en_IN">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://zudoworks.com/Asset/icons/Zudo%20Works%20Logo%20SVG.svg">
   <meta name="twitter:image" content="Asset/icons/Zudo%20Works%20Logo%20SVG.svg">
@@ -61,13 +67,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     as="style">
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/variables.css?v=20261008">
+  <link rel="stylesheet" href="css/reset.css?v=20261008">
+  <link rel="stylesheet" href="css/base.css?v=20261008">
+  <link rel="stylesheet" href="css/components.css?v=20261008">
+  <link rel="stylesheet" href="css/hero.css?v=20261008">
+  <link rel="stylesheet" href="css/sections.css?v=20261008">
+  <link rel="stylesheet" href="css/responsive.css?v=20261008">
 
   <script type="application/ld+json">
   {
@@ -87,45 +93,47 @@
 
   <!-- Structured Data: FAQPage (Google Rich Snippets) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
       "@type": "Question",
-      "name": "Why should we work with a Zoho Implementation Expert?",
+      "name": "Why work with a Zoho specialist instead of configuring Zoho yourself?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Zoho Implementation Expert brings deep technical expertise, certified product knowledge, and direct support access to Zoho. Working with a partner ensures your workflows are engineered according to industry best practices, saving you weeks of trial-and-error configurations, data migration errors, and poor team adoption rates."
+        "text": "Zoho is highly configurable, which makes it easy to build something that works for a month and then becomes hard to maintain. A specialist designs the data model, automations and Deluge code around your process, documents it, and tests the data migration before go-live, so your team avoids rework and low adoption."
       }
-    }, {
+    },
+    {
       "@type": "Question",
-      "name": "Can you integrate Zoho CRM with other custom applications or ERP systems?",
+      "name": "Can you integrate Zoho CRM with other applications or ERP systems?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. We specialize in custom API integrations using Zoho Flow, Deluge scripting, and middleware. We regularly connect Zoho CRM and Zoho Books with third-party ERPs, payment gateways, custom web applications, and marketing automation databases to keep your data flowing seamlessly."
+        "text": "Yes. We build integrations with Zoho's REST APIs, webhooks, Zoho Flow and Deluge, and write custom middleware where Flow isn't enough. Typical connections include accounting tools, e-commerce platforms, payment gateways and your own applications."
       }
-    }, {
+    },
+    {
       "@type": "Question",
       "name": "What is the typical timeline for a Zoho implementation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A standard Zoho CRM or Zoho One implementation takes between 2 to 6 weeks, depending on the complexity of your custom business rules, custom modules, number of integrations, and data migration needs."
+        "text": "Most focused Zoho CRM or Zoho Creator projects take 2 to 8 weeks, depending on custom modules, integrations and data migration. Multi-app rollouts with several integrations usually take 8 to 16 weeks. We confirm the timeline in writing after a discovery call."
       }
-    }, {
+    },
+    {
       "@type": "Question",
       "name": "Do you provide training and post-implementation support?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely. A business system is only successful if your team uses it. We provide personalized training sessions for administrators and end-users, along with flexible monthly support and system optimization retainers to scale as your operations grow."
+        "text": "Yes. A business system only succeeds if your team uses it. We run training sessions for administrators and end users, hand over documentation, and offer monthly support retainers for fixes, enhancements and optimisation."
       }
-    }]
-  }
+    }
+  ]
+}
   </script>
-  <link rel="stylesheet" href="/css/cookie-consent.css">
-  <link rel="stylesheet" href="css/helpers.css">
-    <!-- Zoho PageSense -->
-    <script id="pagesenseCode">!function(){var e="1.0",t=document,a=window,n="zps-page-screen",r=t.head||t.getElementsByTagName("head")[0],i=t.getElementById("pagesenseCode");if(!t.getElementById(n)){var o=t.createElement("style");o.type="text/css",o.id=n;var s="body { background: transparent !important; opacity: 0 !important; visibility: hidden !important; } html { opacity: 0 !important; visibility: hidden !important; }";o.styleSheet?o.styleSheet.cssText=s:o.appendChild(t.createTextNode(s)),r.firstChild?r.insertBefore(o,r.firstChild):r.appendChild(o),a._ps_conf={};var c={addScript:function(e){try{var n=t.createElement("script");if(n.type="text/javascript",n.async=!0,e.src?n.src=e.src:e.text&&(void 0!==n.text?n.text=e.text:n.appendChild(t.createTextNode(e.text))),i&&i.getAttribute){var o=i.getAttribute("nonce");o&&n.setAttribute("nonce",o)}n.onload=n.onreadystatechange=function(){this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState||(n.onload=n.onreadystatechange=null,a._ps_conf&&a._ps_conf.pauseRenderForManualActivation?clearTimeout(d):c.revealPage())},n.onerror=function(){c.revealPage()},r.appendChild(n)}catch(e){throw c.revealPage(),e}},revealPage:function(){var e=t.getElementById(n);e&&e.parentNode&&e.parentNode.removeChild(e)}},d=setTimeout((function(){c.revealPage()}),1e4),p=c.revealPage;c.revealPage=function(){clearTimeout(d),p()};try{a._ps_conf&&a._ps_conf.pauseRenderForManualActivation&&(a.pagesense=a.pagesense||[],a.pagesense.push=function(e){e&&"activate"==e[0]&&c&&c.revealPage()}),a._ps_conf?a._ps_conf.version=e:a._ps_conf={version:e},c.addScript({src:"https://cdn-in.pagesense.io/js/zudoworks/a082c937db01490eb591882d194fbe5a.js"})}catch(e){c.revealPage()}}}();
-    </script>
+  <link rel="stylesheet" href="/css/cookie-consent.css?v=20261008">
+  <link rel="stylesheet" href="css/helpers.css?v=20261008">
 </head>
 
 <body>
@@ -180,17 +188,17 @@
         </span>
       </a>
       <nav aria-label="Main navigation">
-        <ul class="navbar-nav" id="navbar-nav" role="menubar">
-          <li role="none"><a href="/" class="navbar-link" role="menuitem">Home</a></li>
-          <li role="none"><a href="/services.html" class="navbar-link" role="menuitem">Services</a></li>
-          <li role="none"><a href="/zoho-partner.html" class="navbar-link" role="menuitem">Zoho Experts</a></li>
-          <li role="none"><a href="/integrations.html" class="navbar-link" role="menuitem">Integrations</a></li>
-          <li role="none"><a href="/solutions.html" class="navbar-link" role="menuitem">Solutions</a></li>
-          <li role="none"><a href="/portfolio.html" class="navbar-link" role="menuitem">Portfolio</a></li>
-          <li role="none"><a href="/blog/index.html" class="navbar-link" role="menuitem">Blog</a></li>
-          <li role="none"><a href="/guide/index.html" class="navbar-link" role="menuitem">Guide</a></li>
-          <li role="none"><a href="/company.html" class="navbar-link" role="menuitem">Company</a></li>
-          <li role="none" class="navbar-cta"><a href="/contact.html" class="btn btn-primary btn-sm" role="menuitem">Talk
+        <ul class="navbar-nav" id="navbar-nav">
+          <li><a href="/" class="navbar-link">Home</a></li>
+          <li><a href="/services.html" class="navbar-link">Services</a></li>
+          <li><a href="/zoho-partner.html" class="navbar-link">Zoho Experts</a></li>
+          <li><a href="/integrations.html" class="navbar-link">Integrations</a></li>
+          <li><a href="/solutions.html" class="navbar-link">Solutions</a></li>
+          <li><a href="/portfolio.html" class="navbar-link">Portfolio</a></li>
+          <li><a href="/blog/index.html" class="navbar-link">Blog</a></li>
+          <li><a href="/guide/index.html" class="navbar-link">Guide</a></li>
+          <li><a href="/company.html" class="navbar-link">Company</a></li>
+          <li class="navbar-cta"><a href="/contact.html" class="btn btn-primary btn-sm">Talk
               to Us</a></li>
         </ul>
       </nav>
@@ -351,7 +359,6 @@
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
@@ -529,78 +536,45 @@
         <div class="section-header reveal">
           <span class="section-label">FAQ</span>
           <h2>Frequently Asked Questions</h2>
-          <p>Common questions about working with Zoho implementation experts.</p>
+          <p>Common questions about Zoho implementation projects.</p>
         </div>
 
-        <div class="reveal"
-          style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-          <!-- FAQ 1 -->
-          <div class="faq-item"
-            style="background-color: var(--color-white); border: var(--border-default); border-radius: var(--radius-md); padding: var(--space-5);">
-            <h3
-              style="font-size: var(--text-base); margin-bottom: var(--space-2); display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;"
-              onclick="this.parentElement.classList.toggle('active')">
-              <span>Why should we work with a Zoho Implementation Expert?</span>
-              <span class="faq-toggle"
-                style="font-weight: var(--weight-medium); color: var(--color-primary);">&plus;</span>
-            </h3>
-            <p class="faq-answer"
-              style="color: var(--color-muted); font-size: var(--text-sm); line-height: var(--leading-relaxed); display: none; margin-top: var(--space-3);">
-              A Zoho Implementation Expert brings deep technical expertise, certified product knowledge, and direct
-              support access to Zoho. Working with a partner ensures your workflows are engineered according to industry
-              best practices, saving you weeks of trial-and-error configurations, data migration errors, and poor team
-              adoption rates.</p>
+        <div class="faq-list reveal" style="max-width: 800px; margin: 0 auto;">
+          <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Why work with a Zoho specialist instead of configuring Zoho yourself?</span>
+                  <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                  <p>Zoho is highly configurable, which makes it easy to build something that works for a month and then becomes hard to maintain. A specialist designs the data model, automations and Deluge code around your process, documents it, and tests the data migration before go-live, so your team avoids rework and low adoption.</p>
+              </div>
           </div>
-
-          <!-- FAQ 2 -->
-          <div class="faq-item"
-            style="background-color: var(--color-white); border: var(--border-default); border-radius: var(--radius-md); padding: var(--space-5);">
-            <h3
-              style="font-size: var(--text-base); margin-bottom: var(--space-2); display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;"
-              onclick="this.parentElement.classList.toggle('active')">
-              <span>Can you integrate Zoho CRM with other custom applications or ERP systems?</span>
-              <span class="faq-toggle"
-                style="font-weight: var(--weight-medium); color: var(--color-primary);">&plus;</span>
-            </h3>
-            <p class="faq-answer"
-              style="color: var(--color-muted); font-size: var(--text-sm); line-height: var(--leading-relaxed); display: none; margin-top: var(--space-3);">
-              Yes. We specialize in custom API integrations using Zoho Flow, Deluge scripting, and middleware. We
-              regularly connect Zoho CRM and Zoho Books with third-party ERPs, payment gateways, custom web
-              applications, and marketing automation databases to keep your data flowing seamlessly.</p>
+          <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Can you integrate Zoho CRM with other applications or ERP systems?</span>
+                  <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                  <p>Yes. We build integrations with Zoho's REST APIs, webhooks, Zoho Flow and Deluge, and write custom middleware where Flow isn't enough. Typical connections include accounting tools, e-commerce platforms, payment gateways and your own applications.</p>
+              </div>
           </div>
-
-          <!-- FAQ 3 -->
-          <div class="faq-item"
-            style="background-color: var(--color-white); border: var(--border-default); border-radius: var(--radius-md); padding: var(--space-5);">
-            <h3
-              style="font-size: var(--text-base); margin-bottom: var(--space-2); display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;"
-              onclick="this.parentElement.classList.toggle('active')">
-              <span>What is the typical timeline for a Zoho implementation?</span>
-              <span class="faq-toggle"
-                style="font-weight: var(--weight-medium); color: var(--color-primary);">&plus;</span>
-            </h3>
-            <p class="faq-answer"
-              style="color: var(--color-muted); font-size: var(--text-sm); line-height: var(--leading-relaxed); display: none; margin-top: var(--space-3);">
-              A standard Zoho CRM or Zoho One implementation takes between 2 to 6 weeks, depending on the complexity of
-              your custom business rules, custom modules, number of integrations, and data migration needs. We follow a
-              strict 7-step deployment process to guarantee timely delivery and complete data validation.</p>
+          <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                  <span>What is the typical timeline for a Zoho implementation?</span>
+                  <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                  <p>Most focused Zoho CRM or Zoho Creator projects take 2 to 8 weeks, depending on custom modules, integrations and data migration. Multi-app rollouts with several integrations usually take 8 to 16 weeks. We confirm the timeline in writing after a discovery call.</p>
+              </div>
           </div>
-
-          <!-- FAQ 4 -->
-          <div class="faq-item"
-            style="background-color: var(--color-white); border: var(--border-default); border-radius: var(--radius-md); padding: var(--space-5);">
-            <h3
-              style="font-size: var(--text-base); margin-bottom: var(--space-2); display: flex; justify-content: space-between; align-items: center; cursor: pointer; user-select: none;"
-              onclick="this.parentElement.classList.toggle('active')">
-              <span>Do you provide training and post-implementation support?</span>
-              <span class="faq-toggle"
-                style="font-weight: var(--weight-medium); color: var(--color-primary);">&plus;</span>
-            </h3>
-            <p class="faq-answer"
-              style="color: var(--color-muted); font-size: var(--text-sm); line-height: var(--leading-relaxed); display: none; margin-top: var(--space-3);">
-              Absolutely. A business system is only successful if your team uses it. We provide personalized training
-              sessions for administrators and end-users, along with flexible monthly support and system optimization
-              retainers to scale as your operations grow.</p>
+          <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                  <span>Do you provide training and post-implementation support?</span>
+                  <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </button>
+              <div class="faq-answer">
+                  <p>Yes. A business system only succeeds if your team uses it. We run training sessions for administrators and end users, hand over documentation, and offer monthly support retainers for fixes, enhancements and optimisation.</p>
+              </div>
           </div>
         </div>
       </div>
@@ -728,10 +702,10 @@
     </div>
   </footer>
 
-  <script defer src="js/main.js"></script>
-  <script defer src="js/animations.js"></script>
-  <script defer src="js/counter.js"></script>
-  <script src="/js/cookie-consent.js"></script>
+  <script defer src="js/main.js?v=20261008"></script>
+  <script defer src="js/animations.js?v=20261008"></script>
+  <script defer src="js/counter.js?v=20261008"></script>
+  <script src="/js/cookie-consent.js?v=20261008"></script>
   <!-- Zoho SalesIQ Chatbot -->
   <script>window.$zoho = window.$zoho || {}; $zoho.salesiq = $zoho.salesiq || { ready: function () { } }</script>
   <script id="zsiqscript"

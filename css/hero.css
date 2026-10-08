@@ -509,3 +509,15 @@
     animation: none;
   }
 }
+/* Credential line under hero stats */
+.hero-proof {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  line-height: var(--leading-normal);
+}
+
+.hero-proof a {
+  color: var(--color-primary);
+  font-weight: var(--weight-medium);
+}

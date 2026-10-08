@@ -1390,3 +1390,83 @@
 .faq-list {
   margin-top: var(--space-6);
 }
+/* ============================================================
+   Booking Dialog (Zoho Bookings embed)
+   ============================================================ */
+
+.booking-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(26, 26, 46, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  padding: var(--space-4);
+}
+
+.booking-modal[hidden] {
+  display: none;
+}
+
+.booking-modal-content {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  max-width: 960px;
+  height: min(720px, calc(100dvh - 2 * var(--space-4)));
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.booking-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-6);
+  border-bottom: var(--border-default);
+}
+
+.booking-modal-header h2 {
+  font-size: var(--text-lg);
+  margin: 0;
+}
+
+.booking-modal-close {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: none;
+  color: var(--color-body);
+  cursor: pointer;
+}
+
+.booking-modal-close:hover {
+  background-color: var(--color-bg-light);
+}
+
+.booking-modal-close:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.booking-modal-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.booking-modal-fallback {
+  margin: 0;
+  padding: var(--space-3) var(--space-6);
+  border-top: var(--border-default);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
