@@ -131,9 +131,17 @@ def build_sitemap(pages):
         route = route_for(path)
         if route in NOINDEX:
             continue
-        rows.append(f'  <url>\n    <loc>{SITE}{route}</loc>\n    <lastmod>{git_date(path)}</lastmod>\n  </url>')
+        html = read(path)
+        # Image sitemap entries: the share image plus article covers and team photos in the page
+        images = re.findall(r'<meta property="og:image" content="([^"]+)"', html)
+        main = html.split('<main', 1)[-1]
+        images += [SITE + src for src in re.findall(r'<img[^>]+src="(/Asset/img/(?:insights|team)/[^"]+)"', main)]
+        images = list(dict.fromkeys(images))[:6]
+        image_xml = ''.join(f'\n    <image:image>\n      <image:loc>{src}</image:loc>\n    </image:image>' for src in images)
+        rows.append(f'  <url>\n    <loc>{SITE}{route}</loc>\n    <lastmod>{git_date(path)}</lastmod>{image_xml}\n  </url>')
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + '\n'.join(rows) + '\n</urlset>\n')
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
+           '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n' + '\n'.join(rows) + '\n</urlset>\n')
     write_if_changed('sitemap.xml', xml)
     return len(rows)
 

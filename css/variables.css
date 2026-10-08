@@ -1,3 +1,12 @@
+/* Inter (variable, weights 400-700, Latin subset), self-hosted: no third-party font requests */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/Asset/fonts/inter-latin.woff2') format('woff2');
+}
+
 /* ============================================================
    Zudo Works — Design Tokens
    All values derived from the official company logo.

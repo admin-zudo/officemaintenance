@@ -38,10 +38,8 @@
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
     <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="/css/site.css?v=4e7c817047">
+    <link rel="preload" href="/Asset/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css?v=3cb2ee9028">
     <!-- @/head -->
 
     <title>Zoho Developers &amp; Custom Software | Zudo Works</title>
@@ -71,7 +69,10 @@
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": [
+    "Organization",
+    "ProfessionalService"
+  ],
   "@id": "https://zudoworks.com/#organization",
   "name": "Zudo Works",
   "legalName": "SVP Software and Global Solutions Corporation",
@@ -132,7 +133,7 @@
       "@id": "https://zudoworks.com/#organization"
     },
     "award": "Master of Creator award, Zoho Creator Partner Hackathon 2025",
-      "alternateName": "Arunkumar Venkadesan",
+    "alternateName": "Arunkumar Venkadesan",
     "sameAs": [
       "https://www.linkedin.com/in/arunkumar-v-5509aa1aa/",
       "https://www.upwork.com/freelancers/arunk191",
@@ -158,7 +159,25 @@
     "https://www.instagram.com/zudoworks/",
     "https://x.com/zudoworks",
     "https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng"
-  ]
+  ],
+  "priceRange": "US$15 per hour",
+  "currenciesAccepted": "USD",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "image": "https://zudoworks.com/Asset/og/zudo-works.jpg",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Anna+Nagar+Chennai+600040"
 }
   </script>
 

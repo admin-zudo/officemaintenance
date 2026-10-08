@@ -3,7 +3,7 @@ import html, json, os, re, sys
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import articles_a, articles_b, articles_c, articles_ext, articles_meta  # noqa: E402
+import articles_a, articles_b, articles_c, articles_ext, articles_meta, articles_answers  # noqa: E402
 
 SITE = 'https://zudoworks.com'
 ARTICLES = articles_a.ARTICLES + articles_b.ARTICLES + articles_c.ARTICLES
@@ -35,8 +35,10 @@ SERVICES_FOR = {
 
 
 def services_line(a):
-    links = ' &middot; '.join(f'<a href="{r}">{SERVICE_NAMES[r]}</a>' for r in SERVICES_FOR[a['slug']])
+    routes = SERVICES_FOR[a['slug']] + (['/zoho-development/'] if '/zoho-development/' not in SERVICES_FOR[a['slug']] else [])
+    links = ' &middot; '.join(f'<a href="{r}">{SERVICE_NAMES[r]}</a>' for r in routes)
     return f'          <p class="post-services"><strong>Related services:</strong> {links}</p>'
+
 
 
 AUTHOR = {
@@ -129,6 +131,7 @@ def article_page(a):
         ld({"@context": "https://schema.org", "@type": "BlogPosting",
             "mainEntityOfPage": {"@type": "WebPage", "@id": url},
             "headline": title_plain, "description": plain(a['description']),
+            "abstract": articles_answers.ANSWERS[a['slug']],
             "image": [img, og], "datePublished": a['published'], "dateModified": a['modified'],
             "author": AUTHOR, "publisher": PUBLISHER, "articleSection": a['category'],
             "keywords": a['keyword'], "wordCount": words(a), "inLanguage": "en"}),
@@ -222,6 +225,10 @@ def article_page(a):
         </aside>
 
         <div class="post-body">
+          <div class="quick-answer">
+            <p class="quick-answer-label">Quick answer</p>
+            <p>{html.escape(articles_answers.ANSWERS[a['slug']], quote=False)}</p>
+          </div>
 {body}
 {faq_html(a.get('faqs', []))}
 {services_line(a)}

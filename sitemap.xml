@@ -1,99 +1,403 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zudoworks.com/about/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/master-of-creator-certificate-thumb.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/business-process-automation/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/contact/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/custom-software-development/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/deluge-development/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/master-of-creator-certificate-thumb.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/deluge-script-examples/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/deluge-script-examples.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-creator-vs-power-apps.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/migrate-hubspot-salesforce-to-zoho-crm/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/migrate-hubspot-salesforce-to-zoho-crm.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-agentic-ai-hyperautomation/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-agentic-ai-hyperautomation.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-analytics-agentic-data-foundations-2026/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-analytics-agentic-data-foundations-2026.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-creator-vs-power-apps/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-creator-vs-power-apps.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-crm-implementation-cost/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-crm-implementation-cost.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-partner-software-development/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-partner-software-development.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/pricing/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/privacy/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/services/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/support-maintenance/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/terms/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/work/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-creator-development/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-crm-development/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-development/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-integrations/</loc>
     <lastmod>2026-10-08</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
   </url>
 </urlset>
