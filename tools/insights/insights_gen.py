@@ -3,7 +3,7 @@ import html, json, os, re, sys
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import articles_a, articles_b, articles_c, articles_ext  # noqa: E402
+import articles_a, articles_b, articles_c, articles_ext, articles_meta  # noqa: E402
 
 SITE = 'https://zudoworks.com'
 ARTICLES = articles_a.ARTICLES + articles_b.ARTICLES + articles_c.ARTICLES
@@ -12,7 +12,32 @@ for _a in ARTICLES:  # insert extra sections before the FAQ heading
     if _x:
         assert '<h2 id="faq">' in _a['body'], _a['slug']
         _a['body'] = _a['body'].replace('<h2 id="faq">', _x.strip('\n') + '\n\n<h2 id="faq">', 1)
+for _a in ARTICLES:  # short search title and meta description
+    _a['seo_title'], _a['meta_description'] = articles_meta.META[_a['slug']]
 BY_SLUG = {a['slug']: a for a in ARTICLES}
+
+# Service pages each article supports (rendered as a "Related services" line)
+SERVICE_NAMES = {
+    '/zoho-creator-development/': 'Zoho Creator development', '/zoho-crm-development/': 'Zoho CRM implementation',
+    '/deluge-development/': 'Deluge development', '/zoho-integrations/': 'Zoho integrations',
+    '/business-process-automation/': 'Business process automation', '/custom-software-development/': 'Custom software',
+    '/support-maintenance/': 'Support and maintenance', '/zoho-development/': 'Zoho development', '/pricing/': 'Pricing',
+}
+SERVICES_FOR = {
+    'zoho-creator-vs-power-apps': ['/zoho-creator-development/', '/custom-software-development/', '/pricing/'],
+    'migrate-hubspot-salesforce-to-zoho-crm': ['/zoho-crm-development/', '/zoho-integrations/', '/pricing/'],
+    'zoho-crm-implementation-cost': ['/zoho-crm-development/', '/pricing/', '/support-maintenance/'],
+    'deluge-script-examples': ['/deluge-development/', '/business-process-automation/', '/zoho-integrations/'],
+    'zoho-agentic-ai-hyperautomation': ['/zoho-crm-development/', '/business-process-automation/', '/deluge-development/'],
+    'zoho-analytics-agentic-data-foundations-2026': ['/zoho-integrations/', '/zoho-development/', '/business-process-automation/'],
+    'zoho-partner-software-development': ['/zoho-development/', '/pricing/', '/support-maintenance/'],
+}
+
+
+def services_line(a):
+    links = ' &middot; '.join(f'<a href="{r}">{SERVICE_NAMES[r]}</a>' for r in SERVICES_FOR[a['slug']])
+    return f'          <p class="post-services"><strong>Related services:</strong> {links}</p>'
+
 
 AUTHOR = {
     "@type": "Person",
@@ -20,6 +45,7 @@ AUTHOR = {
     "name": "Arunkumar V",
     "alternateName": "Arunkumar Venkadesan",
     "jobTitle": "Chief Technology Officer",
+    "image": SITE + "/Asset/img/team/arunkumar-v.jpg",
     "url": SITE + "/about/#leadership",
     "worksFor": {"@id": SITE + "/#organization"},
     "award": "Master of Creator award, Zoho Creator Partner Hackathon 2025",
@@ -116,7 +142,7 @@ def article_page(a):
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": ans}}
             for q, ans in a['faqs']]}))
     seo = html.escape(plain(a['seo_title']))
-    desc = html.escape(plain(a['description']))
+    desc = html.escape(plain(a['meta_description']))
     related = '\n'.join(card(BY_SLUG[s]) for s in a['related'])
     body = a['body'].strip('\n')
     return f'''<!DOCTYPE html>
@@ -168,7 +194,7 @@ def article_page(a):
           <h1>{a['title']}</h1>
           <p class="post-lead">{a['lead']}</p>
           <div class="post-byline">
-            <span class="author-avatar" aria-hidden="true">AV</span>
+            <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="" width="44" height="44">
             <div>
               <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo Works</p>
               <p class="post-byline-meta">{byline(a)}</p>
@@ -198,9 +224,10 @@ def article_page(a):
         <div class="post-body">
 {body}
 {faq_html(a.get('faqs', []))}
+{services_line(a)}
 
           <aside class="author-box" aria-label="About the author">
-            <span class="author-avatar author-avatar--lg" aria-hidden="true">AV</span>
+            <img class="author-avatar author-avatar--lg" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="64" height="64" loading="lazy">
             <div>
               <p class="author-box-label">Written by</p>
               <p class="author-box-name"><a href="/about/#leadership">Arunkumar V</a>, Chief Technology Officer, Zudo Works</p>
@@ -270,7 +297,7 @@ def index_page():
     <!-- @head -->
     <!-- @/head -->
 
-  <title>Zoho Insights: Guides, Comparisons and Deluge Examples | Zudo Works</title>
+  <title>Zoho Guides, Comparisons and Deluge Examples | Zudo Works</title>
   <meta name="description" content="Practical Zoho guides from our CTO: Zoho Creator vs Power Apps, CRM migration, implementation costs, Deluge script examples, AI and analytics.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Zoho Insights | Zudo Works">

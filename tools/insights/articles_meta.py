@@ -1,0 +1,24 @@
+# Search titles (shown in Google, kept under ~60 characters with the brand) and meta descriptions (under 160).
+META = {
+    'zoho-creator-vs-power-apps': (
+        'Zoho Creator vs Power Apps: Honest Comparison',
+        'Zoho Creator vs Microsoft Power Apps compared: data, logic, portals, mobile, integrations and licensing, plus when each platform is the better choice.'),
+    'migrate-hubspot-salesforce-to-zoho-crm': (
+        'HubSpot or Salesforce to Zoho CRM Migration Plan',
+        'A step-by-step plan for moving from HubSpot or Salesforce to Zoho CRM: field mapping, import order, rebuilding automation, testing and cut-over.'),
+    'zoho-crm-implementation-cost': (
+        'Zoho CRM Implementation Cost: Real Breakdown',
+        'What a Zoho CRM implementation really costs: licences, setup, migration, integrations and training, with three example projects priced at US$15 per hour.'),
+    'deluge-script-examples': (
+        'Deluge Script Examples: 10 Real Zoho Automations',
+        'Ten practical Deluge scripts for Zoho CRM, Creator and Books: invoices from won deals, duplicate checks, follow-up tasks, API calls and more.'),
+    'zoho-agentic-ai-hyperautomation': (
+        'AI Agents in Zoho CRM: A Practical Guide',
+        'What AI agents and Zia can realistically do in Zoho CRM, what should stay rule-based or human-approved, and how to prepare your CRM data first.'),
+    'zoho-analytics-agentic-data-foundations-2026': (
+        'Zoho Analytics and AI: Building a Data Foundation',
+        'Prepare Zoho Analytics data for trustworthy dashboards and AI features like Ask Zia: connect sources, model, clean, secure and define your metrics.'),
+    'zoho-partner-software-development': (
+        'How to Choose a Zoho Developer or Partner',
+        'Zoho Partner or independent developer? Ten questions to ask before hiring, red flags to avoid and what your Zoho project agreement should cover.'),
+}
