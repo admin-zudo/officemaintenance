@@ -1,6 +1,6 @@
 /* ============================================================
    Main JavaScript   Navbar, Mobile Menu, Smooth Scroll,
-   Scroll Progress, FAQ Accordion, Roadmap Scroll
+   FAQ Accordion, Roadmap Scroll
    ============================================================ */
 
 (function () {
@@ -21,52 +21,38 @@
   window.addEventListener('scroll', handleNavbarScroll, { passive: true });
   handleNavbarScroll(); // initial check
 
-  // -- Scroll Progress Bar -----------------------------------
-  const progressBar = document.getElementById('scrollProgress');
-
-  function updateScrollProgress() {
-    if (!progressBar) return;
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if (docHeight <= 0) return;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    progressBar.style.width = scrollPercent + '%';
-  }
-
-  window.addEventListener('scroll', updateScrollProgress, { passive: true });
-  updateScrollProgress();
-
   // -- Mobile menu toggle ------------------------------------
   const toggle = document.querySelector('.navbar-toggle');
   const mobileNav = document.querySelector('.navbar-nav');
 
   if (toggle && mobileNav) {
+    function setMenu(open) {
+      toggle.classList.toggle('open', open);
+      mobileNav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
     toggle.addEventListener('click', function () {
-      const isOpen = toggle.classList.toggle('open');
-      mobileNav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      setMenu(!toggle.classList.contains('open'));
     });
 
-    // Close mobile menu when a link is clicked
-    mobileNav.querySelectorAll('.navbar-link').forEach(function (link) {
-      link.addEventListener('click', function () {
-        toggle.classList.remove('open');
-        mobileNav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+    // Close when any menu link (including the CTA) is used
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { setMenu(false); });
     });
 
-    // Close on escape key
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && toggle.classList.contains('open')) {
-        toggle.classList.remove('open');
-        mobileNav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        setMenu(false);
         toggle.focus();
       }
+    });
+
+    // Leaving the mobile layout with the menu open would leave the page scroll-locked
+    window.matchMedia('(min-width: 1100px)').addEventListener('change', function (e) {
+      if (e.matches) setMenu(false);
     });
   }
 

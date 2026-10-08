@@ -105,4 +105,25 @@
             </div>
         </div>
     </footer>
+    <!-- Zoho Bookings dialog (embed script loads on first open) -->
+    <div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
+        aria-labelledby="booking-modal-title" hidden>
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h2 id="booking-modal-title">Book a discovery call</h2>
+                <button type="button" class="booking-modal-close" id="close-bookings-modal"
+                    aria-label="Close booking window">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div id="inline-container" class="booking-modal-body"></div>
+            <p class="booking-modal-fallback">Calendar not loading?
+                <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
+                    rel="noopener">Open the booking page in a new tab</a>.</p>
+        </div>
+    </div>
     <script defer src="/js/site.js?v={{JS_HASH}}"></script>

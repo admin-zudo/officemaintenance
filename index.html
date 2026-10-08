@@ -5,6 +5,7 @@
     <!-- @head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add('js');</script>
     <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -36,20 +37,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="/css/site.css?v=1348a4574e">
+    <link rel="stylesheet" href="/css/site.css?v=e24a98cf24">
     <!-- @/head -->
 
-    <title>Zudo Works | AI-Focused Zoho Implementation Experts & IT Solutions Provider</title>
+    <title>Zoho Developers &amp; Custom Software | Zudo Works</title>
     <meta name="description"
-        content="AI-focused Zoho Implementation Experts &amp; IT Solutions Provider. Custom software development, Zoho CRM implementation, and business automations.">
+        content="Zudo Works builds Zoho Creator apps, customises Zoho CRM and writes Deluge and API integrations for businesses in the US, UK, Australia and New Zealand.">
 
     <link rel="me" href="https://mastodon.social/@zudoworks">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Zudo Works | Zoho Implementation Experts &amp; IT Solutions">
+    <meta property="og:title" content="Zoho Developers &amp; Custom Software | Zudo Works">
     <meta property="og:description"
-        content="AI-focused Zoho Implementation Experts &amp; IT Solutions Provider. Custom software development, Zoho CRM implementation, and API integrations.">
+        content="Zudo Works builds Zoho Creator apps, customises Zoho CRM and writes Deluge and API integrations for businesses in the US, UK, Australia and New Zealand.">
     <meta property="og:url" content="https://zudoworks.com/">
     <meta property="og:site_name" content="Zudo Works">
     <meta property="og:image" content="https://zudoworks.com/Asset/og/zudo-works.jpg">
@@ -57,9 +58,9 @@
 
     <!-- Twitter/X Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zudo Works | Zoho Implementation Experts &amp; IT Solutions">
+    <meta name="twitter:title" content="Zoho Developers &amp; Custom Software | Zudo Works">
     <meta name="twitter:description"
-        content="AI-focused Zoho Implementation Experts &amp; IT Solutions Provider. Custom software development, Zoho CRM implementation, and API integrations.">
+        content="Zudo Works builds Zoho Creator apps, customises Zoho CRM and writes Deluge and API integrations for businesses in the US, UK, Australia and New Zealand.">
     <meta name="twitter:image" content="https://zudoworks.com/Asset/og/zudo-works.jpg">
 
     <!-- Structured Data: Organization -->
@@ -258,7 +259,6 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQBHDK59" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
-    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div class="top-bar">
@@ -281,7 +281,7 @@
                     +91 63854 35382
                 </a>
                 <span class="top-bar-separator" aria-hidden="true">|</span>
-                <a href="/contact/" class="top-bar-item">
+                <a href="/contact/" class="top-bar-item" data-booking>
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <rect x="3" y="4" width="18" height="18" rx="2"></rect>
@@ -315,7 +315,7 @@
                     <li><a href="/work/" class="navbar-link">Work</a></li>
                     <li><a href="/insights/" class="navbar-link">Insights</a></li>
                     <li><a href="/about/" class="navbar-link">About</a></li>
-                    <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm">Talk to Us</a></li>
+                    <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm" data-booking>Book a Call</a></li>
                 </ul>
             </nav>
 
@@ -327,8 +327,8 @@
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                     </svg>
-                    <span class="phone-text">Call</span></a>
-                <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta">Talk to Us</a>
+                </a>
+                <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta" data-booking>Book a Call</a>
             </div>
         </div>
     </header>
@@ -343,830 +343,297 @@
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
-                        <span class="hero-label">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                                <path d="M2 17l10 5 10-5" />
-                                <path d="M2 12l10 5 10-5" />
-                            </svg>Zoho Implementation Experts</span>
-                        <h1>AI-Focused Zoho Implementation Experts &amp; <span class="text-gradient">IT Solutions</span></h1>
-                        <p class="hero-description">As AI-focused Zoho implementation experts, we build custom software and deliver
-                            IT solutions to help your business automate workflows and scale without the growing pains.
-                        </p>
+                        <p class="hero-label">Zoho Creator &middot; Zoho CRM &middot; Deluge &middot; Integrations</p>
+                        <h1>Zoho and custom software, built around how your business actually runs</h1>
+                        <p class="hero-description">Zudo Works designs and builds Zoho Creator apps, Zoho CRM setups,
+                            Deluge automations and API integrations for growing businesses in the US, UK, Australia
+                            and New Zealand. When Zoho isn't the right tool, we write the custom software instead.</p>
                         <div class="btn-group">
-                            <a href="/contact/" class="btn btn-primary btn-lg">Talk to Our Experts</a>
-                            <button type="button" id="booking-link" class="btn btn-secondary btn-lg" aria-haspopup="dialog">Book a Discovery Call</button>
+                            <a href="/contact/" class="btn btn-primary btn-lg" data-booking>Book a Discovery Call</a>
+                            <a href="/services/" class="btn btn-secondary btn-lg">Explore Our Services</a>
                         </div>
-                        <div class="hero-stats">
+                        <dl class="hero-stats">
                             <div class="hero-stat">
-                                <div class="hero-stat-value" data-count="20" data-count-suffix="+">20+</div>
-                                <div class="hero-stat-label">Projects Delivered by Our Team</div>
+                                <dt class="hero-stat-label">Projects delivered by our team</dt>
+                                <dd class="hero-stat-value">20+</dd>
                             </div>
                             <div class="hero-stat">
-                                <div class="hero-stat-value" data-count="10" data-count-suffix="+">10+</div>
-                                <div class="hero-stat-label">Clients Served</div>
+                                <dt class="hero-stat-label">Clients served</dt>
+                                <dd class="hero-stat-value">10+</dd>
                             </div>
                             <div class="hero-stat">
-                                <div class="hero-stat-value" data-count="20" data-count-suffix="+">20+</div>
-                                <div class="hero-stat-label">Zoho Products Worked With</div>
+                                <dt class="hero-stat-label">Zoho products worked with</dt>
+                                <dd class="hero-stat-value">20+</dd>
                             </div>
-                        </div>
+                        </dl>
                         <p class="hero-proof">Technical lead: <a href="/about/#leadership">Arunkumar V, CTO</a>
                             &middot; Winner, Zoho Partner Hackathon 2025 &middot; Zoho Master of Creator</p>
                     </div>
 
-                    <div class="hero-visual" aria-hidden="true">
-                        <div class="hero-visual-inner" style="justify-content: space-between;">
-                            <div class="hero-visual-col"
-                                style="display: flex; flex-direction: column; align-items: center; gap: var(--space-6); position: relative; z-index: 2;">
-                                <div class="hero-icon-scroll-container">
-                                    <div class="hero-icon-scroll-track">
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-crm.svg" alt="Zoho CRM"
-                                                loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-books.svg"
-                                                alt="Zoho Books" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-creator.svg" alt="Zoho Creator"
-                                                loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-desk.svg" alt="Zoho Desk"
-                                                loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-analytics.svg"
-                                                alt="Zoho Analytics" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-projects.svg"
-                                                alt="Zoho Projects" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-people.svg"
-                                                alt="Zoho People" loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-one.svg" alt="Zoho One"
-                                                loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-flow.svg" alt="Zoho Flow"
-                                                loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-campaigns.svg"
-                                                alt="Zoho Campaigns" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-catalyst.svg"
-                                                alt="Zoho Catalyst" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-cliq.svg" alt="Zoho Cliq"
-                                                loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-erp.svg" alt="Zoho ERP"
-                                                loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-forms.svg"
-                                                alt="Zoho Forms" loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-mail.svg" alt="Zoho Mail"
-                                                loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho.svg"
-                                                alt="Zoho Official" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-salesiq.svg"
-                                                alt="Zoho Sales IQ" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-sign.svg" alt="Zoho Sign"
-                                                loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-sites.svg"
-                                                alt="Zoho Sites" loading="lazy" width="48" height="48">
-                                        </div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-workdrive.svg"
-                                                alt="Zoho Workdrive" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item"><img src="/Asset/zoho/zoho-zia.svg"
-                                                alt="Zoho Zia AI" loading="lazy" width="48" height="48">
-                                        </div>
-
-                                        <!-- Duplicated for continuous scroll -->
-                                        <div class="hero-icon-item" aria-hidden="true"><img src="/Asset/zoho/zoho-crm.svg"
-                                                alt="Zoho CRM" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-books.svg" alt="Zoho Books"
-                                                loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img src="/Asset/zoho/zoho-creator.svg"
-                                                alt="Zoho Creator" loading="lazy" width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-desk.svg" alt="Zoho Desk" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-analytics.svg" alt="Zoho Analytics" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-projects.svg" alt="Zoho Projects" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-people.svg" alt="Zoho People" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-one.svg" alt="Zoho One" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-flow.svg" alt="Zoho Flow" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-campaigns.svg" alt="Zoho Campaigns" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-catalyst.svg" alt="Zoho Catalyst" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-cliq.svg" alt="Zoho Cliq" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-erp.svg" alt="Zoho ERP" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-forms.svg" alt="Zoho Forms" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-mail.svg" alt="Zoho Mail" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho.svg" alt="Zoho Official" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-salesiq.svg" alt="Zoho Sales IQ" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-sign.svg" alt="Zoho Sign" loading="lazy" width="48"
-                                                height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-sites.svg" alt="Zoho Sites" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-workdrive.svg" alt="Zoho Workdrive" loading="lazy"
-                                                width="48" height="48"></div>
-                                        <div class="hero-icon-item" aria-hidden="true"><img
-                                                src="/Asset/zoho/zoho-zia.svg" alt="Zoho Zia AI" loading="lazy"
-                                                width="48" height="48"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Added Workspace Illustration -->
-                            <div class="hero-visual-col hero-visual-image-col"
-                                style="position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; flex: 1;">
-                                <img src="/Asset/img/handshake-illustration.webp" alt="Partnership Handshake"
-                                    title="Partnership Handshake" class="hero-workspace-img" loading="lazy">
-                            </div>
-
-                            <div class="hero-accent hero-accent--1"></div>
-                            <div class="hero-accent hero-accent--2"></div>
-                            <div class="hero-accent hero-accent--3"></div>
+                    <figure class="code-card" aria-label="Example Deluge function">
+                        <div class="code-card-bar" aria-hidden="true">
+                            <span class="code-card-dots"><i></i><i></i><i></i></span>
+                            <span>deal_won_to_invoice.dg</span>
                         </div>
-                    </div>
+<pre><code><span class="tk-c">// When a CRM deal is won, raise the invoice in Zoho Books</span>
+deal = zoho.crm.<span class="tk-f">getRecordById</span>(<span class="tk-s">"Deals"</span>, dealId);
+<span class="tk-k">if</span> (deal.<span class="tk-f">get</span>(<span class="tk-s">"Stage"</span>) == <span class="tk-s">"Closed Won"</span>)
+{
+    invoice = <span class="tk-f">Map</span>();
+    invoice.<span class="tk-f">put</span>(<span class="tk-s">"customer_id"</span>, deal.<span class="tk-f">get</span>(<span class="tk-s">"Books_ID"</span>));
+    invoice.<span class="tk-f">put</span>(<span class="tk-s">"reference_number"</span>, deal.<span class="tk-f">get</span>(<span class="tk-s">"Deal_Name"</span>));
+    invoice.<span class="tk-f">put</span>(<span class="tk-s">"line_items"</span>, lineItems);
+    response = zoho.books.<span class="tk-f">createRecord</span>(
+        <span class="tk-s">"invoices"</span>, orgId, invoice, <span class="tk-s">"books"</span>);
+    <span class="tk-k">info</span> response.<span class="tk-f">get</span>(<span class="tk-s">"message"</span>);
+}</code></pre>
+                        <figcaption>An example of the Deluge we write: CRM and Books working as one system, with no
+                            re-keying.</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
-
-        <!-- === ROADMAP / PROCESS === -->
-        <section class="section section--light" id="process">
+        <!-- === PROBLEMS === -->
+        <section class="section" id="problems">
             <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Our Process</span>
-                    <h2>How We Implement</h2>
-                    <p>A proven, 8-step methodology to ensure seamless delivery and enterprise adoption.</p>
+                <div class="section-header section-header--left">
+                    <p class="section-label">Where we help</p>
+                    <h2>Problems we are usually called in to fix</h2>
                 </div>
-
-                <div class="roadmap-scroll-wrapper reveal">
-                    <div class="roadmap-scroll-indicator left">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
+                <div class="problem-grid">
+                    <div class="problem-item">
+                        <h3>Spreadsheets are running the business</h3>
+                        <p>Orders, approvals and job tracking live in shared sheets that break as soon as the team
+                            grows.</p>
                     </div>
-                    <div class="roadmap-wrapper">
-                        <div class="roadmap-track-container">
-                            <div class="roadmap-line"></div>
-                            <div class="roadmap-steps">
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">01</div>
-                                    <h3>Discovery</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">02</div>
-                                    <h3>Planning</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">03</div>
-                                    <h3>Design</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">04</div>
-                                    <h3>Development</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">05</div>
-                                    <h3>Integration</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">06</div>
-                                    <h3>Testing</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">07</div>
-                                    <h3>Deployment</h3>
-                                </div>
-                                <div class="roadmap-step">
-                                    <div class="roadmap-number">08</div>
-                                    <h3>Support</h3>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="problem-item">
+                        <h3>The CRM is set up, but nobody trusts it</h3>
+                        <p>Duplicate records, skipped stages and reports that don't match what the sales team says.</p>
                     </div>
-                    <div class="roadmap-scroll-indicator right">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
+                    <div class="problem-item">
+                        <h3>Systems that don't talk to each other</h3>
+                        <p>People re-key the same customer and order data between CRM, accounting and e-commerce.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- === SERVICES OVERVIEW === -->
-        <section class="section" id="services">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">What We Do</span>
-                    <h2>End-to-End Technology Services</h2>
-                    <p>From custom software development to Zoho implementation and system integrations, we deliver
-                        solutions that
-                        drive measurable business outcomes.</p>
-                </div>
-
-                <div class="services-grid">
-                    <!-- Software Development -->
-                    <div class="card card--service reveal reveal-delay-1">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6" />
-                                <polyline points="8 6 2 12 8 18" />
-                            </svg>
-                        </div>
-                        <h3>Software Development</h3>
-                        <p>Custom web applications, enterprise software, SaaS products, and API development tailored to
-                            your
-                            business requirements.</p>
-                        <ul class="service-list">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Web Application Development</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Custom Enterprise Software</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> SaaS Product Development</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> API Development &amp; Integration</li>
-                        </ul>
-                        <a href="/services/" class="card-link">Explore Software Development <svg viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg></a>
-                    </div>
-
-                    <!-- Zoho Services -->
-                    <div class="card card--service green reveal reveal-delay-2">
-                        <div class="card-icon"
-                            style="background-color: var(--color-secondary-bg); color: var(--color-secondary);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
-                                <line x1="8" y1="21" x2="16" y2="21" />
-                                <line x1="12" y1="17" x2="12" y2="21" />
-                            </svg>
-                        </div>
-                        <h3>Zoho Services</h3>
-                        <p>Expert Zoho implementation, customization, and ongoing management across the complete Zoho
-                            product suite.
+                    <div class="problem-item">
+                        <h3>A Zoho app that grew without a plan</h3>
+                        <p>Creator apps and Deluge scripts that only one person understands, and nobody dares change.
                         </p>
-                        <ul class="service-list">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Zoho CRM &amp; Zoho One</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Zoho Books &amp; Finance</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Zoho Creator &amp; Custom Apps</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Migration &amp; Data Sync</li>
-                        </ul>
-                        <a href="/zoho-development/" class="card-link">View Zoho Services <svg viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg></a>
                     </div>
-
-                    <!-- Integration Services -->
-                    <div class="card card--service orange reveal reveal-delay-3">
-                        <div class="card-icon"
-                            style="background-color: #FEF3CD; color: var(--color-accent-orange-dark);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="3" />
-                                <path
-                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                            </svg>
-                        </div>
-                        <h3>Integration Services</h3>
-                        <p>Connect your business systems, automate data flow, and eliminate manual processes with our
-                            integration
-                            expertise.</p>
-                        <ul class="service-list">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> CRM &amp; ERP Integrations</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Payment Gateway Integration</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Third-Party API Connections</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Data Synchronization</li>
-                        </ul>
-                        <a href="/zoho-integrations/" class="card-link">View Integration Services <svg
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg></a>
+                    <div class="problem-item">
+                        <h3>Follow-ups depend on someone remembering</h3>
+                        <p>Reminders, invoices, approvals and hand-offs that should happen automatically, but don't.</p>
                     </div>
-
-                    <!-- Digital Transformation -->
-                    <div class="card card--service red reveal reveal-delay-4">
-                        <div class="card-icon" style="background-color: #FDE8E8; color: var(--color-accent-red);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                            </svg>
-                        </div>
-                        <h3>Digital Transformation</h3>
-                        <p>Modernize legacy systems, automate business processes, and build custom platforms that scale
-                            with your
-                            growth.</p>
-                        <ul class="service-list">
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Business Process Automation</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Workflow Optimization</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Legacy System Modernization</li>
-                            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <polyline points="20 6 9 17 4 12" />
-                                </svg> Custom Business Platforms</li>
-                        </ul>
-                        <a href="/business-process-automation/" class="card-link">Explore Automation Solutions <svg
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg></a>
+                    <div class="problem-item">
+                        <h3>Off-the-shelf software almost fits</h3>
+                        <p>One critical workflow that no product supports without awkward workarounds.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- === ZOHO EXPERTISE === -->
-        <section class="section section--alt" id="zoho">
+        <!-- === SERVICES === -->
+        <section class="section section--alt" id="services">
             <div class="container">
-                <div class="zoho-highlight reveal">
+                <div class="section-header section-header--left">
+                    <p class="section-label">Services</p>
+                    <h2>What we build</h2>
+                    <p>Every engagement starts with your process, not a product. These are the pieces we usually put
+                        together.</p>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <h3><a href="/zoho-development/">Zoho Creator development</a></h3>
+                        <p>Custom applications on Zoho Creator: data models, forms, client portals, dashboards and
+                            Deluge workflows, documented so your team can own them.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3><a href="/zoho-development/">Zoho CRM implementation</a></h3>
+                        <p>Pipelines and blueprints that match how you sell, custom modules, data migration from
+                            spreadsheets or another CRM, and training.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3><a href="/zoho-development/">Deluge development</a></h3>
+                        <p>Functions, scheduled jobs, custom buttons and API calls across Zoho CRM, Creator and Books,
+                            plus reviews and fixes for scripts you already have.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3><a href="/zoho-integrations/">Zoho integrations</a></h3>
+                        <p>Connect Zoho with accounting, e-commerce, payment gateways and your own systems using REST
+                            APIs, webhooks, Zoho Flow or custom middleware.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3><a href="/business-process-automation/">Business process automation</a></h3>
+                        <p>We map the process first, then remove the manual steps across sales, finance and
+                            operations.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3><a href="/services/">Custom software</a></h3>
+                        <p>Web applications, internal tools and dashboards for the cases where Zoho is the wrong tool,
+                            built to integrate with what you already run.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- === APPROACH === -->
+        <section class="section" id="approach">
+            <div class="container">
+                <div class="approach">
+                    <div class="approach-intro">
+                        <p class="section-label">Our approach</p>
+                        <h2>Zoho first. Custom code when it earns its place.</h2>
+                        <p>Most Zoho consultancies only configure, and most software agencies only write code. We do
+                            both, so we have no reason to push you toward either. You get the simplest solution
+                            that will still hold up in two years.</p>
+                    </div>
+                    <ol class="approach-steps">
+                        <li>
+                            <span class="approach-tag">Configure</span>
+                            <p>If Zoho does it out of the box, we set it up properly instead of building something
+                                new.</p>
+                        </li>
+                        <li>
+                            <span class="approach-tag">Extend</span>
+                            <p>When built-in features stop short, we extend Zoho with Deluge, Creator and Flow.</p>
+                        </li>
+                        <li>
+                            <span class="approach-tag">Build</span>
+                            <p>When Zoho is the wrong tool, we write custom software and integrate it with your
+                                existing systems.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="zoho-strip">
+                    <p class="zoho-strip-label">Zoho products we work with</p>
+                    <ul class="zoho-strip-logos">
+                        <li><img src="/Asset/zoho/zoho-crm.svg" alt="Zoho CRM" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-creator.svg" alt="Zoho Creator" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-books.svg" alt="Zoho Books" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-flow.svg" alt="Zoho Flow" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-analytics.svg" alt="Zoho Analytics" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-desk.svg" alt="Zoho Desk" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-projects.svg" alt="Zoho Projects" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-people.svg" alt="Zoho People" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-one.svg" alt="Zoho One" width="96" height="32" loading="lazy"></li>
+                        <li><img src="/Asset/zoho/zoho-salesiq.svg" alt="Zoho SalesIQ" width="96" height="32" loading="lazy"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- === WORK === -->
+        <section class="section section--alt" id="work">
+            <div class="container">
+                <div class="section-header section-header--left">
+                    <p class="section-label">Work</p>
+                    <h2>The kind of projects we take on</h2>
+                    <p>Representative project types. Detailed case studies are in preparation; you can see
+                        independent profiles on <a href="https://clutch.co/profile/zudo-works" target="_blank"
+                            rel="noopener">Clutch</a> and <a href="https://www.upwork.com/agencies/2105729046181633035"
+                            target="_blank" rel="noopener">Upwork</a>.</p>
+                </div>
+                <div class="work-grid">
+                    <article class="work-card">
+                        <p class="work-card-tags">Zoho CRM &middot; ERP integration</p>
+                        <h3>CRM rebuild for a B2B manufacturer</h3>
+                        <p>Re-engineer the sales pipeline, migrate legacy data into Zoho CRM and connect it to the ERP
+                            so customer records stop being entered twice.</p>
+                    </article>
+                    <article class="work-card">
+                        <p class="work-card-tags">Zoho Books &middot; Automation</p>
+                        <h3>Invoicing automation for a logistics operation</h3>
+                        <p>Tie dispatch records to billing in Zoho Books, automate invoice runs and payment
+                            reconciliation across branches.</p>
+                    </article>
+                    <article class="work-card">
+                        <p class="work-card-tags">Zoho Creator &middot; Field service</p>
+                        <h3>Service management portal on Zoho Creator</h3>
+                        <p>A Creator app where technicians log jobs from the field and the data syncs straight back
+                            to the CRM dashboard.</p>
+                    </article>
+                </div>
+                <p class="section-more"><a href="/work/" class="btn btn-secondary">See all project types</a></p>
+            </div>
+        </section>
+
+        <!-- === PROCESS === -->
+        <section class="section" id="process">
+            <div class="container">
+                <div class="section-header section-header--left">
+                    <p class="section-label">How we work</p>
+                    <h2>How a project runs</h2>
+                    <p>Five stages, each with something concrete you can review before we move on.</p>
+                </div>
+                <ol class="process-list">
+                    <li class="process-step">
+                        <h3>Discovery call</h3>
+                        <p>We learn how the work flows today, which systems are involved and what has to change.</p>
+                        <p class="process-deliverable"><strong>You get:</strong> a short summary of what we heard and an
+                            honest view on whether we're the right fit.</p>
+                    </li>
+                    <li class="process-step">
+                        <h3>Scope and design</h3>
+                        <p>We design the data model, automations, integrations and user roles.</p>
+                        <p class="process-deliverable"><strong>You get:</strong> a written proposal with scope, timeline
+                            and cost.</p>
+                    </li>
+                    <li class="process-step">
+                        <h3>Build and test</h3>
+                        <p>We build in stages and test integrations and data migration before anything goes live.</p>
+                        <p class="process-deliverable"><strong>You get:</strong> regular demos of working features.</p>
+                    </li>
+                    <li class="process-step">
+                        <h3>Go-live and training</h3>
+                        <p>We move the data, switch over and train administrators and end users.</p>
+                        <p class="process-deliverable"><strong>You get:</strong> documentation your team can maintain.
+                        </p>
+                    </li>
+                    <li class="process-step">
+                        <h3>Support</h3>
+                        <p>Optional monthly support for fixes, enhancements and new automations.</p>
+                        <p class="process-deliverable"><strong>You get:</strong> one team that already knows your
+                            system.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- === TEAM === -->
+        <section class="section section--alt" id="team">
+            <div class="container">
+                <div class="team-block">
                     <div>
-                        <span class="section-label">Zoho Implementation Experts</span>
-                        <h2>Expert Zoho Implementation &amp; Customization</h2>
-                        <p class="mt-4 text-muted" style="line-height: var(--leading-relaxed);">As
-                            Zoho implementation specialists, we bring deep expertise across the entire Zoho product
-                            ecosystem. From
-                            initial setup and data migration to advanced customization and workflow automation, we
-                            ensure your Zoho
-                            investment delivers maximum business value.</p>
-                        <div style="margin-top: var(--space-6);">
-                            <div class="partner-badge" style="margin-bottom: var(--space-6);">
-                                <img src="/Asset/zoho/zoho.svg" alt="Zoho" loading="lazy"
-                                    width="120" height="120">
-                                <span>Implementation Experts</span>
-                            </div>
-                        </div>
-                        <a href="/zoho-development/" class="btn btn-primary" style="margin-top: var(--space-4);">Explore
-                            Zoho
-                            Services</a>
+                        <p class="section-label">Who you'll work with</p>
+                        <h2>You talk to the people who build it</h2>
+                        <p>Technical decisions on every project are made by an engineer who builds on Zoho every day,
+                            not passed through account managers. We work remotely and agree working hours that
+                            overlap with your time zone at the start of each project.</p>
+                        <p><a href="/about/" class="text-link">More about Zudo Works</a></p>
                     </div>
-
-                    <div class="zoho-highlight-logos">
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-crm.svg" alt="Zoho CRM" loading="lazy"
-                                width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-books.svg" alt="Zoho Books"
-                                loading="lazy" width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-creator.svg" alt="Zoho Creator" loading="lazy"
-                                width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-desk.svg" alt="Zoho Desk" loading="lazy"
-                                width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-analytics.svg" alt="Zoho Analytics"
-                                loading="lazy" width="90" height="28">
-                        </div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-projects.svg" alt="Zoho Projects"
-                                loading="lazy" width="90" height="28">
-                        </div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-people.svg" alt="Zoho People"
-                                loading="lazy" width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-one.svg" alt="Zoho One" loading="lazy"
-                                width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-flow.svg" alt="Zoho Flow" loading="lazy"
-                                width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-campaigns.svg" alt="Zoho Campaigns"
-                                loading="lazy" width="90" height="28">
-                        </div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-salesiq.svg" alt="Zoho SalesIQ"
-                                loading="lazy" width="90" height="28"></div>
-                        <div class="zoho-logo-item"><img src="/Asset/zoho/zoho-zia.svg" alt="Zoho Zia AI"
-                                loading="lazy" width="90" height="28"></div>
+                    <div class="team-card">
+                        <p class="team-card-name">Arunkumar V</p>
+                        <p class="team-card-role">Chief Technology Officer</p>
+                        <ul>
+                            <li>Winner, Zoho Partner Hackathon 2025 (as a developer)</li>
+                            <li>Zoho Master of Creator certificate</li>
+                            <li>Leads Zoho Creator, Deluge and integration work</li>
+                        </ul>
+                        <a href="https://www.linkedin.com/in/arunkumar-v-5509aa1aa/" target="_blank"
+                            rel="noopener">View LinkedIn profile</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- === INTEGRATION PREVIEW === -->
-        <section class="section" id="integrations">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Integrations</span>
-                    <h2>Connect Your Business Systems</h2>
-                    <p>Eliminate data silos and manual work. We build seamless integrations between your existing tools,
-                        Zoho
-                        ecosystem, and third-party platforms.</p>
-                </div>
-
-                <div class="integration-flow reveal">
-                    <div class="integration-flow-step">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
-                        </svg>
-                        <div class="step-title">Your Business Systems</div>
-                    </div>
-                    <div class="integration-flow-arrow">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <polyline points="12 5 19 12 12 19" />
-                        </svg>
-                    </div>
-                    <div class="integration-flow-step"
-                        style="border-color: var(--color-primary); background-color: var(--color-primary-bg);">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="3" />
-                            <path
-                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                        </svg>
-                        <div class="step-title">Our Integration Layer</div>
-                    </div>
-                    <div class="integration-flow-arrow">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <polyline points="12 5 19 12 12 19" />
-                        </svg>
-                    </div>
-                    <div class="integration-flow-step">
-                        <img src="/Asset/zoho/zoho.svg" alt="Zoho" style="height: 28px; width: auto;"
-                            loading="lazy" width="64" height="64">
-                        <div class="step-title">Zoho Ecosystem</div>
-                    </div>
-                    <div class="integration-flow-arrow">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <polyline points="12 5 19 12 12 19" />
-                        </svg>
-                    </div>
-                    <div class="integration-flow-step">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                        </svg>
-                        <div class="step-title">Automated Workflows</div>
-                    </div>
-                </div>
-
-                <div class="text-center reveal" style="margin-top: var(--space-8);">
-                    <a href="/zoho-integrations/" class="btn btn-secondary">View Integration Services</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- === SOLUTIONS BY BUSINESS NEED === -->
-        <section class="section section--alt" id="solutions">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Solutions</span>
-                    <h2>Solutions for Every Business Challenge</h2>
-                    <p>We organize our work around the problems you need to solve not just the technology.</p>
-                </div>
-
-                <div class="solutions-grid">
-                    <div class="solution-card reveal reveal-delay-1">
-                        <h3>CRM Transformation</h3>
-                        <p>Unify your customer data, automate follow-ups, and give your sales team a single source of
-                            truth with
-                            Zoho CRM.</p>
-                        <div class="solution-products">
-                            <span class="solution-tag">Zoho CRM</span>
-                            <span class="solution-tag">Zoho SalesIQ</span>
-                        </div>
-                    </div>
-                    <div class="solution-card reveal reveal-delay-2">
-                        <h3>Business Automation</h3>
-                        <p>Eliminate repetitive manual tasks across departments with intelligent workflow automation and
-                            process
-                            orchestration.</p>
-                        <div class="solution-products">
-                            <span class="solution-tag">Zoho Flow</span>
-                            <span class="solution-tag">Zoho Creator</span>
-                        </div>
-                    </div>
-                    <div class="solution-card reveal reveal-delay-3">
-                        <h3>Sales Automation</h3>
-                        <p>Accelerate your sales pipeline with automated lead scoring, email sequences, and real-time
-                            deal tracking.
-                        </p>
-                        <div class="solution-products">
-                            <span class="solution-tag">Zoho CRM</span>
-                            <span class="solution-tag">Zoho Campaigns</span>
-                        </div>
-                    </div>
-                    <div class="solution-card reveal reveal-delay-1">
-                        <h3>Finance Automation</h3>
-                        <p>Streamline invoicing, expense management, and financial reporting with integrated accounting
-                            solutions.
-                        </p>
-                        <div class="solution-products">
-                            <span class="solution-tag">Zoho Books</span>
-                            <span class="solution-tag">Zoho Analytics</span>
-                        </div>
-                    </div>
-                    <div class="solution-card reveal reveal-delay-2">
-                        <h3>Customer Support</h3>
-                        <p>Deliver exceptional customer experiences with multi-channel support, ticket management, and
-                            self-service
-                            portals.</p>
-                        <div class="solution-products">
-                            <span class="solution-tag">Zoho Desk</span>
-                            <span class="solution-tag">Zoho SalesIQ</span>
-                        </div>
-                    </div>
-                    <div class="solution-card reveal reveal-delay-3">
-                        <h3>Analytics &amp; Reporting</h3>
-                        <p>Make data-driven decisions with real-time dashboards, custom reports, and business
-                            intelligence across
-                            all departments.</p>
-                        <div class="solution-products">
-                            <span class="solution-tag">Zoho Analytics</span>
-                            <span class="solution-tag">Zoho Zia AI</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center reveal" style="margin-top: var(--space-10);">
-                    <a href="/business-process-automation/" class="btn btn-primary">View All Solutions</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- === PORTFOLIO PREVIEW === -->
-        <section class="section" id="portfolio">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Portfolio</span>
-                    <h2>The Kind of Work We Do</h2>
-                    <p>Typical Zoho and custom software projects we take on. Detailed case studies are in
-                        preparation; meanwhile you can see our verified profiles on
-                        <a href="https://clutch.co/profile/zudo-works" target="_blank" rel="noopener">Clutch</a> and
-                        <a href="https://www.upwork.com/agencies/2105729046181633035" target="_blank" rel="noopener">Upwork</a>.</p>
-                </div>
-
-                <div class="portfolio-grid">
-                    <div class="card card--portfolio reveal reveal-delay-1">
-                        <div class="card-image">
-                            <svg class="icon-inline" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-primary);"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <span class="badge badge-primary">CRM</span>
-                                <span class="badge badge-secondary">Integration</span>
-                            </div>
-                            <h3>CRM Transformation for B2B Manufacturing</h3>
-                            <p class="text-small text-muted" style="margin-top: var(--space-2);">Re-engineered sales
-                                pipelines and
-                                migrated legacy data to Zoho CRM, integrating it directly with their ERP. Eliminated
-                                double data entry
-                                and unified customer records.</p>
-                        </div>
-                    </div>
-
-                    <div class="card card--portfolio reveal reveal-delay-2">
-                        <div class="card-image">
-                            <svg class="icon-inline" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-accent-orange);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M14.5 12.5h-3.25a1.25 1.25 0 0 0 0 2.5h1.5a1.25 1.25 0 0 1 0 2.5H9.5"/></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <span class="badge badge-primary">Automation</span>
-                                <span class="badge badge-orange">Finance</span>
-                            </div>
-                            <h3>Finance Automation for Logistics Firm</h3>
-                            <p class="text-small text-muted" style="margin-top: var(--space-2);">Implemented Zoho Books
-                                and automated
-                                the entire invoicing lifecycle, tying dispatch logs to automated billing cycles and
-                                payment
-                                reconciliation.</p>
-                        </div>
-                    </div>
-
-                    <div class="card card--portfolio reveal reveal-delay-3">
-                        <div class="card-image">
-                            <svg class="icon-inline" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color: var(--color-accent-blue);"><rect x="3" y="4" width="18" height="12" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/><polyline points="10 8 8 10 10 12"/><polyline points="14 8 16 10 14 12"/></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <span class="badge badge-primary">Custom Software</span>
-                            </div>
-                            <h3>Service Management Portal via Zoho Creator</h3>
-                            <p class="text-small text-muted" style="margin-top: var(--space-2);">Built a custom
-                                field-service portal
-                                from scratch that allowed technicians to log jobs and instantly sync data back to the
-                                central CRM
-                                dashboard.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center reveal" style="margin-top: var(--space-10);">
-                    <a href="/work/" class="btn btn-secondary">View Project Types</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- === WHY CHOOSE US === -->
-        <section class="section section--alt" id="why-us">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Why Zudo Works</span>
-                    <h2>What Sets Us Apart</h2>
-                    <p>We combine deep Zoho expertise with custom software development and integration capabilities so
-                        you get
-                        one partner for your entire technology strategy.</p>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature-item reveal reveal-delay-1">
-                        <div class="feature-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="feature-title">Zoho Implementation Experts</div>
-                            <p>Hands-on experience across 20+ Zoho products, led by a Zoho Master of Creator. We don't just
-                                set up your tools; we design solutions around your business processes.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item reveal reveal-delay-2">
-                        <div class="feature-icon"
-                            style="background-color: var(--color-secondary-bg); color: var(--color-secondary);">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6" />
-                                <polyline points="8 6 2 12 8 18" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="feature-title">Custom Development</div>
-                            <p>When off-the-shelf is not enough, we build. Web apps, enterprise software, APIs whatever
-                                your
-                                business needs, we engineer it.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item reveal reveal-delay-3">
-                        <div class="feature-icon"
-                            style="background-color: #FEF3CD; color: var(--color-accent-orange-dark);">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="3" />
-                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="feature-title">End-to-End Integrations</div>
-                            <p>We connect your CRM, finance, operations, and support systems into a unified ecosystem
-                                eliminating
-                                data silos and manual work.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item reveal reveal-delay-4">
-                        <div class="feature-icon" style="background-color: #FDE8E8; color: var(--color-accent-red);">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="feature-title">Dedicated Support</div>
-                            <p>Your technology partner from implementation through ongoing optimization. We provide
-                                training, support,
-                                and continuous improvement.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- === GETTING STARTED (Onboarding) === -->
-        <section class="section section--alt" id="getting-started">
-            <div class="container">
-                <div class="section-header reveal">
-                    <span class="section-label">Getting Started</span>
-                    <h2>Start Your Zoho Journey in 3 Simple Steps</h2>
-                    <p>Our streamlined onboarding process gets you from first conversation to live implementation
-                        quickly.</p>
-                </div>
-
-                <div class="process-steps reveal">
-                    <div class="card card--process reveal" style="text-align: center; padding: var(--space-8);">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4); font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
-                            1</div>
-                        <div>
-                            <h3>1. Free Consultation</h3>
-                            <p style="color: var(--color-muted); font-size: var(--text-sm); line-height: 1.6;">We
-                                discuss
-                                your challenges, existing tools, and what you want to achieve with Zoho.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="card card--process reveal" style="text-align: center; padding: var(--space-8);">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4); font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
-                            2</div>
-                        <div>
-                            <h3>2. Design &amp; Build</h3>
-                            <p style="color: var(--color-muted); font-size: var(--text-sm); line-height: 1.6;">We
-                                architect
-                                a custom solution, implement the software, and migrate your data securely.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="card card--process reveal" style="text-align: center; padding: var(--space-8);">
-                        <div
-                            style="width: 64px; height: 64px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-4); font-size: 1.5rem; font-weight: bold; flex-shrink: 0;">
-                            3</div>
-                        <div>
-                            <h3>3. Launch &amp; Train</h3>
-                            <p style="color: var(--color-muted); font-size: var(--text-sm); line-height: 1.6;">We help
-                                you go live, train your team, and ensure smooth adoption.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="text-center reveal" style="margin-top: var(--space-8);">
-                    <a href="/contact/" class="btn btn-primary btn-lg">Book Your Free Consultation</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- === FAQ SECTION (AEO) === -->
+        <!-- === FAQ === -->
         <section class="section" id="faq">
-            <div class="container" style="max-width: 800px;">
-                <div class="section-header reveal">
-                    <span class="section-label">FAQs</span>
-                    <h2>Frequently Asked Questions</h2>
-                    <p>Straight answers to the questions buyers ask us most.</p>
+            <div class="container container--prose">
+                <div class="section-header section-header--left">
+                    <p class="section-label">FAQs</p>
+                    <h2>Frequently asked questions</h2>
                 </div>
-
-                <div class="faq-list reveal">
+                <div class="faq-list">
                     <div class="faq-item">
                         <button type="button" class="faq-question" aria-expanded="false">
                             <span>What does Zudo Works do?</span>
@@ -1245,15 +712,13 @@
 
         <!-- === FINAL CTA === -->
         <section class="cta-banner" id="cta">
-            <div class="container reveal">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Let us discuss how our software development, Zoho implementation, and integration expertise can help
-                    you
-                    streamline operations and accelerate growth.</p>
+            <div class="container">
+                <h2>Tell us what's slowing your team down</h2>
+                <p>Book a discovery call, or send us your project details and we'll reply within one business day.
+                </p>
                 <div class="btn-group justify-center">
-                    <a href="/contact/" class="btn btn-white btn-lg">Talk to Our Experts</a>
-                    <button type="button" id="booking-link-2" class="btn btn-secondary btn-lg" aria-haspopup="dialog">Book a Discovery Call</button>
-                    <a href="/services/" class="btn btn-outline-white btn-lg">Explore Services</a>
+                    <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
+                    <a href="/contact/#contact-form" class="btn btn-outline-white btn-lg">Send Project Details</a>
                 </div>
             </div>
         </section>
@@ -1368,30 +833,29 @@
             </div>
         </div>
     </footer>
-    <script defer src="/js/site.js?v=9f762b7927"></script>
-    <!-- @/footer -->
     <!-- Zoho Bookings dialog (embed script loads on first open) -->
-        <div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
-            aria-labelledby="booking-modal-title" hidden>
-            <div class="booking-modal-content">
-                <div class="booking-modal-header">
-                    <h2 id="booking-modal-title">Book a discovery call</h2>
-                    <button type="button" class="booking-modal-close" id="close-bookings-modal"
-                        aria-label="Close booking window">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" aria-hidden="true">
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                        </svg>
-                    </button>
-                </div>
-                <div id="inline-container" class="booking-modal-body"></div>
-                <p class="booking-modal-fallback">Calendar not loading?
-                    <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
-                        rel="noopener">Open the booking page in a new tab</a>.</p>
+    <div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
+        aria-labelledby="booking-modal-title" hidden>
+        <div class="booking-modal-content">
+            <div class="booking-modal-header">
+                <h2 id="booking-modal-title">Book a discovery call</h2>
+                <button type="button" class="booking-modal-close" id="close-bookings-modal"
+                    aria-label="Close booking window">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
             </div>
+            <div id="inline-container" class="booking-modal-body"></div>
+            <p class="booking-modal-fallback">Calendar not loading?
+                <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
+                    rel="noopener">Open the booking page in a new tab</a>.</p>
         </div>
-        <script defer src="/js/booking.js?v=20261008"></script>
+    </div>
+    <script defer src="/js/site.js?v=a035697543"></script>
+    <!-- @/footer -->
 </body>
 
 </html>

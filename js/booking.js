@@ -1,7 +1,7 @@
 /* ============================================================
    Zoho Bookings Dialog
-   Opens #custom-bookings-modal from any [aria-haspopup="dialog"]
-   booking button, loads the Zoho Bookings embed script on first
+   Opens #custom-bookings-modal from any [data-booking] link or
+   button (links fall back to /contact/ without JavaScript), loads the Zoho Bookings embed script on first
    open only, closes on Escape or backdrop click,
    and returns focus to the button that opened it.
    ============================================================ */
@@ -14,7 +14,7 @@
 
   var modal = document.getElementById('custom-bookings-modal');
   var closeBtn = document.getElementById('close-bookings-modal');
-  var triggers = document.querySelectorAll('#booking-link, #booking-link-2');
+  var triggers = document.querySelectorAll('[data-booking]');
   if (!modal || !triggers.length) return;
 
   var embedded = false;
@@ -46,7 +46,7 @@
     lastTrigger = e ? e.currentTarget : null;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
-    if (window.dataLayer) window.dataLayer.push({ event: 'book_call_click', cta_location: lastTrigger ? lastTrigger.id : '' });
+    if (window.dataLayer) window.dataLayer.push({ event: 'book_call_click', cta_location: lastTrigger ? (lastTrigger.closest('section, header, footer, .top-bar') || {}).id || lastTrigger.className : '' });
     if (typeof window.Bookings !== 'undefined') embed(); else loadEmbedScript();
     if (closeBtn) closeBtn.focus();
   }
@@ -58,6 +58,7 @@
   }
 
   triggers.forEach(function (btn) {
+    btn.setAttribute('aria-haspopup', 'dialog');
     btn.addEventListener('click', open);
   });
 

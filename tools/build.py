@@ -29,8 +29,8 @@ SITE = 'https://zudoworks.com'
 SKIP_DIRS = {'.git', '.kilo', 'tools', 'Asset', 'css', 'js', 'node_modules'}
 
 CSS_SOURCES = ['variables', 'reset', 'base', 'components', 'hero', 'sections',
-               'responsive', 'cookie-consent', 'helpers']
-JS_SOURCES = ['main', 'animations', 'counter', 'cookie-consent', 'salesiq']
+               'responsive', 'cookie-consent', 'helpers', 'system']
+JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq']
 
 # Pages that should not appear in the sitemap or get a canonical tag
 NOINDEX = {'/404.html'}

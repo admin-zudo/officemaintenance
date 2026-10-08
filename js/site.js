@@ -2,7 +2,7 @@
 /* --- js/main.js --- */
 /* ============================================================
    Main JavaScript   Navbar, Mobile Menu, Smooth Scroll,
-   Scroll Progress, FAQ Accordion, Roadmap Scroll
+   FAQ Accordion, Roadmap Scroll
    ============================================================ */
 
 (function () {
@@ -23,52 +23,38 @@
   window.addEventListener('scroll', handleNavbarScroll, { passive: true });
   handleNavbarScroll(); // initial check
 
-  // -- Scroll Progress Bar -----------------------------------
-  const progressBar = document.getElementById('scrollProgress');
-
-  function updateScrollProgress() {
-    if (!progressBar) return;
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    if (docHeight <= 0) return;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    progressBar.style.width = scrollPercent + '%';
-  }
-
-  window.addEventListener('scroll', updateScrollProgress, { passive: true });
-  updateScrollProgress();
-
   // -- Mobile menu toggle ------------------------------------
   const toggle = document.querySelector('.navbar-toggle');
   const mobileNav = document.querySelector('.navbar-nav');
 
   if (toggle && mobileNav) {
+    function setMenu(open) {
+      toggle.classList.toggle('open', open);
+      mobileNav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Close navigation menu' : 'Open navigation menu');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+
     toggle.addEventListener('click', function () {
-      const isOpen = toggle.classList.toggle('open');
-      mobileNav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+      setMenu(!toggle.classList.contains('open'));
     });
 
-    // Close mobile menu when a link is clicked
-    mobileNav.querySelectorAll('.navbar-link').forEach(function (link) {
-      link.addEventListener('click', function () {
-        toggle.classList.remove('open');
-        mobileNav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
+    // Close when any menu link (including the CTA) is used
+    mobileNav.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () { setMenu(false); });
     });
 
-    // Close on escape key
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && toggle.classList.contains('open')) {
-        toggle.classList.remove('open');
-        mobileNav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        setMenu(false);
         toggle.focus();
       }
+    });
+
+    // Leaving the mobile layout with the menu open would leave the page scroll-locked
+    window.matchMedia('(min-width: 1100px)').addEventListener('change', function (e) {
+      if (e.matches) setMenu(false);
     });
   }
 
@@ -196,87 +182,6 @@
 })();
 
 
-/* --- js/counter.js --- */
-/* ============================================================
-   Animated Number Counter   Counts from 0 to target value
-   Triggered by Intersection Observer when element scrolls
-   into view. Respects prefers-reduced-motion.
-   
-   Usage: Add data-count="100" to any element.
-   The text content will animate from 0 to 100.
-   Supports optional data-count-suffix="+" etc.
-   ============================================================ */
-
-(function () {
-  'use strict';
-
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const counters = document.querySelectorAll('[data-count]');
-
-  if (!counters.length) return;
-
-  // Easing function: ease-out cubic
-  function easeOutCubic(t) {
-    return 1 - Math.pow(1 - t, 3);
-  }
-
-  function animateCounter(el) {
-    const target = parseInt(el.getAttribute('data-count'), 10);
-    const suffix = el.getAttribute('data-count-suffix') || '';
-    const prefix = el.getAttribute('data-count-prefix') || '';
-    const duration = 1800; // ms
-    const startTime = performance.now();
-
-    if (reducedMotion || isNaN(target)) {
-      el.textContent = prefix + target + suffix;
-      return;
-    }
-
-    function update(currentTime) {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const eased = easeOutCubic(progress);
-      const currentValue = Math.round(eased * target);
-
-      el.textContent = prefix + currentValue + suffix;
-
-      if (progress < 1) {
-        requestAnimationFrame(update);
-      }
-    }
-
-    requestAnimationFrame(update);
-  }
-
-  // Use IntersectionObserver to trigger animation on scroll
-  const observer = new IntersectionObserver(
-    function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.3,
-      rootMargin: '0px 0px -20px 0px'
-    }
-  );
-
-  counters.forEach(function (counter) {
-    // Set initial value to 0 (or prefix + 0 + suffix)
-    if (!reducedMotion) {
-      const suffix = counter.getAttribute('data-count-suffix') || '';
-      const prefix = counter.getAttribute('data-count-prefix') || '';
-      counter.textContent = prefix + '0' + suffix;
-    }
-    observer.observe(counter);
-  });
-
-})();
-
-
 /* --- js/cookie-consent.js --- */
 /* ============================================================
    Cookie Consent Banner — JS
@@ -399,6 +304,82 @@
     init();
   }
 
+})();
+
+/* --- js/booking.js --- */
+/* ============================================================
+   Zoho Bookings Dialog
+   Opens #custom-bookings-modal from any [data-booking] link or
+   button (links fall back to /contact/ without JavaScript), loads the Zoho Bookings embed script on first
+   open only, closes on Escape or backdrop click,
+   and returns focus to the button that opened it.
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  var EMBED_SRC = 'https://bookings.nimbuspop.com/assets/embed.js';
+  var BOOKING_URL = 'https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065';
+
+  var modal = document.getElementById('custom-bookings-modal');
+  var closeBtn = document.getElementById('close-bookings-modal');
+  var triggers = document.querySelectorAll('[data-booking]');
+  if (!modal || !triggers.length) return;
+
+  var embedded = false;
+  var scriptRequested = false;
+  var lastTrigger = null;
+
+  function embed() {
+    if (embedded || typeof window.Bookings === 'undefined') return;
+    window.Bookings.inlineEmbed({
+      url: BOOKING_URL,
+      parent: '#inline-container',
+      height: '100%'
+    });
+    embedded = true;
+  }
+
+  function loadEmbedScript() {
+    if (scriptRequested) return;
+    scriptRequested = true;
+    var s = document.createElement('script');
+    s.src = EMBED_SRC;
+    s.async = true;
+    s.onload = embed;
+    document.body.appendChild(s);
+  }
+
+  function open(e) {
+    if (e) e.preventDefault();
+    lastTrigger = e ? e.currentTarget : null;
+    modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    if (window.dataLayer) window.dataLayer.push({ event: 'book_call_click', cta_location: lastTrigger ? (lastTrigger.closest('section, header, footer, .top-bar') || {}).id || lastTrigger.className : '' });
+    if (typeof window.Bookings !== 'undefined') embed(); else loadEmbedScript();
+    if (closeBtn) closeBtn.focus();
+  }
+
+  function close() {
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastTrigger) lastTrigger.focus();
+  }
+
+  triggers.forEach(function (btn) {
+    btn.setAttribute('aria-haspopup', 'dialog');
+    btn.addEventListener('click', open);
+  });
+
+  if (closeBtn) closeBtn.addEventListener('click', close);
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modal.hidden) close();
+  });
 })();
 
 /* --- js/salesiq.js --- */
