@@ -50,7 +50,7 @@ AUTHOR = {
     "image": SITE + "/Asset/img/team/arunkumar-v.jpg",
     "url": SITE + "/about/#leadership",
     "worksFor": {"@id": SITE + "/#organization"},
-    "award": "Master of Creator award, Zoho Creator Partner Hackathon 2025",
+    "award": "Master of Creator (Global Winner) award, Zoho Creator Partner Hackathon 2025",
     "sameAs": ["https://www.linkedin.com/in/arunkumar-v-5509aa1aa/", "https://www.upwork.com/freelancers/arunk191"],
 }
 PUBLISHER = {"@type": "Organization", "@id": SITE + "/#organization", "name": "Zudo Works",

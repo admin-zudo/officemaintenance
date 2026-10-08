@@ -105,7 +105,7 @@ ARTICLES.append(dict(
     related=['zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps', 'migrate-hubspot-salesforce-to-zoho-crm'],
     body='''
 <p>Search for &ldquo;Zoho developer&rdquo; and you will find official Zoho Partners, specialist agencies, freelancers on marketplaces and generalist IT firms that &ldquo;also do Zoho&rdquo;. All of them can be the right choice. This guide helps you tell which one is right for your project.</p>
-<p>A note on transparency: Zudo Works has applied to the Zoho Partner program and the application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. Our CTO, Arunkumar V, received the &ldquo;Master of Creator&rdquo; award at the Zoho Creator Partner Hackathon 2025. We mention this so you can weigh our advice accordingly.</p>
+<p>A note on transparency: Zudo Works has applied to the Zoho Partner program and the application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. Our CTO, Arunkumar V, received the &ldquo;Master of Creator (Global Winner)&rdquo; award at the Zoho Creator Partner Hackathon 2025. We mention this so you can weigh our advice accordingly.</p>
 
 <h2 id="partner-vs-developer">Zoho Partner, developer or agency: what&rsquo;s the difference?</h2>
 <p><strong>Zoho Partners</strong> are companies in Zoho&rsquo;s official partner program. Partners can resell Zoho licences, are listed in Zoho&rsquo;s partner directory, and have met Zoho&rsquo;s requirements for their partner level. That is a useful signal of commitment to the platform.</p>
@@ -170,7 +170,7 @@ ARTICLES.append(dict(
         ('Do I need an official Zoho Partner to implement Zoho?',
          'No. Partners can resell licences and are vetted by Zoho, which is a useful signal, but independent Zoho developers and agencies also build high-quality systems. Judge providers on relevant experience, documentation, testing and support.'),
         ('Is Zudo Works a Zoho Partner?',
-         'Our Zoho Partner application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. Our CTO, Arunkumar V, received the "Master of Creator" award at the Zoho Creator Partner Hackathon 2025.'),
+         'Our Zoho Partner application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award at the Zoho Creator Partner Hackathon 2025.'),
         ('Who should own the Zoho account?',
          'You should. Keep the subscription and the super-admin account in your company\'s name, and give your developer an admin user. That way you keep control of your data and configuration if you change providers.'),
     ],
