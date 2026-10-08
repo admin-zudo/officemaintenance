@@ -112,7 +112,7 @@ def card(a, level='h3', featured=False):
     cls = 'post-card post-card--featured' if featured else 'post-card'
     return f'''          <article class="{cls}">
             <a class="post-card-image" href="/insights/{a['slug']}/" tabindex="-1" aria-hidden="true">
-              <img src="/Asset/img/insights/{a['slug']}.webp" alt="" width="1600" height="900" loading="lazy">
+              <img src="/Asset/img/insights/{a['slug']}.webp" alt="{html.escape(a['cover_alt'])}" width="1600" height="900" loading="lazy">
             </a>
             <div class="post-card-body">
               <p class="post-card-category">{a['category']}</p>
@@ -198,7 +198,7 @@ def article_page(a):
           <h1>{a['title']}</h1>
           <p class="post-lead">{a['lead']}</p>
           <div class="post-byline">
-            <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="" width="44" height="44">
+            <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="44" height="44">
             <div>
               <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo Works</p>
               <p class="post-byline-meta">{byline(a)}</p>
