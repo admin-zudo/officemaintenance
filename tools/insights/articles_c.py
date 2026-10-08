@@ -94,7 +94,7 @@ ARTICLES.append(dict(
 # ------------------------------------------------------------------ Hiring guide (merged rewrite)
 ARTICLES.append(dict(
     slug='zoho-partner-software-development',
-    title='How to Choose a Zoho Developer or Zoho Partner: A Buyer&rsquo;s Checklist',
+    title='How to Choose a Zoho Development Partner or Developer: A Buyer&rsquo;s Checklist',
     seo_title='How to Choose a Zoho Developer or Zoho Partner: Buyer’s Checklist (2026)',
     description='What the Zoho Partner program means, when an independent Zoho developer is a better fit, the questions to ask before hiring, red flags to watch for and what your contract should cover.',
     lead='Choosing who builds your Zoho system matters more than which edition you buy. A good developer saves you money for years; a poor one leaves you with automations nobody understands. This checklist is what we would want a client to ask us.',
@@ -173,5 +173,110 @@ ARTICLES.append(dict(
          'Our Zoho Partner application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award at the Zoho Creator Partner Hackathon 2025.'),
         ('Who should own the Zoho account?',
          'You should. Keep the subscription and the super-admin account in your company\'s name, and give your developer an admin user. That way you keep control of your data and configuration if you change providers.'),
+    ],
+))
+
+# ------------------------------------------------------------------ Zoho Partner Program explainer
+ARTICLES.append(dict(
+    slug='zoho-partner-program-explained',
+    title='Zoho Partner Program Explained: Authorized, Advanced and Premium Partners',
+    seo_title='Zoho Partner Program: Authorized, Advanced and Premium Partners (2026)',
+    description='What an authorized Zoho partner is, how Zoho ranks Authorized, Advanced and Premium partners, how to verify a partner and when an independent Zoho developer fits better.',
+    lead='Search for a Zoho partner and you will see dozens of firms calling themselves authorized, certified or premium. This guide explains what those labels actually mean in Zoho&rsquo;s program, how to check them in two minutes, and how to decide what kind of help your project needs.',
+    category='Buying guide', keyword='zoho partner',
+    published='2026-10-08', modified='2026-10-08',
+    cover_alt='A card showing the three Zoho partner tiers, Authorized, Advanced and Premium, beside a directory search for verifying a partner',
+    caption='Zoho ranks consulting partners in three tiers and lists them in its Find a Partner directory.',
+    related=['zoho-partner-software-development', 'zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps'],
+    body='''
+<p>&ldquo;Zoho partner&rdquo; is one of the most searched phrases by businesses about to implement Zoho CRM, Zoho Creator or Zoho One. It is also one of the most loosely used. Some firms are listed partners in Zoho&rsquo;s official program, some have certifications but no partner listing, and some simply describe themselves as a &ldquo;Zoho partner&rdquo; in the everyday sense of the word.</p>
+<p>The requirements below come from Zoho&rsquo;s own <a href="https://www.zoho.com/partners/partner-tiers.html" rel="noopener" target="_blank">partner tiers page</a>, checked in October 2026. Zoho reviews its program from time to time, so confirm the current rules there before you rely on them.</p>
+<p>A note on transparency: Zudo Works has applied to the Zoho Partner program and the application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. That is exactly why we wrote this guide: you should be able to check any provider&rsquo;s claim, including ours.</p>
+
+<h2 id="what-is">What is a Zoho partner?</h2>
+<p>A Zoho partner is a company that has joined Zoho&rsquo;s partner program to sell, implement and support Zoho products. Partners can resell Zoho licences, are trained and certified on Zoho products and, once they reach the Authorized tier, can be listed in Zoho&rsquo;s official <a href="https://www.zoho.com/partners/find-zoho-partner.html" rel="noopener" target="_blank">Find a Partner</a> directory.</p>
+<p>Being a partner is a commercial relationship with Zoho. It tells you the firm has met Zoho&rsquo;s requirements; it does not, on its own, tell you whether they are the right fit for your specific project.</p>
+
+<h2 id="tiers">Zoho partner tiers: Authorized, Advanced and Premium</h2>
+<p>Zoho ranks its consulting partners in three public tiers. New partners start in an onboarding stage and must qualify for the first tier.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Tier</th><th scope="col">What Zoho requires</th><th scope="col">What it tells you</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Authorized</th><td>Reach a US$5,000 revenue threshold, obtain the required certifications and show implementation success within six months of onboarding</td><td>The firm is active, certified and has delivered projects. Authorized is the minimum tier for a directory listing.</td></tr>
+    <tr><th scope="row">Advanced</th><td>A value score above 400 points (out of 1,000)</td><td>Consistent licence sales, customer results and certified staff</td></tr>
+    <tr><th scope="row">Premium</th><td>A value score above 600 points (out of 1,000)</td><td>Zoho&rsquo;s highest tier: larger practices with strong sales and customer metrics</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Partners who do not meet the Authorized criteria within six months may be re-evaluated or removed from the program. Tiers are reassessed every year, and updated tiers take effect by January of the following year.</p>
+
+<h2 id="value-score">How Zoho scores its partners</h2>
+<p>The value score behind the Advanced and Premium tiers has four parts, with a maximum of 1,000 points:</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Area</th><th scope="col">What is measured</th><th scope="col">Maximum points</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Revenue</th><td>Year-on-year growth in Zoho licensing revenue (up to 400) and new customers (up to 100)</td><td>500</td></tr>
+    <tr><th scope="row">Customer success</th><td>Customer retention (up to 100) and customer satisfaction ratings (up to 100), with points deducted for validated escalations</td><td>200</td></tr>
+    <tr><th scope="row">Market readiness</th><td>Zoho certifications (up to 100), qualifying project scope documents or marketplace integrations (up to 50) and Zoho-approved case studies (up to 50)</td><td>200</td></tr>
+    <tr><th scope="row">Zoho engagement</th><td>Size of the Zoho sales practice (up to 25) and Zoho-related campaigns and branding (up to 75)</td><td>100</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Half of the available points relate to licence revenue and customer numbers. In practice, a higher tier usually means a bigger Zoho sales practice. It is a useful signal of scale and commitment, but it is not a direct measure of technical depth in Deluge, Zoho Creator or custom integrations.</p>
+
+<h2 id="verify">How to verify an authorized Zoho partner in two minutes</h2>
+<ol>
+  <li><strong>Search the official directory.</strong> Open Zoho&rsquo;s <a href="https://www.zoho.com/partners/find-zoho-partner.html" rel="noopener" target="_blank">Find a Partner</a> page and search for the company by name or filter by country. Authorized, Advanced and Premium partners with an approved profile are listed there with their tier.</li>
+  <li><strong>Ask for their partner profile link.</strong> A genuine partner can send it immediately. Check that the company name and country match the firm you are talking to.</li>
+  <li><strong>Check the wording.</strong> &ldquo;Zoho Certified&rdquo; usually refers to individual certifications, which are useful but not the same as partner status. &ldquo;Zoho Partner&rdquo; without a tier or directory listing is worth a follow-up question.</li>
+  <li><strong>Ask which products they are certified on.</strong> A CRM-focused partner may have little Zoho Creator or Zoho Books experience, and the reverse.</li>
+  <li><strong>Ask for similar work.</strong> Whatever the label, ask for a walkthrough of a project like yours.</li>
+</ol>
+
+<h2 id="by-country">Finding a Zoho partner in your country</h2>
+<p>The Find a Partner directory can be filtered by country, which helps if you need on-site workshops, invoicing in your currency or a provider who knows local tax rules. For most projects, though, Zoho implementation is delivered remotely: workshops, configuration, data migration and training all happen over video calls and screen sharing.</p>
+<ul>
+  <li><strong>India:</strong> Zoho was founded and is headquartered in Chennai, and India has a large community of Zoho providers in Delhi NCR, Mumbai, Bengaluru, Hyderabad, Pune, Chennai and beyond. See <a href="/locations/india/">Zoho consultants in India</a>.</li>
+  <li><strong>United States:</strong> providers are spread across every state; time-zone overlap matters more than city. See <a href="/locations/united-states/">Zoho consultants for the United States</a>.</li>
+  <li><strong>United Kingdom:</strong> check experience with UK GDPR, VAT and Making Tax Digital if you use Zoho Books. See <a href="/locations/united-kingdom/">Zoho consultants for the UK</a>.</li>
+  <li><strong>Australia and New Zealand:</strong> check GST setup in Zoho Books and experience with Xero, which many businesses there use. See <a href="/locations/australia/">Australia</a> and <a href="/locations/new-zealand/">New Zealand</a>.</li>
+  <li><strong>Europe and elsewhere</strong> (for example the Czech Republic, Germany, the Middle East or Southeast Asia): look for experience with your Zoho data centre and local requirements. See <a href="/locations/">all countries we work with</a>.</li>
+</ul>
+
+<h2 id="resellers">Zoho resellers vs implementation partners</h2>
+<p>Many partners do both, but they are different jobs:</p>
+<ul>
+  <li><strong>Reselling</strong> means selling you Zoho licences. You can also buy licences directly from Zoho.</li>
+  <li><strong>Implementation</strong> means designing and building your system: modules, fields, Blueprint, Deluge functions, integrations, data migration and training.</li>
+</ul>
+<p>Whoever you buy licences from, keep the Zoho account and its super-admin login in your own company&rsquo;s name. Ask a reseller who owns the account, how billing works and what happens if you change provider later.</p>
+
+<h2 id="partner-or-developer">Do you need a Zoho partner or a Zoho developer?</h2>
+<ul>
+  <li><strong>Choose a listed partner</strong> when you want to buy licences and services from one firm, need a large multi-team rollout, or your procurement rules require a vendor with an official Zoho status.</li>
+  <li><strong>An independent Zoho developer or team can fit better</strong> when most of the work is custom: Zoho Creator apps, Deluge functions, integrations with non-Zoho systems or custom software around Zoho.</li>
+  <li><strong>Many businesses use both:</strong> licences directly from Zoho or through a partner, and a specialist developer for the custom build.</li>
+</ul>
+<p>Our <a href="/insights/zoho-partner-software-development/">checklist for choosing a Zoho development partner</a> lists the ten questions to ask any provider, and the red flags to watch for.</p>
+
+<h2 id="zudo-works">Where Zudo Works fits</h2>
+<p>We are an independent Zoho development team based in Chennai, India, working with businesses in the United States, United Kingdom, Australia, New Zealand and India. Our Zoho Partner application is in progress. Our CTO, Arunkumar V, received the &ldquo;Master of Creator (Global Winner)&rdquo; award from Zoho Creator at the Zoho Creator Partner Hackathon 2025. We charge US$15 per hour, quote fixed prices for defined projects, and include one month of free support and onboarding after every build. You buy your Zoho licences directly from Zoho, in your own name.</p>
+<p>See our <a href="/zoho-development/">Zoho development services</a>, <a href="/work/">past project work</a> or <a href="/pricing/#calculator">estimate your project cost</a>.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+''',
+    faqs=[
+        ('What is an authorized Zoho partner?',
+         'An Authorized Zoho Partner is a company in the first tier of Zoho\'s partner program. To qualify, a partner must reach a US$5,000 revenue threshold, obtain the required certifications and show implementation success within six months of onboarding. Authorized partners with an approved profile are listed in Zoho\'s Find a Partner directory.'),
+        ('What is the difference between Authorized, Advanced and Premium Zoho partners?',
+         'They are Zoho\'s three partner tiers. Authorized is the entry tier. Advanced partners score more than 400 points and Premium partners more than 600 points out of 1,000 in Zoho\'s annual value scoring, which measures licence revenue, customer success, certifications and engagement with Zoho.'),
+        ('How do I verify a Zoho partner?',
+         'Search for the company in Zoho\'s official Find a Partner directory at zoho.com/partners, or ask the firm for its partner profile link. Check that the name, country and tier match. "Zoho Certified" usually refers to individual certifications rather than partner status.'),
+        ('How does a company become a Zoho partner?',
+         'A company applies to Zoho\'s partner program and, after onboarding, must reach the Authorized tier requirements within six months: a US$5,000 revenue threshold, the required certifications and successful implementations. Tiers are then reviewed every year.'),
+        ('Is Zudo Works a Zoho Partner?',
+         'Our Zoho Partner application is in progress, so we do not describe ourselves as a Zoho Partner. We are an independent Zoho development team. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award from Zoho Creator at the Zoho Creator Partner Hackathon 2025.'),
     ],
 ))

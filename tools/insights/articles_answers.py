@@ -29,4 +29,9 @@ ANSWERS = {
         'You do not need an official Zoho Partner to implement Zoho; you need relevant, demonstrable experience. Ask '
         'to see similar projects, who will do the work, how data migration and testing are handled, and what is '
         'documented. Keep the Zoho account in your own name and agree support after launch in writing.',
+    'zoho-partner-program-explained':
+        'A Zoho partner is a company in Zoho\'s official partner program, ranked in three tiers: Authorized, Advanced '
+        'and Premium. Authorized partners have met a US$5,000 revenue threshold plus certification and project-success '
+        'requirements; Advanced and Premium partners score above 400 and 600 points out of 1,000. Verify any partner '
+        'in Zoho\'s Find a Partner directory.',
 }

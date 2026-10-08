@@ -19,6 +19,9 @@ META = {
         'Zoho Analytics and AI: Building a Data Foundation',
         'Prepare Zoho Analytics data for trustworthy dashboards and AI features like Ask Zia: connect sources, model, clean, secure and define your metrics.'),
     'zoho-partner-software-development': (
-        'How to Choose a Zoho Developer [Checklist]',
+        'How to Choose a Zoho Development Partner [Checklist]',
         'Zoho Partner or independent developer? Ten questions to ask before hiring, red flags to avoid and what your Zoho project agreement should cover.'),
+    'zoho-partner-program-explained': (
+        'Zoho Partner Program: Authorized vs Premium Partners',
+        'What an authorized Zoho partner is, how Zoho ranks Authorized, Advanced and Premium partners, and how to verify any Zoho partner in two minutes.'),
 }

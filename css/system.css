@@ -2041,3 +2041,65 @@ img.author-avatar {
   font-size: var(--text-xs);
   line-height: 1.4;
 }
+
+/* ── Locations ────────────────────────────────────────────── */
+
+.project-card h3 {
+  font-size: var(--fs-h3);
+  margin: 0;
+}
+
+.loc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: var(--space-6);
+}
+
+.loc-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background-color: var(--color-white);
+  border: var(--border-default);
+  border-radius: var(--radius-xl);
+}
+
+.loc-card h3 {
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+.loc-card p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.area-groups {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.area-group h3 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-lg);
+}
+
+.area-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 4 12rem;
+  column-gap: var(--space-6);
+}
+
+.area-list li {
+  break-inside: avoid;
+  padding: var(--space-1) 0;
+  color: var(--color-body);
+}
+
+.area-cities {
+  margin: var(--space-6) 0 0;
+  color: var(--color-muted);
+}

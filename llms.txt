@@ -35,6 +35,9 @@
 
 Typical timelines: most focused Zoho CRM or Zoho Creator projects take 2 to 8 weeks; multi-app rollouts with several integrations usually take 8 to 16 weeks. Timelines are confirmed in writing after a discovery call.
 
+## Areas served
+Based in Chennai, India. Works remotely with businesses in the United States, United Kingdom, Australia, New Zealand and India (every state and union territory), plus Europe (including the Czech Republic), the Middle East and Asia. Zudo Works is an independent Zoho development team, not yet an approved Zoho Partner.
+
 ## Key pages
 - Home: https://zudoworks.com/
 - Services: https://zudoworks.com/services/
@@ -55,6 +58,13 @@ Typical timelines: most focused Zoho CRM or Zoho Creator projects take 2 to 8 we
 - AI agents in Zoho CRM: https://zudoworks.com/insights/zoho-agentic-ai-hyperautomation/
 - Zoho Analytics data foundations: https://zudoworks.com/insights/zoho-analytics-agentic-data-foundations-2026/
 - How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
+- Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
+- Locations (countries served): https://zudoworks.com/locations/
+- Zoho consultants in India (all states and union territories): https://zudoworks.com/locations/india/
+- Zoho consultants for the United States (all 50 states): https://zudoworks.com/locations/united-states/
+- Zoho consultants for the United Kingdom: https://zudoworks.com/locations/united-kingdom/
+- Zoho consultants for Australia: https://zudoworks.com/locations/australia/
+- Zoho consultants for New Zealand: https://zudoworks.com/locations/new-zealand/
 - Project experience: https://zudoworks.com/work/
 - About and leadership: https://zudoworks.com/about/
 - Contact and booking: https://zudoworks.com/contact/

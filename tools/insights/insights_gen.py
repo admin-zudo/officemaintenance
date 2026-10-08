@@ -31,6 +31,7 @@ SERVICES_FOR = {
     'zoho-agentic-ai-hyperautomation': ['/zoho-crm-development/', '/business-process-automation/', '/deluge-development/'],
     'zoho-analytics-agentic-data-foundations-2026': ['/zoho-integrations/', '/zoho-development/', '/business-process-automation/'],
     'zoho-partner-software-development': ['/zoho-development/', '/pricing/', '/support-maintenance/'],
+    'zoho-partner-program-explained': ['/zoho-development/', '/zoho-creator-development/', '/zoho-crm-development/'],
 }
 
 
