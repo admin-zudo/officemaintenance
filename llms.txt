@@ -1,6 +1,6 @@
 # Zudo Works
 
-> Zudo Works is a software company that builds Zoho Creator applications, implements and customises Zoho CRM, writes Deluge scripts and API integrations, and develops custom business software. We work remotely with businesses in the United States, United Kingdom, Australia, New Zealand and India.
+> Zudo Works is a software company that builds Zoho Creator applications, implements and customizes Zoho CRM, writes Deluge scripts and API integrations, and develops custom business software. We work remotely with businesses in the United States, United Kingdom, Australia, New Zealand and India.
 
 ## Company facts
 - Name: Zudo Works
@@ -9,15 +9,16 @@
 - Email: admin@zudoworks.com
 - Phone: +91 63854 35382
 - Website: https://zudoworks.com/
-- Track record: 20+ projects delivered by our team for 10+ clients; hands-on experience across 20+ Zoho products
+- Experience: team members have worked on 20+ projects for 10+ client businesses, much of it as developers at a previous organization; hands-on experience across 15+ core Zoho applications and 25+ other Zoho products
+- After-launch offer: every development project includes one month of free support and onboarding after launch
 - Zoho partner status: application in progress (Zudo Works is not yet an approved Zoho Partner)
 
 ## People
-- Arunkumar V, Chief Technology Officer. Winner of the Zoho Partner Hackathon 2025 (as a developer) and holder of Zoho's Master of Creator certificate. LinkedIn: https://www.linkedin.com/in/arunkumar-v-5509aa1aa/
+- Arunkumar V, Chief Technology Officer. Winner of the Zoho Partner Hackathon 2025 (as a developer) and holder of Zoho's Master of Creator certificate. As a developer at a previous organization he worked on projects including a point-of-sale system integrated with Zoho One (Trakas Smokers Shop, USA), a student management system (Avalon Care Training, UK), healthcare injury-mapping widgets (USA), executive SQL dashboards (Master Manufacturing, China), a travel pricing engine (Green Mind Travel, Thailand), legal case automation on ManageEngine (SIMAH Legal Management, Saudi Arabia) and a loan-management platform (A Square Loans, India). LinkedIn: https://www.linkedin.com/in/arunkumar-v-5509aa1aa/
 
 ## Services
 - Zoho Creator development: custom applications, data models, portals, dashboards and Deluge workflows.
-- Zoho CRM implementation and customisation: custom modules, blueprints, automation, data migration and training.
+- Zoho CRM implementation and customization: custom modules, blueprints, automation, data migration and training.
 - Deluge development: functions, scheduled jobs, custom buttons and API calls across Zoho CRM, Creator and Books.
 - Zoho integrations: Zoho REST APIs, webhooks, Zoho Flow and custom middleware connecting Zoho to accounting, e-commerce, payment and in-house systems.
 - Zoho Books, Inventory, Desk, Analytics, Projects, People and Zoho One implementation.
@@ -29,7 +30,7 @@
 2. Solution design: data model, automations, integrations and user roles.
 3. Build and integration, with testing and data-migration trial runs.
 4. Go-live, training for administrators and end users, and documentation.
-5. Optional monthly support retainer.
+5. One month of free support and onboarding after launch, then an optional monthly support retainer.
 
 Typical timelines: most focused Zoho CRM or Zoho Creator projects take 2 to 8 weeks; multi-app rollouts with several integrations usually take 8 to 16 weeks. Timelines are confirmed in writing after a discovery call.
 
@@ -45,7 +46,7 @@ Typical timelines: most focused Zoho CRM or Zoho Creator projects take 2 to 8 we
 - Custom software development: https://zudoworks.com/custom-software-development/
 - Support and maintenance: https://zudoworks.com/support-maintenance/
 - Insights (articles and guides): https://zudoworks.com/insights/
-- Project types: https://zudoworks.com/work/
+- Project experience: https://zudoworks.com/work/
 - About and leadership: https://zudoworks.com/about/
 - Contact and booking: https://zudoworks.com/contact/
 

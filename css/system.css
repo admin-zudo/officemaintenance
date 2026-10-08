@@ -698,3 +698,177 @@ html:not(.js) .reveal-right {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── Work: project experience ─────────────────────────────── */
+
+.provenance-note {
+  max-width: 44rem;
+  margin: var(--space-8) 0 0;
+  padding: var(--space-4) var(--space-5);
+  border-left: 3px solid var(--color-primary);
+  background-color: var(--color-white);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  color: var(--color-body);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  background-color: var(--color-white);
+  border: var(--border-default);
+  border-radius: var(--radius-xl);
+}
+
+.project-card h2 {
+  font-size: var(--fs-h3);
+  margin: 0;
+}
+
+.project-card > p:not(.project-card-meta) {
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.project-card .chip-list {
+  margin-top: auto;
+  padding-top: var(--space-3);
+}
+
+.project-card-meta {
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  color: var(--color-primary);
+}
+
+.project-card--more {
+  background-color: var(--color-primary-bg);
+  border-style: dashed;
+}
+
+@media (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Contact ──────────────────────────────────────────────── */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: var(--space-8) clamp(2rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.contact-form-panel h2,
+.contact-card h2 {
+  font-size: var(--fs-h3);
+  margin-bottom: var(--space-3);
+}
+
+.contact-form-note {
+  color: var(--color-muted);
+  margin-bottom: var(--space-6);
+}
+
+.contact-form-frame {
+  display: block;
+  width: 100%;
+  height: 720px;
+  border: 0;
+}
+
+.contact-aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.contact-card,
+.company-card {
+  padding: var(--space-8);
+  background-color: var(--color-white);
+  border: var(--border-default);
+  border-radius: var(--radius-xl);
+}
+
+.contact-card--primary {
+  background-color: var(--color-primary-bg);
+  border-color: transparent;
+}
+
+.contact-card--primary p {
+  color: var(--color-body);
+  margin-bottom: var(--space-5);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+}
+
+.contact-details dt {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  margin-bottom: var(--space-1);
+}
+
+.contact-details dd {
+  margin: 0;
+  color: var(--color-heading);
+  overflow-wrap: anywhere;
+}
+
+.contact-details a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--color-primary);
+  font-weight: var(--weight-medium);
+}
+
+.next-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding-left: var(--space-5);
+  color: var(--color-body);
+}
+
+.company-card img {
+  margin-bottom: var(--space-6);
+}
+
+@media (max-width: 959px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Phase E polish */
+.next-steps { list-style: decimal; }
+.next-steps li { padding-left: var(--space-1); }
+.next-steps li::marker { color: var(--color-primary); font-weight: var(--weight-semibold); }
+.contact-form-note a { color: var(--color-primary); text-decoration: underline; }
+.company-card img { width: 56px; height: auto; }
+.split h2 { margin-bottom: var(--space-4); }
+.split > div > p + p { margin-top: var(--space-4); }
+#leadership .leader-card { margin-inline: 0; }
+.footer-links li { font-size: var(--text-sm); }
