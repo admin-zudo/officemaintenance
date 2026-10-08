@@ -34,10 +34,12 @@
 /guide    /insights/    301
 /guide/    /insights/    301
 /guide/index.html    /insights/    301
-/guide/zoho-partner-software-development-guide.html    /insights/zoho-partner-software-development-guide/    301
-/guide/zoho-partner-software-development-guide    /insights/zoho-partner-software-development-guide/    301
+/guide/zoho-partner-software-development-guide.html    /insights/zoho-partner-software-development/    301
+/guide/zoho-partner-software-development-guide    /insights/zoho-partner-software-development/    301
 
 # Internal files that should not be served publicly
 /audit.py    /    301
 /blog/.automation-history.json    /insights/    301
 /tools/*    /    301
+/insights/zoho-partner-software-development-guide    /insights/zoho-partner-software-development/    301
+/insights/zoho-partner-software-development-guide/    /insights/zoho-partner-software-development/    301

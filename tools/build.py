@@ -30,7 +30,7 @@ SKIP_DIRS = {'.git', '.kilo', 'tools', 'Asset', 'css', 'js', 'node_modules'}
 
 CSS_SOURCES = ['variables', 'reset', 'base', 'components', 'hero', 'sections',
                'responsive', 'cookie-consent', 'helpers', 'system']
-JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq']
+JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq', 'media']
 
 # Pages that should not appear in the sitemap or get a canonical tag
 NOINDEX = {'/404.html'}

@@ -10,11 +10,12 @@
 - WhatsApp: +91 63854 35382 (https://wa.me/916385435382); voice calls for India-based enquiries on the same number
 - Website: https://zudoworks.com/
 - Experience: team members have worked on 20+ projects for 10+ client businesses, much of it as developers at a previous organization; hands-on experience across 15+ core Zoho applications and 25+ other Zoho products
+- Pricing: US$15 per hour; fixed-price projects quoted from estimated days and complexity (calculator at https://zudoworks.com/pricing/)
 - After-launch offer: every development project includes one month of free support and onboarding after launch
 - Zoho partner status: application in progress (Zudo Works is not yet an approved Zoho Partner)
 
 ## People
-- Arunkumar V, Chief Technology Officer. Received the "Master of Creator" award from Zoho Creator for outstanding performance in the Zoho Creator Partner Hackathon 2025. As a developer at a previous organization he worked on projects including a point-of-sale system integrated with Zoho One (Trakas Smokers Shop, USA), a student management system (Avalon Care Training, UK), healthcare injury-mapping widgets (USA), executive SQL dashboards (Master Manufacturing, China), a travel pricing engine (Green Mind Travel, Thailand), legal case automation on ManageEngine (SIMAH Legal Management, Saudi Arabia) and a loan-management platform (A Square Loans, India). LinkedIn: https://www.linkedin.com/in/arunkumar-v-5509aa1aa/
+- Arunkumar V, Chief Technology Officer. Received the "Master of Creator" award from Zoho Creator for outstanding performance in the Zoho Creator Partner Hackathon 2025. As a developer at a previous organization he worked on projects including a point-of-sale system integrated with Zoho One (Trakas Smokers Shop, USA), a student management system (Avalon Care Training, UK), healthcare injury-mapping widgets (USA), executive SQL dashboards (Master Manufacturing, China), a travel pricing engine (Green Mind Travel, Thailand), legal case automation on ManageEngine (SIMAH Legal Management, Saudi Arabia) and a loan-management platform (A Square Loans, India). LinkedIn: https://www.linkedin.com/in/arunkumar-v-5509aa1aa/ . Introduction video: https://youtube.com/shorts/0yaz3NYp3J8 . Author of the Zudo Works Insights articles.
 
 ## Services
 - Zoho Creator development: custom applications, data models, portals, dashboards and Deluge workflows.
@@ -46,6 +47,14 @@ Typical timelines: most focused Zoho CRM or Zoho Creator projects take 2 to 8 we
 - Custom software development: https://zudoworks.com/custom-software-development/
 - Support and maintenance: https://zudoworks.com/support-maintenance/
 - Insights (articles and guides): https://zudoworks.com/insights/
+- Pricing and project calculator: https://zudoworks.com/pricing/ (US$15 per hour; fixed prices for defined projects)
+- Zoho Creator vs Power Apps: https://zudoworks.com/insights/zoho-creator-vs-power-apps/
+- Migrating from HubSpot or Salesforce to Zoho CRM: https://zudoworks.com/insights/migrate-hubspot-salesforce-to-zoho-crm/
+- Zoho CRM implementation cost: https://zudoworks.com/insights/zoho-crm-implementation-cost/
+- Deluge script examples: https://zudoworks.com/insights/deluge-script-examples/
+- AI agents in Zoho CRM: https://zudoworks.com/insights/zoho-agentic-ai-hyperautomation/
+- Zoho Analytics data foundations: https://zudoworks.com/insights/zoho-analytics-agentic-data-foundations-2026/
+- How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
 - Project experience: https://zudoworks.com/work/
 - About and leadership: https://zudoworks.com/about/
 - Contact and booking: https://zudoworks.com/contact/

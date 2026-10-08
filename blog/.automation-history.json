@@ -1,16 +1,67 @@
 {
   "articles": [
     {
-      "title": "From Passive Dashboards to Agentic Data Foundations in Zoho Analytics",
-      "url": "/blog/zoho-analytics-agentic-data-foundations-2026.html",
-      "keyword": "Zoho Analytics AI 2026",
-      "date": "2026-09-15"
+      "title": "Zoho Creator vs Microsoft Power Apps: An Honest Comparison for Growing Businesses",
+      "url": "/insights/zoho-creator-vs-power-apps/",
+      "keyword": "zoho creator vs power apps",
+      "date": "2026-10-08",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-creator-vs-power-apps.webp"
     },
     {
-      "title": "The Shift to Agentic AI and Hyperautomation in Zoho CRM (2026)",
-      "url": "/blog/zoho-agentic-ai-hyperautomation.html",
-      "keyword": "zoho agentic ai",
-      "date": "2026-09-15"
+      "title": "Migrating from HubSpot or Salesforce to Zoho CRM: A Step-by-Step Plan",
+      "url": "/insights/migrate-hubspot-salesforce-to-zoho-crm/",
+      "keyword": "migrate hubspot to zoho crm",
+      "date": "2026-10-08",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp"
+    },
+    {
+      "title": "How Much Does a Zoho CRM Implementation Cost? A Transparent Breakdown",
+      "url": "/insights/zoho-crm-implementation-cost/",
+      "keyword": "zoho crm implementation cost",
+      "date": "2026-10-08",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-crm-implementation-cost.webp"
+    },
+    {
+      "title": "Deluge Script Examples: 10 Real Automations for Zoho CRM, Creator and Books",
+      "url": "/insights/deluge-script-examples/",
+      "keyword": "deluge script examples",
+      "date": "2026-10-08",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/deluge-script-examples.webp"
+    },
+    {
+      "title": "AI Agents in Zoho CRM: What They Can Do Today and How to Prepare",
+      "url": "/insights/zoho-agentic-ai-hyperautomation/",
+      "keyword": "zoho crm ai agents",
+      "date": "2026-09-15",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp"
+    },
+    {
+      "title": "Getting Your Data Ready for AI in Zoho Analytics: A Practical Foundation",
+      "url": "/insights/zoho-analytics-agentic-data-foundations-2026/",
+      "keyword": "zoho analytics ai",
+      "date": "2026-09-15",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp"
+    },
+    {
+      "title": "How to Choose a Zoho Developer or Zoho Partner: A Buyer’s Checklist",
+      "url": "/insights/zoho-partner-software-development/",
+      "keyword": "how to choose a zoho developer",
+      "date": "2026-09-15",
+      "updated": "2026-10-08",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-partner-software-development.webp"
     }
   ]
 }

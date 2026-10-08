@@ -2,8 +2,13 @@
    Cookie Consent Banner — JS
    Stores the visitor's choice in localStorage for 365 days and
    applies it to Google Consent Mode v2 (defaults are set inline
-   in each page <head>). Zoho PageSense loads only after "Accept".
-   "Accept" = analytics allowed. "Essential only" = analytics off.
+   in each page <head>).
+   Zoho PageSense (enquiry and visit analytics) loads:
+   - after "Accept", everywhere;
+   - before any choice, only outside the UK/EEA/Switzerland
+     (detected from the device time zone), mirroring the
+     Consent Mode defaults;
+   - never after "Essential only".
    ============================================================ */
 
 (function () {
@@ -19,6 +24,16 @@
 
   function write(key, value) {
     try { localStorage.setItem(key, value); } catch (e) { }
+  }
+
+  // UK, EEA and Swiss visitors must opt in before analytics run
+  function needsOptIn() {
+    try {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      return /^(Europe|Atlantic\/(Reykjavik|Canary|Madeira|Azores|Faroe))\//.test(tz);
+    } catch (e) {
+      return true;
+    }
   }
 
   function getConsent() {
@@ -77,7 +92,7 @@
       '    <button type="button" id="cookie-decline">Essential Only</button>',
       '  </div>',
       '  <div class="cookie-text">',
-      '    <p>We use essential cookies to run this site. With your consent we also use analytics cookies (Google Analytics and Zoho PageSense) to understand how the site is used. Where the law requires it, analytics stay off until you accept. See our <a href="/privacy-policy.html">Privacy Policy</a>.</p>',
+      '    <p>We use essential cookies to run this site. With your consent we also use analytics cookies (Google Analytics and Zoho PageSense) to understand how the site is used. Where the law requires it, analytics stay off until you accept. See our <a href="/privacy/">Privacy Policy</a>.</p>',
       '  </div>',
       '</div>'
     ].join('');
@@ -110,6 +125,7 @@
       if (consent === 'accepted') loadPageSense();
       return;
     }
+    if (!needsOptIn()) loadPageSense();
     showBanner();
   }
 
