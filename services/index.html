@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- @head -->
     <meta charset="UTF-8">
@@ -28,6 +29,7 @@
         gtag('config', 'G-SJ4JC252SY');
     </script>
     <meta name="theme-color" content="#226DB4">
+    <link rel="canonical" href="https://zudoworks.com/services/">
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
     <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
@@ -37,153 +39,67 @@
     <link rel="stylesheet" href="/css/site.css?v=1348a4574e">
     <!-- @/head -->
 
-  <meta name="robots" content="noindex, nofollow">
-  <title>Page Not Found | Zudo Works</title>
-  <meta name="description" content="The page you were looking for doesn't exist. Let's get you back on track.">
+  <title>Custom IT Services & Zoho Implementation Solutions | Zudo Works</title>
+  <meta name="description"
+    content="Explore our range of IT services: custom software development, Zoho ecosystem implementation, API integrations, and digital transformation solutions.">
+  <meta name="keywords"
+    content="Custom Software Development, Zoho Implementation, API Integrations, Digital Transformation, IT Services, Zoho Implementation Services, Software Solutions">
 
-  <style>
-    .error-page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: var(--space-10) var(--space-6);
-      background: var(--gradient-hero);
-      position: relative;
-      overflow: hidden;
-    }
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IT Services &amp; Zoho Solutions | Zudo Works">
+  <meta property="og:description"
+    content="Custom software development, Zoho implementation, system integrations, and digital transformation solutions for growing enterprises.">
+  <meta property="og:url" content="https://zudoworks.com/services/">
+  <meta property="og:image" content="https://zudoworks.com/Asset/og/zudo-works.jpg">
+  <meta property="og:site_name" content="Zudo Works">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://zudoworks.com/Asset/og/zudo-works.jpg">
+  <meta name="twitter:title" content="IT Services &amp; Zoho Solutions | Zudo Works">
 
-    /* Animated floating blobs */
-    .error-blob {
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0.07;
-      animation: blobFloat 8s ease-in-out infinite;
-    }
-    .error-blob--1 {
-      width: 400px; height: 400px;
-      background: var(--color-primary);
-      top: -100px; left: -100px;
-      animation-delay: 0s;
-    }
-    .error-blob--2 {
-      width: 300px; height: 300px;
-      background: var(--color-secondary);
-      bottom: -80px; right: -80px;
-      animation-delay: 4s;
-    }
-    @keyframes blobFloat {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(20px, -20px) scale(1.05); }
-    }
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Services",
+  "description": "Custom software development, Zoho implementation, system integrations, and digital transformation solutions.",
+  "url": "https://zudoworks.com/services/",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://zudoworks.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://zudoworks.com/services/"
+      }
+    ]
+  }
+}
+  </script>
 
-    .error-content {
-      position: relative;
-      z-index: 1;
-      max-width: 580px;
-    }
-
-    .error-code {
-      font-size: clamp(6rem, 20vw, 10rem);
-      font-weight: 800;
-      line-height: 1;
-      background: var(--gradient-text);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: var(--space-4);
-      letter-spacing: -0.04em;
-    }
-
-    .error-title {
-      font-size: var(--text-2xl);
-      font-weight: var(--weight-bold);
-      color: var(--color-heading);
-      margin-bottom: var(--space-4);
-    }
-
-    .error-description {
-      font-size: var(--text-md);
-      color: var(--color-muted);
-      line-height: var(--leading-relaxed);
-      margin-bottom: var(--space-8);
-    }
-
-    .error-actions {
-      display: flex;
-      gap: var(--space-4);
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .error-links {
-      margin-top: var(--space-10);
-      padding-top: var(--space-8);
-      border-top: 1px solid var(--color-border);
-    }
-
-    .error-links p {
-      font-size: var(--text-sm);
-      color: var(--color-muted);
-      margin-bottom: var(--space-4);
-    }
-
-    .error-nav-links {
-      display: flex;
-      gap: var(--space-6);
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .error-nav-links a {
-      font-size: var(--text-sm);
-      color: var(--color-primary);
-      font-weight: var(--weight-medium);
-      transition: opacity var(--transition-fast);
-    }
-
-    .error-nav-links a:hover {
-      opacity: 0.7;
-    }
-
-    /* Countdown timer bar */
-    .redirect-bar {
-      width: 100%;
-      height: 3px;
-      background: var(--color-border);
-      border-radius: 2px;
-      margin-top: var(--space-6);
-      overflow: hidden;
-    }
-
-    .redirect-bar-fill {
-      height: 100%;
-      background: var(--gradient-primary);
-      border-radius: 2px;
-      width: 100%;
-      animation: countdown 12s linear forwards;
-    }
-
-    @keyframes countdown {
-      from { width: 100%; }
-      to { width: 0%; }
-    }
-
-    .redirect-note {
-      font-size: var(--text-xs);
-      color: var(--color-muted);
-      margin-top: var(--space-3);
-      opacity: 0.8;
-    }
-
-    #countdown-num {
-      font-weight: var(--weight-semibold);
-      color: var(--color-primary);
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Software Development and Business Automation",
+  "provider": {
+    "@type": "Organization",
+    "name": "Zudo Works",
+    "url": "https://zudoworks.com"
+  },
+  "areaServed": "Worldwide",
+  "description": "Custom software development, Zoho implementation, system integrations, and digital transformation."
+}
+  </script>
 </head>
+
 <body>
     <!-- @header -->
     <!-- Google Tag Manager (noscript) -->
@@ -239,7 +155,7 @@
 
             <nav aria-label="Main navigation">
                 <ul class="navbar-nav" id="navbar-nav">
-                    <li><a href="/services/" class="navbar-link">Services</a></li>
+                    <li><a href="/services/" class="navbar-link active" aria-current="page">Services</a></li>
                     <li><a href="/zoho-development/" class="navbar-link">Zoho</a></li>
                     <li><a href="/zoho-integrations/" class="navbar-link">Integrations</a></li>
                     <li><a href="/business-process-automation/" class="navbar-link">Automation</a></li>
@@ -267,41 +183,264 @@
 
 
   <main id="main-content">
-    <div class="error-page">
-      <!-- Background blobs -->
-      <div class="error-blob error-blob--1" aria-hidden="true"></div>
-      <div class="error-blob error-blob--2" aria-hidden="true"></div>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span class="breadcrumb-current" aria-current="page">Services</span>
+        </nav>
+        <h1 class="text-gradient" style="margin-bottom: var(--space-4);">Our Services</h1>
+        <p style="max-width: 700px; margin: 0 auto;">End-to-end technology services to help your business operate more
+          efficiently, scale confidently, and compete effectively in a digital-first world.</p>
+      </div>
+    </section>
 
-      <div class="error-content">
-        <div class="error-code" aria-label="Error 404">404</div>
-        <h1 class="error-title">Page Not Found</h1>
-        <p class="error-description">
-          Looks like this page took a detour. It may have been moved, renamed, or never existed.
-          Let's get you back to the right place.
-        </p>
-        <div class="error-actions">
-          <a href="/" class="btn btn-primary btn-lg">
-            <svg class="icon-inline" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: var(--space-2);"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Go to Homepage
-          </a>
-          <a href="/contact/" class="btn btn-outline btn-lg">
-            <svg class="icon-inline" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-right: var(--space-2);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Contact Us
-          </a>
-        </div>
-
-        <div class="error-links">
-          <p>Or try one of these popular pages:</p>
-          <nav class="error-nav-links" aria-label="Helpful links">
-            <a href="/services/">Services</a>
-            <a href="/zoho-development/">Zoho Development</a>
-            <a href="/work/">Our Work</a>
-            <a href="/zoho-integrations/">Integrations</a>
-            <a href="/about/">About Us</a>
-          </nav>
+    <!-- Software Development -->
+    <section class="section" id="software-development">
+      <div class="container">
+        <div class="two-col reveal">
+          <div>
+            <span class="section-label">Software Development</span>
+            <h2><span class="text-gradient">Custom Software</span> That Fits Your Business</h2>
+            <p class="mt-4 text-muted" style="line-height: var(--leading-relaxed);">We
+              design and build software solutions that address your specific business challenges &mdash; from web
+              applications
+              and enterprise platforms to SaaS products and APIs. Every solution is engineered for scalability,
+              performance, and long-term maintainability.</p>
+            <ul class="service-list grid grid-2" style="margin-top: var(--space-6); gap: var(--space-3);">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Web Application Development</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Custom Enterprise Software</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> SaaS Product Development</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> API Development &amp; Documentation</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Mobile-Responsive Web Applications</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Database Design &amp; Optimization</li>
+            </ul>
+          </div>
+          <div>
+            <div class="card" style="border-top: 3px solid var(--color-primary);">
+              <h4 style="margin-bottom: var(--space-4);">Our Development Process</h4>
+              <div class="process-steps" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5);">
+                <div class="process-step">
+                  <h4>Discovery &amp; Requirements</h4>
+                  <p>We analyze your business needs, map workflows, and define clear technical requirements.</p>
+                </div>
+                <div class="process-step">
+                  <h4>Architecture &amp; Design</h4>
+                  <p>System architecture, UI/UX design, and technical specifications before writing code.</p>
+                </div>
+                <div class="process-step">
+                  <h4>Development &amp; Testing</h4>
+                  <p>Iterative development with regular reviews, automated testing, and quality assurance.</p>
+                </div>
+                <div class="process-step">
+                  <h4>Deployment &amp; Support</h4>
+                  <p>Production deployment, monitoring, training, and ongoing maintenance support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Zoho Services -->
+    <section class="section section--alt" id="zoho-services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Zoho Services</span>
+          <h2><span class="text-gradient">Complete Zoho</span> Ecosystem Expertise</h2>
+          <p>As Zoho Implementation Experts, we provide end-to-end Zoho services from initial implementation to advanced
+            customization and ongoing optimization.</p>
+        </div>
+
+        <div class="grid grid-3 reveal">
+          <div class="card">
+            <div class="card-icon">
+              <img src="/Asset/zoho/zoho-crm.svg" alt="Zoho CRM Logo" loading="lazy" width="48" height="48" loading="lazy">
+            </div>
+            <h3>Zoho CRM</h3>
+            <p>Lead management, pipeline automation, custom modules, reporting dashboards, and sales process
+              optimization.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="/Asset/zoho/zoho-books.svg" alt="Zoho Books Logo" loading="lazy" width="48"
+                height="48">
+            </div>
+            <h3>Zoho Books</h3>
+            <p>Accounting setup, invoice automation, bank reconciliation, expense tracking, and financial reporting
+              configuration.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="/Asset/zoho/zoho-creator.svg" alt="Zoho Creator Logo" loading="lazy" width="48" height="48"
+                loading="lazy">
+            </div>
+            <h3>Zoho Creator</h3>
+            <p>Custom application development on Zoho Creator for business-specific workflows, forms, dashboards, and
+              automations.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="/Asset/zoho/zoho-desk.svg" alt="Zoho Desk Logo" loading="lazy" width="48" height="48"
+                loading="lazy">
+            </div>
+            <h3>Zoho Desk</h3>
+            <p>Help desk setup, ticket automation, SLA management, customer self-service portals, and multi-channel
+              support.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="/Asset/zoho/zoho-analytics.svg" alt="Zoho Analytics Logo" loading="lazy" width="48" height="48"
+                loading="lazy">
+            </div>
+            <h3>Zoho Analytics</h3>
+            <p>Business intelligence dashboards, custom reports, data visualization, and cross-product analytics
+              configuration.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="/Asset/zoho/zoho-one.svg" alt="Zoho One Logo" loading="lazy" width="48" height="48"
+                loading="lazy">
+            </div>
+            <h3>Zoho One</h3>
+            <p>Complete Zoho One suite implementation, cross-app workflows, unified administration, and
+              organization-wide rollout.</p>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: var(--space-10);">
+          <a href="/zoho-development/" class="btn btn-primary">View All Zoho Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integration Services -->
+    <section class="section" id="integration-services">
+      <div class="container">
+        <div class="two-col reveal">
+          <div>
+            <span class="section-label">Integration Services</span>
+            <h2>Connect Everything. <span class="text-gradient">Automate Everything.</span></h2>
+            <p class="mt-4 text-muted" style="line-height: var(--leading-relaxed);">Data
+              silos cost businesses time, money, and clarity. We build integrations that connect your CRM, accounting,
+              operations, and support systems into a unified workflow &mdash; so data flows automatically where it needs
+              to
+              go.</p>
+            <ul class="service-list grid grid-2" style="margin-top: var(--space-6); gap: var(--space-3);">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> CRM &amp; Sales Platform Integrations</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Payment Gateway Integration</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> ERP System Connections</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Third-Party API Development</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Automated Data Synchronization</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg> Legacy System Migration</li>
+            </ul>
+            <a href="/zoho-integrations/" class="btn btn-secondary" style="margin-top: var(--space-8);">Learn More About
+              Integrations</a>
+          </div>
+          <div>
+            <div class="integration-categories"
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+              <div class="integration-category">
+                <h4>CRM Integrations</h4>
+                <ul>
+                  <li>Zoho CRM to accounting systems</li>
+                  <li>Sales pipeline to marketing platforms</li>
+                  <li>Customer data unification</li>
+                </ul>
+              </div>
+              <div class="integration-category">
+                <h4>Finance Integrations</h4>
+                <ul>
+                  <li>Payment gateway connections</li>
+                  <li>Bank feed automation</li>
+                  <li>Multi-currency reconciliation</li>
+                </ul>
+              </div>
+              <div class="integration-category">
+                <h4>Operations Integrations</h4>
+                <ul>
+                  <li>Inventory management sync</li>
+                  <li>Order processing automation</li>
+                  <li>Logistics and shipping APIs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Transformation -->
+    <section class="section section--alt" id="digital-transformation">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Digital Transformation</span>
+          <h2>Modernize. <span class="text-gradient">Automate.</span> Scale.</h2>
+          <p>Whether you are replacing spreadsheets with proper systems, modernizing legacy software, or building
+            entirely new digital capabilities &mdash; we help you make the transition with minimal disruption.</p>
+        </div>
+
+        <div class="grid grid-2 reveal">
+          <div class="card">
+            <h3>Business Process Automation</h3>
+            <p>Identify and automate repetitive processes across departments &mdash; from approvals and notifications to
+              complex multi-step workflows involving multiple systems.</p>
+          </div>
+          <div class="card">
+            <h3>Workflow Optimization</h3>
+            <p>Map your current workflows, identify bottlenecks, and redesign processes for efficiency using Zoho tools
+              and custom automation.</p>
+          </div>
+          <div class="card">
+            <h3>Legacy System Modernization</h3>
+            <p>Migrate from outdated systems to modern platforms without losing data, disrupting operations, or
+              retraining your entire team from scratch.</p>
+          </div>
+          <div class="card">
+            <h3>Custom Business Platforms</h3>
+            <p>When no existing product fits, we build custom platforms tailored to your industry, operations, and
+              growth trajectory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container reveal">
+        <h2>Let Us Discuss Your Project</h2>
+        <p>Tell us about your business challenges and we will recommend the right combination of services to address
+          them.</p>
+        <a href="/contact/" class="btn btn-white btn-lg">Get in Touch</a>
+      </div>
+    </section>
   </main>
 
     <!-- @footer -->
@@ -415,5 +554,5 @@
     <script defer src="/js/site.js?v=9f762b7927"></script>
     <!-- @/footer -->
 </body>
-</html>
 
+</html>

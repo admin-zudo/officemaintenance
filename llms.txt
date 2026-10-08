@@ -35,12 +35,14 @@ Typical timelines: most focused Zoho CRM or Zoho Creator projects take 2 to 8 we
 
 ## Key pages
 - Home: https://zudoworks.com/
-- Services: https://zudoworks.com/services.html
-- Zoho services: https://zudoworks.com/zoho-partner.html
-- Integrations: https://zudoworks.com/integrations.html
-- Project types: https://zudoworks.com/portfolio.html
-- About and leadership: https://zudoworks.com/company.html
-- Contact and booking: https://zudoworks.com/contact.html
+- Services: https://zudoworks.com/services/
+- Zoho services: https://zudoworks.com/zoho-development/
+- Integrations: https://zudoworks.com/zoho-integrations/
+- Business process automation: https://zudoworks.com/business-process-automation/
+- Insights (articles and guides): https://zudoworks.com/insights/
+- Project types: https://zudoworks.com/work/
+- About and leadership: https://zudoworks.com/about/
+- Contact and booking: https://zudoworks.com/contact/
 
 ## Independent profiles
 - Clutch: https://clutch.co/profile/zudo-works

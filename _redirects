@@ -1,8 +1,43 @@
 # Cloudflare Pages — Redirects
 # Cloudflare Pages automatically serves /404.html for unmatched routes with a 404 status.
-# Consolidate index.html to root
+# Directory pages (e.g. /about/) are served at their trailing-slash URL; /about redirects there automatically.
+
 /index.html    /    301
+
+# Phase B URL migration (October 2026): old .html and extensionless URLs -> new clean URLs
+/services.html    /services/    301
+/zoho-partner.html    /zoho-development/    301
+/zoho-partner    /zoho-development/    301
+/integrations.html    /zoho-integrations/    301
+/integrations    /zoho-integrations/    301
+/solutions.html    /business-process-automation/    301
+/solutions    /business-process-automation/    301
+/portfolio.html    /work/    301
+/portfolio    /work/    301
+/company.html    /about/    301
+/company    /about/    301
+/contact.html    /contact/    301
+/privacy-policy.html    /privacy/    301
+/privacy-policy    /privacy/    301
+/terms-of-service.html    /terms/    301
+/terms-of-service    /terms/    301
+
+/blog    /insights/    301
+/blog/    /insights/    301
+/blog/index.html    /insights/    301
+/blog/zoho-agentic-ai-hyperautomation.html    /insights/zoho-agentic-ai-hyperautomation/    301
+/blog/zoho-agentic-ai-hyperautomation    /insights/zoho-agentic-ai-hyperautomation/    301
+/blog/zoho-analytics-agentic-data-foundations-2026.html    /insights/zoho-analytics-agentic-data-foundations-2026/    301
+/blog/zoho-analytics-agentic-data-foundations-2026    /insights/zoho-analytics-agentic-data-foundations-2026/    301
+/blog/zoho-partner-software-development.html    /insights/zoho-partner-software-development/    301
+/blog/zoho-partner-software-development    /insights/zoho-partner-software-development/    301
+/guide    /insights/    301
+/guide/    /insights/    301
+/guide/index.html    /insights/    301
+/guide/zoho-partner-software-development-guide.html    /insights/zoho-partner-software-development-guide/    301
+/guide/zoho-partner-software-development-guide    /insights/zoho-partner-software-development-guide/    301
 
 # Internal files that should not be served publicly
 /audit.py    /    301
-/blog/.automation-history.json    /blog/    301
+/blog/.automation-history.json    /insights/    301
+/tools/*    /    301

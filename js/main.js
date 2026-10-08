@@ -1,6 +1,6 @@
 /* ============================================================
    Main JavaScript   Navbar, Mobile Menu, Smooth Scroll,
-   Scroll Progress, Active Section Highlighting
+   Scroll Progress, FAQ Accordion, Roadmap Scroll
    ============================================================ */
 
 (function () {
@@ -70,19 +70,6 @@
     });
   }
 
-  // -- Active nav link (current page) ------------------------
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-  document.querySelectorAll('.navbar-link').forEach(function (link) {
-    const href = link.getAttribute('href');
-    if (href === currentPage ||
-      (currentPage === '' && href === 'index.html') ||
-      (currentPage === 'index.html' && href === 'index.html')) {
-      link.classList.add('active');
-      link.setAttribute('aria-current', 'page');
-    }
-  });
-
   // -- Smooth scroll for anchor links ------------------------
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
@@ -95,82 +82,6 @@
       }
     });
   });
-
-  // -- Brand Showcase Modal Injection & Handling --------------
-  function initBrandModal() {
-    const modalHTML = `
-      <div class="brand-modal" id="brandShowcaseModal" role="dialog" aria-modal="true" aria-labelledby="brand-modal-title">
-        <div class="brand-modal-content">
-          <button class="brand-modal-close" id="brandModalClose" aria-label="Close credentials display">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
-          <img src="/Asset/icons/Zudo%20Works%20Logo%20SVG.svg" alt="Zudo Works logo" class="brand-modal-logo">
-          <h3 class="brand-modal-title" id="brand-modal-title">Zudo Works</h3>
-          <p class="brand-modal-subtitle">SVP Software and Global Solutions Corporation</p>
-          <div class="brand-modal-info">
-            <div class="brand-modal-info-row">
-              <span class="brand-modal-info-label">Status</span>
-              <span class="brand-modal-info-value" style="color: var(--color-secondary);">Active</span>
-            </div>
-            <div class="brand-modal-info-row">
-              <span class="brand-modal-info-label">Focus</span>
-              <span class="brand-modal-info-value">Zoho development &amp; custom software</span>
-            </div>
-            <div class="brand-modal-info-row">
-              <span class="brand-modal-info-label">Type</span>
-              <span class="brand-modal-info-value">Private limited company</span>
-            </div>
-            <div class="brand-modal-info-row">
-              <span class="brand-modal-info-label">Incorporated In</span>
-              <span class="brand-modal-info-value">India</span>
-            </div>
-          </div>
-          <a href="/company.html" class="btn btn-primary btn-sm">About the Company</a>
-        </div>
-      </div>
-    `;
-
-    document.body.insertAdjacentHTML('beforeend', modalHTML);
-
-    const modal = document.getElementById('brandShowcaseModal');
-    const closeBtn = document.getElementById('brandModalClose');
-
-    if (!modal || !closeBtn) return;
-
-    function openModal() {
-      modal.classList.add('open');
-      document.body.style.overflow = 'hidden';
-      closeBtn.focus();
-    }
-
-    function closeModal() {
-      modal.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-
-    document.querySelectorAll('.logo-modal-trigger').forEach(function (trigger) {
-      trigger.addEventListener('click', function (e) {
-        e.preventDefault();
-        openModal();
-      });
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-
-    modal.addEventListener('click', function (e) {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && modal.classList.contains('open')) {
-        closeModal();
-      }
-    });
-  }
-
-  initBrandModal();
 
   // -- FAQ Accordion Toggle -------------------------------
   function initFaqAccordion() {

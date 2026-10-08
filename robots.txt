@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /404.html
+Disallow: /tools/
 
 # =========================================================================
 # AI & LLM Crawlers - Answer Engine Optimization (AEO)
