@@ -7,18 +7,27 @@
 
 .hero {
   position: relative;
-  padding-top: calc(var(--navbar-height) + 32px + clamp(2.5rem, 5vw, 4.5rem));
+  padding-top: calc(var(--navbar-height) + 32px + clamp(1.25rem, 2.5vw, 2.25rem));
   padding-bottom: var(--section-y);
   background: linear-gradient(180deg, var(--color-primary-bg) 0%, var(--color-white) 100%);
   overflow: hidden;
 }
 
+/* Copy and visual share the first row so the code card and logo rail
+   sit on the same centre line as the label, headline and intro. */
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: clamp(2rem, 4vw, 4.5rem);
-  align-items: center;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  grid-template-areas:
+    "copy visual"
+    "actions .";
+  column-gap: clamp(2rem, 4vw, 4.5rem);
+  align-items: start;
 }
+
+.hero-content { grid-area: copy; }
+.hero-actions { grid-area: actions; min-width: 0; padding-top: var(--space-6); }
+.hero-grid > .hero-visual { grid-area: visual; align-self: center; }
 
 .hero-content {
   min-width: 0;
@@ -47,18 +56,18 @@
   line-height: 1.6;
   color: var(--color-body);
   max-width: 38rem;
-  margin-bottom: var(--space-10);
+  margin-bottom: 0;
 }
 
 .hero .btn-group {
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-8);
 }
 
 /* Proof row */
 .hero-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-6) var(--space-12);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, max-content));
+  gap: var(--space-4) var(--space-10);
   padding-top: var(--space-6);
   border-top: var(--border-default);
   margin: 0;
@@ -162,6 +171,13 @@
 @media (max-width: 959px) {
   .hero-grid {
     grid-template-columns: 1fr;
+    grid-template-areas: "copy" "actions" "visual";
+    grid-template-rows: auto;
+    row-gap: var(--space-8);
+  }
+
+  .hero-actions {
+    padding-top: 0;
   }
 
   .hero h1 {
@@ -183,10 +199,124 @@
   }
 
   .hero-stats {
-    gap: var(--space-4) var(--space-8);
+    gap: var(--space-4) var(--space-6);
   }
 
   .hero-stat-value {
     font-size: 1.5rem;
+  }
+}
+
+/* Zoho product logos scrolling upward beside the code example.
+   Decorative: pauses on hover and stops for reduced-motion users. */
+.hero-visual {
+  display: flex;
+  gap: var(--space-5);
+  align-items: stretch;
+  min-width: 0;
+}
+
+.hero-visual .code-card {
+  flex: 1;
+}
+
+.logo-rail {
+  position: relative;
+  flex: 0 0 76px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 12%, #000 88%, transparent);
+}
+
+.logo-rail-track {
+  position: absolute;
+  inset: 0 0 auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: logo-rail-up 45s linear infinite;
+}
+
+.logo-rail:hover .logo-rail-track {
+  animation-play-state: paused;
+}
+
+.logo-rail-track li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: var(--space-3);
+  background-color: var(--color-white);
+  border: var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.logo-rail-track img {
+  width: 100%;
+  height: auto;
+  max-width: 52px;
+}
+
+/* The list is duplicated, so moving up by half (plus half a gap) loops seamlessly */
+@keyframes logo-rail-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-50% - var(--space-4) / 2)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-rail-track {
+    animation: none;
+  }
+}
+
+.hero-visual .code-card pre {
+  padding: var(--space-5);
+  font-size: 0.75rem;
+}
+
+@media (max-width: 1279px) {
+  .logo-rail {
+    flex-basis: 64px;
+  }
+
+  .logo-rail-track li {
+    padding: var(--space-2);
+  }
+}
+
+/* Phones: the code example is hidden and the logo rail becomes a slim
+   column beside the label, headline and intro, as on the original site. */
+@media (max-width: 599px) {
+  .hero-grid {
+    grid-template-areas: "copy" "actions";
+  }
+
+  .hero-grid > .hero-visual {
+    grid-area: copy;
+    justify-self: end;
+    align-self: stretch;
+    width: 50px;
+  }
+
+  .hero-content {
+    padding-right: 62px;
+  }
+
+  .logo-rail {
+    flex: 0 0 50px;
+  }
+
+  .logo-rail-track li {
+    padding: 6px;
+    border-radius: var(--radius-md);
+  }
+
+  .logo-rail-track img {
+    max-width: 30px;
   }
 }

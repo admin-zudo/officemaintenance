@@ -136,3 +136,14 @@
   initRoadmapScroll();
 
 })();
+
+/* Analytics: WhatsApp and phone clicks */
+document.addEventListener('click', function (e) {
+  var link = e.target.closest && e.target.closest('a[href^="https://wa.me/"], a[href^="tel:"]');
+  if (!link || !window.dataLayer) return;
+  var area = link.closest('.top-bar, header, footer, section');
+  window.dataLayer.push({
+    event: link.href.indexOf('wa.me') > -1 ? 'whatsapp_click' : 'phone_click',
+    cta_location: area ? (area.id || area.className.split(' ')[0]) : ''
+  });
+});

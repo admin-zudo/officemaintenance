@@ -17,7 +17,7 @@
   --fs-body: clamp(1rem, 0.97rem + 0.12vw, 1.0625rem);
 
   /* Vertical rhythm */
-  --section-y: clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+  --section-y: clamp(2rem, 1.25rem + 1.8vw, 3.25rem);
 
   --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
 }
@@ -582,14 +582,14 @@ html:not(.js) .reveal-right {
 /* ── Service pages ────────────────────────────────────────── */
 
 .page-hero--service {
-  padding-top: calc(var(--navbar-height) + 32px + clamp(2rem, 4vw, 3.5rem));
-  padding-bottom: clamp(2.5rem, 2rem + 3vw, 4.5rem);
+  padding-top: calc(var(--navbar-height) + 32px + clamp(1rem, 2vw, 1.75rem));
+  padding-bottom: clamp(1.75rem, 1.25rem + 1.5vw, 2.5rem);
   text-align: left;
 }
 
 @media (max-width: 1099px) {
   .page-hero--service {
-    padding-top: calc(var(--navbar-height) + clamp(1.5rem, 5vw, 2.5rem));
+    padding-top: calc(var(--navbar-height) + clamp(1.25rem, 4vw, 2rem));
   }
 }
 
@@ -872,3 +872,89 @@ html:not(.js) .reveal-right {
 .split > div > p + p { margin-top: var(--space-4); }
 #leadership .leader-card { margin-inline: 0; }
 .footer-links li { font-size: var(--text-sm); }
+
+/* ── Spacing tune: tighter vertical rhythm site-wide ──────── */
+
+.section-header {
+  margin-bottom: var(--space-8);
+}
+
+.section-header > :last-child,
+.page-hero--service .btn-group,
+.section :is(article, li, div) > p:last-child {
+  margin-bottom: 0;
+}
+
+.page-hero--service h1 {
+  max-width: 24ch;
+}
+
+.page-hero--service .page-lead {
+  max-width: 52rem;
+  margin-bottom: var(--space-6);
+}
+
+.cta-banner {
+  padding: clamp(2.5rem, 2rem + 2.5vw, 4rem) 0;
+}
+
+.section-more {
+  margin-top: var(--space-8);
+}
+
+/* ── Spacing tune 2: compact rhythm ───────────────────────── */
+
+.section-header {
+  margin-bottom: var(--space-6);
+}
+
+.section-label {
+  margin-bottom: var(--space-2);
+}
+
+.problem-item {
+  padding: var(--space-5) 0;
+}
+
+.deliver-card,
+.work-card,
+.project-card,
+.contact-card,
+.company-card,
+.leader-card {
+  padding: var(--space-6);
+}
+
+.process-step {
+  padding: var(--space-4) 0 0;
+}
+
+.zoho-strip {
+  margin-top: var(--space-8);
+  padding-top: var(--space-8);
+}
+
+.cta-banner {
+  padding: clamp(2rem, 1.5rem + 2vw, 3rem) 0;
+}
+
+.section-more {
+  margin-top: var(--space-6);
+}
+
+.page-hero--service .page-lead {
+  margin-bottom: var(--space-5);
+}
+
+.provenance-note {
+  margin-top: var(--space-5);
+}
+
+/* Phone-call links show only to visitors on India Standard Time (html.is-in, set in <head>) */
+html:not(.is-in) .only-in {
+  display: none !important;
+}
+
+.mobile-nav-wa {
+  color: #128c7e;
+}

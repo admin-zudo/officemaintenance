@@ -7,14 +7,14 @@
 - Legal entity: SVP Software and Global Solutions Corporation (private limited company registered in India, CIN U62011TN2026PTC197823)
 - Registered office: Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040, India
 - Email: admin@zudoworks.com
-- Phone: +91 63854 35382
+- WhatsApp: +91 63854 35382 (https://wa.me/916385435382); voice calls for India-based enquiries on the same number
 - Website: https://zudoworks.com/
 - Experience: team members have worked on 20+ projects for 10+ client businesses, much of it as developers at a previous organization; hands-on experience across 15+ core Zoho applications and 25+ other Zoho products
 - After-launch offer: every development project includes one month of free support and onboarding after launch
 - Zoho partner status: application in progress (Zudo Works is not yet an approved Zoho Partner)
 
 ## People
-- Arunkumar V, Chief Technology Officer. Winner of the Zoho Partner Hackathon 2025 (as a developer) and holder of Zoho's Master of Creator certificate. As a developer at a previous organization he worked on projects including a point-of-sale system integrated with Zoho One (Trakas Smokers Shop, USA), a student management system (Avalon Care Training, UK), healthcare injury-mapping widgets (USA), executive SQL dashboards (Master Manufacturing, China), a travel pricing engine (Green Mind Travel, Thailand), legal case automation on ManageEngine (SIMAH Legal Management, Saudi Arabia) and a loan-management platform (A Square Loans, India). LinkedIn: https://www.linkedin.com/in/arunkumar-v-5509aa1aa/
+- Arunkumar V, Chief Technology Officer. Received the "Master of Creator" award from Zoho Creator for outstanding performance in the Zoho Creator Partner Hackathon 2025. As a developer at a previous organization he worked on projects including a point-of-sale system integrated with Zoho One (Trakas Smokers Shop, USA), a student management system (Avalon Care Training, UK), healthcare injury-mapping widgets (USA), executive SQL dashboards (Master Manufacturing, China), a travel pricing engine (Green Mind Travel, Thailand), legal case automation on ManageEngine (SIMAH Legal Management, Saudi Arabia) and a loan-management platform (A Square Loans, India). LinkedIn: https://www.linkedin.com/in/arunkumar-v-5509aa1aa/
 
 ## Services
 - Zoho Creator development: custom applications, data models, portals, dashboards and Deluge workflows.
