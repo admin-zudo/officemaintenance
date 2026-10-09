@@ -35,6 +35,45 @@ JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq', 'med
 # Pages that should not appear in the sitemap or get a canonical tag
 NOINDEX = {'/404.html'}
 
+# Meta keywords per page. Google ignores this tag, but Bing and some AI tools read it,
+# so keep each list short and true to the page. Articles use their own keyword from
+# the BlogPosting data (tools/insights/articles_*.py).
+KEYWORDS = {
+    '/': 'Zudo Works, Zoho developers, Zoho Creator development, Zoho CRM implementation, Deluge, Zoho integrations, custom software',
+    '/services/': 'Zoho services, Zoho Creator, Zoho CRM, Deluge development, Zoho integrations, business process automation',
+    '/zoho-development/': 'Zoho consultants, Zoho development partner, Zoho implementation, Zoho One, Zoho Books, Zoho customization',
+    '/zoho-creator-development/': 'Zoho Creator development, Zoho Creator partner, Zoho Creator developer, custom Zoho apps, Zoho Creator portals',
+    '/zoho-crm-development/': 'Zoho CRM implementation, Zoho CRM customization, Zoho CRM consultant, Zoho CRM migration, Blueprint',
+    '/deluge-development/': 'Deluge developer, Deluge scripting, Zoho custom functions, Zoho automation, Deluge examples',
+    '/zoho-integrations/': 'Zoho integrations, Zoho API, Zoho webhooks, Zoho Flow, Zoho middleware, Zoho Books integration',
+    '/business-process-automation/': 'business process automation, Zoho workflow automation, approval workflows, Zoho Flow, Deluge',
+    '/custom-software-development/': 'custom software development, web application development, internal tools, Laravel, Node.js',
+    '/support-maintenance/': 'Zoho support, Zoho maintenance, Zoho admin support, Zoho CRM support, Zoho retainer',
+    '/pricing/': 'Zoho developer pricing, Zoho developer hourly rate, Zoho project cost calculator, Zoho implementation cost',
+    '/work/': 'Zudo Works reviews, Zudo Works projects, Zoho project experience, Zoho case studies',
+    '/about/': 'Zudo Works, about Zudo Works, Arunkumar V, Zoho Creator Master of Creator award, Zoho developers Chennai',
+    '/contact/': 'contact Zudo Works, book a Zoho consultation, Zoho developer WhatsApp, Zoho discovery call',
+    '/insights/': 'Zoho guides, Zoho CRM guides, Zoho Creator guides, Deluge tutorials, Zoho blog',
+    '/locations/': 'Zoho consultants worldwide, Zoho partner by country, Zoho consultants US UK Australia New Zealand India',
+    '/locations/india/': 'Zoho consultants India, Zoho partner India, Zoho developers Chennai, Zoho partner Delhi, Zoho partner Mumbai',
+    '/locations/united-states/': 'Zoho consultants USA, Zoho partner US, Zoho developers United States, Zoho CRM consultant USA',
+    '/locations/united-kingdom/': 'Zoho consultants UK, Zoho partner UK, Zoho developers United Kingdom, Zoho Books VAT MTD',
+    '/locations/australia/': 'Zoho consultants Australia, Zoho partner Australia, Zoho developers Sydney Melbourne, Zoho Xero integration',
+    '/locations/new-zealand/': 'Zoho consultants New Zealand, Zoho partner NZ, Zoho developers Auckland, Zoho Xero integration',
+    '/privacy/': 'Zudo Works privacy policy',
+    '/terms/': 'Zudo Works terms of service',
+}
+
+ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+
+
+def keywords_for(route, html):
+    if route in KEYWORDS:
+        return KEYWORDS[route]
+    m = re.search(r'"keywords":\s*"([^"]+)"', html)
+    return f'Zudo Works, {m.group(1)}' if m else ''
+
+
 
 def read(path):
     with open(os.path.join(ROOT, path), encoding='utf-8') as f:
@@ -204,7 +243,13 @@ def main():
         # Articles set their own author; every other page is authored by the company
         outside_head = re.sub(r'<!-- @head -->.*?<!-- @/head -->', '', html, flags=re.S)
         author = '' if '<meta name="author"' in outside_head else '    <meta name="author" content="Zudo Works">\n'
-        head = head_tpl.replace('{{CANONICAL}}', canonical).replace('{{AUTHOR}}', author)
+        meta = ''
+        if route not in NOINDEX:
+            meta = f'    <meta name="robots" content="{ROBOTS}">\n'
+            kw = keywords_for(route, html)
+            if kw:
+                meta += f'    <meta name="keywords" content="{kw}">\n'
+        head = head_tpl.replace('{{CANONICAL}}', canonical).replace('{{AUTHOR}}', author).replace('{{ROBOTS}}', meta)
         navbar_class = 'navbar' if route == '/' else 'navbar scrolled'
         header = nav_with_active(header_tpl.replace('{{NAVBAR_CLASS}}', navbar_class), route)
 
