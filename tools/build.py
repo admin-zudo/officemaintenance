@@ -111,6 +111,19 @@ def nav_with_active(header, route):
     return re.sub(r'<a href="([^"]+)" class="navbar-link">', mark, header)
 
 
+def add_twitter_text(html):
+    """Copy og:title / og:description into Twitter tags when a page doesn't set its own."""
+    for name in ('title', 'description'):
+        if f'<meta name="twitter:{name}"' in html:
+            continue
+        m = re.search(r'<meta property="og:%s"\s+content="([^"]*)">' % name, html)
+        card = re.search(r'\n( *)<meta name="twitter:card"[^>]*>', html)
+        if m and card:
+            tag = f'\n{card.group(1)}<meta name="twitter:{name}" content="{m.group(1)}">'
+            html = html[:card.end()] + tag + html[card.end():]
+    return html
+
+
 def git_date(path):
     try:
         dirty = subprocess.run(['git', 'status', '--porcelain', '--', path], cwd=ROOT,
@@ -183,13 +196,20 @@ def main():
     changed = 0
     for path in pages:
         route = route_for(path)
-        canonical = '' if route in NOINDEX else f'    <link rel="canonical" href="{SITE}{route}">\n'
-        head = head_tpl.replace('{{CANONICAL}}', canonical)
+        url = SITE + route
+        canonical = '' if route in NOINDEX else (f'    <link rel="canonical" href="{url}">\n'
+                                                f'    <link rel="alternate" hreflang="en" href="{url}">\n'
+                                                f'    <link rel="alternate" hreflang="x-default" href="{url}">\n')
+        html = read(path)
+        # Articles set their own author; every other page is authored by the company
+        outside_head = re.sub(r'<!-- @head -->.*?<!-- @/head -->', '', html, flags=re.S)
+        author = '' if '<meta name="author"' in outside_head else '    <meta name="author" content="Zudo Works">\n'
+        head = head_tpl.replace('{{CANONICAL}}', canonical).replace('{{AUTHOR}}', author)
         navbar_class = 'navbar' if route == '/' else 'navbar scrolled'
         header = nav_with_active(header_tpl.replace('{{NAVBAR_CLASS}}', navbar_class), route)
 
-        html = read(path)
         html = replace_region(html, 'head', head, path)
+        html = add_twitter_text(html)
         html = replace_region(html, 'header', header, path)
         html = replace_region(html, 'footer', footer_tpl, path)
         html = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + SITE + route + m.group(2), html)

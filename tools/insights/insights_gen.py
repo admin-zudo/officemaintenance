@@ -401,6 +401,34 @@ def history_entry(a):
                        "facts_to_watch": w.get('facts', []), "sources": w.get('sources', [])}}
 
 
+def rss_feed():
+    """RSS 2.0 feed of every article, newest first (linked from every page's head)."""
+    from email.utils import format_datetime
+    from datetime import datetime, timezone
+    def rfc(d):
+        return format_datetime(datetime.fromisoformat(d).replace(tzinfo=timezone.utc))
+    items = sorted(ARTICLES, key=lambda a: a['published'], reverse=True)
+    esc = lambda t: html.escape(plain(t), quote=False)
+    body = ''.join(f'''
+    <item>
+      <title>{esc(a['title'])}</title>
+      <link>{SITE}/insights/{a['slug']}/</link>
+      <guid isPermaLink="true">{SITE}/insights/{a['slug']}/</guid>
+      <description>{esc(articles_answers.ANSWERS[a['slug']])}</description>
+      <category>{esc(a['category'])}</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>{rfc(a['published'])}</pubDate>
+    </item>''' for a in items)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">\n'
+            '  <channel>\n    <title>Zudo Works Insights</title>\n'
+            f'    <link>{SITE}/insights/</link>\n'
+            f'    <atom:link href="{SITE}/insights/feed.xml" rel="self" type="application/rss+xml"/>\n'
+            '    <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>\n'
+            f'    <language>en</language>\n    <lastBuildDate>{rfc(max(a["modified"] for a in ARTICLES))}</lastBuildDate>'
+            + body + '\n  </channel>\n</rss>\n')
+
+
 def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
@@ -417,4 +445,5 @@ if __name__ == '__main__':
                      "tools/insights/articles_watch.py, not here.",
             "articles": [history_entry(a) for a in sorted(ARTICLES, key=lambda a: a['published'], reverse=True)]}
     write('blog/.automation-history.json', json.dumps(hist, indent=2, ensure_ascii=False) + '\n')
+    write('insights/feed.xml', rss_feed())
     print('index + history written')
