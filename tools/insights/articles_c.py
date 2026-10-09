@@ -10,12 +10,12 @@ ARTICLES.append(dict(
     description='How to prepare your business data in Zoho Analytics for reliable dashboards and AI features like Ask Zia: connecting sources, modeling data, cleaning it, securing it and keeping it fresh.',
     lead='AI features in analytics tools are impressive in demos and disappointing on messy data. Before you ask Zia a question about revenue, make sure the answer can be right. This is how we set up Zoho Analytics so dashboards and AI insights can be trusted.',
     category='Analytics', keyword='zoho analytics ai',
-    published='2026-09-15', modified='2026-10-08',
+    published='2026-09-15', modified='2026-10-09',
     cover_alt='An analytics dashboard with revenue charts and a pipeline breakdown built from several connected data sources',
     caption='Good dashboards and good AI answers come from the same place: connected, clean, well-modeled data.',
     related=['zoho-agentic-ai-hyperautomation', 'zoho-crm-implementation-cost', 'deluge-script-examples'],
     body='''
-<p>Zoho Analytics can pull data from Zoho CRM, Books, Desk, Creator and hundreds of other sources, then turn it into reports, dashboards and answers to questions typed in plain English. That last part, <strong>Ask Zia</strong>, is where many teams start. It is also where bad data becomes visible fastest.</p>
+<p>Zoho Analytics can pull data from Zoho CRM, Books, Desk, Creator and, by Zoho&rsquo;s count, more than 500 other sources, then turn it into reports, dashboards and answers to questions typed in plain English. That last part, <strong>Ask Zia</strong>, is where many teams start. It is also where bad data becomes visible fastest.</p>
 <p>When an executive asks &ldquo;what was revenue by region last quarter?&rdquo; and gets a number that doesn&rsquo;t match the finance report, trust in the whole system drops. The fix is not a better AI. It is a better foundation.</p>
 
 <h2 id="connect-sources">1. Connect the right sources, in the right way</h2>
@@ -23,7 +23,7 @@ ARTICLES.append(dict(
 <ul>
   <li><strong>Prefer native connectors</strong> over file uploads. They sync on a schedule, so dashboards stay current without anyone remembering to re-upload a spreadsheet.</li>
   <li><strong>Bring in only what you will use.</strong> Importing every module from every app slows syncs and clutters the workspace.</li>
-  <li><strong>Choose sync frequency per source.</strong> Sales pipeline data may need refreshing several times a day; accounting data after each day&rsquo;s close is usually enough. Faster syncs depend on your plan.</li>
+  <li><strong>Choose sync frequency per source.</strong> Sales pipeline data may need refreshing several times a day; accounting data after each day&rsquo;s close is usually enough. The plan sets the ceiling: at the time of writing, Zoho&rsquo;s <a href="https://www.zoho.com/analytics/pricing.html" target="_blank" rel="noopener">pricing page</a> lists a data refresh rate of once a day on Basic, 8 times a day on Standard and Premium, and 24 times a day on Enterprise.</li>
   <li><strong>Keep one workspace per subject area</strong> (sales, finance, support) or one combined workspace with clear folders, rather than many overlapping copies.</li>
 </ul>
 
@@ -59,12 +59,13 @@ ARTICLES.append(dict(
 </ul>
 
 <h2 id="ai-features">6. Then use the AI features</h2>
-<p>With the foundation in place, Zoho Analytics&rsquo; AI features become genuinely useful:</p>
+<p>With the foundation in place, Zoho Analytics&rsquo; AI features become useful:</p>
 <ul>
   <li><strong>Ask Zia</strong> answers natural-language questions with charts, which is ideal for quick questions that don&rsquo;t justify a new report.</li>
   <li><strong>Zia Insights</strong> generates plain-language summaries of a chart, such as the biggest contributors to a change.</li>
   <li><strong>Forecasts and anomaly detection</strong> highlight trends and unusual movements worth investigating.</li>
 </ul>
+<p>Two things are worth knowing in late 2026. Zoho now describes Ask Zia as an AI agent that can create reports and dashboards and suggest actions, and its pricing page lists the LLM-powered version on the Premium and Enterprise plans only. Zoho Analytics also has an MCP Server, so an outside AI assistant can query the same workspace. Both make the earlier steps matter more: an agent that builds its own reports will use whatever joins and column names it finds. Our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> explains how to give an assistant safe access.</p>
 <p>Treat AI answers like a capable new analyst: fast and helpful, but worth checking against a trusted report until you have seen it get things right consistently.</p>
 
 <h2 id="checklist">A one-week starter checklist</h2>
@@ -77,17 +78,17 @@ ARTICLES.append(dict(
   <li>Build one dashboard that answers the five questions, with user filters.</li>
   <li>Only then, try Ask Zia on the same questions and compare answers.</li>
 </ol>
-<p>Need help connecting Zoho Analytics to your CRM, Books or other systems? See our <a href="/zoho-integrations/">Zoho integrations</a> service.</p>
+<p>Need help connecting Zoho Analytics to your CRM, Books or other systems? See our <a href="/zoho-integrations/">Zoho integrations</a> service. If you run a factory, our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> covers where production data comes from.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',
     faqs=[
         ('What is Ask Zia in Zoho Analytics?',
-         'Ask Zia is the natural-language assistant in Zoho Analytics. You type a question such as "revenue by region last quarter" and it builds a chart or table from your data. Its accuracy depends on clean, well-named and correctly joined data.'),
+         'Ask Zia is the AI assistant in Zoho Analytics. You type a question such as "revenue by region last quarter" and it builds a chart or table from your data. Zoho lists the LLM-powered Ask Zia agent on its Premium and Enterprise plans. Its accuracy depends on clean, well-named and correctly joined data.'),
         ('How do I combine Zoho CRM and Zoho Books data in Zoho Analytics?',
          'Connect both apps with their native connectors, then define lookup relationships between related tables, ideally on a shared customer ID. Reports can then blend deals, invoices and payments, and query tables can hold shared metric definitions.'),
         ('How often does Zoho Analytics sync data?',
-         'Native connectors sync on a schedule you choose. The fastest available frequency depends on your Zoho Analytics plan. Many teams sync sales data several times a day and accounting data daily.'),
+         'Native connectors sync on a schedule you choose, up to the limit of your plan. At the time of writing, Zoho lists a data refresh rate of once a day on the Basic plan, 8 times a day on Standard and Premium, and 24 times a day on Enterprise. Many teams sync sales data several times a day and accounting data daily.'),
     ],
 ))
 
@@ -278,5 +279,165 @@ ARTICLES.append(dict(
          'A company applies to Zoho\'s partner program and, after onboarding, must reach the Authorized tier requirements within six months: a US$5,000 revenue threshold, the required certifications and successful implementations. Tiers are then reviewed every year.'),
         ('Is Zudo Works a Zoho Partner?',
          'Our Zoho Partner application is in progress, so we do not describe ourselves as a Zoho Partner. We are an independent Zoho development team. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award from Zoho Creator at the Zoho Creator Partner Hackathon 2025.'),
+    ],
+))
+
+# ------------------------------------------------------------------ Zoho for manufacturing
+ARTICLES.append(dict(
+    slug='zoho-for-manufacturing',
+    title='Does Zoho Have Manufacturing Software? Zoho ERP, Inventory and Creator Compared',
+    seo_title='Zoho for Manufacturing: ERP, Inventory, Creator',
+    description='What Zoho actually offers a manufacturer: assemblies in Zoho Inventory, the manufacturing module in Zoho ERP, and custom apps on Zoho Creator, plus when dedicated MRP software is the better choice.',
+    lead='Manufacturers ask one question about Zoho more than any other: can it run production? The answer depends on which Zoho product you mean, and the three options are very different. This guide separates them, using Zoho&rsquo;s own documentation.',
+    category='Manufacturing', keyword='zoho for manufacturing',
+    published='2026-10-09', modified='2026-10-09',
+    cover_alt='Three Zoho routes for a manufacturer: Zoho Inventory for simple assembly, Zoho ERP for bills of materials and job cards, and Zoho Creator for custom processes',
+    caption='Zoho gives a manufacturer three routes. They suit different factories, and one of them is sold only in India today.',
+    related=['zoho-flow-vs-deluge', 'zoho-creator-vs-power-apps', 'zoho-analytics-agentic-data-foundations-2026'],
+    body='''
+<p>Search for &ldquo;Zoho for manufacturing&rdquo; and you will find confident answers that contradict each other. Some say Zoho has no production features at all. Others describe a full manufacturing ERP. Both are describing a real product, just not the same one.</p>
+<p>Zoho has three separate ways to support production. Everything below was checked against Zoho&rsquo;s product pages and help documentation in October 2026. Where Zoho does not state something, we say so.</p>
+
+<h2 id="short-answer">The short answer</h2>
+<ul>
+  <li><strong>Zoho Inventory</strong> handles simple assembly: it turns components into a finished item and adjusts stock. Zoho&rsquo;s own knowledge base says it does not yet have a manufacturing module.</li>
+  <li><strong>Zoho ERP</strong> is a separate product with a real manufacturing module: bills of materials, manufacturing orders, job cards, a shop floor view, work centers, subcontracting and quality inspections. Zoho launched it in India in January 2026 and it is not part of Zoho One.</li>
+  <li><strong>Zoho Creator</strong> is a low-code platform. You can build production tracking, quality or maintenance apps around your own process, or a planning system of your own. Nothing is ready-made; it is built for you.</li>
+</ul>
+
+<h2 id="three-routes">The three routes at a glance</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Area</th><th scope="col">Zoho Inventory</th><th scope="col">Zoho ERP</th><th scope="col">Zoho Creator</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">What it is</th><td>Stock and order management</td><td>A full ERP with finance, supply chain, payroll and manufacturing</td><td>A low-code platform for custom apps</td></tr>
+    <tr><th scope="row">Bill of materials</th><td>A component list on an assembly item</td><td>A Bill of Materials module, including subcontract BOMs</td><td>Whatever you design</td></tr>
+    <tr><th scope="row">Production orders</th><td>An assembly record that consumes components</td><td>Manufacturing orders with job cards and operations</td><td>Whatever you design</td></tr>
+    <tr><th scope="row">Shop floor and work centers</th><td>No</td><td>Yes: shop floor, work centers and work center timings</td><td>Built to order, for example shift logs or job tracking</td></tr>
+    <tr><th scope="row">Quality checks</th><td>No</td><td>Quality templates, rules and inspections</td><td>Built to order, for example NCR and CAPA</td></tr>
+    <tr><th scope="row">Where it is sold</th><td>Globally; plans vary by country</td><td>Published for India at the time of writing</td><td>Globally</td></tr>
+    <tr><th scope="row">In Zoho One?</th><td>Yes</td><td>No, it is a separate product</td><td>Yes</td></tr>
+    <tr><th scope="row">Effort to start</th><td>Low</td><td>An ERP implementation</td><td>A custom build</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Plans and limits change, so confirm them on the official pricing pages for <a href="https://www.zoho.com/inventory/pricing/" target="_blank" rel="noopener">Zoho Inventory</a>, <a href="https://www.zoho.com/en-in/erp/pricing/" target="_blank" rel="noopener">Zoho ERP</a> and <a href="https://www.zoho.com/creator/pricing.html" target="_blank" rel="noopener">Zoho Creator</a>.</p>
+
+<figure style="margin:2rem auto;max-width:420px">
+<svg viewBox="0 0 360 400" role="img" aria-labelledby="mfg-flow-title mfg-flow-desc" style="width:100%;height:auto;display:block;font-family:Inter,sans-serif">
+  <title id="mfg-flow-title">Where each Zoho app fits in a make-to-order flow</title>
+  <desc id="mfg-flow-desc">Five steps from top to bottom. Quote: Zoho CRM. Sales order: Zoho Inventory or Zoho ERP. Materials: Zoho Inventory or Zoho ERP. Production: Zoho ERP or a Zoho Creator app. Dispatch and invoice: Zoho Inventory and Zoho Books, or Zoho ERP.</desc>
+  <style>
+    .mf-dot{animation:mf-move 7s linear infinite}
+    @keyframes mf-move{0%{transform:translateY(0);opacity:0}6%{opacity:1}94%{opacity:1}100%{transform:translateY(320px);opacity:0}}
+    @media (prefers-reduced-motion: reduce){.mf-dot{animation:none;opacity:0}}
+  </style>
+  <line x1="28" y1="40" x2="28" y2="360" stroke="#C9DCEF" stroke-width="3" stroke-linecap="round"/>
+  <g font-size="15" font-weight="700" fill="#1A1A2E">
+    <text x="56" y="36">1. Quote</text>
+    <text x="56" y="116">2. Sales order</text>
+    <text x="56" y="196">3. Materials</text>
+    <text x="56" y="276">4. Production</text>
+    <text x="56" y="356">5. Dispatch and invoice</text>
+  </g>
+  <g font-size="13" fill="#4B5563">
+    <text x="56" y="56">Zoho CRM</text>
+    <text x="56" y="136">Zoho Inventory or Zoho ERP</text>
+    <text x="56" y="216">Zoho Inventory or Zoho ERP</text>
+    <text x="56" y="296">Zoho ERP, or a Zoho Creator app</text>
+    <text x="56" y="376">Inventory and Books, or Zoho ERP</text>
+  </g>
+  <g fill="#fff" stroke="#226DB4" stroke-width="3">
+    <circle cx="28" cy="40" r="9"/><circle cx="28" cy="120" r="9"/><circle cx="28" cy="200" r="9"/>
+    <circle cx="28" cy="280" r="9" stroke="#E07A0F"/><circle cx="28" cy="360" r="9"/>
+  </g>
+  <circle class="mf-dot" cx="28" cy="40" r="5" fill="#226DB4"/>
+</svg>
+<figcaption style="font-size:.875rem;color:#6B7280;text-align:center;margin-top:.75rem">Step 4 is the one to examine. The other four are standard Zoho.</figcaption>
+</figure>
+
+<h2 id="zoho-inventory">Route 1: Zoho Inventory, for simple assembly</h2>
+<p>Zoho Inventory has <strong>composite items</strong> in two types. An <em>assembly</em> (formerly called a bundle) is for physically building one item from components: when you create the assembly, component stock goes down and the finished item gets its own stock. A <em>kit</em> groups existing items for sale without any assembly work. A composite item can contain another composite item, and a service such as labour can be one of the components, though not the only one.</p>
+<p>That is enough for a business that packs sets, assembles a product from a fixed list of parts or does light finishing. It is not production management. Zoho says so directly: its knowledge base article on the subject states that Zoho Inventory does not yet support manufacturing modules, and suggests composite items as a workaround for basic assemblies that do not need a bill of materials.</p>
+<p>This route has no work orders that move through stages, no routing, no capacity planning and no material requirements planning. Serial and batch tracking and bin locations depend on the plan.</p>
+<p><strong>Choose it when</strong> your &ldquo;production&rdquo; is one step, takes minutes or hours, and you mainly need accurate stock and costs.</p>
+
+<h2 id="zoho-erp">Route 2: Zoho ERP, a real manufacturing module</h2>
+<p><a href="https://www.zoho.com/en-in/erp/" target="_blank" rel="noopener">Zoho ERP</a> is the product many older articles do not know about. Zoho launched it in India in January 2026 as a single system for finance, supply chain, billing, payroll and spending, with purpose-built versions for manufacturing, distribution, retail and non-profits.</p>
+<p>Its help documentation has full sections for the things Zoho Inventory lacks:</p>
+<ul>
+  <li><strong>Bill of Materials,</strong> including creating a manufacturing order straight from a BOM.</li>
+  <li><strong>Manufacturing orders</strong> with job cards, operations and a manufacturing dashboard.</li>
+  <li><strong>Shop floor</strong> screens and shop floor staff, with work centers, work center types and timings.</li>
+  <li><strong>Subcontract manufacturing:</strong> subcontract BOMs, subcontract orders, purchase orders and material transfers.</li>
+  <li><strong>Quality:</strong> templates, rules, inspections and inspection worklists.</li>
+</ul>
+<p>The product is moving quickly. Zoho&rsquo;s 2026 update notes list a work center calendar, manufacturing orders created from sales orders and quality inspections on purchase receipts. Some newer features are in early access or limited to higher plans.</p>
+<p>Three limits matter before you plan around it:</p>
+<ol>
+  <li><strong>Availability.</strong> At the time of writing, Zoho&rsquo;s ERP site, its rupee pricing and its tax and payroll features are published for India. We could not find an announced date for other countries. If you are outside India, ask Zoho first.</li>
+  <li><strong>It is not in Zoho One.</strong> Zoho&rsquo;s pricing page states this plainly. Zoho ERP is licensed separately, per user, and each plan has a yearly cap on transactions.</li>
+  <li><strong>It is an ERP project.</strong> Moving finance, stock and production into one system needs data migration, opening balances, process design and training.</li>
+</ol>
+<p><strong>Choose it when</strong> you are in India, you want finance and production in one Zoho system, and your process fits a standard BOM, job card and work center model.</p>
+
+<h2 id="zoho-creator">Route 3: Zoho Creator, built around your process</h2>
+<p>Zoho Creator is a low-code platform: forms, a database, workflows, Deluge scripts, mobile apps and portals. It contains no manufacturing logic until someone builds it.</p>
+<p>Zoho&rsquo;s own manufacturing page for Creator is careful about this. It describes Creator as a digital extension layer that sits beside a core system such as SAP, Oracle, Infor or NetSuite, with that system remaining the source of records. The examples it gives are the processes ERPs handle poorly: safety and near-miss reports, purchase requisitions, shift handover logs, permits and gate passes, engineering change requests, vendor onboarding, quality NCR and CAPA, and maintenance breakdowns. Zoho also has a page about building a material requirements planning solution on Creator, and that too is something you design, not a product you switch on.</p>
+<p>So Creator fits two situations well:</p>
+<ul>
+  <li><strong>Beside an ERP or an accounting system,</strong> to digitize the paper, spreadsheet and WhatsApp processes around production.</li>
+  <li><strong>As the production system for a specific process</strong> that standard software models badly, for example job work with customer-supplied material, made-to-measure products or a multi-stage process with its own approvals.</li>
+</ul>
+<p>The cost is the build and its upkeep. An app that tracks jobs through stages is a contained project. A full planning engine with scheduling and capacity is a serious software project, and should be compared honestly with buying one. Our <a href="/zoho-creator-development/">Zoho Creator development</a> page explains how we scope this kind of build, and <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps</a> compares it with Microsoft&rsquo;s platform.</p>
+<p><strong>Choose it when</strong> your process is the unusual part, or when you already have a system of record and need the workflows around it.</p>
+
+<h2 id="around-production">What Zoho covers well around production</h2>
+<p>Most of a manufacturer&rsquo;s software is not production software, and this is where Zoho is strongest:</p>
+<ul>
+  <li><strong>Zoho CRM</strong> for enquiries, quotes, dealers and distributors, samples and repeat orders, with custom modules where a standard pipeline does not fit.</li>
+  <li><strong>Zoho Books</strong> for invoicing, purchases and tax, linked to Zoho Inventory for stock.</li>
+  <li><strong>Zoho Analytics</strong> for dashboards that combine sales, stock, purchase and production data. The same rules apply as in our guide to <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">building a data foundation in Zoho Analytics</a>.</li>
+  <li><strong>Zoho IoT,</strong> a separate low-code platform that Zoho positions for machine monitoring, predictive maintenance and energy tracking.</li>
+</ul>
+<p>Connecting these to a non-Zoho production system is an integration job; our guide to <a href="/insights/zoho-flow-vs-deluge/">Zoho Flow, Deluge and custom middleware</a> explains which tool suits which integration.</p>
+
+<h2 id="dedicated-mrp">When dedicated manufacturing software is the better choice</h2>
+<p>If scheduling and planning are the hard part of your business, look at software built for exactly that. These are fair descriptions taken from each vendor&rsquo;s own site:</p>
+<ul>
+  <li><strong>MRPeasy</strong> describes itself as MRP software for small manufacturers and says it is ideal for companies with 10 to 200 employees. It covers production planning, inventory, sales, procurement and finances.</li>
+  <li><strong>Odoo Manufacturing</strong> offers an MRP scheduler that plans work at each work center by capacity, tablets on the shop floor, automatic quality checks, maintenance requests and product lifecycle management.</li>
+  <li><strong>ERPNext</strong> is open-source ERP with multi-level BOMs, work orders, job cards, production planning, subcontracting and capacity planning.</li>
+  <li><strong>Katana</strong> offers bills of materials with subassemblies, a shop floor app and tracking of outsourced production, aimed at small and mid-sized product businesses.</li>
+  <li><strong>TranZact</strong> is built for Indian MSME manufacturers and says it works alongside systems such as Tally.</li>
+</ul>
+<p>Choosing one of these does not rule Zoho out. A common and sensible design is a dedicated MRP for production, with Zoho CRM in front for sales and Zoho Analytics on top for reporting.</p>
+
+<h2 id="how-to-decide">How to decide: five questions</h2>
+<ol>
+  <li><strong>How many steps does production have?</strong> One step points to Zoho Inventory. Several operations across machines or people points to Zoho ERP or dedicated MRP.</li>
+  <li><strong>Do you need scheduling and capacity planning,</strong> or only tracking of what was made and what it consumed?</li>
+  <li><strong>Where are you?</strong> Zoho ERP is an option today in India. Elsewhere, plan around Zoho Inventory, Creator or a dedicated product.</li>
+  <li><strong>Which system holds the accounts?</strong> If Tally, SAP or another system stays, you need integration, not replacement.</li>
+  <li><strong>How standard is your process?</strong> The more unusual it is, the stronger the case for a Creator app built around it.</li>
+</ol>
+
+<h2 id="first-project">A sensible first project</h2>
+<p>Whatever you choose for production, start with the part that is safe to change. For most manufacturers that is the front office: enquiries, quotes and order follow-up in Zoho CRM, with stock and invoicing connected. It shows quickly whether your team will use the system, and it does not touch the shop floor.</p>
+<p>Then map production on paper before choosing software for it: every stage, who records what, and which numbers you need at the end of the day. That page usually makes the choice between the three routes clear. To size the work, <a href="/pricing/#calculator">estimate your project</a>.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+''',
+    faqs=[
+        ('Does Zoho have an MRP or manufacturing module?',
+         'Zoho ERP has a manufacturing module with bills of materials, manufacturing orders, job cards, shop floor screens, work centers, subcontract manufacturing and quality inspections. Zoho launched it in India in January 2026. Zoho Inventory does not have a manufacturing module; it offers assemblies and kits through composite items.'),
+        ('Does Zoho Inventory have a bill of materials?',
+         'Not as a separate module. An assembly in Zoho Inventory has a list of components that are consumed when the finished item is built, which works for simple, single-step assembly. Zoho\'s knowledge base says manufacturing modules are not yet supported in Zoho Inventory.'),
+        ('Is Zoho ERP included in Zoho One?',
+         'No. Zoho\'s ERP pricing page states that Zoho ERP is not included in Zoho One. It is a separate product with its own per-user plans.'),
+        ('Is Zoho ERP available outside India?',
+         'At the time of writing, Zoho\'s ERP website, pricing and tax features are published for India, and we could not find an announced date for other countries. Check with Zoho for your country before planning around it.'),
+        ('Can Zoho Creator be used as a manufacturing ERP?',
+         'It can be built into one, but nothing is ready-made. Zoho positions Creator for manufacturers as an extension layer beside a core system, for processes such as quality NCR and CAPA, maintenance, shift handover and engineering changes. A full planning and scheduling engine on Creator is a substantial custom build.'),
     ],
 ))

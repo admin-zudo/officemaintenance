@@ -30,4 +30,10 @@ META = {
     'zoho-mcp-claude-chatgpt': (
         'Zoho MCP: Connect Claude or ChatGPT to Zoho CRM',
         'Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.'),
+    'zoho-for-manufacturing': (
+        'Zoho for Manufacturing: ERP, Inventory, Creator',
+        'Does Zoho have manufacturing software? Zoho Inventory assemblies, the Zoho ERP manufacturing module and Zoho Creator apps compared, and when to use MRP.'),
+    'zoho-flow-vs-deluge': (
+        'Zoho Flow vs Deluge vs Middleware (2026 Guide)',
+        'Zoho Flow, Deluge or custom middleware? How each is metered, the time and statement limits Zoho documents, and a checklist for choosing.'),
 }

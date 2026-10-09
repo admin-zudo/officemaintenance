@@ -44,4 +44,13 @@ ANSWERS = {
         'Zoho MCP console, add only the tools you need, copy the MCP URL into your assistant and authorize with your '
         'Zoho account. Start with read-only tools, keep each user on their own authorization, and require '
         'confirmation before any change.',
+    'zoho-for-manufacturing':
+        'Zoho offers a manufacturer three routes. Zoho Inventory handles simple assembly but has no manufacturing '
+        'module. Zoho ERP, launched in India in January 2026 and sold separately from Zoho One, has bills of '
+        'materials, manufacturing orders, job cards, work centers, subcontracting and quality checks. Zoho Creator '
+        'is for custom production apps built around your own process.',
+    'zoho-flow-vs-deluge':
+        'Use Zoho Flow for simple app-to-app automation with a few steps; it is metered by tasks, and each action '
+        'in a flow counts as one. Use Deluge when the logic runs inside one Zoho app and must act at an exact point '
+        'in a process. Use custom middleware for high volume, long-running jobs, retries or two-way sync.',
 }

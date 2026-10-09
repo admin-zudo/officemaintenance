@@ -24,7 +24,7 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-mcp-claude-chatgpt.webp</image:loc>
@@ -47,10 +47,10 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -63,10 +63,10 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -82,7 +82,7 @@
       <image:loc>https://zudoworks.com/Asset/img/team/master-of-creator-certificate-thumb.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
@@ -126,13 +126,13 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-mcp-claude-chatgpt.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -268,6 +268,50 @@
     </image:image>
   </url>
   <url>
+    <loc>https://zudoworks.com/insights/zoho-flow-vs-deluge/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-flow-vs-deluge.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-mcp-claude-chatgpt.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://zudoworks.com/insights/zoho-for-manufacturing/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-for-manufacturing.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/</loc>
     <lastmod>2026-10-09</lastmod>
     <image:image>
@@ -378,7 +422,7 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -508,7 +552,7 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-program-explained.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
@@ -553,13 +597,13 @@
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-mcp-claude-chatgpt.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp</image:loc>
     </image:image>
   </url>
 </urlset>

@@ -34,6 +34,8 @@ SERVICES_FOR = {
     'zoho-partner-program-explained': ['/zoho-development/', '/zoho-creator-development/', '/zoho-crm-development/'],
     'zoho-crm-vs-hubspot': ['/zoho-crm-development/', '/zoho-integrations/', '/pricing/'],
     'zoho-mcp-claude-chatgpt': ['/business-process-automation/', '/zoho-integrations/', '/zoho-crm-development/'],
+    'zoho-for-manufacturing': ['/zoho-creator-development/', '/zoho-integrations/', '/custom-software-development/'],
+    'zoho-flow-vs-deluge': ['/zoho-integrations/', '/deluge-development/', '/custom-software-development/'],
 }
 
 

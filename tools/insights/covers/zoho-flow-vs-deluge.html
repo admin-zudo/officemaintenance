@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url('../../../Asset/fonts/inter-latin.woff2') format('woff2');font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:900px;overflow:hidden}
+body{font-family:Inter,sans-serif;color:#1A1A2E;
+ background:radial-gradient(900px 700px at 78% 30%,#ffffff 0%,rgba(255,255,255,0) 70%),linear-gradient(135deg,#EAF2FB 0%,#F3F6FB 45%,#E3EEF9 100%)}
+.scene{position:absolute;inset:0;transform-origin:50% 50%;transform:scale(var(--z,1))}
+/* left text panel */
+.panel{position:absolute;left:56px;top:56px;bottom:56px;width:560px;background:#fff;border-radius:28px;padding:48px 48px 0;
+ box-shadow:0 30px 60px -30px rgba(27,90,150,.35),0 2px 0 rgba(255,255,255,.9) inset;border:1px solid #E5ECF4}
+.tag{display:inline-block;background:#226DB4;color:#fff;font-weight:700;font-size:18px;letter-spacing:.08em;text-transform:uppercase;padding:10px 20px;border-radius:999px}
+h1{font-size:64px;line-height:1.05;font-weight:800;letter-spacing:-.025em;margin-top:34px}
+.sub{font-size:27px;line-height:1.4;color:#3D3D4E;margin-top:30px}
+.rule{height:1px;background:#E5E7EB;margin-top:44px}
+.take{font-size:27px;line-height:1.3;font-weight:700;color:#226DB4;margin-top:34px}
+.dash{display:flex;gap:12px;margin-top:38px}.dash i{height:5px;border-radius:3px;display:block}
+.brand{position:absolute;left:48px;bottom:44px;display:flex;align-items:center;gap:14px;font-size:27px;font-weight:700}
+.brand img{width:48px;height:48px}
+/* right diagram */
+.art{position:absolute;left:660px;right:40px;top:40px;bottom:40px}
+.ring{position:absolute;border-radius:50%;border:2px dashed rgba(34,109,180,.22)}
+.node{position:absolute;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+ background:#fff;box-shadow:0 26px 50px -22px rgba(27,90,150,.45),0 0 0 10px rgba(255,255,255,.55)}
+.node b{font-size:25px;font-weight:800;line-height:1.15}.node span{font-size:18px;color:#6B7280;margin-top:6px}
+.node svg{margin-bottom:10px}
+.chip{position:absolute;background:#fff;border-radius:999px;padding:11px 20px;font-size:19px;font-weight:700;white-space:nowrap;
+ box-shadow:0 14px 28px -14px rgba(27,90,150,.4);display:flex;align-items:center;gap:10px}
+.chip i{width:12px;height:12px;border-radius:50%;display:block}
+.diagram{position:absolute;left:0;top:-52px;width:900px;height:820px;transform:scale(.8);transform-origin:50% 0}
+.facts{position:absolute;left:0;right:0;top:596px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.facts div{background:#fff;border:1px solid #E5ECF4;border-radius:18px;padding:20px 22px;box-shadow:0 16px 30px -22px rgba(27,90,150,.4)}
+.facts b{display:block;font-size:25px;font-weight:800;color:#1B5A96}.facts span{display:block;font-size:17.5px;line-height:1.35;color:#6B7280;margin-top:6px}
+.url{position:absolute;right:0;bottom:6px;display:flex;align-items:center;gap:12px;font-size:21px;color:#3D3D4E}
+.url b{color:#1A1A2E}.url i{font-style:normal;width:38px;height:38px;border-radius:50%;background:#226DB4;color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px}
+.cols{position:absolute;left:0;right:0;top:16px;display:grid;grid-template-columns:1fr 124px 1fr;align-items:center}
+.card{background:#fff;border:1px solid #E5ECF4;border-radius:22px;padding:30px 30px 26px;box-shadow:0 24px 44px -26px rgba(27,90,150,.45);height:470px}
+.card .k{font-size:17px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.card h2{font-size:38px;font-weight:800;letter-spacing:-.02em;margin-top:8px}
+.card p.s{font-size:20px;color:#6B7280;margin-top:8px;line-height:1.35}
+.card ul{list-style:none;margin-top:22px}
+.card li{display:flex;gap:12px;align-items:flex-start;font-size:21px;line-height:1.3;padding:12px 0;border-top:1px solid #F0F1F3;font-weight:500}
+.card li i{flex:none;width:12px;height:12px;border-radius:50%;margin-top:8px;display:block}
+.vs{width:72px;height:72px;border-radius:50%;background:#1A1A2E;color:#fff;font-weight:800;font-size:24px;display:flex;align-items:center;justify-content:center;justify-self:center}
+svg.wire{position:absolute;inset:0;width:100%;height:100%}
+</style></head><body data-strict><div class="scene">
+<div class="panel" data-block>
+ <span class="tag">Integrations</span>
+ <h1>Zoho Flow vs Deluge</h1>
+ <p class="sub">Both can connect your apps. They differ in limits, control and who can maintain them.</p>
+ <div class="rule"></div>
+ <p class="take">Count tasks before you build.</p>
+ <div class="dash"><i style="width:150px;background:#226DB4"></i><i style="width:56px;background:#F9B21D"></i></div>
+ <div class="brand"><img src="../../../Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</div>
+</div>
+<div class="art">
+ <div class="cols">
+  <div class="card" data-block><span class="k" style="color:#226DB4">No-code builder</span><h2>Zoho Flow</h2><p class="s">Triggers and actions on a canvas, across apps</p>
+   <ul><li><i style="background:#226DB4"></i>Metered by tasks per month</li><li><i style="background:#226DB4"></i>Connects 1,000+ apps</li><li><i style="background:#226DB4"></i>Polls every 15 or 5 minutes</li><li><i style="background:#226DB4"></i>Readable by an admin</li><li><i style="background:#226DB4"></i>Deluge steps on paid plans</li></ul></div>
+  <div class="vs" data-block>vs</div>
+  <div class="card" data-block><span class="k" style="color:#E07A0F">Script in the app</span><h2>Deluge</h2><p class="s">Code that runs inside CRM, Creator and Books</p>
+   <ul><li><i style="background:#E07A0F"></i>Time and statement limits</li><li><i style="background:#E07A0F"></i>Runs at an exact process step</li><li><i style="background:#E07A0F"></i>Calls any REST API</li><li><i style="background:#E07A0F"></i>Maintained by a developer</li><li><i style="background:#E07A0F"></i>Limits differ by Zoho app</li></ul></div>
+ </div>
+ <div class="facts">
+  <div data-block><b>1 action = 1 task</b><span>How Zoho Flow counts usage on every plan</span></div>
+  <div data-block><b>10 s, 30 s, 15 min</b><span>Zoho CRM function timeouts, by where they run</span></div>
+  <div data-block><b>Middleware</b><span>For high volume, long jobs and automatic retries</span></div>
+ </div>
+ <div class="url" data-block>Read the full comparison <b>zudoworks.com/insights</b><i>&rarr;</i></div>
+</div>
+</div></body></html>

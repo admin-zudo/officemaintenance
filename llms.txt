@@ -60,6 +60,8 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - AI agents in Zoho CRM: https://zudoworks.com/insights/zoho-agentic-ai-hyperautomation/
 - Zoho MCP: connecting Claude or ChatGPT to Zoho CRM safely: https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/
 - Zoho Analytics data foundations: https://zudoworks.com/insights/zoho-analytics-agentic-data-foundations-2026/
+- Zoho for manufacturing (Zoho ERP, Zoho Inventory assemblies and Zoho Creator compared): https://zudoworks.com/insights/zoho-for-manufacturing/
+- Zoho Flow vs Deluge vs custom middleware (task counting, time and statement limits): https://zudoworks.com/insights/zoho-flow-vs-deluge/
 - How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Locations (countries served): https://zudoworks.com/locations/

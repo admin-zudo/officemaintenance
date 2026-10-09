@@ -120,6 +120,137 @@
       }
     },
     {
+      "title": "Zoho Flow vs Deluge vs Custom Middleware: Which to Use for an Integration",
+      "url": "/insights/zoho-flow-vs-deluge/",
+      "slug": "zoho-flow-vs-deluge",
+      "keyword": "zoho flow vs deluge",
+      "category": "Integrations",
+      "date": "2026-10-09",
+      "updated": "2026-10-09",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-flow-vs-deluge.webp",
+      "summary": "Use Zoho Flow for simple app-to-app automation with a few steps; it is metered by tasks, and each action in a flow counts as one. Use Deluge when the logic runs inside one Zoho app and must act at an exact point in a process. Use custom middleware for high volume, long-running jobs, retries or two-way sync.",
+      "sections": [
+        "The short answer",
+        "What each one is",
+        "Side-by-side comparison",
+        "How Zoho Flow is metered",
+        "The limits to design around in Deluge",
+        "When Zoho Flow is the right tool",
+        "When Deluge is the right tool",
+        "When custom middleware is the right tool",
+        "Combining them",
+        "A six-question decision checklist"
+      ],
+      "questions": [
+        "What is the difference between Zoho Flow and Deluge?",
+        "How does Zoho Flow count tasks?",
+        "Can I use Deluge inside Zoho Flow?",
+        "What is the Deluge statement limit?",
+        "When do I need middleware instead of Zoho Flow or Deluge?",
+        "Can Zoho Flow connect to on-premise software?"
+      ],
+      "words": 1970,
+      "related": [
+        "deluge-script-examples",
+        "zoho-mcp-claude-chatgpt",
+        "zoho-for-manufacturing"
+      ],
+      "review": {
+        "last_checked": "2026-10-09",
+        "volatility": "high",
+        "next_check": "2026-10-23",
+        "facts_to_watch": [
+          "Zoho Flow: each executed action is one task; plans Free, Standard, Professional",
+          "Flow Free plan: 100 tasks a month, 5 flows; polling 15 minutes (5 on Professional)",
+          "Flow custom functions on Standard and Professional; history 30/60/90 days; on-prem agent on Professional",
+          "Flow connects 1,000+ apps; Flow is listed among Zoho One apps",
+          "Zoho CRM function timeouts: 10 s (button, related list, validation, REST API), 30 s (automation), 15 min (schedule)",
+          "Statement limits: 5,000 (general Deluge page), 5,000 to 50,000 (Creator), 200,000 lines (CRM)",
+          "Deluge: invokeurl response 5 MB; 75 function calls per function; CRM credits per function run",
+          "Catalyst functions in Java, Node.js and Python"
+        ],
+        "sources": [
+          "https://www.zoho.com/flow/pricing.html",
+          "https://www.zoho.com/flow/",
+          "https://help.zoho.com/portal/en/kb/flow/user-guide/create-a-flow/actions-logic/articles/flow-control",
+          "https://www.zoho.com/deluge/help/limitations.html",
+          "https://www.zoho.com/crm/developer/docs/functions/limits-quotas.html",
+          "https://help.zoho.com/portal/en/kb/creator/developer-guide/limitations/articles/workflows-limitations",
+          "https://catalyst.zoho.com/",
+          "https://www.zoho.com/one/applications/web.html"
+        ]
+      }
+    },
+    {
+      "title": "Does Zoho Have Manufacturing Software? Zoho ERP, Inventory and Creator Compared",
+      "url": "/insights/zoho-for-manufacturing/",
+      "slug": "zoho-for-manufacturing",
+      "keyword": "zoho for manufacturing",
+      "category": "Manufacturing",
+      "date": "2026-10-09",
+      "updated": "2026-10-09",
+      "author": "Arunkumar V",
+      "image": "/Asset/img/insights/zoho-for-manufacturing.webp",
+      "summary": "Zoho offers a manufacturer three routes. Zoho Inventory handles simple assembly but has no manufacturing module. Zoho ERP, launched in India in January 2026 and sold separately from Zoho One, has bills of materials, manufacturing orders, job cards, work centers, subcontracting and quality checks. Zoho Creator is for custom production apps built around your own process.",
+      "sections": [
+        "The short answer",
+        "The three routes at a glance",
+        "Route 1: Zoho Inventory, for simple assembly",
+        "Route 2: Zoho ERP, a real manufacturing module",
+        "Route 3: Zoho Creator, built around your process",
+        "What Zoho covers well around production",
+        "When dedicated manufacturing software is the better choice",
+        "How to decide: five questions",
+        "A sensible first project"
+      ],
+      "questions": [
+        "Does Zoho have an MRP or manufacturing module?",
+        "Does Zoho Inventory have a bill of materials?",
+        "Is Zoho ERP included in Zoho One?",
+        "Is Zoho ERP available outside India?",
+        "Can Zoho Creator be used as a manufacturing ERP?"
+      ],
+      "words": 1959,
+      "related": [
+        "zoho-flow-vs-deluge",
+        "zoho-creator-vs-power-apps",
+        "zoho-analytics-agentic-data-foundations-2026"
+      ],
+      "review": {
+        "last_checked": "2026-10-09",
+        "volatility": "high",
+        "next_check": "2026-10-23",
+        "facts_to_watch": [
+          "Zoho Inventory KB still says manufacturing modules are not yet supported; composite items are assemblies and kits",
+          "Zoho ERP is published for India only (en-in site, rupee pricing); no date announced for other countries",
+          "Zoho ERP is not included in Zoho One; plans Standard, Premium, Custom; yearly transaction caps",
+          "Zoho ERP help sections: BOM, manufacturing orders, job cards, shopfloor, work centers, subcontract manufacturing, quality",
+          "Zoho ERP 2026 updates: work center calendar, manufacturing orders from sales orders, quality inspections on purchase receives",
+          "Zoho Inventory, Creator and Flow are listed among Zoho One apps",
+          "Creator manufacturing page positions Creator as an extension layer beside SAP, Oracle, Infor or NetSuite",
+          "Vendor descriptions: MRPeasy (10 to 200 employees), Odoo, ERPNext (open source), Katana, TranZact (Indian MSMEs, Tally)"
+        ],
+        "sources": [
+          "https://www.zoho.com/us/inventory/kb/general-overview/zom-manufacturing-support.html",
+          "https://www.zoho.com/us/inventory/help/items/composite-items.html",
+          "https://www.zoho.com/en-in/erp/",
+          "https://www.zoho.com/en-in/erp/pricing/",
+          "https://www.zoho.com/en-in/erp/help/manufacturing-order/understanding-manufacturing-order.html",
+          "https://help.zoho.com/portal/en-gb/community/zoho-erp",
+          "https://www.zoho.com/press.html",
+          "https://www.zoho.com/creator/solutions/manufacturing/",
+          "https://www.zoho.com/one/applications/web.html",
+          "https://www.zoho.com/iot/industries/manufacturing.html",
+          "https://www.mrpeasy.com/",
+          "https://www.odoo.com/app/manufacturing-features",
+          "https://frappe.io/erpnext/open-source-manufacturing-erp-software",
+          "https://katanamrp.com/features/manufacturing/",
+          "https://letstranzact.ai/"
+        ]
+      }
+    },
+    {
       "title": "Zoho Creator vs Microsoft Power Apps: An Honest Comparison for Growing Businesses",
       "url": "/insights/zoho-creator-vs-power-apps/",
       "slug": "zoho-creator-vs-power-apps",
@@ -351,18 +482,21 @@
         "zoho-creator-vs-power-apps"
       ],
       "review": {
-        "last_checked": "never",
+        "last_checked": "2026-10-09",
         "volatility": "high",
-        "next_check": "due",
+        "next_check": "2026-10-23",
         "facts_to_watch": [
           "Partner tiers: Authorized, Advanced, Premium",
-          "US$5,000 revenue threshold for Authorized",
+          "US$5,000 revenue threshold for Authorized, within six months of onboarding",
           "Advanced above 400 points and Premium above 600 points out of 1,000",
+          "Value score split: revenue 500, customer success 200, market readiness 200, Zoho engagement 100",
+          "Tiers reassessed yearly; updated by January",
+          "Directory label \"Find a Partner\" and its URL",
           "Zudo Works' own partner status (update the wording once it is approved)"
         ],
         "sources": [
-          "https://www.zoho.com/partners/",
-          "https://www.zoho.com/partners/find-partner.html"
+          "https://www.zoho.com/partners/partner-tiers.html",
+          "https://www.zoho.com/partners/find-zoho-partner.html"
         ]
       }
     },
@@ -373,7 +507,7 @@
       "keyword": "zoho crm ai agents",
       "category": "AI and automation",
       "date": "2026-09-15",
-      "updated": "2026-10-08",
+      "updated": "2026-10-09",
       "author": "Arunkumar V",
       "image": "/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp",
       "summary": "AI in Zoho CRM is most useful today for summaries, drafting emails, data clean-up and prioritizing leads and deals. Actions involving money, customer commitments, deletions or key stage changes should stay rule-based or human-approved. Clean data, a defined process and clear permissions matter more than the AI model.",
@@ -393,24 +527,29 @@
         "Is it safe to let AI update CRM records?",
         "What should we do before adding AI to Zoho CRM?"
       ],
-      "words": 1329,
+      "words": 1507,
       "related": [
         "zoho-mcp-claude-chatgpt",
         "zoho-analytics-agentic-data-foundations-2026",
         "deluge-script-examples"
       ],
       "review": {
-        "last_checked": "never",
+        "last_checked": "2026-10-09",
         "volatility": "high",
-        "next_check": "due",
+        "next_check": "2026-10-23",
         "facts_to_watch": [
-          "Zia features by edition",
-          "Zia LLM, Zia Agents and Agent Studio: availability by product and region",
-          "Support for third-party models in Zia"
+          "Zoho CRM pricing page: AI agents from Standard, AI email insights from Professional, Zia predictions from Enterprise",
+          "Zia Agents: Agent Studio (low-code) and Agent Store (prebuilt agents by Zoho), across 60+ Zoho apps",
+          "Zia Agents is free as a service; you pay for LLM usage, with a free monthly token allowance on Zoho-hosted models",
+          "Bring-your-own-key vendors for Zia Agents: OpenAI, Gemini, Claude",
+          "Zia Chat announced 23 September 2026; availability not yet stated (add a section once it is generally available)"
         ],
         "sources": [
-          "https://www.zoho.com/zia/",
-          "https://www.zoho.com/crm/zia.html"
+          "https://www.zoho.com/zia/agents/",
+          "https://www.zoho.com/agents/pricing.html",
+          "https://www.zoho.com/crm/zohocrm-pricing.html",
+          "https://www.zoho.com/crm/comparison.html",
+          "https://www.zoho.com/press.html"
         ]
       }
     },
@@ -421,7 +560,7 @@
       "keyword": "zoho analytics ai",
       "category": "Analytics",
       "date": "2026-09-15",
-      "updated": "2026-10-08",
+      "updated": "2026-10-09",
       "author": "Arunkumar V",
       "image": "/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp",
       "summary": "To get reliable dashboards and AI answers from Zoho Analytics, connect sources with native connectors, join tables on a shared customer ID, clean data where it is created, and define key metrics once as query tables. Only then rely on Ask Zia, and check its answers against a trusted report.",
@@ -442,22 +581,26 @@
         "How do I combine Zoho CRM and Zoho Books data in Zoho Analytics?",
         "How often does Zoho Analytics sync data?"
       ],
-      "words": 1159,
+      "words": 1349,
       "related": [
         "zoho-agentic-ai-hyperautomation",
         "zoho-crm-implementation-cost",
         "deluge-script-examples"
       ],
       "review": {
-        "last_checked": "never",
+        "last_checked": "2026-10-09",
         "volatility": "medium",
-        "next_check": "due",
+        "next_check": "2026-11-23",
         "facts_to_watch": [
-          "Zoho Analytics connectors and sync frequency by plan",
-          "Ask Zia capabilities"
+          "Zoho claims 500+ data sources",
+          "Data refresh rate: Basic 1/day, Standard 8/day, Premium 8/day, Enterprise 24/day",
+          "LLM-powered Ask Zia agent on Premium and Enterprise only",
+          "Zoho Analytics has an MCP Server"
         ],
         "sources": [
-          "https://www.zoho.com/analytics/"
+          "https://www.zoho.com/analytics/",
+          "https://www.zoho.com/analytics/pricing.html",
+          "https://zoho.com/analytics/help/zia/"
         ]
       }
     },
