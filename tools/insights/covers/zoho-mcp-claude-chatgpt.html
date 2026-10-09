@@ -1,0 +1,70 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Inter;src:url('../../../Asset/fonts/inter-latin.woff2') format('woff2');font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1600px;height:900px;overflow:hidden}
+body{font-family:Inter,sans-serif;color:#1b2333;
+ background:radial-gradient(900px 520px at 88% 6%,rgba(214,200,226,.55),transparent 70%),
+            radial-gradient(1000px 600px at 4% 40%,rgba(196,206,226,.55),transparent 70%),
+            radial-gradient(1200px 700px at 50% 45%,#eff0f2 0%,#dfe1e5 55%,#c9cbd1 100%)}
+.scene{position:absolute;inset:0;transform-origin:50% 50%;transform:scale(var(--z,1))}
+.win{position:absolute;background:#f8f9fb;border-radius:16px;overflow:hidden;
+ box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 30px 60px -18px rgba(40,48,70,.28),0 10px 22px -10px rgba(40,48,70,.22)}
+.bar{height:54px;display:flex;align-items:center;gap:9px;padding:0 24px;background:#eceef2;border-bottom:1px solid #dcdfe6;font-weight:600;font-size:19px;color:#2b3446}
+.bar i{width:11px;height:11px;border-radius:50%;background:#cfd3db;display:block}
+.bar span{margin-left:12px}
+.lab{font-size:13px;font-weight:700;letter-spacing:.09em;color:#7c869a;text-transform:uppercase}
+.pill{display:inline-block;padding:6px 14px;border-radius:999px;font-size:15px;font-weight:600}
+.g{background:#dff2e6;color:#1f7a47}.b{background:#dbe8f8;color:#1f5fa8}.p{background:#e6e0f7;color:#5a45ad}.y{background:#fbecc8;color:#8a5a00}.r{background:#f9dedb;color:#b23a30}.n{background:#e5e7ec;color:#55607a}
+
+#chat{left:90px;top:140px;width:780px;height:590px;transform:perspective(2400px) rotateY(3deg) rotate(-2deg)}
+.msgs{padding:28px 30px}
+.me{margin-left:auto;max-width:560px;background:#e3e9f3;border-radius:16px 16px 4px 16px;padding:15px 19px;font-size:19px;line-height:1.45;font-weight:500}
+.tool{display:flex;align-items:center;gap:12px;margin:20px 0 16px;background:#fff;border:1px solid #e1e4ea;border-radius:11px;padding:12px 16px;font-size:16px;color:#55607a}
+.tool b{color:#1b2333;font-weight:600}
+.tool .pill{margin-left:auto;font-size:13px;padding:4px 11px}
+.ans{font-size:18px;line-height:1.5;color:#2b3446}
+.rows{margin-top:12px;border:1px solid #e1e4ea;border-radius:11px;background:#fff;overflow:hidden}
+.rows div{display:flex;justify-content:space-between;padding:11px 16px;font-size:17px;border-top:1px solid #eef0f4}
+.rows div:first-child{border-top:0}.rows span{color:#6b7589}.rows b{font-weight:600}
+#srv{left:910px;top:92px;width:600px;height:520px;transform:perspective(2400px) rotateY(-4deg) rotate(1.8deg)}
+.sh{padding:24px 28px 8px;display:flex;align-items:center;gap:12px}
+.sh code{font-family:ui-monospace,Menlo,monospace;font-size:20px;font-weight:600}
+.t{display:flex;align-items:center;padding:14px 28px;border-top:1px solid #e6e9ee;font-size:18px;font-weight:500}
+.t small{display:block;font-size:14px;color:#7c869a;font-weight:400;margin-top:2px}
+.t .pill{margin-left:auto;font-size:14px}
+.t.off{color:#9aa2b1}
+#log{left:872px;top:618px;width:400px;height:226px;background:#fff;transform:rotate(-1deg);
+ box-shadow:0 40px 70px -20px rgba(30,38,60,.38),0 12px 24px -10px rgba(30,38,60,.25)}
+#log .in{padding:20px 24px}
+.lg{display:flex;justify-content:space-between;align-items:center;font-size:15.5px;padding:9px 0;border-top:1px solid #eef0f4;color:#2b3446}
+.lg:first-of-type{border-top:0;margin-top:8px}.lg span{color:#7c869a;font-size:14px}
+.ok{color:#1f7a47;font-weight:600}
+</style></head><body><div class="scene">
+<div class="win" id="chat"><div class="bar"><i></i><i></i><i></i><span>AI assistant · connected to Zoho CRM</span></div>
+ <div class="msgs">
+  <div class="me">Which open deals over 500,000 have had no activity in the last 14 days?</div>
+  <div class="tool"><span>Tool call</span><b>Zoho CRM · Search Records</b><span class="pill g">Allowed</span></div>
+  <div class="ans">Three open deals match. The largest has been quiet for 23 days.
+   <div class="rows">
+    <div><b>Northside Clinic</b><span>Proposal · 23 days</span></div>
+    <div><b>Kiwi Fit-out</b><span>Negotiation · 17 days</span></div>
+    <div><b>Vale Freight</b><span>Qualification · 15 days</span></div>
+   </div></div>
+  <div class="tool" style="margin-bottom:0"><span>Wants to use</span><b>Zoho CRM · Create Task</b><span class="pill y">Ask first</span></div>
+ </div>
+</div>
+<div class="win" id="srv"><div class="bar"><i></i><i></i><i></i><span>Zoho MCP · Server</span></div>
+ <div class="sh"><code>sales_followup</code><span class="pill b" style="margin-left:auto">Authorize on Demand</span></div>
+ <div style="padding:6px 28px 12px"><span class="lab">Tools on this server</span></div>
+ <div class="t"><div>Search Records<small>Zoho CRM · read</small></div><span class="pill g">On</span></div>
+ <div class="t"><div>Get Record<small>Zoho CRM · read</small></div><span class="pill g">On</span></div>
+ <div class="t"><div>Create Task<small>Zoho CRM · create</small></div><span class="pill y">Confirm</span></div>
+ <div class="t off"><div>Update Record<small>Zoho CRM · update</small></div><span class="pill n">Not added</span></div>
+ <div class="t off"><div>Delete Records<small>Zoho CRM · delete</small></div><span class="pill r">Not added</span></div>
+</div>
+<div class="win" id="log"><div class="in"><span class="lab">Logs · last 30 days</span>
+ <div class="lg"><div>Search Records<br><span>today, 09:14</span></div><b class="ok">Success</b></div>
+ <div class="lg"><div>Get Record<br><span>today, 09:14</span></div><b class="ok">Success</b></div>
+ <div class="lg"><div>Create Task<br><span>yesterday, 16:02</span></div><b class="ok">Success</b></div>
+</div></div>
+</div></body></html>

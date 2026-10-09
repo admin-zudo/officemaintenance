@@ -39,4 +39,9 @@ ANSWERS = {
         'system around your process and you want predictable per-user pricing. Choose HubSpot if marketing leads the '
         'business and you want website, email and CRM in one product. The biggest cost difference appears at '
         'HubSpot\'s Professional tier, which adds a higher seat price and a required onboarding fee.',
+    'zoho-mcp-claude-chatgpt':
+        'Zoho MCP lets an AI assistant such as Claude or ChatGPT use tools in your Zoho apps. Create a server in the '
+        'Zoho MCP console, add only the tools you need, copy the MCP URL into your assistant and authorize with your '
+        'Zoho account. Start with read-only tools, keep each user on their own authorization, and require '
+        'confirmation before any change.',
 }

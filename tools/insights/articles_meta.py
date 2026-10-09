@@ -27,4 +27,7 @@ META = {
     'zoho-crm-vs-hubspot': (
         'Zoho CRM vs HubSpot for Small Businesses (2026)',
         'Zoho CRM vs HubSpot for small businesses: licensing, free plan limits, automation, marketing and customization, plus when each CRM is the better choice.'),
+    'zoho-mcp-claude-chatgpt': (
+        'Zoho MCP: Connect Claude or ChatGPT to Zoho CRM',
+        'Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.'),
 }

@@ -33,6 +33,7 @@ SERVICES_FOR = {
     'zoho-partner-software-development': ['/zoho-development/', '/pricing/', '/support-maintenance/'],
     'zoho-partner-program-explained': ['/zoho-development/', '/zoho-creator-development/', '/zoho-crm-development/'],
     'zoho-crm-vs-hubspot': ['/zoho-crm-development/', '/zoho-integrations/', '/pricing/'],
+    'zoho-mcp-claude-chatgpt': ['/business-process-automation/', '/zoho-integrations/', '/zoho-crm-development/'],
 }
 
 
