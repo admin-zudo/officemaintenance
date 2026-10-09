@@ -53,6 +53,8 @@ The aim is at least 2 articles a week; the playbook's 3 to 5 is better if you ca
 
 Add it to `tools/insights/articles_*.py`, add its title, description and quick answer, then run the commands in section 6.
 
+Also add the article to `tools/insights/articles_watch.py`: the facts that can go out of date, where to verify them, and the date they were checked. The build copies this into `blog/.automation-history.json`, the index that automated runs read first.
+
 Intent mix: about 40% commercial or comparison, 60% informational. Published articles are marked with a tick.
 
 ### Commercial and comparison (build these first)
