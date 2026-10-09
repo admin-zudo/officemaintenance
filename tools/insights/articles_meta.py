@@ -24,4 +24,7 @@ META = {
     'zoho-partner-program-explained': (
         'Zoho Partner Program: Authorized vs Premium Partners',
         'What an authorized Zoho partner is, how Zoho ranks Authorized, Advanced and Premium partners, and how to verify any Zoho partner in two minutes.'),
+    'zoho-crm-vs-hubspot': (
+        'Zoho CRM vs HubSpot for Small Businesses (2026)',
+        'Zoho CRM vs HubSpot for small businesses: licensing, free plan limits, automation, marketing and customization, plus when each CRM is the better choice.'),
 }

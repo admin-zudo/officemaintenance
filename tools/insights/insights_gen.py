@@ -32,6 +32,7 @@ SERVICES_FOR = {
     'zoho-analytics-agentic-data-foundations-2026': ['/zoho-integrations/', '/zoho-development/', '/business-process-automation/'],
     'zoho-partner-software-development': ['/zoho-development/', '/pricing/', '/support-maintenance/'],
     'zoho-partner-program-explained': ['/zoho-development/', '/zoho-creator-development/', '/zoho-crm-development/'],
+    'zoho-crm-vs-hubspot': ['/zoho-crm-development/', '/zoho-integrations/', '/pricing/'],
 }
 
 
