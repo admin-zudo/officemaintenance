@@ -34,4 +34,9 @@ ANSWERS = {
         'and Premium. Authorized partners have met a US$5,000 revenue threshold plus certification and project-success '
         'requirements; Advanced and Premium partners score above 400 and 600 points out of 1,000. Verify any partner '
         'in Zoho\'s Find a Partner directory.',
+    'zoho-crm-vs-hubspot':
+        'Choose Zoho CRM if sales, operations and finance need to share customer data, you want to customize the '
+        'system around your process and you want predictable per-user pricing. Choose HubSpot if marketing leads the '
+        'business and you want website, email and CRM in one product. The biggest cost difference appears at '
+        'HubSpot\'s Professional tier, which adds a higher seat price and a required onboarding fee.',
 }

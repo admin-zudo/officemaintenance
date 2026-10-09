@@ -61,7 +61,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho Creator vs Power Apps | Creator |
 | ✓ | Zoho CRM implementation cost | CRM, Pricing |
 | ✓ | How to choose a Zoho developer | Zoho pillar |
-| 1 | Zoho CRM vs HubSpot for small businesses | CRM, migration article |
+| ✓ | Zoho CRM vs HubSpot for small businesses | CRM, migration article |
 | 2 | Zoho CRM vs Salesforce: cost and fit | CRM, migration article |
 | 3 | Zoho Books vs Xero (UK, Australia, New Zealand) | Integrations |
 | 4 | Zoho Books vs QuickBooks (US) | Integrations |
@@ -159,6 +159,7 @@ Update facts, examples and the year, add sections for new questions seen in Sear
 
 ```
 python tools/locations/locations_gen.py # /locations/ hub and country pages (edit COUNTRIES in that file)
+python tools/insights/covers/render_cover.py <slug>  # cover + social image from tools/insights/covers/<slug>.html
 python tools/insights/insights_gen.py   # article pages, Insights index, blog/.automation-history.json
 python tools/insights/link_guides.py    # "Related guides" cards on service pages and homepage
 python tools/build.py                   # shared header/footer, canonicals, CSS/JS bundles, sitemap

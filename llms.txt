@@ -53,6 +53,7 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Insights (articles and guides): https://zudoworks.com/insights/
 - Pricing and project calculator: https://zudoworks.com/pricing/ (US$15 per hour; fixed prices for defined projects)
 - Zoho Creator vs Power Apps: https://zudoworks.com/insights/zoho-creator-vs-power-apps/
+- Zoho CRM vs HubSpot for small businesses: https://zudoworks.com/insights/zoho-crm-vs-hubspot/
 - Migrating from HubSpot or Salesforce to Zoho CRM: https://zudoworks.com/insights/migrate-hubspot-salesforce-to-zoho-crm/
 - Zoho CRM implementation cost: https://zudoworks.com/insights/zoho-crm-implementation-cost/
 - Deluge script examples: https://zudoworks.com/insights/deluge-script-examples/
