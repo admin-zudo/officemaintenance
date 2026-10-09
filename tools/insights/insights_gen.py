@@ -392,6 +392,7 @@ def history_entry(a):
             "keyword": a['keyword'], "category": a['category'],
             "date": a['published'], "updated": a['modified'], "author": "Arunkumar V",
             "image": f"/Asset/img/insights/{a['slug']}.webp",
+            "cover_style": w.get('cover', 'older style'),
             "summary": articles_answers.ANSWERS[a['slug']],
             "sections": [plain(t) for _, t in re.findall(r'<h2 id="([^"]+)">(.*?)</h2>', a['body']) if _ != 'faq'],
             "questions": [q for q, _ in a.get('faqs', [])],

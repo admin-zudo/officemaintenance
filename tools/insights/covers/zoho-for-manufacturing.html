@@ -1,73 +1,26 @@
-<!doctype html><html><head><meta charset="utf-8"><style>
-@font-face{font-family:Inter;src:url('../../../Asset/fonts/inter-latin.woff2') format('woff2');font-weight:100 900}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{width:1600px;height:900px;overflow:hidden}
-body{font-family:Inter,sans-serif;color:#1A1A2E;
- background:radial-gradient(900px 700px at 78% 30%,#ffffff 0%,rgba(255,255,255,0) 70%),linear-gradient(135deg,#EAF2FB 0%,#F3F6FB 45%,#E3EEF9 100%)}
-.scene{position:absolute;inset:0;transform-origin:50% 50%;transform:scale(var(--z,1))}
-/* left text panel */
-.panel{position:absolute;left:56px;top:56px;bottom:56px;width:560px;background:#fff;border-radius:28px;padding:48px 48px 0;
- box-shadow:0 30px 60px -30px rgba(27,90,150,.35),0 2px 0 rgba(255,255,255,.9) inset;border:1px solid #E5ECF4}
-.tag{display:inline-block;background:#226DB4;color:#fff;font-weight:700;font-size:18px;letter-spacing:.08em;text-transform:uppercase;padding:10px 20px;border-radius:999px}
-h1{font-size:64px;line-height:1.05;font-weight:800;letter-spacing:-.025em;margin-top:34px}
-.sub{font-size:27px;line-height:1.4;color:#3D3D4E;margin-top:30px}
-.rule{height:1px;background:#E5E7EB;margin-top:44px}
-.take{font-size:27px;line-height:1.3;font-weight:700;color:#226DB4;margin-top:34px}
-.dash{display:flex;gap:12px;margin-top:38px}.dash i{height:5px;border-radius:3px;display:block}
-.brand{position:absolute;left:48px;bottom:44px;display:flex;align-items:center;gap:14px;font-size:27px;font-weight:700}
-.brand img{width:48px;height:48px}
-/* right diagram */
-.art{position:absolute;left:660px;right:40px;top:40px;bottom:40px}
-.ring{position:absolute;border-radius:50%;border:2px dashed rgba(34,109,180,.22)}
-.node{position:absolute;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
- background:#fff;box-shadow:0 26px 50px -22px rgba(27,90,150,.45),0 0 0 10px rgba(255,255,255,.55)}
-.node b{font-size:25px;font-weight:800;line-height:1.15}.node span{font-size:18px;color:#6B7280;margin-top:6px}
-.node svg{margin-bottom:10px}
-.chip{position:absolute;background:#fff;border-radius:999px;padding:11px 20px;font-size:19px;font-weight:700;white-space:nowrap;
- box-shadow:0 14px 28px -14px rgba(27,90,150,.4);display:flex;align-items:center;gap:10px}
-.chip i{width:12px;height:12px;border-radius:50%;display:block}
-.diagram{position:absolute;left:0;top:-52px;width:900px;height:820px;transform:scale(.8);transform-origin:50% 0}
-.facts{position:absolute;left:0;right:0;top:596px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.facts div{background:#fff;border:1px solid #E5ECF4;border-radius:18px;padding:20px 22px;box-shadow:0 16px 30px -22px rgba(27,90,150,.4)}
-.facts b{display:block;font-size:25px;font-weight:800;color:#1B5A96}.facts span{display:block;font-size:17.5px;line-height:1.35;color:#6B7280;margin-top:6px}
-.url{position:absolute;right:0;bottom:6px;display:flex;align-items:center;gap:12px;font-size:21px;color:#3D3D4E}
-.url b{color:#1A1A2E}.url i{font-style:normal;width:38px;height:38px;border-radius:50%;background:#226DB4;color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px}
-svg.wire{position:absolute;inset:0;width:100%;height:100%}
-</style></head><body data-strict><div class="scene">
-<div class="panel" data-block>
- <span class="tag">Manufacturing</span>
- <h1>Zoho for manufacturing</h1>
- <p class="sub">Three Zoho products support production, each for a different kind of factory.</p>
- <div class="rule"></div>
- <p class="take">Count your production steps first.</p>
- <div class="dash"><i style="width:150px;background:#226DB4"></i><i style="width:56px;background:#F9B21D"></i></div>
- <div class="brand"><img src="../../../Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</div>
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css"><style>
+/* Layout: text on the left with no card, three numbered option rows stacked on the right */
+.left{position:absolute;left:64px;top:60px;width:520px;bottom:48px}
+h1{font-size:66px;line-height:1.04;font-weight:800;letter-spacing:-.025em;margin-top:28px}
+.sub{font-size:26px;line-height:1.4;color:var(--muted);margin-top:22px}
+.who{display:flex;align-items:center;gap:18px;margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 22px}
+.who p{font-size:24px;line-height:1.3;font-weight:700;color:var(--accent-deep)}
+.left .brand{position:absolute;left:0;bottom:0}
+.rows{position:absolute;left:668px;right:56px;top:60px;display:grid;gap:22px}
+.row{background:var(--card);border:1px solid var(--line);border-radius:24px;height:206px;padding:0 34px;display:grid;grid-template-columns:96px 1fr 300px;align-items:center;gap:26px}
+.num{width:92px;height:92px;border-radius:50%;background:var(--accent);color:#fff;font-size:44px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.row h2{font-size:38px;font-weight:800;letter-spacing:-.02em}
+.row .f{font-size:22px;color:var(--muted);margin-top:6px}
+.row .note{font-size:19.5px;line-height:1.35;background:var(--tint);border-radius:14px;padding:16px 18px;color:var(--ink)}
+.url{position:absolute;right:56px;bottom:44px}
+</style></head><body class="theme-green" data-strict><div class="scene">
+<div class="left" data-block><span class="tag">Manufacturing</span><h1>Zoho for manufacturing</h1><p class="sub">Three Zoho products support production, each for a different kind of factory.</p>
+ <div class="who"><svg width="64" height="64" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="46" fill="#E6F7EE"/><clipPath id="c"><circle cx="48" cy="48" r="46"/></clipPath><g clip-path="url(#c)"><path d="M14 100c0-21 15-33 34-33s34 12 34 33z" fill="#089949"/><path d="M40 62h16v10c0 4-16 4-16 0z" fill="#E8B594"/><ellipse cx="48" cy="45" rx="16" ry="18" fill="#F2C6A5"/><path d="M27 37c1-13 10-20 21-20s20 7 21 20z" fill="#F9B21D"/><rect x="24" y="35" width="48" height="5" rx="2.500" fill="#E09E0F"/></g></svg><p>Count production steps first.</p></div>
+ <div class="brand"><img src="../../../Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</div></div>
+<div class="rows">
+ <div class="row" data-block><div class="num">1</div><div><h2>Zoho Inventory</h2><p class="f">For simple assembly</p></div><p class="note">Assemblies and kits, but no manufacturing module</p></div>
+ <div class="row" data-block><div class="num">2</div><div><h2>Zoho ERP</h2><p class="f">For BOM and job cards</p></div><p class="note">Launched in India in 2026; not part of Zoho One</p></div>
+ <div class="row" data-block><div class="num">3</div><div><h2>Zoho Creator</h2><p class="f">For your own process</p></div><p class="note">Nothing ready-made; apps are built to order</p></div>
 </div>
-<div class="art">
-<div class="diagram">
- <div class="ring" style="left:250px;top:190px;width:440px;height:440px"></div>
- <div class="ring" style="left:170px;top:110px;width:600px;height:600px;border-color:rgba(34,109,180,.12)"></div>
- <svg class="wire" viewBox="0 0 900 820" fill="none">
-  <path d="M214 410 H 330" stroke="#1A1A2E" stroke-width="5" stroke-linecap="round"/>
-  <path d="M610 410 C 670 410 670 208 725 208" stroke="#089949" stroke-width="5" stroke-linecap="round"/>
-  <path d="M610 410 H 725" stroke="#F9B21D" stroke-width="5" stroke-linecap="round"/>
-  <path d="M610 410 C 670 410 670 612 725 612" stroke="#226DB4" stroke-width="5" stroke-linecap="round"/>
- </svg>
- <div class="node" data-block style="left:-14px;top:296px;width:228px;height:228px">
-  <svg width="74" height="74" viewBox="0 0 96 96" fill="none"><circle cx="48" cy="48" r="46" fill="#EBF3FA"/><clipPath id="c"><circle cx="48" cy="48" r="46"/></clipPath><g clip-path="url(#c)"><path d="M14 100c0-21 15-33 34-33s34 12 34 33z" fill="#226DB4"/><path d="M40 62h16v10c0 4-16 4-16 0z" fill="#E8B594"/><ellipse cx="48" cy="44" rx="16" ry="18.5" fill="#F2C6A5"/><path d="M30.5 43c-2-17 8-25 18-25 11 0 20 8 17.500 25-2-8-6-12-10-13-6 3-17 3-21 1-2 3-3.500 7-4.500 12z" fill="#1A1A2E"/><path d="M41 73l7 8 7-8" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></svg>
-  <b style="font-size:21px;margin-top:2px">Your factory<br>team</b></div>
- <div class="node" data-block style="left:330px;top:270px;width:280px;height:280px;box-shadow:0 30px 60px -22px rgba(27,90,150,.5),0 0 0 14px rgba(34,109,180,.12)">
-  <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#226DB4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.2"/><circle cx="19" cy="5" r="2.2"/><circle cx="19" cy="12" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M7.2 12h9.600M16.800 5h-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h3"/></svg>
-  <b>Which Zoho<br>route?</b><span>by production steps</span></div>
- <div class="node" data-block style="left:725px;top:120px;width:176px;height:176px"><b style="color:#067A3B">Inventory</b><span>simple<br>assembly</span></div>
- <div class="node" data-block style="left:725px;top:322px;width:176px;height:176px"><b style="color:#B37A00">Zoho ERP</b><span>BOM and<br>job cards</span></div>
- <div class="node" data-block style="left:725px;top:524px;width:176px;height:176px"><b style="color:#1B5A96">Creator</b><span>your own<br>process</span></div>
-</div>
- <div class="facts">
-  <div data-block><b>Zoho Inventory</b><span>Assemblies and kits, but no manufacturing module</span></div>
-  <div data-block><b>Zoho ERP</b><span>Launched in India in 2026; not part of Zoho One</span></div>
-  <div data-block><b>Zoho Creator</b><span>Nothing ready-made; apps are built to order</span></div>
- </div>
- <div class="url" data-block>Read the full guide <b>zudoworks.com/insights</b><i>&rarr;</i></div>
-</div>
+<div class="url" data-block>Read the full guide <b>zudoworks.com/insights</b><i>&rarr;</i></div>
 </div></body></html>

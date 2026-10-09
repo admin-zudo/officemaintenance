@@ -5,8 +5,10 @@
 #   volatility  how quickly the facts go out of date: 'high' re-check after 14 days, 'medium' 45, 'low' 120
 #   facts       the specific claims that can expire or change
 #   sources     where to verify them
+#   cover       layout and colour theme of the cover image, so new covers can be made to look different
 WATCH = {
     'zoho-crm-vs-hubspot': dict(
+        cover='panel-compare / blue',
         checked='2026-10-09', volatility='high',
         facts=['Zoho CRM free edition: up to 3 users', 'HubSpot free tools: up to 2 users',
                'HubSpot Professional and Enterprise have a required one-time onboarding fee',
@@ -16,6 +18,7 @@ WATCH = {
         sources=['https://www.zoho.com/crm/zohocrm-pricing.html', 'https://www.zoho.com/crm/comparison.html',
                  'https://www.hubspot.com/pricing/sales', 'https://www.hubspot.com/pricing/marketing']),
     'zoho-mcp-claude-chatgpt': dict(
+        cover='steps / navy',
         checked='2026-10-09', volatility='high',
         facts=['Zoho MCP is free to use for now', 'MCP calls follow each app\'s normal API limits',
                'Two modes: Authorize on Demand, Authorize via Connections (Super Admin only)',
@@ -76,6 +79,7 @@ WATCH = {
                'Zudo Works\' own partner status (update the wording once it is approved)'],
         sources=['https://www.zoho.com/partners/partner-tiers.html', 'https://www.zoho.com/partners/find-zoho-partner.html']),
     'zoho-for-manufacturing': dict(
+        cover='rows / green',
         checked='2026-10-09', volatility='high',
         facts=['Zoho Inventory KB still says manufacturing modules are not yet supported; composite items are assemblies and kits',
                'Zoho ERP is published for India only (en-in site, rupee pricing); no date announced for other countries',
@@ -95,6 +99,7 @@ WATCH = {
                  'https://www.odoo.com/app/manufacturing-features', 'https://frappe.io/erpnext/open-source-manufacturing-erp-software',
                  'https://katanamrp.com/features/manufacturing/', 'https://letstranzact.ai/']),
     'zoho-flow-vs-deluge': dict(
+        cover='split / blue and green',
         checked='2026-10-09', volatility='high',
         facts=['Zoho Flow: each executed action is one task; plans Free, Standard, Professional',
                'Flow Free plan: 100 tasks a month, 5 flows; polling 15 minutes (5 on Professional)',
