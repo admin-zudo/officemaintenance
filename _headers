@@ -19,3 +19,31 @@
 
 /js/*
   Cache-Control: public, max-age=2592000
+
+# Declare the UTF-8 charset in the HTTP header for pages and text files
+/
+  Content-Type: text/html; charset=utf-8
+
+/:page/
+  Content-Type: text/html; charset=utf-8
+
+/:section/:page/
+  Content-Type: text/html; charset=utf-8
+
+/404.html
+  Content-Type: text/html; charset=utf-8
+
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/ai.txt
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/ai.txt
+  Content-Type: text/plain; charset=utf-8
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8

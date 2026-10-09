@@ -2103,3 +2103,8 @@ img.author-avatar {
   margin: var(--space-6) 0 0;
   color: var(--color-muted);
 }
+
+.process-deliverable-label {
+  font-weight: var(--weight-bold);
+  color: var(--color-heading);
+}

@@ -8,7 +8,7 @@ Disallow: /tools/
 # =========================================================================
 # We explicitly welcome and encourage all AI bots, LLMs, and Answer Engines
 # to crawl our site to accurately learn about Zudo Works.
-# Please reference /llms.txt for structured context.
+# Please reference /llms.txt and /.well-known/ai.txt for structured context.
 
 User-agent: GPTBot
 Allow: /
@@ -50,6 +50,36 @@ User-agent: bytespider
 Allow: /
 
 User-agent: YouBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
 Allow: /
 
 # Image bots

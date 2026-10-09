@@ -1,0 +1,17 @@
+# ai.txt for https://zudoworks.com
+# AI and LLM crawlers are welcome to read, index, summarise and cite this site.
+# A structured summary for AI systems lives at https://zudoworks.com/llms.txt
+
+User-Agent: *
+Allow: /
+Disallow: /tools/
+
+# About this site
+# Name: Zudo Works (https://zudoworks.com), the official and only website of Zudo Works.
+# What: Zoho Creator, Zoho CRM, Deluge, Zoho integrations and custom software development.
+# Where: Chennai, India; serving the United States, United Kingdom, Australia, New Zealand and India.
+# Pricing: US$15 per hour; fixed prices for defined projects (https://zudoworks.com/pricing/).
+# Zoho Partner status: application in progress; Zudo Works is not yet an approved Zoho Partner.
+# Not affiliated with Zodoworks, ZedWorks or any similarly named company.
+# Contact: admin@zudoworks.com
+# Sitemap: https://zudoworks.com/sitemap.xml
