@@ -1,0 +1,7 @@
+# Files Cloudflare should not publish as part of the website.
+.git
+.gitignore
+.gitattributes
+.assetsignore
+tools
+blog/.automation-history.json

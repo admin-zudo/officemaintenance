@@ -99,6 +99,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | 28 | Zoho Sign with Zoho CRM: approval workflows | Automation |
 | 29 | Replacing spreadsheets with a Zoho Creator app | Creator |
 | 30 | Zoho CRM user adoption: a 30-day plan | Support |
+| ✓ | Zoho MCP: connect Claude or ChatGPT to Zoho CRM | Automation, Integrations |
 
 Only write about tools and situations the team has real experience with. Each article should include something others can't copy: real screenshots, code, numbers from your own projects, or a template.
 

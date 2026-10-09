@@ -212,7 +212,7 @@ ARTICLES.append(dict(
     published='2026-09-15', modified='2026-10-08',
     cover_alt='A Zoho CRM deal record with an AI assistant panel suggesting a next step that waits for human approval',
     caption='The useful version of AI in a CRM suggests and drafts; a person approves anything that matters.',
-    related=['zoho-analytics-agentic-data-foundations-2026', 'deluge-script-examples', 'zoho-crm-implementation-cost'],
+    related=['zoho-mcp-claude-chatgpt', 'zoho-analytics-agentic-data-foundations-2026', 'deluge-script-examples'],
     body='''
 <p>Traditional CRM automation follows rules you write: <em>when a deal reaches this stage, send this email</em>. AI agents are different. You give them a goal and access to tools, and they decide which steps to take. That makes them flexible, and it also makes them risky if they are pointed at messy data or given too much freedom.</p>
 <p>This article explains what that means in Zoho CRM specifically, what we recommend clients automate with AI today, and what they should keep under rules and human approval.</p>
@@ -229,7 +229,7 @@ ARTICLES.append(dict(
 
 <h2 id="zoho-ai-today">AI in the Zoho ecosystem today</h2>
 <p>Zoho&rsquo;s AI assistant is <strong>Zia</strong>, which has been part of Zoho CRM for years. Depending on your edition, it provides lead and deal predictions, anomaly detection in sales trends, best-time-to-contact suggestions, email sentiment, data enrichment and a conversational assistant for questions such as &ldquo;show me deals closing this month&rdquo;.</p>
-<p>In 2025 Zoho announced a bigger step: its own large language model (Zia LLM), prebuilt <strong>Zia Agents</strong> and an <strong>Agent Studio</strong> for building custom agents across Zoho apps. Zoho has also supported connecting third-party models such as OpenAI to Zia. Availability of these features varies by product, edition and region, and it is changing quickly, so check what is enabled in your own account before planning around a specific capability.</p>
+<p>In 2025 Zoho announced a bigger step: its own large language model (Zia LLM), prebuilt <strong>Zia Agents</strong> and an <strong>Agent Studio</strong> for building custom agents across Zoho apps. Zoho has also supported connecting third-party models such as OpenAI to Zia. Availability of these features varies by product, edition and region, and it is changing quickly, so check what is enabled in your own account before planning around a specific capability. Zoho also offers an MCP service that lets outside assistants such as Claude and ChatGPT work with your Zoho data; our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> covers how to set it up safely.</p>
 <p>The important point for planning is this: whichever model or agent you use, it acts on your CRM data through the same modules, fields and permissions your team uses. The quality of that foundation decides whether AI helps or creates noise.</p>
 
 <h2 id="good-uses">Where AI helps most right now</h2>
@@ -276,5 +276,142 @@ ARTICLES.append(dict(
          'For low-risk fields and suggestions, yes, with logging. For anything involving money, customer commitments, deletion or stage changes that trigger other processes, keep rules and human approval in place and let AI propose rather than act.'),
         ('What should we do before adding AI to Zoho CRM?',
          'Clean and deduplicate data, define the sales process in Blueprint, connect email and calendars so history is captured, set role-based permissions and keep an audit trail of automated changes.'),
+    ],
+))
+
+# ------------------------------------------------------------------ Zoho MCP
+ARTICLES.append(dict(
+    slug='zoho-mcp-claude-chatgpt',
+    title='Zoho MCP: How to Connect Claude or ChatGPT to Zoho CRM Safely',
+    seo_title='Zoho MCP: Connect Claude or ChatGPT to Zoho CRM Safely (2026 Guide)',
+    description='What Zoho MCP is, what you need on the Zoho, Claude and ChatGPT side, how to set it up, which authorization mode to choose, and which actions an AI assistant should and should not be allowed to take.',
+    lead='Zoho MCP lets an AI assistant such as Claude or ChatGPT read and change records in your Zoho apps from a chat window. Setting it up takes minutes. Deciding what the assistant is allowed to do is the part that deserves your time.',
+    category='AI and automation', keyword='zoho mcp',
+    published='2026-10-09', modified='2026-10-09',
+    cover_alt='An AI assistant chat asking about stalled deals beside a Zoho MCP server panel listing which CRM tools are allowed',
+    caption='The assistant can only use the tools you add to the MCP server, so the tool list is your main control.',
+    related=['zoho-agentic-ai-hyperautomation', 'deluge-script-examples', 'zoho-analytics-agentic-data-foundations-2026'],
+    body='''
+<p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
+<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were checked in October 2026.</p>
+
+<h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
+<p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI assistant, which Zoho calls the <strong>MCP client</strong>.</p>
+<p>Three points are worth understanding before you start:</p>
+<ul>
+  <li><strong>Zoho MCP is not an AI.</strong> The intelligence comes from the assistant you connect. Zoho MCP only gives it a controlled way to act.</li>
+  <li><strong>The assistant can use only the tools you add.</strong> If the server has no delete tool, the assistant cannot delete anything through it.</li>
+  <li><strong>It covers more than CRM.</strong> Zoho lists tools for CRM, Books, Desk, Mail, Calendar, Projects, Creator and other Zoho apps, plus a growing set of third-party services.</li>
+</ul>
+<p>Zoho CRM also publishes four ready-made CRM servers, for data insights, data operations, module customization, and workflow and process automation. They are a quick way to try the idea, though a server you build yourself gives you tighter control over the tool list.</p>
+
+<h2 id="what-you-need">What you need</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Side</th><th scope="col">Requirement</th><th scope="col">Notes</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho states that MCP is free to use for now and that it will give notice before introducing pricing</td></tr>
+    <tr><th scope="row">Claude</th><td>A plan that supports custom connectors: Pro, Max, Team or Enterprise</td><td>On Team and Enterprise plans, only an Owner can add the connector; members then connect individually</td></tr>
+    <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and fetch only</td></tr>
+    <tr><th scope="row">Other clients</th><td>Any client that supports MCP connections</td><td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Plan requirements change often. Confirm them on the <a href="https://www.zoho.com/mcp/" target="_blank" rel="noopener">Zoho MCP</a> site and in your AI provider&rsquo;s help centre before you promise this to your team.</p>
+
+<h2 id="setup">How to set it up</h2>
+<ol>
+  <li><strong>Create a server.</strong> In the Zoho MCP console, choose <em>Create MCP Server</em> and give it a name that says what it is for, such as <code>sales_readonly</code>. You can also start from a pre-configured server.</li>
+  <li><strong>Add tools.</strong> Open <em>Tools</em>, choose <em>Add Tools</em>, pick the app and tick only the actions you need. For a first server, search and get tools are enough.</li>
+  <li><strong>Check authorization.</strong> Under <em>Connections</em>, confirm how users will authorize. The next section explains the two options.</li>
+  <li><strong>Copy the MCP URL.</strong> The <em>Connect</em> section shows the server&rsquo;s URL. Treat it like a password.</li>
+  <li><strong>Add it to your assistant.</strong> In Claude, add a custom connector under <em>Customize &gt; Connectors</em>, paste the URL and click <em>Connect</em>. In ChatGPT, create an app under <em>Settings &gt; Apps</em>, paste the URL and choose OAuth.</li>
+  <li><strong>Test with a read-only question.</strong> For example: <em>&ldquo;List open deals over 500,000 with no activity in the last 14 days.&rdquo;</em> Check the answer against a CRM report before you trust it.</li>
+</ol>
+<p>Menu names change as the product develops. Zoho&rsquo;s <a href="https://help.zoho.com/portal/en/kb/mcp/implementation-guide/articles/zoho-mcp-implementation-guide" target="_blank" rel="noopener">implementation guide</a> has the current screens for each client.</p>
+
+<h2 id="authorization">The two authorization modes</h2>
+<p>This is the most important setting on the server, because it decides whose access the assistant uses.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col"></th><th scope="col">Authorize on Demand</th><th scope="col">Authorize via Connections</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Who signs in</th><td>Each user, with their own Zoho account</td><td>The Super Admin, once</td></tr>
+    <tr><th scope="row">Whose access is used</th><td>The individual user&rsquo;s</td><td>The Super Admin&rsquo;s tokens, shared with trusted members</td></tr>
+    <tr><th scope="row">Default for</th><td>Zoho apps</td><td>Third-party services</td></tr>
+    <tr><th scope="row">Best for</th><td>Teams, where people should see only what they normally can</td><td>A single shared integration, or third-party tools that need it</td></tr>
+  </tbody>
+</table>
+</div>
+<p>For Zoho apps, keep <strong>Authorize on Demand</strong> unless you have a specific reason not to. A sales rep who connects the assistant should not gain a Super Admin&rsquo;s reach through it. If you do need a shared connection, pair it with a server that has very few tools.</p>
+
+<h2 id="what-to-allow">What to let the assistant do</h2>
+<p>We sort actions by how hard they are to undo, the same way we do for any automation.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Action type</th><th scope="col">Examples</th><th scope="col">Our recommendation</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Read</th><td>Search records, get a record, get related records</td><td>Allow from day one</td></tr>
+    <tr><th scope="row">Create, low risk</th><td>Tasks, notes, call logs, draft emails</td><td>Allow after a week of read-only use, with the assistant asking before each action</td></tr>
+    <tr><th scope="row">Update</th><td>Deal stage, owner, amount, contact details</td><td>Allow selectively, always with a confirmation step</td></tr>
+    <tr><th scope="row">Money and commitments</th><td>Invoices, quotes, payments, emails sent to customers</td><td>Let the assistant draft; a person approves and sends</td></tr>
+    <tr><th scope="row">Delete and configuration</th><td>Deleting records, changing fields, layouts or workflows</td><td>Leave out of the server</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Two habits make this easier to manage. Build <strong>separate servers for separate jobs</strong>, for example one read-only server for reporting and another for sales follow-up. And keep each server small. Zoho recommends around 100 tools per server for best results, because an assistant choosing among too many tools is more likely to pick the wrong one.</p>
+
+<h2 id="risks">The risks to plan for</h2>
+<ul>
+  <li><strong>Hidden instructions in your data.</strong> An assistant reads whatever is in a record, including text a stranger typed into a web form or an email. That text can contain instructions aimed at the assistant. This is called prompt injection, and it is the main reason to keep write and send actions behind a human confirmation.</li>
+  <li><strong>The wrong record.</strong> &ldquo;Update the Atlas deal&rdquo; is ambiguous when there are three. Ask the assistant to show the record it found before it changes anything.</li>
+  <li><strong>A leaked URL.</strong> The MCP URL gives access to everything on that server. Do not paste it into chats or documents. If it leaks, regenerate the key in the <em>Connect</em> section.</li>
+  <li><strong>&ldquo;Always allow&rdquo;.</strong> Assistants ask before using a tool and offer to stop asking. Use that option only for read tools.</li>
+  <li><strong>Data leaving Zoho.</strong> Whatever the assistant reads is sent to the AI provider to produce the answer. Check your provider&rsquo;s data-use terms and your own privacy obligations before you connect customer or financial data.</li>
+</ul>
+<p>Zoho MCP keeps a log of every tool call, which you can filter by tool and by success or failure. Logs are kept for 30 days, so review them weekly while the setup is new.</p>
+
+<h2 id="mcp-vs-automation">MCP, workflows or Deluge: which to use</h2>
+<p>MCP does not replace the automation you already have. It suits a different kind of work.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Use</th><th scope="col">When</th><th scope="col">Example</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Workflow rules and Blueprint</th><td>The same thing must happen every time</td><td>Require approval for discounts above a set level</td></tr>
+    <tr><th scope="row">Deluge functions</th><td>The logic is fixed but too complex for a rule</td><td>Create a Zoho Books invoice when a deal is won</td></tr>
+    <tr><th scope="row">An assistant through MCP</th><td>The request is different each time and a person is present</td><td>&ldquo;Which customers have open tickets and an overdue invoice?&rdquo;</td></tr>
+  </tbody>
+</table>
+</div>
+<p>If a task runs on a schedule or must never be skipped, build it as a rule or a function. Our <a href="/insights/deluge-script-examples/">Deluge script examples</a> show the pattern. If it is a question someone asks on a Monday morning, MCP is a good fit. For a wider view of where AI helps in a CRM, see our guide to <a href="/insights/zoho-agentic-ai-hyperautomation/">AI agents in Zoho CRM</a>.</p>
+
+<h2 id="rollout">A four-week rollout plan</h2>
+<ol>
+  <li><strong>Week 1: read-only, two or three people.</strong> One server with search and get tools. Collect the questions people actually ask.</li>
+  <li><strong>Week 2: check accuracy.</strong> Compare the assistant&rsquo;s answers with CRM reports. Wrong answers usually point to data problems such as duplicates or empty fields, which are worth fixing anyway.</li>
+  <li><strong>Week 3: add low-risk create tools.</strong> Tasks, notes and drafts, with a confirmation each time.</li>
+  <li><strong>Week 4: review logs and decide.</strong> Keep what was used, remove what was not, and write a one-page rule on what the assistant may and may not do.</li>
+</ol>
+<p>Clean data makes the biggest difference to the result. If your records are inconsistent, start with the data, as described in our <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">data foundations guide</a>.</p>
+
+<h2 id="cost">Cost and limits</h2>
+<p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
+<p>If you want help deciding which tools to expose, or need the underlying <a href="/business-process-automation/">automation</a> and <a href="/zoho-integrations/">integrations</a> tidied up first, that is the kind of work we do.</p>
+
+<h2 id="faq">Frequently asked questions</h2>
+''',
+    faqs=[
+        ('Is Zoho MCP free?',
+         'At the time of writing, Zoho states that Zoho MCP is free to use and that it will notify users in advance if pricing is introduced. Calls made through MCP follow each Zoho app\'s normal API limits. You still pay for your Zoho apps and for the AI assistant you connect.'),
+        ('Which AI assistants work with Zoho MCP?',
+         'Any client that supports MCP connections. Zoho names Claude, ChatGPT, Cursor, VS Code and Windsurf. Each has its own plan requirements for custom connectors, so check your provider\'s help centre.'),
+        ('Can the assistant see records I cannot see?',
+         'With Authorize on Demand, each user signs in with their own Zoho account, so the assistant works within that user\'s access. With Authorize via Connections, the Super Admin\'s authorization is shared, so use it carefully and with a small set of tools.'),
+        ('Is it safe to let an AI assistant update Zoho CRM?',
+         'It can be, with limits. Add only the tools you need, keep delete and configuration tools out of the server, require confirmation before any change, and review the MCP logs regularly. Start with read-only access.'),
+        ('Do I need a developer to set up Zoho MCP?',
+         'No. Creating a server and connecting an assistant is done through menus. Where help is useful is in deciding which tools to expose, cleaning the data the assistant will read, and building rule-based automation for tasks that must happen the same way every time.'),
+        ('What is the difference between Zoho MCP and Zia?',
+         'Zia is Zoho\'s own AI, built into Zoho apps. Zoho MCP is a connection layer that lets an outside assistant, such as Claude or ChatGPT, use tools in your Zoho apps. Many teams will use both.'),
     ],
 ))
