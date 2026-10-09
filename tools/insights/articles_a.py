@@ -341,7 +341,7 @@ ARTICLES.append(dict(
     lead='Both are good CRMs, and both have a free plan that makes the first month easy. The difference shows up later, when you add users, automation and marketing. Here is how the two compare once a small business starts to rely on them.',
     category='Comparisons', keyword='zoho crm vs hubspot',
     published='2026-10-09', modified='2026-10-09',
-    cover_alt='A Zoho CRM deal pipeline window beside a HubSpot contact record with a marketing email panel',
+    cover_alt='Zoho CRM vs HubSpot at a glance: how each is licensed, what is built in, free plan limits and one-time fees',
     caption='Zoho CRM starts from the sales process and adds apps around it; HubSpot starts from marketing and adds hubs around it.',
     related=['migrate-hubspot-salesforce-to-zoho-crm', 'zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps'],
     body='''

@@ -2,76 +2,69 @@
 @font-face{font-family:Inter;src:url('../../../Asset/fonts/inter-latin.woff2') format('woff2');font-weight:100 900}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:1600px;height:900px;overflow:hidden}
-body{font-family:Inter,sans-serif;color:#1b2333;
- background:radial-gradient(900px 520px at 88% 6%,rgba(214,200,226,.55),transparent 70%),
-            radial-gradient(1000px 600px at 4% 40%,rgba(196,206,226,.55),transparent 70%),
-            radial-gradient(1200px 700px at 50% 45%,#eff0f2 0%,#dfe1e5 55%,#c9cbd1 100%)}
+body{font-family:Inter,sans-serif;color:#1A1A2E;
+ background:radial-gradient(900px 700px at 78% 30%,#ffffff 0%,rgba(255,255,255,0) 70%),linear-gradient(135deg,#EAF2FB 0%,#F3F6FB 45%,#E3EEF9 100%)}
 .scene{position:absolute;inset:0;transform-origin:50% 50%;transform:scale(var(--z,1))}
-.win{position:absolute;background:#f8f9fb;border-radius:16px;overflow:hidden;
- box-shadow:0 1px 0 rgba(255,255,255,.9) inset,0 30px 60px -18px rgba(40,48,70,.28),0 10px 22px -10px rgba(40,48,70,.22)}
-.bar{height:54px;display:flex;align-items:center;gap:9px;padding:0 24px;background:#eceef2;border-bottom:1px solid #dcdfe6;font-weight:600;font-size:19px;color:#2b3446}
-.bar i{width:11px;height:11px;border-radius:50%;background:#cfd3db;display:block}
-.bar span{margin-left:12px}
-.lab{font-size:13px;font-weight:700;letter-spacing:.09em;color:#7c869a;text-transform:uppercase}
-.pill{display:inline-block;padding:6px 14px;border-radius:999px;font-size:15px;font-weight:600}
-.g{background:#dff2e6;color:#1f7a47}.b{background:#dbe8f8;color:#1f5fa8}.p{background:#e6e0f7;color:#5a45ad}.y{background:#fbecc8;color:#8a5a00}.r{background:#f9dedb;color:#b23a30}.n{background:#e5e7ec;color:#55607a}
-/* left: pipeline */
-#crm{left:96px;top:150px;width:800px;height:560px;transform:perspective(2400px) rotateY(3deg) rotate(-2.2deg)}
-.cols{display:flex;gap:18px;padding:26px 26px 0}
-.col{flex:1}
-.colh{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
-.colh b{font-size:14px;color:#7c869a;font-weight:600}
-.card{background:#fff;border:1px solid #e1e4ea;border-radius:11px;padding:14px 16px;margin-bottom:12px}
-.card h4{font-size:18px;font-weight:600;margin-bottom:5px}
-.card p{font-size:15px;color:#6b7589}
-.card .amt{font-size:17px;font-weight:700;color:#1b2333;margin-top:8px}
-.foot{position:absolute;left:26px;bottom:26px;display:flex;gap:10px}
-/* right: contact */
-#hub{left:930px;top:110px;width:580px;height:520px;transform:perspective(2400px) rotateY(-4deg) rotate(1.8deg)}
-.who{display:flex;gap:16px;align-items:center;padding:26px 28px 20px}
-.av{width:58px;height:58px;border-radius:50%;background:#f3d9cc;color:#a4502a;font-weight:700;font-size:21px;display:flex;align-items:center;justify-content:center}
-.who h3{font-size:23px;font-weight:700}.who p{font-size:16px;color:#6b7589;margin-top:3px}
-.props{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;padding:0 28px 20px}
-.props div b{display:block;font-size:17px;font-weight:600;margin-top:5px}
-.tl{border-top:1px solid #e1e4ea;padding:18px 28px}
-.ev{display:flex;gap:13px;align-items:flex-start;margin-top:14px}
-.dot{width:10px;height:10px;border-radius:50%;margin-top:7px;flex:none}
-.ev b{font-size:17px;font-weight:600;display:block}.ev span{font-size:15px;color:#6b7589}
-/* front: email */
-#mail{left:760px;top:560px;width:400px;height:252px;background:#fff;transform:rotate(-1deg);
- box-shadow:0 40px 70px -20px rgba(30,38,60,.38),0 12px 24px -10px rgba(30,38,60,.25)}
-#mail .in{padding:22px 24px}
-#mail h4{font-size:20px;font-weight:700;margin:8px 0 12px}
-.ln{height:9px;border-radius:5px;background:#e6e9ee;margin-bottom:9px}
-.btn{margin-top:16px;background:#2466b3;color:#fff;font-weight:600;font-size:17px;text-align:center;padding:12px;border-radius:9px}
-.sub{font-size:14px;color:#6b7589;text-align:center;margin-top:10px}
-</style></head><body><div class="scene">
-<div class="win" id="crm"><div class="bar"><i></i><i></i><i></i><span>Zoho CRM · Deals pipeline</span></div>
+/* left text panel */
+.panel{position:absolute;left:56px;top:56px;bottom:56px;width:560px;background:#fff;border-radius:28px;padding:48px 48px 0;
+ box-shadow:0 30px 60px -30px rgba(27,90,150,.35),0 2px 0 rgba(255,255,255,.9) inset;border:1px solid #E5ECF4}
+.tag{display:inline-block;background:#226DB4;color:#fff;font-weight:700;font-size:18px;letter-spacing:.08em;text-transform:uppercase;padding:10px 20px;border-radius:999px}
+h1{font-size:64px;line-height:1.05;font-weight:800;letter-spacing:-.025em;margin-top:34px}
+.sub{font-size:27px;line-height:1.4;color:#3D3D4E;margin-top:30px}
+.rule{height:1px;background:#E5E7EB;margin-top:44px}
+.take{font-size:27px;line-height:1.3;font-weight:700;color:#226DB4;margin-top:34px}
+.dash{display:flex;gap:12px;margin-top:38px}.dash i{height:5px;border-radius:3px;display:block}
+.brand{position:absolute;left:48px;bottom:44px;display:flex;align-items:center;gap:14px;font-size:27px;font-weight:700}
+.brand img{width:48px;height:48px}
+/* right diagram */
+.art{position:absolute;left:660px;right:40px;top:40px;bottom:40px}
+.ring{position:absolute;border-radius:50%;border:2px dashed rgba(34,109,180,.22)}
+.node{position:absolute;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+ background:#fff;box-shadow:0 26px 50px -22px rgba(27,90,150,.45),0 0 0 10px rgba(255,255,255,.55)}
+.node b{font-size:25px;font-weight:800;line-height:1.15}.node span{font-size:18px;color:#6B7280;margin-top:6px}
+.node svg{margin-bottom:10px}
+.chip{position:absolute;background:#fff;border-radius:999px;padding:11px 20px;font-size:19px;font-weight:700;white-space:nowrap;
+ box-shadow:0 14px 28px -14px rgba(27,90,150,.4);display:flex;align-items:center;gap:10px}
+.chip i{width:12px;height:12px;border-radius:50%;display:block}
+.diagram{position:absolute;left:0;top:-52px;width:900px;height:820px;transform:scale(.8);transform-origin:50% 0}
+.facts{position:absolute;left:0;right:0;top:596px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.facts div{background:#fff;border:1px solid #E5ECF4;border-radius:18px;padding:20px 22px;box-shadow:0 16px 30px -22px rgba(27,90,150,.4)}
+.facts b{display:block;font-size:25px;font-weight:800;color:#1B5A96}.facts span{display:block;font-size:17.5px;line-height:1.35;color:#6B7280;margin-top:6px}
+.url{position:absolute;right:0;bottom:6px;display:flex;align-items:center;gap:12px;font-size:21px;color:#3D3D4E}
+.url b{color:#1A1A2E}.url i{font-style:normal;width:38px;height:38px;border-radius:50%;background:#226DB4;color:#fff;display:flex;align-items:center;justify-content:center;font-size:21px}
+.cols{position:absolute;left:0;right:0;top:16px;display:grid;grid-template-columns:1fr 124px 1fr;align-items:center}
+.card{background:#fff;border:1px solid #E5ECF4;border-radius:22px;padding:30px 30px 26px;box-shadow:0 24px 44px -26px rgba(27,90,150,.45);height:470px}
+.card .k{font-size:17px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.card h2{font-size:38px;font-weight:800;letter-spacing:-.02em;margin-top:8px}
+.card p.s{font-size:20px;color:#6B7280;margin-top:8px;line-height:1.35}
+.card ul{list-style:none;margin-top:22px}
+.card li{display:flex;gap:12px;align-items:flex-start;font-size:21px;line-height:1.3;padding:12px 0;border-top:1px solid #F0F1F3;font-weight:500}
+.card li i{flex:none;width:12px;height:12px;border-radius:50%;margin-top:8px;display:block}
+.vs{width:72px;height:72px;border-radius:50%;background:#1A1A2E;color:#fff;font-weight:800;font-size:24px;display:flex;align-items:center;justify-content:center;justify-self:center}
+svg.wire{position:absolute;inset:0;width:100%;height:100%}
+</style></head><body data-strict><div class="scene">
+<div class="panel" data-block>
+ <span class="tag">CRM comparison</span>
+ <h1>Zoho CRM vs HubSpot</h1>
+ <p class="sub">Both are easy to start. The difference shows when you add users, automation and marketing.</p>
+ <div class="rule"></div>
+ <p class="take">Price both for year two.</p>
+ <div class="dash"><i style="width:150px;background:#226DB4"></i><i style="width:56px;background:#F9B21D"></i></div>
+ <div class="brand"><img src="../../../Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</div>
+</div>
+<div class="art">
  <div class="cols">
-  <div class="col"><div class="colh"><span class="lab">Qualification</span><b>2</b></div>
-   <div class="card"><h4>Brook Ltd</h4><p>Annual support plan</p><div class="amt">$4,800</div></div>
-   <div class="card"><h4>Orchid Retail</h4><p>Starter rollout</p><div class="amt">$3,600</div></div></div>
-  <div class="col"><div class="colh"><span class="lab">Proposal</span><b>2</b></div>
-   <div class="card"><h4>Kiwi Fit-out</h4><p>Quote sent 6 Oct</p><div class="amt">$9,250</div></div>
-   <div class="card"><h4>Northside Clinic</h4><p>Discount approval</p><div class="amt">$12,100</div><span class="pill y" style="margin-top:10px;font-size:13px;padding:4px 11px">Awaiting manager</span></div></div>
-  <div class="col"><div class="colh"><span class="lab">Closed won</span><b>1</b></div>
-   <div class="card"><h4>Atlas Renewal</h4><p>Signed 2 Oct</p><div class="amt">$18,400</div><span class="pill g" style="margin-top:10px;font-size:13px;padding:4px 11px">Invoice created</span></div></div>
+  <div class="card" data-block><span class="k" style="color:#226DB4">Sales first</span><h2>Zoho CRM</h2><p class="s">A sales CRM with a family of apps around it</p>
+   <ul><li><i style="background:#226DB4"></i>Per user, by edition</li><li><i style="background:#226DB4"></i>Deep customization and Blueprint</li><li><i style="background:#226DB4"></i>Native links to Books, Desk, Creator</li><li><i style="background:#226DB4"></i>More settings to learn</li></ul></div>
+  <div class="vs" data-block>vs</div>
+  <div class="card" data-block><span class="k" style="color:#E07A0F">Marketing first</span><h2>HubSpot</h2><p class="s">One platform with hubs on a shared contact record</p>
+   <ul><li><i style="background:#E07A0F"></i>Per seat, by hub and tier</li><li><i style="background:#E07A0F"></i>Website, email and forms built in</li><li><i style="background:#E07A0F"></i>Accounting through integrations</li><li><i style="background:#E07A0F"></i>Very little training needed</li></ul></div>
  </div>
- <div class="foot"><span class="pill p">Blueprint: approval before Negotiation</span><span class="pill g">Won → invoice in Zoho Books</span></div>
+ <div class="facts">
+  <div data-block><b>Free plans</b><span>Zoho CRM: up to 3 users. HubSpot: up to 2 users</span></div>
+  <div data-block><b>One-time fees</b><span>HubSpot Professional and above need paid onboarding</span></div>
+  <div data-block><b>Email list size</b><span>Raises the HubSpot Marketing Hub bill, not Zoho CRM&rsquo;s</span></div>
+ </div>
+ <div class="url" data-block>Read the full comparison <b>zudoworks.com/insights</b><i>&rarr;</i></div>
 </div>
-<div class="win" id="hub"><div class="bar"><i></i><i></i><i></i><span>HubSpot · Contact</span></div>
- <div class="who"><div class="av">MR</div><div><h3>Maya Reyes</h3><p>Operations Lead, Vale Freight</p></div><span class="pill b" style="margin-left:auto">Marketing contact</span></div>
- <div class="props">
-  <div><span class="lab">Lifecycle stage</span><b>Marketing qualified lead</b></div>
-  <div><span class="lab">Original source</span><b>Organic search</b></div>
- </div>
- <div class="tl"><span class="lab">Activity</span>
-  <div class="ev"><i class="dot" style="background:#e58a4e"></i><div><b>Form submitted</b><span>Pricing page · today, 10:42</span></div></div>
-  <div class="ev"><i class="dot" style="background:#4a8fd6"></i><div><b>Email opened</b><span>October newsletter · yesterday</span></div></div>
-  <div class="ev"><i class="dot" style="background:#8b74d6"></i><div><b>Enrolled in workflow</b><span>New lead nurture · 3 Oct</span></div></div>
- </div>
-</div>
-<div class="win" id="mail"><div class="in"><span class="lab">Marketing email</span><h4>October newsletter</h4>
- <div class="ln" style="width:100%"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:64%"></div>
- <div class="btn">Send to 2,140 contacts</div><div class="sub">Counts toward your contact tier</div></div></div>
 </div></body></html>

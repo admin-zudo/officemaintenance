@@ -288,7 +288,7 @@ ARTICLES.append(dict(
     lead='Zoho MCP lets an AI assistant such as Claude or ChatGPT read and change records in your Zoho apps from a chat window. Setting it up takes minutes. Deciding what the assistant is allowed to do is the part that deserves your time.',
     category='AI and automation', keyword='zoho mcp',
     published='2026-10-09', modified='2026-10-09',
-    cover_alt='An AI assistant chat asking about stalled deals beside a Zoho MCP server panel listing which CRM tools are allowed',
+    cover_alt='Diagram of an AI assistant connected to a Zoho MCP server: read allowed from day one, create with confirmation, delete kept out',
     caption='The assistant can only use the tools you add to the MCP server, so the tool list is your main control.',
     related=['zoho-agentic-ai-hyperautomation', 'deluge-script-examples', 'zoho-analytics-agentic-data-foundations-2026'],
     body='''
