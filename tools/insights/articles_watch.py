@@ -32,25 +32,30 @@ WATCH = {
                  'https://support.claude.com/en/articles/11175166-getting-started-with-custom-connectors-using-remote-mcp',
                  'https://help.openai.com/en/articles/12584461-developer-mode-and-full-mcp-connectors-in-chatgpt']),
     'zoho-creator-vs-power-apps': dict(
+        cover='table / amber',
         checked='', volatility='medium',
         facts=['Power Apps licensing: premium connectors, Dataverse and Power Pages need extra licences',
                'Zoho Creator plans include database, Deluge, portals and mobile apps; Creator is in Zoho One'],
         sources=['https://www.zoho.com/creator/pricing.html',
                  'https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing']),
     'migrate-hubspot-salesforce-to-zoho-crm': dict(
+        cover='arrows / blue',
         checked='', volatility='low',
         facts=['Import order and migration steps in Zoho CRM', 'Typical duration: two to four weeks for a small migration'],
         sources=['https://help.zoho.com/portal/en/kb/crm']),
     'zoho-crm-implementation-cost': dict(
+        cover='number / navy',
         checked='', volatility='medium',
         facts=['Zudo Works rate of US$15 per hour (confirm with Arunkumar if it changes)',
                'Hour ranges for starter, standard and advanced projects', 'Zoho CRM edition names'],
         sources=['https://www.zoho.com/crm/zohocrm-pricing.html', '/pricing/']),
     'deluge-script-examples': dict(
+        cover='tiles / green',
         checked='', volatility='low',
         facts=['Deluge task names and syntax used in the ten examples'],
         sources=['https://www.zoho.com/deluge/help/']),
     'zoho-agentic-ai-hyperautomation': dict(
+        cover='do and avoid / blue',
         checked='2026-10-09', volatility='high',
         facts=['Zoho CRM pricing page: AI agents from Standard, AI email insights from Professional, Zia predictions from Enterprise',
                'Zia Agents: Agent Studio (low-code) and Agent Store (prebuilt agents by Zoho), across 60+ Zoho apps',
@@ -61,16 +66,19 @@ WATCH = {
                  'https://www.zoho.com/crm/zohocrm-pricing.html', 'https://www.zoho.com/crm/comparison.html',
                  'https://www.zoho.com/press.html']),
     'zoho-analytics-agentic-data-foundations-2026': dict(
+        cover='vertical steps / navy',
         checked='2026-10-09', volatility='medium',
         facts=['Zoho claims 500+ data sources', 'Data refresh rate: Basic 1/day, Standard 8/day, Premium 8/day, Enterprise 24/day',
                'LLM-powered Ask Zia agent on Premium and Enterprise only', 'Zoho Analytics has an MCP Server'],
         sources=['https://www.zoho.com/analytics/', 'https://www.zoho.com/analytics/pricing.html',
                  'https://zoho.com/analytics/help/zia/']),
     'zoho-partner-software-development': dict(
+        cover='checklist / green',
         checked='', volatility='low',
         facts=['Advice only; few facts that expire'],
         sources=[]),
     'zoho-partner-program-explained': dict(
+        cover='levels / amber',
         checked='2026-10-09', volatility='high',
         facts=['Partner tiers: Authorized, Advanced, Premium', 'US$5,000 revenue threshold for Authorized, within six months of onboarding',
                'Advanced above 400 points and Premium above 600 points out of 1,000',

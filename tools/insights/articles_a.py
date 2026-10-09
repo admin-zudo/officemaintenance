@@ -11,7 +11,7 @@ ARTICLES.append(dict(
     lead='Both platforms let you build business apps without a full development team. They are built on different ideas, though, and the wrong choice usually shows up six months later as licensing surprises or workarounds. Here is how they actually differ.',
     category='Comparisons', keyword='zoho creator vs power apps',
     published='2026-10-08', modified='2026-10-08',
-    cover_alt='Two low-code app builder windows side by side, one showing a Zoho Creator form and one a Power Apps canvas',
+    cover_alt='Table comparing Zoho Creator and Power Apps on data, logic, external users and best fit',
     caption='Same goal, different foundations: Creator bundles database, logic and portals; Power Apps leans on the wider Microsoft stack.',
     related=['zoho-crm-implementation-cost', 'deluge-script-examples', 'zoho-partner-software-development'],
     body='''
@@ -115,7 +115,7 @@ ARTICLES.append(dict(
     lead='A CRM migration fails in predictable ways: broken relationships between records, missing activity history, automations nobody remembered to rebuild, and a sales team that quietly goes back to spreadsheets. This is the plan we follow to avoid all four.',
     category='Zoho CRM', keyword='migrate hubspot to zoho crm',
     published='2026-10-08', modified='2026-10-08',
-    cover_alt='Two database panels joined by a field-mapping table, illustrating records moving from an old CRM into Zoho CRM',
+    cover_alt='Four migration steps to Zoho CRM: map, prepare, import in order, then rebuild automation',
     caption='Migration is mostly mapping: objects, fields, owners and the relationships between records.',
     related=['zoho-crm-vs-hubspot', 'zoho-crm-implementation-cost', 'deluge-script-examples'],
     body='''
@@ -232,7 +232,7 @@ ARTICLES.append(dict(
     lead='&ldquo;How much will this cost?&rdquo; is the first question every buyer asks and the one most providers avoid answering. Here is how the cost of a Zoho CRM implementation is actually made up, with worked examples using our own hourly rate.',
     category='Zoho CRM', keyword='zoho crm implementation cost',
     published='2026-10-08', modified='2026-10-08',
-    cover_alt='A project estimate sheet with line items for setup, migration, integrations and training next to a calculator',
+    cover_alt='Zoho CRM implementation effort at US$15 per hour: 40 to 70 hours starter, 100 to 180 standard, 200 to 400 advanced',
     caption='An implementation estimate is the sum of a few predictable pieces of work.',
     related=['migrate-hubspot-salesforce-to-zoho-crm', 'zoho-creator-vs-power-apps', 'zoho-partner-software-development'],
     body='''

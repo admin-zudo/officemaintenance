@@ -165,7 +165,7 @@ Update facts, examples and the year, add sections for new questions seen in Sear
 
 ```
 python tools/locations/locations_gen.py # /locations/ hub and country pages (edit COUNTRIES in that file)
-python tools/insights/covers/render_cover.py <slug>  # cover + social image from tools/insights/covers/<slug>.html (start from _template-panel.html; fails if anything overlaps or is cut off)
+python tools/insights/covers/render_cover.py <slug>  # cover + social image from tools/insights/covers/<slug>.html (start from a layout-NN file, see tools/insights/covers/README.md; fails if anything overlaps or is cut off)
 python tools/insights/insights_gen.py   # article pages, Insights index, blog/.automation-history.json
 python tools/insights/link_guides.py    # "Related guides" cards on service pages and homepage
 python tools/build.py                   # shared header/footer, canonicals, CSS/JS bundles, sitemap

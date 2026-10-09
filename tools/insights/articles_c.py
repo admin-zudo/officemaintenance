@@ -11,7 +11,7 @@ ARTICLES.append(dict(
     lead='AI features in analytics tools are impressive in demos and disappointing on messy data. Before you ask Zia a question about revenue, make sure the answer can be right. This is how we set up Zoho Analytics so dashboards and AI insights can be trusted.',
     category='Analytics', keyword='zoho analytics ai',
     published='2026-09-15', modified='2026-10-09',
-    cover_alt='An analytics dashboard with revenue charts and a pipeline breakdown built from several connected data sources',
+    cover_alt='Four steps to prepare Zoho Analytics data for AI: connect, join, clean and define, then use Ask Zia',
     caption='Good dashboards and good AI answers come from the same place: connected, clean, well-modeled data.',
     related=['zoho-agentic-ai-hyperautomation', 'zoho-crm-implementation-cost', 'deluge-script-examples'],
     body='''
@@ -101,7 +101,7 @@ ARTICLES.append(dict(
     lead='Choosing who builds your Zoho system matters more than which edition you buy. A good developer saves you money for years; a poor one leaves you with automations nobody understands. This checklist is what we would want a client to ask us.',
     category='Buying guide', keyword='how to choose a zoho developer',
     published='2026-09-15', modified='2026-10-08',
-    cover_alt='A hiring checklist on a clipboard with items for experience, references, ownership and documentation',
+    cover_alt='Six questions to ask before hiring a Zoho developer, beside an illustrated buyer',
     caption='A short checklist protects you from the most common problems in Zoho projects.',
     related=['zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps', 'migrate-hubspot-salesforce-to-zoho-crm'],
     body='''
@@ -186,7 +186,7 @@ ARTICLES.append(dict(
     lead='Search for a Zoho partner and you will see dozens of firms calling themselves authorized, certified or premium. This guide explains what those labels actually mean in Zoho&rsquo;s program, how to check them in two minutes, and how to decide what kind of help your project needs.',
     category='Buying guide', keyword='zoho partner',
     published='2026-10-08', modified='2026-10-08',
-    cover_alt='A card showing the three Zoho partner tiers, Authorized, Advanced and Premium, beside a directory search for verifying a partner',
+    cover_alt='The three Zoho partner tiers shown as levels: Premium above 600 points, Advanced above 400, Authorized at the base',
     caption='Zoho ranks consulting partners in three tiers and lists them in its Find a Partner directory.',
     related=['zoho-partner-software-development', 'zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps'],
     body='''

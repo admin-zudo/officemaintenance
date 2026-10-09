@@ -11,7 +11,7 @@ ARTICLES.append(dict(
     lead='Deluge is the scripting language behind Zoho CRM functions, Zoho Creator apps, Zoho Books custom functions and more. These are ten scripts based on the automations we write most often, with notes on how and where to use them.',
     category='Deluge', keyword='deluge script examples',
     published='2026-10-08', modified='2026-10-08',
-    cover_alt='A code editor showing a Deluge function that turns a won Zoho CRM deal into a Zoho Books invoice',
+    cover_alt='Six of ten reusable Deluge scripts, including invoices from won deals, duplicate checks and API calls',
     caption='Small Deluge functions remove the manual steps between Zoho apps.',
     related=['zoho-creator-vs-power-apps', 'migrate-hubspot-salesforce-to-zoho-crm', 'zoho-crm-implementation-cost'],
     body='''
@@ -210,7 +210,7 @@ ARTICLES.append(dict(
     lead='&ldquo;Agentic AI&rdquo; is the phrase of the year, and every software vendor has a version of it. Underneath the marketing there is something genuinely useful for CRM teams, as long as the data and processes underneath are in good shape. Here is a grounded view.',
     category='AI and automation', keyword='zoho crm ai agents',
     published='2026-09-15', modified='2026-10-09',
-    cover_alt='A Zoho CRM deal record with an AI assistant panel suggesting a next step that waits for human approval',
+    cover_alt='Two lists for AI in Zoho CRM: tasks to let AI help with, and decisions to keep under rules or approval',
     caption='The useful version of AI in a CRM suggests and drafts; a person approves anything that matters.',
     related=['zoho-mcp-claude-chatgpt', 'zoho-analytics-agentic-data-foundations-2026', 'deluge-script-examples'],
     body='''

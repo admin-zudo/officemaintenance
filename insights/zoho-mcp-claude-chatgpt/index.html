@@ -2,55 +2,53 @@
 <html lang="en">
 
 <head>
-  <!-- @head -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    document.documentElement.classList.add('js');
-    /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
-    try { if (/^Asia\/(Kolkata|Calcutta)$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.documentElement.classList.add('is-in'); } catch (e) { }
-  </script>
-  <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
-    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
-    try {
-      var zc = localStorage.getItem('zudo_cookie_consent');
-      if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
-    } catch (e) { }
-  </script>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PQBHDK59');</script>
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ4JC252SY"></script>
-  <script>
-    gtag('js', new Date());
-    gtag('config', 'G-SJ4JC252SY');
-  </script>
-  <meta name="theme-color" content="#226DB4">
-  <meta name="msvalidate.01" content="B0E942FD33A657DEA8679964137C6D16">
-  <link rel="canonical" href="https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/">
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
-  <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
-  <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
-  <link rel="preload" href="/Asset/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/site.css?v=8d0e8faaca">
-  <!-- @/head -->
+    <!-- @head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add('js');
+        /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
+        try { if (/^Asia\/(Kolkata|Calcutta)$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.documentElement.classList.add('is-in'); } catch (e) { }
+    </script>
+    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        try {
+            var zc = localStorage.getItem('zudo_cookie_consent');
+            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+        } catch (e) { }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PQBHDK59');</script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ4JC252SY"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-SJ4JC252SY');
+    </script>
+    <meta name="theme-color" content="#226DB4">
+    <meta name="msvalidate.01" content="B0E942FD33A657DEA8679964137C6D16">
+    <link rel="canonical" href="https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
+    <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
+    <link rel="preload" href="/Asset/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css?v=8d0e8faaca">
+    <!-- @/head -->
 
   <title>Zoho MCP: Connect Claude or ChatGPT to Zoho CRM | Zudo Works</title>
-  <meta name="description"
-    content="Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.">
+  <meta name="description" content="Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.">
   <meta name="author" content="Arunkumar V">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Zoho MCP: How to Connect Claude or ChatGPT to Zoho CRM Safely">
-  <meta property="og:description"
-    content="Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.">
+  <meta property="og:description" content="Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.">
   <meta property="og:url" content="https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/">
   <meta property="og:image" content="https://zudoworks.com/Asset/og/zoho-mcp-claude-chatgpt.jpg">
   <meta property="og:image:width" content="1200">
@@ -63,8 +61,7 @@
   <meta property="article:section" content="AI and automation">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zoho MCP: How to Connect Claude or ChatGPT to Zoho CRM Safely">
-  <meta name="twitter:description"
-    content="Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.">
+  <meta name="twitter:description" content="Zoho MCP explained: what you need, setup steps for Claude and ChatGPT, the two authorization modes, and which actions to allow an AI assistant.">
   <meta name="twitter:image" content="https://zudoworks.com/Asset/og/zoho-mcp-claude-chatgpt.jpg">
   <script type="application/ld+json">
 {
@@ -200,107 +197,110 @@
 </head>
 
 <body>
-  <!-- @header -->
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQBHDK59" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- @header -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQBHDK59" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div class="top-bar">
+<div class="top-bar">
     <div class="container">
-      <div class="top-bar-content">
-        <a href="mailto:admin@zudoworks.com" class="top-bar-item">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-          admin@zudoworks.com
-        </a>
-        <span class="top-bar-separator" aria-hidden="true">|</span>
-        <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
-          class="top-bar-item" target="_blank" rel="noopener">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
-            </path>
-          </svg>
-          WhatsApp +91 63843 53382
-        </a>
-        <span class="top-bar-separator only-in" aria-hidden="true">|</span>
-        <a href="tel:+916384353382" class="top-bar-item only-in">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-            </path>
-          </svg>
-          Call +91 63843 53382
-        </a>
-        <span class="top-bar-separator" aria-hidden="true">|</span>
-        <a href="/contact/" class="top-bar-item" data-booking>
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="3" y="4" width="18" height="18" rx="2"></rect>
-            <line x1="16" y1="2" x2="16" y2="6"></line>
-            <line x1="8" y1="2" x2="8" y2="6"></line>
-            <line x1="3" y1="10" x2="21" y2="10"></line>
-          </svg>
-          Book a discovery call
-        </a>
-      </div>
+        <div class="top-bar-content">
+            <a href="mailto:admin@zudoworks.com" class="top-bar-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                admin@zudoworks.com
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="top-bar-item" target="_blank" rel="noopener">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+                WhatsApp +91 63843 53382
+            </a>
+            <span class="top-bar-separator only-in" aria-hidden="true">|</span>
+            <a href="tel:+916384353382" class="top-bar-item only-in">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                Call +91 63843 53382
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="/contact/" class="top-bar-item" data-booking>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Book a discovery call
+            </a>
+        </div>
     </div>
-  </div>
+</div>
 
-  <header class="navbar scrolled">
+<header class="navbar scrolled">
     <div class="container">
-      <a href="/" class="navbar-logo" aria-label="Zudo Works home">
-        <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40" fetchpriority="high">
-        <span class="navbar-logo-text">
-          <span class="navbar-logo-name">Zudo Works</span>
-          <span class="navbar-logo-tagline">Zoho &amp; Custom Software Development</span>
-        </span>
-      </a>
-
-      <nav aria-label="Main navigation">
-        <ul class="navbar-nav" id="navbar-nav">
-          <li><a href="/services/" class="navbar-link">Services</a></li>
-          <li><a href="/zoho-development/" class="navbar-link">Zoho</a></li>
-          <li><a href="/zoho-creator-development/" class="navbar-link">Creator</a></li>
-          <li><a href="/zoho-crm-development/" class="navbar-link">CRM</a></li>
-          <li><a href="/zoho-integrations/" class="navbar-link">Integrations</a></li>
-          <li><a href="/work/" class="navbar-link">Work</a></li>
-          <li><a href="/pricing/" class="navbar-link">Pricing</a></li>
-          <li><a href="/insights/" class="navbar-link active" aria-current="page">Insights</a></li>
-          <li><a href="/about/" class="navbar-link">About</a></li>
-          <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm" data-booking>Book a Call</a></li>
-        </ul>
-      </nav>
-
-      <button class="navbar-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
-        aria-controls="navbar-nav"><span></span><span></span><span></span></button>
-      <div class="mobile-nav-actions">
-        <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
-          class="mobile-nav-phone mobile-nav-wa" target="_blank" rel="noopener" aria-label="Message us on WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path
-              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
-            </path>
-          </svg>
+        <a href="/" class="navbar-logo" aria-label="Zudo Works home">
+            <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                fetchpriority="high">
+            <span class="navbar-logo-text">
+                <span class="navbar-logo-name">Zudo Works</span>
+                <span class="navbar-logo-tagline">Zoho &amp; Custom Software Development</span>
+            </span>
         </a>
-        <a href="tel:+916384353382" class="mobile-nav-phone only-in" aria-label="Call +91 63843 53382">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-            </path>
-          </svg>
-        </a>
-        <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta" data-booking>Book a Call</a>
-      </div>
+
+        <nav aria-label="Main navigation">
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/services/" class="navbar-link">Services</a></li>
+                <li><a href="/zoho-development/" class="navbar-link">Zoho</a></li>
+                <li><a href="/zoho-creator-development/" class="navbar-link">Creator</a></li>
+                <li><a href="/zoho-crm-development/" class="navbar-link">CRM</a></li>
+                <li><a href="/zoho-integrations/" class="navbar-link">Integrations</a></li>
+                <li><a href="/work/" class="navbar-link">Work</a></li>
+                <li><a href="/pricing/" class="navbar-link">Pricing</a></li>
+                <li><a href="/insights/" class="navbar-link active" aria-current="page">Insights</a></li>
+                <li><a href="/about/" class="navbar-link">About</a></li>
+                <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm" data-booking>Book a Call</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="navbar-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="navbar-nav"><span></span><span></span><span></span></button>
+        <div class="mobile-nav-actions">
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="mobile-nav-phone mobile-nav-wa" target="_blank" rel="noopener"
+                aria-label="Message us on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+            </a>
+            <a href="tel:+916384353382" class="mobile-nav-phone only-in" aria-label="Call +91 63843 53382">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+            </a>
+            <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta" data-booking>Book a Call</a>
+        </div>
     </div>
-  </header>
-  <!-- @/header -->
+</header>
+    <!-- @/header -->
 
   <main id="main-content">
     <article class="post">
@@ -315,15 +315,11 @@
           </nav>
           <p class="section-label">AI and automation</p>
           <h1>Zoho MCP: How to Connect Claude or ChatGPT to Zoho CRM Safely</h1>
-          <p class="post-lead">Zoho MCP lets an AI assistant such as Claude or ChatGPT read and change records in your
-            Zoho apps from a chat window. Setting it up takes minutes. Deciding what the assistant is allowed to do is
-            the part that deserves your time.</p>
+          <p class="post-lead">Zoho MCP lets an AI assistant such as Claude or ChatGPT read and change records in your Zoho apps from a chat window. Setting it up takes minutes. Deciding what the assistant is allowed to do is the part that deserves your time.</p>
           <div class="post-byline">
-            <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="44"
-              height="44">
+            <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="44" height="44">
             <div>
-              <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo
-                Works</p>
+              <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo Works</p>
               <p class="post-byline-meta"><time datetime="2026-10-09">9 October 2026</time> &middot; 8 min read</p>
             </div>
           </div>
@@ -332,11 +328,9 @@
 
       <div class="container container--post">
         <figure class="post-cover">
-          <img src="/Asset/img/insights/zoho-mcp-claude-chatgpt.webp"
-            alt="Four permission levels for an AI assistant in Zoho CRM: read from day one, create after asking, update with confirmation, delete kept out"
-            width="1600" height="900" fetchpriority="high">
-          <figcaption>The assistant can only use the tools you add to the MCP server, so the tool list is your main
-            control.</figcaption>
+          <img src="/Asset/img/insights/zoho-mcp-claude-chatgpt.webp" alt="Four permission levels for an AI assistant in Zoho CRM: read from day one, create after asking, update with confirmation, delete kept out" width="1600" height="900"
+            fetchpriority="high">
+          <figcaption>The assistant can only use the tools you add to the MCP server, so the tool list is your main control.</figcaption>
         </figure>
       </div>
 
@@ -362,360 +356,178 @@
         <div class="post-body">
           <div class="quick-answer">
             <p class="quick-answer-label">Quick answer</p>
-            <p>Zoho MCP lets an AI assistant such as Claude or ChatGPT use tools in your Zoho apps. Create a server in
-              the Zoho MCP console, add only the tools you need, copy the MCP URL into your assistant and authorize with
-              your Zoho account. Start with read-only tools, keep each user on their own authorization, and require
-              confirmation before any change.</p>
+            <p>Zoho MCP lets an AI assistant such as Claude or ChatGPT use tools in your Zoho apps. Create a server in the Zoho MCP console, add only the tools you need, copy the MCP URL into your assistant and authorize with your Zoho account. Start with read-only tools, keep each user on their own authorization, and require confirmation before any change.</p>
           </div>
-          <p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a
-            chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in
-            late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an
-            assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
-          <p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is
-            new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move.
-            The details here were checked in October 2026.</p>
+<p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
+<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were checked in October 2026.</p>
 
-          <h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
-          <p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of
-            <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho
-            CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI
-            assistant, which Zoho calls the <strong>MCP client</strong>.
-          </p>
-          <p>Three points are worth understanding before you start:</p>
-          <ul>
-            <li><strong>Zoho MCP is not an AI.</strong> The intelligence comes from the assistant you connect. Zoho MCP
-              only gives it a controlled way to act.</li>
-            <li><strong>The assistant can use only the tools you add.</strong> If the server has no delete tool, the
-              assistant cannot delete anything through it.</li>
-            <li><strong>It covers more than CRM.</strong> Zoho lists tools for CRM, Books, Desk, Mail, Calendar,
-              Projects, Creator and other Zoho apps, plus a growing set of third-party services.</li>
-          </ul>
-          <p>Zoho CRM also publishes four ready-made CRM servers, for data insights, data operations, module
-            customization, and workflow and process automation. They are a quick way to try the idea, though a server
-            you build yourself gives you tighter control over the tool list.</p>
+<h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
+<p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI assistant, which Zoho calls the <strong>MCP client</strong>.</p>
+<p>Three points are worth understanding before you start:</p>
+<ul>
+  <li><strong>Zoho MCP is not an AI.</strong> The intelligence comes from the assistant you connect. Zoho MCP only gives it a controlled way to act.</li>
+  <li><strong>The assistant can use only the tools you add.</strong> If the server has no delete tool, the assistant cannot delete anything through it.</li>
+  <li><strong>It covers more than CRM.</strong> Zoho lists tools for CRM, Books, Desk, Mail, Calendar, Projects, Creator and other Zoho apps, plus a growing set of third-party services.</li>
+</ul>
+<p>Zoho CRM also publishes four ready-made CRM servers, for data insights, data operations, module customization, and workflow and process automation. They are a quick way to try the idea, though a server you build yourself gives you tighter control over the tool list.</p>
 
-          <h2 id="what-you-need">What you need</h2>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Side</th>
-                  <th scope="col">Requirement</th>
-                  <th scope="col">Notes</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Zoho</th>
-                  <td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td>
-                  <td>Zoho states that MCP is free to use for now and that it will give notice before introducing
-                    pricing</td>
-                </tr>
-                <tr>
-                  <th scope="row">Claude</th>
-                  <td>A plan that supports custom connectors: Pro, Max, Team or Enterprise</td>
-                  <td>On Team and Enterprise plans, only an Owner can add the connector; members then connect
-                    individually</td>
-                </tr>
-                <tr>
-                  <th scope="row">ChatGPT</th>
-                  <td>Developer mode with MCP apps</td>
-                  <td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and
-                    fetch only</td>
-                </tr>
-                <tr>
-                  <th scope="row">Other clients</th>
-                  <td>Any client that supports MCP connections</td>
-                  <td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p>Plan requirements change often. Confirm them on the <a href="https://www.zoho.com/mcp/" target="_blank"
-              rel="noopener">Zoho MCP</a> site and in your AI provider&rsquo;s help centre before you promise this to
-            your team.</p>
+<h2 id="what-you-need">What you need</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Side</th><th scope="col">Requirement</th><th scope="col">Notes</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho states that MCP is free to use for now and that it will give notice before introducing pricing</td></tr>
+    <tr><th scope="row">Claude</th><td>A plan that supports custom connectors: Pro, Max, Team or Enterprise</td><td>On Team and Enterprise plans, only an Owner can add the connector; members then connect individually</td></tr>
+    <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and fetch only</td></tr>
+    <tr><th scope="row">Other clients</th><td>Any client that supports MCP connections</td><td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Plan requirements change often. Confirm them on the <a href="https://www.zoho.com/mcp/" target="_blank" rel="noopener">Zoho MCP</a> site and in your AI provider&rsquo;s help centre before you promise this to your team.</p>
 
-          <h2 id="setup">How to set it up</h2>
-          <ol>
-            <li><strong>Create a server.</strong> In the Zoho MCP console, choose <em>Create MCP Server</em> and give it
-              a name that says what it is for, such as <code>sales_readonly</code>. You can also start from a
-              pre-configured server.</li>
-            <li><strong>Add tools.</strong> Open <em>Tools</em>, choose <em>Add Tools</em>, pick the app and tick only
-              the actions you need. For a first server, search and get tools are enough.</li>
-            <li><strong>Check authorization.</strong> Under <em>Connections</em>, confirm how users will authorize. The
-              next section explains the two options.</li>
-            <li><strong>Copy the MCP URL.</strong> The <em>Connect</em> section shows the server&rsquo;s URL. Treat it
-              like a password.</li>
-            <li><strong>Add it to your assistant.</strong> In Claude, add a custom connector under <em>Customize &gt;
-                Connectors</em>, paste the URL and click <em>Connect</em>. In ChatGPT, create an app under <em>Settings
-                &gt; Apps</em>, paste the URL and choose OAuth.</li>
-            <li><strong>Test with a read-only question.</strong> For example: <em>&ldquo;List open deals over 500,000
-                with no activity in the last 14 days.&rdquo;</em> Check the answer against a CRM report before you trust
-              it.</li>
-          </ol>
-          <p>Menu names change as the product develops. Zoho&rsquo;s <a
-              href="https://help.zoho.com/portal/en/kb/mcp/implementation-guide/articles/zoho-mcp-implementation-guide"
-              target="_blank" rel="noopener">implementation guide</a> has the current screens for each client.</p>
+<h2 id="setup">How to set it up</h2>
+<ol>
+  <li><strong>Create a server.</strong> In the Zoho MCP console, choose <em>Create MCP Server</em> and give it a name that says what it is for, such as <code>sales_readonly</code>. You can also start from a pre-configured server.</li>
+  <li><strong>Add tools.</strong> Open <em>Tools</em>, choose <em>Add Tools</em>, pick the app and tick only the actions you need. For a first server, search and get tools are enough.</li>
+  <li><strong>Check authorization.</strong> Under <em>Connections</em>, confirm how users will authorize. The next section explains the two options.</li>
+  <li><strong>Copy the MCP URL.</strong> The <em>Connect</em> section shows the server&rsquo;s URL. Treat it like a password.</li>
+  <li><strong>Add it to your assistant.</strong> In Claude, add a custom connector under <em>Customize &gt; Connectors</em>, paste the URL and click <em>Connect</em>. In ChatGPT, create an app under <em>Settings &gt; Apps</em>, paste the URL and choose OAuth.</li>
+  <li><strong>Test with a read-only question.</strong> For example: <em>&ldquo;List open deals over 500,000 with no activity in the last 14 days.&rdquo;</em> Check the answer against a CRM report before you trust it.</li>
+</ol>
+<p>Menu names change as the product develops. Zoho&rsquo;s <a href="https://help.zoho.com/portal/en/kb/mcp/implementation-guide/articles/zoho-mcp-implementation-guide" target="_blank" rel="noopener">implementation guide</a> has the current screens for each client.</p>
 
-          <h2 id="authorization">The two authorization modes</h2>
-          <p>This is the most important setting on the server, because it decides whose access the assistant uses.</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Authorize on Demand</th>
-                  <th scope="col">Authorize via Connections</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Who signs in</th>
-                  <td>Each user, with their own Zoho account</td>
-                  <td>The Super Admin, once</td>
-                </tr>
-                <tr>
-                  <th scope="row">Whose access is used</th>
-                  <td>The individual user&rsquo;s</td>
-                  <td>The Super Admin&rsquo;s tokens, shared with trusted members</td>
-                </tr>
-                <tr>
-                  <th scope="row">Default for</th>
-                  <td>Zoho apps</td>
-                  <td>Third-party services</td>
-                </tr>
-                <tr>
-                  <th scope="row">Best for</th>
-                  <td>Teams, where people should see only what they normally can</td>
-                  <td>A single shared integration, or third-party tools that need it</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p>For Zoho apps, keep <strong>Authorize on Demand</strong> unless you have a specific reason not to. A sales
-            rep who connects the assistant should not gain a Super Admin&rsquo;s reach through it. If you do need a
-            shared connection, pair it with a server that has very few tools.</p>
+<h2 id="authorization">The two authorization modes</h2>
+<p>This is the most important setting on the server, because it decides whose access the assistant uses.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col"></th><th scope="col">Authorize on Demand</th><th scope="col">Authorize via Connections</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Who signs in</th><td>Each user, with their own Zoho account</td><td>The Super Admin, once</td></tr>
+    <tr><th scope="row">Whose access is used</th><td>The individual user&rsquo;s</td><td>The Super Admin&rsquo;s tokens, shared with trusted members</td></tr>
+    <tr><th scope="row">Default for</th><td>Zoho apps</td><td>Third-party services</td></tr>
+    <tr><th scope="row">Best for</th><td>Teams, where people should see only what they normally can</td><td>A single shared integration, or third-party tools that need it</td></tr>
+  </tbody>
+</table>
+</div>
+<p>For Zoho apps, keep <strong>Authorize on Demand</strong> unless you have a specific reason not to. A sales rep who connects the assistant should not gain a Super Admin&rsquo;s reach through it. If you do need a shared connection, pair it with a server that has very few tools.</p>
 
-          <h2 id="what-to-allow">What to let the assistant do</h2>
-          <p>We sort actions by how hard they are to undo, the same way we do for any automation.</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Action type</th>
-                  <th scope="col">Examples</th>
-                  <th scope="col">Our recommendation</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Read</th>
-                  <td>Search records, get a record, get related records</td>
-                  <td>Allow from day one</td>
-                </tr>
-                <tr>
-                  <th scope="row">Create, low risk</th>
-                  <td>Tasks, notes, call logs, draft emails</td>
-                  <td>Allow after a week of read-only use, with the assistant asking before each action</td>
-                </tr>
-                <tr>
-                  <th scope="row">Update</th>
-                  <td>Deal stage, owner, amount, contact details</td>
-                  <td>Allow selectively, always with a confirmation step</td>
-                </tr>
-                <tr>
-                  <th scope="row">Money and commitments</th>
-                  <td>Invoices, quotes, payments, emails sent to customers</td>
-                  <td>Let the assistant draft; a person approves and sends</td>
-                </tr>
-                <tr>
-                  <th scope="row">Delete and configuration</th>
-                  <td>Deleting records, changing fields, layouts or workflows</td>
-                  <td>Leave out of the server</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p>Two habits make this easier to manage. Build <strong>separate servers for separate jobs</strong>, for
-            example one read-only server for reporting and another for sales follow-up. And keep each server small. Zoho
-            recommends around 100 tools per server for best results, because an assistant choosing among too many tools
-            is more likely to pick the wrong one.</p>
+<h2 id="what-to-allow">What to let the assistant do</h2>
+<p>We sort actions by how hard they are to undo, the same way we do for any automation.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Action type</th><th scope="col">Examples</th><th scope="col">Our recommendation</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Read</th><td>Search records, get a record, get related records</td><td>Allow from day one</td></tr>
+    <tr><th scope="row">Create, low risk</th><td>Tasks, notes, call logs, draft emails</td><td>Allow after a week of read-only use, with the assistant asking before each action</td></tr>
+    <tr><th scope="row">Update</th><td>Deal stage, owner, amount, contact details</td><td>Allow selectively, always with a confirmation step</td></tr>
+    <tr><th scope="row">Money and commitments</th><td>Invoices, quotes, payments, emails sent to customers</td><td>Let the assistant draft; a person approves and sends</td></tr>
+    <tr><th scope="row">Delete and configuration</th><td>Deleting records, changing fields, layouts or workflows</td><td>Leave out of the server</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Two habits make this easier to manage. Build <strong>separate servers for separate jobs</strong>, for example one read-only server for reporting and another for sales follow-up. And keep each server small. Zoho recommends around 100 tools per server for best results, because an assistant choosing among too many tools is more likely to pick the wrong one.</p>
 
-          <h2 id="risks">The risks to plan for</h2>
-          <ul>
-            <li><strong>Hidden instructions in your data.</strong> An assistant reads whatever is in a record, including
-              text a stranger typed into a web form or an email. That text can contain instructions aimed at the
-              assistant. This is called prompt injection, and it is the main reason to keep write and send actions
-              behind a human confirmation.</li>
-            <li><strong>The wrong record.</strong> &ldquo;Update the Atlas deal&rdquo; is ambiguous when there are
-              three. Ask the assistant to show the record it found before it changes anything.</li>
-            <li><strong>A leaked URL.</strong> The MCP URL gives access to everything on that server. Do not paste it
-              into chats or documents. If it leaks, regenerate the key in the <em>Connect</em> section.</li>
-            <li><strong>&ldquo;Always allow&rdquo;.</strong> Assistants ask before using a tool and offer to stop
-              asking. Use that option only for read tools.</li>
-            <li><strong>Data leaving Zoho.</strong> Whatever the assistant reads is sent to the AI provider to produce
-              the answer. Check your provider&rsquo;s data-use terms and your own privacy obligations before you connect
-              customer or financial data.</li>
-          </ul>
-          <p>Zoho MCP keeps a log of every tool call, which you can filter by tool and by success or failure. Logs are
-            kept for 30 days, so review them weekly while the setup is new.</p>
+<h2 id="risks">The risks to plan for</h2>
+<ul>
+  <li><strong>Hidden instructions in your data.</strong> An assistant reads whatever is in a record, including text a stranger typed into a web form or an email. That text can contain instructions aimed at the assistant. This is called prompt injection, and it is the main reason to keep write and send actions behind a human confirmation.</li>
+  <li><strong>The wrong record.</strong> &ldquo;Update the Atlas deal&rdquo; is ambiguous when there are three. Ask the assistant to show the record it found before it changes anything.</li>
+  <li><strong>A leaked URL.</strong> The MCP URL gives access to everything on that server. Do not paste it into chats or documents. If it leaks, regenerate the key in the <em>Connect</em> section.</li>
+  <li><strong>&ldquo;Always allow&rdquo;.</strong> Assistants ask before using a tool and offer to stop asking. Use that option only for read tools.</li>
+  <li><strong>Data leaving Zoho.</strong> Whatever the assistant reads is sent to the AI provider to produce the answer. Check your provider&rsquo;s data-use terms and your own privacy obligations before you connect customer or financial data.</li>
+</ul>
+<p>Zoho MCP keeps a log of every tool call, which you can filter by tool and by success or failure. Logs are kept for 30 days, so review them weekly while the setup is new.</p>
 
-          <h2 id="mcp-vs-automation">MCP, workflows or Deluge: which to use</h2>
-          <p>MCP does not replace the automation you already have. It suits a different kind of work.</p>
-          <div class="table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Use</th>
-                  <th scope="col">When</th>
-                  <th scope="col">Example</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Workflow rules and Blueprint</th>
-                  <td>The same thing must happen every time</td>
-                  <td>Require approval for discounts above a set level</td>
-                </tr>
-                <tr>
-                  <th scope="row">Deluge functions</th>
-                  <td>The logic is fixed but too complex for a rule</td>
-                  <td>Create a Zoho Books invoice when a deal is won</td>
-                </tr>
-                <tr>
-                  <th scope="row">An assistant through MCP</th>
-                  <td>The request is different each time and a person is present</td>
-                  <td>&ldquo;Which customers have open tickets and an overdue invoice?&rdquo;</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p>If a task runs on a schedule or must never be skipped, build it as a rule or a function. Our <a
-              href="/insights/deluge-script-examples/">Deluge script examples</a> show the pattern. If it is a question
-            someone asks on a Monday morning, MCP is a good fit. For a wider view of where AI helps in a CRM, see our
-            guide to <a href="/insights/zoho-agentic-ai-hyperautomation/">AI agents in Zoho CRM</a>.</p>
+<h2 id="mcp-vs-automation">MCP, workflows or Deluge: which to use</h2>
+<p>MCP does not replace the automation you already have. It suits a different kind of work.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th scope="col">Use</th><th scope="col">When</th><th scope="col">Example</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">Workflow rules and Blueprint</th><td>The same thing must happen every time</td><td>Require approval for discounts above a set level</td></tr>
+    <tr><th scope="row">Deluge functions</th><td>The logic is fixed but too complex for a rule</td><td>Create a Zoho Books invoice when a deal is won</td></tr>
+    <tr><th scope="row">An assistant through MCP</th><td>The request is different each time and a person is present</td><td>&ldquo;Which customers have open tickets and an overdue invoice?&rdquo;</td></tr>
+  </tbody>
+</table>
+</div>
+<p>If a task runs on a schedule or must never be skipped, build it as a rule or a function. Our <a href="/insights/deluge-script-examples/">Deluge script examples</a> show the pattern. If it is a question someone asks on a Monday morning, MCP is a good fit. For a wider view of where AI helps in a CRM, see our guide to <a href="/insights/zoho-agentic-ai-hyperautomation/">AI agents in Zoho CRM</a>.</p>
 
-          <h2 id="rollout">A four-week rollout plan</h2>
-          <ol>
-            <li><strong>Week 1: read-only, two or three people.</strong> One server with search and get tools. Collect
-              the questions people actually ask.</li>
-            <li><strong>Week 2: check accuracy.</strong> Compare the assistant&rsquo;s answers with CRM reports. Wrong
-              answers usually point to data problems such as duplicates or empty fields, which are worth fixing anyway.
-            </li>
-            <li><strong>Week 3: add low-risk create tools.</strong> Tasks, notes and drafts, with a confirmation each
-              time.</li>
-            <li><strong>Week 4: review logs and decide.</strong> Keep what was used, remove what was not, and write a
-              one-page rule on what the assistant may and may not do.</li>
-          </ol>
-          <p>Clean data makes the biggest difference to the result. If your records are inconsistent, start with the
-            data, as described in our <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">data foundations
-              guide</a>.</p>
+<h2 id="rollout">A four-week rollout plan</h2>
+<ol>
+  <li><strong>Week 1: read-only, two or three people.</strong> One server with search and get tools. Collect the questions people actually ask.</li>
+  <li><strong>Week 2: check accuracy.</strong> Compare the assistant&rsquo;s answers with CRM reports. Wrong answers usually point to data problems such as duplicates or empty fields, which are worth fixing anyway.</li>
+  <li><strong>Week 3: add low-risk create tools.</strong> Tasks, notes and drafts, with a confirmation each time.</li>
+  <li><strong>Week 4: review logs and decide.</strong> Keep what was used, remove what was not, and write a one-page rule on what the assistant may and may not do.</li>
+</ol>
+<p>Clean data makes the biggest difference to the result. If your records are inconsistent, start with the data, as described in our <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">data foundations guide</a>.</p>
 
-          <h2 id="cost">Cost and limits</h2>
-          <p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each
-            app&rsquo;s normal API limits. There is no stated limit on the number of servers. The real costs are the AI
-            subscription for each user and the time spent on setup, permissions and review.</p>
-          <p>If you want help deciding which tools to expose, or need the underlying <a
-              href="/business-process-automation/">automation</a> and <a href="/zoho-integrations/">integrations</a>
-            tidied up first, that is the kind of work we do.</p>
+<h2 id="cost">Cost and limits</h2>
+<p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
+<p>If you want help deciding which tools to expose, or need the underlying <a href="/business-process-automation/">automation</a> and <a href="/zoho-integrations/">integrations</a> tidied up first, that is the kind of work we do.</p>
 
-          <h2 id="faq">Frequently asked questions</h2>
-          <div class="faq-list">
-            <div class="faq-item">
-              <button type="button" class="faq-question" aria-expanded="false">
-                <span>Is Zoho MCP free?</span>
-                <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>At the time of writing, Zoho states that Zoho MCP is free to use and that it will notify users in
-                  advance if pricing is introduced. Calls made through MCP follow each Zoho app's normal API limits. You
-                  still pay for your Zoho apps and for the AI assistant you connect.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button type="button" class="faq-question" aria-expanded="false">
-                <span>Which AI assistants work with Zoho MCP?</span>
-                <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>Any client that supports MCP connections. Zoho names Claude, ChatGPT, Cursor, VS Code and Windsurf.
-                  Each has its own plan requirements for custom connectors, so check your provider's help centre.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button type="button" class="faq-question" aria-expanded="false">
-                <span>Can the assistant see records I cannot see?</span>
-                <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>With Authorize on Demand, each user signs in with their own Zoho account, so the assistant works
-                  within that user's access. With Authorize via Connections, the Super Admin's authorization is shared,
-                  so use it carefully and with a small set of tools.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button type="button" class="faq-question" aria-expanded="false">
-                <span>Is it safe to let an AI assistant update Zoho CRM?</span>
-                <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>It can be, with limits. Add only the tools you need, keep delete and configuration tools out of the
-                  server, require confirmation before any change, and review the MCP logs regularly. Start with
-                  read-only access.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button type="button" class="faq-question" aria-expanded="false">
-                <span>Do I need a developer to set up Zoho MCP?</span>
-                <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>No. Creating a server and connecting an assistant is done through menus. Where help is useful is in
-                  deciding which tools to expose, cleaning the data the assistant will read, and building rule-based
-                  automation for tasks that must happen the same way every time.</p>
-              </div>
-            </div>
-            <div class="faq-item">
-              <button type="button" class="faq-question" aria-expanded="false">
-                <span>What is the difference between Zoho MCP and Zia?</span>
-                <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" aria-hidden="true">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="faq-answer">
-                <p>Zia is Zoho's own AI, built into Zoho apps. Zoho MCP is a connection layer that lets an outside
-                  assistant, such as Claude or ChatGPT, use tools in your Zoho apps. Many teams will use both.</p>
-              </div>
+<h2 id="faq">Frequently asked questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Is Zoho MCP free?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>At the time of writing, Zoho states that Zoho MCP is free to use and that it will notify users in advance if pricing is introduced. Calls made through MCP follow each Zoho app's normal API limits. You still pay for your Zoho apps and for the AI assistant you connect.</p>
             </div>
           </div>
-          <p class="post-services"><strong>Related services:</strong> <a href="/business-process-automation/">Business
-              process automation</a> &middot; <a href="/zoho-integrations/">Zoho integrations</a> &middot; <a
-              href="/zoho-crm-development/">Zoho CRM implementation</a> &middot; <a href="/zoho-development/">Zoho
-              development</a></p>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Which AI assistants work with Zoho MCP?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Any client that supports MCP connections. Zoho names Claude, ChatGPT, Cursor, VS Code and Windsurf. Each has its own plan requirements for custom connectors, so check your provider's help centre.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can the assistant see records I cannot see?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>With Authorize on Demand, each user signs in with their own Zoho account, so the assistant works within that user's access. With Authorize via Connections, the Super Admin's authorization is shared, so use it carefully and with a small set of tools.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Is it safe to let an AI assistant update Zoho CRM?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>It can be, with limits. Add only the tools you need, keep delete and configuration tools out of the server, require confirmation before any change, and review the MCP logs regularly. Start with read-only access.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Do I need a developer to set up Zoho MCP?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. Creating a server and connecting an assistant is done through menus. Where help is useful is in deciding which tools to expose, cleaning the data the assistant will read, and building rule-based automation for tasks that must happen the same way every time.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>What is the difference between Zoho MCP and Zia?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Zia is Zoho's own AI, built into Zoho apps. Zoho MCP is a connection layer that lets an outside assistant, such as Claude or ChatGPT, use tools in your Zoho apps. Many teams will use both.</p>
+            </div>
+          </div>
+        </div>
+          <p class="post-services"><strong>Related services:</strong> <a href="/business-process-automation/">Business process automation</a> &middot; <a href="/zoho-integrations/">Zoho integrations</a> &middot; <a href="/zoho-crm-development/">Zoho CRM implementation</a> &middot; <a href="/zoho-development/">Zoho development</a></p>
 
           <aside class="author-box" aria-label="About the author">
-            <img class="author-avatar author-avatar--lg" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V"
-              width="64" height="64" loading="lazy">
+            <img class="author-avatar author-avatar--lg" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="64" height="64" loading="lazy">
             <div>
               <p class="author-box-label">Written by</p>
-              <p class="author-box-name"><a href="/about/#leadership">Arunkumar V</a>, Chief Technology Officer, Zudo
-                Works</p>
+              <p class="author-box-name"><a href="/about/#leadership">Arunkumar V</a>, Chief Technology Officer, Zudo Works</p>
               <p>Arunkumar builds Zoho Creator apps, Zoho CRM systems, Deluge automations and integrations for
                 businesses in the US, UK, Australia, New Zealand and India. He received the &ldquo;Master of
                 Creator&rdquo; award at the Zoho Creator Partner Hackathon 2025.</p>
@@ -737,56 +549,36 @@
         </div>
         <div class="post-grid">
           <article class="post-card">
-            <a class="post-card-image" href="/insights/zoho-agentic-ai-hyperautomation/" tabindex="-1"
-              aria-hidden="true">
-              <img src="/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp"
-                alt="A Zoho CRM deal record with an AI assistant panel suggesting a next step that waits for human approval"
-                width="1600" height="900" loading="lazy">
+            <a class="post-card-image" href="/insights/zoho-agentic-ai-hyperautomation/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp" alt="Two lists for AI in Zoho CRM: tasks to let AI help with, and decisions to keep under rules or approval" width="1600" height="900" loading="lazy">
             </a>
             <div class="post-card-body">
               <p class="post-card-category">AI and automation</p>
-              <h3><a href="/insights/zoho-agentic-ai-hyperautomation/">AI Agents in Zoho CRM: What They Can Do Today and
-                  How to Prepare</a></h3>
-              <p class="post-card-excerpt">A practical look at AI in Zoho CRM: what Zia and AI agents can realistically
-                handle, where automation still needs rules and human approval, and how to prepare your CRM data and
-                processes.</p>
-              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September
-                  2026</time> &middot; Updated <time datetime="2026-10-09">9 October 2026</time> &middot; 7 min read</p>
+              <h3><a href="/insights/zoho-agentic-ai-hyperautomation/">AI Agents in Zoho CRM: What They Can Do Today and How to Prepare</a></h3>
+              <p class="post-card-excerpt">A practical look at AI in Zoho CRM: what Zia and AI agents can realistically handle, where automation still needs rules and human approval, and how to prepare your CRM data and processes.</p>
+              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September 2026</time> &middot; Updated <time datetime="2026-10-09">9 October 2026</time> &middot; 7 min read</p>
             </div>
           </article>
           <article class="post-card">
             <a class="post-card-image" href="/insights/deluge-script-examples/" tabindex="-1" aria-hidden="true">
-              <img src="/Asset/img/insights/deluge-script-examples.webp"
-                alt="A code editor showing a Deluge function that turns a won Zoho CRM deal into a Zoho Books invoice"
-                width="1600" height="900" loading="lazy">
+              <img src="/Asset/img/insights/deluge-script-examples.webp" alt="Six of ten reusable Deluge scripts, including invoices from won deals, duplicate checks and API calls" width="1600" height="900" loading="lazy">
             </a>
             <div class="post-card-body">
               <p class="post-card-category">Deluge</p>
-              <h3><a href="/insights/deluge-script-examples/">Deluge Script Examples: 10 Real Automations for Zoho CRM,
-                  Creator and Books</a></h3>
-              <p class="post-card-excerpt">Ten practical Deluge script examples we use in real projects: creating
-                invoices from won deals, blocking duplicates, follow-up tasks, scheduled reminders, API calls, Creator
-                validation and more.</p>
-              <p class="post-card-meta">Arunkumar V &middot; <time datetime="2026-10-08">8 October 2026</time> &middot;
-                6 min read</p>
+              <h3><a href="/insights/deluge-script-examples/">Deluge Script Examples: 10 Real Automations for Zoho CRM, Creator and Books</a></h3>
+              <p class="post-card-excerpt">Ten practical Deluge script examples we use in real projects: creating invoices from won deals, blocking duplicates, follow-up tasks, scheduled reminders, API calls, Creator validation and more.</p>
+              <p class="post-card-meta">Arunkumar V &middot; <time datetime="2026-10-08">8 October 2026</time> &middot; 6 min read</p>
             </div>
           </article>
           <article class="post-card">
-            <a class="post-card-image" href="/insights/zoho-analytics-agentic-data-foundations-2026/" tabindex="-1"
-              aria-hidden="true">
-              <img src="/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp"
-                alt="An analytics dashboard with revenue charts and a pipeline breakdown built from several connected data sources"
-                width="1600" height="900" loading="lazy">
+            <a class="post-card-image" href="/insights/zoho-analytics-agentic-data-foundations-2026/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/insights/zoho-analytics-agentic-data-foundations-2026.webp" alt="Four steps to prepare Zoho Analytics data for AI: connect, join, clean and define, then use Ask Zia" width="1600" height="900" loading="lazy">
             </a>
             <div class="post-card-body">
               <p class="post-card-category">Analytics</p>
-              <h3><a href="/insights/zoho-analytics-agentic-data-foundations-2026/">Getting Your Data Ready for AI in
-                  Zoho Analytics: A Practical Foundation</a></h3>
-              <p class="post-card-excerpt">How to prepare your business data in Zoho Analytics for reliable dashboards
-                and AI features like Ask Zia: connecting sources, modeling data, cleaning it, securing it and keeping it
-                fresh.</p>
-              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September
-                  2026</time> &middot; Updated <time datetime="2026-10-09">9 October 2026</time> &middot; 6 min read</p>
+              <h3><a href="/insights/zoho-analytics-agentic-data-foundations-2026/">Getting Your Data Ready for AI in Zoho Analytics: A Practical Foundation</a></h3>
+              <p class="post-card-excerpt">How to prepare your business data in Zoho Analytics for reliable dashboards and AI features like Ask Zia: connecting sources, modeling data, cleaning it, securing it and keeping it fresh.</p>
+              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September 2026</time> &middot; Updated <time datetime="2026-10-09">9 October 2026</time> &middot; 6 min read</p>
             </div>
           </article>
         </div>
@@ -805,155 +597,159 @@
     </section>
   </main>
 
-  <!-- @footer -->
-  <footer class="footer">
+    <!-- @footer -->
+<footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40" loading="lazy">
-          <p>Zoho Creator, Zoho CRM, Deluge and custom software development for businesses in the US, UK,
-            Australia, New Zealand and India.</p>
-          <div class="footer-social">
-            <a href="https://www.linkedin.com/company/zudo-works" aria-label="LinkedIn" target="_blank"
-              rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
-            </a>
-            <a href="https://www.facebook.com/zudoworks/" aria-label="Facebook" target="_blank"
-              rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/zudoworks/" aria-label="Instagram" target="_blank"
-              rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-              </svg>
-            </a>
-            <a href="https://x.com/zudoworks/" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
-            </a>
-            <a href="https://www.reddit.com/user/zudoworks/" aria-label="Reddit" target="_blank"
-              rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.56 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.56 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417a.36.36 0 0 0-.258.108.358.358 0 0 0 0 .513c.84.84 2.163.923 2.973.923.81 0 2.133-.083 2.973-.923a.361.361 0 0 0-.51-.513c-.65.65-1.613.738-2.463.738-.85 0-1.813-.088-2.463-.738a.356.356 0 0 0-.252-.108z" />
-              </svg>
-            </a>
-            <a href="https://mastodon.social/@zudoworks" rel="me noopener noreferrer" aria-label="Mastodon"
-              target="_blank">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M23.268 5.313c-.35-2.228-2.618-3.053-5.308-3.15-2.147-.078-4.976-.078-4.976-.078s-2.829 0-4.976.078c-2.69.097-4.958.922-5.308 3.15-.4 2.556-.4 5.86-.4 5.86 0 5.036 3.256 6.565 7.14 6.88.942.078 2.51.025 3.127-.126.172-.042.324-.093.449-.153l-.085-1.928c-1.096.34-2.336.527-3.535.527-2.985 0-3.346-1.58-3.346-1.58-.04-1.206-.06-2.433-.06-2.433h13.52c.026.002.052.003.078.003 1.353 0 2.569-.344 3.219-.773.666-.439 1.15-1.26 1.405-2.26.255-1 .318-2.226.318-2.226 0 0 0-3.304-.4-5.86zM9.77 12.384V8.582c0-1.077.34-1.616 1.02-1.616.745 0 1.117.653 1.117 1.96v2.302h1.492V8.926c0-1.307.372-1.96 1.117-1.96.68 0 1.02.539 1.02 1.616v3.802h1.442V8.163c0-.98-.246-1.745-.738-2.292-.511-.571-1.223-.856-2.138-.856-1.073 0-1.856.406-2.35 1.218h-.037c-.494-.812-1.277-1.218-2.35-1.218-.915 0-1.627.285-2.138.856-.492.547-.738 1.312-.738 2.292v4.22h1.442z" />
-              </svg>
-            </a>
-            <a href="https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng" aria-label="YouTube Channel"
-              target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-              </svg>
-            </a>
-          </div>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                    loading="lazy">
+                <p>Zoho Creator, Zoho CRM, Deluge and custom software development for businesses in the US, UK,
+                    Australia, New Zealand and India.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/zudo-works" aria-label="LinkedIn" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/zudoworks/" aria-label="Facebook" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/zudoworks/" aria-label="Instagram" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/zudoworks/" aria-label="X (Twitter)" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/zudoworks/" aria-label="Reddit" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.56 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.56 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417a.36.36 0 0 0-.258.108.358.358 0 0 0 0 .513c.84.84 2.163.923 2.973.923.81 0 2.133-.083 2.973-.923a.361.361 0 0 0-.51-.513c-.65.65-1.613.738-2.463.738-.85 0-1.813-.088-2.463-.738a.356.356 0 0 0-.252-.108z" />
+                        </svg>
+                    </a>
+                    <a href="https://mastodon.social/@zudoworks" rel="me noopener noreferrer" aria-label="Mastodon"
+                        target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.268 5.313c-.35-2.228-2.618-3.053-5.308-3.15-2.147-.078-4.976-.078-4.976-.078s-2.829 0-4.976.078c-2.69.097-4.958.922-5.308 3.15-.4 2.556-.4 5.86-.4 5.86 0 5.036 3.256 6.565 7.14 6.88.942.078 2.51.025 3.127-.126.172-.042.324-.093.449-.153l-.085-1.928c-1.096.34-2.336.527-3.535.527-2.985 0-3.346-1.58-3.346-1.58-.04-1.206-.06-2.433-.06-2.433h13.52c.026.002.052.003.078.003 1.353 0 2.569-.344 3.219-.773.666-.439 1.15-1.26 1.405-2.26.255-1 .318-2.226.318-2.226 0 0 0-3.304-.4-5.86zM9.77 12.384V8.582c0-1.077.34-1.616 1.02-1.616.745 0 1.117.653 1.117 1.96v2.302h1.492V8.926c0-1.307.372-1.96 1.117-1.96.68 0 1.02.539 1.02 1.616v3.802h1.442V8.163c0-.98-.246-1.745-.738-2.292-.511-.571-1.223-.856-2.138-.856-1.073 0-1.856.406-2.35 1.218h-.037c-.494-.812-1.277-1.218-2.35-1.218-.915 0-1.627.285-2.138.856-.492.547-.738 1.312-.738 2.292v4.22h1.442z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng" aria-label="YouTube Channel"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Company</div>
+                <ul class="footer-links">
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/work/">Our Work</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/locations/">Locations</a></li>
+                    <li><a href="/insights/">Insights</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="/zoho-creator-development/">Zoho Creator</a></li>
+                    <li><a href="/zoho-crm-development/">Zoho CRM</a></li>
+                    <li><a href="/deluge-development/">Deluge Development</a></li>
+                    <li><a href="/zoho-integrations/">Zoho Integrations</a></li>
+                    <li><a href="/business-process-automation/">Business Automation</a></li>
+                    <li><a href="/custom-software-development/">Custom Software</a></li>
+                    <li><a href="/support-maintenance/">Support &amp; Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Find Us On</div>
+                <ul class="footer-links">
+                    <li><a href="https://clutch.co/profile/zudo-works" target="_blank" rel="noopener">Clutch</a></li>
+                    <li><a href="https://www.goodfirms.co/company/zudo-works" target="_blank"
+                            rel="noopener">GoodFirms</a></li>
+                    <li><a href="https://techbehemoths.com/company/zudo-works" target="_blank"
+                            rel="noopener">TechBehemoths</a></li>
+                    <li><a href="https://www.upwork.com/agencies/2105729046181633035" target="_blank"
+                            rel="noopener">Upwork</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="mailto:admin@zudoworks.com">admin@zudoworks.com</a></li>
+                    <li><a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                            target="_blank" rel="noopener">WhatsApp: +91 63843 53382</a></li>
+                    <li class="only-in"><a href="tel:+916384353382">Call: +91 63843 53382</a></li>
+                    <li>Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040,
+                        India</li>
+                    <li>Serving <a href="/locations/united-states/">US</a> &middot; <a
+                            href="/locations/united-kingdom/">UK</a> &middot; <a
+                            href="/locations/australia/">Australia</a> &middot; <a href="/locations/new-zealand/">New
+                            Zealand</a> &middot; <a href="/locations/india/">India</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Company</div>
-          <ul class="footer-links">
-            <li><a href="/about/">About Us</a></li>
-            <li><a href="/work/">Our Work</a></li>
-            <li><a href="/pricing/">Pricing</a></li>
-            <li><a href="/locations/">Locations</a></li>
-            <li><a href="/insights/">Insights</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <span class="footer-copy">&copy; 2026 Zudo Works. All rights reserved.</span>
+                <span class="footer-copy footer-copy--fine">Operated by SVP Software and Global Solutions Corporation,
+                    a company registered in India. CIN: U62011TN2026PTC197823</span>
+                <span class="footer-copy footer-copy--fine">Zudo Works is not affiliated with any similarly named
+                    company or brand, including Zodoworks and ZedWorks, in India or anywhere else. zudoworks.com is the
+                    official and only website of Zudo Works.</span>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <button type="button" class="footer-cookie-btn" onclick="zudoCookieSettings()">Cookie Settings</button>
+            </div>
         </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Services</div>
-          <ul class="footer-links">
-            <li><a href="/zoho-creator-development/">Zoho Creator</a></li>
-            <li><a href="/zoho-crm-development/">Zoho CRM</a></li>
-            <li><a href="/deluge-development/">Deluge Development</a></li>
-            <li><a href="/zoho-integrations/">Zoho Integrations</a></li>
-            <li><a href="/business-process-automation/">Business Automation</a></li>
-            <li><a href="/custom-software-development/">Custom Software</a></li>
-            <li><a href="/support-maintenance/">Support &amp; Maintenance</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Find Us On</div>
-          <ul class="footer-links">
-            <li><a href="https://clutch.co/profile/zudo-works" target="_blank" rel="noopener">Clutch</a></li>
-            <li><a href="https://www.goodfirms.co/company/zudo-works" target="_blank" rel="noopener">GoodFirms</a></li>
-            <li><a href="https://techbehemoths.com/company/zudo-works" target="_blank" rel="noopener">TechBehemoths</a>
-            </li>
-            <li><a href="https://www.upwork.com/agencies/2105729046181633035" target="_blank" rel="noopener">Upwork</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <div class="footer-col-title">Contact</div>
-          <ul class="footer-links">
-            <li><a href="mailto:admin@zudoworks.com">admin@zudoworks.com</a></li>
-            <li><a
-                href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
-                target="_blank" rel="noopener">WhatsApp: +91 63843 53382</a></li>
-            <li class="only-in"><a href="tel:+916384353382">Call: +91 63843 53382</a></li>
-            <li>Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040,
-              India</li>
-            <li>Serving <a href="/locations/united-states/">US</a> &middot; <a href="/locations/united-kingdom/">UK</a>
-              &middot; <a href="/locations/australia/">Australia</a> &middot; <a href="/locations/new-zealand/">New
-                Zealand</a> &middot; <a href="/locations/india/">India</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-legal">
-          <span class="footer-copy">&copy; 2026 Zudo Works. All rights reserved.</span>
-          <span class="footer-copy footer-copy--fine">Operated by SVP Software and Global Solutions Corporation,
-            a company registered in India. CIN: U62011TN2026PTC197823</span>
-          <span class="footer-copy footer-copy--fine">Zudo Works is not affiliated with any similarly named company or
-            brand, including Zodoworks and ZedWorks, in India or anywhere else. zudoworks.com is the official and only
-            website of Zudo Works.</span>
-        </div>
-        <div class="footer-bottom-links">
-          <a href="/privacy/">Privacy Policy</a>
-          <a href="/terms/">Terms of Service</a>
-          <button type="button" class="footer-cookie-btn" onclick="zudoCookieSettings()">Cookie Settings</button>
-        </div>
-      </div>
     </div>
-  </footer>
-  <!-- Zoho Bookings dialog (embed script loads on first open) -->
-  <div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
+</footer>
+<!-- Zoho Bookings dialog (embed script loads on first open) -->
+<div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
     aria-labelledby="booking-modal-title" hidden>
     <div class="booking-modal-content">
-      <div class="booking-modal-header">
-        <h2 id="booking-modal-title">Book a discovery call</h2>
-        <button type="button" class="booking-modal-close" id="close-bookings-modal" aria-label="Close booking window">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
-      </div>
-      <div id="inline-container" class="booking-modal-body"></div>
-      <p class="booking-modal-fallback">Calendar not loading?
-        <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
-          rel="noopener">Open the booking page in a new tab</a>.
-      </p>
+        <div class="booking-modal-header">
+            <h2 id="booking-modal-title">Book a discovery call</h2>
+            <button type="button" class="booking-modal-close" id="close-bookings-modal"
+                aria-label="Close booking window">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div id="inline-container" class="booking-modal-body"></div>
+        <p class="booking-modal-fallback">Calendar not loading?
+            <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
+                rel="noopener">Open the booking page in a new tab</a>.
+        </p>
     </div>
-  </div>
-  <script defer src="/js/site.js?v=6804171fb9"></script>
-  <!-- @/footer -->
+</div>
+<script defer src="/js/site.js?v=6804171fb9"></script>
+    <!-- @/footer -->
 </body>
 
 </html>
