@@ -81,7 +81,7 @@ COUNTRIES = [
     dict(
         slug='united-states', name='the United States', label='United States', iso='US',
         title='Zoho Consultants &amp; Developers in the US | Zudo Works',
-        desc='Zoho CRM, Zoho Creator, Deluge and integration development for businesses in all 50 US states, delivered remotely at US$15/hour with a free month of support.',
+        desc='Zoho CRM, Zoho Creator, Deluge and integration development for businesses in all 50 US states, delivered remotely at US$15/hour.',
         h1='Zoho consultants and developers for US businesses',
         lead='We build and customize Zoho CRM, Zoho Creator, Zoho Books and Zoho One for small and growing businesses across the United States, from retail and healthcare to distribution and professional services. Everything is delivered remotely, documented and handed over in your own Zoho account.',
         partner_h='Looking for a Zoho partner in the US?',

@@ -3,6 +3,7 @@
 > Zudo Works is a software company that builds Zoho Creator applications, implements and customizes Zoho CRM, writes Deluge scripts and API integrations, and develops custom business software. We work remotely with businesses in the United States, United Kingdom, Australia, New Zealand and India.
 
 ## Company facts
+- Identity: Zudo Works is not affiliated with any similarly named company or brand, including Zodoworks and ZedWorks, in India or anywhere else. zudoworks.com is the official and only website of Zudo Works.
 - Name: Zudo Works
 - Legal entity: SVP Software and Global Solutions Corporation (private limited company registered in India, CIN U62011TN2026PTC197823)
 - Registered office: Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040, India
