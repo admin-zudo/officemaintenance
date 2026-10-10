@@ -8,7 +8,7 @@ META = {
         'A step-by-step plan for moving from HubSpot or Salesforce to Zoho CRM: field mapping, import order, rebuilding automation, testing and cut-over.'),
     'zoho-crm-implementation-cost': (
         'Zoho CRM Implementation Cost in 2026: Breakdown',
-        'What a Zoho CRM implementation really costs: licences, setup, migration, integrations and training, with three example projects priced at US$15 per hour.'),
+        'What a Zoho CRM implementation really costs: licences, setup, migration, integrations and training, with typical hours for three example projects.'),
     'deluge-script-examples': (
         '10 Deluge Script Examples for Zoho [With Code]',
         'Ten practical Deluge scripts for Zoho CRM, Creator and Books: invoices from won deals, duplicate checks, follow-up tasks, API calls and more.'),

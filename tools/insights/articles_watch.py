@@ -46,7 +46,7 @@ WATCH = {
     'zoho-crm-implementation-cost': dict(
         cover='number / navy',
         checked='', volatility='medium',
-        facts=['Zudo Works rate of US$15 per hour (confirm with Arunkumar if it changes)',
+        facts=['Examples are in hours only; the Zudo Works rate is not published',
                'Hour ranges for starter, standard and advanced projects', 'Zoho CRM edition names'],
         sources=['https://www.zoho.com/crm/zohocrm-pricing.html', '/pricing/']),
     'deluge-script-examples': dict(

@@ -163,7 +163,7 @@ EXT['zoho-partner-software-development'] = '''
 </div>
 
 <h2 id="trial">Start with a small paid piece of work</h2>
-<p>If you are unsure, start with a small paid task before committing to a full project: a discovery workshop, a design document, or one automation. Within a week or two you will see how the provider communicates, documents and handles feedback. Hourly pricing makes this easy. We charge US$15 per hour for exactly this kind of work.</p>
+<p>If you are unsure, start with a small paid task before committing to a full project: a discovery workshop, a design document, or one automation. Within a week or two you will see how the provider communicates, documents and handles feedback. Hourly pricing makes this easy, and we offer it for exactly this kind of work.</p>
 
 <h2 id="onboarding">Set your developer up for success</h2>
 <ul>

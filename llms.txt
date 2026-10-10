@@ -11,7 +11,7 @@
 - WhatsApp: +91 63843 53382 (https://wa.me/916384353382); voice calls for India-based enquiries on the same number
 - Website: https://zudoworks.com/
 - Experience: team members have worked on 20+ projects for 10+ client businesses, much of it as developers at a previous organization; hands-on experience across 15+ core Zoho applications and 25+ other Zoho products
-- Pricing: US$15 per hour; fixed-price projects quoted from estimated days and complexity (calculator at https://zudoworks.com/pricing/)
+- Pricing: quoted per project; fixed prices for defined projects (from estimated days and complexity), hourly billing for smaller work; rates on request (calculator for hours and timeline at https://zudoworks.com/pricing/)
 - After-launch offer: every development project includes one month of free support and onboarding after launch
 - Zoho partner status: application in progress (Zudo Works is not yet an approved Zoho Partner)
 
@@ -51,7 +51,7 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Custom software development: https://zudoworks.com/custom-software-development/
 - Support and maintenance: https://zudoworks.com/support-maintenance/
 - Insights (articles and guides): https://zudoworks.com/insights/
-- Pricing and project calculator: https://zudoworks.com/pricing/ (US$15 per hour; fixed prices for defined projects)
+- Pricing and project calculator: https://zudoworks.com/pricing/ (fixed prices for defined projects; rates on request)
 - Zoho Creator vs Power Apps: https://zudoworks.com/insights/zoho-creator-vs-power-apps/
 - Zoho CRM vs HubSpot for small businesses: https://zudoworks.com/insights/zoho-crm-vs-hubspot/
 - Migrating from HubSpot or Salesforce to Zoho CRM: https://zudoworks.com/insights/migrate-hubspot-salesforce-to-zoho-crm/

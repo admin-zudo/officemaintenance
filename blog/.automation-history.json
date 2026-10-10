@@ -365,11 +365,11 @@
       "author": "Arunkumar V",
       "image": "/Asset/img/insights/zoho-crm-implementation-cost.webp",
       "cover_style": "number / navy",
-      "summary": "A Zoho CRM implementation typically takes 40 to 70 hours for a small starter setup, 100 to 180 hours for a standard rollout and 200 to 400 hours for an advanced multi-team project. At US$15 per hour that is roughly US$600 to US$6,000, plus Zoho licence fees paid directly to Zoho.",
+      "summary": "A Zoho CRM implementation typically takes 40 to 70 hours for a small starter setup, 100 to 180 hours for a standard rollout and 200 to 400 hours for an advanced multi-team project. Multiply the hours by a provider's rate to compare quotes, and add Zoho licence fees paid directly to Zoho.",
       "sections": [
         "The two costs: licences and implementation",
         "What drives the implementation cost",
-        "Three example projects, priced",
+        "Three example projects, sized",
         "Costs people forget",
         "Hourly or fixed price: which is better?",
         "Five ways to reduce the cost",
@@ -383,7 +383,7 @@
         "How long does a Zoho CRM implementation take?",
         "What is included after go-live?"
       ],
-      "words": 1336,
+      "words": 1327,
       "related": [
         "migrate-hubspot-salesforce-to-zoho-crm",
         "zoho-creator-vs-power-apps",
@@ -394,7 +394,7 @@
         "volatility": "medium",
         "next_check": "due",
         "facts_to_watch": [
-          "Zudo Works rate of US$15 per hour (confirm with Arunkumar if it changes)",
+          "Examples are in hours only; the Zudo Works rate is not published",
           "Hour ranges for starter, standard and advanced projects",
           "Zoho CRM edition names"
         ],
@@ -484,7 +484,7 @@
         "How does a company become a Zoho partner?",
         "Is Zudo Works a Zoho Partner?"
       ],
-      "words": 1425,
+      "words": 1421,
       "related": [
         "zoho-partner-software-development",
         "zoho-crm-implementation-cost",

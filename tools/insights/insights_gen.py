@@ -271,7 +271,7 @@ def article_page(a):
     <section class="cta-banner">
       <div class="container">
         <h2>Planning a Zoho project?</h2>
-        <p>US$15 per hour, fixed prices for defined projects, and one month of free support after launch.</p>
+        <p>Fixed prices for defined projects, hourly billing for smaller work, and one month of free support after launch.</p>
         <div class="btn-group justify-center">
           <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
           <a href="/pricing/#calculator" class="btn btn-outline-white btn-lg">Estimate My Project</a>

@@ -49,7 +49,7 @@ KEYWORDS = {
     '/business-process-automation/': 'business process automation, Zoho workflow automation, approval workflows, Zoho Flow, Deluge',
     '/custom-software-development/': 'custom software development, web application development, internal tools, Laravel, Node.js',
     '/support-maintenance/': 'Zoho support, Zoho maintenance, Zoho admin support, Zoho CRM support, Zoho retainer',
-    '/pricing/': 'Zoho developer pricing, Zoho developer hourly rate, Zoho project cost calculator, Zoho implementation cost',
+    '/pricing/': 'Zoho developer pricing, Zoho project estimator, Zoho implementation cost, Zoho project quote',
     '/work/': 'Zudo Works reviews, Zudo Works projects, Zoho project experience, Zoho case studies',
     '/about/': 'Zudo Works, about Zudo Works, Arunkumar V, Zoho Creator Master of Creator award, Zoho developers Chennai',
     '/contact/': 'contact Zudo Works, book a Zoho consultation, Zoho developer WhatsApp, Zoho discovery call',

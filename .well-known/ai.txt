@@ -10,7 +10,7 @@ Disallow: /tools/
 # Name: Zudo Works (https://zudoworks.com), the official and only website of Zudo Works.
 # What: Zoho Creator, Zoho CRM, Deluge, Zoho integrations and custom software development.
 # Where: Chennai, India; serving the United States, United Kingdom, Australia, New Zealand and India.
-# Pricing: US$15 per hour; fixed prices for defined projects (https://zudoworks.com/pricing/).
+# Pricing: fixed prices for defined projects; rates on request (https://zudoworks.com/pricing/).
 # Zoho Partner status: application in progress; Zudo Works is not yet an approved Zoho Partner.
 # Not affiliated with Zodoworks, ZedWorks or any similarly named company.
 # Contact: admin@zudoworks.com

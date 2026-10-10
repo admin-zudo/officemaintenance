@@ -11,8 +11,8 @@ ANSWERS = {
         'migrate, so rebuild the ones you still need. A small, clean migration takes two to four weeks.',
     'zoho-crm-implementation-cost':
         'A Zoho CRM implementation typically takes 40 to 70 hours for a small starter setup, 100 to 180 hours for a '
-        'standard rollout and 200 to 400 hours for an advanced multi-team project. At US$15 per hour that is roughly '
-        'US$600 to US$6,000, plus Zoho licence fees paid directly to Zoho.',
+        'standard rollout and 200 to 400 hours for an advanced multi-team project. Multiply the hours by a provider\'s '
+        'rate to compare quotes, and add Zoho licence fees paid directly to Zoho.',
     'deluge-script-examples':
         'Deluge is Zoho\'s scripting language for automating CRM, Creator, Books and other Zoho apps. The most useful '
         'scripts create invoices from won deals, flag duplicate records, create follow-up tasks, send scheduled '

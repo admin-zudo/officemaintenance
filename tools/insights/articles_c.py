@@ -159,7 +159,7 @@ ARTICLES.append(dict(
 </ul>
 
 <h2 id="pricing">What should it cost?</h2>
-<p>Rates vary widely by country and type of provider. What you can compare is the estimated hours for the same scope and what is included. Our <a href="/insights/zoho-crm-implementation-cost/">Zoho CRM cost guide</a> shows typical effort for three project sizes, and our <a href="/pricing/">pricing page</a> shows how we charge: US$15 per hour, or a fixed price for defined projects.</p>
+<p>Rates vary widely by country and type of provider. What you can compare is the estimated hours for the same scope and what is included. Our <a href="/insights/zoho-crm-implementation-cost/">Zoho CRM cost guide</a> shows typical effort for three project sizes, and our <a href="/pricing/">pricing page</a> explains how we charge: hourly for small work, or a fixed price for defined projects.</p>
 
 <h2 id="next-steps">Next steps</h2>
 <p>Write a one-page brief: what you want to change, who will use the system, which tools it must connect to and when you need it. Send the same brief to two or three providers and compare how they respond. The quality of their questions usually tells you more than their proposal.</p>
@@ -263,7 +263,7 @@ ARTICLES.append(dict(
 <p>Our <a href="/insights/zoho-partner-software-development/">checklist for choosing a Zoho development partner</a> lists the ten questions to ask any provider, and the red flags to watch for.</p>
 
 <h2 id="zudo-works">Where Zudo Works fits</h2>
-<p>We are an independent Zoho development team based in Chennai, India, working with businesses in the United States, United Kingdom, Australia, New Zealand and India. Our Zoho Partner application is in progress. Our CTO, Arunkumar V, received the &ldquo;Master of Creator (Global Winner)&rdquo; award from Zoho Creator at the Zoho Creator Partner Hackathon 2025. We charge US$15 per hour, quote fixed prices for defined projects, and include one month of free support and onboarding after every build. You buy your Zoho licences directly from Zoho, in your own name.</p>
+<p>We are an independent Zoho development team based in Chennai, India, working with businesses in the United States, United Kingdom, Australia, New Zealand and India. Our Zoho Partner application is in progress. Our CTO, Arunkumar V, received the &ldquo;Master of Creator (Global Winner)&rdquo; award from Zoho Creator at the Zoho Creator Partner Hackathon 2025. We quote fixed prices for defined projects and include one month of free support and onboarding after every build. You buy your Zoho licences directly from Zoho, in your own name.</p>
 <p>See our <a href="/zoho-development/">Zoho development services</a>, <a href="/work/">past project work</a> or <a href="/pricing/#calculator">estimate your project cost</a>.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
