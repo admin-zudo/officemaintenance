@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add('js');
+        /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
+        try { if (/^Asia\/(Kolkata|Calcutta)$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.documentElement.classList.add('is-in'); } catch (e) { }
+    </script>
+    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        try {
+            var zc = localStorage.getItem('zudo_cookie_consent');
+            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+        } catch (e) { }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PQBHDK59');</script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ4JC252SY"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-SJ4JC252SY');
+    </script>
+    <meta name="theme-color" content="#226DB4">
+    <meta name="msvalidate.01" content="B0E942FD33A657DEA8679964137C6D16">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="twitter:site" content="@zudoworks">
+    <meta name="twitter:creator" content="@zudoworks">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="keywords" content="Zoho implementation for manufacturers, Zoho Inventory manufacturing, Zoho Creator manufacturing, Zoho Books, Zoho Analytics">
+    <meta name="author" content="Zudo Works">
+    <link rel="canonical" href="https://zudoworks.com/manufacturing/zoho-implementation/">
+    <link rel="alternate" hreflang="en" href="https://zudoworks.com/manufacturing/zoho-implementation/">
+    <link rel="alternate" hreflang="x-default" href="https://zudoworks.com/manufacturing/zoho-implementation/">
+    <link rel="alternate" type="application/rss+xml" title="Zudo Works Insights" href="https://zudoworks.com/insights/feed.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
+    <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
+    <link rel="preload" href="/Asset/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css?v=fc2433b3cd">
+    <!-- @/head -->
+
+  <title>Zoho Implementation for Manufacturers | Zudo Works</title>
+  <meta name="description" content="Zoho Inventory, Creator, CRM and Analytics set up for small manufacturers: what each covers, the gaps, three routes, a 12-week plan and regional notes.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zoho Implementation for Manufacturers | Zudo Works">
+  <meta property="og:description" content="Zoho Inventory, Creator, CRM and Analytics set up for small manufacturers: what each covers, the gaps, three routes, a 12-week plan and regional notes.">
+  <meta property="og:url" content="https://zudoworks.com/manufacturing/zoho-implementation/">
+  <meta property="og:image" content="https://zudoworks.com/Asset/og/mfg-hub-zoho.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Zudo Works">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Zoho Inventory, Creator, CRM and Analytics set up for small manufacturers: what each covers, the gaps, three routes, a 12-week plan and regional notes.">
+  <meta name="twitter:title" content="Zoho Implementation for Manufacturers | Zudo Works">
+  <meta name="twitter:image" content="https://zudoworks.com/Asset/og/mfg-hub-zoho.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Zoho implementation for manufacturers",
+  "serviceType": "Zoho implementation",
+  "description": "Zoho Inventory, Creator, CRM and Analytics set up for small manufacturers: what each covers, the gaps, three routes, a 12-week plan and regional notes.",
+  "url": "https://zudoworks.com/manufacturing/zoho-implementation/",
+  "provider": {
+    "@id": "https://zudoworks.com/#organization"
+  },
+  "areaServed": [
+    "New Zealand",
+    "Australia",
+    "United Kingdom",
+    "United States",
+    "India"
+  ],
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Small and midsized manufacturers"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://zudoworks.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Manufacturing",
+      "item": "https://zudoworks.com/manufacturing/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Zoho implementation",
+      "item": "https://zudoworks.com/manufacturing/zoho-implementation/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Zoho have a manufacturing module?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoho Inventory does not; Zoho says so in its knowledge base and suggests composite items for simple assemblies. Zoho ERP includes manufacturing orders, job cards and work centres, but at the time of writing is published for India only. Elsewhere, production is usually built as a custom app on Zoho Creator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Zoho ERP included in Zoho One?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. At the time of writing Zoho ERP is licensed separately from Zoho One and is available for India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Zoho do MRP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The standard Zoho apps do not calculate material requirements from a forecast. Reorder points and per-job purchasing are supported. If you need full MRP, a manufacturing ERP is the better core system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does an implementation take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A first phase covering stock, one production workflow and the main integrations typically takes about twelve weeks. Clean item and customer data shortens it; complex routing and many integrations lengthen it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we keep Xero, MYOB or QuickBooks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We often keep the existing accounting package and integrate it with the order and production systems, sending invoices and bills and reading payment status back."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will our team be able to maintain it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That is the aim. We document the data model and workflows, comment the Deluge code and train an internal owner. Ongoing support is optional."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+    <!-- @header -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQBHDK59" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-content">
+            <a href="mailto:admin@zudoworks.com" class="top-bar-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                admin@zudoworks.com
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="top-bar-item" target="_blank" rel="noopener">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+                WhatsApp +91 63843 53382
+            </a>
+            <span class="top-bar-separator only-in" aria-hidden="true">|</span>
+            <a href="tel:+916384353382" class="top-bar-item only-in">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                Call +91 63843 53382
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="/contact/" class="top-bar-item" data-booking>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Book a discovery call
+            </a>
+        </div>
+    </div>
+</div>
+
+<header class="navbar scrolled">
+    <div class="container">
+        <a href="/" class="navbar-logo" aria-label="Zudo Works home">
+            <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                fetchpriority="high">
+            <span class="navbar-logo-text">
+                <span class="navbar-logo-name">Zudo Works</span>
+                <span class="navbar-logo-tagline">Zoho &amp; Custom Software Development</span>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/services/" class="navbar-link">Services</a></li>
+                <li><a href="/zoho-development/" class="navbar-link">Zoho</a></li>
+                <li><a href="/zoho-creator-development/" class="navbar-link">Creator</a></li>
+                <li><a href="/zoho-crm-development/" class="navbar-link">CRM</a></li>
+                <li><a href="/zoho-integrations/" class="navbar-link">Integrations</a></li>
+                <li><a href="/manufacturing/" class="navbar-link active" aria-current="page">Manufacturing</a></li>
+                <li><a href="/work/" class="navbar-link">Work</a></li>
+                <li><a href="/pricing/" class="navbar-link">Pricing</a></li>
+                <li><a href="/insights/" class="navbar-link">Insights</a></li>
+                <li><a href="/about/" class="navbar-link">About</a></li>
+                <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm" data-booking>Book a Call</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="navbar-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="navbar-nav"><span></span><span></span><span></span></button>
+        <div class="mobile-nav-actions">
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="mobile-nav-phone mobile-nav-wa" target="_blank" rel="noopener"
+                aria-label="Message us on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+            </a>
+            <a href="tel:+916384353382" class="mobile-nav-phone only-in" aria-label="Call +91 63843 53382">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+            </a>
+            <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta" data-booking>Book a Call</a>
+        </div>
+    </div>
+</header>
+
+<a class="mfg-ticker" href="/manufacturing/" aria-label="Manufacturing solutions: automation, Zoho implementation and AI-powered workflows">
+    <span class="mfg-ticker-track" aria-hidden="true">
+        <span class="mfg-ticker-group">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16z"></path><path d="M6 17h2M11 17h2M16 17h2"></path></svg>
+            <span>Manufacturing automation</span><i></i><span>Zoho implementation</span><i></i><span>AI-powered workflows</span><i></i><span>Connected operations</span><i></i>
+        </span>
+        <span class="mfg-ticker-group">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16z"></path><path d="M6 17h2M11 17h2M16 17h2"></path></svg>
+            <span>Manufacturing automation</span><i></i><span>Zoho implementation</span><i></i><span>AI-powered workflows</span><i></i><span>Connected operations</span><i></i>
+        </span>
+    </span>
+</a>
+    <!-- @/header -->
+
+  <main id="main-content">
+    <section class="mfg-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <a href="/manufacturing/">Manufacturing</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span class="breadcrumb-current" aria-current="page">Zoho implementation</span>
+          </nav>
+        <div class="mfg-hero-grid">
+          <div>
+            <p class="section-label">Zoho implementation for manufacturers</p>
+            <h1>Zoho for manufacturers, set up properly and described honestly</h1>
+            <p class="page-lead">Zoho&rsquo;s standard apps handle stock, purchasing, sales and reporting well. They do not include a production module outside India. We fill that gap with an app built around your process, and tell you when an ERP is the better answer.</p>
+            <div class="btn-group">
+            <a href="/contact/" class="btn btn-primary btn-lg" data-booking>Book a Discovery Call</a>
+            <a href="/manufacturing/guides/zoho-or-manufacturing-erp/" class="btn btn-secondary btn-lg">Zoho apps or an ERP?</a>
+            </div>
+            <dl class="mfg-facts"><div><dt>Stock and purchasing</dt><dd>Zoho Inventory</dd></div><div><dt>Production and quality</dt><dd>Custom apps on Zoho Creator</dd></div><div><dt>Reporting</dt><dd>Zoho Analytics</dd></div></dl>
+          </div>
+          <figure class="mfg-hero-visual">
+            <img src="/Asset/img/manufacturing/hub-zoho.webp" alt="Cover: three Zoho products and their role for a manufacturer" width="1200" height="675" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul><li><a href="/manufacturing/">Overview</a></li><li><a href="/manufacturing/zoho-implementation/" aria-current="page">Zoho implementation</a></li><li><a href="/manufacturing/ai-automation/">AI automation</a></li><li><a href="/manufacturing/workflows/">Workflows</a></li><li><a href="/manufacturing/guides/">Guides</a></li><li><a href="/manufacturing/case-studies/">Case studies</a></li></ul></div></nav>
+    <section class="section" id="who">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Is this for you?</p>
+          <h2>When a Zoho-based set-up suits a manufacturer</h2>
+        </div>
+        <div class="problem-grid problem-grid--4">
+          <div class="problem-item">
+            <h3>Your process is your advantage</h3>
+            <p>Custom steps, approvals or tests that a standard ERP screen cannot hold.</p>
+          </div>
+          <div class="problem-item">
+            <h3>You plan per job or by reorder point</h3>
+            <p>You do not need a forecast exploded through four levels of bill of materials.</p>
+          </div>
+          <div class="problem-item">
+            <h3>You want to improve in steps</h3>
+            <p>One process at a time, each paying for the next, not one large go-live.</p>
+          </div>
+          <div class="problem-item">
+            <h3>You already use Zoho somewhere</h3>
+            <p>CRM, Books or Inventory is in place and production is the missing piece.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--alt" id="product-map">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">The products</p>
+          <h2>Which Zoho product does what</h2>
+        </div>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/hub-zoho-map.webp" alt="Table mapping five manufacturing needs to Zoho products, with what each covers and what it does not" width="1200" height="540" loading="lazy" decoding="async"></div><figcaption>Which Zoho product does what for a manufacturer, including the gaps. Checked against Zoho&rsquo;s documentation in October 2026.</figcaption></figure>
+        <p>Three facts shape every design we do:</p>
+        <ul class="check-list">
+          <li>Zoho Inventory offers batch and serial tracking, multiple warehouses, reorder points, barcode scanning and composite items for simple assemblies</li>
+          <li>Zoho&rsquo;s own knowledge base states that Zoho Inventory does not yet support manufacturing modules</li>
+          <li>Zoho Creator covers the gap with custom apps: forms, mobile apps that scan barcodes, approvals, schedules and role-based access</li>
+          <li>Zoho ERP has manufacturing orders, job cards and work centres, but is published for India and is licensed separately from Zoho One</li>
+          <li>Zoho Analytics adds dashboards, scheduled reports, alerts and forecasting across all of them</li>
+          <li>None of the standard apps performs material requirements planning from a forecast</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" id="routes">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Choosing</p>
+          <h2>Three routes, and how to pick</h2>
+        </div>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/hub-zoho-routes.webp" alt="Three implementation routes: Zoho apps with a custom app, an ERP with Creator apps beside it, or a manufacturing ERP" width="1200" height="500" loading="lazy" decoding="async"></div><figcaption>Three routes. We implement the first two and will tell you when the third is the right answer.</figcaption></figure>
+        <p>The choice turns on two questions: how complex your planning is, and how unusual your process is. Our guide <a href="/manufacturing/guides/zoho-or-manufacturing-erp/">Zoho apps or a manufacturing ERP?</a> works through five questions and a matrix. If the answer is an ERP we cannot implement, we will still say so.</p>
+      </div>
+    </section>
+    <section class="section section--alt" id="architecture">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Design</p>
+          <h2>Reference architecture</h2>
+        </div>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/hub-zoho-arch.webp" alt="Reference architecture for a manufacturer on Zoho: devices, custom Creator apps, standard Zoho apps, and an integration and reporting layer" width="1200" height="540" loading="lazy" decoding="async"></div><figcaption>Our reference architecture. Standard apps are configured; only the parts that are unique to you are built.</figcaption></figure>
+        <p>The principle is to configure what is standard and build only what is yours. Customers and quotes live in the CRM. Items, lots and quantities live in the stock system. Work orders, stages and quality records live in custom apps, because that is where your process differs from everyone else&rsquo;s. Each record has one owner, and integrations carry events between them. The detail is in our guide to <a href="/manufacturing/guides/connect-sales-production-accounts/">connecting sales, production and accounts</a>.</p>
+      </div>
+    </section>
+    <section class="section" id="deliverables">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">What we deliver</p>
+          <h2>What an implementation includes</h2>
+        </div>
+        <div class="service-grid">
+          <div class="deliver-card">
+            <h3>Process map and data check</h3>
+            <p>Two or three real jobs walked from order to invoice, plus a review of item, customer and stock data before anything is built.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Stock and purchasing set-up</h3>
+            <p>Items, units, lots or serials, locations, reorder points, purchase approvals and opening stock, loaded and checked.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>A production app on Creator</h3>
+            <p>Work orders, routing stages, shop-floor screens, scrap and holds, built around how you work.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Integrations</h3>
+            <p>Orders to work orders, completions to stock, shipments to invoices, with visible failures and retries.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Dashboards and alerts</h3>
+            <p>A small number of measures with written definitions, targets and owners.</p>
+          </div>
+          <div class="deliver-card">
+            <h3>Documentation and training</h3>
+            <p>Admin notes, user guides and commented Deluge code, so your team can maintain it.</p>
+          </div>
+        </div>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/hub-zoho-stock.webp" alt="Illustrative stock screen listing three lots of one material with received date, quantity, location, use-by date and status" width="1200" height="460" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept stock view over Zoho Inventory data. Batch tracking, expiry dates and reorder points are standard features; the layout is ours.</figcaption></figure>
+      </div>
+    </section>
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Timeline</p>
+          <h2>How an implementation runs</h2>
+        </div>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/hub-zoho-phases.webp" alt="Four implementation phases over twelve weeks: discover, foundation, connect and measure" width="1200" height="380" loading="lazy" decoding="async"></div><figcaption>A typical first phase. Larger scopes repeat the middle two steps for each process.</figcaption></figure>
+        <p>Twelve weeks is typical for a first phase covering stock, one production workflow and the main integrations. It depends on the state of your data more than on anything we build: clean item and customer lists shorten every step. The <a href="/manufacturing/guides/spreadsheets-to-connected-system-roadmap/">90-day roadmap</a> describes the same sequence from your side.</p>
+      </div>
+    </section>
+    <section class="section" id="regions">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Where you are</p>
+          <h2>What changes by region</h2>
+        </div>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/hub-zoho-regions.webp" alt="Table of accounting options and notes by region: New Zealand, Australia, United Kingdom, United States and India" width="1200" height="520" loading="lazy" decoding="async"></div><figcaption>What changes by region. Product availability shifts, so we confirm it at the start of every project.</figcaption></figure>
+        <p>Zoho Books is published in country editions and a global edition. New Zealand is not among the named editions at the time of writing, so New Zealand manufacturers either use the global edition or, more often, keep the accounting package their accountant already uses and integrate with it. That is a sound choice anywhere: accounting software is the part of the stack we are least keen to change without a reason.</p>
+      </div>
+    </section>
+    <section class="section section--alt" id="limits">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Limits</p>
+          <h2>What a Zoho set-up will not do</h2>
+        </div>
+        <ul class="check-list">
+          <li>Plan materials from a forecast across multi-level bills of materials</li>
+          <li>Schedule finite capacity across machines automatically</li>
+          <li>Provide standard costing and variance analysis out of the box</li>
+          <li>Replace a validated system in a heavily regulated industry</li>
+          <li>Fix stock figures that are wrong at the source</li>
+          <li>Work offline everywhere: Creator has offline access with restrictions, so we test it on your devices</li>
+        </ul>
+        <p>Some of these can be approximated with custom work. We would rather tell you when that is a poor idea. If you need requirements planning, buy it; do not ask a low-code app to imitate it.</p>
+      </div>
+    </section>
+    <section class="section" id="learn">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Go deeper</p>
+          <h2>Guides for this work</h2>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <a class="post-card-image" href="/manufacturing/guides/production-tracking-zoho-creator/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/manufacturing/production-tracking-zoho-creator.webp" alt="Cover: production tracking in Zoho Creator, eight steps in four stages" width="1200" height="675" loading="lazy">
+            </a>
+            <div class="post-card-body">
+              <p class="post-card-category">Production</p>
+              <h3><a href="/manufacturing/guides/production-tracking-zoho-creator/">How to Build Production Tracking in Zoho Creator</a></h3>
+              <p class="post-card-excerpt">A step-by-step build guide for production tracking in Zoho Creator: data model, shop-floor screens, scrap and holds, stock links and dashboards.</p>
+              <p class="post-card-meta"><span class="mfg-card-author">Arunkumar V</span> &middot; 7 min read</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <a class="post-card-image" href="/manufacturing/guides/inventory-accuracy-for-manufacturers/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/manufacturing/inventory-accuracy-for-manufacturers.webp" alt="Cover: why stock records drift, with four common causes" width="1200" height="675" loading="lazy">
+            </a>
+            <div class="post-card-body">
+              <p class="post-card-category">Inventory</p>
+              <h3><a href="/manufacturing/guides/inventory-accuracy-for-manufacturers/">Why Your Stock Records Are Wrong, and How to Fix Inventory Accuracy</a></h3>
+              <p class="post-card-excerpt">Why manufacturing stock records drift from reality, how to measure record accuracy, and the process and system changes that keep stock right.</p>
+              <p class="post-card-meta"><span class="mfg-card-author">Zudo Works development team</span> &middot; 7 min read</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <a class="post-card-image" href="/manufacturing/guides/purchasing-reorder-points/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/manufacturing/purchasing-reorder-points.webp" alt="Cover: four parts of a purchasing set-up" width="1200" height="675" loading="lazy">
+            </a>
+            <div class="post-card-body">
+              <p class="post-card-category">Purchasing</p>
+              <h3><a href="/manufacturing/guides/purchasing-reorder-points/">Reorder Points, Safety Stock and Purchase Approvals: A Practical Setup</a></h3>
+              <p class="post-card-excerpt">How to set reorder points and safety stock for a small manufacturer, with formulas and worked examples, plus a purchase approval flow that keeps moving.</p>
+              <p class="post-card-meta"><span class="mfg-card-author">Zudo Works development team</span> &middot; 6 min read</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="faq">
+      <div class="container container--prose">
+        <div class="section-header section-header--left">
+          <p class="section-label">Questions</p>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Does Zoho have a manufacturing module?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Zoho Inventory does not; Zoho says so in its knowledge base and suggests composite items for simple assemblies. Zoho ERP includes manufacturing orders, job cards and work centres, but at the time of writing is published for India only. Elsewhere, production is usually built as a custom app on Zoho Creator.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Is Zoho ERP included in Zoho One?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. At the time of writing Zoho ERP is licensed separately from Zoho One and is available for India.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can Zoho do MRP?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>The standard Zoho apps do not calculate material requirements from a forecast. Reorder points and per-job purchasing are supported. If you need full MRP, a manufacturing ERP is the better core system.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How long does an implementation take?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>A first phase covering stock, one production workflow and the main integrations typically takes about twelve weeks. Clean item and customer data shortens it; complex routing and many integrations lengthen it.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can we keep Xero, MYOB or QuickBooks?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We often keep the existing accounting package and integrate it with the order and production systems, sending invoices and bills and reading payment status back.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Will our team be able to maintain it?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>That is the aim. We document the data model and workflows, comment the Deluge code and train an internal owner. Ongoing support is optional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Want to know which route fits your factory?</h2>
+        <p>Tell us how you plan materials and send three bills of materials. You will get a straight answer, including when the answer is an ERP.</p>
+        <div class="btn-group justify-center">
+          <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
+          <a href="/pricing/" class="btn btn-outline-white btn-lg">See How We Price</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- @footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                    loading="lazy">
+                <p>Zoho Creator, Zoho CRM, Deluge and custom software development for businesses in the US, UK,
+                    Australia, New Zealand and India.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/zudo-works" aria-label="LinkedIn" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/zudoworks/" aria-label="Facebook" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/zudoworks/" aria-label="Instagram" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/zudoworks/" aria-label="X (Twitter)" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/zudoworks/" aria-label="Reddit" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.56 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.56 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417a.36.36 0 0 0-.258.108.358.358 0 0 0 0 .513c.84.84 2.163.923 2.973.923.81 0 2.133-.083 2.973-.923a.361.361 0 0 0-.51-.513c-.65.65-1.613.738-2.463.738-.85 0-1.813-.088-2.463-.738a.356.356 0 0 0-.252-.108z" />
+                        </svg>
+                    </a>
+                    <a href="https://mastodon.social/@zudoworks" rel="me noopener noreferrer" aria-label="Mastodon"
+                        target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.268 5.313c-.35-2.228-2.618-3.053-5.308-3.15-2.147-.078-4.976-.078-4.976-.078s-2.829 0-4.976.078c-2.69.097-4.958.922-5.308 3.15-.4 2.556-.4 5.86-.4 5.86 0 5.036 3.256 6.565 7.14 6.88.942.078 2.51.025 3.127-.126.172-.042.324-.093.449-.153l-.085-1.928c-1.096.34-2.336.527-3.535.527-2.985 0-3.346-1.58-3.346-1.58-.04-1.206-.06-2.433-.06-2.433h13.52c.026.002.052.003.078.003 1.353 0 2.569-.344 3.219-.773.666-.439 1.15-1.26 1.405-2.26.255-1 .318-2.226.318-2.226 0 0 0-3.304-.4-5.86zM9.77 12.384V8.582c0-1.077.34-1.616 1.02-1.616.745 0 1.117.653 1.117 1.96v2.302h1.492V8.926c0-1.307.372-1.96 1.117-1.96.68 0 1.02.539 1.02 1.616v3.802h1.442V8.163c0-.98-.246-1.745-.738-2.292-.511-.571-1.223-.856-2.138-.856-1.073 0-1.856.406-2.35 1.218h-.037c-.494-.812-1.277-1.218-2.35-1.218-.915 0-1.627.285-2.138.856-.492.547-.738 1.312-.738 2.292v4.22h1.442z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng" aria-label="YouTube Channel"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Company</div>
+                <ul class="footer-links">
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/work/">Our Work</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/locations/">Locations</a></li>
+                    <li><a href="/insights/">Insights</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="/zoho-creator-development/">Zoho Creator</a></li>
+                    <li><a href="/zoho-crm-development/">Zoho CRM</a></li>
+                    <li><a href="/deluge-development/">Deluge Development</a></li>
+                    <li><a href="/zoho-integrations/">Zoho Integrations</a></li>
+                    <li><a href="/business-process-automation/">Business Automation</a></li>
+                    <li><a href="/custom-software-development/">Custom Software</a></li>
+                    <li><a href="/support-maintenance/">Support &amp; Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Find Us On</div>
+                <ul class="footer-links">
+                    <li><a href="https://clutch.co/profile/zudo-works" target="_blank" rel="noopener">Clutch</a></li>
+                    <li><a href="https://www.goodfirms.co/company/zudo-works" target="_blank"
+                            rel="noopener">GoodFirms</a></li>
+                    <li><a href="https://techbehemoths.com/company/zudo-works" target="_blank"
+                            rel="noopener">TechBehemoths</a></li>
+                    <li><a href="https://www.upwork.com/agencies/2105729046181633035" target="_blank"
+                            rel="noopener">Upwork</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="mailto:admin@zudoworks.com">admin@zudoworks.com</a></li>
+                    <li><a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                            target="_blank" rel="noopener">WhatsApp: +91 63843 53382</a></li>
+                    <li class="only-in"><a href="tel:+916384353382">Call: +91 63843 53382</a></li>
+                    <li>Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040,
+                        India</li>
+                    <li>Serving <a href="/locations/united-states/">US</a> &middot; <a
+                            href="/locations/united-kingdom/">UK</a> &middot; <a
+                            href="/locations/australia/">Australia</a> &middot; <a href="/locations/new-zealand/">New
+                            Zealand</a> &middot; <a href="/locations/india/">India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <span class="footer-copy">&copy; 2026 Zudo Works. All rights reserved.</span>
+                <span class="footer-copy footer-copy--fine">Operated by SVP Software and Global Solutions Corporation,
+                    a company registered in India. CIN: U62011TN2026PTC197823</span>
+                <span class="footer-copy footer-copy--fine">Zudo Works is not affiliated with any similarly named
+                    company or brand, including Zodoworks and ZedWorks, in India or anywhere else. zudoworks.com is the
+                    official and only website of Zudo Works.</span>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <button type="button" class="footer-cookie-btn" onclick="zudoCookieSettings()">Cookie Settings</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Zoho Bookings dialog (embed script loads on first open) -->
+<div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
+    aria-labelledby="booking-modal-title" hidden>
+    <div class="booking-modal-content">
+        <div class="booking-modal-header">
+            <h2 id="booking-modal-title">Book a discovery call</h2>
+            <button type="button" class="booking-modal-close" id="close-bookings-modal"
+                aria-label="Close booking window">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div id="inline-container" class="booking-modal-body"></div>
+        <p class="booking-modal-fallback">Calendar not loading?
+            <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
+                rel="noopener">Open the booking page in a new tab</a>.
+        </p>
+    </div>
+</div>
+<script defer src="/js/site.js?v=6804171fb9"></script>
+    <!-- @/footer -->
+</body>
+
+</html>

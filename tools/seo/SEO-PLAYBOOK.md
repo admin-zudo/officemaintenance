@@ -180,3 +180,17 @@ python tools/build.py                   # shared header/footer, canonicals, CSS/
 - how consistently the weekly routine is followed.
 
 Track progress in Search Console, not guesses.
+
+## 8. Manufacturing section
+
+`/manufacturing/` is generated separately from Insights:
+
+```
+python tools/manufacturing/mfg_gen.py   # pages, guides, case studies and their figures (fails on any layout problem)
+python tools/build.py
+```
+
+- Content lives in `tools/manufacturing/content_*.py`; figures are described there with `fig(...)` and rendered to `Asset/img/manufacturing/`.
+- Case studies are illustrative reference implementations. Do not add client names, quotes, logos or measured results unless they are real and approved in writing.
+- App screens are concept mockups and are labelled "Illustrative interface". Never present them as Zoho or customer screenshots.
+- Product facts cite the pages in `content_common.SRC`. Re-check them when Zoho changes Inventory, Creator, ERP or Books editions.

@@ -29,7 +29,7 @@ SITE = 'https://zudoworks.com'
 SKIP_DIRS = {'.git', '.kilo', 'tools', 'Asset', 'css', 'js', 'node_modules'}
 
 CSS_SOURCES = ['variables', 'reset', 'base', 'components', 'hero', 'sections',
-               'responsive', 'cookie-consent', 'helpers', 'system']
+               'responsive', 'cookie-consent', 'helpers', 'system', 'manufacturing']
 JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq', 'media']
 
 # Pages that should not appear in the sitemap or get a canonical tag
@@ -60,6 +60,12 @@ KEYWORDS = {
     '/locations/united-kingdom/': 'Zoho consultants UK, Zoho partner UK, Zoho developers United Kingdom, Zoho Books VAT MTD',
     '/locations/australia/': 'Zoho consultants Australia, Zoho partner Australia, Zoho developers Sydney Melbourne, Zoho Xero integration',
     '/locations/new-zealand/': 'Zoho consultants New Zealand, Zoho partner NZ, Zoho developers Auckland, Zoho Xero integration',
+    '/manufacturing/': 'manufacturing workflow automation, Zoho for manufacturing, manufacturing software New Zealand, production tracking, custom manufacturing apps',
+    '/manufacturing/zoho-implementation/': 'Zoho implementation for manufacturers, Zoho Inventory manufacturing, Zoho Creator manufacturing, Zoho Books, Zoho Analytics',
+    '/manufacturing/ai-automation/': 'AI in manufacturing, AI for small manufacturers, demand forecasting, document processing, Zia, manufacturing AI use cases',
+    '/manufacturing/workflows/': 'manufacturing workflows, quote to cash, procure to pay, production tracking, quality workflow, maintenance workflow',
+    '/manufacturing/guides/': 'manufacturing guides, inventory accuracy, production tracking, traceability, manufacturing dashboards, Zoho Creator',
+    '/manufacturing/case-studies/': 'manufacturing case studies, manufacturing reference implementations, Zoho manufacturing examples',
     '/privacy/': 'Zudo Works privacy policy',
     '/terms/': 'Zudo Works terms of service',
 }
@@ -187,7 +193,7 @@ def build_sitemap(pages):
         # Image sitemap entries: the share image plus article covers and team photos in the page
         images = re.findall(r'<meta property="og:image" content="([^"]+)"', html)
         main = html.split('<main', 1)[-1]
-        images += [SITE + src for src in re.findall(r'<img[^>]+src="(/Asset/img/(?:insights|team)/[^"]+)"', main)]
+        images += [SITE + src for src in re.findall(r'<img[^>]+src="(/Asset/img/(?:insights|team|manufacturing)/[^"]+)"', main)]
         images = list(dict.fromkeys(images))[:6]
         image_xml = ''.join(f'\n    <image:image>\n      <image:loc>{src}</image:loc>\n    </image:image>' for src in images)
         rows.append(f'  <url>\n    <loc>{SITE}{route}</loc>\n    <lastmod>{git_date(path)}</lastmod>{image_xml}\n  </url>')

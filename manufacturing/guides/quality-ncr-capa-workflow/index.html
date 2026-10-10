@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add('js');
+        /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
+        try { if (/^Asia\/(Kolkata|Calcutta)$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.documentElement.classList.add('is-in'); } catch (e) { }
+    </script>
+    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        try {
+            var zc = localStorage.getItem('zudo_cookie_consent');
+            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+        } catch (e) { }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PQBHDK59');</script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ4JC252SY"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-SJ4JC252SY');
+    </script>
+    <meta name="theme-color" content="#226DB4">
+    <meta name="msvalidate.01" content="B0E942FD33A657DEA8679964137C6D16">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="twitter:site" content="@zudoworks">
+    <meta name="twitter:creator" content="@zudoworks">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="keywords" content="Zudo Works, NCR CAPA workflow manufacturing">
+    <link rel="canonical" href="https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/">
+    <link rel="alternate" hreflang="en" href="https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/">
+    <link rel="alternate" hreflang="x-default" href="https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/">
+    <link rel="alternate" type="application/rss+xml" title="Zudo Works Insights" href="https://zudoworks.com/insights/feed.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
+    <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
+    <link rel="preload" href="/Asset/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css?v=fc2433b3cd">
+    <!-- @/head -->
+
+  <title>Digital Quality Control: NCR and CAPA Workflow | Zudo Works</title>
+  <meta name="description" content="How to run inspections, nonconformance reports and corrective actions in one digital workflow, with the fields, decisions and measures that matter.">
+  <meta name="author" content="Zudo Works development team">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Digital Quality Control: NCR and CAPA Workflow | Zudo Works">
+  <meta property="og:description" content="How to run inspections, nonconformance reports and corrective actions in one digital workflow, with the fields, decisions and measures that matter.">
+  <meta property="og:url" content="https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/">
+  <meta property="og:image" content="https://zudoworks.com/Asset/og/mfg-quality-ncr-capa-workflow.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Zudo Works">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-10-10">
+  <meta property="article:author" content="https://zudoworks.com/about/">
+  <meta property="article:section" content="Quality">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="How to run inspections, nonconformance reports and corrective actions in one digital workflow, with the fields, decisions and measures that matter.">
+  <meta name="twitter:title" content="Digital Quality Control: NCR and CAPA Workflow | Zudo Works">
+  <meta name="twitter:image" content="https://zudoworks.com/Asset/og/mfg-quality-ncr-capa-workflow.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/"
+  },
+  "headline": "Digital Quality Control: Inspections, NCRs and CAPA Without Paper",
+  "description": "How to run inspections, nonconformance reports and corrective actions in one digital workflow, with the fields, decisions and measures that matter.",
+  "image": [
+    "https://zudoworks.com/Asset/img/manufacturing/quality-ncr-capa-workflow.webp",
+    "https://zudoworks.com/Asset/og/mfg-quality-ncr-capa-workflow.jpg"
+  ],
+  "datePublished": "2026-10-10",
+  "dateModified": "2026-10-10",
+  "author": {
+    "@type": "Organization",
+    "@id": "https://zudoworks.com/#organization",
+    "name": "Zudo Works",
+    "url": "https://zudoworks.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zudoworks.com/Asset/brand/zudo-works-logo.svg"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://zudoworks.com/#organization",
+    "name": "Zudo Works",
+    "url": "https://zudoworks.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://zudoworks.com/Asset/brand/zudo-works-logo.svg"
+    }
+  },
+  "articleSection": "Quality",
+  "keywords": "NCR CAPA workflow manufacturing",
+  "wordCount": 1268,
+  "inLanguage": "en"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://zudoworks.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Manufacturing",
+      "item": "https://zudoworks.com/manufacturing/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Guides",
+      "item": "https://zudoworks.com/manufacturing/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Digital Quality Control: Inspections, NCRs and CAPA Without Paper",
+      "item": "https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between an NCR and a CAPA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An NCR records a specific failure and what was done with the affected product. A CAPA addresses the cause so the failure does not recur. Every CAPA starts from one or more NCRs, but most NCRs do not need a CAPA."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does every nonconformance need a corrective action?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Set a rule, for example any customer complaint, any NCR above a cost threshold, and any cause that repeats. Raising a corrective action for everything overloads the system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can this be built in Zoho Creator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Inspections, NCRs and corrective actions are linked forms with approvals, photos from the mobile app, role-based access and an audit trail. Linking it to your stock system makes holds and scrap automatic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we calculate first-pass yield?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the units that passed inspection the first time by the units started. Units that passed after rework count as failures for this measure."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+    <!-- @header -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQBHDK59" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-content">
+            <a href="mailto:admin@zudoworks.com" class="top-bar-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                admin@zudoworks.com
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="top-bar-item" target="_blank" rel="noopener">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+                WhatsApp +91 63843 53382
+            </a>
+            <span class="top-bar-separator only-in" aria-hidden="true">|</span>
+            <a href="tel:+916384353382" class="top-bar-item only-in">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                Call +91 63843 53382
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="/contact/" class="top-bar-item" data-booking>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Book a discovery call
+            </a>
+        </div>
+    </div>
+</div>
+
+<header class="navbar scrolled">
+    <div class="container">
+        <a href="/" class="navbar-logo" aria-label="Zudo Works home">
+            <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                fetchpriority="high">
+            <span class="navbar-logo-text">
+                <span class="navbar-logo-name">Zudo Works</span>
+                <span class="navbar-logo-tagline">Zoho &amp; Custom Software Development</span>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/services/" class="navbar-link">Services</a></li>
+                <li><a href="/zoho-development/" class="navbar-link">Zoho</a></li>
+                <li><a href="/zoho-creator-development/" class="navbar-link">Creator</a></li>
+                <li><a href="/zoho-crm-development/" class="navbar-link">CRM</a></li>
+                <li><a href="/zoho-integrations/" class="navbar-link">Integrations</a></li>
+                <li><a href="/manufacturing/" class="navbar-link active" aria-current="page">Manufacturing</a></li>
+                <li><a href="/work/" class="navbar-link">Work</a></li>
+                <li><a href="/pricing/" class="navbar-link">Pricing</a></li>
+                <li><a href="/insights/" class="navbar-link">Insights</a></li>
+                <li><a href="/about/" class="navbar-link">About</a></li>
+                <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm" data-booking>Book a Call</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="navbar-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="navbar-nav"><span></span><span></span><span></span></button>
+        <div class="mobile-nav-actions">
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="mobile-nav-phone mobile-nav-wa" target="_blank" rel="noopener"
+                aria-label="Message us on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+            </a>
+            <a href="tel:+916384353382" class="mobile-nav-phone only-in" aria-label="Call +91 63843 53382">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+            </a>
+            <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta" data-booking>Book a Call</a>
+        </div>
+    </div>
+</header>
+
+<a class="mfg-ticker" href="/manufacturing/" aria-label="Manufacturing solutions: automation, Zoho implementation and AI-powered workflows">
+    <span class="mfg-ticker-track" aria-hidden="true">
+        <span class="mfg-ticker-group">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16z"></path><path d="M6 17h2M11 17h2M16 17h2"></path></svg>
+            <span>Manufacturing automation</span><i></i><span>Zoho implementation</span><i></i><span>AI-powered workflows</span><i></i><span>Connected operations</span><i></i>
+        </span>
+        <span class="mfg-ticker-group">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16z"></path><path d="M6 17h2M11 17h2M16 17h2"></path></svg>
+            <span>Manufacturing automation</span><i></i><span>Zoho implementation</span><i></i><span>AI-powered workflows</span><i></i><span>Connected operations</span><i></i>
+        </span>
+    </span>
+</a>
+    <!-- @/header -->
+
+  <main id="main-content">
+    <article class="post mfg-post mfg-post--guide mfg-post--green">
+      <header class="post-hero mfg-hero--green">
+        <div class="container container--post">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <a href="/manufacturing/">Manufacturing</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <a href="/manufacturing/guides/">Guides</a>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <span class="breadcrumb-current" aria-current="page">Quality</span>
+          </nav>
+          <p class="section-label">Quality &middot; Practical guide</p>
+          <h1>Digital Quality Control: Inspections, NCRs and CAPA Without Paper</h1>
+          <p class="post-lead">Paper quality systems record that something went wrong. They are much worse at making sure someone found out why and stopped it happening again.</p>
+          <div class="post-byline">
+            <img class="author-avatar author-avatar--team" src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works" width="44" height="44">
+            <div>
+              <p class="post-byline-name">By the <a href="/about/">Zudo Works development team</a></p>
+              <p class="post-byline-meta"><time datetime="2026-10-10">10 October 2026</time> &middot; 6 min read</p>
+            </div>
+          </div>
+          <dl class="mfg-facts"><div><dt>Three records</dt><dd>Inspection, NCR, CAPA</dd></div><div><dt>The usual gap</dt><dd>NCRs closed without a root cause</dd></div><div><dt>First measure</dt><dd>First-pass yield</dd></div><div><dt>Built with</dt><dd>Forms, approvals and a dashboard</dd></div></dl>
+        </div>
+      </header>
+    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul><li><a href="/manufacturing/">Overview</a></li><li><a href="/manufacturing/zoho-implementation/">Zoho implementation</a></li><li><a href="/manufacturing/ai-automation/">AI automation</a></li><li><a href="/manufacturing/workflows/">Workflows</a></li><li><a href="/manufacturing/guides/">Guides</a></li><li><a href="/manufacturing/case-studies/">Case studies</a></li></ul></div></nav>
+      <div class="container container--post">
+        <figure class="post-cover">
+          <img src="/Asset/img/manufacturing/quality-ncr-capa-workflow.webp" alt="Cover: the three quality records" width="1200" height="675" fetchpriority="high">
+          <figcaption>Three records carry a quality system. Each one feeds the next.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container post-layout">
+        <aside class="post-toc" aria-label="On this page">
+          <details open>
+            <summary>On this page</summary>
+            <ol>
+              <li><a href="#three-records">Three records, and how they connect</a></li>
+              <li><a href="#inspections">Inspections: check less, record better</a></li>
+              <li><a href="#ncr">The NCR: contain first, then decide</a></li>
+              <li><a href="#capa">CAPA: the part that pays</a></li>
+              <li><a href="#measures">What to measure</a></li>
+              <li><a href="#worked-example">A worked example: one NCR, start to finish</a></li>
+              <li><a href="#building-it">Building it</a></li>
+              <li><a href="#mistakes">Mistakes to avoid</a></li>
+              <li><a href="#next-steps">Getting started</a></li>
+              <li><a href="#faq">Frequently asked questions</a></li>
+            </ol>
+          </details>
+        </aside>
+
+        <div class="post-body">
+          <div class="quick-answer">
+            <p class="quick-answer-label">In short</p>
+            <p>Run quality as three linked records. An inspection is a planned check. A failed check raises a nonconformance report, which holds the stock and needs a disposition: rework, scrap, use as is or return. An NCR that could recur raises a corrective action with an owner, a due date and a later check that it worked. Track first-pass yield and time to close.</p>
+          </div>
+<p>Walk into the quality office of most small factories and you will find a filing cabinet of nonconformance forms. Each was filled in carefully. Almost none can answer the question that matters: is this the fourth time this has happened?</p>
+<p>Moving quality records out of the cabinet is one of the most contained and most useful first projects. It touches few people, needs little integration and changes what managers can see within weeks.</p>
+
+<h2 id="three-records">Three records, and how they connect</h2>
+<ul>
+  <li><strong>Inspection.</strong> A planned check against a specification: incoming goods, in-process, or final. The result is pass or fail, with measurements where they matter.</li>
+  <li><strong>Nonconformance report (NCR).</strong> Raised when something fails, whether an inspection found it or a customer did. It describes the problem and records what was done with the affected product.</li>
+  <li><strong>Corrective and preventive action (CAPA).</strong> Raised when the cause needs removing, not just the product fixing. It has an owner, a due date and a check that it worked.</li>
+</ul>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/quality-ncr-capa-workflow-flow.webp" alt="Five-stage nonconformance flow: detect, contain, decide the disposition, find the cause, and prevent recurrence" width="1200" height="320" loading="lazy" decoding="async"></div><figcaption>The life of a nonconformance. Most paper systems stop after the third arrow.</figcaption></figure>
+<p>The first three stages deal with the product. The last two deal with the process. A filing cabinet handles the first three. The value is in the last two.</p>
+
+<h2 id="inspections">Inspections: check less, record better</h2>
+<p>Start by listing where checks already happen. There are usually more than anyone realises, most of them unrecorded. For each, decide:</p>
+<ul>
+  <li><strong>What is checked,</strong> against which specification or drawing revision.</li>
+  <li><strong>How many.</strong> Every unit, first-off and last-off, or a sample per batch.</li>
+  <li><strong>What is recorded.</strong> A tick for visual checks; the actual measurement for critical dimensions.</li>
+  <li><strong>What a fail does.</strong> It should raise an NCR and hold the stock automatically.</li>
+</ul>
+<p>Recording the measurement, not just pass or fail, is what lets you see a process drifting before it produces rejects.</p>
+
+<h2 id="ncr">The NCR: contain first, then decide</h2>
+<p>An NCR has two jobs in its first hour. It tells people there is a problem, and it stops the affected product moving. On paper the second job depends on someone walking to the store with a red tag. In a system, raising the NCR changes the stock status.</p>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/quality-ncr-capa-workflow-ncr-screen.webp" alt="Illustrative nonconformance report screen with a six-stage progress bar, defect details and a pending disposition decision" width="1200" height="500" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept NCR screen. The progress bar makes it obvious when an NCR stops at disposition and never gets a root cause.</figcaption></figure>
+<p>Fields worth having, and no more:</p>
+<ul>
+  <li>where it was found, and by whom;</li>
+  <li>the work order, batch or supplier delivery it relates to;</li>
+  <li>quantity affected, and quantity checked;</li>
+  <li>the defect, chosen from a list, with a photo;</li>
+  <li>the suspected source, also from a list.</li>
+</ul>
+<p>Then comes the disposition: what happens to the product.</p>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/quality-ncr-capa-workflow-dispositions.webp" alt="Table of four dispositions for nonconforming product: rework, scrap, use as is, and return to supplier" width="1200" height="460" loading="lazy" decoding="async"></div><figcaption>Four dispositions. Each one should trigger an action somewhere else in the system.</figcaption></figure>
+<p>&ldquo;Use as is&rdquo; deserves care. It is a legitimate decision, and it must be made by a named person with the authority to make it, sometimes with the customer&rsquo;s agreement. An approval step with a role attached handles that.</p>
+
+<h2 id="capa">CAPA: the part that pays</h2>
+<p>Not every NCR needs a corrective action. A one-off handling knock does not. A third NCR against the same jig does. Set a rule you can apply without debate, such as: any NCR above a set cost, any customer complaint, and any cause that appears three times in a quarter.</p>
+<p>A corrective action needs four things:</p>
+<ol>
+  <li><strong>A root cause,</strong> reached by asking why until the answer is something you can change. &ldquo;Operator error&rdquo; is rarely a root cause. Why was the error possible?</li>
+  <li><strong>An action</strong> that removes the cause: a fixture, a changed drawing, a supplier specification, a check added earlier.</li>
+  <li><strong>An owner and a date.</strong></li>
+  <li><strong>An effectiveness check,</strong> scheduled for some weeks later. Did the problem come back?</li>
+</ol>
+<div class="mfg-callout"><p class="mfg-callout-label">The check most systems skip</p><p>Schedule the effectiveness check when the action is created, not when it is completed. A corrective action is closed when it has been shown to work, not when the task was ticked off.</p></div>
+
+<h2 id="measures">What to measure</h2>
+<p>Begin with one number, first-pass yield, and add others when it has become routine.</p>
+<figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/quality-ncr-capa-workflow-fpy.webp" alt="Worked example of first-pass yield: 460 of 600 units passed first time, giving 77 percent" width="1200" height="400" loading="lazy" decoding="async"></div><figcaption>First-pass yield, worked through. Counting reworked units as passes is the commonest way to flatter this number.</figcaption></figure>
+<ul>
+  <li><strong>NCRs by cause.</strong> Shows where to spend effort. Only meaningful if the cause comes from a fixed list.</li>
+  <li><strong>Days to close.</strong> Long-open NCRs usually mean held stock nobody has decided about.</li>
+  <li><strong>Supplier NCRs.</strong> Rejections per supplier, against deliveries received.</li>
+  <li><strong>Overdue corrective actions.</strong> The plainest sign of whether the system is alive.</li>
+</ul>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/quality-ncr-capa-workflow-dashboard.webp" alt="Illustrative quality dashboard with first-pass yield, open NCRs, days to close, overdue corrective actions, NCRs by cause and a weekly yield trend" width="1200" height="560" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept quality dashboard. NCRs by cause only works if the cause is chosen from a list.</figcaption></figure>
+<p>More on choosing measures is in our guide to <a href="/manufacturing/guides/manufacturing-dashboards-kpis/">manufacturing dashboards and KPIs</a>.</p>
+
+<h2 id="worked-example">A worked example: one NCR, start to finish</h2>
+<p>Follow NCR-0318 from the screen above. The business is an example, a small metal fabricator making brackets.</p>
+<ol>
+  <li><strong>Detect.</strong> An in-process check finds hole positions 0.6 mm out on brackets from work order WO-2291. The inspector raises the NCR on a tablet and attaches a photo of the gauge.</li>
+  <li><strong>Contain.</strong> The system marks 140 brackets as on hold. The inspector checks the other 460 made that shift, which pass. Drill jig 3 is stopped and a maintenance request is raised.</li>
+  <li><strong>Decide.</strong> The quality lead approves rework: re-drill on jig 1 and inspect every piece. A rework step is added to the work order, so the planner sees the delay.</li>
+  <li><strong>Find the cause.</strong> Asking why three times gets there. The holes were out because the jig bush was worn. The bush was worn because it had no replacement interval. It had no interval because jigs were never on the maintenance schedule.</li>
+  <li><strong>Prevent.</strong> The corrective action adds all drill jigs to planned maintenance, with a bush check every month. An effectiveness check is booked for six weeks later: any hole-position NCRs since?</li>
+</ol>
+<p>On paper, this NCR would have ended at step three with &ldquo;reworked, OK&rdquo;, and jig 4 would have produced the same fault in the spring.</p>
+
+<h2 id="building-it">Building it</h2>
+<p>This is a natural fit for a low-code platform. On <a href="/zoho-creator-development/">Zoho Creator</a> the three records are three forms linked to each other. Its approvals and Blueprint features enforce who can disposition and who can close. The mobile apps let an inspector raise an NCR with a photo from the line, and role-based access and audit trails cover who changed what.</p>
+<p>Two connections make it much more useful:</p>
+<ul>
+  <li><strong>To stock,</strong> so that raising an NCR holds the affected quantity and scrapping it writes it off.</li>
+  <li><strong>To production,</strong> so that a rework disposition adds a rework step to the work order. Our <a href="/manufacturing/guides/production-tracking-zoho-creator/">production tracking guide</a> covers that side.</li>
+</ul>
+<p>If you run Zoho ERP in India, it includes quality templates, rules and inspections of its own. Elsewhere, and for NCR and CAPA in particular, a custom app is the usual route. If you hold or want a quality certification, these records are what an auditor will ask to see, so agree the fields with whoever manages your certification.</p>
+
+<h2 id="mistakes">Mistakes to avoid</h2>
+<ul>
+  <li><strong>Free-text causes.</strong> You cannot count them. Use a list, with &ldquo;other&rdquo; reviewed monthly.</li>
+  <li><strong>Raising a CAPA for everything.</strong> The list becomes unmanageable and people stop believing in it.</li>
+  <li><strong>Blaming the operator.</strong> It ends the investigation one step early.</li>
+  <li><strong>A form with 40 fields.</strong> The inspector on the line will not fill it in.</li>
+  <li><strong>No link to stock.</strong> The NCR says &ldquo;on hold&rdquo; while the product ships.</li>
+</ul>
+
+<h2 id="next-steps">Getting started</h2>
+<ol>
+  <li>Pull the last three months of paper NCRs and sort them by cause. That exercise alone usually finds a repeat problem.</li>
+  <li>Agree the defect list, the cause list and the four dispositions.</li>
+  <li>Build the NCR first. Add inspections and CAPA once it is in daily use.</li>
+  <li>Review open NCRs and overdue actions in a fixed weekly slot.</li>
+</ol>
+          <h2 id="faq">Frequently asked questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>What is the difference between an NCR and a CAPA?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>An NCR records a specific failure and what was done with the affected product. A CAPA addresses the cause so the failure does not recur. Every CAPA starts from one or more NCRs, but most NCRs do not need a CAPA.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Does every nonconformance need a corrective action?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. Set a rule, for example any customer complaint, any NCR above a cost threshold, and any cause that repeats. Raising a corrective action for everything overloads the system.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Can this be built in Zoho Creator?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Inspections, NCRs and corrective actions are linked forms with approvals, photos from the mobile app, role-based access and an audit trail. Linking it to your stock system makes holds and scrap automatic.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How do we calculate first-pass yield?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Divide the units that passed inspection the first time by the units started. Units that passed after rework count as failures for this measure.</p>
+            </div>
+          </div>
+        </div>
+          <section class="mfg-sources" aria-label="Sources">
+            <h2 id="sources">Sources</h2>
+            <p>Product capabilities change. We checked these pages in October 2026; confirm anything you plan around.</p>
+            <ol>
+              <li><a href="https://www.zoho.com/creator/features.html" target="_blank" rel="noopener">Zoho Creator: features</a></li>
+              <li><a href="https://www.zoho.com/en-in/erp/help/manufacturing-order/understanding-manufacturing-order.html" target="_blank" rel="noopener">Zoho ERP help: manufacturing orders</a></li>
+              <li><a href="https://www.zoho.com/creator/solutions/manufacturing/" target="_blank" rel="noopener">Zoho Creator for manufacturing</a></li>
+            </ol>
+          </section>
+          <p class="post-services"><strong>Related services:</strong> <a href="/zoho-creator-development/">Zoho Creator development</a> &middot; <a href="/business-process-automation/">Business process automation</a> &middot; <a href="/manufacturing/workflows/">Manufacturing workflows</a></p>
+
+          <aside class="author-box" aria-label="About the author">
+            <img class="author-avatar author-avatar--lg author-avatar--team" src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works" width="64" height="64" loading="lazy">
+            <div>
+              <p class="author-box-label">Written by</p>
+              <p class="author-box-name">The <a href="/about/">Zudo Works development team</a></p>
+              <p>Zudo Works builds Zoho Creator apps, Zoho CRM systems, Deluge automations and integrations. This piece was written by the developers who design and build them, and reviewed by our CTO, Arunkumar V.</p>
+              <p class="author-box-links"><a href="/about/">About Zudo Works</a><a href="/work/">Project experience</a></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </article>
+
+    <section class="section section--alt" id="related">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Keep reading</p>
+          <h2>Related guides and case studies</h2>
+        </div>
+        <div class="post-grid">
+          <article class="post-card">
+            <a class="post-card-image" href="/manufacturing/guides/batch-lot-traceability/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/manufacturing/batch-lot-traceability.webp" alt="Cover: four recording points for batch traceability" width="1200" height="675" loading="lazy">
+            </a>
+            <div class="post-card-body">
+              <p class="post-card-category">Traceability</p>
+              <h3><a href="/manufacturing/guides/batch-lot-traceability/">Batch and Lot Traceability: What to Record at Each Step</a></h3>
+              <p class="post-card-excerpt">How to set up batch and lot traceability in a small factory: the five recording points, the link most systems miss, and how to test it with a mock recall.</p>
+              <p class="post-card-meta"><span class="mfg-card-author">Zudo Works development team</span> &middot; 7 min read</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <a class="post-card-image" href="/manufacturing/guides/manufacturing-dashboards-kpis/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/manufacturing/manufacturing-dashboards-kpis.webp" alt="Cover: four manufacturing measures" width="1200" height="675" loading="lazy">
+            </a>
+            <div class="post-card-body">
+              <p class="post-card-category">Reporting</p>
+              <h3><a href="/manufacturing/guides/manufacturing-dashboards-kpis/">Manufacturing Dashboards and KPIs: What to Measure First</a></h3>
+              <p class="post-card-excerpt">Six manufacturing KPIs a small factory should track first, with formulas, a worked OEE example and rules for dashboards that people keep using.</p>
+              <p class="post-card-meta"><span class="mfg-card-author">Zudo Works development team</span> &middot; 6 min read</p>
+            </div>
+          </article>
+          <article class="post-card">
+            <a class="post-card-image" href="/manufacturing/guides/production-tracking-zoho-creator/" tabindex="-1" aria-hidden="true">
+              <img src="/Asset/img/manufacturing/production-tracking-zoho-creator.webp" alt="Cover: production tracking in Zoho Creator, eight steps in four stages" width="1200" height="675" loading="lazy">
+            </a>
+            <div class="post-card-body">
+              <p class="post-card-category">Production</p>
+              <h3><a href="/manufacturing/guides/production-tracking-zoho-creator/">How to Build Production Tracking in Zoho Creator</a></h3>
+              <p class="post-card-excerpt">A step-by-step build guide for production tracking in Zoho Creator: data model, shop-floor screens, scrap and holds, stock links and dashboards.</p>
+              <p class="post-card-meta"><span class="mfg-card-author">Arunkumar V</span> &middot; 7 min read</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Want this working in your factory?</h2>
+        <p>Tell us how the process runs today. We will map it, show you what a first version looks like and price it before you commit.</p>
+        <div class="btn-group justify-center">
+          <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
+          <a href="/pricing/" class="btn btn-outline-white btn-lg">See How We Price</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- @footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                    loading="lazy">
+                <p>Zoho Creator, Zoho CRM, Deluge and custom software development for businesses in the US, UK,
+                    Australia, New Zealand and India.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/zudo-works" aria-label="LinkedIn" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/zudoworks/" aria-label="Facebook" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/zudoworks/" aria-label="Instagram" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/zudoworks/" aria-label="X (Twitter)" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/zudoworks/" aria-label="Reddit" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.56 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.56 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417a.36.36 0 0 0-.258.108.358.358 0 0 0 0 .513c.84.84 2.163.923 2.973.923.81 0 2.133-.083 2.973-.923a.361.361 0 0 0-.51-.513c-.65.65-1.613.738-2.463.738-.85 0-1.813-.088-2.463-.738a.356.356 0 0 0-.252-.108z" />
+                        </svg>
+                    </a>
+                    <a href="https://mastodon.social/@zudoworks" rel="me noopener noreferrer" aria-label="Mastodon"
+                        target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.268 5.313c-.35-2.228-2.618-3.053-5.308-3.15-2.147-.078-4.976-.078-4.976-.078s-2.829 0-4.976.078c-2.69.097-4.958.922-5.308 3.15-.4 2.556-.4 5.86-.4 5.86 0 5.036 3.256 6.565 7.14 6.88.942.078 2.51.025 3.127-.126.172-.042.324-.093.449-.153l-.085-1.928c-1.096.34-2.336.527-3.535.527-2.985 0-3.346-1.58-3.346-1.58-.04-1.206-.06-2.433-.06-2.433h13.52c.026.002.052.003.078.003 1.353 0 2.569-.344 3.219-.773.666-.439 1.15-1.26 1.405-2.26.255-1 .318-2.226.318-2.226 0 0 0-3.304-.4-5.86zM9.77 12.384V8.582c0-1.077.34-1.616 1.02-1.616.745 0 1.117.653 1.117 1.96v2.302h1.492V8.926c0-1.307.372-1.96 1.117-1.96.68 0 1.02.539 1.02 1.616v3.802h1.442V8.163c0-.98-.246-1.745-.738-2.292-.511-.571-1.223-.856-2.138-.856-1.073 0-1.856.406-2.35 1.218h-.037c-.494-.812-1.277-1.218-2.35-1.218-.915 0-1.627.285-2.138.856-.492.547-.738 1.312-.738 2.292v4.22h1.442z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng" aria-label="YouTube Channel"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Company</div>
+                <ul class="footer-links">
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/work/">Our Work</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/locations/">Locations</a></li>
+                    <li><a href="/insights/">Insights</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="/zoho-creator-development/">Zoho Creator</a></li>
+                    <li><a href="/zoho-crm-development/">Zoho CRM</a></li>
+                    <li><a href="/deluge-development/">Deluge Development</a></li>
+                    <li><a href="/zoho-integrations/">Zoho Integrations</a></li>
+                    <li><a href="/business-process-automation/">Business Automation</a></li>
+                    <li><a href="/custom-software-development/">Custom Software</a></li>
+                    <li><a href="/support-maintenance/">Support &amp; Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Find Us On</div>
+                <ul class="footer-links">
+                    <li><a href="https://clutch.co/profile/zudo-works" target="_blank" rel="noopener">Clutch</a></li>
+                    <li><a href="https://www.goodfirms.co/company/zudo-works" target="_blank"
+                            rel="noopener">GoodFirms</a></li>
+                    <li><a href="https://techbehemoths.com/company/zudo-works" target="_blank"
+                            rel="noopener">TechBehemoths</a></li>
+                    <li><a href="https://www.upwork.com/agencies/2105729046181633035" target="_blank"
+                            rel="noopener">Upwork</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="mailto:admin@zudoworks.com">admin@zudoworks.com</a></li>
+                    <li><a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                            target="_blank" rel="noopener">WhatsApp: +91 63843 53382</a></li>
+                    <li class="only-in"><a href="tel:+916384353382">Call: +91 63843 53382</a></li>
+                    <li>Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040,
+                        India</li>
+                    <li>Serving <a href="/locations/united-states/">US</a> &middot; <a
+                            href="/locations/united-kingdom/">UK</a> &middot; <a
+                            href="/locations/australia/">Australia</a> &middot; <a href="/locations/new-zealand/">New
+                            Zealand</a> &middot; <a href="/locations/india/">India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <span class="footer-copy">&copy; 2026 Zudo Works. All rights reserved.</span>
+                <span class="footer-copy footer-copy--fine">Operated by SVP Software and Global Solutions Corporation,
+                    a company registered in India. CIN: U62011TN2026PTC197823</span>
+                <span class="footer-copy footer-copy--fine">Zudo Works is not affiliated with any similarly named
+                    company or brand, including Zodoworks and ZedWorks, in India or anywhere else. zudoworks.com is the
+                    official and only website of Zudo Works.</span>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <button type="button" class="footer-cookie-btn" onclick="zudoCookieSettings()">Cookie Settings</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Zoho Bookings dialog (embed script loads on first open) -->
+<div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
+    aria-labelledby="booking-modal-title" hidden>
+    <div class="booking-modal-content">
+        <div class="booking-modal-header">
+            <h2 id="booking-modal-title">Book a discovery call</h2>
+            <button type="button" class="booking-modal-close" id="close-bookings-modal"
+                aria-label="Close booking window">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div id="inline-container" class="booking-modal-body"></div>
+        <p class="booking-modal-fallback">Calendar not loading?
+            <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
+                rel="noopener">Open the booking page in a new tab</a>.
+        </p>
+    </div>
+</div>
+<script defer src="/js/site.js?v=6804171fb9"></script>
+    <!-- @/footer -->
+</body>
+
+</html>
