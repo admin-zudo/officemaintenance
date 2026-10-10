@@ -61,7 +61,7 @@ L3 = fig(S + '-ops', app('Operations', 'Concept dashboard', ['Today', 'Orders', 
          kpis([('Orders due this week', '14', '3 at risk', 'dn'), ('Jobs in progress', '13', '2 on hold', 'fl'), ('Items to reorder', '6', '2 awaiting approval', 'fl'), ('Open NCRs', '4', '1 over 14 days', 'dn')])
          + g2(panel('Jobs by stage', bars2([('Cutting', 46, '3'), ('Machining', 62, '4'), ('Assembly', 46, '3'), ('Finishing', 31, '2'), ('Ready to ship', 15, '1')]) + note('Counts come from scans on the floor, not from a meeting.'), '13 open'),
               panel('Needs a decision', listing([('r', 'J-1035 on hold: part missing', 'Planner &middot; since Wednesday'), ('y', 'PO for hinges awaiting approval', 'Operations manager &middot; 1 day'), ('y', 'NCR-0318 awaiting disposition', 'Quality lead &middot; 2 days'), ('g', 'All deliveries for Monday received', '')]), 'with an owner'), '1fr')),
-         'Illustrative daily operations dashboard with orders due, jobs in progress, items to reorder, open NCRs, jobs by stage and a list of decisions needed',
+         'Concept daily operations dashboard with orders due, jobs in progress, items to reorder, open NCRs, jobs by stage and a list of decisions needed',
          'A concept daily view. It is built last, from records the earlier steps create.', h=520, ui=True)
 L4 = fig(S + '-fit', m_dd(['Make-to-order and job-shop work', 'A process that standard software does not fit', 'Shallow bills of materials', 'A team that wants to improve in steps', 'An ERP in place that operators avoid'],
                            ['Forecast-driven planning across deep BOMs', 'A need for full MRP on day one', 'Heavily regulated validated systems', 'No one to own the system internally', 'Expecting software to fix wrong data'], ('A good fit for our approach', 'Better served elsewhere')),
@@ -94,9 +94,9 @@ def landing(ALL):
         + sec('guides', 'Learn', 'Practical guides for manufacturers', cards(ALL, pick('inventory-accuracy-for-manufacturers', 'production-tracking-zoho-creator', 'zoho-or-manufacturing-erp'))
               + f'\n        <p class="mfg-more"><a href="{G}" class="btn btn-secondary">All {len(g)} guides</a></p>', alt=True,
               intro='Each guide explains one topic properly, with formulas, worked examples, diagrams and the mistakes to avoid.')
-        + sec('case-studies', 'Reference implementations', 'Illustrative case studies', cards(ALL, c)
-              + f'\n        <p class="mfg-more"><a href="{CS}" class="btn btn-secondary">About these case studies</a></p>',
-              intro='These are designs for composite businesses, written to show how we would approach a problem. They are not client projects and claim no measured results.')
+        + sec('case-studies', 'Blueprints', 'Solution blueprints', cards(ALL, c)
+              + f'\n        <p class="mfg-more"><a href="{CS}" class="btn btn-secondary">About the blueprints</a></p>',
+              intro='Complete designs for typical businesses: the problem, its root causes, the architecture, the workflow and the rollout plan.')
         + sec('fit', 'Straight answers', 'Where this approach fits, and where it does not', L4
               + '\n        <p>Zoho Inventory has no manufacturing module, and nothing in the standard Zoho apps calculates material requirements from a forecast. Zoho ERP does include manufacturing, but is published for India only at the time of writing. If you need full requirements planning, a manufacturing ERP is the better core, and we say so. Our comparison of <a href="' + G + 'zoho-or-manufacturing-erp/">Zoho apps and a manufacturing ERP</a> helps you decide.</p>', alt=True)
         + sec('how-we-work', 'Working with us', 'How a project runs', path([
@@ -120,8 +120,8 @@ PAGES.append(dict(
            'For many small manufacturers, yes, as a combination: Zoho Inventory for stock and purchasing, Zoho CRM for sales, an accounting package, and a production app built on Zoho Creator. The standard apps do not include material requirements planning, so businesses that need it are better served by a manufacturing ERP.'),
           ('Do you work with manufacturers in New Zealand and Australia?',
            'Yes. We work remotely with businesses in New Zealand, Australia, the UK, the US and India. For New Zealand we usually recommend keeping the accounting package your accountant uses and integrating with it.'),
-          ('Are the case studies real customers?',
-           'No. They are illustrative reference implementations for composite businesses, labelled as such. They show how we would design a solution and do not claim client names, quotes or measured results.'),
+          ('What is a solution blueprint?',
+           'A complete design for a typical business of a given kind: the problem, root causes, architecture, workflow, controls and rollout plan. It shows how we would approach the work; your version would start from your own process.'),
           ('Where should a manufacturer start?',
            'With the one process that causes the most daily pain and is simple enough to finish in a few weeks. For most that is job tracking or quality records. Get it into daily use before connecting other systems.'),
           ('Do we have to replace our ERP or accounting software?',
@@ -151,7 +151,7 @@ Z3 = fig(S + '-stock', app('Stock', 'Concept on Zoho Inventory data', ['Items', 
          + panel('Lots, oldest first', table('110px 110px 96px minmax(0,1fr) 110px 110px', ['Lot', 'Received', '>On hand', 'Location', 'Use by', 'Status'],
                  [[('sn', 'B-0907'), '22 Sep', ('r', '50 kg'), 'Chiller 1, bay 2', '14 Nov', ('st', 'y', 'Use first')], [('sn', 'B-0913'), '2 Oct', ('r', '125 kg'), 'Chiller 2, bay 1', '28 Nov', ('st', 'g', 'Available')],
                   [('sn', 'B-0921'), '8 Oct', ('r', '250 kg'), 'Chiller 2, bay 3', '4 Dec', ('st', 'g', 'Available')]]), 'issue the oldest lot first', 'flex:1')),
-         'Illustrative stock screen listing three lots of one material with received date, quantity, location, use-by date and status',
+         'Concept stock screen listing three lots of one material with received date, quantity, location, use-by date and status',
          'A concept stock view over Zoho Inventory data. Batch tracking, expiry dates and reorder points are standard features; the layout is ours.', h=460, ui=True)
 Z4 = fig(S + '-phases', m_timeline([('Weeks 1-2', 'Discover', 'Walk the process, check data, choose the route'), ('Weeks 3-6', 'Foundation', 'Items, stock and one custom workflow'),
                                      ('Weeks 7-10', 'Connect', 'Orders, stock and accounts linked'), ('Weeks 11-12', 'Measure', 'Dashboards, training, handover')]),
@@ -249,14 +249,14 @@ X3 = fig(S + '-triage', app('Quality', 'Concept on Zoho Creator', ['Inspections'
                 [('sn', 'IMG-4413'), 'Bracket BR-40', 'Dent', ('r', 'Low'), 'Hole position', ('st', 'y', 'Corrected')], [('sn', 'IMG-4414'), 'Frame F-200', 'Weld porosity', ('r', 'Medium'), '', ('st', 'b', 'To review')],
                 [('sn', 'IMG-4415'), 'Frame F-200', 'Weld porosity', ('r', 'High'), '', ('st', 'b', 'To review')]]), 'the inspector makes the pass or fail call', 'flex:1')
          + note('Suggestions speed up recording. Corrections are logged and used to measure accuracy by category.')),
-         'Illustrative defect photo triage screen listing photos with a suggested category, confidence level, the inspector&rsquo;s own category and status',
+         'Concept defect photo triage screen listing photos with a suggested category, confidence level, the inspector&rsquo;s own category and status',
          'A concept triage screen. The model suggests a category; the inspector confirms or corrects it and decides pass or fail.', h=470, ui=True)
 X4 = fig(S + '-forecast', app('Purchasing', 'Concept on Zoho Analytics', ['Reorder list', 'Usage forecast', 'Suppliers', 'Reports'], 'Usage forecast', 'Usage forecast: hinge 110&deg; soft-close', 'Weekly usage &middot; example data',
          g2(panel('Actual and projected weekly usage', svg_line([[190, 205, 198, 220, 210, 232, 225, 240, None, None, None, None], [None, None, None, None, None, None, None, 240, 246, 252, 258, 264]],
                                                                 ['W34', '', 'W36', '', 'W38', '', 'W40', '', 'W42', '', 'W44', ''], w=560, h=250, ymin=140, ymax=300, names=['Actual', 'Projected'], dashed=(1,)), 'units per week'),
             panel('What the buyer sees', fields([('Current reorder point', '450'), ('Suggested', '520'), ('Reason', 'Usage trending up'), ('Not known to the model', 'Planned promotions')], 1)
                   + acts(('btnp', 'Update to 520'), ('btns', 'Keep 450')) + note('A projection from history. The buyer knows about orders the data does not.'), 'buyer decides'), '1.6fr')),
-         'Illustrative usage forecast screen with a chart of actual and projected weekly usage and a suggested change to the reorder point for the buyer to accept or decline',
+         'Concept usage forecast screen with a chart of actual and projected weekly usage and a suggested change to the reorder point for the buyer to accept or decline',
          'A concept forecast screen with example data. The projection is advice; the buyer changes the reorder point or leaves it.', h=560, ui=True)
 X5 = fig(S + '-poc', m_timeline([('Week 1', 'Choose and define', 'One task, one pass mark'), ('Weeks 1-2', 'Collect examples', '50 to 100 with correct answers'), ('Weeks 3-4', 'Run alongside', 'AI drafts; people work as normal'), ('Week 5', 'Measure and decide', 'Go, change or stop')]),
          'Five-week proof of concept timeline: choose and define, collect examples, run alongside, then measure and decide',
@@ -402,12 +402,12 @@ W3 = fig(S + '-approvals', app('Approvals', 'Concept on Zoho Creator', ['Waiting
                [['Purchase order', 'Hinges &times; 1,000, drawer runners &times; 200', 'Buyer', ('r', 'Mid band'), '1 day', ('st', 'b', 'Decide')], ['Use as is', 'NCR-0321: colour variance on 40 panels', 'Quality lead', ('r', ''), '3 hours', ('st', 'b', 'Decide')],
                 ['Hold release', 'J-1035: recut doors received', 'Planner', ('r', ''), '20 min', ('st', 'b', 'Decide')], ['Stock adjustment', 'MDF 18 mm: count 19, system 22', 'Stores', ('r', '3 sheets'), '2 days', ('st', 'r', 'Overdue')]]), 'oldest first; overdue items escalate', 'flex:1')
          + note('Each row opens the record with the evidence attached: the quote, the photo, the count sheet.')),
-         'Illustrative approvals inbox listing four items waiting for a manager: a purchase order, a use-as-is decision, a hold release and a stock adjustment',
+         'Concept approvals inbox listing four items waiting for a manager: a purchase order, a use-as-is decision, a hold release and a stock adjustment',
          'A concept approvals inbox. One place for every decision a manager owes, with waiting time shown.', h=500, ui=True)
 W4 = fig(S + '-maint', phones([phone('Report a fault', 'Laser cutter 1', pscan('Scan machine tag') + pf('Problem', 'Nozzle fault, cut quality') + pf('Machine stopped?', 'Yes') + pf('Photo', 'Added') + pbtn('Send request', 'b')),
                                phone('My requests', 'Maintenance &middot; 3 open', pf('MR-077 &middot; Drill jig 3', 'Bush worn &middot; High') + pf('MR-081 &middot; Laser cutter 1', 'Nozzle fault &middot; High') + pf('MR-079 &middot; Compressor', 'Service due &middot; Planned') + pbtn('Start MR-081'))],
                               [('Scan the machine', 'A tag on each machine identifies it; nobody types an asset number.'), ('Stopped or running', 'One question sets the priority.'), ('History per machine', 'Every request builds a record that planned maintenance can use.')]),
-         'Two illustrative phone screens for maintenance: reporting a machine fault by scanning its tag, and a technician&rsquo;s list of open requests',
+         'Two concept phone screens for maintenance: reporting a machine fault by scanning its tag, and a technician&rsquo;s list of open requests',
          'Concept maintenance screens. Reporting a fault takes one scan, one choice and a photo.', h=600, theme='green', ui=True)
 W5 = fig(S + '-design', m_dd(['One scan identifies the job, lot or machine', 'Three fields or fewer per step', 'Reasons chosen from a short list', 'Large buttons for gloved hands', 'The old sheet removed on go-live'],
                               ['Typing long codes', 'Forms copied from the paper version', 'Free-text reasons nobody can count', 'A login on every scan', 'Running paper and app side by side'], ('On the floor, do', 'On the floor, avoid')),
@@ -418,7 +418,7 @@ W6 = fig(S + '-ship', app('Dispatch', 'Concept on Zoho Inventory data', ['Ready 
          + panel('Pick queue', table('110px minmax(0,1.2fr) 80px minmax(0,1fr) 110px 110px', ['Order', 'Customer', '>Lines', 'Carrier', 'Ship by', 'Status'],
                  [[('sn', 'SO-7790'), 'Builder B', ('r', '6'), 'Own truck', 'Today', ('st', 'g', 'Ready')], [('sn', 'SO-7795'), 'Fit-out customer A', ('r', '3'), 'Courier', 'Today', ('st', 'g', 'Ready')],
                   [('sn', 'SO-7802'), 'Retail chain C', ('r', '12'), 'Freight', 'Monday', ('st', 'y', 'Short 1 line')], [('sn', 'SO-7804'), 'Fit-out customer D', ('r', '2'), 'Courier', 'Monday', ('st', 'g', 'Ready')]]), 'shipping creates the draft invoice', 'flex:1')),
-         'Illustrative dispatch screen with counts of orders ready, picking and shipped, and a pick queue showing customer, lines, carrier, ship-by date and status',
+         'Concept dispatch screen with counts of orders ready, picking and shipped, and a pick queue showing customer, lines, carrier, ship-by date and status',
          'A concept dispatch queue. Posting the shipment reduces stock and drafts the invoice in one step.', h=520, ui=True)
 
 
@@ -468,7 +468,7 @@ def workflows(ALL):
             <li>Zoho Creator</li><li>Deluge</li><li>Zoho Inventory</li><li>Zoho Flow</li><li>Zoho Analytics</li><li>REST APIs</li>
           </ul>
         </div>''', alt=True)
-        + sec('learn', 'See it applied', 'Reference implementations', cards(ALL, ALL['_cases']))
+        + sec('learn', 'See it applied', 'Solution blueprints', cards(ALL, ALL['_cases']))
     )
 
 
@@ -510,9 +510,9 @@ def guides_hub(ALL):
         + sec('ai', 'AI', 'Artificial intelligence, without the hype', cards(ALL, by('ai-for-small-manufacturers')), alt=True)
         + sec('how-written', 'About these guides', 'How the guides are written', checks([
             'Each explains one topic, with a short answer at the top', 'Formulas come with a worked example', 'Diagrams and concept screens are drawn for the guide and labelled',
-            'Product facts were checked against the vendor&rsquo;s own pages, which are listed', 'Example businesses are illustrations, not clients', 'No statistics are quoted without a source'])
+            'Product facts were checked against the vendor&rsquo;s own pages, which are listed', 'Example businesses are typical of the ones we hear from', 'No statistics are quoted without a source'])
               + '\n        <p>Three guides are written by our CTO, Arunkumar V, and seven by the development team. Corrections are welcome through the <a href="/contact/">contact page</a>.</p>')
-        + sec('cases', 'See it applied', 'Illustrative case studies', cards(ALL, ALL['_cases']), alt=True)
+        + sec('cases', 'See it applied', 'Solution blueprints', cards(ALL, ALL['_cases']), alt=True)
     )
 
 
@@ -521,7 +521,7 @@ PAGES.append(dict(
     desc='Ten practical manufacturing guides: inventory accuracy, production tracking, traceability, quality, purchasing, KPIs, integration, software choice and AI.',
     label='Manufacturing guides', h1='Practical guides for small manufacturers',
     lead='Ten guides on the problems we are asked about most. Each one explains a topic properly, with formulas, worked examples, diagrams and the mistakes to avoid.',
-    buttons=[('Start with the roadmap', G + 'spreadsheets-to-connected-system-roadmap/', 'btn-primary'), ('Illustrative case studies', CS, 'btn-secondary')],
+    buttons=[('Start with the roadmap', G + 'spreadsheets-to-connected-system-roadmap/', 'btn-primary'), ('Solution blueprints', CS, 'btn-secondary')],
     hero=S, hero_alt='Cover: the manufacturing guides library', sections=guides_hub, service_name='', service_type='',
     cta=('Want a guide applied to your factory?', 'Tell us which topic is closest to your problem. We will talk it through and suggest a first step.'),
 ))
@@ -530,26 +530,26 @@ PAGES.append(dict(
 S = 'hub-cases'
 cover(S, 'Case studies', 'Illustrative manufacturing case studies', 'Reference implementations for composite businesses. Not client projects.',
       m_rows([('Job tracking for a joinery', 'By Arunkumar V, CTO'), ('Batch traceability for a bakery', 'By the development team'), ('AI-assisted order intake', 'By the development team')]),
-      theme='green', solid=True, alt='Cover: three illustrative manufacturing case studies: job tracking, batch traceability and AI-assisted order intake')
+      theme='green', solid=True, alt='Cover: three manufacturing solution blueprints: job tracking, batch traceability and AI-assisted order intake')
 H1 = fig(S + '-structure', m_pills([('The situation', ['Executive summary', 'Business context', 'Challenges', 'Existing process', 'Root causes']), ('The design', ['Solution', 'Architecture', 'Workflow', 'Before and after', 'Stages']),
                                      ('The detail', ['Integrations and data', 'Security and exceptions', 'Benefits and limits', 'What could come next'])]),
-         'The fifteen sections of each case study grouped into the situation, the design and the detail',
-         'Every case study follows the same structure, so they can be compared.', h=440, theme='green', title='What each case study covers')
+         'The fifteen sections of each blueprint grouped into the situation, the design and the detail',
+         'Every blueprint follows the same structure, so they can be compared.', h=440, theme='green', title='What each case study covers')
 
 
 def cases_hub(ALL):
     return (
-        sec('what', 'Read this first', 'What &ldquo;illustrative&rdquo; means here', '''        <div class="split">
+        sec('what', 'Read this first', 'What a solution blueprint is', '''        <div class="split">
           <div>
-            <p>These case studies are reference implementations. Each describes a composite business, built from the kind of manufacturer that asks us for this work, and the design we would propose for it.</p>
-            <p>They are not accounts of client projects. No client is named, no customer is quoted and no savings or improvements are claimed as measured. Screens are concept mockups, and any names or numbers inside them are made-up example data.</p>
-            <p>We publish them because a worked design teaches more than a list of features. When we have client stories that customers have approved for publication, they will be labelled as such and kept separate.</p>
+            <p>Each blueprint takes one kind of manufacturer and one problem, and sets out the design we would propose: what is going wrong, why, what to build, how it connects and how to roll it out.</p>
+            <p>Screens are concept designs with example data. Benefits are described as directions, because real numbers come from a baseline measured on your own floor.</p>
+            <p>We publish them because a worked design teaches more than a list of features.</p>
           </div>
           <ul class="chip-list">
-            <li>Composite businesses</li><li>No client names</li><li>No invented results</li><li>Concept screens</li><li>Limits stated</li>
+            <li>Root causes</li><li>Full architecture</li><li>Concept screens</li><li>Limits stated</li><li>Staged rollout</li>
           </ul>
         </div>''', narrow=False)
-        + sec('list', 'Reference implementations', 'Three illustrative case studies', cards(ALL, ALL['_cases']), alt=True)
+        + sec('list', 'Blueprints', 'Three solution blueprints', cards(ALL, ALL['_cases']), alt=True)
         + sec('structure', 'Format', 'What each one covers', H1
               + '\n        <p>Each runs to fifteen sections: summary, context, challenges, the existing process, root causes, the proposed solution, architecture, the workflow step by step, before and after, implementation stages, integrations, security and exceptions, expected benefits and limitations, future improvements and a next step.</p>')
         + sec('guides', 'Background', 'Guides behind the designs', cards(ALL, [ALL[s] for s in ('production-tracking-zoho-creator', 'batch-lot-traceability', 'ai-for-small-manufacturers')]), alt=True)
@@ -557,19 +557,17 @@ def cases_hub(ALL):
 
 
 PAGES.append(dict(
-    route=CS, crumb='Case studies', seo_title='Illustrative Manufacturing Case Studies', collection='_cases',
-    desc='Three illustrative manufacturing case studies: job tracking for a joinery, batch traceability for a bakery and AI-assisted purchase order intake.',
-    label='Illustrative case studies', h1='Illustrative manufacturing case studies', tone='green',
-    lead='Reference implementations that show how we would solve a real kind of problem, from root cause to architecture to rollout. The businesses are composites, not clients, and no results are claimed.',
-    buttons=[('Read the joinery case study', CS + 'job-tracking-joinery-manufacturer/', 'btn-primary'), ('Browse the guides', G, 'btn-secondary')],
-    hero=S, hero_alt='Cover: three illustrative manufacturing case studies', sections=cases_hub, service_name='', service_type='',
-    faqs=[('Are these real customer projects?',
-           'No. They are illustrative reference implementations for composite businesses. No client names, quotes, logos or measured results are used.'),
-          ('Why publish illustrative case studies?',
-           'A complete worked design, with its architecture, workflow, controls and limits, is more useful to a manufacturer weighing a project than a list of features. Labelling it clearly as illustrative keeps it honest.'),
+    route=CS, crumb='Blueprints', seo_title='Manufacturing Solution Blueprints', collection='_cases',
+    desc='Three manufacturing solution blueprints: job tracking for a joinery, batch traceability for a bakery and AI-assisted purchase order intake.',
+    label='Solution blueprints', h1='Manufacturing solution blueprints', tone='green',
+    lead='Complete designs that show how we would solve a real kind of problem, from root cause to architecture to rollout.',
+    buttons=[('Read the joinery blueprint', CS + 'job-tracking-joinery-manufacturer/', 'btn-primary'), ('Browse the guides', G, 'btn-secondary')],
+    hero=S, hero_alt='Cover: three manufacturing solution blueprints', sections=cases_hub, service_name='', service_type='',
+    faqs=[('What is a solution blueprint?',
+           'A complete worked design for a typical business of a given kind, with its architecture, workflow, controls, limits and rollout plan. It is more useful to a manufacturer weighing a project than a list of features.'),
           ('Are the screens real software?',
            'They are concept mockups drawn for these pages, with example data. They are not screenshots of Zoho products or of a live customer system.'),
-          ('Can you build what a case study describes?',
+          ('Can you build what a blueprint describes?',
            'Yes. Each describes a design we would be comfortable building. Your version would start with a walk through your own process, because the details always differ.')],
     cta=('Have a process like one of these?', 'Send us a description of how it runs today. We will tell you what we would build first, what we would leave alone and what it would cost.'),
 ))

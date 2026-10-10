@@ -21,7 +21,7 @@ F2 = fig(S + '-formula', m_formula('Record accuracy = records within tolerance &
 F3 = fig(S + '-count-app', phones([phone('Cycle count', 'Aisle B &middot; Bin B-04', pscan('Scan bin, then item') + pf('Item', 'Hinge 110&deg; soft-close') + pf('Counted quantity', '236') + pbtn('Save count')),
                                     phone('Variance found', 'System 250 &middot; Counted 236', pf('Difference', '-14 (5.6%)') + pf('Reason', 'Issued to job, not recorded') + pf('Recount by', 'Second counter') + pbtn('Send for approval', 'b'))],
                                    [('Blind count', 'The counter does not see the system quantity first'), ('Reason on every adjustment', 'So the cause gets fixed, not just the number')]),
-         'Two illustrative phone screens for a cycle count: scanning a bin and entering a count, then recording a variance with a reason',
+         'Two concept phone screens for a cycle count: scanning a bin and entering a count, then recording a variance with a reason',
          'A concept for a cycle-count app on Zoho Creator. The variance screen asks for a reason before any stock is adjusted.', h=540, theme='amber', ui=True)
 F4 = fig(S + '-abc', m_table(['Class', 'Typical items', 'Count how often', 'Tolerance'],
                               [['A', 'High value or high use', 'Every month', 'Exact'], ['B', 'Mid value, steady use', 'Every quarter', 'Within 1 to 2%'],
@@ -37,7 +37,7 @@ F5 = fig(S + '-dashboard', app('Stock Control', 'Concept on Zoho Analytics', ['A
                      ['Drawer runner 450', ('r', '120'), ('r', '120'), ('r', '0'), ('st', 'g', 'Match')]]), '4 of 48'),
               panel('Accuracy by week', svg_line([[85, 84, 87, 88, 86, 89, 90, 91]], ['W34', 'W35', 'W36', 'W37', 'W38', 'W39', 'W40', 'W41'], ymax=100, h=330), '%'), '1.5fr'),
          actions='<span class="pilln">All locations</span>'),
-         'Illustrative inventory accuracy dashboard with record accuracy, counts done, adjustments, stock-outs, a variance table and a weekly trend line',
+         'Concept inventory accuracy dashboard with record accuracy, counts done, adjustments, stock-outs, a variance table and a weekly trend line',
          'A concept dashboard. The useful column is the reason: it tells you which process to fix.', h=640, ui=True)
 
 GUIDES.append(dict(
@@ -160,7 +160,7 @@ P1 = fig(S + '-model', m_cols([('Record', 'Work order', ['Product and quantity',
 P2 = fig(S + '-floor', phones([phone('My jobs', 'Assembly &middot; 4 waiting', pscan('Scan job card') + pf('WO-1042', 'Oak vanity 900 &middot; 12 units') + pf('WO-1047', 'Shelf unit S-8 &middot; 30 units') + pbtn('Start job', 'b')),
                                 phone('WO-1042 &middot; Assembly', 'Started 09:14', pf('Good quantity', '8') + pf('Scrap quantity', '1') + pf('Scrap reason', 'Panel chipped') + pbtn('Complete stage'))],
                                [('Two taps to start', 'Scan the card, press start'), ('Scrap has a field', 'With a reason list, not free text'), ('Large buttons', 'Used with gloves, at arm&rsquo;s length')]),
-         'Two illustrative phone screens for the shop floor: a job list with a scan button, and a stage completion form with good and scrap quantities',
+         'Two concept phone screens for the shop floor: a job list with a scan button, and a stage completion form with good and scrap quantities',
          'A concept for the operator screens. If recording a stage takes more than a few seconds, people stop doing it.', h=560, ui=True)
 P3 = fig(S + '-exceptions', m_steps([('On hold', 'Operator flags a problem and picks a reason', 'Job stops'), ('Review', 'Supervisor sees it on the board', 'Decide'),
                                       ('Rework or scrap', 'A rework stage is added, or quantity is written off', 'Recorded'), ('Release', 'Supervisor releases the job', 'Job resumes')],
@@ -180,7 +180,7 @@ P5 = fig(S + '-board', app('Production Tracker', 'Concept on Zoho Creator', ['Bo
                  ('Finishing', [('WO-1038 Reception desk', 'Hold: colour query', ('y', 'On hold'))]),
                  ('Dispatch', [('WO-1036 Vanity 600', 'Packed &middot; 20 units', ('g', 'Ready'))])]),
          actions='<span class="pilln">Late: 1</span><span class="pilln">On hold: 1</span>'),
-         'Illustrative work-in-progress board with jobs in columns for cutting, edging, assembly, finishing and dispatch, showing running, late and on-hold jobs',
+         'Concept work-in-progress board with jobs in columns for cutting, edging, assembly, finishing and dispatch, showing running, late and on-hold jobs',
          'A concept board built from stage logs. Late and held jobs are the two things a supervisor needs to see first.', h=620, ui=True)
 
 GUIDES.append(dict(
@@ -226,7 +226,7 @@ GUIDES.append(dict(
 <h2 id="step-4" class="mfg-step">Capture quantity, scrap and time</h2>
 <p>On completion, ask for three things: good quantity, scrap quantity and, if scrap is more than zero, a reason. Time comes from the start and complete timestamps, so nobody types it.</p>
 <p>Partial completion is where simple trackers break. If a job of 12 units finishes 8 today, the stage is not complete. Log the 8 and keep the stage open. A short Deluge script on the stage log form can do the arithmetic. The sketch below shows the idea; field names will differ in your app.</p>
-<pre><code>// Runs after a stage log is submitted (illustrative)
+<pre><code>// Runs after a stage log is submitted (sketch)
 wo = Work_Order[ID == input.Work_Order];
 done = Stage_Log[Work_Order == input.Work_Order &amp;&amp; Stage == input.Stage].sum(Good_Qty);
 if(done &gt;= wo.Planned_Qty)
@@ -327,7 +327,7 @@ R5 = fig(S + '-tracker', app('Rollout Plan', 'Concept project tracker', ['Roadma
                   ['Incoming quality checks', ('st', 'y', 'Medium'), ('st', 'g', 'Low'), ('st', 'n', 'Next'), 'Quality'],
                   ['Stock control', ('st', 'r', 'High'), ('st', 'r', 'High'), ('st', 'n', 'Planned'), 'Stores'],
                   ['Scheduling', ('st', 'y', 'Medium'), ('st', 'r', 'High'), ('st', 'n', 'Not yet'), 'Planner']]), 'ranked by pain and effort', 'flex:1')),
-         'Illustrative rollout tracker listing six processes with pain, effort, status and owner, showing one live and one in trial',
+         'Concept rollout tracker listing six processes with pain, effort, status and owner, showing one live and one in trial',
          'A concept tracker for the rollout itself. A ranked queue stops the project turning into everything at once.', h=600, ui=True)
 
 GUIDES.append(dict(
@@ -386,7 +386,7 @@ GUIDES.append(dict(
 ''' + R5 + '''
 
 <h2 id="worked-example">A worked example: what the 90 days look like</h2>
-<p>Here is the plan applied to an example business: a 30-person sheet-metal fabricator that quotes in one spreadsheet, schedules on a whiteboard and invoices from an accounting package. It is an illustration, not a client.</p>
+<p>Here is the plan applied to an example business: a 30-person sheet-metal fabricator that quotes in one spreadsheet, schedules on a whiteboard and invoices from an accounting package.</p>
 <ul>
   <li><strong>Days 1 to 15.</strong> The walk-through finds seven spreadsheets and one whiteboard. Scoring them shows that job status causes the most daily pain: the office phones the floor about a dozen times a day. Purchasing is painful too, but depends on stock figures nobody trusts. Job tracking is chosen.</li>
   <li><strong>Days 16 to 45.</strong> A work-order app is built with five stages. The laser cell trials it for a week with printed job cards and one shared tablet. Two changes come out of the trial: operators want to see the next three jobs, not just the current one, and &ldquo;waiting for material&rdquo; needs to be a hold reason.</li>

@@ -344,7 +344,7 @@
           <dl class="mfg-facts"><div><dt>Works today</dt><dd>Reading documents, answering questions</dd></div><div><dt>Needs care</dt><dd>Predictions and image checks</dd></div><div><dt>Not yet</dt><dd>Unsupervised decisions</dd></div><div><dt>Always</dt><dd>A person approves</dd></div></dl>
         </div>
       </header>
-    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul><li><a href="/manufacturing/">Overview</a></li><li><a href="/manufacturing/zoho-implementation/">Zoho implementation</a></li><li><a href="/manufacturing/ai-automation/">AI automation</a></li><li><a href="/manufacturing/workflows/">Workflows</a></li><li><a href="/manufacturing/guides/">Guides</a></li><li><a href="/manufacturing/case-studies/">Case studies</a></li></ul></div></nav>
+    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul><li><a href="/manufacturing/">Overview</a></li><li><a href="/manufacturing/zoho-implementation/">Zoho implementation</a></li><li><a href="/manufacturing/ai-automation/">AI automation</a></li><li><a href="/manufacturing/workflows/">Workflows</a></li><li><a href="/manufacturing/guides/">Guides</a></li><li><a href="/manufacturing/case-studies/">Blueprints</a></li></ul></div></nav>
       <div class="container container--post">
         <figure class="post-cover">
           <img src="/Asset/img/manufacturing/ai-for-small-manufacturers.webp" alt="Cover: three things AI does well for a small manufacturer" width="1200" height="675" fetchpriority="high">
@@ -398,13 +398,13 @@
 <figure class="mfg-fig"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/ai-for-small-manufacturers-table.webp" alt="Table of five AI-assisted tasks showing what the AI does and what a person still does in each" width="1200" height="520" loading="lazy" decoding="async"></div><figcaption>Five practical uses. In each one the AI prepares and a person decides.</figcaption></figure>
 <h3>1. Reading customer purchase orders</h3>
 <p>Customers send orders as PDFs in their own layouts. Someone retypes each into your system. Extraction reads the document, matches the customer and items against your lists and fills in a draft. The reviewer sees the draft beside the original and fixes what is flagged.</p>
-<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/ai-for-small-manufacturers-review.webp" alt="Illustrative review screen for an AI-read purchase order, listing each extracted field with a check status and the two items that need a person" width="1200" height="560" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept review screen. The AI did the typing; the person spends their time on the two lines that need judgement.</figcaption></figure>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/ai-for-small-manufacturers-review.webp" alt="Concept review screen for an AI-read purchase order, listing each extracted field with a check status and the two items that need a person" width="1200" height="560" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Concept screen</span> A concept review screen. The AI did the typing; the person spends their time on the two lines that need judgement.</figcaption></figure>
 <p>This is the use I recommend first. The task is frequent, the result is easy to check against the page, and the time saved is obvious. Our <a href="/manufacturing/case-studies/ai-purchase-order-intake/">order intake reference implementation</a> describes the full design.</p>
 <h3>2. Reading supplier documents</h3>
 <p>Delivery notes and certificates of conformity carry lot numbers, dates and test values that belong in your <a href="/manufacturing/guides/batch-lot-traceability/">traceability records</a>. Extraction pulls them out at receiving so nobody types a 14-character lot number.</p>
 <h3>3. Answering questions about your own data</h3>
 <p>&ldquo;Which jobs due this week are at risk?&rdquo; is a query across work orders, holds and due dates. A language model connected to those records can answer it in a sentence.</p>
-<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/ai-for-small-manufacturers-ask.webp" alt="Illustrative assistant screen answering two questions about at-risk jobs and material availability, each answer citing the records it used" width="1200" height="480" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept question-and-answer assistant. Each answer names its source, and the assistant has read-only access.</figcaption></figure>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/ai-for-small-manufacturers-ask.webp" alt="Concept assistant screen answering two questions about at-risk jobs and material availability, each answer citing the records it used" width="1200" height="480" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Concept screen</span> A concept question-and-answer assistant. Each answer names its source, and the assistant has read-only access.</figcaption></figure>
 <p>Two rules apply. The assistant should be read-only, and every answer should name the records it used so a person can check. This also depends entirely on the data being right, which is why it sits in the &ldquo;fix the data first&rdquo; quadrant for most businesses.</p>
 <h3>4. Sorting defect photos</h3>
 <p>If inspectors photograph defects, a classifier can suggest a category: scratch, dent, misalignment. That speeds up recording and makes cause analysis more consistent. I would not let it make the pass or fail call without a long, measured trial.</p>
@@ -537,17 +537,17 @@
       <div class="container">
         <div class="section-header section-header--left">
           <p class="section-label">Keep reading</p>
-          <h2>Related guides and case studies</h2>
+          <h2>Related guides and blueprints</h2>
         </div>
         <div class="post-grid">
           <article class="post-card">
             <a class="post-card-image" href="/manufacturing/case-studies/ai-purchase-order-intake/" tabindex="-1" aria-hidden="true">
-              <img src="/Asset/img/manufacturing/ai-purchase-order-intake.webp" alt="Cover: illustrative case study of AI-assisted order intake" width="1200" height="675" loading="lazy">
+              <img src="/Asset/img/manufacturing/ai-purchase-order-intake.webp" alt="Cover: solution blueprint for AI-assisted order intake" width="1200" height="675" loading="lazy">
             </a>
             <div class="post-card-body">
               <p class="post-card-category">AI and automation</p>
-              <h3><a href="/manufacturing/case-studies/ai-purchase-order-intake/">AI-Assisted Purchase Order Intake: An Illustrative Case Study</a></h3>
-              <p class="post-card-excerpt">An illustrative case study: reading customer purchase orders into draft sales orders with AI extraction, validation rules and human confirmation.</p>
+              <h3><a href="/manufacturing/case-studies/ai-purchase-order-intake/">AI-Assisted Purchase Order Intake: A Solution Blueprint</a></h3>
+              <p class="post-card-excerpt">A solution blueprint: reading customer purchase orders into draft sales orders with AI extraction, validation rules and human confirmation.</p>
               <p class="post-card-meta"><span class="mfg-card-author">Zudo Works development team</span> &middot; 8 min read</p>
             </div>
           </article>

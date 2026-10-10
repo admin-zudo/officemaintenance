@@ -69,7 +69,7 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - AI in manufacturing (six use cases, each with limits, oversight and a proof of concept): https://zudoworks.com/manufacturing/ai-automation/
 - Manufacturing workflows (production, stock, purchasing, traceability, quality, maintenance, dispatch): https://zudoworks.com/manufacturing/workflows/
 - Manufacturing guides (ten guides: inventory accuracy, production tracking, traceability, quality, purchasing, KPIs, integration, software choice, AI): https://zudoworks.com/manufacturing/guides/
-- Illustrative manufacturing case studies (reference implementations for composite businesses, not client projects): https://zudoworks.com/manufacturing/case-studies/
+- Manufacturing solution blueprints (worked designs for typical businesses: job tracking, batch traceability, AI order intake): https://zudoworks.com/manufacturing/case-studies/
 - Locations (countries served): https://zudoworks.com/locations/
 - Zoho consultants in India (all states and union territories): https://zudoworks.com/locations/india/
 - Zoho consultants for the United States (all 50 states): https://zudoworks.com/locations/united-states/

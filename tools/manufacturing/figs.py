@@ -26,7 +26,7 @@ def fig(name, main, alt, cap, w=1200, h=640, theme='blue', title=None, sub=None,
              '<link rel="stylesheet" href="../../insights/covers/_kit.css"><link rel="stylesheet" href="../_fig.css"></head>\n'
              f'<body class="theme-{theme}" data-strict style="--W:{w}px;--H:{h}px"><div class="{cls}">\n{head}\n{main}\n{facts(fct) if fct else ""}\n</div></body></html>\n')
     FIGS[name] = dict(scene=scene, w=w, h=h, hero=hero)
-    badge = '<span class="mfg-badge">Illustrative interface</span> ' if ui else ''
+    badge = '<span class="mfg-badge">Concept screen</span> ' if ui else ''
     return (f'<figure class="mfg-fig{" mfg-fig--ui" if ui else ""}"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens">'
             f'<img src="/Asset/img/manufacturing/{name}.webp" alt="{H.escape(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"></div>'
             f'<figcaption>{badge}{cap}</figcaption></figure>')

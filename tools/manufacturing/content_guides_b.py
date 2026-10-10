@@ -31,7 +31,7 @@ E4 = fig(S + '-hybrid', m_arch([('People', 'who works where', ['Sales', 'Planner
 E5 = fig(S + '-scenarios', m_rows([('A 25-person joinery', 'Every job is different; materials bought per job', 'Zoho apps and a custom job tracker'), ('A 60-person food producer', 'Recipes, batches and expiry dates; steady demand', 'An ERP or MRP system with batch control'),
                                     ('A 120-person engineering firm', 'ERP in place; shop floor still on paper', 'Keep the ERP, add extension apps')]),
          'Three example businesses and the route that suits each: a joinery, a food producer and an engineering firm',
-         'Three examples. They are illustrations of the reasoning, not client projects.', h=520, title='Three example businesses')
+         'Three examples of the reasoning.', h=520, title='Three example businesses')
 
 GUIDES.append(dict(
     slug=S, title='Zoho Apps or a Manufacturing ERP? How to Choose',
@@ -162,7 +162,7 @@ T3 = fig(S + '-batch-screen', app('Batch Records', 'Concept on Zoho Creator', ['
                     [['Flour', ('sn', 'F-2207'), ('r', '150 kg'), ('st', 'g', 'Yes')], ['Butter', ('sn', 'B-0913'), ('r', '75 kg'), ('st', 'g', 'Yes')],
                      ['Sugar', ('sn', 'S-4410'), ('r', '50 kg'), ('st', 'g', 'Yes')], ['Film wrap', ('sn', 'P-551'), ('r', '1 roll'), ('st', 'y', 'Typed')]]), '4 lots'),
               panel('Checks and output', listing([('g', 'Metal detector check passed', '09:10 and 11:40'), ('g', 'Bake temperature in range', 'Logged every 30 minutes'), ('y', '24 packs rejected', 'Underweight; recorded as scrap'), ('', 'Output: pallets 1042-A and 1042-B', 'Labels printed with batch and best-before')])), '1.35fr')),
-         'Illustrative batch record screen showing product, quantities, best-before date, the ingredient lots consumed and the checks carried out',
+         'Concept batch record screen showing product, quantities, best-before date, the ingredient lots consumed and the checks carried out',
          'A concept batch record. The lots-consumed table is the link that most paper systems cannot follow backwards.', h=520, ui=True)
 T4 = fig(S + '-recall', m_steps([('Pick a lot', 'Choose one ingredient lot at random', 'Start the clock'), ('Trace forward', 'Find every batch that used it', 'Batches listed'), ('Find the output', 'Find where each finished lot went', 'Customers listed'), ('Reconcile', 'Do the quantities add up?', 'Stop the clock')],
                                  ['#6CB4F5', '#3CCB7F', '#F9B21D', '#F28B3C']),
@@ -175,7 +175,7 @@ T5 = fig(S + '-trace-screen', app('Batch Records', 'Concept on Zoho Creator', ['
                   [('sn', '24-1042'), 'Shortbread 200 g', ('r', '75 kg'), '9 Oct', '2 orders', ('st', 'r', 'Shipped')], [('sn', '24-1044'), 'Oat slice 180 g', ('r', '75 kg'), '9 Oct', '2 orders', ('st', 'y', 'Part shipped')],
                   [('sn', '24-1047'), 'Shortbread 200 g', ('r', '75 kg'), '10 Oct', 'None yet', ('st', 'g', 'In warehouse')]]), 'quantities reconcile: 375 + 125 = 500 kg', 'flex:1'),
          actions='<span class="btns">Export list</span><span class="btnr">Place lot on hold</span>'),
-         'Illustrative forward trace screen for one ingredient lot, listing the five batches that used it, what was shipped and what is still in the warehouse',
+         'Concept forward trace screen for one ingredient lot, listing the five batches that used it, what was shipped and what is still in the warehouse',
          'A concept trace screen. The reconciliation line is the test: received must equal used plus remaining.', h=540, ui=True)
 
 GUIDES.append(dict(
@@ -299,7 +299,7 @@ Q3 = fig(S + '-ncr-screen', app('Quality', 'Concept on Zoho Creator', ['Inspecti
          stepper([('Detected', 'd'), ('Contained', 'd'), ('Disposition', 'c'), ('Root cause', ''), ('CAPA', ''), ('Closed', '')])
          + g2(panel('Details', fields([('Found at', 'In-process check'), ('Work order', 'WO-2291'), ('Quantity affected', '140 of 600'), ('Defect', 'Hole position +0.6 mm'), ('Suspected source', 'Drill jig 3'), ('Stock status', 'On hold')], 2)),
               panel('Decision needed', listing([('y', 'Proposed: rework 140 pcs', 'Re-drill on jig 1, then re-inspect'), ('', 'Approver: quality lead', 'Waiting since 9 Oct, 08:30'), ('r', 'Jig 3 stopped', 'Maintenance request MR-077 raised')]) + acts(('btnp', 'Approve rework'), ('btns', 'Scrap'), ('btnr', 'Reject')), 'role: quality lead'), '1.2fr')),
-         'Illustrative nonconformance report screen with a six-stage progress bar, defect details and a pending disposition decision',
+         'Concept nonconformance report screen with a six-stage progress bar, defect details and a pending disposition decision',
          'A concept NCR screen. The progress bar makes it obvious when an NCR stops at disposition and never gets a root cause.', h=500, ui=True)
 Q4 = fig(S + '-fpy', m_formula('First-pass yield = units passed first time &divide; units started',
                                 [('600', 'brackets started on WO-2291'), ('460', 'passed inspection first time'), ('140', 'needed rework')], 'First-pass yield = 460 &divide; 600 = 77%. Reworked units count as failures here, even if they pass later.'),
@@ -309,7 +309,7 @@ Q5 = fig(S + '-dashboard', app('Quality', 'Concept on Zoho Analytics', ['Overvie
          kpis([('First-pass yield', '94.2%', '+1.8 pts', 'up'), ('Open NCRs', '11', '4 over 14 days', 'dn'), ('Avg days to close', '9', '-3 days', 'up'), ('CAPA overdue', '2', 'needs owner', 'dn')])
          + g2(panel('NCRs by cause', bars2([('Setup or jig', 82, '14'), ('Material', 59, '10'), ('Operator method', 41, '7'), ('Drawing unclear', 24, '4'), ('Handling damage', 18, '3')]) + note('Example data. The cause list is a fixed pick list, so the chart can be trusted.'), '38 in 12 weeks'),
               panel('First-pass yield by week', svg_line([[91, 92.5, 92, 93, 92.4, 93.8, 94, 93.1, 94.6, 95, 94.4, 94.2]], ['31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42'], ymin=88, ymax=96, h=250), '%, axis starts at 88'), '1fr')),
-         'Illustrative quality dashboard with first-pass yield, open NCRs, days to close, overdue corrective actions, NCRs by cause and a weekly yield trend',
+         'Concept quality dashboard with first-pass yield, open NCRs, days to close, overdue corrective actions, NCRs by cause and a weekly yield trend',
          'A concept quality dashboard. NCRs by cause only works if the cause is chosen from a list.', h=560, ui=True)
 
 GUIDES.append(dict(
@@ -461,7 +461,7 @@ U4 = fig(S + '-reorder-screen', app('Purchasing', 'Concept on Zoho Inventory dat
                   ['Drawer runner 450', ('r', '60'), ('r', '80'), ('r', '200'), 'Northfix', ('r', '7 days'), ('st', 'b', 'Draft PO')],
                   ['Lacquer clear 20 L', ('r', '2'), ('r', '3'), ('r', '6'), 'Coatings Co', ('r', '10 days'), ('st', 'r', 'PO late')]]), 'suggested quantity rounded to supplier pack size', 'flex:1'),
          actions='<span class="btnp">Create draft POs</span>'),
-         'Illustrative reorder list showing items below their reorder point with stock on hand, suggested order quantity, supplier, lead time and action',
+         'Concept reorder list showing items below their reorder point with stock on hand, suggested order quantity, supplier, lead time and action',
          'A concept reorder list. Suggested quantities are rounded to pack sizes, and a buyer still confirms each order.', h=540, ui=True)
 U5 = fig(S + '-approvals', m_table(['Order value', 'Who approves', 'Target time'],
                                     [['Under a small limit', 'Nobody: the buyer places it', 'Same hour'], ['Up to a mid limit', 'Operations or production manager', 'Same day'],

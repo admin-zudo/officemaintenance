@@ -22,7 +22,7 @@ D3 = fig(S + '-ops', app('Operations', 'Concept on Zoho Analytics', ['This week'
          kpis([('On-time delivery', '91%', '+4 pts', 'up'), ('First-pass yield', '94.2%', '+0.6 pts', 'up'), ('Jobs on hold', '3', '1 over 2 days', 'dn'), ('Oldest open job', '19 days', 'WO-2188', 'dn')])
          + g2(panel('On-time delivery by week', svg_bars([84, 86, 82, 88, 87, 90, 87, 91], ['34', '35', '36', '37', '38', '39', '40', '41'], ymax=100, target=95, unit='%', h=230), 'target 95%'),
               panel('Needs a decision today', listing([('r', 'WO-2188 has not moved for 6 days', 'Waiting on customer drawing approval'), ('y', '3 jobs due this week are still in cutting', 'Laser queue is 2 days long'), ('y', 'Scrap on Line 2 is twice its usual level', '14 units, reason: setup'), ('g', 'All purchase orders for next week received', '')]), 'exceptions first'), '1.25fr')),
-         'Illustrative weekly operations dashboard with four headline numbers, an on-time delivery chart against target and a list of items needing a decision',
+         'Concept weekly operations dashboard with four headline numbers, an on-time delivery chart against target and a list of items needing a decision',
          'A concept operations dashboard. The right-hand panel matters most: it lists what somebody has to decide.', h=620, ui=True)
 D4 = fig(S + '-dd', m_dd(['Show the trend, not just today', 'Put a target line on every chart', 'List exceptions with an owner', 'Fix each definition in writing', 'Review in the same meeting weekly'],
                           ['Twenty charts on one screen', 'Numbers nobody can act on', 'Averages that hide the bad job', 'Typing data in for the dashboard', 'Changing a formula quietly'], ('Good dashboards', 'Poor dashboards')),
@@ -39,7 +39,7 @@ D6 = fig(S + '-wip', app('Operations', 'Concept on Zoho Analytics', ['This week'
                 [('sn', 'WO-2207'), 'Guard panel GP-7 &times; 40', 'Cutting', ('r', '2'), '14 Oct', 'Laser queue', ('st', 'y', 'At risk')], [('sn', 'WO-2210'), 'Frame F-200 &times; 12', 'Welding', ('r', '1'), '16 Oct', '', ('st', 'g', 'On track')],
                 [('sn', 'WO-2214'), 'Shelf unit S-8 &times; 30', 'Painting', ('r', '0'), '17 Oct', '', ('st', 'g', 'On track')]]), 'sorted by days in stage', 'flex:1'),
          actions='<span class="btns">Export</span>'),
-         'Illustrative list of open jobs sorted by the number of days since they last moved, with stage, due date, what is blocking them and a status',
+         'Concept list of open jobs sorted by the number of days since they last moved, with stage, due date, what is blocking them and a status',
          'A concept WIP age report. Sorting by days in stage puts the stuck job at the top, whatever its due date.', h=450, ui=True)
 
 GUIDES.append(dict(
@@ -186,7 +186,7 @@ A4 = fig(S + '-review', app('Order Intake', 'Concept on Zoho Creator', ['Inbox',
                    ['Unit price, line 1', '412.00', ('st', 'y', 'Differs')]]), '7 fields &middot; 2 need attention'),
             panel('What needs you', listing([('r', 'Line 3 is not in the item list', 'Pick an item or ask the customer'), ('y', 'Price differs from the price list', 'Price list says 425.00'), ('g', 'Customer and delivery address matched', 'Existing account')])
                   + acts(('btnp', 'Confirm order'), ('btns', 'Edit'), ('btnr', 'Reject')) + note('Nothing is created in the order system until someone confirms.'), 'reviewer: sales admin'), '1.3fr')),
-         'Illustrative review screen for an AI-read purchase order, listing each extracted field with a check status and the two items that need a person',
+         'Concept review screen for an AI-read purchase order, listing each extracted field with a check status and the two items that need a person',
          'A concept review screen. The AI did the typing; the person spends their time on the two lines that need judgement.', h=560, ui=True)
 A5 = fig(S + '-poc', m_steps([('Pick one task', 'Narrow, frequent, checkable', 'Week 1'), ('Gather examples', '50 to 100 real cases with the right answers', 'Week 1-2'), ('Run side by side', 'AI drafts, people work as normal', 'Week 3-4'), ('Measure, decide', 'Accuracy, time saved, errors caught', 'Week 5')],
                               ['#6CB4F5', '#3CCB7F', '#F9B21D', '#F28B3C']),
@@ -196,7 +196,7 @@ A6 = fig(S + '-ask', app('Ask Operations', 'Concept assistant', [], '', 'Ask abo
          chat([('q', 'Which jobs due this week are at risk?'), ('a', 'Three of 14 jobs due this week are at risk: WO-2188 (on hold 6 days, drawing approval), WO-2203 (in rework after NCR-0318) and WO-2207 (2 days in the laser queue).', 'Source: work orders and holds, read at 09:40 &middot; 14 records'),
                ('q', 'Do we have enough 18 mm MDF for next week?'), ('a', 'On hand: 22 sheets. Jobs planned next week need 31. A purchase order for 40 sheets is due on Monday.', 'Source: stock on hand, job materials, open purchase orders')])
          + note('Read-only. The assistant can look things up; it cannot change a record.'), side=False),
-         'Illustrative assistant screen answering two questions about at-risk jobs and material availability, each answer citing the records it used',
+         'Concept assistant screen answering two questions about at-risk jobs and material availability, each answer citing the records it used',
          'A concept question-and-answer assistant. Each answer names its source, and the assistant has read-only access.', h=480, ui=True)
 
 GUIDES.append(dict(
@@ -339,7 +339,7 @@ C4 = fig(S + '-monitor', app('Integration Monitor', 'Concept on Zoho Creator', [
                  [['09:12', 'Shipment &rarr; invoice', ('sn', 'SO-7790'), 'Customer has no tax code in accounts', ('st', 'r', 'Fix data')], ['09:31', 'Order &rarr; work order', ('sn', 'SO-7802'), 'Item BR-55 not found in production app', ('st', 'r', 'Map item')],
                   ['08:47', 'Stage log &rarr; stock', ('sn', 'WO-2210'), 'Stock system busy; retried after 5 minutes', ('st', 'g', 'Resolved')], ['08:02', 'Payment &rarr; CRM', ('sn', 'INV-3391'), 'Timed out; retried', ('st', 'g', 'Resolved')]]), 'failures are kept until someone clears them', 'flex:1'),
          actions='<span class="btns">Retry selected</span>'),
-         'Illustrative integration monitor showing message counts for the day and a list of failed or retried syncs with the reason for each',
+         'Concept integration monitor showing message counts for the day and a list of failed or retried syncs with the reason for each',
          'A concept integration monitor. Every failure has a reason a person can act on, and nothing fails silently.', h=560, ui=True)
 C5 = fig(S + '-dd', m_dd(['One owner per record', 'One shared ID on every record', 'Retry, then tell a person', 'Sync events, not whole tables', 'Test with last month&rsquo;s real orders'],
                           ['Two-way sync of the same field', 'Matching on names', 'Failures written to a log nobody reads', 'Nightly bulk overwrites', 'Going live on all flows at once'], ('Do', 'Avoid')),

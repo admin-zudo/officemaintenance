@@ -4,8 +4,8 @@
     python tools/build.py                     # shared header/footer, CSS bundle, sitemap, link check
 
 Content lives in the content_*.py files next to this script. Figures are described in those files with
-figs.fig(...) and rendered to Asset/img/manufacturing/. Case studies are illustrative reference
-implementations, not client projects, and every app screen is a concept mockup; the templates say so.
+figs.fig(...) and rendered to Asset/img/manufacturing/. Blueprints are designs for typical
+businesses, not client projects, and every app screen is a concept mockup.
 """
 import html, json, os, re, sys
 from datetime import date
@@ -19,7 +19,7 @@ ROOT = figs.ROOT
 BASE = '/manufacturing/'
 
 SUBNAV = [(BASE, 'Overview'), (BASE + 'zoho-implementation/', 'Zoho implementation'), (BASE + 'ai-automation/', 'AI automation'),
-          (BASE + 'workflows/', 'Workflows'), (BASE + 'guides/', 'Guides'), (BASE + 'case-studies/', 'Case studies')]
+          (BASE + 'workflows/', 'Workflows'), (BASE + 'guides/', 'Guides'), (BASE + 'case-studies/', 'Blueprints')]
 
 ORG = {"@type": "Organization", "@id": SITE + "/#organization", "name": "Zudo Works", "url": SITE + "/",
        "logo": {"@type": "ImageObject", "url": SITE + "/Asset/brand/zudo-works-logo.svg"}}
@@ -211,7 +211,7 @@ def facts_dl(facts):
     return '<dl class="mfg-facts">' + ''.join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in facts) + '</dl>'
 
 
-def related_section(items, title='Related guides and case studies', label='Keep reading'):
+def related_section(items, title='Related guides and blueprints', label='Keep reading'):
     return f'''    <section class="section section--alt" id="related">
       <div class="container">
         <div class="section-header section-header--left">
@@ -325,14 +325,13 @@ def guide_page(a, ALL):
 
 
 # ------------------------------------------------------------------ case study pages
-NOTE = ('<p class="mfg-note"><strong>Illustrative case study.</strong> This is a reference implementation we designed to show how a problem like this can be solved. '
-        'The company is a composite, not a client, and no customer data, quotes or measured results are shown. Screens are concept mockups, not screenshots of a live system. '
-        'Names and numbers inside the screens are made-up example data. Expected benefits are stated as directions, not figures.</p>')
+NOTE = ('<p class="mfg-note"><strong>Solution blueprint.</strong> A design for a typical business of this kind, showing how we would solve the problem. '
+        'Screens are concept designs with example data, and expected benefits are stated as directions.</p>')
 
 
 def case_page(c, ALL):
     route = item_route(c)
-    trail = [('/', 'Home'), (BASE, 'Manufacturing'), (BASE + 'case-studies/', 'Case studies'), (route, plain(c['title']))]
+    trail = [('/', 'Home'), (BASE, 'Manufacturing'), (BASE + 'case-studies/', 'Blueprints'), (route, plain(c['title']))]
     au = AUTHORS[c['author']]
     tpl = c['template']   # dossier | ba | ai
     secs, toc = '', ''
@@ -340,7 +339,7 @@ def case_page(c, ALL):
         secs += f'\n          <h2 id="{sid}"><span class="cs-num">{n:02d}</span><span>{title}</span></h2>\n{body.strip(chr(10))}\n'
         toc += f'<li><a href="#{sid}">{title}</a></li>'
     facts = ''.join(f'<div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in c['facts'])
-    side = f'''        <aside class="cs-side" aria-label="Case study summary">
+    side = f'''        <aside class="cs-side" aria-label="Blueprint summary">
           <div class="cs-side-inner">
             <div class="cs-card{' cs-card--dark' if tpl == 'ai' else ''}"><h2>At a glance</h2><dl>{facts}</dl></div>
             <div class="cs-card"><h2>Contents</h2><ol>{toc}</ol></div>
@@ -348,22 +347,22 @@ def case_page(c, ALL):
         </aside>'''
     lay = {'dossier': 'cs-layout', 'ba': 'cs-layout cs-layout--left', 'ai': 'cs-layout'}[tpl]
     hero_tone = {'dossier': '', 'ba': ' mfg-hero--green', 'ai': ' mfg-hero--dark'}[tpl]
-    blocks = [ld(article_ld(c, route, {"abstract": "Illustrative reference implementation. The company described is a composite, not a client."})), ld(crumbs_ld(trail))]
+    blocks = [ld(article_ld(c, route, {"abstract": "Solution blueprint: a design for a typical business of this kind."})), ld(crumbs_ld(trail))]
     if c.get('faqs'): blocks.append(ld(faq_ld(c['faqs'])))
-    faq = ('\n          <h2 id="faq"><span class="cs-num">Q</span><span>Questions about this reference implementation</span></h2>\n' + faq_html(c['faqs'])) if c.get('faqs') else ''
+    faq = ('\n          <h2 id="faq"><span class="cs-num">Q</span><span>Questions about this blueprint</span></h2>\n' + faq_html(c['faqs'])) if c.get('faqs') else ''
     related = pick(ALL, c['related'])
     main = f'''    <article class="post mfg-post cs cs--{tpl}">
       <header class="post-hero{hero_tone}">
         <div class="container container--post">
-          {crumbs([('/', 'Home'), (BASE, 'Manufacturing'), (BASE + 'case-studies/', 'Case studies'), (route, c['category'])])}
-          <p class="section-label">Illustrative case study &middot; {c['category']}</p>
+          {crumbs([('/', 'Home'), (BASE, 'Manufacturing'), (BASE + 'case-studies/', 'Blueprints'), (route, c['category'])])}
+          <p class="section-label">Solution blueprint &middot; {c['category']}</p>
           <h1>{c['title']}</h1>
           <p class="post-lead">{c['lead']}</p>
           <div class="post-byline">
             {au['avatar']}
             <div>
               <p class="post-byline-name">{au['byline']}</p>
-              <p class="post-byline-meta"><time datetime="{c['published']}">{nice(c['published'])}</time> &middot; {read_time(c)} min read &middot; Reference implementation</p>
+              <p class="post-byline-meta"><time datetime="{c['published']}">{nice(c['published'])}</time> &middot; {read_time(c)} min read &middot; Blueprint</p>
             </div>
           </div>
         </div>
@@ -388,10 +387,10 @@ def case_page(c, ALL):
       </div>
     </article>
 
-{related_section(related, 'Related guides and reference implementations')}
+{related_section(related, 'Related guides and blueprints')}
 
 {cta(c.get('cta_title', 'Have a process like this one?'), c.get('cta_text', 'Send us a description of how it runs today. We will tell you what we would build first, what we would leave alone and what it would cost.'))}'''
-    extra = f'  <meta property="article:published_time" content="{c["published"]}">\n  <meta property="article:section" content="Case study">\n'
+    extra = f'  <meta property="article:published_time" content="{c["published"]}">\n  <meta property="article:section" content="Solution blueprint">\n'
     return shell(route, c['seo_title'] + ' | Zudo Works', c['desc'], f"/Asset/og/mfg-{c['slug']}.jpg", 'article', blocks, main, author=au['meta'], extra_meta=extra)
 
 

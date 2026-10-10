@@ -19,7 +19,7 @@ def sections(titles, bodies):
 S = 'job-tracking-joinery-manufacturer'
 cover(S, 'Illustrative case study', 'Job tracking for a custom joinery', 'From a whiteboard and phone calls to live job status on the workshop floor.',
       m_vt([('Problem', 'Nobody knows where a job is', 'Status lives on a whiteboard'), ('Design', 'Scan at every stage', 'A Zoho Creator app on shared tablets'), ('Links', 'Orders, stock and invoices', 'One order number throughout'), ('Result', 'Status without asking', 'Stated as a direction, not a figure')]),
-      theme='blue', alt='Cover: illustrative case study of job tracking for a custom joinery, summarised as problem, design, connections and expected result')
+      theme='blue', alt='Cover: solution blueprint for job tracking for a custom joinery, summarised as problem, design, connections and expected result')
 J1 = fig(S + '-before', m_lanes(['Quote', 'Plan', 'Make', 'Deliver'], [
             ('Office', [('Quote in a spreadsheet', 'Emailed as a PDF'), ('Job sheet typed again', 'Printed, walked to the floor', 'warn'), None, ('Invoice typed a third time', 'From the delivery docket', 'warn')]),
             ('Workshop', [None, ('Whiteboard updated', 'When someone remembers', 'warn'), ('Stages done', 'Not recorded anywhere', 'warn'), None]),
@@ -42,19 +42,19 @@ J4 = fig(S + '-board', app('Job Tracker', 'Concept on Zoho Creator', ['Board', '
                  ('Assembly', [('J-1035 &middot; Wardrobes &times; 6', 'Due 12 Oct', ('r', 'On hold')), ('J-1038 &middot; Reception desk', 'Due 15 Oct', ('g', 'On track'))]),
                  ('Finishing', [('J-1031 &middot; Kitchen, 22 units', 'Due 9 Oct', ('y', 'Due soon'))]),
                  ('Ready', [('J-1029 &middot; Shelving', 'Install booked 9 Oct', ('b', 'Booked'))])])),
-         'Illustrative workshop board with jobs shown as cards in five stage columns, each with a due date and status',
+         'Concept workshop board with jobs shown as cards in five stage columns, each with a due date and status',
          'Concept workshop board. It replaces the whiteboard, and it updates when an operator scans a job card.', h=480, ui=True)
 J5 = fig(S + '-floor', phones([phone('Scan a job', 'Assembly bench 2', pscan('Scan the job card') + pf('Job', 'J-1038 &middot; Reception desk') + pf('Stage', 'Assembly') + pbtn('Start', 'b')),
                                phone('Finish stage', 'J-1038 &middot; Assembly', pf('Units completed', '1 of 1') + pf('Problems', 'None') + pf('Photo', 'Added') + pbtn('Complete stage')),
                                phone('Report a problem', 'J-1035 &middot; Assembly', pf('Reason', 'Part missing') + pf('Detail', 'Two doors short') + pf('Photo', 'Added') + pbtn('Put on hold', 'b'))]),
-         'Three illustrative tablet screens for workshop staff: scan a job, finish a stage and report a problem',
+         'Three concept tablet screens for workshop staff: scan a job, finish a stage and report a problem',
          'Concept floor screens. Each takes one scan and one or two taps, with large buttons for gloved hands.', h=560, ui=True)
 J6 = fig(S + '-job', app('Job Tracker', 'Concept on Zoho Creator', ['Board', 'Work orders', 'Holds', 'Installs', 'Reports'], 'Work orders', 'J-1035 &middot; Wardrobes &times; 6', 'Sales order SO-7781 &middot; due 12 Oct &middot; on hold since 7 Oct',
          stepper([('Cutting', 'd'), ('Edging', 'd'), ('Assembly', 'c'), ('Finishing', ''), ('Ready', ''), ('Installed', '')])
          + g2(panel('Stage log', table('minmax(0,1fr) 96px 96px minmax(0,1fr)', ['Stage', 'Started', 'Finished', 'By'],
                     [['Cutting', '5 Oct 08:20', '5 Oct 14:10', 'Machinist 1'], ['Edging', '6 Oct 07:45', '6 Oct 11:30', 'Machinist 2'], ['Assembly', '7 Oct 08:05', ('st', 'r', 'On hold'), 'Assembler 1']]), 'from floor scans'),
               panel('Open hold', listing([('r', 'Part missing: two doors short', 'Reported 7 Oct 09:40 with photo'), ('y', 'Planner: recut requested', 'Linked job J-1035-R, cutting today'), ('', 'Customer told of new date', 'Sales notified automatically')]) + acts(('btnp', 'Release hold'), ('btns', 'Add note')), 'owner: planner'), '1.3fr')),
-         'Illustrative job detail screen with a six-stage progress bar, a stage log from floor scans and an open hold with its actions',
+         'Concept job detail screen with a six-stage progress bar, a stage log from floor scans and an open hold with its actions',
          'Concept job screen. Everything known about the job sits in one place, including why it stopped.', h=440, ui=True)
 J7 = fig(S + '-ba', m_ba(dict(k='Before', h='Status by asking', li=['Whiteboard updated by memory', 'Three documents per job', 'Problems raised in passing', 'Invoice typed from a docket']),
                           dict(k='After', h='Status by scanning', li=['Board updates from floor scans', 'One order number throughout', 'Holds with a reason and an owner', 'Draft invoice created on delivery'])),
@@ -68,17 +68,17 @@ J9 = fig(S + '-dash', app('Job Tracker', 'Concept on Zoho Analytics', ['Board', 
          kpis([('Jobs open', '13', '2 on hold', 'fl'), ('Due this week', '5', '1 at risk', 'dn'), ('Avg days on hold', '1.6', 'per held job', 'fl'), ('Jobs with no stage', '0', 'all scanned', 'up')])
          + g2(panel('Hours on hold by reason', bars2([('Part missing', 88, '31 h'), ('Drawing query', 60, '21 h'), ('Machine down', 37, '13 h'), ('Waiting hardware', 26, '9 h'), ('Other', 9, '3 h')]) + note('Reasons come from a fixed list, so they can be counted.'), '8 weeks'),
               panel('Jobs completed per week', svg_bars([6, 7, 5, 8, 7, 8, 9, 8], ['34', '35', '36', '37', '38', '39', '40', '41'], h=230), 'count'), '1fr')),
-         'Illustrative workshop report with open jobs, jobs due, average days on hold, hours on hold by reason and jobs completed per week',
+         'Concept workshop report with open jobs, jobs due, average days on hold, hours on hold by reason and jobs completed per week',
          'Concept report with example data. Hours on hold by reason is the chart the whiteboard could never produce.', h=540, ui=True)
 
 CASES.append(dict(
-    slug=S, title='Job Tracking for a Custom Joinery: An Illustrative Case Study',
-    seo_title='Joinery Job Tracking: Illustrative Case Study',
-    desc='Illustrative case study: how a 25-person custom joinery could replace its whiteboard with scan-based job tracking on Zoho Creator, linked to orders.',
+    slug=S, title='Job Tracking for a Custom Joinery: A Solution Blueprint',
+    seo_title='Joinery Job Tracking: A Solution Blueprint',
+    desc='A solution blueprint: how a 25-person custom joinery could replace its whiteboard with scan-based job tracking on Zoho Creator, linked to orders.',
     lead='A reference implementation for a make-to-order workshop where every job is different and the commonest question in the building is &ldquo;where is it up to?&rdquo;',
     category='Job tracking', template='dossier', author='arun', published=TODAY, keyword='job tracking joinery manufacturer',
-    hero_alt='Cover: illustrative case study of job tracking for a custom joinery', hero_cap='A reference implementation, summarised. The business is a composite, not a client.',
-    facts=[('Type', 'Illustrative reference implementation'), ('Business', 'Composite 25-person custom joinery'), ('Region', 'New Zealand or Australia'), ('Core problem', 'No reliable job status'),
+    hero_alt='Cover: solution blueprint for job tracking for a custom joinery', hero_cap='The blueprint, summarised.',
+    facts=[('Type', 'Solution blueprint'), ('Business', 'Typical 25-person custom joinery'), ('Region', 'New Zealand or Australia'), ('Core problem', 'No reliable job status'),
            ('Approach', 'Scan-based job tracker on Zoho Creator'), ('Connected to', 'CRM, stock and accounting'), ('Planned duration', 'About ten weeks, in four stages')],
     sections=sections(
         ['Executive summary', 'Business context', 'Operational challenges', 'The existing process', 'Root-cause analysis', 'The proposed solution', 'Solution architecture', 'The workflow, step by step',
@@ -90,7 +90,7 @@ CASES.append(dict(
 ''', '''
 <p>Picture a joinery of about 25 people: three in the office, eighteen in the workshop and four installers. It makes kitchens, wardrobes, shop fittings and reception desks for builders and fit-out firms. Every job is quoted individually. Around a dozen are open at any time, and each takes one to four weeks.</p>
 <p>Board is bought per job. Hinges, runners and edge tape are kept in stock. The business uses an accounting package its accountant chose, a quoting spreadsheet and a large whiteboard.</p>
-<p>This is a composite built from the kind of business that asks us for this work. It is not a client, and nothing here describes a specific company.</p>
+<p>It is typical of the businesses that ask us for this work.</p>
 ''', '''
 <ul>
   <li><strong>No reliable status.</strong> Sales cannot tell a builder when a kitchen will be ready without walking to the workshop.</li>
@@ -178,9 +178,7 @@ CASES.append(dict(
 <p>If this resembles your workshop, the useful first step costs nothing: walk one job from quote to invoice and write down every time it is retyped and every time someone has to ask where it is.</p>
 <p>Send me that list. I will tell you what I would build first and what I would leave alone. More on our approach is on the <a href="''' + M + '''zoho-implementation/">Zoho implementation for manufacturers</a> page.</p>
 ''']),
-    faqs=[('Is this a real client project?',
-           'No. It is an illustrative reference implementation. The joinery is a composite of the kind of business that asks for this work, and no client data, quotes or measured results are shown.'),
-          ('How long would a project like this take?',
+    faqs=[('How long would a project like this take?',
            'The plan here is about ten weeks in four stages, with something in daily use at the end of each. The real duration depends on how many stages, integrations and exceptions your process has.'),
           ('Do staff need a phone each?',
            'No. One shared tablet per work area is usually enough. Staff scan the job card and tap one or two buttons.'),
@@ -194,7 +192,7 @@ CASES.append(dict(
 S = 'batch-traceability-food-manufacturer'
 cover(S, 'Illustrative case study', 'Batch traceability for a bakery', 'From paper batch sheets to a trace that takes minutes.',
       two(m_tiles([('1', 'Receive', 'Every lot labelled and scanned'), ('2', 'Make', 'Lots scanned into each batch'), ('3', 'Ship', 'Pallets scanned to orders'), ('4', 'Trace', 'Forward and back, on one screen')])),
-      theme='green', alt='Cover: illustrative case study of batch traceability for a bakery in four parts: receive, make, ship and trace')
+      theme='green', alt='Cover: solution blueprint for batch traceability for a bakery in four parts: receive, make, ship and trace')
 B1 = fig(S + '-ba', m_ba(dict(k='Before', h='Paper batch sheets', li=['Lot numbers handwritten', 'Sheets filed by date', 'A trace means reading folders', 'Holds by word of mouth']),
                           dict(k='After', h='Scanned batch records', li=['Lots scanned at each step', 'Records linked by batch', 'A trace is one search', 'A hold blocks picking'])),
          'Before and after comparison of traceability: paper batch sheets against scanned batch records, four points each',
@@ -213,14 +211,14 @@ B3 = fig(S + '-arch', m_arch([('People', 'who scans what', ['Stores', 'Mixers', 
 B4 = fig(S + '-receive', phones([phone('Receive a lot', 'Goods in &middot; Bay 1', pscan('Scan supplier label') + pf('Material', 'Butter, unsalted 25 kg') + pf('Supplier lot', 'B-0913') + pf('Use by', '28 Nov 2026') + pbtn('Print lot label', 'b')),
                                  phone('Issue to batch', 'Batch 24-1051 &middot; Mixer 2', pscan('Scan lot label') + pf('Lot', 'B-0913 &middot; Butter') + pf('Quantity', '75 kg') + pf('Oldest lot first?', 'Yes') + pbtn('Add to batch'))],
                                 [('One scan per lot', 'The supplier label is read, not retyped.'), ('Oldest first', 'The app warns if an older lot is still in stock.'), ('Typed entries flagged', 'Anything keyed by hand is marked for a check.')]),
-         'Two illustrative handheld screens, receiving a supplier lot and issuing a lot to a batch, with three design notes',
+         'Two concept handheld screens, receiving a supplier lot and issuing a lot to a batch, with three design notes',
          'Concept handheld screens for stores and mixing. These two scans create the links a recall depends on.', h=600, theme='green', ui=True)
 B5 = fig(S + '-batch', app('Batch Records', 'Concept on Zoho Creator', ['Today', 'Batches', 'Lots', 'Holds', 'Trace'], 'Batches', 'Batch 24-1051 &middot; Oat slice 180 g', 'Mixer 2 &middot; 10 Oct &middot; in progress',
          stepper([('Weigh', 'd'), ('Mix', 'd'), ('Bake', 'c'), ('Pack', ''), ('Check', ''), ('Release', '')])
          + g2(panel('Lots issued', table('minmax(0,1.2fr) 100px 86px 96px', ['Ingredient', 'Lot', '>Qty', 'Entry'],
                     [['Oats', ('sn', 'O-3318'), ('r', '120 kg'), ('st', 'g', 'Scanned')], ['Butter', ('sn', 'B-0913'), ('r', '75 kg'), ('st', 'g', 'Scanned')], ['Golden syrup', ('sn', 'G-0207'), ('r', '40 kg'), ('st', 'g', 'Scanned')], ['Flour', ('sn', 'F-2211'), ('r', '60 kg'), ('st', 'g', 'Scanned')]]), '4 of 4 required'),
               panel('Checks', listing([('g', 'Allergen changeover signed', '07:40, line cleaned after nut product'), ('g', 'Oven temperature in range', 'Logged 08:30 and 09:00'), ('', 'Metal detector check', 'Due at start of packing'), ('', 'Pack weight check', 'Due every 30 minutes')]), 'release needs all four'), '1.3fr')),
-         'Illustrative batch record in progress with a six-step progress bar, the four ingredient lots issued and the checks completed and outstanding',
+         'Concept batch record in progress with a six-step progress bar, the four ingredient lots issued and the checks completed and outstanding',
          'Concept batch record. The batch cannot be released until every required lot and check is present.', h=440, ui=True)
 B6 = fig(S + '-trace', app('Batch Records', 'Concept on Zoho Creator', ['Today', 'Batches', 'Lots', 'Holds', 'Trace'], 'Trace', 'Mock recall: oats lot O-3318', 'Drill started 14:02 &middot; finished 14:09',
          kpis([('Received', '1,000 kg', '28 Sep', 'fl'), ('Batches affected', '6', '720 kg used', 'fl'), ('In warehouse', '2 batches', 'on hold', 'fl'), ('Customers', '5', '9 orders', 'fl')])
@@ -228,14 +226,14 @@ B6 = fig(S + '-trace', app('Batch Records', 'Concept on Zoho Creator', ['Today',
               panel('Customers to notify', table('minmax(0,1.2fr) 70px 96px 96px', ['Customer', '>Orders', 'Last ship', 'Status'],
                     [['Cafe group A', ('r', '3'), '8 Oct', ('st', 'y', 'To call')], ['Grocer B', ('r', '2'), '7 Oct', ('st', 'y', 'To call')], ['Distributor C', ('r', '2'), '6 Oct', ('st', 'y', 'To call')], ['Caterer D', ('r', '1'), '5 Oct', ('st', 'y', 'To call')], ['Cafe E', ('r', '1'), '2 Oct', ('st', 'y', 'To call')]]), 'from dispatch scans'), '1fr'),
          actions='<span class="btns">Export recall list</span>'),
-         'Illustrative mock recall screen for one ingredient lot showing batches affected, a quantity reconciliation and the list of customers to notify',
+         'Concept mock recall screen for one ingredient lot showing batches affected, a quantity reconciliation and the list of customers to notify',
          'Concept mock recall screen with example data. The drill is timed, and the reconciliation shows nothing is unaccounted for.', h=560, ui=True)
 B7 = fig(S + '-holds', app('Batch Records', 'Concept on Zoho Creator', ['Today', 'Batches', 'Lots', 'Holds', 'Trace'], 'Holds', 'Stock on hold', '10 Oct &middot; 3 items',
          panel('Held stock cannot be picked or issued', table('110px minmax(0,1.2fr) 100px minmax(0,1.3fr) 110px 110px', ['Lot or batch', 'Item', '>Quantity', 'Reason', 'Placed by', 'Decision'],
                [[('sn', '24-1049'), 'Oat slice 180 g', ('r', '1,150 packs'), 'Mock recall drill on O-3318', 'Quality lead', ('st', 'b', 'Release')], [('sn', '24-1050'), 'Oat slice 180 g', ('r', '1,180 packs'), 'Mock recall drill on O-3318', 'Quality lead', ('st', 'b', 'Release')],
                 [('sn', 'P-560'), 'Film wrap, printed', ('r', '2 rolls'), 'Print colour out of range', 'Goods in', ('st', 'y', 'Awaiting')]]), 'each hold has an owner', 'flex:1'),
          actions='<span class="btnp">Place a hold</span>'),
-         'Illustrative list of stock on hold with the lot or batch, quantity, reason, who placed the hold and the decision status',
+         'Concept list of stock on hold with the lot or batch, quantity, reason, who placed the hold and the decision status',
          'Concept holds screen. A hold placed here changes the stock status, so the product cannot be picked.', h=400, ui=True)
 B8 = fig(S + '-stages', m_steps([('Label everything', 'Lot labels at goods in', 'Weeks 1-3'), ('Batch records', 'Scan lots into batches on one line', 'Weeks 4-7'), ('Dispatch', 'Scan pallets to orders', 'Weeks 8-10'), ('Prove it', 'Timed mock recalls, both directions', 'Weeks 11-12')],
                                  ['#3CCB7F', '#F9B21D', '#F28B3C', '#6CB4F5']),
@@ -243,13 +241,13 @@ B8 = fig(S + '-stages', m_steps([('Label everything', 'Lot labels at goods in', 
          'Stages follow the product through the building, so each one closes a link in the chain.', h=440, theme='green', title='Implementation stages')
 
 CASES.append(dict(
-    slug=S, title='Batch Traceability for a Bakery: An Illustrative Case Study',
-    seo_title='Bakery Batch Traceability: Illustrative Case',
-    desc='An illustrative case study: how a 40-person bakery could move from paper batch sheets to scanned lot and batch records with a timed mock recall.',
+    slug=S, title='Batch Traceability for a Bakery: A Solution Blueprint',
+    seo_title='Bakery Batch Traceability: A Blueprint',
+    desc='A solution blueprint: how a 40-person bakery could move from paper batch sheets to scanned lot and batch records with a timed mock recall.',
     lead='A reference implementation for a food producer whose paper records are complete enough to pass an audit and too slow to use in a real recall.',
     category='Traceability', template='ba', author='team', published=TODAY, keyword='batch traceability food manufacturer',
-    hero_alt='Cover: illustrative case study of batch traceability for a bakery', hero_cap='A reference implementation in four parts. The business is a composite, not a client.',
-    facts=[('Type', 'Illustrative reference implementation'), ('Business', 'Composite 40-person bakery'), ('Products', 'Biscuits and slices, packed'), ('Core problem', 'Slow, unreliable traces'),
+    hero_alt='Cover: solution blueprint for batch traceability for a bakery', hero_cap='The blueprint in four parts.',
+    facts=[('Type', 'Solution blueprint'), ('Business', 'Typical 40-person bakery'), ('Products', 'Biscuits and slices, packed'), ('Core problem', 'Slow, unreliable traces'),
            ('Approach', 'Scanned lot and batch records'), ('Connected to', 'Stock system and label printer'), ('Planned duration', 'About twelve weeks, in four stages')],
     sections=sections(
         ['Executive summary', 'Business context', 'Operational challenges', 'The existing process', 'Root-cause analysis', 'The proposed solution', 'Solution architecture', 'The workflow, step by step',
@@ -258,8 +256,8 @@ CASES.append(dict(
 <p>This reference implementation describes how our team would give a mid-sized bakery working traceability: the ability to follow any ingredient lot forward to the customers who received it, and any finished pack back to its inputs.</p>
 <p>The design puts a lot label on everything at goods in, scans lots into each batch at mixing, and scans pallets to orders at dispatch. A batch app on Zoho Creator holds those links and sits beside a stock system that owns quantities and expiry dates. Success is defined by a timed mock recall, run in both directions.</p>
 ''', '''
-<p>The business is a composite: a bakery of about 40 people making packaged biscuits and slices for cafes, grocers and distributors. It runs two lines, makes eight to twelve batches a day and receives around fifteen deliveries a week.</p>
-<p>It has a food safety plan and is audited by its larger customers. Records are kept on paper batch sheets, filed by date. Stock is counted weekly on a spreadsheet. It is not a client, and no real company is described.</p>
+<p>The business in this blueprint is a bakery of about 40 people making packaged biscuits and slices for cafes, grocers and distributors. It runs two lines, makes eight to twelve batches a day and receives around fifteen deliveries a week.</p>
+<p>It has a food safety plan and is audited by its larger customers. Records are kept on paper batch sheets, filed by date. Stock is counted weekly on a spreadsheet.</p>
 ''', '''
 <ul>
   <li><strong>A trace takes most of a day.</strong> Someone reads through folders of batch sheets, and the result is not always certain.</li>
@@ -346,9 +344,7 @@ CASES.append(dict(
 <p>If you are unsure how your own records would stand up, run a mock recall this week. Pick one ingredient lot, start a clock and find every customer who received it.</p>
 <p>Tell us how long it took and where it stalled. We will suggest the smallest change that would shorten it. Our <a href="''' + M + '''workflows/">manufacturing workflows</a> page shows how traceability fits with the processes around it.</p>
 ''']),
-    faqs=[('Is this a real client project?',
-           'No. It is an illustrative reference implementation. The bakery is a composite, and no client data, quotes or measured results are shown.'),
-          ('Why not do all of this in the stock system?',
+    faqs=[('Why not do all of this in the stock system?',
            'A stock system tracks batches you receive and ship. Recording which input lots were consumed by which production run needs a manufacturing module or a batch record app. Zoho Inventory states that it has no manufacturing module.'),
           ('What hardware is needed?',
            'A label printer at goods in and at packing, and a phone or handheld with a camera at each scanning point.'),
@@ -362,7 +358,7 @@ CASES.append(dict(
 S = 'ai-purchase-order-intake'
 cover(S, 'Illustrative case study', 'AI-assisted order intake', 'Customer purchase orders read into drafts, with a person confirming each one.',
       m_rows([('The AI reads', 'PDF purchase orders arriving by email'), ('Rules check', 'Customer, items, prices and dates'), ('A person confirms', 'Nothing is created until they do')]),
-      theme='navy', solid=True, alt='Cover: illustrative case study of AI-assisted order intake in three parts: the AI reads, rules check and a person confirms')
+      theme='navy', solid=True, alt='Cover: solution blueprint for AI-assisted order intake in three parts: the AI reads, rules check and a person confirms')
 I1 = fig(S + '-flow', m_chev([('Arrive', 'Email with a PDF'), ('Read', 'Fields extracted'), ('Check', 'Rules applied'), ('Review', 'A person confirms'), ('Create', 'Sales order raised')],
                               ['#3B5BDB', '#364FC7', '#1B5A96', '#0B6E4F', '#089949']),
          'Five-step flow for purchase order intake: arrive, read, check, review and create',
@@ -385,19 +381,19 @@ I4 = fig(S + '-inbox', app('Order Intake', 'Concept on Zoho Creator', ['Inbox', 
                  [['09:12', 'Fit-out customer A', ('sn', 'PO-88214'), ('r', '3'), 'Unknown item; price differs', ('st', 'r', 'Attention')], ['09:40', 'Builder B', ('sn', '4500118'), ('r', '6'), 'None', ('st', 'g', 'Ready')],
                   ['10:05', 'Retail chain C', ('sn', 'RC-22071'), ('r', '12'), 'Delivery date inside lead time', ('st', 'y', 'Attention')], ['10:31', 'Builder B', ('sn', '4500118'), ('r', '6'), 'Possible duplicate', ('st', 'r', 'Blocked')],
                   ['10:48', 'Fit-out customer D', ('sn', 'FD-0932'), ('r', '2'), 'None', ('st', 'g', 'Ready')]]), 'oldest first', 'flex:1')),
-         'Illustrative order intake inbox with counts for the day and a queue of purchase orders showing customer, PO number, lines, flags and status',
+         'Concept order intake inbox with counts for the day and a queue of purchase orders showing customer, PO number, lines, flags and status',
          'Concept inbox. Orders with no flags can be confirmed in seconds; the reviewer spends time where the flags are.', h=540, ui=True)
 I5 = fig(S + '-review', app('Order Intake', 'Concept on Zoho Creator', ['Inbox', 'In review', 'Confirmed', 'Rejected', 'Mappings', 'Accuracy log'], 'In review', 'Review: RC-22071 &middot; Retail chain C', '12 lines &middot; 1 flag &middot; source PDF shown alongside',
          g2(panel('Source document', listing([('', 'Purchase order RC-22071', 'Page 1 of 2 &middot; received 10:05'), ('', 'Deliver to: Store 14, loading dock', 'Address matched to customer record'), ('y', 'Required by: 16 Oct 2026', 'Highlighted: read as delivery date'), ('', '12 lines, shelving and counters', 'All item codes matched')]) + note('In the real screen this panel shows the PDF itself, with each extracted value highlighted on the page.'), 'PDF'),
             panel('Draft sales order', fields([('Customer', 'Retail chain C'), ('PO number', 'RC-22071'), ('Lines', '12, all matched'), ('Order value', 'Within price list'), ('Requested date', '16 Oct 2026'), ('Standard lead time', '10 working days')], 2)
                   + listing([('y', 'Requested date is inside standard lead time', 'Earliest standard date is 24 Oct')]) + acts(('btnp', 'Confirm with 24 Oct'), ('btns', 'Ask planner'), ('btnr', 'Reject')), 'reviewer: sales admin'), '.9fr')),
-         'Illustrative review screen with the source purchase order on the left and the draft sales order on the right, flagging a delivery date inside standard lead time',
+         'Concept review screen with the source purchase order on the left and the draft sales order on the right, flagging a delivery date inside standard lead time',
          'Concept review screen. Source and draft sit side by side, and the one flag is explained in plain words.', h=490, ui=True)
 I6 = fig(S + '-accuracy', app('Order Intake', 'Concept on Zoho Analytics', ['Inbox', 'In review', 'Confirmed', 'Rejected', 'Mappings', 'Accuracy log'], 'Accuracy log', 'Accuracy log', 'Example data &middot; last 8 weeks',
          kpis([('Orders processed', '312', '8 weeks', 'fl'), ('Fields corrected', '4.1%', 'of all fields', 'fl'), ('Confirmed unchanged', '71%', 'of orders', 'fl'), ('Wrong orders created', '0', 'caught at review', 'up')])
          + g2(panel('Corrections by field', bars2([('Item code', 78, '38'), ('Unit price', 49, '24'), ('Delivery date', 33, '16'), ('Quantity', 14, '7'), ('Customer', 6, '3')]) + note('Most item corrections are first-time customer part numbers; each is mapped once.'), 'count'),
               panel('Fields corrected by week', svg_line([[7.8, 6.4, 5.9, 4.8, 4.2, 3.9, 3.6, 3.4]], ['34', '35', '36', '37', '38', '39', '40', '41'], ymax=10, h=230), '% of fields'), '1fr')),
-         'Illustrative accuracy log showing orders processed, share of fields corrected, orders confirmed unchanged, corrections by field and a weekly trend',
+         'Concept accuracy log showing orders processed, share of fields corrected, orders confirmed unchanged, corrections by field and a weekly trend',
          'Concept accuracy log with example data. Every correction a reviewer makes is counted, so accuracy is measured, not assumed.', h=540, ui=True)
 I7 = fig(S + '-ba', m_ba(dict(k='Before', h='Typed from a PDF', li=['Each order keyed line by line', 'Customer part numbers looked up by hand', 'Price and date checked if time allows', 'Duplicates found by the customer']),
                           dict(k='After', h='Read, checked, confirmed', li=['Draft filled in from the PDF', 'Part numbers mapped once, then remembered', 'Price and date checked on every order', 'Duplicates blocked before creation'])),
@@ -409,13 +405,13 @@ I8 = fig(S + '-stages', m_timeline([('Weeks 1-2', 'Collect and label', '100 past
          'A staged plan with a decision point after the proof of concept.', h=380, theme='navy', title='Implementation stages')
 
 CASES.append(dict(
-    slug=S, title='AI-Assisted Purchase Order Intake: An Illustrative Case Study',
-    seo_title='AI Purchase Order Intake: Illustrative Case',
-    desc='An illustrative case study: reading customer purchase orders into draft sales orders with AI extraction, validation rules and human confirmation.',
+    slug=S, title='AI-Assisted Purchase Order Intake: A Solution Blueprint',
+    seo_title='AI Purchase Order Intake: A Blueprint',
+    desc='A solution blueprint: reading customer purchase orders into draft sales orders with AI extraction, validation rules and human confirmation.',
     lead='A reference implementation for a manufacturer whose sales administrator spends the morning retyping purchase orders, and whose customers find the mistakes.',
     category='AI and automation', template='ai', author='team', published=TODAY, keyword='AI purchase order processing manufacturing',
-    hero_alt='Cover: illustrative case study of AI-assisted order intake', hero_cap='A reference implementation in three parts. The business is a composite, not a client.',
-    facts=[('Type', 'Illustrative reference implementation'), ('Business', 'Composite 35-person shopfitting manufacturer'), ('Volume', 'Around 40 purchase orders a day'), ('Core problem', 'Manual order entry'),
+    hero_alt='Cover: solution blueprint for AI-assisted order intake', hero_cap='The blueprint in three parts.',
+    facts=[('Type', 'Solution blueprint'), ('Business', 'Typical 35-person shopfitting manufacturer'), ('Volume', 'Around 40 purchase orders a day'), ('Core problem', 'Manual order entry'),
            ('Approach', 'AI extraction, rules, human review'), ('AI can change', 'Nothing without confirmation'), ('Planned duration', 'About ten weeks, with a test first')],
     sections=sections(
         ['Executive summary', 'Business context', 'Operational challenges', 'The existing process', 'Root-cause analysis', 'The proposed solution', 'Solution architecture', 'The workflow, step by step',
@@ -425,8 +421,8 @@ CASES.append(dict(
 <p>The AI reads each document and fills in a draft. Ordinary rules then check the customer, items, prices, dates and duplicates. A person reviews the draft beside the original and confirms it. Nothing is created in the order system until they do, and every correction is logged so accuracy can be measured.</p>
 <p>We chose this task because it is frequent, easy to check and low in risk. That combination is what makes an AI project worth doing.</p>
 ''', '''
-<p>The business is a composite: a manufacturer of shop fittings and shelving with about 35 staff. It sells to builders, fit-out firms and retail chains, and receives around 40 purchase orders a day by email. Each customer uses its own layout and often its own part numbers.</p>
-<p>One sales administrator enters the orders, with help from a colleague at busy times. Customers, items and prices are already held in the CRM and stock system. It is not a client, and the volumes are illustrative.</p>
+<p>The business in this blueprint is a manufacturer of shop fittings and shelving with about 35 staff. It sells to builders, fit-out firms and retail chains, and receives around 40 purchase orders a day by email. Each customer uses its own layout and often its own part numbers.</p>
+<p>One sales administrator enters the orders, with help from a colleague at busy times. Customers, items and prices are already held in the CRM and stock system. The volumes are typical examples.</p>
 ''', '''
 <ul>
   <li><strong>Hours of retyping.</strong> Order entry fills most of the morning, and orders received after lunch wait until the next day.</li>
@@ -524,9 +520,7 @@ CASES.append(dict(
 <p>If order entry, or any other document-heavy task, takes hours a day in your business, the first step is small. Gather twenty recent examples and note how long each took to process and what went wrong.</p>
 <p>Send us those and we will tell you whether it is a good candidate, and what a proof of concept would involve. The <a href="''' + M + '''ai-automation/">AI in manufacturing</a> page lists other use cases we would and would not recommend.</p>
 ''']),
-    faqs=[('Is this a real client project?',
-           'No. It is an illustrative reference implementation. The manufacturer is a composite, the volumes are examples and the accuracy figures in the mock screens are example data, not measured results.'),
-          ('Why does a person still confirm every order?',
+    faqs=[('Why does a person still confirm every order?',
            'Because extraction is not perfect and cannot tell which of its answers are wrong. A short review catches errors before they become wrong orders, and the corrections provide a running measure of accuracy.'),
           ('Which AI model would be used?',
            'The design keeps the extraction service replaceable. Options include the OCR and custom model features in Zoho Creator or an outside provider connected with your own account. The proof of concept decides which reads your documents best.'),

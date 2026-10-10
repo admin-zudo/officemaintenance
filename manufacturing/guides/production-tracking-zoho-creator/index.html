@@ -336,7 +336,7 @@
           <dl class="mfg-facts"><div><dt>You need</dt><dd>A defined routing for your main products</dd></div><div><dt>First version</dt><dd>One line, four to six weeks</dd></div><div><dt>Built on</dt><dd>Zoho Creator, with a link to your stock system</dd></div><div><dt>Not included</dt><dd>Capacity planning or MRP</dd></div></dl>
         </div>
       </header>
-    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul><li><a href="/manufacturing/">Overview</a></li><li><a href="/manufacturing/zoho-implementation/">Zoho implementation</a></li><li><a href="/manufacturing/ai-automation/">AI automation</a></li><li><a href="/manufacturing/workflows/">Workflows</a></li><li><a href="/manufacturing/guides/">Guides</a></li><li><a href="/manufacturing/case-studies/">Case studies</a></li></ul></div></nav>
+    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul><li><a href="/manufacturing/">Overview</a></li><li><a href="/manufacturing/zoho-implementation/">Zoho implementation</a></li><li><a href="/manufacturing/ai-automation/">AI automation</a></li><li><a href="/manufacturing/workflows/">Workflows</a></li><li><a href="/manufacturing/guides/">Guides</a></li><li><a href="/manufacturing/case-studies/">Blueprints</a></li></ul></div></nav>
       <div class="container container--post">
         <figure class="post-cover">
           <img src="/Asset/img/manufacturing/production-tracking-zoho-creator.webp" alt="Cover: production tracking in Zoho Creator, eight steps in four stages" width="1200" height="675" fetchpriority="high">
@@ -389,7 +389,7 @@
 
 <h2 id="step-3" class="mfg-step">Build the shop-floor screen first</h2>
 <p>Most projects design the manager&rsquo;s dashboard first. Build the operator screen first, because it produces all the data.</p>
-<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/production-tracking-zoho-creator-floor.webp" alt="Two illustrative phone screens for the shop floor: a job list with a scan button, and a stage completion form with good and scrap quantities" width="1200" height="560" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept for the operator screens. If recording a stage takes more than a few seconds, people stop doing it.</figcaption></figure>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/production-tracking-zoho-creator-floor.webp" alt="Two concept phone screens for the shop floor: a job list with a scan button, and a stage completion form with good and scrap quantities" width="1200" height="560" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Concept screen</span> A concept for the operator screens. If recording a stage takes more than a few seconds, people stop doing it.</figcaption></figure>
 <p>Creator apps run as native iOS and Android apps, and form fields can scan QR codes and barcodes on a phone or tablet. Print a QR code on each job card that holds the work order number. The operator scans it, sees the current stage and presses start or complete. Design rules we hold to:</p>
 <ul>
   <li>One screen per action. No menus on the shop floor.</li>
@@ -402,7 +402,7 @@
 <h2 id="step-4" class="mfg-step">Capture quantity, scrap and time</h2>
 <p>On completion, ask for three things: good quantity, scrap quantity and, if scrap is more than zero, a reason. Time comes from the start and complete timestamps, so nobody types it.</p>
 <p>Partial completion is where simple trackers break. If a job of 12 units finishes 8 today, the stage is not complete. Log the 8 and keep the stage open. A short Deluge script on the stage log form can do the arithmetic. The sketch below shows the idea; field names will differ in your app.</p>
-<pre><code>// Runs after a stage log is submitted (illustrative)
+<pre><code>// Runs after a stage log is submitted (sketch)
 wo = Work_Order[ID == input.Work_Order];
 done = Stage_Log[Work_Order == input.Work_Order &amp;&amp; Stage == input.Stage].sum(Good_Qty);
 if(done &gt;= wo.Planned_Qty)
@@ -429,7 +429,7 @@ if(done &gt;= wo.Planned_Qty)
 
 <h2 id="step-7" class="mfg-step">Build the dashboards last</h2>
 <p>By now every dashboard is a query over stage logs. Start with three views and add more only when someone asks a question the three cannot answer.</p>
-<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/production-tracking-zoho-creator-board.webp" alt="Illustrative work-in-progress board with jobs in columns for cutting, edging, assembly, finishing and dispatch, showing running, late and on-hold jobs" width="1200" height="620" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Illustrative interface</span> A concept board built from stage logs. Late and held jobs are the two things a supervisor needs to see first.</figcaption></figure>
+<figure class="mfg-fig mfg-fig--ui"><div class="mfg-fig-frame" tabindex="0" role="group" aria-label="Figure: scroll sideways on small screens"><img src="/Asset/img/manufacturing/production-tracking-zoho-creator-board.webp" alt="Concept work-in-progress board with jobs in columns for cutting, edging, assembly, finishing and dispatch, showing running, late and on-hold jobs" width="1200" height="620" loading="lazy" decoding="async"></div><figcaption><span class="mfg-badge">Concept screen</span> A concept board built from stage logs. Late and held jobs are the two things a supervisor needs to see first.</figcaption></figure>
 <ul>
   <li><strong>The board:</strong> every open job, by stage, with late and held jobs marked.</li>
   <li><strong>The due list:</strong> jobs due in the next five days and the stage each is at.</li>
@@ -530,17 +530,17 @@ if(done &gt;= wo.Planned_Qty)
       <div class="container">
         <div class="section-header section-header--left">
           <p class="section-label">Keep reading</p>
-          <h2>Related guides and case studies</h2>
+          <h2>Related guides and blueprints</h2>
         </div>
         <div class="post-grid">
           <article class="post-card">
             <a class="post-card-image" href="/manufacturing/case-studies/job-tracking-joinery-manufacturer/" tabindex="-1" aria-hidden="true">
-              <img src="/Asset/img/manufacturing/job-tracking-joinery-manufacturer.webp" alt="Cover: illustrative case study of job tracking for a custom joinery" width="1200" height="675" loading="lazy">
+              <img src="/Asset/img/manufacturing/job-tracking-joinery-manufacturer.webp" alt="Cover: solution blueprint for job tracking for a custom joinery" width="1200" height="675" loading="lazy">
             </a>
             <div class="post-card-body">
               <p class="post-card-category">Job tracking</p>
-              <h3><a href="/manufacturing/case-studies/job-tracking-joinery-manufacturer/">Job Tracking for a Custom Joinery: An Illustrative Case Study</a></h3>
-              <p class="post-card-excerpt">Illustrative case study: how a 25-person custom joinery could replace its whiteboard with scan-based job tracking on Zoho Creator, linked to orders.</p>
+              <h3><a href="/manufacturing/case-studies/job-tracking-joinery-manufacturer/">Job Tracking for a Custom Joinery: A Solution Blueprint</a></h3>
+              <p class="post-card-excerpt">A solution blueprint: how a 25-person custom joinery could replace its whiteboard with scan-based job tracking on Zoho Creator, linked to orders.</p>
               <p class="post-card-meta"><span class="mfg-card-author">Arunkumar V</span> &middot; 7 min read</p>
             </div>
           </article>
