@@ -401,7 +401,7 @@ GUIDES.append(dict(
 
 <h2 id="accounts">A note on the accounting side</h2>
 <p>Which accounting package you connect matters, and it varies by country. Zoho Books is published in country editions, including Australia, the United Kingdom, the United States and India, plus a global edition. New Zealand is not among the named editions at the time of writing. A New Zealand manufacturer therefore has two sensible options: use the global edition, or keep an accounting package built for New Zealand tax, such as Xero, and integrate with it.</p>
-<p>Keeping your accounting package is a perfectly good decision. Your accountant knows it and your tax returns depend on it. The integration then sends invoices and bills to it and reads payment status back.</p>
+<p>Keeping your accounting package is a perfectly good decision. Your accountant knows it and your tax returns depend on it. The integration then sends invoices and bills to it and reads payment status back. In India that package is often Tally; our <a href="/insights/zoho-books-vs-tallyprime/">Zoho Books vs TallyPrime comparison</a> covers when to keep it.</p>
 ''' + callout('Agree it with your accountant', 'Before automating invoices, ask whoever does your accounts how they want them to arrive: as drafts or approved, with which tax codes, to which revenue accounts. Ten minutes here prevents a month-end clean-up.') + '''
 
 <h2 id="failures">Plan for failure</h2>

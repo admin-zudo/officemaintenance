@@ -36,4 +36,13 @@ META = {
     'zoho-flow-vs-deluge': (
         'Zoho Flow vs Deluge vs Middleware (2026 Guide)',
         'Zoho Flow, Deluge or custom middleware? How each is metered, the time and statement limits Zoho documents, and a checklist for choosing.'),
+    'zoho-crm-blueprint-setup': (
+        'Zoho CRM Blueprint Setup Guide [With Example]',
+        'Set up a Zoho CRM Blueprint step by step: edition limits, Before, During and After, SLAs and automatic transitions, with a manufacturing example.'),
+    'zoho-erp-vs-odoo-manufacturing': (
+        'Zoho ERP vs Odoo for Manufacturers (India)',
+        'Zoho ERP vs Odoo for Indian manufacturers: BOM, job cards, planning, quality, job work, GST, licensing and customisation, compared fairly.'),
+    'zoho-books-vs-tallyprime': (
+        'Zoho Books vs TallyPrime for Manufacturers',
+        'Zoho Books vs TallyPrime for Indian manufacturers and traders: cloud or desktop, GST, BOM and job work, CRM links, migration, and when to keep Tally.'),
 }

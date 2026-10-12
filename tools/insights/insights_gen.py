@@ -3,10 +3,10 @@ import html, json, os, re, sys
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import articles_a, articles_b, articles_c, articles_ext, articles_meta, articles_answers, articles_watch  # noqa: E402
+import articles_a, articles_b, articles_c, articles_d, articles_ext, articles_meta, articles_answers, articles_watch  # noqa: E402
 
 SITE = 'https://zudoworks.com'
-ARTICLES = articles_a.ARTICLES + articles_b.ARTICLES + articles_c.ARTICLES
+ARTICLES = articles_a.ARTICLES + articles_b.ARTICLES + articles_c.ARTICLES + articles_d.ARTICLES
 for _a in ARTICLES:  # insert extra sections before the FAQ heading
     _x = articles_ext.EXT.get(_a['slug'])
     if _x:
@@ -36,6 +36,9 @@ SERVICES_FOR = {
     'zoho-mcp-claude-chatgpt': ['/business-process-automation/', '/zoho-integrations/', '/zoho-crm-development/'],
     'zoho-for-manufacturing': ['/zoho-creator-development/', '/zoho-integrations/', '/custom-software-development/'],
     'zoho-flow-vs-deluge': ['/zoho-integrations/', '/deluge-development/', '/custom-software-development/'],
+    'zoho-crm-blueprint-setup': ['/zoho-crm-development/', '/business-process-automation/', '/deluge-development/'],
+    'zoho-erp-vs-odoo-manufacturing': ['/zoho-development/', '/zoho-integrations/', '/zoho-creator-development/'],
+    'zoho-books-vs-tallyprime': ['/zoho-integrations/', '/zoho-development/', '/pricing/'],
 }
 
 

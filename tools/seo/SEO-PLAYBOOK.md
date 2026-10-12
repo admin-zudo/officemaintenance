@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 9 October 2026.
+Last updated: 12 October 2026.
 
 ## 1. Status against the playbook
 
@@ -76,8 +76,9 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | 11 | Best Zoho CRM integrations for e-commerce | Integrations |
 | 12 | Zoho Creator alternatives (and when to stay) | Creator |
 | ✓ | Zoho for manufacturing: Zoho ERP, Inventory or Creator | Creator, Integrations |
-| 31 | Zoho ERP vs Odoo for manufacturers (India) | Manufacturing article |
+| ✓ | Zoho ERP vs Odoo for manufacturers (India) | Manufacturing article |
 | 32 | Job work (subcontracting) in Zoho ERP | Manufacturing article |
+| ✓ | Zoho Books vs TallyPrime for manufacturers (India) | Manufacturing, ERP vs Odoo article |
 
 ### Informational (breadth and authority)
 | # | Topic (target query) | Cluster / links to |
@@ -88,7 +89,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho Analytics data foundations | Integrations |
 | 13 | How to connect Shopify to Zoho CRM and Books | Integrations |
 | 14 | How to connect Xero to Zoho CRM | Integrations |
-| 15 | Zoho CRM Blueprint: step-by-step setup | CRM |
+| ✓ | Zoho CRM Blueprint: step-by-step setup | CRM |
 | 16 | Zoho CRM custom functions: beginner's guide | Deluge |
 | 17 | Deluge invokeurl: calling external APIs (with code) | Deluge, Integrations |
 | 18 | Zoho Creator customer portal: setup guide | Creator |

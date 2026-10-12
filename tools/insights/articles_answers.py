@@ -53,4 +53,16 @@ ANSWERS = {
         'Use Zoho Flow for simple app-to-app automation with a few steps; it is metered by tasks, and each action '
         'in a flow counts as one. Use Deluge when the logic runs inside one Zoho app and must act at an exact point '
         'in a process. Use custom middleware for high volume, long-running jobs, retries or two-way sync.',
+    'zoho-crm-blueprint-setup':
+        'A Zoho CRM Blueprint enforces a process on a picklist field such as Stage: records move only through '
+        'transitions, and each transition sets who can act, what they must enter and what happens automatically. '
+        'Blueprint starts in the Professional edition (3 Blueprints); Enterprise allows 50 and Ultimate 100.',
+    'zoho-erp-vs-odoo-manufacturing':
+        'Choose Zoho ERP if you are in India, your production fits a bill of materials, job card and work center '
+        'model, and you want finance, GST, payroll and production in one Zoho system. Choose Odoo if planning by '
+        'work center capacity, maintenance and engineering changes matter most, or you need it outside India.',
+    'zoho-books-vs-tallyprime':
+        'Stay on TallyPrime if you record production and job work in it and most users sit in one office. Choose '
+        'Zoho Books if sales, branches or owners need the same live data and you want it linked to Zoho CRM. Zoho '
+        'Books has no bill of materials, so a manufacturer leaving Tally should compare Zoho ERP instead.',
 }

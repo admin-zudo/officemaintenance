@@ -44,7 +44,7 @@ GUIDES.append(dict(
     answer='Choose Zoho apps with a custom production app when your process is unusual, your bills of materials are shallow and you buy materials per job or by reorder point. Choose a manufacturing ERP when you need material requirements planning across multi-level BOMs, capacity scheduling and standard costing. If you already run an ERP, keep it and add custom apps for what it handles badly.',
     body='''
 <p>The question usually arrives as &ldquo;can Zoho run our factory?&rdquo; The honest answer has three parts, because &ldquo;Zoho&rdquo; is several products and &ldquo;run our factory&rdquo; means different things in a joinery and in a bottling plant.</p>
-<p>This guide compares two approaches, not two brands. Our article on <a href="/insights/zoho-for-manufacturing/">what Zoho itself offers manufacturers</a> covers the products in detail.</p>
+<p>This guide compares two approaches, not two brands. Our article on <a href="/insights/zoho-for-manufacturing/">what Zoho itself offers manufacturers</a> covers the products in detail, and our <a href="/insights/zoho-erp-vs-odoo-manufacturing/">Zoho ERP vs Odoo comparison</a> compares two ERPs head to head.</p>
 
 <div class="mfg-verdict">
   <div><h3>Zoho apps and a custom app</h3><p>Standard apps for stock, sales and accounts, with production tracking built on Zoho Creator around your own routing. Best when the process is what makes you different.</p></div>

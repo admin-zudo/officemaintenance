@@ -10,7 +10,7 @@ ARTICLES.append(dict(
     description='A practical comparison of Zoho Creator and Microsoft Power Apps: data, logic, portals, mobile, integrations, licensing and the situations where each one is the better choice.',
     lead='Both platforms let you build business apps without a full development team. They are built on different ideas, though, and the wrong choice usually shows up six months later as licensing surprises or workarounds. Here is how they actually differ.',
     category='Comparisons', keyword='zoho creator vs power apps',
-    published='2026-10-08', modified='2026-10-08',
+    published='2026-10-08', modified='2026-10-12',
     cover_alt='Table comparing Zoho Creator and Power Apps on data, logic, external users and best fit',
     caption='Same goal, different foundations: Creator bundles database, logic and portals; Power Apps leans on the wider Microsoft stack.',
     related=['zoho-crm-implementation-cost', 'deluge-script-examples', 'zoho-partner-software-development'],
@@ -39,7 +39,7 @@ ARTICLES.append(dict(
     <tr><th scope="row">Logic</th><td>Deluge scripts on form events, schedules, buttons and APIs</td><td>Power Fx formulas in the app; most background workflows in Power Automate</td></tr>
     <tr><th scope="row">App types</th><td>Form- and report-driven apps, custom pages, dashboards</td><td>Canvas apps (pixel-level layout) and model-driven apps (data-first, built on Dataverse)</td></tr>
     <tr><th scope="row">Mobile</th><td>Native iOS and Android apps generated from the same app</td><td>Power Apps mobile player for iOS and Android</td></tr>
-    <tr><th scope="row">External users</th><td>Customer or partner portals included in Creator plans</td><td>Power Pages, licensed separately</td></tr>
+    <tr><th scope="row">External users</th><td>Customer or partner portals; a few portal users free, more bought as an add-on</td><td>Power Pages, with external users licensed as capacity per website</td></tr>
     <tr><th scope="row">Integrations</th><td>Native links to Zoho apps; REST APIs, webhooks and connections for others</td><td>Large connector catalogue; many business connectors are &ldquo;premium&rdquo;</td></tr>
     <tr><th scope="row">Best ecosystem fit</th><td>Zoho One, Zoho CRM, Zoho Books, Zoho Desk</td><td>Microsoft 365, Teams, SharePoint, Dynamics 365, Azure</td></tr>
   </tbody>
@@ -50,9 +50,10 @@ ARTICLES.append(dict(
 <h2 id="licensing">Licensing: where the surprises hide</h2>
 <p>Most of the painful conversations we have about low-code platforms are about licences, not features.</p>
 <h3>Power Apps</h3>
-<p>Some Microsoft 365 plans let staff use Power Apps with standard connectors such as SharePoint. That is great for simple apps. The moment an app needs Dataverse, a premium connector (SQL Server, many CRMs and ERPs, custom APIs) or external users, every person who uses it typically needs a premium licence, and portals for customers are billed separately. Teams often build a prototype on the free tier and only discover the licence cost when they try to roll it out.</p>
+<p>Some Microsoft 365 plans let staff use Power Apps with standard connectors such as SharePoint. That is great for simple apps. The moment an app needs Dataverse or a premium connector (SQL Server, many CRMs and ERPs, custom APIs), every person who uses it typically needs a Power Apps Premium licence, or the app runs on Microsoft&rsquo;s pay-as-you-go plan through Azure. Premium includes Power Pages for the licensed user, but customers and other external users of a Power Pages site are bought separately, as monthly capacity per website. Teams often build a prototype on the free Developer Plan and only discover the licence cost when they try to roll it out.</p>
+<p>Budget for one more change: Microsoft has announced a list price increase for both Power Apps Premium plans from 1 January 2027, its first for the product in more than five years. Existing subscriptions keep their price until renewal. See Microsoft&rsquo;s <a href="https://www.microsoft.com/en-us/licensing/news/power-apps-premium-price-update" target="_blank" rel="noopener">licensing announcement</a> for the figures.</p>
 <h3>Zoho Creator</h3>
-<p>Creator is licensed per user, and the plans include the database, Deluge, reports and mobile apps. Portal users for customers or partners come with plan-based limits. If you have Zoho One, Creator is already included. The main thing to watch is plan limits: records, storage, scheduled tasks and API calls differ by edition, so size the plan against your expected volume.</p>
+<p>Creator is licensed per user, and the plans include the database, Deluge, reports and native iOS and Android apps. Portals for customers or partners are part of the platform, but only a few portal users are free; more are bought as an add-on in tiers. If you have Zoho One, Creator is already included. The main thing to watch is plan limits: records, storage, scheduled tasks and API calls differ by edition, so size the plan against your expected volume.</p>
 <p><strong>Our advice:</strong> before anyone builds a prototype, write down who will use the app (internal staff, field teams, customers), where the data will live, and which other systems it needs to talk to. Price both platforms against that list, not against the demo.</p>
 
 <h2 id="building">What building and maintaining an app feels like</h2>
@@ -96,7 +97,7 @@ ARTICLES.append(dict(
 ''',
     faqs=[
         ('Is Zoho Creator cheaper than Power Apps?',
-         'Often, but not always. Creator includes its database, scripting, reports, portals and mobile apps in each plan, while Power Apps can need premium licences for Dataverse, premium connectors and separate Power Pages licensing for external users. Compare both against your real user counts and integrations, using each vendor\'s current pricing page.'),
+         'Often, but not always. Creator includes its database, scripting, reports and mobile apps in each plan, with portal users beyond a small free allowance sold as an add-on. Power Apps needs Premium licences for Dataverse and premium connectors, and separate Power Pages capacity for external users. Compare both against your real user counts and integrations, using each vendor\'s current pricing page.'),
         ('Can Zoho Creator integrate with Microsoft 365?',
          'Yes. Creator can call Microsoft Graph and other REST APIs through Deluge and stored OAuth connections, and Zoho Flow offers ready-made connectors for many Microsoft services. It takes more setup than staying inside one ecosystem, but it is a common and reliable pattern.'),
         ('Which is easier to learn, Deluge or Power Fx?',
@@ -114,7 +115,7 @@ ARTICLES.append(dict(
     description='How to move from HubSpot or Salesforce to Zoho CRM without losing data or momentum: object mapping, import order, rebuilding automation, testing, cut-over and training.',
     lead='A CRM migration fails in predictable ways: broken relationships between records, missing activity history, automations nobody remembered to rebuild, and a sales team that quietly goes back to spreadsheets. This is the plan we follow to avoid all four.',
     category='Zoho CRM', keyword='migrate hubspot to zoho crm',
-    published='2026-10-08', modified='2026-10-08',
+    published='2026-10-08', modified='2026-10-12',
     cover_alt='Four migration steps to Zoho CRM: map, prepare, import in order, then rebuild automation',
     caption='Migration is mostly mapping: objects, fields, owners and the relationships between records.',
     related=['zoho-crm-vs-hubspot', 'zoho-crm-implementation-cost', 'deluge-script-examples'],
@@ -157,7 +158,7 @@ ARTICLES.append(dict(
 
 <h2 id="prepare-zoho">Step 2: Prepare Zoho CRM before importing</h2>
 <ul>
-  <li><strong>Users and roles.</strong> Create every user who owns records, including people who have left (you can deactivate them after import). Ownership is matched by email address.</li>
+  <li><strong>Users and roles.</strong> Create every user who owns records, including people who have left (you can deactivate them after import), so record owners can be mapped during import.</li>
   <li><strong>Custom fields and modules.</strong> Create them from the mapping sheet.</li>
   <li><strong>A legacy ID field</strong> on every module, for example <em>HubSpot ID</em> or <em>Salesforce ID</em>. This is how related records find each other during import, and it saves hours of debugging later.</li>
   <li><strong>Turn off workflows and assignment rules</strong> during the import, or every imported deal will send an email to its owner.</li>
@@ -166,7 +167,7 @@ ARTICLES.append(dict(
 <h2 id="export">Step 3: Export from HubSpot or Salesforce</h2>
 <p><strong>HubSpot:</strong> export each object as CSV from its index view, including all properties, and use the associations export to keep links between companies, contacts and deals. Attachments and email bodies need separate handling.</p>
 <p><strong>Salesforce:</strong> the Data Export service produces a full set of CSV files, including record IDs and lookup IDs, which makes relationship mapping straightforward. Attachments and files are included as separate files you can map by parent ID.</p>
-<p>Zoho CRM also includes a built-in migration option for moving data from other CRMs, including Salesforce and HubSpot exports. It handles standard objects well. For custom objects, complex relationships or data that needs cleaning, a controlled import using the steps below gives you more control.</p>
+<p><strong>Zoho&rsquo;s own options:</strong> for HubSpot, Zoho CRM has a direct migration under Setup, Data Administration, Import. An administrator connects it to HubSpot with a private app token, and it maps companies, contacts, deals, tasks, meetings, calls, notes, owners, products, quotes and deal line items. Zoho&rsquo;s help notes that custom modules are not supported in this API migration, and that a migration can be undone or rerun only three times. For Salesforce and many other CRMs, Zoho offers free migration assistance on request. For custom objects, complex relationships or data that needs cleaning, a controlled import using the steps below gives you more control.</p>
 
 <h2 id="import-order">Step 4: Import in the right order</h2>
 <p>Records that are referenced by others must exist first. The order we use:</p>
@@ -187,7 +188,7 @@ ARTICLES.append(dict(
 <p>List every active automation in the old system with its trigger and outcome. Then rebuild it in Zoho CRM using the simplest tool that works:</p>
 <ul>
   <li><strong>Workflow rules</strong> for field updates, emails, tasks and webhooks.</li>
-  <li><strong>Blueprint</strong> for stage-by-stage processes with required fields at each step.</li>
+  <li><strong>Blueprint</strong> for stage-by-stage processes with required fields at each step. Our <a href="/insights/zoho-crm-blueprint-setup/">Blueprint setup guide</a> walks through one.</li>
   <li><strong>Assignment rules</strong> for lead routing.</li>
   <li><strong>Deluge functions</strong> for anything that needs logic, such as creating related records, deduplicating or calling another system. Our <a href="/insights/deluge-script-examples/">Deluge examples</a> include several common ones.</li>
 </ul>
@@ -231,10 +232,10 @@ ARTICLES.append(dict(
     description='What a Zoho CRM implementation really costs: licences, setup effort, data migration, integrations, training and support, with typical hours for three example project sizes.',
     lead='&ldquo;How much will this cost?&rdquo; is the first question every buyer asks and the one most providers avoid answering. Here is how the cost of a Zoho CRM implementation is actually made up, with the typical hours for three example projects.',
     category='Zoho CRM', keyword='zoho crm implementation cost',
-    published='2026-10-08', modified='2026-10-08',
+    published='2026-10-08', modified='2026-10-12',
     cover_alt='Zoho CRM implementation effort: 40 to 70 hours starter, 100 to 180 standard, 200 to 400 advanced',
     caption='An implementation estimate is the sum of a few predictable pieces of work.',
-    related=['migrate-hubspot-salesforce-to-zoho-crm', 'zoho-creator-vs-power-apps', 'zoho-partner-software-development'],
+    related=['zoho-crm-blueprint-setup', 'migrate-hubspot-salesforce-to-zoho-crm', 'zoho-partner-software-development'],
     body='''
 <p>The total cost of a Zoho CRM rollout has two parts that are easy to mix up: what you pay <strong>Zoho</strong> for the software, and what you pay <strong>someone</strong> to set it up around your business. This guide covers both, then walks through three realistic project sizes.</p>
 <p>We give the examples in hours rather than currency, because hours are the part you can compare: rates differ between providers and countries, but the effort for the same scope is a useful benchmark wherever you buy.</p>
@@ -242,7 +243,7 @@ ARTICLES.append(dict(
 <h2 id="two-costs">The two costs: licences and implementation</h2>
 <h3>1. Zoho CRM licences</h3>
 <p>Zoho bills licences per user, per month, and the price depends on the edition (Standard, Professional, Enterprise, Ultimate) and on annual or monthly billing. Zoho CRM is also included in Zoho One, which bundles most Zoho apps for every employee. Prices vary by region and change over time, so always check the <a href="https://www.zoho.com/crm/zohocrm-pricing.html" target="_blank" rel="noopener">official Zoho CRM pricing page</a>.</p>
-<p>Edition matters for more than price. Features such as Blueprint, custom functions, sandbox, territory management and API limits differ between editions. Part of a good implementation is choosing the lowest edition that actually covers what you need.</p>
+<p>Edition matters for more than price. Features such as Blueprint, custom functions, sandbox, territory management and API limits differ between editions. Blueprint is a good example: it is not in Standard, Professional allows 3 Blueprints, and Enterprise allows 50, so a business with several separate processes may need Enterprise for that alone. Our <a href="/insights/zoho-crm-blueprint-setup/">Zoho CRM Blueprint guide</a> lists the limits that matter. Part of a good implementation is choosing the lowest edition that actually covers what you need.</p>
 <h3>2. Implementation services</h3>
 <p>This is the work of designing and configuring the CRM: modules, fields, layouts, pipelines, automation, data migration, integrations, testing and training. It is almost always priced from an estimate of hours or days, even when you are quoted a fixed price.</p>
 
@@ -390,7 +391,7 @@ ARTICLES.append(dict(
 
 <h2 id="automation">Sales process and automation</h2>
 <p>Both products handle the basics well: pipelines, tasks, email logging, meeting links and reminders.</p>
-<p>Zoho CRM goes further on process control. <strong>Blueprint</strong> lets you define the stages of a deal and what must happen before it can move on, for example a mandatory discount approval or a required document. Assignment rules, validation rules and approval processes are part of the CRM. When the built-in options run out, a custom function written in Deluge can update related records, create an invoice in Zoho Books or call another system&rsquo;s API. Our <a href="/insights/deluge-script-examples/">Deluge script examples</a> show what that looks like.</p>
+<p>Zoho CRM goes further on process control. <strong>Blueprint</strong> lets you define the stages of a deal and what must happen before it can move on, for example a mandatory discount approval or a required document; our <a href="/insights/zoho-crm-blueprint-setup/">Blueprint setup guide</a> shows how. Assignment rules, validation rules and approval processes are part of the CRM. When the built-in options run out, a custom function written in Deluge can update related records, create an invoice in Zoho Books or call another system&rsquo;s API. Our <a href="/insights/deluge-script-examples/">Deluge script examples</a> show what that looks like.</p>
 <p>HubSpot&rsquo;s workflows are easier to build and read. A marketer can set up a lead-nurturing workflow without help, and sequences make one-to-one sales follow-up simple. The trade-off is that the more powerful options are on the higher tiers.</p>
 
 <h2 id="marketing">Marketing: HubSpot&rsquo;s home ground</h2>

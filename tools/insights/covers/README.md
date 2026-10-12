@@ -5,7 +5,7 @@ Each article has one scene file here, `<slug>.html`, rendered by `render_cover.p
 
 ## How a scene is built
 
-- `_base.css` holds the four colour themes: `theme-blue`, `theme-green`, `theme-amber`, `theme-navy` (dark).
+- `_base.css` holds the five colour themes: `theme-blue`, `theme-green`, `theme-amber`, `theme-teal`, `theme-navy` (dark).
 - `_kit.css` holds the building blocks. A scene is a grid with three areas:
   - **head**: tag, headline, one line, takeaway, logo. Styles: `card`, `bare`, `solid`, `bar`, `hero`, `center`, `band`.
   - **body**: the information. One body type per scene (see the table), with an optional row of three facts.

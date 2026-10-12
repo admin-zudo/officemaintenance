@@ -64,7 +64,7 @@
   <meta property="og:site_name" content="Zudo Works">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-08">
-  <meta property="article:modified_time" content="2026-10-08">
+  <meta property="article:modified_time" content="2026-10-12">
   <meta property="article:author" content="https://zudoworks.com/about/#leadership">
   <meta property="article:section" content="Zoho CRM">
   <meta name="twitter:card" content="summary_large_image">
@@ -87,7 +87,7 @@
     "https://zudoworks.com/Asset/og/migrate-hubspot-salesforce-to-zoho-crm.jpg"
   ],
   "datePublished": "2026-10-08",
-  "dateModified": "2026-10-08",
+  "dateModified": "2026-10-12",
   "author": {
     "@type": "Person",
     "@id": "https://zudoworks.com/#arunkumar-v",
@@ -116,7 +116,7 @@
   },
   "articleSection": "Zoho CRM",
   "keywords": "migrate hubspot to zoho crm",
-  "wordCount": 1459,
+  "wordCount": 1526,
   "inLanguage": "en"
 }
   </script>
@@ -328,7 +328,7 @@
             <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="44" height="44">
             <div>
               <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo Works</p>
-              <p class="post-byline-meta"><time datetime="2026-10-08">8 October 2026</time> &middot; 7 min read</p>
+              <p class="post-byline-meta">Published <time datetime="2026-10-08">8 October 2026</time> &middot; Updated <time datetime="2026-10-12">12 October 2026</time> &middot; 7 min read</p>
             </div>
           </div>
         </div>
@@ -406,7 +406,7 @@
 
 <h2 id="prepare-zoho">Step 2: Prepare Zoho CRM before importing</h2>
 <ul>
-  <li><strong>Users and roles.</strong> Create every user who owns records, including people who have left (you can deactivate them after import). Ownership is matched by email address.</li>
+  <li><strong>Users and roles.</strong> Create every user who owns records, including people who have left (you can deactivate them after import), so record owners can be mapped during import.</li>
   <li><strong>Custom fields and modules.</strong> Create them from the mapping sheet.</li>
   <li><strong>A legacy ID field</strong> on every module, for example <em>HubSpot ID</em> or <em>Salesforce ID</em>. This is how related records find each other during import, and it saves hours of debugging later.</li>
   <li><strong>Turn off workflows and assignment rules</strong> during the import, or every imported deal will send an email to its owner.</li>
@@ -415,7 +415,7 @@
 <h2 id="export">Step 3: Export from HubSpot or Salesforce</h2>
 <p><strong>HubSpot:</strong> export each object as CSV from its index view, including all properties, and use the associations export to keep links between companies, contacts and deals. Attachments and email bodies need separate handling.</p>
 <p><strong>Salesforce:</strong> the Data Export service produces a full set of CSV files, including record IDs and lookup IDs, which makes relationship mapping straightforward. Attachments and files are included as separate files you can map by parent ID.</p>
-<p>Zoho CRM also includes a built-in migration option for moving data from other CRMs, including Salesforce and HubSpot exports. It handles standard objects well. For custom objects, complex relationships or data that needs cleaning, a controlled import using the steps below gives you more control.</p>
+<p><strong>Zoho&rsquo;s own options:</strong> for HubSpot, Zoho CRM has a direct migration under Setup, Data Administration, Import. An administrator connects it to HubSpot with a private app token, and it maps companies, contacts, deals, tasks, meetings, calls, notes, owners, products, quotes and deal line items. Zoho&rsquo;s help notes that custom modules are not supported in this API migration, and that a migration can be undone or rerun only three times. For Salesforce and many other CRMs, Zoho offers free migration assistance on request. For custom objects, complex relationships or data that needs cleaning, a controlled import using the steps below gives you more control.</p>
 
 <h2 id="import-order">Step 4: Import in the right order</h2>
 <p>Records that are referenced by others must exist first. The order we use:</p>
@@ -436,7 +436,7 @@
 <p>List every active automation in the old system with its trigger and outcome. Then rebuild it in Zoho CRM using the simplest tool that works:</p>
 <ul>
   <li><strong>Workflow rules</strong> for field updates, emails, tasks and webhooks.</li>
-  <li><strong>Blueprint</strong> for stage-by-stage processes with required fields at each step.</li>
+  <li><strong>Blueprint</strong> for stage-by-stage processes with required fields at each step. Our <a href="/insights/zoho-crm-blueprint-setup/">Blueprint setup guide</a> walks through one.</li>
   <li><strong>Assignment rules</strong> for lead routing.</li>
   <li><strong>Deluge functions</strong> for anything that needs logic, such as creating related records, deduplicating or calling another system. Our <a href="/insights/deluge-script-examples/">Deluge examples</a> include several common ones.</li>
 </ul>
@@ -573,7 +573,7 @@
               <p class="post-card-category">Zoho CRM</p>
               <h3><a href="/insights/zoho-crm-implementation-cost/">How Much Does a Zoho CRM Implementation Cost? A Transparent Breakdown</a></h3>
               <p class="post-card-excerpt">What a Zoho CRM implementation really costs: licences, setup effort, data migration, integrations, training and support, with typical hours for three example project sizes.</p>
-              <p class="post-card-meta">Arunkumar V &middot; <time datetime="2026-10-08">8 October 2026</time> &middot; 6 min read</p>
+              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-10-08">8 October 2026</time> &middot; Updated <time datetime="2026-10-12">12 October 2026</time> &middot; 6 min read</p>
             </div>
           </article>
           <article class="post-card">

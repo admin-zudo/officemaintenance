@@ -379,7 +379,7 @@ ARTICLES.append(dict(
   <li><strong>It is not in Zoho One.</strong> Zoho&rsquo;s pricing page states this plainly. Zoho ERP is licensed separately, per user, and each plan has a yearly cap on transactions.</li>
   <li><strong>It is an ERP project.</strong> Moving finance, stock and production into one system needs data migration, opening balances, process design and training.</li>
 </ol>
-<p><strong>Choose it when</strong> you are in India, you want finance and production in one Zoho system, and your process fits a standard BOM, job card and work center model.</p>
+<p><strong>Choose it when</strong> you are in India, you want finance and production in one Zoho system, and your process fits a standard BOM, job card and work center model. If Odoo is also on your list, our <a href="/insights/zoho-erp-vs-odoo-manufacturing/">Zoho ERP vs Odoo comparison</a> goes through the differences.</p>
 
 <h2 id="zoho-creator">Route 3: Zoho Creator, built around your process</h2>
 <p>Zoho Creator is a low-code platform: forms, a database, workflows, Deluge scripts, mobile apps and portals. It contains no manufacturing logic until someone builds it.</p>
@@ -418,7 +418,7 @@ ARTICLES.append(dict(
   <li><strong>How many steps does production have?</strong> One step points to Zoho Inventory. Several operations across machines or people points to Zoho ERP or dedicated MRP.</li>
   <li><strong>Do you need scheduling and capacity planning,</strong> or only tracking of what was made and what it consumed?</li>
   <li><strong>Where are you?</strong> Zoho ERP is an option today in India. Elsewhere, plan around Zoho Inventory, Creator or a dedicated product.</li>
-  <li><strong>Which system holds the accounts?</strong> If Tally, SAP or another system stays, you need integration, not replacement.</li>
+  <li><strong>Which system holds the accounts?</strong> If Tally, SAP or another system stays, you need integration, not replacement. Our <a href="/insights/zoho-books-vs-tallyprime/">Zoho Books vs TallyPrime comparison</a> covers when to keep Tally.</li>
   <li><strong>How standard is your process?</strong> The more unusual it is, the stronger the case for a Creator app built around it.</li>
 </ol>
 
