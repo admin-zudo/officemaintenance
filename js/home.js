@@ -324,7 +324,7 @@
     later(function () {
       stage.classList.add('is-layer');
       say('layer', 'The fix: one integration and AI layer',
-        'Deluge, Zoho Flow and APIs connect every app, and AI reads, sorts and drafts in between, so each step hands over on its own.');
+        'Deluge, Zoho Flow and APIs connect every app, and AI reads and drafts in between.');
     }, 1500);
     later(function () {
       stage.classList.add('is-sorted');

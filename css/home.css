@@ -1850,3 +1850,19 @@
     animation: none;
   }
 }
+
+/* Three hero actions: one row on laptops and wider, wrapping only where there is no room */
+.home-hero .btn-group {
+  gap: 8px;
+}
+
+.home-hero .btn-group .btn-lg {
+  padding-inline: 16px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.home-hero .btn-group .btn-lead {
+  padding-inline: 14px;
+}
+
