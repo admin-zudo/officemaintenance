@@ -604,7 +604,7 @@ document.addEventListener('click', function (e) {
         sent = false;
         submit.disabled = false;
         submit.classList.remove('is-sending');
-        submit.querySelector('.lead-submit-text').textContent = 'Send project details';
+        submit.querySelector('.lead-submit-text').textContent = 'Submit';
         status.textContent = 'That took too long. Please try again, or email admin@zudoworks.com.';
       }, 20000);
     });
