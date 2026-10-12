@@ -2226,11 +2226,19 @@ img.author-avatar {
 }
 
 /* Third-party "Featured on" badges */
-.footer-badge {
-  margin: var(--space-4) 0 0;
+.footer-badges,
+.featured-badge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer-badge img,
+.footer-badges {
+  margin-top: var(--space-4);
+}
+
+.footer-badges img,
 .featured-badge img {
   display: block;
   max-width: 100%;
@@ -2243,5 +2251,11 @@ img.author-avatar {
 
 /* The company card sizes its logo image; the badge keeps its own size */
 .company-card .featured-badge img {
-  width: 171px;
+  width: auto;
+  height: 54px;
+}
+
+.footer-badges img {
+  width: auto;
+  height: 36px;
 }
