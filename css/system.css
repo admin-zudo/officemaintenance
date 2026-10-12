@@ -782,13 +782,6 @@ html:not(.js) .reveal-right {
   margin-bottom: var(--space-6);
 }
 
-.contact-form-frame {
-  display: block;
-  width: 100%;
-  height: 720px;
-  border: 0;
-}
-
 .contact-aside {
   display: flex;
   flex-direction: column;

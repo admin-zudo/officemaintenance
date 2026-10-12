@@ -30,10 +30,10 @@ SKIP_DIRS = {'.git', '.kilo', 'tools', 'Asset', 'css', 'js', 'node_modules'}
 
 CSS_SOURCES = ['variables', 'reset', 'base', 'components', 'hero', 'sections',
                'responsive', 'cookie-consent', 'helpers', 'system', 'manufacturing', 'home']
-JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq', 'media', 'home']
+JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'leadform', 'salesiq', 'media', 'home']
 
 # Pages that should not appear in the sitemap or get a canonical tag
-NOINDEX = {'/404.html'}
+NOINDEX = {'/404.html', '/thank-you/'}
 
 # Meta keywords per page. Google ignores this tag, but Bing and some AI tools read it,
 # so keep each list short and true to the page. Articles use their own keyword from
@@ -148,6 +148,12 @@ def replace_region(html, name, content, path):
     return pattern.sub(lambda m: m.group(1) + content.rstrip('\n') + '\n    ' + m.group(2), html, count=1)
 
 
+def replace_all_regions(html, name, content):
+    """Like replace_region, for blocks that can appear more than once on a page."""
+    pattern = re.compile(r'(( *)<!-- @%s -->\n).*?\s*(<!-- @/%s -->)' % (name, name), re.S)
+    return pattern.sub(lambda m: m.group(1) + content.rstrip('\n') + '\n' + m.group(2) + m.group(3), html)
+
+
 def nav_with_active(header, route):
     def mark(m):
         href = m.group(1)
@@ -240,6 +246,7 @@ def main():
     # Shared blocks; their leading comment is for maintainers, not the page
     explorer_tpl = re.sub(r'^<!--.*?-->\n', '', read('tools/partials/explorer.html'), flags=re.S)
     stats_tpl = re.sub(r'^<!--.*?-->\n', '', read('tools/partials/stats.html'), flags=re.S)
+    leadform_tpl = re.sub(r'^<!--.*?-->\n', '', read('tools/partials/leadform.html'), flags=re.S)
 
     pages = find_pages()
     changed = 0
@@ -268,9 +275,9 @@ def main():
         html = replace_region(html, 'header', header, path)
         html = replace_region(html, 'footer', footer_tpl, path)
         # Optional shared blocks: the scenario explorer and the team stats
-        for name, part in (('explorer', explorer_tpl), ('stats', stats_tpl)):
+        for name, part in (('explorer', explorer_tpl), ('stats', stats_tpl), ('leadform', leadform_tpl)):
             if f'<!-- @{name} -->' in html:
-                html = replace_region(html, name, part, path)
+                html = replace_all_regions(html, name, part)
         html = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + SITE + route + m.group(2), html)
         if write_if_changed(path, html):
             changed += 1

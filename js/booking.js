@@ -74,12 +74,11 @@
 })();
 
 /* ============================================================
-   Project form dialog (lead form)
+   Project form dialog
    Opens #project-form-modal from [data-project-form] and from every
    "/contact/#contact-form" link outside the Contact page (links still
-   work without JavaScript). The Zoho Form loads on first open, tells
-   us its height, and the frame grows to fit, so the form itself never
-   shows a scroll bar.
+   work without JavaScript). The form inside is native HTML
+   (js/leadform.js), so it scrolls normally on phones too.
    ============================================================ */
 
 (function () {
@@ -92,29 +91,12 @@
     '[data-project-form], a[href$="/contact/#contact-form"]');
   if (!triggers.length) return;
 
-  var frame = modal.querySelector('iframe');
   var closeBtn = document.getElementById('close-project-form');
-  var formUrl = frame.getAttribute('data-src');
-  var perma = formUrl.split('/formperma/')[1];
   var lastTrigger = null;
-
-  // Zoho Forms posts "perma|height"; size the frame to the whole form
-  window.addEventListener('message', function (e) {
-    if (!/zohopublic\./.test(e.origin) || typeof e.data !== 'string') return;
-    var parts = e.data.split('|');
-    if (parts.length < 2 || parts[0].indexOf(perma) === -1) return;
-    var h = parseInt(parts[1], 10);
-    if (h > 0) frame.style.height = (h + 15) + 'px';
-  });
 
   function open(e) {
     if (e) e.preventDefault();
     lastTrigger = e ? e.currentTarget : null;
-    if (!frame.src) {
-      // Tell the form which page the lead came from
-      // zf_rszfm=1 asks Zoho Forms to post its height; referrername records the page the lead came from
-      frame.src = formUrl + '?zf_rszfm=1&referrername=' + encodeURIComponent(location.href.split('?')[0].slice(0, 1800));
-    }
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
     if (window.dataLayer) {
@@ -122,7 +104,9 @@
         cta_location: lastTrigger ? lastTrigger.getAttribute('data-cta') ||
           (lastTrigger.closest('section, header, footer') || {}).id || '' : '' });
     }
-    closeBtn.focus();
+    var first = modal.querySelector('.lead-form:not([hidden]) input:not([type=hidden])');
+    // Focus the first field on larger screens; on phones that would pop the keyboard up at once
+    if (first && window.matchMedia('(min-width: 761px)').matches) first.focus(); else closeBtn.focus();
   }
 
   function close() {
