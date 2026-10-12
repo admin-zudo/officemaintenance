@@ -50,7 +50,7 @@ COUNTRIES = [
             'If you need a listed partner, for example to buy licences through one, check Zoho&rsquo;s Find a Partner directory. Our guide to the <a href="%s" class="text-link">Zoho Partner Program and its Authorized, Advanced and Premium tiers</a> shows how to verify any partner in two minutes.' % PARTNER_GUIDE,
         ],
         how=[
-            ('Same time zone', 'We work Monday to Friday, 9:00 to 18:00 IST, so calls, workshops and support happen in your normal working day. Visitors in India can call or WhatsApp us on +91 63843 53382.'),
+            ('Same time zone', 'We work Monday to Friday, 9:00 to 18:00 IST, so calls, workshops and support happen in your normal working day. Visitors in India can call us or message us on WhatsApp.'),
             ('Zoho&rsquo;s India data centre', 'Accounts created in India usually run on Zoho&rsquo;s India data centre (zoho.in). We work in whichever data centre your account uses and keep your data in your own account.'),
             ('Books, GST and Tally', 'We set up Zoho Books for Indian GST, including e-invoicing and e-way bill workflows where your business needs them, and plan moves from Tally or spreadsheets with your accountant.'),
         ],
@@ -561,6 +561,13 @@ def hub_page():
 
 
 def write(rel, content):
+    # Hero copy on the left, team stats and the scenario explorer on the right (tools/hero_split.py)
+    if '<section class="page-hero page-hero--service">' in content:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('hero_split', os.path.join(ROOT, 'tools', 'hero_split.py'))
+        hs = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(hs)
+        content = hs.split_hero(content)
     path = os.path.join(ROOT, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if os.path.exists(path):

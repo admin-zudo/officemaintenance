@@ -2108,3 +2108,140 @@ img.author-avatar {
   font-weight: var(--weight-bold);
   color: var(--color-heading);
 }
+
+/* Contact page: the phone number in small print under its link */
+.contact-number {
+  display: block;
+  margin-top: 2px;
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+}
+
+/* ── Solutions by industry (/solutions/) ─────────────────── */
+.sol-index {
+  padding-block: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sol-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sol-nav a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  color: var(--color-heading);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.sol-nav a:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.sol-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: var(--space-5);
+}
+
+.sol-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-white);
+  scroll-margin-top: calc(var(--navbar-height) + 48px);
+}
+
+.sol-card h3 {
+  margin: 0;
+}
+
+.sol-problem,
+.sol-result {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.sol-problem {
+  background-color: #FFFBFA;
+  color: #7A271A;
+}
+
+.sol-result {
+  margin-top: auto;
+  background-color: #F6FEF9;
+  color: #054F31;
+}
+
+.sol-problem span,
+.sol-result span {
+  display: block;
+  margin-bottom: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sol-problem span { color: #D92D20; }
+.sol-result span { color: #067647; }
+
+.sol-steps {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--color-body);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.sol-sync {
+  display: block;
+  margin-top: 2px;
+  color: #067647;
+  font-size: 0.8125rem;
+}
+
+.sol-sync::before {
+  content: "↻ ";
+}
+
+/* Third-party "Featured on" badges */
+.footer-badge {
+  margin: var(--space-4) 0 0;
+}
+
+.footer-badge img,
+.featured-badge img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.featured-badge {
+  margin-top: 6px;
+}
+
+/* The company card sizes its logo image; the badge keeps its own size */
+.company-card .featured-badge img {
+  width: 171px;
+}

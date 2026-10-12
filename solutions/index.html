@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- @head -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.documentElement.classList.add('js');
+        /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
+        try { if (/^Asia\/(Kolkata|Calcutta)$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.documentElement.classList.add('is-in'); } catch (e) { }
+    </script>
+    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        try {
+            var zc = localStorage.getItem('zudo_cookie_consent');
+            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+        } catch (e) { }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PQBHDK59');</script>
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJ4JC252SY"></script>
+    <script>
+        gtag('js', new Date());
+        gtag('config', 'G-SJ4JC252SY');
+    </script>
+    <meta name="theme-color" content="#226DB4">
+    <meta name="msvalidate.01" content="B0E942FD33A657DEA8679964137C6D16">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="twitter:site" content="@zudoworks">
+    <meta name="twitter:creator" content="@zudoworks">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="keywords" content="Zoho solutions by industry, Zoho workflow examples, Zoho integration examples, Zoho automation use cases, Zoho AI workflows">
+    <meta name="author" content="Zudo Works">
+    <link rel="canonical" href="https://zudoworks.com/solutions/">
+    <link rel="alternate" hreflang="en" href="https://zudoworks.com/solutions/">
+    <link rel="alternate" hreflang="x-default" href="https://zudoworks.com/solutions/">
+    <link rel="alternate" type="application/rss+xml" title="Zudo Works Insights" href="https://zudoworks.com/insights/feed.xml">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="/Asset/brand/zudo-works-logo.svg">
+    <link rel="apple-touch-icon" href="/Asset/brand/apple-touch-icon.png">
+    <link rel="preload" href="/Asset/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/site.css?v=27e634b83c">
+    <!-- @/head -->
+
+  <title>Zoho Solutions by Industry: 90 Workflows | Zudo Works</title>
+  <meta name="description" content="90 example Zoho workflows for 18 industries, from manufacturing to legal: the problem, every step through the integration and AI layer, and the result.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zoho Solutions by Industry: 90 Workflows | Zudo Works">
+  <meta property="og:description" content="90 example Zoho workflows for 18 industries, from manufacturing to legal: the problem, every step through the integration and AI layer, and the result.">
+  <meta property="og:url" content="https://zudoworks.com/solutions/">
+  <meta property="og:image" content="https://zudoworks.com/Asset/og/zudo-works.jpg">
+  <meta property="og:site_name" content="Zudo Works">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zoho Solutions by Industry: 90 Workflows | Zudo Works">
+  <meta name="twitter:description" content="90 example Zoho workflows for 18 industries, from manufacturing to legal: the problem, every step through the integration and AI layer, and the result.">
+  <meta name="twitter:image" content="https://zudoworks.com/Asset/og/zudo-works.jpg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Solutions",
+  "url": "https://zudoworks.com/solutions/",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://zudoworks.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Solutions",
+        "item": "https://zudoworks.com/solutions/"
+      }
+    ]
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Zoho Solutions by Industry: 90 Workflows",
+  "numberOfItems": 90,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Manufacturing: Job status lives in spreadsheets",
+      "url": "https://zudoworks.com/solutions/#manufacturing-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Manufacturing: Stock runs out before anyone reorders",
+      "url": "https://zudoworks.com/solutions/#manufacturing-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Manufacturing: Bills of materials are kept in Excel",
+      "url": "https://zudoworks.com/solutions/#manufacturing-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Manufacturing: Quality issues are logged on paper",
+      "url": "https://zudoworks.com/solutions/#manufacturing-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Manufacturing: Sales can't promise delivery dates",
+      "url": "https://zudoworks.com/solutions/#manufacturing-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Real estate: Leads from ads go cold",
+      "url": "https://zudoworks.com/solutions/#real-estate-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Real estate: Listings are updated in five places",
+      "url": "https://zudoworks.com/solutions/#real-estate-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Real estate: Viewings are booked by phone tag",
+      "url": "https://zudoworks.com/solutions/#real-estate-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Real estate: Vendors chase agents for updates",
+      "url": "https://zudoworks.com/solutions/#real-estate-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Real estate: Sales stall between offer and settlement",
+      "url": "https://zudoworks.com/solutions/#real-estate-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Legal: Client intake takes days",
+      "url": "https://zudoworks.com/solutions/#legal-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Legal: Clients keep asking for updates",
+      "url": "https://zudoworks.com/solutions/#legal-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Legal: Time entries are forgotten",
+      "url": "https://zudoworks.com/solutions/#legal-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Legal: Court deadlines live in calendars",
+      "url": "https://zudoworks.com/solutions/#legal-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Legal: Documents are drafted from scratch",
+      "url": "https://zudoworks.com/solutions/#legal-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Healthcare clinic: Patient follow-ups are missed",
+      "url": "https://zudoworks.com/solutions/#healthcare-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Healthcare clinic: New patient forms are on paper",
+      "url": "https://zudoworks.com/solutions/#healthcare-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Healthcare clinic: Phones ring all day",
+      "url": "https://zudoworks.com/solutions/#healthcare-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "Healthcare clinic: Treatment plans are hard to follow",
+      "url": "https://zudoworks.com/solutions/#healthcare-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "Healthcare clinic: Staff rosters change by text",
+      "url": "https://zudoworks.com/solutions/#healthcare-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "name": "Education & training: Enrolments handled by hand",
+      "url": "https://zudoworks.com/solutions/#education-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "name": "Education & training: Course enquiries are not followed up",
+      "url": "https://zudoworks.com/solutions/#education-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "name": "Education & training: Attendance is taken on paper",
+      "url": "https://zudoworks.com/solutions/#education-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "name": "Education & training: Assessments are marked in email",
+      "url": "https://zudoworks.com/solutions/#education-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "name": "Education & training: Corporate training is invoiced late",
+      "url": "https://zudoworks.com/solutions/#education-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "name": "E-commerce: Orders re-keyed into accounts",
+      "url": "https://zudoworks.com/solutions/#ecommerce-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "name": "E-commerce: Abandoned carts are never followed up",
+      "url": "https://zudoworks.com/solutions/#ecommerce-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "name": "E-commerce: \"Where is my order?\" emails flood support",
+      "url": "https://zudoworks.com/solutions/#ecommerce-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "name": "E-commerce: Wholesale orders arrive by email",
+      "url": "https://zudoworks.com/solutions/#ecommerce-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "name": "E-commerce: Reviews and repeat buyers are left to chance",
+      "url": "https://zudoworks.com/solutions/#ecommerce-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "name": "Agency & consulting: Won deals don't become projects",
+      "url": "https://zudoworks.com/solutions/#agency-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "name": "Agency & consulting: Proposals take days to write",
+      "url": "https://zudoworks.com/solutions/#agency-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "name": "Agency & consulting: Projects overrun without warning",
+      "url": "https://zudoworks.com/solutions/#agency-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "name": "Agency & consulting: Retainers are billed by hand",
+      "url": "https://zudoworks.com/solutions/#agency-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "name": "Agency & consulting: Client feedback is scattered",
+      "url": "https://zudoworks.com/solutions/#agency-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "name": "Customer support: Support emails get lost",
+      "url": "https://zudoworks.com/solutions/#customer-support-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "name": "Customer support: Agents answer the same questions",
+      "url": "https://zudoworks.com/solutions/#customer-support-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "name": "Customer support: VIP customers wait in the queue",
+      "url": "https://zudoworks.com/solutions/#customer-support-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "name": "Customer support: Bugs reported by customers vanish",
+      "url": "https://zudoworks.com/solutions/#customer-support-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "name": "Customer support: No idea how happy customers are",
+      "url": "https://zudoworks.com/solutions/#customer-support-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "name": "Field service: Technicians use paper job sheets",
+      "url": "https://zudoworks.com/solutions/#field-service-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "name": "Field service: Maintenance visits are forgotten",
+      "url": "https://zudoworks.com/solutions/#field-service-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "name": "Field service: Vans run out of parts",
+      "url": "https://zudoworks.com/solutions/#field-service-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "name": "Field service: Quotes for repairs take days",
+      "url": "https://zudoworks.com/solutions/#field-service-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "name": "Field service: No view of technician utilisation",
+      "url": "https://zudoworks.com/solutions/#field-service-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "name": "Logistics: Customers call all day for delivery status",
+      "url": "https://zudoworks.com/solutions/#logistics-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "name": "Logistics: Proof of delivery is lost",
+      "url": "https://zudoworks.com/solutions/#logistics-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "name": "Logistics: Quotes for freight are slow",
+      "url": "https://zudoworks.com/solutions/#logistics-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "name": "Logistics: Vehicle checks are on paper",
+      "url": "https://zudoworks.com/solutions/#logistics-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "name": "Logistics: Carrier invoices are checked by hand",
+      "url": "https://zudoworks.com/solutions/#logistics-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "name": "Construction: Site reports lost in chat groups",
+      "url": "https://zudoworks.com/solutions/#construction-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "name": "Construction: Subcontractor documents expire",
+      "url": "https://zudoworks.com/solutions/#construction-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "name": "Construction: Tenders are put together in a rush",
+      "url": "https://zudoworks.com/solutions/#construction-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 54,
+      "name": "Construction: Safety incidents are under-reported",
+      "url": "https://zudoworks.com/solutions/#construction-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 55,
+      "name": "Construction: Equipment hire is not tracked",
+      "url": "https://zudoworks.com/solutions/#construction-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 56,
+      "name": "Recruitment & HR: Hiring tracked in spreadsheets",
+      "url": "https://zudoworks.com/solutions/#recruitment-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 57,
+      "name": "Recruitment & HR: Onboarding is a checklist on paper",
+      "url": "https://zudoworks.com/solutions/#recruitment-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 58,
+      "name": "Recruitment & HR: Leave and attendance in email",
+      "url": "https://zudoworks.com/solutions/#recruitment-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 59,
+      "name": "Recruitment & HR: Agency placements are hard to track",
+      "url": "https://zudoworks.com/solutions/#recruitment-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 60,
+      "name": "Recruitment & HR: Reviews happen once a year, if at all",
+      "url": "https://zudoworks.com/solutions/#recruitment-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 61,
+      "name": "Events & hospitality: Registrations and payments scattered",
+      "url": "https://zudoworks.com/solutions/#events-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 62,
+      "name": "Events & hospitality: Group bookings by email",
+      "url": "https://zudoworks.com/solutions/#events-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 63,
+      "name": "Events & hospitality: Guest feedback arrives too late",
+      "url": "https://zudoworks.com/solutions/#events-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 64,
+      "name": "Events & hospitality: Sponsors and exhibitors chased by email",
+      "url": "https://zudoworks.com/solutions/#events-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 65,
+      "name": "Events & hospitality: Event check-in queues",
+      "url": "https://zudoworks.com/solutions/#events-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 66,
+      "name": "Accounting firm: Chasing clients for documents",
+      "url": "https://zudoworks.com/solutions/#accounting-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 67,
+      "name": "Accounting firm: Filing deadlines are tracked in Excel",
+      "url": "https://zudoworks.com/solutions/#accounting-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 68,
+      "name": "Accounting firm: New client onboarding is slow",
+      "url": "https://zudoworks.com/solutions/#accounting-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 69,
+      "name": "Accounting firm: Fees are written off",
+      "url": "https://zudoworks.com/solutions/#accounting-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 70,
+      "name": "Accounting firm: Client queries pile up",
+      "url": "https://zudoworks.com/solutions/#accounting-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 71,
+      "name": "Nonprofit: Donors don't hear back",
+      "url": "https://zudoworks.com/solutions/#nonprofit-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 72,
+      "name": "Nonprofit: Volunteers organised by WhatsApp",
+      "url": "https://zudoworks.com/solutions/#nonprofit-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 73,
+      "name": "Nonprofit: Grant reports take weeks",
+      "url": "https://zudoworks.com/solutions/#nonprofit-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 74,
+      "name": "Nonprofit: Regular givers lapse unnoticed",
+      "url": "https://zudoworks.com/solutions/#nonprofit-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 75,
+      "name": "Nonprofit: Event fundraising is hard to reconcile",
+      "url": "https://zudoworks.com/solutions/#nonprofit-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 76,
+      "name": "Finance & lending: Applications stuck between teams",
+      "url": "https://zudoworks.com/solutions/#lending-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 77,
+      "name": "Finance & lending: Repayment reminders are manual",
+      "url": "https://zudoworks.com/solutions/#lending-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 78,
+      "name": "Finance & lending: Broker leads are not tracked",
+      "url": "https://zudoworks.com/solutions/#lending-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 79,
+      "name": "Finance & lending: Compliance checks are not recorded",
+      "url": "https://zudoworks.com/solutions/#lending-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 80,
+      "name": "Finance & lending: Customers wait for a decision",
+      "url": "https://zudoworks.com/solutions/#lending-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 81,
+      "name": "Marketing: No idea which ads bring sales",
+      "url": "https://zudoworks.com/solutions/#marketing-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 82,
+      "name": "Marketing: Website visitors leave without a trace",
+      "url": "https://zudoworks.com/solutions/#marketing-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 83,
+      "name": "Marketing: Email lists are out of date",
+      "url": "https://zudoworks.com/solutions/#marketing-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 84,
+      "name": "Marketing: Webinar leads are never called",
+      "url": "https://zudoworks.com/solutions/#marketing-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 85,
+      "name": "Marketing: Content takes too long to produce",
+      "url": "https://zudoworks.com/solutions/#marketing-5"
+    },
+    {
+      "@type": "ListItem",
+      "position": 86,
+      "name": "Operations: Approvals stuck in email",
+      "url": "https://zudoworks.com/solutions/#operations-1"
+    },
+    {
+      "@type": "ListItem",
+      "position": 87,
+      "name": "Operations: Too many logins and tools",
+      "url": "https://zudoworks.com/solutions/#operations-2"
+    },
+    {
+      "@type": "ListItem",
+      "position": 88,
+      "name": "Operations: Assets and IT requests in email",
+      "url": "https://zudoworks.com/solutions/#operations-3"
+    },
+    {
+      "@type": "ListItem",
+      "position": 89,
+      "name": "Operations: Reports take a day to build",
+      "url": "https://zudoworks.com/solutions/#operations-4"
+    },
+    {
+      "@type": "ListItem",
+      "position": 90,
+      "name": "Operations: A custom process no app supports",
+      "url": "https://zudoworks.com/solutions/#operations-5"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Zoho workflow automation and integration",
+  "serviceType": "Zoho integration, automation and AI workflows",
+  "url": "https://zudoworks.com/solutions/",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://zudoworks.com/#organization",
+    "name": "Zudo Works"
+  },
+  "audience": [
+    {
+      "@type": "BusinessAudience",
+      "name": "Manufacturing"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Real estate"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Legal"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Healthcare clinic"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Education & training"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "E-commerce"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Agency & consulting"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Customer support"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Field service"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Logistics"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Construction"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Recruitment & HR"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Events & hospitality"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Accounting firm"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Nonprofit"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Finance & lending"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Marketing"
+    },
+    {
+      "@type": "BusinessAudience",
+      "name": "Operations"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a Zoho integration layer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the set of connections that lets Zoho apps and your other systems pass data to each other: Deluge scripts, Zoho Flow, webhooks and APIs. When one app changes a record, the layer updates the others, so nobody copies data by hand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does AI fit into a Zoho workflow?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AI handles the steps that need reading or judgement: reading an order email or a document, scoring a lead, sorting tickets or drafting a reply. It can be Zoho Zia, or Claude and ChatGPT connected to your Zoho data through Zoho MCP. A person still approves anything important."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"syncs back\" mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Data flows in both directions. When a later step finishes, such as a signed contract or a paid invoice, its status is written back to the earlier record, such as the CRM deal, so everyone sees the current state in the app they use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these real client projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. They are example workflows that show what can be built with Zoho for each industry. Every project starts with your own process, so the apps and steps are chosen to fit how your business actually runs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Zoho apps do these workflows use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zoho CRM, Creator, Books, Desk, Analytics, Flow, Forms, Sign, WorkDrive, Projects, People, Cliq, Campaigns, SalesIQ, Sites, Mail, Catalyst, ERP, Zia and Zoho One, together with Deluge scripts, APIs and an AI layer."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+    <!-- @header -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQBHDK59" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-content">
+            <a href="mailto:admin@zudoworks.com" class="top-bar-item">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                admin@zudoworks.com
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="top-bar-item" target="_blank" rel="noopener">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+                WhatsApp us
+            </a>
+            <span class="top-bar-separator only-in" aria-hidden="true">|</span>
+            <a href="tel:+916384353382" class="top-bar-item only-in">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+                Call us
+            </a>
+            <span class="top-bar-separator" aria-hidden="true">|</span>
+            <a href="/contact/" class="top-bar-item" data-booking>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Book a discovery call
+            </a>
+        </div>
+    </div>
+</div>
+
+<header class="navbar scrolled">
+    <div class="container">
+        <a href="/" class="navbar-logo" aria-label="Zudo Works home">
+            <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                fetchpriority="high">
+            <span class="navbar-logo-text">
+                <span class="navbar-logo-name">Zudo Works</span>
+                <span class="navbar-logo-tagline">Zoho &amp; Custom Software Development</span>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul class="navbar-nav" id="navbar-nav">
+                <li><a href="/services/" class="navbar-link">Services</a></li>
+                <li><a href="/zoho-development/" class="navbar-link">Zoho</a></li>
+                <li><a href="/zoho-creator-development/" class="navbar-link">Creator</a></li>
+                <li><a href="/zoho-crm-development/" class="navbar-link">CRM</a></li>
+                <li><a href="/zoho-integrations/" class="navbar-link">Integrations</a></li>
+                <li><a href="/manufacturing/" class="navbar-link navbar-link--new">Manufacturing<span class="nav-new">New</span></a></li>
+                <li><a href="/work/" class="navbar-link">Work</a></li>
+                <li><a href="/pricing/" class="navbar-link">Pricing</a></li>
+                <li><a href="/insights/" class="navbar-link">Insights</a></li>
+                <li><a href="/about/" class="navbar-link">About</a></li>
+                <li class="navbar-cta"><a href="/contact/" class="btn btn-primary btn-sm" data-booking>Book a Call</a>
+                </li>
+            </ul>
+        </nav>
+
+        <button class="navbar-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+            aria-controls="navbar-nav"><span></span><span></span><span></span></button>
+        <div class="mobile-nav-actions">
+            <a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                class="mobile-nav-phone mobile-nav-wa" target="_blank" rel="noopener"
+                aria-label="Message us on WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z">
+                    </path>
+                </svg>
+            </a>
+            <a href="tel:+916384353382" class="mobile-nav-phone only-in" aria-label="Call +91 63843 53382">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                </svg>
+            </a>
+            <a href="/contact/" class="btn btn-primary btn-sm mobile-nav-cta" data-booking>Book a Call</a>
+        </div>
+    </div>
+</header>
+
+<a class="mfg-ticker" href="/manufacturing/" aria-label="New: manufacturing solutions: automation, Zoho implementation and AI-powered workflows">
+    <span class="mfg-ticker-track" aria-hidden="true">
+        <span class="mfg-ticker-group">
+            <b class="nav-new">New</b>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16z"></path><path d="M6 17h2M11 17h2M16 17h2"></path></svg>
+            <span>Manufacturing automation</span><i></i><span>Zoho implementation</span><i></i><span>AI-powered workflows</span><i></i><span>Connected operations</span><i></i>
+        </span>
+        <span class="mfg-ticker-group">
+            <b class="nav-new">New</b>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20V9l6 4V9l6 4V4h6v16z"></path><path d="M6 17h2M11 17h2M16 17h2"></path></svg>
+            <span>Manufacturing automation</span><i></i><span>Zoho implementation</span><i></i><span>AI-powered workflows</span><i></i><span>Connected operations</span><i></i>
+        </span>
+    </span>
+</a>
+    <!-- @/header -->
+
+  <main id="main-content">
+    <section class="page-hero page-hero--service">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">/</span>
+          <span class="breadcrumb-current" aria-current="page">Solutions</span>
+        </nav>
+        <div class="hero-split">
+          <div class="hero-split-copy">
+            <p class="section-label">Solutions</p>
+            <h1>Zoho solutions by industry: 90 example workflows</h1>
+            <p class="page-lead">Here are 90 common business problems across 18 industries, and how Zoho solves each one.
+              Every workflow shows the trigger, each step through the integration and AI layer (Deluge, Zoho Flow, APIs and AI), what
+              syncs back to earlier apps, and the result. They are examples of what we build, not client case studies.</p>
+            <div class="btn-group">
+              <a href="/contact/" class="btn btn-primary btn-lg" data-booking>Book a Discovery Call</a>
+              <a href="/#hero" class="btn btn-secondary btn-lg">Watch a flow animate</a>
+            </div>
+            <!-- @stats -->
+<dl class="home-stats">
+            <div class="home-stat">
+                <dt>Projects our team has worked on</dt>
+                <dd><span data-count="20">20</span>+</dd>
+            </div>
+            <div class="home-stat">
+                <dt>Client businesses supported</dt>
+                <dd><span data-count="10">10</span>+</dd>
+            </div>
+            <div class="home-stat">
+                <dt>Zoho products used</dt>
+                <dd><span data-count="40">40</span>+</dd>
+            </div>
+            <div class="home-stat">
+                <dt>Free support and onboarding after every build</dt>
+                <dd><span data-count="1">1</span> month</dd>
+            </div>
+        </dl>
+    <!-- @/stats -->
+          </div>
+          <div class="hero-split-visual" data-fx-filter="">
+            <!-- @explorer -->
+<div class="fx" data-fx>
+    <div class="fx-head">
+        <p class="fx-kicker"><span class="live-dot" aria-hidden="true"></span>See it working<span class="fx-pausebar"><span class="fx-paused">Paused <span class="fx-secs" tabindex="0" data-fx-secs data-tip="5 seconds remaining" aria-label="5 seconds remaining">5s</span></span><button type="button" class="fx-resume" data-fx-resume>Resume <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></button></span><a class="fx-all" href="/solutions/">All 90 workflows <span aria-hidden="true">&rarr;</span></a></p>
+        <div class="fx-titlebar">
+            <p class="fx-title">Pick a problem. Watch it get solved.</p>
+            <div class="fx-select fx-select--ind">
+                <button type="button" class="fx-ind-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="fx-ind-list">
+                    <span class="sr-only">Industry: </span><span data-fx-ind>Industry</span><svg class="fx-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <ul class="fx-list fx-ind-list" id="fx-ind-list" role="listbox" aria-label="Choose an industry" hidden></ul>
+            </div>
+        </div>
+        <div class="fx-pick">
+            <button type="button" class="fx-nav" data-dir="-1" aria-label="Previous scenario"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="fx-select">
+                <button type="button" class="fx-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="fx-list">
+                    <span class="fx-trigger-text" data-fx-short></span>
+                    <svg class="fx-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <ul class="fx-list" id="fx-list" role="listbox" aria-label="Choose a problem" hidden></ul>
+            </div>
+            <button type="button" class="fx-nav" data-dir="1" aria-label="Next scenario"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+    </div>
+    <div class="fx-layers">
+        <div class="fx-layer fx-layer--problem">
+            <span class="fx-layer-label"><i aria-hidden="true"></i>Problem</span>
+            <p data-fx-problem></p>
+        </div>
+        <div class="fx-layer fx-layer--now fx-caption">
+            <span class="fx-layer-label"><i aria-hidden="true"></i>Happening now</span>
+            <div>
+                <p class="fx-cap-label" data-fx-label></p>
+                <p class="fx-cap-text" data-fx-text></p>
+                <p class="fx-cap-note" data-fx-note></p>
+            </div>
+        </div>
+        <div class="fx-layer fx-layer--solution">
+            <span class="fx-layer-label"><i aria-hidden="true"></i>Solution</span>
+            <p data-fx-solution></p>
+        </div>
+    </div>
+    <div class="fx-stage" data-fx-stage></div>
+    <span class="fx-progress" aria-hidden="true"><i data-fx-progress></i></span>
+</div>
+    <!-- @/explorer -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="section sol-index" aria-label="Industries">
+      <div class="container">
+        <ul class="sol-nav">
+          <li><a href="#manufacturing">Manufacturing</a></li>
+          <li><a href="#real-estate">Real estate</a></li>
+          <li><a href="#legal">Legal</a></li>
+          <li><a href="#healthcare">Healthcare clinic</a></li>
+          <li><a href="#education">Education &amp; training</a></li>
+          <li><a href="#ecommerce">E-commerce</a></li>
+          <li><a href="#agency">Agency &amp; consulting</a></li>
+          <li><a href="#customer-support">Customer support</a></li>
+          <li><a href="#field-service">Field service</a></li>
+          <li><a href="#logistics">Logistics</a></li>
+          <li><a href="#construction">Construction</a></li>
+          <li><a href="#recruitment">Recruitment &amp; HR</a></li>
+          <li><a href="#events">Events &amp; hospitality</a></li>
+          <li><a href="#accounting">Accounting firm</a></li>
+          <li><a href="#nonprofit">Nonprofit</a></li>
+          <li><a href="#lending">Finance &amp; lending</a></li>
+          <li><a href="#marketing">Marketing</a></li>
+          <li><a href="#operations">Operations</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section section--alt" id="how-it-works">
+      <div class="container container--prose">
+        <div class="section-header section-header--left">
+          <p class="section-label">How it works</p>
+          <h2>One integration and AI layer between your apps</h2>
+          <p>Each Zoho app does one job well: CRM for customers, Books for invoices, Desk for support, Creator for custom apps.
+            The integration layer connects them with Deluge, Zoho Flow, webhooks and APIs, so a change in one app updates the others.
+            The AI layer, using Zoho Zia or Claude and ChatGPT through Zoho MCP, reads documents and emails, sorts requests and drafts
+            replies, with a person approving anything important.</p>
+          <p>Data also flows back. When a contract is signed or an invoice is paid, the status syncs back to the original record,
+            so sales, operations and finance always see the same picture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="manufacturing">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Manufacturing</p>
+          <h2>Manufacturing: five problems Zoho solves</h2>
+          <p>Zoho connects orders, production, stock, quality and invoicing, so the shop floor and the office work from the same live data.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="manufacturing-1">
+            <h3>Job status lives in spreadsheets</h3>
+            <p class="sol-problem"><span>The problem</span> Orders and production stages are tracked in shared sheets, so nobody knows where an order really is.</p>
+            <ol class="sol-steps">
+              <li><strong>Order received:</strong> A web, email or phone order arrives.</li>
+              <li><strong>AI layer:</strong> AI reads the order email and fills in the customer, items and dates.</li>
+              <li><strong>Zoho CRM:</strong> The deal is created and marked won, which starts production.</li>
+              <li><strong>Zoho Creator:</strong> A job card is created with every production stage.</li>
+              <li><strong>Shop floor:</strong> Operators tap each stage done on a tablet.<span class="sol-sync">The job stage syncs back to the CRM deal, so sales sees it live.</span></li>
+              <li><strong>Zoho Books:</strong> On dispatch, the invoice is raised automatically.<span class="sol-sync">Invoice and payment status sync back to the deal.</span></li>
+              <li><strong>Zoho Analytics:</strong> Work in progress and late orders on one dashboard.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every order&rsquo;s stage is visible live, and invoices go out the day goods ship.</p>
+          </article>
+          <article class="sol-card" id="manufacturing-2">
+            <h3>Stock runs out before anyone reorders</h3>
+            <p class="sol-problem"><span>The problem</span> Raw materials run out mid-job because reorder levels live in someone&rsquo;s head.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Creator:</strong> Every stock movement is recorded against the job.</li>
+              <li><strong>Deluge:</strong> A scheduled check compares stock with reorder points.</li>
+              <li><strong>AI layer:</strong> AI forecasts usage from open orders and suggests quantities.</li>
+              <li><strong>Zoho Cliq:</strong> Purchasing approves the suggested order in one click.</li>
+              <li><strong>Zoho Books:</strong> The purchase order goes to the usual supplier.<span class="sol-sync">The expected delivery date syncs back to stock.</span></li>
+              <li><strong>Zoho Analytics:</strong> Stock cover and supplier lead times on one dashboard.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Materials are reordered before they run out, not after a job stops.</p>
+          </article>
+          <article class="sol-card" id="manufacturing-3">
+            <h3>Bills of materials are kept in Excel</h3>
+            <p class="sol-problem"><span>The problem</span> BOMs live in separate spreadsheets, so costings and material lists drift out of date.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho ERP:</strong> Each product has one bill of materials and routing.</li>
+              <li><strong>Zoho CRM:</strong> Sales quotes are priced from the current BOM cost.</li>
+              <li><strong>AI layer:</strong> AI flags quotes where material prices have moved.</li>
+              <li><strong>Zoho ERP:</strong> A won quote raises a work order with the exact materials.<span class="sol-sync">The work order number syncs back to the deal.</span></li>
+              <li><strong>Zoho Analytics:</strong> Quoted against actual cost for every job.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Quotes and production use the same material list, so margins stop leaking.</p>
+          </article>
+          <article class="sol-card" id="manufacturing-4">
+            <h3>Quality issues are logged on paper</h3>
+            <p class="sol-problem"><span>The problem</span> Defects are written on paper forms, so the same faults repeat and nobody sees the pattern.</p>
+            <ol class="sol-steps">
+              <li><strong>Inspection app:</strong> Inspectors record defects with photos at the station.</li>
+              <li><strong>Zoho Creator:</strong> A non-conformance report opens with the batch and job.</li>
+              <li><strong>AI layer:</strong> AI groups similar defects and suggests a likely cause.</li>
+              <li><strong>Zoho Cliq:</strong> The quality lead is alerted to assign a corrective action.</li>
+              <li><strong>Zoho Projects:</strong> The corrective action is tracked to closure.<span class="sol-sync">The closure date syncs back to the report.</span></li>
+              <li><strong>Zoho Analytics:</strong> Defects by line, product and cause.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every defect is traced to a cause and a fix, and repeat faults fall.</p>
+          </article>
+          <article class="sol-card" id="manufacturing-5">
+            <h3>Sales can&rsquo;t promise delivery dates</h3>
+            <p class="sol-problem"><span>The problem</span> Sales promises dates without knowing machine capacity, and customers get late orders.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> A salesperson checks capacity before confirming a date.</li>
+              <li><strong>Zoho Catalyst:</strong> A scheduling function works out the earliest free slot.</li>
+              <li><strong>Zoho Creator:</strong> The job is booked into the production plan.<span class="sol-sync">The confirmed date syncs back to the deal.</span></li>
+              <li><strong>Customer email:</strong> The customer gets the date and later any change.</li>
+              <li><strong>Zoho Analytics:</strong> Capacity and on-time delivery by week.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Delivery dates are based on real capacity, so promises are kept.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="real-estate">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Real estate</p>
+          <h2>Real estate: five problems Zoho solves</h2>
+          <p>Zoho captures every enquiry, matches buyers to listings and keeps agents, vendors and buyers updated without manual chasing.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="real-estate-1">
+            <h3>Leads from ads go cold</h3>
+            <p class="sol-problem"><span>The problem</span> Enquiries from Facebook and Google ads sit in inboxes for hours before anyone calls.</p>
+            <ol class="sol-steps">
+              <li><strong>Meta &amp; Google Ads:</strong> Lead forms send the enquiry with its campaign name.</li>
+              <li><strong>Zoho CRM:</strong> The lead is created and assigned to the next agent.</li>
+              <li><strong>AI layer:</strong> AI scores the lead and drafts a reply with matching listings.</li>
+              <li><strong>WhatsApp:</strong> The buyer gets a personal reply within minutes.<span class="sol-sync">The conversation syncs back to the lead.</span></li>
+              <li><strong>Zoho Campaigns:</strong> Leads not ready yet get new listings every week.<span class="sol-sync">Opens and clicks sync back to the lead score.</span></li>
+              <li><strong>Zoho Analytics:</strong> Cost per lead and sales by campaign.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every enquiry gets a reply in minutes, and you see which ads actually sell.</p>
+          </article>
+          <article class="sol-card" id="real-estate-2">
+            <h3>Listings are updated in five places</h3>
+            <p class="sol-problem"><span>The problem</span> Each new listing is typed into the website, portals and brochures by hand.</p>
+            <ol class="sol-steps">
+              <li><strong>Listing app:</strong> Agents add a property once with photos and details.</li>
+              <li><strong>AI layer:</strong> AI writes the listing description in your house style.</li>
+              <li><strong>Zoho Sites:</strong> The listing goes live on your website.</li>
+              <li><strong>Zoho Flow:</strong> The listing is pushed to the property portals you use.</li>
+              <li><strong>Zoho CRM:</strong> Matching buyers are alerted automatically.<span class="sol-sync">Enquiry counts sync back to the listing.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> One entry publishes everywhere, and buyers hear about new homes first.</p>
+          </article>
+          <article class="sol-card" id="real-estate-3">
+            <h3>Viewings are booked by phone tag</h3>
+            <p class="sol-problem"><span>The problem</span> Booking viewings takes several calls, and no-shows waste agents&rsquo; afternoons.</p>
+            <ol class="sol-steps">
+              <li><strong>Website:</strong> Buyers pick a viewing slot on the listing page.</li>
+              <li><strong>Zoho CRM:</strong> The viewing is added to the agent&rsquo;s calendar.</li>
+              <li><strong>Reminders:</strong> The buyer gets a reminder and a map the day before.</li>
+              <li><strong>Zoho Forms:</strong> After the viewing, the buyer gives quick feedback.<span class="sol-sync">Feedback syncs back to the buyer and the listing.</span></li>
+              <li><strong>Zoho Analytics:</strong> Viewings, no-shows and offers by listing.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Viewings book themselves, and every visit ends with feedback.</p>
+          </article>
+          <article class="sol-card" id="real-estate-4">
+            <h3>Vendors chase agents for updates</h3>
+            <p class="sol-problem"><span>The problem</span> Property owners call every week to ask how their sale is going.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Viewings, offers and feedback are logged on the listing.</li>
+              <li><strong>AI layer:</strong> AI writes a weekly summary for each vendor.</li>
+              <li><strong>Vendor portal:</strong> Vendors see activity and offers whenever they like.</li>
+              <li><strong>Weekly email:</strong> The summary arrives every Monday morning.</li>
+              <li><strong>Zoho Desk:</strong> Vendor questions become tickets for the agent.<span class="sol-sync">Questions sync back to the listing record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Vendors stay informed without a single chasing call.</p>
+          </article>
+          <article class="sol-card" id="real-estate-5">
+            <h3>Sales stall between offer and settlement</h3>
+            <p class="sol-problem"><span>The problem</span> After an offer is accepted, documents and deadlines are tracked in email threads.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The accepted offer moves into a settlement Blueprint.</li>
+              <li><strong>Zoho Sign:</strong> Contracts go out for e-signature.<span class="sol-sync">Signed contracts sync back to the deal.</span></li>
+              <li><strong>Zoho WorkDrive:</strong> Searches, reports and IDs are filed in one folder.</li>
+              <li><strong>Deluge:</strong> Key dates create tasks and reminders automatically.</li>
+              <li><strong>Zoho Books:</strong> Commission invoices are raised on settlement.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every sale has a clear checklist, and no deadline is missed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="legal">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Legal</p>
+          <h2>Legal: five problems Zoho solves</h2>
+          <p>Zoho handles intake, conflict checks, engagement letters, matter updates and billing for law firms, with documents filed in one place.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="legal-1">
+            <h3>Client intake takes days</h3>
+            <p class="sol-problem"><span>The problem</span> New matters need forms, conflict checks and engagement letters, all chased by email.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> The client completes an online intake form.</li>
+              <li><strong>AI layer:</strong> AI summarises the matter and flags missing details.</li>
+              <li><strong>Zoho CRM:</strong> A matter record is created and checked for conflicts.</li>
+              <li><strong>Zoho Sign:</strong> The engagement letter goes out for e-signature.<span class="sol-sync">The signed letter syncs back to the matter.</span></li>
+              <li><strong>Zoho WorkDrive:</strong> A matter folder is created with the right access.</li>
+              <li><strong>Zoho Books:</strong> The retainer invoice is sent with a payment link.<span class="sol-sync">Payment status syncs back to the matter.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> A new matter is opened, signed and invoiced the same day.</p>
+          </article>
+          <article class="sol-card" id="legal-2">
+            <h3>Clients keep asking for updates</h3>
+            <p class="sol-problem"><span>The problem</span> Lawyers spend hours answering "what&rsquo;s happening with my case?" calls and emails.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each matter moves through stages in a Blueprint.</li>
+              <li><strong>AI layer:</strong> AI turns every stage change into a plain-English update.</li>
+              <li><strong>Client portal:</strong> Clients see status, documents and next steps.</li>
+              <li><strong>Zoho Desk:</strong> Client questions become tickets on the matter.<span class="sol-sync">Open questions sync back to the matter record.</span></li>
+              <li><strong>Zoho Analytics:</strong> Matter age and workload by lawyer.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Clients see progress themselves, and lawyers get their time back.</p>
+          </article>
+          <article class="sol-card" id="legal-3">
+            <h3>Time entries are forgotten</h3>
+            <p class="sol-problem"><span>The problem</span> Billable time is recorded at the end of the month from memory, so hours are lost.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Projects:</strong> Lawyers log time against the matter as they work.</li>
+              <li><strong>AI layer:</strong> AI suggests entries from emails and calendar events.</li>
+              <li><strong>Zoho Cliq:</strong> A daily nudge goes to anyone with missing hours.</li>
+              <li><strong>Zoho Books:</strong> Approved time becomes the monthly invoice.<span class="sol-sync">Billed status syncs back to each time entry.</span></li>
+              <li><strong>Zoho Analytics:</strong> Billable hours and write-offs by lawyer.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More of the work done is billed, without month-end guesswork.</p>
+          </article>
+          <article class="sol-card" id="legal-4">
+            <h3>Court deadlines live in calendars</h3>
+            <p class="sol-problem"><span>The problem</span> Limitation dates and filing deadlines sit in personal calendars, so one missed date is a risk.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each matter stores its key dates in one place.</li>
+              <li><strong>Deluge:</strong> Deadlines create tasks at 30, 7 and 1 day before.</li>
+              <li><strong>Zoho Cliq:</strong> The responsible lawyer and their supervisor are alerted.</li>
+              <li><strong>Zoho Analytics:</strong> A firm-wide view of upcoming deadlines.<span class="sol-sync">Completed filings sync back to the matter.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> No deadline depends on one person&rsquo;s calendar.</p>
+          </article>
+          <article class="sol-card" id="legal-5">
+            <h3>Documents are drafted from scratch</h3>
+            <p class="sol-problem"><span>The problem</span> Standard letters and agreements are copied from old files and edited by hand.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The lawyer picks a template on the matter.</li>
+              <li><strong>Templates:</strong> Client and matter details are merged in.</li>
+              <li><strong>AI layer:</strong> AI drafts the bespoke clauses for review.</li>
+              <li><strong>Zoho Sign:</strong> The final document goes out for signature.</li>
+              <li><strong>Zoho WorkDrive:</strong> The signed copy is filed on the matter.<span class="sol-sync">The signed date syncs back to the matter.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> First drafts take minutes, and every signed copy is filed correctly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="healthcare">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Healthcare clinic</p>
+          <h2>Healthcare clinic: five problems Zoho solves</h2>
+          <p>Zoho runs bookings, reminders, patient records, follow-ups and enquiries for clinics, so reception spends less time on the phone.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="healthcare-1">
+            <h3>Patient follow-ups are missed</h3>
+            <p class="sol-problem"><span>The problem</span> Follow-up visits and reminders depend on reception remembering to call.</p>
+            <ol class="sol-steps">
+              <li><strong>Online booking:</strong> Patients book and fill in their details online.</li>
+              <li><strong>Zoho CRM:</strong> A patient record is created or updated.</li>
+              <li><strong>Reminders:</strong> Reminders go out before every appointment.</li>
+              <li><strong>AI layer:</strong> AI flags patients due a follow-up and drafts the message.</li>
+              <li><strong>Zoho Desk:</strong> Patient questions are answered from one inbox.<span class="sol-sync">Every conversation syncs back to the patient record.</span></li>
+              <li><strong>Zoho Analytics:</strong> No-shows and follow-up rates tracked weekly.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Fewer no-shows, and no follow-up depends on memory.</p>
+          </article>
+          <article class="sol-card" id="healthcare-2">
+            <h3>New patient forms are on paper</h3>
+            <p class="sol-problem"><span>The problem</span> New patients fill in paper forms in the waiting room, and staff type them up later.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> Patients complete their history online before the visit.</li>
+              <li><strong>AI layer:</strong> AI highlights allergies and answers that need a review.</li>
+              <li><strong>Zoho CRM:</strong> The patient record is ready before they arrive.</li>
+              <li><strong>Zoho Sign:</strong> Consent forms are signed on a tablet.<span class="sol-sync">Signed consent syncs back to the record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Patients are seen on time, and nothing is re-typed.</p>
+          </article>
+          <article class="sol-card" id="healthcare-3">
+            <h3>Phones ring all day</h3>
+            <p class="sol-problem"><span>The problem</span> Reception is stuck on the phone answering the same questions about hours and prices.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho SalesIQ:</strong> Website visitors ask questions in live chat.</li>
+              <li><strong>AI layer:</strong> AI answers common questions from the clinic&rsquo;s own FAQs.</li>
+              <li><strong>Zoho CRM:</strong> Booking requests become appointments.</li>
+              <li><strong>Zoho Desk:</strong> Anything else becomes a ticket for the right person.<span class="sol-sync">The answer syncs back into the chat history.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Routine questions are answered instantly, and the phone gets quieter.</p>
+          </article>
+          <article class="sol-card" id="healthcare-4">
+            <h3>Treatment plans are hard to follow</h3>
+            <p class="sol-problem"><span>The problem</span> Multi-visit treatment plans are tracked by hand, so patients drop out halfway.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each patient&rsquo;s plan lists every visit.</li>
+              <li><strong>Deluge:</strong> The next visit is offered as soon as one is completed.</li>
+              <li><strong>Reminders:</strong> Patients who have not booked get a gentle reminder.</li>
+              <li><strong>Zoho Books:</strong> Each visit is invoiced or claimed.<span class="sol-sync">Payment syncs back to the plan.</span></li>
+              <li><strong>Zoho Analytics:</strong> Plan completion rates by treatment.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More patients complete their treatment, and income becomes predictable.</p>
+          </article>
+          <article class="sol-card" id="healthcare-5">
+            <h3>Staff rosters change by text</h3>
+            <p class="sol-problem"><span>The problem</span> Shift swaps and leave are agreed by text message, so gaps appear in the roster.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho People:</strong> Staff request leave and shift swaps in one app.</li>
+              <li><strong>Zoho Cliq:</strong> The practice manager approves in one click.</li>
+              <li><strong>Roster app:</strong> The roster updates and shows any gaps.<span class="sol-sync">The approved change syncs back to the request.</span></li>
+              <li><strong>Zoho Analytics:</strong> Hours and overtime by person and week.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> The roster is always current, and gaps are spotted early.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Education &amp; training</p>
+          <h2>Education &amp; training: five problems Zoho solves</h2>
+          <p>Zoho manages applications, enrolment, fees, course delivery and certificates for training providers and colleges.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="education-1">
+            <h3>Enrolments handled by hand</h3>
+            <p class="sol-problem"><span>The problem</span> Applications, documents, fees and certificates are managed in email and spreadsheets.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> Students apply online and upload their documents.</li>
+              <li><strong>AI layer:</strong> AI checks the documents are complete and readable.</li>
+              <li><strong>Zoho CRM:</strong> Each applicant moves through review and approval.</li>
+              <li><strong>Zoho Sign:</strong> The enrolment agreement is signed online.<span class="sol-sync">The signed agreement syncs back to the applicant.</span></li>
+              <li><strong>Zoho Books:</strong> Fee invoices and instalments are scheduled.<span class="sol-sync">Fee status syncs back to the student record.</span></li>
+              <li><strong>Zoho Creator:</strong> Certificates are generated as PDFs when a course ends.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Enrolment to certificate runs without a single re-typed form.</p>
+          </article>
+          <article class="sol-card" id="education-2">
+            <h3>Course enquiries are not followed up</h3>
+            <p class="sol-problem"><span>The problem</span> Prospective students enquire once, then never hear back at the right time.</p>
+            <ol class="sol-steps">
+              <li><strong>Course pages:</strong> Visitors enquire from the course page.</li>
+              <li><strong>Zoho CRM:</strong> The enquiry is assigned to an admissions adviser.</li>
+              <li><strong>AI layer:</strong> AI suggests the best next course and start date.</li>
+              <li><strong>Zoho Campaigns:</strong> A sequence shares course details and deadlines.<span class="sol-sync">Opens and replies sync back to the enquiry.</span></li>
+              <li><strong>Zoho Analytics:</strong> Enquiry to enrolment rate by course.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More enquiries become enrolments, with no adviser chasing lists.</p>
+          </article>
+          <article class="sol-card" id="education-3">
+            <h3>Attendance is taken on paper</h3>
+            <p class="sol-problem"><span>The problem</span> Attendance sheets are collected weekly, so absent students are noticed too late.</p>
+            <ol class="sol-steps">
+              <li><strong>Class app:</strong> Trainers mark attendance on a phone or tablet.</li>
+              <li><strong>Zoho Creator:</strong> Attendance is stored against each student.</li>
+              <li><strong>Deluge:</strong> Two absences in a row trigger a check-in.</li>
+              <li><strong>Zoho CRM:</strong> The student&rsquo;s adviser gets a follow-up task.<span class="sol-sync">The follow-up note syncs back to attendance.</span></li>
+              <li><strong>Zoho Analytics:</strong> Attendance and completion by course.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Students at risk are spotted in days, not at the end of term.</p>
+          </article>
+          <article class="sol-card" id="education-4">
+            <h3>Assessments are marked in email</h3>
+            <p class="sol-problem"><span>The problem</span> Assignments go back and forth by email, and marks are typed into a spreadsheet.</p>
+            <ol class="sol-steps">
+              <li><strong>Student portal:</strong> Students upload assignments to the portal.</li>
+              <li><strong>AI layer:</strong> AI checks the submission is complete before marking.</li>
+              <li><strong>Marking app:</strong> Assessors mark against the rubric.</li>
+              <li><strong>Results email:</strong> Students get marks and feedback automatically.<span class="sol-sync">Marks sync back to the student record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Marking is faster, and every grade has a clear audit trail.</p>
+          </article>
+          <article class="sol-card" id="education-5">
+            <h3>Corporate training is invoiced late</h3>
+            <p class="sol-problem"><span>The problem</span> Company bookings, attendee lists and invoices are matched up by hand after each course.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The company books seats on a course.</li>
+              <li><strong>Zoho Forms:</strong> Each attendee registers with their details.</li>
+              <li><strong>Zoho Books:</strong> One invoice goes to the company for all seats.<span class="sol-sync">Payment status syncs back to the booking.</span></li>
+              <li><strong>Zoho Creator:</strong> Certificates go to every attendee after the course.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Corporate courses are billed on time, with no spreadsheet matching.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="ecommerce">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">E-commerce</p>
+          <h2>E-commerce: five problems Zoho solves</h2>
+          <p>Zoho links your online store to accounting, support and marketing, so orders, refunds and customer history stay in sync.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="ecommerce-1">
+            <h3>Orders re-keyed into accounts</h3>
+            <p class="sol-problem"><span>The problem</span> Every store order is typed into the accounting system by hand at the end of the day.</p>
+            <ol class="sol-steps">
+              <li><strong>Online store:</strong> A paid order fires a webhook the moment it lands.</li>
+              <li><strong>Zoho Flow:</strong> The order is mapped to the right customer and items.</li>
+              <li><strong>Zoho Books:</strong> Invoice and payment are recorded automatically.</li>
+              <li><strong>Zoho Desk:</strong> Returns and delivery questions become tickets.</li>
+              <li><strong>AI layer:</strong> AI sorts tickets by reason and drafts the first reply.<span class="sol-sync">Return and refund status sync back to the store order.</span></li>
+              <li><strong>Zoho Analytics:</strong> Sales, margin and returns by product.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Accounts match the store every day, with no end-of-day typing.</p>
+          </article>
+          <article class="sol-card" id="ecommerce-2">
+            <h3>Abandoned carts are never followed up</h3>
+            <p class="sol-problem"><span>The problem</span> Shoppers leave items in the cart, and nobody follows up.</p>
+            <ol class="sol-steps">
+              <li><strong>Online store:</strong> An abandoned cart is captured with its items.</li>
+              <li><strong>Zoho CRM:</strong> The shopper is matched to their contact record.</li>
+              <li><strong>AI layer:</strong> AI picks the right reminder and offer for the shopper.</li>
+              <li><strong>Zoho Campaigns:</strong> A reminder email goes out after a set delay.<span class="sol-sync">Recovered orders sync back to the contact.</span></li>
+              <li><strong>Zoho Analytics:</strong> Recovered revenue by reminder.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Lost carts turn into orders without anyone sending emails.</p>
+          </article>
+          <article class="sol-card" id="ecommerce-3">
+            <h3>"Where is my order?" emails flood support</h3>
+            <p class="sol-problem"><span>The problem</span> Support spends most of the day answering delivery status questions.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho SalesIQ:</strong> Customers ask about their order in chat.</li>
+              <li><strong>Zoho Flow:</strong> The order and courier status are looked up.</li>
+              <li><strong>AI layer:</strong> AI replies with the live status and delivery date.</li>
+              <li><strong>Zoho Desk:</strong> Only real problems become tickets.<span class="sol-sync">The resolution syncs back into the chat history.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Status questions answer themselves, and support handles real issues.</p>
+          </article>
+          <article class="sol-card" id="ecommerce-4">
+            <h3>Wholesale orders arrive by email</h3>
+            <p class="sol-problem"><span>The problem</span> Trade customers email order spreadsheets that someone has to re-enter.</p>
+            <ol class="sol-steps">
+              <li><strong>Trade portal:</strong> Trade customers order from their own price list.</li>
+              <li><strong>Zoho CRM:</strong> The order is added to the account.</li>
+              <li><strong>Zoho Books:</strong> The invoice is raised on their payment terms.<span class="sol-sync">Credit limit and balance sync back to the account.</span></li>
+              <li><strong>Confirmation:</strong> The customer gets an order confirmation.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Trade orders come in clean, priced correctly and invoiced on terms.</p>
+          </article>
+          <article class="sol-card" id="ecommerce-5">
+            <h3>Reviews and repeat buyers are left to chance</h3>
+            <p class="sol-problem"><span>The problem</span> Happy customers are never asked for a review or invited to buy again.</p>
+            <ol class="sol-steps">
+              <li><strong>Online store:</strong> An order is marked delivered.</li>
+              <li><strong>Wait 7 days:</strong> A short delay gives the customer time to use it.</li>
+              <li><strong>Zoho Forms:</strong> The customer is asked for a rating and review.</li>
+              <li><strong>Zoho Campaigns:</strong> Happy customers get a repeat-purchase offer.<span class="sol-sync">Ratings sync back to the product and customer.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More reviews and more repeat orders, without manual follow-up.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="agency">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Agency &amp; consulting</p>
+          <h2>Agency &amp; consulting: five problems Zoho solves</h2>
+          <p>Zoho turns won deals into projects, tracks time against budgets and bills milestones for agencies and consultancies.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="agency-1">
+            <h3>Won deals don&rsquo;t become projects</h3>
+            <p class="sol-problem"><span>The problem</span> After a deal is won, someone rebuilds the scope in a project tool and a separate invoice.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The proposal is approved and the deal is won.</li>
+              <li><strong>AI layer:</strong> AI turns the proposal into a task list and timeline.</li>
+              <li><strong>Zoho Sign:</strong> The statement of work is signed online.<span class="sol-sync">The signed SOW syncs back to the deal.</span></li>
+              <li><strong>Zoho Projects:</strong> The project is created with the drafted tasks.</li>
+              <li><strong>Zoho Books:</strong> Milestone invoices are raised as phases complete.<span class="sol-sync">Billed milestones sync back to the project.</span></li>
+              <li><strong>Zoho Analytics:</strong> Hours against budget for every project.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Kick-off happens the day the deal closes, and every milestone is billed.</p>
+          </article>
+          <article class="sol-card" id="agency-2">
+            <h3>Proposals take days to write</h3>
+            <p class="sol-problem"><span>The problem</span> Every proposal is assembled by hand from old documents.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The deal holds the client&rsquo;s needs and budget.</li>
+              <li><strong>AI layer:</strong> AI drafts the proposal from your past proposals.</li>
+              <li><strong>Template:</strong> The draft is merged into your branded template.</li>
+              <li><strong>Zoho Sign:</strong> The client accepts and signs online.<span class="sol-sync">Acceptance syncs back to the deal.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Proposals go out the same day, in your style.</p>
+          </article>
+          <article class="sol-card" id="agency-3">
+            <h3>Projects overrun without warning</h3>
+            <p class="sol-problem"><span>The problem</span> Hours are only compared with the budget at the end, when it is too late.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Projects:</strong> The team logs time against each task.</li>
+              <li><strong>Deluge:</strong> Hours are compared with the budget every night.</li>
+              <li><strong>Zoho Cliq:</strong> The project lead is alerted at 80% of budget.</li>
+              <li><strong>Zoho CRM:</strong> A change request is raised with the client.<span class="sol-sync">The approved extra budget syncs back to the project.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Overruns are caught early and turned into paid change requests.</p>
+          </article>
+          <article class="sol-card" id="agency-4">
+            <h3>Retainers are billed by hand</h3>
+            <p class="sol-problem"><span>The problem</span> Monthly retainers and extra hours are worked out in a spreadsheet each month.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Books:</strong> Retainer invoices go out automatically each month.</li>
+              <li><strong>Zoho Projects:</strong> Hours beyond the retainer are tracked.</li>
+              <li><strong>Deluge:</strong> Extra hours are added to the next invoice.<span class="sol-sync">The updated balance syncs back to the client record.</span></li>
+              <li><strong>Zoho Analytics:</strong> Retainer use and profit by client.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Retainers and extras are billed accurately, every month.</p>
+          </article>
+          <article class="sol-card" id="agency-5">
+            <h3>Client feedback is scattered</h3>
+            <p class="sol-problem"><span>The problem</span> Client approvals and feedback arrive by email, chat and calls.</p>
+            <ol class="sol-steps">
+              <li><strong>Client portal:</strong> Clients review deliverables in one place.</li>
+              <li><strong>AI layer:</strong> AI turns comments into a clear change list.</li>
+              <li><strong>Zoho Projects:</strong> Changes become tasks for the team.<span class="sol-sync">Task progress syncs back to the portal.</span></li>
+              <li><strong>Zoho Cliq:</strong> The team is told when a client approves.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Feedback is clear, tracked and never lost in an inbox.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="customer-support">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Customer support</p>
+          <h2>Customer support: five problems Zoho solves</h2>
+          <p>Zoho brings chat, email and phone into one support desk with deadlines, AI answers and a full customer history.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="customer-support-1">
+            <h3>Support emails get lost</h3>
+            <p class="sol-problem"><span>The problem</span> Requests arrive by email, chat and phone, and some are never answered.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho SalesIQ:</strong> Website chats and emails arrive in one place.</li>
+              <li><strong>AI layer:</strong> AI answers common questions from your help articles.</li>
+              <li><strong>Zoho Desk:</strong> Anything else becomes a ticket with a deadline.</li>
+              <li><strong>Zoho Cliq:</strong> Tickets near their deadline are escalated to a lead.</li>
+              <li><strong>Zoho CRM:</strong> Sales sees open issues before calling the customer.<span class="sol-sync">Account details sync back into the ticket.</span></li>
+              <li><strong>Zoho Analytics:</strong> Response times and top issues every week.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every request has an owner and a deadline, and nothing is lost.</p>
+          </article>
+          <article class="sol-card" id="customer-support-2">
+            <h3>Agents answer the same questions</h3>
+            <p class="sol-problem"><span>The problem</span> Agents type the same answers dozens of times a day.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Desk:</strong> A new ticket arrives.</li>
+              <li><strong>Zia:</strong> Zia suggests the matching help article and reply.</li>
+              <li><strong>Zoho Desk:</strong> The agent sends it with one click.</li>
+              <li><strong>AI layer:</strong> Gaps in the help centre are flagged for a new article.<span class="sol-sync">New articles sync back to the help centre.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Common questions take seconds, and the help centre keeps improving.</p>
+          </article>
+          <article class="sol-card" id="customer-support-3">
+            <h3>VIP customers wait in the queue</h3>
+            <p class="sol-problem"><span>The problem</span> Your most valuable customers wait in the same queue as everyone else.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Desk:</strong> A ticket arrives.</li>
+              <li><strong>Zoho CRM:</strong> The account tier and value are looked up.</li>
+              <li><strong>Deluge:</strong> Priority and deadline are set from the tier.<span class="sol-sync">The priority syncs back to the ticket.</span></li>
+              <li><strong>Zoho Cliq:</strong> The account manager is told about VIP tickets.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Key customers get faster help, automatically.</p>
+          </article>
+          <article class="sol-card" id="customer-support-4">
+            <h3>Bugs reported by customers vanish</h3>
+            <p class="sol-problem"><span>The problem</span> Customer bug reports never reach the developers, or never get a reply when fixed.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Desk:</strong> The agent flags a ticket as a bug.</li>
+              <li><strong>Zoho Projects:</strong> A bug is created for the development team.</li>
+              <li><strong>AI layer:</strong> AI groups duplicate reports into one bug.</li>
+              <li><strong>Fix released:</strong> The bug is closed when the fix ships.<span class="sol-sync">Every linked ticket is updated and the customers are told.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Customers hear back when their bug is fixed, every time.</p>
+          </article>
+          <article class="sol-card" id="customer-support-5">
+            <h3>No idea how happy customers are</h3>
+            <p class="sol-problem"><span>The problem</span> Customer satisfaction is guessed, not measured.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Desk:</strong> A ticket is closed.</li>
+              <li><strong>Zoho Forms:</strong> The customer rates the help they got.</li>
+              <li><strong>AI layer:</strong> AI reads comments and tags the reasons.<span class="sol-sync">The rating syncs back to the ticket and agent.</span></li>
+              <li><strong>Zoho Analytics:</strong> Satisfaction by agent, product and reason.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> You know what customers think, and why.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="field-service">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Field service</p>
+          <h2>Field service: five problems Zoho solves</h2>
+          <p>Zoho dispatches jobs, guides technicians on site, captures proof of work and invoices the same day.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="field-service-1">
+            <h3>Technicians use paper job sheets</h3>
+            <p class="sol-problem"><span>The problem</span> Jobs are dispatched by phone, and paper job sheets come back days later.</p>
+            <ol class="sol-steps">
+              <li><strong>Service request:</strong> The customer logs a fault by phone, email or web.</li>
+              <li><strong>AI layer:</strong> AI reads the fault and suggests the skills and parts needed.</li>
+              <li><strong>Dispatch app:</strong> The job goes to the nearest free technician.</li>
+              <li><strong>Technician app:</strong> Photos, parts used and signature captured on site.<span class="sol-sync">Job status syncs back to the customer&rsquo;s ticket.</span></li>
+              <li><strong>Zoho Books:</strong> The invoice is raised as soon as the job closes.</li>
+              <li><strong>Zoho Forms:</strong> The customer rates the visit the same day.<span class="sol-sync">The rating syncs back to the ticket.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Jobs are invoiced the day they finish, with proof of work attached.</p>
+          </article>
+          <article class="sol-card" id="field-service-2">
+            <h3>Maintenance visits are forgotten</h3>
+            <p class="sol-problem"><span>The problem</span> Planned maintenance contracts rely on someone remembering the next visit.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each contract stores its visit schedule.</li>
+              <li><strong>Deluge:</strong> Visits are created automatically ahead of time.</li>
+              <li><strong>Dispatch app:</strong> The visit is booked with a technician.</li>
+              <li><strong>Confirmation:</strong> The customer gets the date and time.<span class="sol-sync">The completed visit syncs back to the contract.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every contracted visit happens on time, without a reminder list.</p>
+          </article>
+          <article class="sol-card" id="field-service-3">
+            <h3>Vans run out of parts</h3>
+            <p class="sol-problem"><span>The problem</span> Technicians arrive without the right part and need a second visit.</p>
+            <ol class="sol-steps">
+              <li><strong>Van stock:</strong> Each van&rsquo;s stock is tracked as parts are used.</li>
+              <li><strong>AI layer:</strong> AI predicts parts needed for tomorrow&rsquo;s jobs.</li>
+              <li><strong>Zoho Cliq:</strong> The warehouse is asked to restock the van.</li>
+              <li><strong>Zoho Books:</strong> Parts are charged to the job.<span class="sol-sync">Stock used syncs back to the van.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More jobs are fixed first time.</p>
+          </article>
+          <article class="sol-card" id="field-service-4">
+            <h3>Quotes for repairs take days</h3>
+            <p class="sol-problem"><span>The problem</span> Technicians find extra work on site, but the quote takes days to reach the customer.</p>
+            <ol class="sol-steps">
+              <li><strong>Technician app:</strong> The technician adds photos and notes on site.</li>
+              <li><strong>AI layer:</strong> AI drafts the quote from the notes and price list.</li>
+              <li><strong>Zoho CRM:</strong> The quote is reviewed and sent.</li>
+              <li><strong>Zoho Sign:</strong> The customer approves it online.<span class="sol-sync">Approval syncs back and books the follow-up job.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Extra work is quoted the same day, while the customer still cares.</p>
+          </article>
+          <article class="sol-card" id="field-service-5">
+            <h3>No view of technician utilisation</h3>
+            <p class="sol-problem"><span>The problem</span> Managers cannot see who is busy, who is idle and where time goes.</p>
+            <ol class="sol-steps">
+              <li><strong>Technician app:</strong> Travel, on-site and admin time is logged.</li>
+              <li><strong>Zoho Creator:</strong> Time is stored against each job.</li>
+              <li><strong>Zoho People:</strong> Leave and availability are included.<span class="sol-sync">Availability syncs back to dispatch.</span></li>
+              <li><strong>Zoho Analytics:</strong> Utilisation and job time by technician.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> You can see capacity clearly and plan the week properly.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="logistics">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Logistics</p>
+          <h2>Logistics: five problems Zoho solves</h2>
+          <p>Zoho books deliveries, routes drivers, updates customers and handles exceptions for logistics and distribution teams.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="logistics-1">
+            <h3>Customers call all day for delivery status</h3>
+            <p class="sol-problem"><span>The problem</span> The office spends hours answering "where is my delivery?" calls.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The confirmed order is booked for delivery.</li>
+              <li><strong>AI layer:</strong> AI groups deliveries into routes by area and time slot.</li>
+              <li><strong>Driver app:</strong> Drivers update pickup, in transit and delivered.<span class="sol-sync">Delivery status syncs back to the order.</span></li>
+              <li><strong>Deluge:</strong> Each update sends the customer a notification.</li>
+              <li><strong>Zoho Desk:</strong> Late or failed deliveries become exception tickets.</li>
+              <li><strong>Zoho Analytics:</strong> On-time delivery by route and driver.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Customers get updates automatically, and the phones go quiet.</p>
+          </article>
+          <article class="sol-card" id="logistics-2">
+            <h3>Proof of delivery is lost</h3>
+            <p class="sol-problem"><span>The problem</span> Paper delivery notes go missing, and disputes take weeks to settle.</p>
+            <ol class="sol-steps">
+              <li><strong>Driver app:</strong> The driver captures a photo and signature.</li>
+              <li><strong>Zoho WorkDrive:</strong> The proof is filed against the order.</li>
+              <li><strong>Zoho Books:</strong> The invoice is sent with the proof attached.<span class="sol-sync">Invoice status syncs back to the delivery.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every delivery has proof, and disputes close in minutes.</p>
+          </article>
+          <article class="sol-card" id="logistics-3">
+            <h3>Quotes for freight are slow</h3>
+            <p class="sol-problem"><span>The problem</span> Freight quotes are worked out by hand from rate sheets.</p>
+            <ol class="sol-steps">
+              <li><strong>Quote form:</strong> The customer enters origin, destination and load.</li>
+              <li><strong>Zoho Catalyst:</strong> A rate engine calculates the price.</li>
+              <li><strong>Zoho CRM:</strong> The quote is saved and sent.</li>
+              <li><strong>Zoho Sign:</strong> The customer accepts online.<span class="sol-sync">The booking syncs back to the quote.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Customers get a price in minutes instead of a day.</p>
+          </article>
+          <article class="sol-card" id="logistics-4">
+            <h3>Vehicle checks are on paper</h3>
+            <p class="sol-problem"><span>The problem</span> Daily vehicle checks are done on paper, so defects are not reported in time.</p>
+            <ol class="sol-steps">
+              <li><strong>Check app:</strong> Drivers complete the daily check on their phone.</li>
+              <li><strong>Zoho Creator:</strong> Defects open a repair job.</li>
+              <li><strong>Zoho Cliq:</strong> The fleet manager is alerted.</li>
+              <li><strong>Zoho Analytics:</strong> Defects and downtime by vehicle.<span class="sol-sync">Repair status syncs back to the vehicle.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Defects are fixed before they cause breakdowns.</p>
+          </article>
+          <article class="sol-card" id="logistics-5">
+            <h3>Carrier invoices are checked by hand</h3>
+            <p class="sol-problem"><span>The problem</span> Subcontractor invoices are checked line by line against deliveries.</p>
+            <ol class="sol-steps">
+              <li><strong>Invoice email:</strong> A carrier invoice arrives by email.</li>
+              <li><strong>AI layer:</strong> AI reads the invoice and matches it to deliveries.</li>
+              <li><strong>Zoho Books:</strong> Matched bills are recorded for payment.</li>
+              <li><strong>Zoho Cliq:</strong> Mismatches go to finance for review.<span class="sol-sync">The approved bill syncs back to the deliveries.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Carrier bills are checked automatically, and only exceptions need a person.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="construction">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Construction</p>
+          <h2>Construction: five problems Zoho solves</h2>
+          <p>Zoho handles site diaries, photos, variations, approvals and progress claims for builders and contractors.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="construction-1">
+            <h3>Site reports lost in chat groups</h3>
+            <p class="sol-problem"><span>The problem</span> Daily site reports, photos and variations are scattered across chat groups.</p>
+            <ol class="sol-steps">
+              <li><strong>Site diary app:</strong> Supervisors log progress, labour and issues daily.</li>
+              <li><strong>AI layer:</strong> AI turns the day&rsquo;s notes into a client-ready report.</li>
+              <li><strong>Zoho WorkDrive:</strong> Photos are filed by project and date.</li>
+              <li><strong>Zoho CRM:</strong> Variations are raised against the client&rsquo;s project.</li>
+              <li><strong>Zoho Sign:</strong> The client approves each variation online.<span class="sol-sync">The approval syncs back to the variation.</span></li>
+              <li><strong>Zoho Books:</strong> Progress claims include the approved variations.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every variation is approved and billed, with photos as evidence.</p>
+          </article>
+          <article class="sol-card" id="construction-2">
+            <h3>Subcontractor documents expire</h3>
+            <p class="sol-problem"><span>The problem</span> Insurance and licences of subcontractors expire without anyone noticing.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> Subcontractors upload their documents.</li>
+              <li><strong>Zoho Creator:</strong> Expiry dates are stored for each document.</li>
+              <li><strong>Deluge:</strong> Reminders go out 30 days before expiry.</li>
+              <li><strong>Zoho Cliq:</strong> Site managers are warned about expired documents.<span class="sol-sync">Renewed documents sync back to the record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> No one works on site without valid insurance and licences.</p>
+          </article>
+          <article class="sol-card" id="construction-3">
+            <h3>Tenders are put together in a rush</h3>
+            <p class="sol-problem"><span>The problem</span> Tender documents, prices and supplier quotes are collected at the last minute.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each tender is tracked with its deadline.</li>
+              <li><strong>Zoho Projects:</strong> Tasks are assigned for every section.</li>
+              <li><strong>Zoho WorkDrive:</strong> Drawings and quotes are kept in one folder.</li>
+              <li><strong>AI layer:</strong> AI checks the submission against the tender list.<span class="sol-sync">Submission status syncs back to the tender.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Tenders go in on time, complete and well priced.</p>
+          </article>
+          <article class="sol-card" id="construction-4">
+            <h3>Safety incidents are under-reported</h3>
+            <p class="sol-problem"><span>The problem</span> Near misses and incidents are reported on paper, if at all.</p>
+            <ol class="sol-steps">
+              <li><strong>Safety app:</strong> Anyone on site reports an incident in a minute.</li>
+              <li><strong>Zoho Creator:</strong> An investigation is opened with photos.</li>
+              <li><strong>Zoho Cliq:</strong> The safety officer is alerted at once.</li>
+              <li><strong>Zoho Analytics:</strong> Incidents by site and type.<span class="sol-sync">Corrective actions sync back to the incident.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More near misses are reported, and fixes are tracked.</p>
+          </article>
+          <article class="sol-card" id="construction-5">
+            <h3>Equipment hire is not tracked</h3>
+            <p class="sol-problem"><span>The problem</span> Hired equipment stays on site long after it is needed, and costs add up.</p>
+            <ol class="sol-steps">
+              <li><strong>Equipment app:</strong> Each hire is logged with its site and dates.</li>
+              <li><strong>Deluge:</strong> Overdue hires trigger a reminder.</li>
+              <li><strong>Zoho Cliq:</strong> The site manager confirms off-hire in one click.</li>
+              <li><strong>Zoho Books:</strong> Hire costs are charged to the right project.<span class="sol-sync">Off-hire dates sync back to the hire record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Equipment goes back on time, and hire costs fall.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="recruitment">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Recruitment &amp; HR</p>
+          <h2>Recruitment &amp; HR: five problems Zoho solves</h2>
+          <p>Zoho tracks candidates, interviews, offers and onboarding, so new joiners are ready from day one.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="recruitment-1">
+            <h3>Hiring tracked in spreadsheets</h3>
+            <p class="sol-problem"><span>The problem</span> Candidates, interviews and offers are tracked in sheets and long email threads.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> Candidates apply and upload their CV.</li>
+              <li><strong>AI layer:</strong> AI summarises each CV against the job requirements.</li>
+              <li><strong>Hiring pipeline:</strong> Each candidate moves from screening to offer.</li>
+              <li><strong>Zoho Cliq:</strong> Interviewers get reminders and send feedback.<span class="sol-sync">Feedback syncs back to the candidate.</span></li>
+              <li><strong>Zoho Sign:</strong> The offer letter is signed online.</li>
+              <li><strong>Zoho People:</strong> The new joiner&rsquo;s onboarding tasks start automatically.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every candidate is tracked, and new joiners are set up before day one.</p>
+          </article>
+          <article class="sol-card" id="recruitment-2">
+            <h3>Onboarding is a checklist on paper</h3>
+            <p class="sol-problem"><span>The problem</span> Laptops, accounts and paperwork for new joiners are arranged at the last minute.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho People:</strong> A new joiner is added with their start date.</li>
+              <li><strong>Deluge:</strong> Tasks go to IT, finance and the manager.</li>
+              <li><strong>Zoho One:</strong> Their user account and apps are set up.</li>
+              <li><strong>Zoho Sign:</strong> Contracts and policies are signed online.<span class="sol-sync">Signed documents sync back to the employee file.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> New joiners are fully set up on their first morning.</p>
+          </article>
+          <article class="sol-card" id="recruitment-3">
+            <h3>Leave and attendance in email</h3>
+            <p class="sol-problem"><span>The problem</span> Leave requests, approvals and balances are tracked by email and spreadsheets.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho People:</strong> Staff request leave in the app.</li>
+              <li><strong>Zoho Cliq:</strong> The manager approves in one click.</li>
+              <li><strong>Balances:</strong> Leave balances update automatically.<span class="sol-sync">The approval syncs back to the request.</span></li>
+              <li><strong>Zoho Analytics:</strong> Absence trends by team.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Everyone knows their balance, and approvals take minutes.</p>
+          </article>
+          <article class="sol-card" id="recruitment-4">
+            <h3>Agency placements are hard to track</h3>
+            <p class="sol-problem"><span>The problem</span> Recruitment agencies lose track of placements, invoices and guarantees.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> A placement is recorded with its fee and guarantee.</li>
+              <li><strong>Zoho Books:</strong> The placement invoice goes to the client.</li>
+              <li><strong>Deluge:</strong> Guarantee end dates trigger a check-in.</li>
+              <li><strong>Zoho Analytics:</strong> Fees and placements by consultant.<span class="sol-sync">Payment status syncs back to the placement.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every placement is billed, and guarantees are followed up.</p>
+          </article>
+          <article class="sol-card" id="recruitment-5">
+            <h3>Reviews happen once a year, if at all</h3>
+            <p class="sol-problem"><span>The problem</span> Performance reviews are late, inconsistent and stored in documents.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho People:</strong> Review cycles start automatically.</li>
+              <li><strong>AI layer:</strong> AI summarises feedback from the year.</li>
+              <li><strong>Review:</strong> Manager and employee agree goals.</li>
+              <li><strong>Zoho Analytics:</strong> Goal progress across teams.<span class="sol-sync">Agreed goals sync back to the employee record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Reviews happen on time, with clear goals for everyone.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Events &amp; hospitality</p>
+          <h2>Events &amp; hospitality: five problems Zoho solves</h2>
+          <p>Zoho manages invitations, registrations, payments, reminders and feedback for events and hospitality businesses.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="events-1">
+            <h3>Registrations and payments scattered</h3>
+            <p class="sol-problem"><span>The problem</span> Invitations, registrations, payments and reminders live in different tools.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Campaigns:</strong> Invitations go to the right segment of contacts.</li>
+              <li><strong>Zoho Forms:</strong> Guests register and choose their sessions.</li>
+              <li><strong>Zoho Books:</strong> A payment link confirms the ticket.<span class="sol-sync">Payment syncs back to the registration.</span></li>
+              <li><strong>Zoho CRM:</strong> Each attendee is added with their event history.</li>
+              <li><strong>AI layer:</strong> AI writes a personal agenda for each attendee.</li>
+              <li><strong>Reminders:</strong> Joining details go out the day before.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> One list of paid, confirmed attendees, with every reminder sent on time.</p>
+          </article>
+          <article class="sol-card" id="events-2">
+            <h3>Group bookings by email</h3>
+            <p class="sol-problem"><span>The problem</span> Group and corporate bookings are handled in long email threads.</p>
+            <ol class="sol-steps">
+              <li><strong>Booking page:</strong> The organiser requests dates and numbers.</li>
+              <li><strong>Zoho CRM:</strong> The enquiry becomes a quote.</li>
+              <li><strong>AI layer:</strong> AI drafts the proposal with rooms and menus.</li>
+              <li><strong>Zoho Sign:</strong> The organiser signs the booking.<span class="sol-sync">The confirmed booking syncs back to the deal.</span></li>
+              <li><strong>Zoho Books:</strong> The deposit invoice is sent.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Group bookings are quoted and confirmed in a day.</p>
+          </article>
+          <article class="sol-card" id="events-3">
+            <h3>Guest feedback arrives too late</h3>
+            <p class="sol-problem"><span>The problem</span> Complaints are only seen in online reviews, after the guest has left.</p>
+            <ol class="sol-steps">
+              <li><strong>During the stay:</strong> A short check-in message goes out.</li>
+              <li><strong>Zoho Forms:</strong> The guest rates their stay so far.</li>
+              <li><strong>Zoho Desk:</strong> Low scores create an urgent ticket.</li>
+              <li><strong>Zoho Cliq:</strong> The duty manager is alerted.<span class="sol-sync">The fix syncs back to the ticket.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Problems are fixed while guests are still there.</p>
+          </article>
+          <article class="sol-card" id="events-4">
+            <h3>Sponsors and exhibitors chased by email</h3>
+            <p class="sol-problem"><span>The problem</span> Sponsor packages, logos and payments are chased one email at a time.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each sponsor deal tracks its package.</li>
+              <li><strong>Sponsor portal:</strong> Sponsors upload logos and stand details.</li>
+              <li><strong>Zoho Books:</strong> Invoices follow the payment schedule.<span class="sol-sync">Payments sync back to the sponsor deal.</span></li>
+              <li><strong>Zoho Analytics:</strong> Sponsorship revenue by event.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Sponsors deliver on time, and every package is paid.</p>
+          </article>
+          <article class="sol-card" id="events-5">
+            <h3>Event check-in queues</h3>
+            <p class="sol-problem"><span>The problem</span> Paper lists at the door create long queues and no attendance data.</p>
+            <ol class="sol-steps">
+              <li><strong>Ticket email:</strong> Each guest gets a ticket with a QR code.</li>
+              <li><strong>Check-in app:</strong> Staff scan tickets at the door.</li>
+              <li><strong>Zoho CRM:</strong> Attendance is recorded on each contact.<span class="sol-sync">No-shows sync back for follow-up.</span></li>
+              <li><strong>Zoho Campaigns:</strong> Thank-you and next event emails go out.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Fast entry, and you know exactly who came.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="accounting">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Accounting firm</p>
+          <h2>Accounting firm: five problems Zoho solves</h2>
+          <p>Zoho collects client documents, assigns work, tracks deadlines and bills fees for accounting and bookkeeping firms.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="accounting-1">
+            <h3>Chasing clients for documents</h3>
+            <p class="sol-problem"><span>The problem</span> Every month the team chases clients for bank statements and bills by email.</p>
+            <ol class="sol-steps">
+              <li><strong>Monthly schedule:</strong> A document request goes to each client on the 1st.</li>
+              <li><strong>Client portal:</strong> Clients upload documents against a checklist.</li>
+              <li><strong>AI layer:</strong> AI reads each statement and bill and tags the data.</li>
+              <li><strong>Zoho WorkDrive:</strong> Files are filed by client and month.</li>
+              <li><strong>Zoho Projects:</strong> A task is created for the accountant.<span class="sol-sync">Checklist progress syncs back to the portal.</span></li>
+              <li><strong>Zoho Cliq:</strong> Missing documents are flagged before the deadline.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Documents arrive on time, filed in the right place, with no chasing.</p>
+          </article>
+          <article class="sol-card" id="accounting-2">
+            <h3>Filing deadlines are tracked in Excel</h3>
+            <p class="sol-problem"><span>The problem</span> Tax and compliance deadlines for every client are tracked in one big spreadsheet.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each client has their filing obligations.</li>
+              <li><strong>Deluge:</strong> Jobs are created ahead of each deadline.</li>
+              <li><strong>Zoho Projects:</strong> The job is assigned and tracked.</li>
+              <li><strong>Zoho Analytics:</strong> Upcoming and overdue work for the firm.<span class="sol-sync">Filed dates sync back to the client.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every deadline is visible, and nothing is filed late.</p>
+          </article>
+          <article class="sol-card" id="accounting-3">
+            <h3>New client onboarding is slow</h3>
+            <p class="sol-problem"><span>The problem</span> Engagement letters, ID checks and access to accounts take weeks.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> The new client completes an onboarding form.</li>
+              <li><strong>AI layer:</strong> AI checks the ID documents are complete.</li>
+              <li><strong>Zoho Sign:</strong> The engagement letter is signed online.</li>
+              <li><strong>Zoho CRM:</strong> The client is set up with their services.<span class="sol-sync">The signed letter syncs back to the client record.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> New clients are onboarded in days, not weeks.</p>
+          </article>
+          <article class="sol-card" id="accounting-4">
+            <h3>Fees are written off</h3>
+            <p class="sol-problem"><span>The problem</span> Time spent on each client is not compared with the fee charged.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Projects:</strong> The team logs time per client job.</li>
+              <li><strong>Zoho Books:</strong> Fees are invoiced per job.</li>
+              <li><strong>Zoho Analytics:</strong> Time against fee for every client.<span class="sol-sync">Billed amounts sync back to the job.</span></li>
+              <li><strong>AI layer:</strong> AI flags clients who need a fee review.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> You can see which clients are profitable and price accordingly.</p>
+          </article>
+          <article class="sol-card" id="accounting-5">
+            <h3>Client queries pile up</h3>
+            <p class="sol-problem"><span>The problem</span> Clients email questions to whoever they know, and answers are slow.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Mail:</strong> Queries arrive in a shared mailbox.</li>
+              <li><strong>Zoho Desk:</strong> Each query becomes a ticket for the right accountant.</li>
+              <li><strong>Zia:</strong> Zia suggests replies to common questions.</li>
+              <li><strong>Zoho CRM:</strong> The query is logged on the client.<span class="sol-sync">The answer syncs back to the client history.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Clients get quick answers, and every query is on record.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="nonprofit">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Nonprofit</p>
+          <h2>Nonprofit: five problems Zoho solves</h2>
+          <p>Zoho manages donors, receipts, volunteers, grants and impact reporting for charities and nonprofits.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="nonprofit-1">
+            <h3>Donors don&rsquo;t hear back</h3>
+            <p class="sol-problem"><span>The problem</span> Donations come in from several places, and thank-you notes go out late or not at all.</p>
+            <ol class="sol-steps">
+              <li><strong>Donation page:</strong> A donor gives online or at an event.</li>
+              <li><strong>Zoho Books:</strong> The receipt is issued automatically.</li>
+              <li><strong>Zoho CRM:</strong> The donor record shows every gift and contact.</li>
+              <li><strong>AI layer:</strong> AI writes a personal thank-you from the donor&rsquo;s history.</li>
+              <li><strong>Zoho Campaigns:</strong> Thank-you and impact updates go out on time.<span class="sol-sync">Opens and replies sync back to the donor record.</span></li>
+              <li><strong>Zoho Analytics:</strong> Giving by campaign, month and donor type.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every donor is thanked within a day, and repeat giving can be tracked.</p>
+          </article>
+          <article class="sol-card" id="nonprofit-2">
+            <h3>Volunteers organised by WhatsApp</h3>
+            <p class="sol-problem"><span>The problem</span> Volunteer rotas are managed in chat groups, and shifts go unfilled.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> Volunteers sign up with their availability.</li>
+              <li><strong>Rota app:</strong> Shifts are offered to available volunteers.</li>
+              <li><strong>Reminders:</strong> Volunteers get a reminder before each shift.</li>
+              <li><strong>Zoho Analytics:</strong> Volunteer hours by project.<span class="sol-sync">Attendance syncs back to the rota.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Shifts are filled, and volunteer hours are recorded for reports.</p>
+          </article>
+          <article class="sol-card" id="nonprofit-3">
+            <h3>Grant reports take weeks</h3>
+            <p class="sol-problem"><span>The problem</span> Grant reports are assembled by hand from several spreadsheets.</p>
+            <ol class="sol-steps">
+              <li><strong>Programme app:</strong> Activities and outcomes are recorded as they happen.</li>
+              <li><strong>Zoho Books:</strong> Spending is tagged to each grant.</li>
+              <li><strong>AI layer:</strong> AI drafts the report narrative from the data.</li>
+              <li><strong>Zoho Analytics:</strong> Outcomes and spend per grant.<span class="sol-sync">Report deadlines sync back to the programme.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Grant reports take hours, not weeks.</p>
+          </article>
+          <article class="sol-card" id="nonprofit-4">
+            <h3>Regular givers lapse unnoticed</h3>
+            <p class="sol-problem"><span>The problem</span> Monthly donors stop giving, and nobody notices for months.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Books:</strong> A recurring payment fails or stops.</li>
+              <li><strong>Zoho CRM:</strong> The donor is flagged as lapsing.</li>
+              <li><strong>AI layer:</strong> AI drafts a personal re-engagement message.</li>
+              <li><strong>Zoho Campaigns:</strong> The message goes out with a simple way to restart.<span class="sol-sync">Restarted gifts sync back to the donor.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More regular donors are kept, without manual checks.</p>
+          </article>
+          <article class="sol-card" id="nonprofit-5">
+            <h3>Event fundraising is hard to reconcile</h3>
+            <p class="sol-problem"><span>The problem</span> Ticket sales, auctions and donations at events are reconciled by hand.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> Guests register and buy tickets.</li>
+              <li><strong>Event app:</strong> Auction bids and donations are recorded on the night.</li>
+              <li><strong>Zoho Books:</strong> Payments and receipts are issued.</li>
+              <li><strong>Zoho CRM:</strong> Every guest&rsquo;s giving is recorded.<span class="sol-sync">Payment status syncs back to each pledge.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> The event total is known the same night, with every receipt sent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="lending">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Finance &amp; lending</p>
+          <h2>Finance &amp; lending: five problems Zoho solves</h2>
+          <p>Zoho moves applications through checks and approvals, collects documents and keeps every decision on record for lenders and brokers.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="lending-1">
+            <h3>Applications stuck between teams</h3>
+            <p class="sol-problem"><span>The problem</span> Loan applications bounce between sales, credit and operations with no clear owner.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Forms:</strong> The applicant applies and uploads documents.</li>
+              <li><strong>AI layer:</strong> AI extracts income and ID details from the documents.</li>
+              <li><strong>Zoho CRM:</strong> A Blueprint moves the file through each check.</li>
+              <li><strong>Zoho WorkDrive:</strong> Documents are stored securely with the file.</li>
+              <li><strong>Zoho Cliq:</strong> Approvers approve or reject in one click.<span class="sol-sync">The decision syncs back to the application.</span></li>
+              <li><strong>Zoho Sign:</strong> The agreement is signed online once approved.<span class="sol-sync">The signed agreement syncs back to the application.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Each application has one owner at every stage, and nothing stalls unseen.</p>
+          </article>
+          <article class="sol-card" id="lending-2">
+            <h3>Repayment reminders are manual</h3>
+            <p class="sol-problem"><span>The problem</span> Staff call customers by hand before every repayment date.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each loan stores its repayment schedule.</li>
+              <li><strong>Reminders:</strong> Reminders go out before each due date.</li>
+              <li><strong>Zoho Books:</strong> Payments are recorded as they arrive.</li>
+              <li><strong>Zoho Cliq:</strong> Missed payments alert the collections team.<span class="sol-sync">Payment status syncs back to the loan.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Fewer missed payments, and staff focus on real arrears.</p>
+          </article>
+          <article class="sol-card" id="lending-3">
+            <h3>Broker leads are not tracked</h3>
+            <p class="sol-problem"><span>The problem</span> Introducers send leads by email, and commissions are worked out by hand.</p>
+            <ol class="sol-steps">
+              <li><strong>Broker portal:</strong> Brokers submit leads and track their status.</li>
+              <li><strong>Zoho CRM:</strong> The lead is linked to the introducer.</li>
+              <li><strong>Zoho Books:</strong> Commission is calculated on completion.<span class="sol-sync">Commission status syncs back to the broker portal.</span></li>
+              <li><strong>Zoho Analytics:</strong> Leads and completions by broker.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Brokers see progress themselves, and commissions are paid correctly.</p>
+          </article>
+          <article class="sol-card" id="lending-4">
+            <h3>Compliance checks are not recorded</h3>
+            <p class="sol-problem"><span>The problem</span> Checks happen, but proof of them is scattered across emails.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Each check is a required step in the Blueprint.</li>
+              <li><strong>AI layer:</strong> AI checks the evidence is attached and complete.</li>
+              <li><strong>Zoho WorkDrive:</strong> Evidence is filed with the application.</li>
+              <li><strong>Zoho Analytics:</strong> An audit view of every check.<span class="sol-sync">Audit status syncs back to the application.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every check is recorded and ready for an audit.</p>
+          </article>
+          <article class="sol-card" id="lending-5">
+            <h3>Customers wait for a decision</h3>
+            <p class="sol-problem"><span>The problem</span> Applicants call to ask about progress while the file waits for one document.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> The application status changes.</li>
+              <li><strong>Deluge:</strong> The applicant is told what happens next.</li>
+              <li><strong>Applicant portal:</strong> Missing documents can be uploaded at once.<span class="sol-sync">Uploaded documents sync back to the application.</span></li>
+              <li><strong>Decision email:</strong> The decision is sent the moment it is made.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Applicants always know where they stand, and decisions come faster.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="marketing">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Marketing</p>
+          <h2>Marketing: five problems Zoho solves</h2>
+          <p>Zoho connects ads, website, email and CRM, so every campaign can be traced to the leads and revenue it brings.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="marketing-1">
+            <h3>No idea which ads bring sales</h3>
+            <p class="sol-problem"><span>The problem</span> Ad budgets are spent with no link between a campaign and the revenue it brings.</p>
+            <ol class="sol-steps">
+              <li><strong>Meta &amp; Google Ads:</strong> Every lead carries its campaign and keyword.</li>
+              <li><strong>Zoho CRM:</strong> The lead keeps its source as it becomes a deal.</li>
+              <li><strong>Zoho SalesIQ:</strong> Website visits are added to the lead&rsquo;s timeline.</li>
+              <li><strong>Zoho Books:</strong> Paid invoices are linked to the deal.<span class="sol-sync">Revenue syncs back to the deal and its campaign.</span></li>
+              <li><strong>AI layer:</strong> AI spots which campaigns bring paying customers.</li>
+              <li><strong>Zoho Analytics:</strong> Revenue by campaign, next to its cost.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> You see which campaigns pay for themselves, and move the budget there.</p>
+          </article>
+          <article class="sol-card" id="marketing-2">
+            <h3>Website visitors leave without a trace</h3>
+            <p class="sol-problem"><span>The problem</span> Most website visitors leave without anyone knowing who they were or what they wanted.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Sites:</strong> Visitors browse your pages.</li>
+              <li><strong>Zoho SalesIQ:</strong> Engaged visitors are invited to chat.</li>
+              <li><strong>AI layer:</strong> AI answers questions and books a call.</li>
+              <li><strong>Zoho CRM:</strong> The visitor becomes a lead with their pages viewed.<span class="sol-sync">The lead owner syncs back to the chat.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> More website visits turn into conversations and leads.</p>
+          </article>
+          <article class="sol-card" id="marketing-3">
+            <h3>Email lists are out of date</h3>
+            <p class="sol-problem"><span>The problem</span> Email lists are exported from the CRM by hand, so they are always stale.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Contacts are updated as sales works.</li>
+              <li><strong>Zoho Campaigns:</strong> Lists sync automatically with the CRM.</li>
+              <li><strong>AI layer:</strong> AI suggests segments and subject lines.</li>
+              <li><strong>Engagement:</strong> Opens and clicks appear on each contact.<span class="sol-sync">Engagement syncs back to the CRM contact.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every email goes to the right, current list.</p>
+          </article>
+          <article class="sol-card" id="marketing-4">
+            <h3>Webinar leads are never called</h3>
+            <p class="sol-problem"><span>The problem</span> Webinar sign-ups are exported to a spreadsheet and forgotten.</p>
+            <ol class="sol-steps">
+              <li><strong>Registration:</strong> Attendees register for the webinar.</li>
+              <li><strong>Zoho CRM:</strong> Attendance is recorded on each lead.</li>
+              <li><strong>AI layer:</strong> AI scores leads by questions asked.</li>
+              <li><strong>Zoho Cliq:</strong> Sales is told who to call first.<span class="sol-sync">Call outcomes sync back to the lead.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> The hottest webinar leads are called the same day.</p>
+          </article>
+          <article class="sol-card" id="marketing-5">
+            <h3>Content takes too long to produce</h3>
+            <p class="sol-problem"><span>The problem</span> Blog posts and social updates are written from scratch every week.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Projects:</strong> The content calendar is planned as tasks.</li>
+              <li><strong>AI layer:</strong> AI drafts posts from your notes and past content.</li>
+              <li><strong>Zoho WorkDrive:</strong> Drafts and images are reviewed in one place.</li>
+              <li><strong>Zoho Sites:</strong> Approved posts are published.<span class="sol-sync">Published status syncs back to the calendar.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Content goes out every week, with less writing time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="operations">
+      <div class="container">
+        <div class="section-header section-header--left">
+          <p class="section-label">Operations</p>
+          <h2>Operations: five problems Zoho solves</h2>
+          <p>Zoho replaces email approvals, paper forms and spreadsheets with apps, so internal work moves on its own.</p>
+        </div>
+        <div class="sol-grid">
+          <article class="sol-card" id="operations-1">
+            <h3>Approvals stuck in email</h3>
+            <p class="sol-problem"><span>The problem</span> Purchases, expenses and leave all need approval, and requests sit in inboxes.</p>
+            <ol class="sol-steps">
+              <li><strong>Request app:</strong> Staff raise a purchase, expense or leave request.</li>
+              <li><strong>AI layer:</strong> AI reads the receipt or quote and fills in the details.</li>
+              <li><strong>Deluge:</strong> Routing rules pick the right approver by amount.</li>
+              <li><strong>Zoho Cliq:</strong> The approver approves in one click from chat.<span class="sol-sync">The decision syncs back to the request.</span></li>
+              <li><strong>Zoho Books:</strong> Approved purchases become purchase orders.</li>
+              <li><strong>Zoho Analytics:</strong> Spend and approval times by team.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Requests are approved in hours instead of days, with a full audit trail.</p>
+          </article>
+          <article class="sol-card" id="operations-2">
+            <h3>Too many logins and tools</h3>
+            <p class="sol-problem"><span>The problem</span> Teams juggle a dozen separate tools that do not talk to each other.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho One:</strong> Everyone signs in once to every app.</li>
+              <li><strong>Zoho CRM:</strong> Sales, support and finance share one customer record.</li>
+              <li><strong>Zoho Flow:</strong> Your remaining tools are connected.</li>
+              <li><strong>Zoho Analytics:</strong> One dashboard across the business.<span class="sol-sync">Shared data syncs back into every app.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Fewer tools, one login and one version of the truth.</p>
+          </article>
+          <article class="sol-card" id="operations-3">
+            <h3>Assets and IT requests in email</h3>
+            <p class="sol-problem"><span>The problem</span> Laptops, licences and IT requests are tracked in a spreadsheet and an inbox.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Desk:</strong> Staff raise IT requests in one place.</li>
+              <li><strong>Asset register:</strong> Each device and licence is linked to a person.</li>
+              <li><strong>Zoho People:</strong> Leavers trigger a device return.<span class="sol-sync">Returned devices sync back to the register.</span></li>
+              <li><strong>Zoho Analytics:</strong> Requests and assets by team.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Every asset is accounted for, and IT requests are tracked.</p>
+          </article>
+          <article class="sol-card" id="operations-4">
+            <h3>Reports take a day to build</h3>
+            <p class="sol-problem"><span>The problem</span> Managers build weekly reports by hand from several systems.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho CRM:</strong> Sales data is ready.</li>
+              <li><strong>Zoho Books:</strong> Finance data is ready.</li>
+              <li><strong>Zoho Analytics:</strong> Both are combined in one dashboard.</li>
+              <li><strong>AI layer:</strong> AI writes the weekly summary.<span class="sol-sync">Comments sync back to the dashboard.</span></li>
+              <li><strong>Weekly email:</strong> The report lands in inboxes every Monday.</li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Weekly reports build themselves.</p>
+          </article>
+          <article class="sol-card" id="operations-5">
+            <h3>A custom process no app supports</h3>
+            <p class="sol-problem"><span>The problem</span> One important process does not fit any off-the-shelf app, so it runs on spreadsheets.</p>
+            <ol class="sol-steps">
+              <li><strong>Zoho Creator:</strong> A custom app is built around your exact process.</li>
+              <li><strong>Zoho Catalyst:</strong> Heavy logic runs in a custom backend.</li>
+              <li><strong>Zoho Flow:</strong> The app connects to your other systems.</li>
+              <li><strong>AI layer:</strong> AI handles the reading and sorting steps.</li>
+              <li><strong>Zoho Analytics:</strong> The process is measured end to end.<span class="sol-sync">Insights sync back to the app.</span></li>
+            </ol>
+            <p class="sol-result"><span>Result</span> Your unique process runs in a proper app, not a spreadsheet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container container--prose">
+        <div class="section-header section-header--left">
+          <p class="section-label">FAQs</p>
+          <h2>Zoho workflows: common questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>What is a Zoho integration layer?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>It is the set of connections that lets Zoho apps and your other systems pass data to each other: Deluge scripts, Zoho Flow, webhooks and APIs. When one app changes a record, the layer updates the others, so nobody copies data by hand.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>How does AI fit into a Zoho workflow?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>AI handles the steps that need reading or judgement: reading an order email or a document, scoring a lead, sorting tickets or drafting a reply. It can be Zoho Zia, or Claude and ChatGPT connected to your Zoho data through Zoho MCP. A person still approves anything important.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>What does "syncs back" mean?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Data flows in both directions. When a later step finishes, such as a signed contract or a paid invoice, its status is written back to the earlier record, such as the CRM deal, so everyone sees the current state in the app they use.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Are these real client projects?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No. They are example workflows that show what can be built with Zoho for each industry. Every project starts with your own process, so the apps and steps are chosen to fit how your business actually runs.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button type="button" class="faq-question" aria-expanded="false">
+              <span>Which Zoho apps do these workflows use?</span>
+              <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Zoho CRM, Creator, Books, Desk, Analytics, Flow, Forms, Sign, WorkDrive, Projects, People, Cliq, Campaigns, SalesIQ, Sites, Mail, Catalyst, ERP, Zia and Zoho One, together with Deluge scripts, APIs and an AI layer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <h2>Which of these problems sounds like yours?</h2>
+        <p>Tell us what you want to build or fix. We reply within one business day with next steps.</p>
+        <div class="btn-group justify-center">
+          <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
+          <a href="/contact/#contact-form" class="btn btn-outline-white btn-lg">Send Project Details</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- @footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="/Asset/brand/zudo-works-logo.svg" alt="Zudo Works logo" width="160" height="40"
+                    loading="lazy">
+                <p>Zoho Creator, Zoho CRM, Deluge and custom software development for businesses in the US, UK,
+                    Australia, New Zealand and India.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/zudo-works" aria-label="LinkedIn" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/zudoworks/" aria-label="Facebook" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/zudoworks/" aria-label="Instagram" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://x.com/zudoworks/" aria-label="X (Twitter)" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.reddit.com/user/zudoworks/" aria-label="Reddit" target="_blank"
+                        rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.56 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.56 12 8 12.56 8 13.25c0 .688.56 1.25 1.25 1.25.688 0 1.25-.562 1.25-1.25 0-.69-.562-1.25-1.25-1.25zm5.5 0c-.688 0-1.25.56-1.25 1.25 0 .688.56 1.25 1.25 1.25.69 0 1.25-.562 1.25-1.25 0-.69-.56-1.25-1.25-1.25zm-5.465 4.417a.36.36 0 0 0-.258.108.358.358 0 0 0 0 .513c.84.84 2.163.923 2.973.923.81 0 2.133-.083 2.973-.923a.361.361 0 0 0-.51-.513c-.65.65-1.613.738-2.463.738-.85 0-1.813-.088-2.463-.738a.356.356 0 0 0-.252-.108z" />
+                        </svg>
+                    </a>
+                    <a href="https://mastodon.social/@zudoworks" rel="me noopener noreferrer" aria-label="Mastodon"
+                        target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.268 5.313c-.35-2.228-2.618-3.053-5.308-3.15-2.147-.078-4.976-.078-4.976-.078s-2.829 0-4.976.078c-2.69.097-4.958.922-5.308 3.15-.4 2.556-.4 5.86-.4 5.86 0 5.036 3.256 6.565 7.14 6.88.942.078 2.51.025 3.127-.126.172-.042.324-.093.449-.153l-.085-1.928c-1.096.34-2.336.527-3.535.527-2.985 0-3.346-1.58-3.346-1.58-.04-1.206-.06-2.433-.06-2.433h13.52c.026.002.052.003.078.003 1.353 0 2.569-.344 3.219-.773.666-.439 1.15-1.26 1.405-2.26.255-1 .318-2.226.318-2.226 0 0 0-3.304-.4-5.86zM9.77 12.384V8.582c0-1.077.34-1.616 1.02-1.616.745 0 1.117.653 1.117 1.96v2.302h1.492V8.926c0-1.307.372-1.96 1.117-1.96.68 0 1.02.539 1.02 1.616v3.802h1.442V8.163c0-.98-.246-1.745-.738-2.292-.511-.571-1.223-.856-2.138-.856-1.073 0-1.856.406-2.35 1.218h-.037c-.494-.812-1.277-1.218-2.35-1.218-.915 0-1.627.285-2.138.856-.492.547-.738 1.312-.738 2.292v4.22h1.442z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC-HOpl5L1q6V881gCmeZdng" aria-label="YouTube Channel"
+                        target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Company</div>
+                <ul class="footer-links">
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/work/">Our Work</a></li>
+                    <li><a href="/pricing/">Pricing</a></li>
+                    <li><a href="/solutions/">Solutions by industry</a></li>
+                    <li><a href="/locations/">Locations</a></li>
+                    <li><a href="/insights/">Insights</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="/zoho-creator-development/">Zoho Creator</a></li>
+                    <li><a href="/zoho-crm-development/">Zoho CRM</a></li>
+                    <li><a href="/deluge-development/">Deluge Development</a></li>
+                    <li><a href="/zoho-integrations/">Zoho Integrations</a></li>
+                    <li><a href="/business-process-automation/">Business Automation</a></li>
+                    <li><a href="/custom-software-development/">Custom Software</a></li>
+                    <li><a href="/support-maintenance/">Support &amp; Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Find Us On</div>
+                <ul class="footer-links">
+                    <li><a href="https://clutch.co/profile/zudo-works" target="_blank" rel="noopener">Clutch</a></li>
+                    <li><a href="https://www.goodfirms.co/company/zudo-works" target="_blank"
+                            rel="noopener">GoodFirms</a></li>
+                    <li><a href="https://techbehemoths.com/company/zudo-works" target="_blank"
+                            rel="noopener">TechBehemoths</a></li>
+                    <li><a href="https://www.upwork.com/agencies/2105729046181633035" target="_blank"
+                            rel="noopener">Upwork</a></li>
+                </ul>
+                <p class="footer-badge"><a href="https://startupfa.me/s/zudo-works?utm_source=www.zudoworks.com" target="_blank" rel="noopener"><img src="https://startupfa.me/badges/featured-badge-small.webp" alt="Zudo Works - Featured on Startup Fame" width="224" height="36" loading="lazy" decoding="async"></a></p>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="mailto:admin@zudoworks.com">admin@zudoworks.com</a></li>
+                    <li><a href="https://wa.me/916384353382?text=Hi%20Zudo%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project."
+                            target="_blank" rel="noopener">WhatsApp us</a></li>
+                    <li class="only-in"><a href="tel:+916384353382">Call us</a></li>
+                    <li>Flat no.2, Plot no.1051, I-Block, 35th Street, 18th Main Road, Anna Nagar, Chennai 600040,
+                        India</li>
+                    <li>Serving <a href="/locations/united-states/">US</a> &middot; <a
+                            href="/locations/united-kingdom/">UK</a> &middot; <a
+                            href="/locations/australia/">Australia</a> &middot; <a href="/locations/new-zealand/">New
+                            Zealand</a> &middot; <a href="/locations/india/">India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <span class="footer-copy">&copy; 2026 Zudo Works. All rights reserved.</span>
+                <span class="footer-copy footer-copy--fine">Zudo Works is not affiliated with any similarly named
+                    company or brand, including Zodoworks and ZedWorks, in India or anywhere else. zudoworks.com is the
+                    official and only website of Zudo Works.</span>
+            </div>
+            <div class="footer-bottom-links">
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
+                <button type="button" class="footer-cookie-btn" onclick="zudoCookieSettings()">Cookie Settings</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Zoho Bookings dialog (embed script loads on first open) -->
+<div class="booking-modal" id="custom-bookings-modal" role="dialog" aria-modal="true"
+    aria-labelledby="booking-modal-title" hidden>
+    <div class="booking-modal-content">
+        <div class="booking-modal-header">
+            <h2 id="booking-modal-title">Book a discovery call</h2>
+            <button type="button" class="booking-modal-close" id="close-bookings-modal"
+                aria-label="Close booking window">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div id="inline-container" class="booking-modal-body"></div>
+        <p class="booking-modal-fallback">Calendar not loading?
+            <a href="https://zudocroporation.zohobookings.in/portal-embed#/471882000000032065" target="_blank"
+                rel="noopener">Open the booking page in a new tab</a>.
+        </p>
+    </div>
+</div>
+<script defer src="/js/site.js?v=746318d9d4"></script>
+    <!-- @/footer -->
+</body>
+
+</html>

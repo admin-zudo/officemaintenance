@@ -42,12 +42,13 @@
   --color-white:          #FFFFFF;
 
   /* ── Gradient Stops ──────────────────────────────────────── */
-  --gradient-primary:     linear-gradient(135deg, #226DB4 0%, #1B5A96 50%, #089949 100%);
-  --gradient-hero:        linear-gradient(135deg, #f8faff 0%, #f0f7ff 40%, #f4fbf7 100%);
-  --gradient-cta:         linear-gradient(135deg, #1B5A96 0%, #226DB4 40%, #2D7FCC 100%);
-  --gradient-section:     linear-gradient(180deg, var(--color-bg-light) 0%, var(--color-white) 100%);
-  --gradient-card-hover:  linear-gradient(135deg, rgba(34,109,180,0.03) 0%, rgba(8,153,73,0.03) 100%);
-  --gradient-text:        linear-gradient(135deg, #226DB4 0%, #089949 70%);
+  /* Flat colours: the site uses no gradients */
+  --gradient-primary:     #226DB4;
+  --gradient-hero:        #F8FAFC;
+  --gradient-cta:         #1B5A96;
+  --gradient-section:     var(--color-bg-light);
+  --gradient-card-hover:  rgba(34,109,180,0.03);
+  --gradient-text:        #226DB4;
 
   /* ── Glassmorphism ───────────────────────────────────────── */
   --glass-bg:             rgba(255, 255, 255, 0.7);

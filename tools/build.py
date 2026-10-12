@@ -29,8 +29,8 @@ SITE = 'https://zudoworks.com'
 SKIP_DIRS = {'.git', '.kilo', 'tools', 'Asset', 'css', 'js', 'node_modules'}
 
 CSS_SOURCES = ['variables', 'reset', 'base', 'components', 'hero', 'sections',
-               'responsive', 'cookie-consent', 'helpers', 'system', 'manufacturing']
-JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq', 'media']
+               'responsive', 'cookie-consent', 'helpers', 'system', 'manufacturing', 'home']
+JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'salesiq', 'media', 'home']
 
 # Pages that should not appear in the sitemap or get a canonical tag
 NOINDEX = {'/404.html'}
@@ -49,6 +49,7 @@ KEYWORDS = {
     '/business-process-automation/': 'business process automation, Zoho workflow automation, approval workflows, Zoho Flow, Deluge',
     '/custom-software-development/': 'custom software development, web application development, internal tools, Laravel, Node.js',
     '/support-maintenance/': 'Zoho support, Zoho maintenance, Zoho admin support, Zoho CRM support, Zoho retainer',
+    '/solutions/': 'Zoho solutions by industry, Zoho workflow examples, Zoho integration examples, Zoho automation use cases, Zoho AI workflows',
     '/pricing/': 'Zoho developer pricing, Zoho project estimator, Zoho implementation cost, Zoho project quote',
     '/work/': 'Zudo Works reviews, Zudo Works projects, Zoho project experience, Zoho case studies',
     '/about/': 'Zudo Works, about Zudo Works, Arunkumar V, Zoho Creator Master of Creator award, Zoho developers Chennai',
@@ -236,6 +237,9 @@ def main():
     footer_tpl = (read('tools/partials/footer.html')
                   .replace('{{JS_HASH}}', js_hash)
                   .replace('{{YEAR}}', str(datetime.date.today().year)))
+    # Shared blocks; their leading comment is for maintainers, not the page
+    explorer_tpl = re.sub(r'^<!--.*?-->\n', '', read('tools/partials/explorer.html'), flags=re.S)
+    stats_tpl = re.sub(r'^<!--.*?-->\n', '', read('tools/partials/stats.html'), flags=re.S)
 
     pages = find_pages()
     changed = 0
@@ -263,6 +267,10 @@ def main():
         html = add_twitter_text(html)
         html = replace_region(html, 'header', header, path)
         html = replace_region(html, 'footer', footer_tpl, path)
+        # Optional shared blocks: the scenario explorer and the team stats
+        for name, part in (('explorer', explorer_tpl), ('stats', stats_tpl)):
+            if f'<!-- @{name} -->' in html:
+                html = replace_region(html, name, part, path)
         html = re.sub(r'(<meta property="og:url" content=")[^"]*(")', lambda m: m.group(1) + SITE + route + m.group(2), html)
         if write_if_changed(path, html):
             changed += 1

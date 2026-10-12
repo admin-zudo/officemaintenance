@@ -905,7 +905,9 @@
   position: relative;
 }
 
-.page-hero p {
+/* Hero paragraphs only, not the paragraphs inside the scenario explorer */
+.page-hero .container > p,
+.page-hero .hero-split-copy > p {
   font-size: var(--text-md);
   color: var(--color-muted);
   max-width: 640px;

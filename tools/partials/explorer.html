@@ -1,0 +1,47 @@
+<!-- "See it working" explorer. Filled in by tools/build.py wherever a page has the @explorer markers;
+     js/home.js runs it. Flows come from /solutions/scenarios.json (tools/solutions/scenarios.py). -->
+<div class="fx" data-fx>
+    <div class="fx-head">
+        <p class="fx-kicker"><span class="live-dot" aria-hidden="true"></span>See it working<span class="fx-pausebar"><span class="fx-paused">Paused <span class="fx-secs" tabindex="0" data-fx-secs data-tip="5 seconds remaining" aria-label="5 seconds remaining">5s</span></span><button type="button" class="fx-resume" data-fx-resume>Resume <svg width="9" height="9" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4l14 8-14 8z"/></svg></button></span><a class="fx-all" href="/solutions/">All 90 workflows <span aria-hidden="true">&rarr;</span></a></p>
+        <div class="fx-titlebar">
+            <p class="fx-title">Pick a problem. Watch it get solved.</p>
+            <div class="fx-select fx-select--ind">
+                <button type="button" class="fx-ind-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="fx-ind-list">
+                    <span class="sr-only">Industry: </span><span data-fx-ind>Industry</span><svg class="fx-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <ul class="fx-list fx-ind-list" id="fx-ind-list" role="listbox" aria-label="Choose an industry" hidden></ul>
+            </div>
+        </div>
+        <div class="fx-pick">
+            <button type="button" class="fx-nav" data-dir="-1" aria-label="Previous scenario"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+            <div class="fx-select">
+                <button type="button" class="fx-trigger" aria-haspopup="listbox" aria-expanded="false" aria-controls="fx-list">
+                    <span class="fx-trigger-text" data-fx-short></span>
+                    <svg class="fx-chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <ul class="fx-list" id="fx-list" role="listbox" aria-label="Choose a problem" hidden></ul>
+            </div>
+            <button type="button" class="fx-nav" data-dir="1" aria-label="Next scenario"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+    </div>
+    <div class="fx-layers">
+        <div class="fx-layer fx-layer--problem">
+            <span class="fx-layer-label"><i aria-hidden="true"></i>Problem</span>
+            <p data-fx-problem></p>
+        </div>
+        <div class="fx-layer fx-layer--now fx-caption">
+            <span class="fx-layer-label"><i aria-hidden="true"></i>Happening now</span>
+            <div>
+                <p class="fx-cap-label" data-fx-label></p>
+                <p class="fx-cap-text" data-fx-text></p>
+                <p class="fx-cap-note" data-fx-note></p>
+            </div>
+        </div>
+        <div class="fx-layer fx-layer--solution">
+            <span class="fx-layer-label"><i aria-hidden="true"></i>Solution</span>
+            <p data-fx-solution></p>
+        </div>
+    </div>
+    <div class="fx-stage" data-fx-stage></div>
+    <span class="fx-progress" aria-hidden="true"><i data-fx-progress></i></span>
+</div>
