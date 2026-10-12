@@ -1638,12 +1638,36 @@
   box-shadow: 0 40px 80px -24px rgba(16, 24, 40, 0.5);
   overflow-y: auto;
   overscroll-behavior: contain;
-  scrollbar-width: none;
 }
 
-/* The dialog can still scroll on short screens, but no scroll bar is drawn */
+/* Firefox uses the standard properties; Chrome and Safari use the styled bar below
+   (Chrome ignores those styles whenever scrollbar-width is set, so keep it Firefox-only) */
+@supports (-moz-appearance: none) {
+  .lead-modal-content {
+    scrollbar-width: thin;
+    scrollbar-color: #0E9384 #F2F4F7;
+  }
+}
+
+/* Custom scroll bar: slim, rounded, in the brand green-to-blue, kept clear of the rounded corners */
 .lead-modal-content::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+
+.lead-modal-content::-webkit-scrollbar-track {
+  margin-block: 18px;
+  border-radius: 999px;
+  background-color: #F2F4F7;
+}
+
+.lead-modal-content::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background-color: #0E9384;
+  background-image: linear-gradient(180deg, #089949, #226DB4);
+}
+
+.lead-modal-content::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(180deg, #067A3B, #1B5A96);
 }
 
 .lead-modal-close {
@@ -1658,6 +1682,7 @@
   position: sticky;
   top: 0;
   align-self: start;
+  min-height: calc(100dvh - 2 * var(--space-4));
   padding: 32px 28px;
   border-right: 1px solid #EAECF0;
   background-color: #F9FAFB;
@@ -1772,6 +1797,7 @@
 
   .lead-modal-side {
     position: static;
+    min-height: 0;
     padding: 22px 20px 16px;
     border-right: 0;
     border-bottom: 1px solid #EAECF0;
@@ -1790,5 +1816,110 @@
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
+  }
+}
+
+/* ── Contact tab: fixed to the left edge, centred, on every page ── */
+.side-contact {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: calc(var(--z-navbar) - 2);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 11px 16px 9px;
+  border-radius: 0 14px 14px 0;
+  background-color: var(--color-secondary);
+  background-image: linear-gradient(200deg, #089949, #0E9384, #226DB4, #0E9384, #089949);
+  background-size: 100% 300%;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: 1.5px solid var(--color-accent-red);
+  border-left: 0;
+  writing-mode: vertical-rl;
+  transform: translate(-110%, -50%);
+  box-shadow: 0 10px 24px -8px rgba(15, 27, 45, 0.45);
+  animation:
+    side-contact-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) 1.2s forwards,
+    side-contact-hue 6s ease-in-out infinite,
+    side-contact-pulse 2.8s ease-out 2s infinite;
+  transition: padding 0.25s ease, box-shadow 0.25s ease;
+}
+
+.side-contact:hover,
+.side-contact:focus-visible {
+  padding-right: 15px;
+  color: #fff;
+  box-shadow: 0 14px 30px -8px rgba(15, 27, 45, 0.55);
+}
+
+.side-contact:focus-visible {
+  outline: 3px solid var(--color-accent-orange);
+  outline-offset: 2px;
+}
+
+.side-contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.side-contact:hover .side-contact-icon {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+@keyframes side-contact-in {
+  to { transform: translate(0, -50%); }
+}
+
+@keyframes side-contact-hue {
+  0%, 100% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+}
+
+@keyframes side-contact-pulse {
+  0% { box-shadow: 0 10px 24px -8px rgba(15, 27, 45, 0.45), 0 0 0 0 rgba(8, 153, 73, 0.45); }
+  70%, 100% { box-shadow: 0 10px 24px -8px rgba(15, 27, 45, 0.45), 0 0 0 10px rgba(8, 153, 73, 0); }
+}
+
+@media (max-width: 599px) {
+  .side-contact {
+    gap: 8px;
+    padding: 12px 8px 12px 6px;
+    font-size: 0.75rem;
+  }
+
+  .side-contact-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .side-contact-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .side-contact {
+    animation: none;
+    transform: translate(0, -50%);
+  }
+}
+
+@media print {
+  .side-contact {
+    display: none;
   }
 }

@@ -482,7 +482,8 @@ document.addEventListener('click', function (e) {
     document.body.style.overflow = 'hidden';
     if (window.dataLayer) {
       window.dataLayer.push({ event: 'project_form_open',
-        cta_location: lastTrigger ? (lastTrigger.closest('section, header, footer') || {}).id || '' : '' });
+        cta_location: lastTrigger ? lastTrigger.getAttribute('data-cta') ||
+          (lastTrigger.closest('section, header, footer') || {}).id || '' : '' });
     }
     closeBtn.focus();
   }
