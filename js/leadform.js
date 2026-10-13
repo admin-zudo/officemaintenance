@@ -130,7 +130,8 @@
       if (window.dataLayer) window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname });
       // Ad pixels (only present when cookie rules allow them): tell Meta and ChatGPT ads which visits became enquiries
       if (window.fbq) window.fbq('track', 'Lead', { content_name: location.pathname });
-      if (window.oaiq) window.oaiq('measure', 'lead_created', { type: 'customer_action' });
+      // The conversion set up in OpenAI Ads Manager (Tools > Conversions) uses this event
+      if (window.oaiq) window.oaiq('measure', 'registration_completed', { type: 'customer_action' });
     });
 
     function sending() {
