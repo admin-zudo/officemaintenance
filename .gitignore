@@ -2,3 +2,4 @@ __pycache__/
 
 # Intermediate images from tools/brochure/make_brochure.py
 tools/brochure/build/
+tools/ads/out/

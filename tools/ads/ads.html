@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Square ad images (800 x 800) for the manufacturing campaign. Rendered by tools/ads/make_ads.py.
+     Same rules as the site: no prices, no client claims, concept screens labelled as examples. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face { font-family: 'Inter'; font-weight: 400 800; src: url('/Asset/fonts/inter-latin.woff2') format('woff2'); }
+:root { --ink: #0F1B2D; --body: #3D4A5C; --muted: #6B7689; --line: #E3E8EF; --blue: #226DB4; --blue-bg: #EBF3FA;
+  --green: #089949; --green-bg: #E6F7EE; --red: #E42527; --amber: #F9B21D; --navy: #0E1E36; --sky: #7FB6EA; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; background: #888; }
+.ad { position: relative; width: 800px; height: 800px; overflow: hidden; margin-bottom: 20px; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logo img { width: 46px; height: 46px; }
+.logo span { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; }
+.bar { display: flex; gap: 5px; width: 92px; }
+.bar i { flex: 1; height: 6px; border-radius: 3px; }
+.bar i:nth-child(1) { background: var(--blue); } .bar i:nth-child(2) { background: var(--green); }
+.bar i:nth-child(3) { background: var(--red); } .bar i:nth-child(4) { background: var(--amber); }
+h1 { font-weight: 800; letter-spacing: -0.035em; line-height: 1.02; }
+h1 em { font-style: normal; color: var(--blue); }
+.pill { display: inline-flex; align-items: center; gap: 10px; padding: 10px 20px; border-radius: 99px; font-size: 22px; font-weight: 700; }
+.tag { position: absolute; padding: 5px 12px; border-radius: 99px; background: #FFF3D6; border: 1px solid #F1DFAE; color: #7A5200;
+  font-size: 15px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+
+/* A: headline over the concept dashboard */
+#a { background: #F3F7FC; padding: 56px; }
+#a h1 { margin-top: 34px; font-size: 64px; color: var(--ink); }
+#a .shot { position: absolute; left: 56px; right: -120px; bottom: -40px; height: 360px; border-radius: 22px; overflow: hidden;
+  border: 1px solid var(--line); box-shadow: 0 30px 60px -20px rgba(16,24,40,.35); }
+#a .shot img { width: 100%; height: 100%; object-fit: cover; object-position: left top; }
+#a .tag { left: 76px; bottom: 300px; z-index: 2; }
+
+/* B: one job moving through its stages */
+#b { background: var(--navy); color: #fff; padding: 56px; }
+#b .logo span { color: #fff; }
+#b h1 { margin-top: 40px; font-size: 70px; color: #fff; }
+#b h1 em { color: var(--sky); }
+#b .route { position: absolute; left: 56px; right: 56px; top: 410px; padding: 30px 30px 26px; border-radius: 24px; background: #fff; color: var(--ink); }
+#b .route-h { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 26px; }
+#b .route-h b { font-family: Consolas, monospace; font-size: 22px; }
+#b .route-h span { font-size: 16px; font-weight: 700; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
+#b ol { display: flex; list-style: none; }
+#b li { position: relative; flex: 1; padding-top: 30px; text-align: center; font-size: 17px; font-weight: 600; color: var(--muted); }
+#b li::before { content: ""; position: absolute; top: 9px; left: -50%; width: 100%; height: 4px; background: var(--line); }
+#b li:first-child::before { display: none; }
+#b li::after { content: ""; position: absolute; top: 0; left: 50%; width: 22px; height: 22px; margin-left: -11px; border-radius: 50%; border: 4px solid #D0D5DD; background: #fff; }
+#b li.done { color: var(--ink); }
+#b li.done::before, #b li.now::before { background: var(--green); }
+#b li.done::after { border-color: var(--green); background: var(--green); }
+#b li.now { color: var(--blue); font-weight: 800; }
+#b li.now::after { border-color: var(--blue); box-shadow: 0 0 0 7px rgba(34,109,180,.18); }
+#b .foot { position: absolute; left: 56px; right: 56px; bottom: 50px; display: flex; justify-content: space-between; align-items: center; }
+#b .foot .pill { background: var(--green); color: #fff; }
+#b .foot small { font-size: 20px; color: #C9D5E6; font-weight: 600; }
+
+/* C: from a tangle to one connected system */
+#c { background: #fff; padding: 56px; }
+#c h1 { margin-top: 32px; font-size: 58px; color: var(--ink); }
+#c .shot { position: absolute; left: 56px; right: 56px; bottom: 56px; height: 400px; border-radius: 22px; overflow: hidden;
+  border: 1px solid var(--line); background: #FCFCFD; box-shadow: 0 30px 60px -24px rgba(16,24,40,.3); }
+#c .shot img { width: 100%; height: 100%; object-fit: cover; object-position: center 72%; }
+#c .tag { right: 76px; bottom: 76px; }
+</style>
+</head>
+<body>
+
+<section class="ad" id="a">
+  <div class="logo"><img src="/Asset/brand/zudo-works-logo.svg" alt=""><span>Zudo Works</span></div>
+  <h1>Manufacturing software built around <em>how your factory runs</em></h1>
+  <div class="shot"><img src="/tools/brochure/build/ops.png" alt=""></div>
+  <span class="tag">Example screen</span>
+</section>
+
+<section class="ad" id="b">
+  <div class="logo"><img src="/Asset/brand/zudo-works-logo.svg" alt=""><span>Zudo Works</span></div>
+  <h1>Know where <em>every job</em> is. Live.</h1>
+  <div class="route">
+    <div class="route-h"><b>JOB-1042</b><span>Example</span></div>
+    <ol><li class="done">Order</li><li class="done">Cut</li><li class="done">Weld</li><li class="now">Paint</li><li>QC</li><li>Dispatch</li><li>Invoice</li></ol>
+  </div>
+  <div class="foot"><span class="pill">Built on Zoho</span><small>zudoworks.com</small></div>
+</section>
+
+<section class="ad" id="c">
+  <div class="logo"><img src="/Asset/brand/zudo-works-logo.svg" alt=""><span>Zudo Works</span></div>
+  <h1>From spreadsheets to <em>one connected system</em></h1>
+  <div class="shot"><img src="/tools/brochure/build/explorer.png" alt=""></div>
+  <span class="tag">Example workflow</span>
+</section>
+
+</body>
+</html>

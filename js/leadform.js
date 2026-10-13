@@ -28,8 +28,12 @@
     var m = location.search.match(/[?&]gclid=([^&]+)/);
     if (m) sessionStorage.setItem('zw_gclid', decodeURIComponent(m[1]));
     gclid = sessionStorage.getItem('zw_gclid') || '';
-    if (/[?&](utm_[a-z]+|gclid|fbclid|msclkid)=/.test(location.search) && !sessionStorage.getItem('zw_landing')) {
-      sessionStorage.setItem('zw_landing', location.href.split('#')[0]);
+    // Untagged links (an ad whose URL can't be edited, a post, an email) still show the site they came from
+    var ref = document.referrer;
+    var fromOutside = ref && ref.indexOf(location.origin) !== 0;
+    var tagged = /[?&](utm_[a-z]+|gclid|fbclid|msclkid)=/.test(location.search);
+    if ((tagged || fromOutside) && !sessionStorage.getItem('zw_landing')) {
+      sessionStorage.setItem('zw_landing', location.href.split('#')[0] + (fromOutside ? ' (from ' + ref.split('/').slice(0, 3).join('/') + ')' : ''));
     }
     landing = sessionStorage.getItem('zw_landing') || '';
   } catch (e) { }
