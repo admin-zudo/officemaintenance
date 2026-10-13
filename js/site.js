@@ -299,7 +299,7 @@ document.addEventListener('click', function (e) {
   }
 
   // OpenAI's ads pixel is installed in <head> (tools/partials/head.html) as OpenAI supplies it;
-  // here we only switch its consent on or off. js/leadform.js sends "lead_created" for each enquiry.
+  // here we only switch its consent on or off. js/leadform.js sends "registration_completed" for each enquiry.
   function openAIConsent(on) {
     if (window.oaiq) window.oaiq('consent', on);
   }
