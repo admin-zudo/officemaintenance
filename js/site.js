@@ -227,8 +227,9 @@ document.addEventListener('click', function (e) {
    Stores the visitor's choice in localStorage for 365 days and
    applies it to Google Consent Mode v2 (defaults are set inline
    in each page <head>).
-   Zoho PageSense (enquiry and visit analytics) and the Meta Pixel
-   (measuring our Meta ads; js/leadform.js sends its Lead event) load:
+   Zoho PageSense (enquiry and visit analytics), the Meta Pixel and
+   the OpenAI ads pixel (measuring our Meta and ChatGPT ads;
+   js/leadform.js sends their lead events) load:
    - after "Accept", everywhere;
    - before any choice, only outside the UK/EEA/Switzerland
      (detected from the device time zone), mirroring the
@@ -297,9 +298,16 @@ document.addEventListener('click', function (e) {
     window.fbq('track', 'PageView');
   }
 
+  // OpenAI's ads pixel is installed in <head> (tools/partials/head.html) as OpenAI supplies it;
+  // here we only switch its consent on or off. js/leadform.js sends "lead_created" for each enquiry.
+  function openAIConsent(on) {
+    if (window.oaiq) window.oaiq('consent', on);
+  }
+
   function loadTrackers() {
     loadPageSense();
     loadMetaPixel();
+    openAIConsent(true);
   }
 
   function applyConsent(value) {
@@ -309,7 +317,10 @@ document.addEventListener('click', function (e) {
       window.gtag('consent', 'update', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
     }
     if (granted) loadTrackers();
-    else if (window.fbq) window.fbq('consent', 'revoke');
+    else {
+      if (window.fbq) window.fbq('consent', 'revoke');
+      openAIConsent(false);
+    }
   }
 
   function setConsent(value) {
@@ -340,7 +351,7 @@ document.addEventListener('click', function (e) {
       '    <button type="button" id="cookie-decline">Essential Only</button>',
       '  </div>',
       '  <div class="cookie-text">',
-      '    <p>We use essential cookies to run this site. With your consent we also use analytics and advertising cookies (Google Analytics, Zoho PageSense and the Meta Pixel) to understand how the site is used and to measure our ads. Where the law requires it, they stay off until you accept. See our <a href="/privacy/">Privacy Policy</a>.</p>',
+      '    <p>We use essential cookies to run this site. With your consent we also use analytics and advertising cookies (Google Analytics, Zoho PageSense, and the Meta and OpenAI ad pixels) to understand how the site is used and to measure our ads. Where the law requires it, they stay off until you accept. See our <a href="/privacy/">Privacy Policy</a>.</p>',
       '  </div>',
       '</div>'
     ].join('');
@@ -643,8 +654,9 @@ document.addEventListener('click', function (e) {
       success.setAttribute('tabindex', '-1');
       success.focus();
       if (window.dataLayer) window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname });
-      // Meta Pixel (only present when cookie rules allow it): tells Meta ads which visits became enquiries
+      // Ad pixels (only present when cookie rules allow them): tell Meta and ChatGPT ads which visits became enquiries
       if (window.fbq) window.fbq('track', 'Lead', { content_name: location.pathname });
+      if (window.oaiq) window.oaiq('measure', 'lead_created', { type: 'customer_action' });
     });
 
     function sending() {

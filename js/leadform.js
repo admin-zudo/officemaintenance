@@ -128,8 +128,9 @@
       success.setAttribute('tabindex', '-1');
       success.focus();
       if (window.dataLayer) window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname });
-      // Meta Pixel (only present when cookie rules allow it): tells Meta ads which visits became enquiries
+      // Ad pixels (only present when cookie rules allow them): tell Meta and ChatGPT ads which visits became enquiries
       if (window.fbq) window.fbq('track', 'Lead', { content_name: location.pathname });
+      if (window.oaiq) window.oaiq('measure', 'lead_created', { type: 'customer_action' });
     });
 
     function sending() {

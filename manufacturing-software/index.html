@@ -5,6 +5,16 @@
     <!-- @head -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- OpenAI ads pixel (ChatGPT ads), exactly as supplied by OpenAI Ads Manager. Keep it unchanged and once per page. -->
+    <script>!function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");oaiq("init",{pixelId:"G1hhfai5MNVtW2VmibGSL9",debug:true});</script>
+    <!-- Its consent switch: off in the UK/EEA/CH until "Accept All", and after "Essential Only" anywhere (js/cookie-consent.js
+         turns it on when accepted). It must come after the snippet: anything defining oaiq earlier stops the snippet loading. -->
+    <script>
+        try {
+            var zo = localStorage.getItem('zudo_cookie_consent');
+            if (zo === 'declined' || (zo !== 'accepted' && /^(Europe|Atlantic\/(Reykjavik|Canary|Madeira|Azores|Faroe))\//.test(Intl.DateTimeFormat().resolvedOptions().timeZone || ''))) oaiq('consent', false);
+        } catch (e) { }
+    </script>
     <script>
         document.documentElement.classList.add('js');
         /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
@@ -1448,7 +1458,7 @@
         </div>
     </div>
 </div>
-<script defer src="/js/site.js?v=657c7d9cac"></script>
+<script defer src="/js/site.js?v=1eecb6f131"></script>
     <!-- @/footer -->
 </body>
 
