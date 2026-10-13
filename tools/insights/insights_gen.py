@@ -360,7 +360,7 @@ def index_page():
     <section class="cta-banner">
       <div class="container">
         <h2>Have a Zoho question we haven&rsquo;t covered?</h2>
-        <p>Ask us directly. We reply within one business day.</p>
+        <p>Ask us directly. We reply within 6 hours.</p>
         <div class="btn-group justify-center">
           <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
           <a href="/contact/#contact-form" class="btn btn-outline-white btn-lg">Send a Question</a>

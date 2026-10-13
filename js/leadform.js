@@ -5,6 +5,9 @@
    Without JavaScript the form posts normally and Zoho redirects
    to /thank-you/. Also fills the referrer (the page the lead came
    from), the Google Ads click id, and a sensible service area.
+   The brochure downloads beside the submit button need a valid
+   name and email; a download also sends the enquiry, noting
+   which file was taken.
    ============================================================ */
 
 (function () {
@@ -15,6 +18,7 @@
 
   var EMAIL = /^[\w]([\w\-.+&'/]*)@([a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,22}$/;
   var PHONE = /^[+]{0,1}[()0-9-. ]+$/;
+  var FILES = { brochure_pdf: 'PDF brochure', deck_pptx: 'PowerPoint deck' };
 
   // Google Ads click id, kept for the session so a later enquiry still carries it
   var gclid = '';
@@ -51,11 +55,34 @@
     msg.textContent = bad ? msg.getAttribute('data-msg') || '' : '';
   }
 
+  // Checks the given fields, shows their errors and focuses the first bad one
+  function valid(fields) {
+    var firstBad = null;
+    fields.forEach(function (f) {
+      var bad = !check(f);
+      showError(f, bad);
+      if (bad && !firstBad) firstBad = f;
+    });
+    if (firstBad) firstBad.focus();
+    return !firstBad;
+  }
+
+  function track(a) {
+    if (window.dataLayer) window.dataLayer.push({ event: 'brochure_download', file_name: a.getAttribute('data-download'), form_location: location.pathname });
+  }
+
+  // Downloads in the thank-you message (outside a form) are always allowed
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-download]');
+    if (a && !a.closest('[data-lead-form]')) track(a);
+  });
+
   forms.forEach(function (form, i) {
     var success = form.nextElementSibling;
     var submit = form.querySelector('.lead-submit');
     var status = form.querySelector('.lead-form-status');
     var fields = Array.prototype.slice.call(form.querySelectorAll('[data-check]'));
+    var needed = [form.elements.SingleLine, form.elements.Email];
 
     form.elements.zf_referrer_name.value = location.href.split('#')[0].slice(0, 1800);
     form.elements.zc_gad.value = gclid;
@@ -68,6 +95,7 @@
       f.addEventListener('blur', function () { if (f.value) showError(f, !check(f)); });
       f.addEventListener('input', function () {
         if (f.closest('.lead-field').classList.contains('is-invalid')) showError(f, !check(f));
+        if (!sent && status.textContent && needed.every(check)) status.textContent = '';
       });
     });
 
@@ -91,18 +119,7 @@
       if (window.dataLayer) window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname });
     });
 
-    form.addEventListener('submit', function (e) {
-      var firstBad = null;
-      fields.forEach(function (f) {
-        var bad = !check(f);
-        showError(f, bad);
-        if (bad && !firstBad) firstBad = f;
-      });
-      if (firstBad) {
-        e.preventDefault();
-        firstBad.focus();
-        return;
-      }
+    function sending() {
       sent = true;
       submit.disabled = true;
       submit.classList.add('is-sending');
@@ -117,6 +134,37 @@
         submit.querySelector('.lead-submit-text').textContent = 'Submit';
         status.textContent = 'That took too long. Please try again, or email admin@zudoworks.com.';
       }, 20000);
+    }
+
+    form.addEventListener('submit', function (e) {
+      if (!valid(fields)) {
+        e.preventDefault();
+        return;
+      }
+      sending();
+    });
+
+    // Brochure downloads: name and email first; then the file starts and the enquiry is sent with a note
+    form.querySelectorAll('[data-download]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var file = FILES[a.getAttribute('data-download')];
+        if (sent) return;
+        if (!valid(needed)) {
+          e.preventDefault();
+          status.textContent = 'Please enter your name and email to download the ' + file + '.';
+          return;
+        }
+        if (!valid(fields)) {
+          e.preventDefault();
+          return;
+        }
+        var note = form.elements.MultiLine;
+        var line = '[Downloaded the ' + file + ']';
+        if (note.value.indexOf(line) < 0) note.value = (note.value ? note.value + '\n\n' : '') + line;
+        track(a);
+        // Let the browser start the download first, then post the enquiry
+        setTimeout(function () { sending(); form.submit(); }, 50);
+      });
     });
   });
 })();

@@ -168,7 +168,7 @@
             <h2 id="project-form-title">Tell us what you need built or fixed</h2>
             <p class="lead-modal-intro">A few details are enough to get started. We read every enquiry ourselves.</p>
             <ol class="lead-modal-steps">
-                <li><span>1</span><div><strong>We reply within one business day</strong> with questions or times for a call.</div></li>
+                <li><span>1</span><div><strong>We reply within 6 hours, guaranteed,</strong> with questions or times for a call.</div></li>
                 <li><span>2</span><div><strong>A discovery call</strong> about how the work flows today.</div></li>
                 <li><span>3</span><div><strong>A written proposal</strong> with scope, timeline and cost before any work starts.</div></li>
             </ol>
@@ -181,6 +181,29 @@
         <div class="lead-modal-form">
             <!-- @leadform -->
             <!-- @/leadform -->
+        </div>
+    </div>
+</div>
+<!-- Brochure reader: page images from tools/brochure/make_brochure.py, opened by [data-brochure-view] -->
+<div class="booking-modal bv" id="brochure-viewer" role="dialog" aria-modal="true" aria-labelledby="bv-title"
+    data-pages="12" hidden>
+    <div class="bv-content">
+        <div class="bv-head">
+            <div>
+                <h2 id="bv-title">Zudo Works company brochure</h2>
+                <p class="bv-meta"><span data-bv-count>Page 1 of 12</span> &middot; Use the arrow keys or swipe</p>
+            </div>
+            <button type="button" class="booking-modal-close bv-close" data-bv-close aria-label="Close brochure"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg></button>
+        </div>
+        <div class="bv-stage">
+            <button type="button" class="bv-nav bv-nav--prev" data-bv-dir="-1" aria-label="Previous page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+            <img data-bv-img src="" alt="" width="1100" height="1556">
+            <button type="button" class="bv-nav bv-nav--next" data-bv-dir="1" aria-label="Next page"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+        </div>
+        <div class="bv-thumbs" data-bv-thumbs aria-label="Pages"></div>
+        <div class="bv-foot">
+            <p>Want a copy? Enter your name and email in the project form to download the PDF or PowerPoint.</p>
+            <a href="/contact/#contact-form" class="btn btn-lead" data-project-form data-cta="brochure-viewer" data-bv-close>Get the brochure</a>
         </div>
     </div>
 </div>

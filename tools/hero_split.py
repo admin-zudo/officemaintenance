@@ -58,7 +58,7 @@ PANELS = {
         'Zoho licences in your own name, so you own the account and the data',
     ]), f'<a class="hero-panel-link" href="#calculator">Estimate my project {ARROW}</a>'),
     'contact': ('What happens next', 'ol', 'hero-panel-steps', _steps([
-        ('We reply within one business day,', 'with a few questions or times for a call.'),
+        ('We reply within 6 hours,', 'with a few questions or times for a call.'),
         ('A discovery call', 'about how the work flows today and what has to change.'),
         ('A written proposal', 'with scope, timeline and cost, before any work starts.'),
     ]), '<p class="hero-panel-note">Prefer email? <a href="mailto:admin@zudoworks.com">admin@zudoworks.com</a></p>'),

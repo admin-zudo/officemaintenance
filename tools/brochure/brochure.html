@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- Zudo Works company brochure (12 A4 pages). Rendered to /Asset/brochure/zudo-works-brochure.pdf by
+     tools/brochure/make_brochure.py, which fills the {{...}} placeholders. Keep every claim verifiable:
+     no prices, no client names or results, no partner claim. Example workflows are labelled as examples. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zudo Works Company Brochure</title>
+<meta name="author" content="Zudo Works">
+<style>
+@font-face { font-family: 'Inter'; font-weight: 400 700; src: url('/Asset/fonts/inter-latin.woff2') format('woff2'); }
+@page { size: A4; margin: 0; }
+:root {
+  --ink: #0F1B2D; --body: #3D4A5C; --muted: #6B7689; --line: #E3E8EF; --soft: #F4F7FB;
+  --blue: #226DB4; --blue-dk: #1B5A96; --blue-bg: #EBF3FA; --green: #089949; --green-bg: #E6F7EE;
+  --red: #E42527; --amber: #F9B21D; --amber-bg: #FDF3E1; --navy: #0E1E36;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: var(--body); font-size: 9.5pt; line-height: 1.5;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3, h4 { margin: 0; color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+
+.page { position: relative; width: 210mm; height: 297mm; padding: 15mm 16mm 16mm; overflow: hidden;
+  page-break-after: always; break-after: page; background: #fff; display: flex; flex-direction: column; }
+.page:last-child { page-break-after: auto; break-after: auto; }
+
+/* Running head and foot */
+.run { display: flex; justify-content: space-between; align-items: center; padding-bottom: 5mm; margin-bottom: 9mm;
+  border-bottom: 1px solid var(--line); font-size: 7.5pt; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+.run b { color: var(--ink); letter-spacing: 0.04em; display: inline-flex; align-items: center; gap: 6px; text-transform: none; font-size: 9pt; }
+.run b img { width: 16px; height: 16px; }
+.foot { position: absolute; left: 16mm; right: 16mm; bottom: 9mm; display: flex; justify-content: space-between;
+  font-size: 7.5pt; color: var(--muted); }
+.foot .n { color: var(--ink); font-weight: 700; }
+.bar { display: flex; gap: 3px; width: 64px; }
+.bar i { flex: 1; height: 4px; border-radius: 2px; }
+.bar i:nth-child(1) { background: var(--blue); } .bar i:nth-child(2) { background: var(--green); }
+.bar i:nth-child(3) { background: var(--red); } .bar i:nth-child(4) { background: var(--amber); }
+
+.kicker { color: var(--blue); font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 3mm; }
+.title { font-size: 27pt; font-weight: 700; letter-spacing: -0.03em; max-width: 150mm; }
+.title em { font-style: normal; color: var(--blue); }
+.lead { font-size: 11pt; line-height: 1.55; color: var(--body); max-width: 150mm; margin-top: 4mm; }
+.note { font-size: 7.5pt; color: var(--muted); }
+.chip { display: inline-block; padding: 2px 9px; border-radius: 99px; background: var(--blue-bg); color: var(--blue-dk);
+  font-size: 7pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.card { border: 1px solid var(--line); border-radius: 14px; padding: 6mm; background: #fff; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+.ico { width: 30px; height: 30px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center;
+  background: var(--blue-bg); color: var(--blue); margin-bottom: 3mm; }
+.ico svg { width: 16px; height: 16px; }
+.check li { position: relative; padding-left: 18px; margin-top: 2mm; }
+.check li::before { content: ""; position: absolute; left: 0; top: 2px; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--green-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23089949' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center / 8px no-repeat; }
+
+/* ── 1 Cover ── */
+.cover { background: #F3F7FC; padding: 16mm; }
+.cover-top { display: flex; justify-content: space-between; align-items: center; }
+.cover-logo { display: flex; align-items: center; gap: 10px; }
+.cover-logo img { width: 44px; height: 44px; }
+.cover-logo span { display: block; color: var(--ink); font-size: 17pt; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.cover-logo small { display: block; color: var(--muted); font-size: 6.5pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.cover-tag { font-size: 8pt; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; }
+.cover h1 { margin-top: 24mm; font-size: 40pt; line-height: 1.04; letter-spacing: -0.035em; max-width: 165mm; }
+.cover h1 em { font-style: normal; color: var(--blue); }
+.cover .lead { font-size: 12pt; margin-top: 7mm; max-width: 140mm; }
+.cover-art { position: absolute; left: 0; right: 0; bottom: 30mm; height: 125mm; }
+.cover-art img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.cover-bottom { position: absolute; left: 16mm; right: 16mm; bottom: 12mm; display: flex; justify-content: space-between; align-items: flex-end; }
+.cover-pills { display: flex; flex-wrap: wrap; gap: 5px; max-width: 130mm; }
+.cover-pills span { padding: 4px 10px; border-radius: 99px; background: #fff; border: 1px solid var(--line); color: var(--ink); font-size: 7.5pt; font-weight: 600; }
+.cover-url { text-align: right; font-size: 10pt; color: var(--ink); font-weight: 700; }
+.cover-url small { display: block; color: var(--muted); font-weight: 500; font-size: 7.5pt; }
+
+/* ── 2 Who we are ── */
+.mv { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; margin-top: 8mm; }
+.mv .card { padding: 7mm; }
+.mv .card:first-child { border-top: 3px solid var(--blue); }
+.mv .card:last-child { border-top: 3px solid var(--green); }
+.mv h3 { font-size: 13pt; margin-bottom: 2mm; }
+.mv p { color: var(--ink); font-size: 10.5pt; line-height: 1.55; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 8mm; border: 1px solid var(--line); border-radius: 14px; }
+.stats div { padding: 6mm 5mm; }
+.stats div + div { border-left: 1px solid var(--line); }
+.stats b { display: block; color: var(--ink); font-size: 24pt; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+.stats span { display: block; margin-top: 1.5mm; color: var(--muted); font-size: 8pt; line-height: 1.35; }
+.values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; margin-top: 8mm; }
+.values h4 { font-size: 10.5pt; margin-bottom: 1.5mm; }
+.values p { font-size: 8.5pt; color: var(--muted); }
+.values > div { padding-top: 4mm; border-top: 2px solid var(--ink); }
+.reach { margin-top: auto; margin-bottom: 8mm; display: flex; gap: 6mm; align-items: center; padding: 6mm; border-radius: 14px; background: var(--soft); }
+.reach strong { color: var(--ink); font-size: 10.5pt; }
+.flags { display: flex; flex-wrap: wrap; gap: 5px; }
+.flags span { padding: 3px 9px; border-radius: 99px; background: #fff; border: 1px solid var(--line); color: var(--ink); font-size: 7.5pt; font-weight: 600; }
+
+/* ── 3 Problems ── */
+.probs { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; margin-top: 9mm; }
+.probs .card { display: flex; gap: 4mm; padding: 6mm; }
+.probs .num { flex: none; width: 30px; height: 30px; border-radius: 9px; background: var(--amber-bg); color: #B07508;
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 10pt; }
+.probs h3 { font-size: 11pt; margin-bottom: 1.5mm; }
+.probs p { font-size: 8.5pt; color: var(--muted); }
+.quote { margin-top: auto; margin-bottom: 8mm; padding: 8mm 9mm; border-radius: 16px; background: var(--navy); color: #C9D5E6; }
+.quote p { color: #fff; font-size: 15pt; font-weight: 600; line-height: 1.35; letter-spacing: -0.01em; }
+.quote p em { font-style: normal; color: #7FB6EA; }
+.quote small { display: block; margin-top: 3mm; font-size: 8pt; }
+
+/* ── 4 Services ── */
+.svc { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 8mm; }
+.svc .card { padding: 5.5mm 6mm; }
+.svc h3 { font-size: 11pt; margin-bottom: 1.5mm; }
+.svc p { font-size: 8.5pt; color: var(--muted); }
+.svc .wide { grid-column: 1 / -1; display: grid; grid-template-columns: auto 1fr; gap: 5mm; align-items: center; background: var(--blue-bg); border-color: #CFE0F1; }
+.svc .wide .ico { margin: 0; background: #fff; }
+
+/* ── 5 Connected ── */
+.conn { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 7mm; margin-top: 8mm; align-items: start; }
+.shot { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 12px 30px -14px rgba(16,24,40,.35); }
+.layers li { padding: 4mm 0; border-top: 1px solid var(--line); }
+.layers li:first-child { border-top: 0; padding-top: 0; }
+.layers b { display: block; color: var(--ink); font-size: 10.5pt; margin-bottom: 1mm; }
+.layers span { font-size: 8.5pt; color: var(--muted); }
+.logos { margin-top: auto; margin-bottom: 8mm; }
+.logos img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+
+/* ── 6 Industries ── */
+.inds { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6mm; }
+.inds span { padding: 4px 10px; border-radius: 99px; background: var(--soft); border: 1px solid var(--line); color: var(--ink); font-size: 8pt; font-weight: 600; }
+.flows { display: grid; gap: 3.5mm; margin-top: 6mm; }
+.flow { border: 1px solid var(--line); border-radius: 14px; padding: 4.5mm 6mm; }
+.flow-h { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; margin-bottom: 1.5mm; }
+.flow h3 { font-size: 11pt; }
+.flow > p { font-size: 8.5pt; color: var(--muted); }
+.steps { display: flex; flex-wrap: wrap; gap: 4px 0; margin-top: 2.5mm; align-items: center; }
+.steps span { padding: 3px 9px; border-radius: 8px; background: #fff; border: 1px solid #D6DEE8; color: var(--ink); font-size: 7.5pt; font-weight: 600; }
+.steps span.ai { background: var(--navy); border-color: var(--navy); color: #fff; }
+.steps i { width: 12px; height: 1.5px; background: #B7C3D3; }
+.flow .res { margin-top: 2mm; font-size: 8.5pt; color: var(--green); font-weight: 600; }
+
+/* ── 7 Manufacturing ── */
+.mods { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3.5mm; margin-top: 7mm; }
+.mods .card { padding: 4.5mm; }
+.mods h3 { font-size: 9.5pt; margin: 2mm 0 1mm; }
+.mods p { font-size: 7.5pt; color: var(--muted); line-height: 1.45; }
+.fig { margin-top: 7mm; }
+.fig img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+.fig figcaption { margin-top: 2.5mm; font-size: 7.5pt; color: var(--muted); }
+.badge { display: inline-block; margin-right: 5px; padding: 1px 7px; border-radius: 99px; background: #FFF3D6; border: 1px solid #F1DFAE; color: #7A5200; font-size: 6.5pt; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; }
+
+/* ── 8 Process ── */
+.proc { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5mm; margin-top: 10mm; position: relative; }
+.proc::before { content: ""; position: absolute; top: 17px; left: 18px; right: 18%; height: 2px; background: var(--line); }
+.proc li { position: relative; }
+.proc .dot { position: relative; width: 36px; height: 36px; border-radius: 50%; border: 2px solid var(--blue); background: #fff; color: var(--blue);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 11pt; margin-bottom: 4mm; }
+.proc li:last-child .dot { background: var(--green); border-color: var(--green); color: #fff; }
+.proc h3 { font-size: 11pt; margin-bottom: 1.5mm; }
+.proc p { font-size: 8.5pt; color: var(--muted); }
+.incl { margin-top: 11mm; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 7mm; align-items: start; }
+.incl .card { background: var(--soft); border: 0; padding: 7mm; }
+.incl h3 { font-size: 13pt; margin-bottom: 2mm; }
+.incl .check li { font-size: 9pt; color: var(--ink); margin-top: 3mm; }
+.lanes { margin-top: auto; margin-bottom: 8mm; }
+.lanes img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+
+/* ── 9 Approach ── */
+.appr { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 6mm; }
+.appr .card { padding: 4.5mm 5.5mm; }
+.appr .card h3 { font-size: 11pt; margin-bottom: 1.5mm; }
+.appr .card p { font-size: 8.5pt; color: var(--muted); }
+.stack { margin-top: 5.5mm; }
+.stack h3 { font-size: 11pt; margin-bottom: 3mm; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tags span { padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line); background: #fff; color: var(--ink); font-size: 8pt; font-weight: 600; }
+.tags.z span { background: var(--blue-bg); border-color: #CFE0F1; color: var(--blue-dk); }
+.ai-box { margin-top: auto; margin-bottom: 9mm; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 6mm; align-items: center; padding: 6mm; border-radius: 16px; background: var(--navy); color: #C9D5E6; }
+.ai-box h3 { color: #fff; font-size: 14pt; margin-bottom: 2mm; }
+.ai-box p { font-size: 8.5pt; }
+.ai-box img { border-radius: 10px; }
+
+/* ── 10 Team ── */
+.lead-card { display: grid; grid-template-columns: 58mm 1fr; gap: 8mm; margin-top: 8mm; align-items: start; }
+.lead-card .photo { border-radius: 16px; overflow: hidden; aspect-ratio: 1; }
+.lead-card .photo img { width: 100%; height: 100%; object-fit: cover; }
+.lead-card h3 { font-size: 18pt; }
+.lead-card .role { color: var(--blue); font-weight: 700; font-size: 9.5pt; margin: 1mm 0 4mm; }
+.award { display: flex; gap: 5mm; align-items: center; margin-top: 5mm; padding: 4.5mm; border-radius: 12px; border: 1px solid #F1DFAE; background: #FFFAEE; }
+.award img { width: 22mm; border-radius: 4px; border: 1px solid #EADCB6; }
+.award b { color: var(--ink); display: block; font-size: 10pt; }
+.award span { font-size: 8pt; color: var(--muted); }
+.team-pts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; margin-top: 9mm; }
+.team-pts > div { padding-top: 4mm; border-top: 2px solid var(--blue); }
+.team-pts h4 { font-size: 10.5pt; margin-bottom: 1.5mm; }
+.team-pts p { font-size: 8.5pt; color: var(--muted); }
+.worked { margin-top: auto; margin-bottom: 8mm; padding: 6mm; border-radius: 14px; background: var(--soft); }
+.worked h3 { font-size: 11pt; margin-bottom: 3mm; }
+
+/* ── 11 Working together ── */
+.eng { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; margin-top: 8mm; }
+.eng .card h3 { font-size: 11pt; margin-bottom: 1.5mm; }
+.eng .card p { font-size: 8.5pt; color: var(--muted); }
+.faq { margin-top: 9mm; }
+.faq > h3 { font-size: 13pt; margin-bottom: 2mm; }
+.faq dl { margin: 0; }
+.faq dt { color: var(--ink); font-weight: 700; font-size: 10pt; margin-top: 4.5mm; }
+.faq dd { margin: 1mm 0 0; font-size: 8.8pt; color: var(--body); padding-bottom: 4.5mm; border-bottom: 1px solid var(--line); }
+
+/* ── 12 Back cover ── */
+.back { background: var(--navy); color: #C9D5E6; padding: 18mm 16mm; }
+.back .kicker { color: #7FB6EA; }
+.back h2 { color: #fff; font-size: 34pt; line-height: 1.06; letter-spacing: -0.03em; max-width: 160mm; }
+.back .lead { color: #C9D5E6; }
+.back-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; margin-top: 11mm; }
+.back-steps > div { padding: 6mm; border-radius: 14px; background: #16294A; }
+.back-steps b { display: flex; width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: #fff; align-items: center; justify-content: center; font-size: 10pt; margin-bottom: 3mm; }
+.back-steps h4 { color: #fff; font-size: 10.5pt; margin-bottom: 1mm; }
+.back-steps p { font-size: 8.5pt; }
+.contact { display: grid; grid-template-columns: 1fr auto; gap: 8mm; align-items: center; margin-top: 12mm; padding: 8mm; border-radius: 18px; background: #fff; color: var(--body); }
+.contact dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 3mm 8mm; }
+.contact dt { color: var(--muted); font-size: 8pt; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; padding-top: 1px; }
+.contact dd { margin: 0; color: var(--ink); font-size: 11pt; font-weight: 600; }
+.contact .qr { text-align: center; font-size: 7.5pt; color: var(--muted); }
+.contact .qr img { width: 34mm; height: 34mm; margin-bottom: 1.5mm; }
+.back-art { position: absolute; right: -20mm; bottom: 22mm; width: 120mm; opacity: 0.18; }
+.find { margin-top: 10mm; }
+.find p { color: #7FB6EA; font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 3mm; }
+.find div { display: flex; flex-wrap: wrap; gap: 6px; }
+.find span { padding: 5px 12px; border-radius: 99px; border: 1px solid #2A4068; color: #fff; font-size: 8.5pt; font-weight: 600; }
+.back-foot { position: absolute; left: 16mm; right: 16mm; bottom: 10mm; display: flex; justify-content: space-between; align-items: center; font-size: 7pt; color: #8597B2; }
+.back-foot .cover-logo span { color: #fff; font-size: 12pt; }
+.back-foot .cover-logo img { width: 28px; height: 28px; }
+</style>
+</head>
+<body>
+
+<!-- 1 · Cover -->
+<section class="page cover">
+  <div class="cover-top">
+    <div class="cover-logo"><img src="/Asset/brand/zudo-works-logo.svg" alt=""><div><span>Zudo Works</span><small>Zoho &amp; custom software development</small></div></div>
+    <div class="cover-tag">Company brochure &middot; {{YEAR}}</div>
+  </div>
+  <div class="bar" style="margin-top:20mm"><i></i><i></i><i></i><i></i></div>
+  <h1 style="margin-top:6mm">Zoho and custom software, built around <em>how your business actually runs</em></h1>
+  <p class="lead">We design, build and connect business systems on Zoho, and write the custom software when Zoho is not the right tool. You talk to the engineers who build it.</p>
+  <div class="cover-art"><img src="{{IMG_HANDSHAKE}}" alt=""></div>
+  <div class="cover-bottom">
+    <div class="cover-pills"><span>Zoho Creator</span><span>Zoho CRM</span><span>Deluge</span><span>Integrations</span><span>AI automation</span><span>Manufacturing</span><span>Custom software</span></div>
+    <div class="cover-url">zudoworks.com<small>US &middot; UK &middot; Australia &middot; New Zealand &middot; Middle East &middot; India</small></div>
+  </div>
+</section>
+
+<!-- 2 · Who we are -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>01 &middot; Who we are</span></div>
+  <p class="kicker">Who we are</p>
+  <h2 class="title">Engineers who build on <em>Zoho</em> every day</h2>
+  <p class="lead">Zudo Works is a Zoho and custom software development company based in Chennai, India. We replace manual processes with automated workflows, connect systems that don&rsquo;t talk to each other, and build custom software when an off-the-shelf product can&rsquo;t do the job. The people who scope your project are the people who build it.</p>
+  <div class="mv">
+    <div class="card"><p class="kicker">Our mission</p><p>To give growing businesses software that fits how they actually work: Zoho where it fits, custom code where it earns its place, built by the engineers they talk to, and owned by them.</p></div>
+    <div class="card"><p class="kicker" style="color:var(--green)">Our vision</p><p>Every growing business running on one connected system, so its people spend their time on customers and craft instead of retyping and chasing.</p></div>
+  </div>
+  <div class="stats">
+    <div><b>20+</b><span>Projects our team has worked on</span></div>
+    <div><b>10+</b><span>Client businesses supported</span></div>
+    <div><b>40+</b><span>Zoho products used</span></div>
+    <div><b>1 month</b><span>Free support and onboarding after every build</span></div>
+  </div>
+  <p class="note" style="margin-top:2.5mm">Figures cover our team members&rsquo; project experience, much of it as developers at a previous organization.</p>
+  <div class="values">
+    <div><h4>Honest scope</h4><p>We say what Zoho will not do before a project, not during it.</p></div>
+    <div><h4>Built to be owned</h4><p>Licences, data and documentation stay in your name.</p></div>
+    <div><h4>We stay after launch</h4><p>One month of free support and onboarding on every build, then optional monthly support.</p></div>
+  </div>
+  <div class="reach"><strong>Working with</strong><div class="flags"><span>United States</span><span>United Kingdom</span><span>Australia</span><span>New Zealand</span><span>Middle East</span><span>India</span></div></div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">02 / 12</span></div>
+</section>
+
+<!-- 3 · Problems -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>02 &middot; Where we help</span></div>
+  <p class="kicker">Where we help</p>
+  <h2 class="title">The problems we are usually <em>called in to fix</em></h2>
+  <p class="lead">Most growing businesses already have the software. What they lack is one system where every record is entered once and trusted by everyone.</p>
+  <div class="probs">
+    <div class="card"><span class="num">1</span><div><h3>Spreadsheets are running the business</h3><p>Orders, approvals and job tracking live in shared sheets that break as soon as the team grows.</p></div></div>
+    <div class="card"><span class="num">2</span><div><h3>The CRM is set up, but nobody trusts it</h3><p>Duplicate records, skipped stages and reports that don&rsquo;t match what the sales team says.</p></div></div>
+    <div class="card"><span class="num">3</span><div><h3>Systems that don&rsquo;t talk to each other</h3><p>People re-key the same customer and order data between CRM, accounting and e-commerce.</p></div></div>
+    <div class="card"><span class="num">4</span><div><h3>A Zoho app that grew without a plan</h3><p>Creator apps and Deluge scripts that only one person understands, and nobody dares change.</p></div></div>
+    <div class="card"><span class="num">5</span><div><h3>Follow-ups depend on someone remembering</h3><p>Reminders, invoices, approvals and hand-offs that should happen automatically, but don&rsquo;t.</p></div></div>
+    <div class="card"><span class="num">6</span><div><h3>Off-the-shelf software almost fits</h3><p>One critical workflow that no product supports without awkward workarounds.</p></div></div>
+  </div>
+  <div class="quote"><p>We start from <em>how your business actually runs</em>, then choose the technology. Never the other way round.</p><small>Every engagement begins with your process, not a product.</small></div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">03 / 12</span></div>
+</section>
+
+<!-- 4 · Services -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>03 &middot; What we build</span></div>
+  <p class="kicker">What we build</p>
+  <h2 class="title">Seven services, <em>one connected system</em></h2>
+  <p class="lead">These are the pieces we usually put together. Each one is useful on its own, and all of them are designed to work as one.</p>
+  <div class="svc">
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><h3>Zoho Creator development</h3><p>Custom applications on Zoho Creator: data models, forms, client portals, dashboards and Deluge workflows, documented so your team can own them.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></span><h3>Zoho CRM implementation</h3><p>Pipelines and blueprints that match how you sell, custom modules, data migration from spreadsheets or another CRM, and training.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 4l-4 16"/></svg></span><h3>Deluge development</h3><p>Functions, scheduled jobs, custom buttons and API calls across Zoho CRM, Creator and Books, plus reviews and fixes for scripts you already have.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span><h3>Zoho integrations</h3><p>Connect Zoho with accounting, e-commerce, payment gateways and your own systems using REST APIs, webhooks, Zoho Flow or custom middleware.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></span><h3>Business process automation</h3><p>We map the process first, then remove the manual steps across sales, finance and operations, with AI where it is checkable.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><h3>Custom software</h3><p>Web applications, internal tools and dashboards for the cases where Zoho is the wrong tool, built to integrate with what you already run.</p></div>
+    <div class="card wide"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><h3>Support and maintenance</h3><p>Every build includes one month of free support and onboarding after launch. After that, optional monthly support keeps your system healthy: fixes, small changes, new users and Zoho updates.</p></div></div>
+  </div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">04 / 12</span></div>
+</section>
+
+<!-- 5 · Connected -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>04 &middot; How it connects</span></div>
+  <p class="kicker">How it connects</p>
+  <h2 class="title">From a tangle of tools to <em>one integration and AI layer</em></h2>
+  <p class="lead">Most businesses run a knot of apps and spreadsheets wired together by hand. We put one layer in the middle, so every app plugs in once and data flows, and syncs back, on its own.</p>
+  <div class="conn">
+    <div class="shot"><img src="{{IMG_EXPLORER}}" alt="Scenario explorer: an example workflow running across Zoho apps"></div>
+    <ol class="layers">
+      <li><b>1 &middot; Untangle</b><span>We map every app, sheet and hand-off, and decide which system owns which record.</span></li>
+      <li><b>2 &middot; Connect</b><span>Deluge, Zoho Flow and APIs link each app to the layer once, instead of to every other app.</span></li>
+      <li><b>3 &middot; Add AI where it is checkable</b><span>Zoho Zia, or Claude and ChatGPT through Zoho MCP, read documents and draft records. A person approves.</span></li>
+      <li><b>4 &middot; Sync back</b><span>Status, invoices and payments flow back to the record that started the work, so everyone sees it live.</span></li>
+    </ol>
+  </div>
+  <p class="note" style="margin-top:3mm">Shown: an example workflow from our interactive explorer at zudoworks.com/solutions. Example flows show what can be built; they are not client case studies.</p>
+  <div class="logos"><p class="kicker" style="margin-bottom:2.5mm">Zoho products we work with</p><img src="{{IMG_LOGOS}}" alt="Zoho product logos"></div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">05 / 12</span></div>
+</section>
+
+<!-- 6 · Industries -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>05 &middot; Solutions by industry</span></div>
+  <p class="kicker">Solutions by industry</p>
+  <h2 class="title"><em>90 example workflows</em> across 18 industries</h2>
+  <p class="lead">Five common problems per industry, each solved on Zoho with integrations and AI. Four are shown here; explore all of them at zudoworks.com/solutions.</p>
+  <div class="inds">{{INDUSTRIES}}</div>
+  <div class="flows">{{FLOWS}}</div>
+  <p class="note" style="margin-top:auto;margin-bottom:8mm">Example workflows that show what can be built. They are not client case studies and contain no client data or results.</p>
+  <div class="foot"><span>zudoworks.com</span><span class="n">06 / 12</span></div>
+</section>
+
+<!-- 7 · Manufacturing -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>06 &middot; Spotlight: manufacturing</span></div>
+  <p class="kicker">Spotlight &middot; Manufacturing</p>
+  <h2 class="title">Manufacturing software built around <em>how your factory runs</em></h2>
+  <p class="lead">For make-to-order, job-shop and batch manufacturers: every job, stock move and quality check recorded once, by the person doing the work.</p>
+  <div class="mods">
+    <div class="card"><span class="chip">Creator</span><h3>Job and production tracking</h3><p>Operators tap or scan each stage done; the office sees it live.</p></div>
+    <div class="card"><span class="chip">Inventory</span><h3>Inventory you can trust</h3><p>Stock moves posted as they happen, against the job.</p></div>
+    <div class="card"><span class="chip">Inventory &middot; Books</span><h3>Purchasing and reorder points</h3><p>Reorder levels from real usage and lead times.</p></div>
+    <div class="card"><span class="chip">Creator</span><h3>Quality, NCR and CAPA</h3><p>Defects at the station with photos, an owner and a fix.</p></div>
+    <div class="card"><span class="chip">Creator &middot; Inventory</span><h3>Batch and lot traceability</h3><p>Answer a recall question in minutes, not days.</p></div>
+    <div class="card"><span class="chip">CRM &middot; Accounts</span><h3>Sales to production to accounts</h3><p>A won quote creates the work order; shipping creates the invoice.</p></div>
+    <div class="card"><span class="chip">Analytics</span><h3>Dashboards and KPIs</h3><p>On-time delivery, WIP, scrap and quoted against actual cost.</p></div>
+    <div class="card"><span class="chip">Zia &middot; MCP</span><h3>AI order intake</h3><p>Purchase orders read into draft records, approved by a person.</p></div>
+  </div>
+  <figure class="fig" style="margin-left:0;margin-right:0"><img src="{{IMG_OPS}}" alt="Concept daily operations dashboard"><figcaption><span class="badge">Concept screen</span>Example data. It shows the kind of daily view we design, built last, from records the earlier steps create.</figcaption></figure>
+  <p class="note" style="margin-top:auto;margin-bottom:8mm">Honest about fit: the standard Zoho apps do not include full MRP. If you need it, a manufacturing ERP is the better core, and we say so up front. More at zudoworks.com/manufacturing-software.</p>
+  <div class="foot"><span>zudoworks.com</span><span class="n">07 / 12</span></div>
+</section>
+
+<!-- 8 · Process -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>07 &middot; How a project runs</span></div>
+  <p class="kicker">How a project runs</p>
+  <h2 class="title">From first call to a <em>working system</em></h2>
+  <p class="lead">One process at a time. Each step ends with something your team can use, so the project proves itself as it goes.</p>
+  <ol class="proc">
+    <li><span class="dot">1</span><h3>Understand first</h3><p>We follow real work from start to finish and note every retyping, hand-off and question.</p></li>
+    <li><span class="dot">2</span><h3>Agree a first step</h3><p>A written proposal with scope, timeline and cost before any work starts.</p></li>
+    <li><span class="dot">3</span><h3>Build and trial</h3><p>Built in stages with regular demos, and changed in response to the people using it.</p></li>
+    <li><span class="dot">4</span><h3>Launch and stay</h3><p>Training, documentation and one month of free support and onboarding after launch.</p></li>
+  </ol>
+  <div class="incl">
+    <div><h3 style="font-size:15pt">Every project includes</h3><p style="margin-top:2mm;color:var(--muted)">The same commitments, whatever the size of the build.</p></div>
+    <div class="card"><ul class="check">
+      <li>A written proposal with scope, timeline and cost before any work starts</li>
+      <li>Design, build and testing in stages, with regular demos</li>
+      <li>Documentation your team can maintain</li>
+      <li>Training for administrators and users</li>
+      <li>One month of free support and onboarding after launch</li>
+      <li>Zoho licences in your own name, so you own the account and the data</li>
+    </ul></div>
+  </div>
+  <figure class="lanes" style="margin-left:0;margin-right:0"><img src="{{IMG_LANES}}" alt="Swimlane of a connected operation across office, stores, shop floor and quality"></figure>
+  <div class="foot"><span>zudoworks.com</span><span class="n">08 / 12</span></div>
+</section>
+
+<!-- 9 · Approach -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>08 &middot; Our approach</span></div>
+  <p class="kicker">Our approach</p>
+  <h2 class="title">Zoho first. <em>Custom code when it earns its place.</em></h2>
+  <p class="lead">Our team has hands-on experience across 15+ core Zoho applications and 25+ other Zoho products. When a project needs more than Zoho offers, we write the custom code, APIs or middleware ourselves.</p>
+  <div class="appr">
+    <div class="card"><h3>Design to fit</h3><p>The system fits your business, not the other way around. Every customisation has a clear reason, and nothing is built that a standard feature already does well.</p></div>
+    <div class="card"><h3>Build reliably</h3><p>Iterative builds, testing before go-live, documentation and clean deployments, so the system keeps working after the people who built it move on.</p></div>
+    <div class="card"><h3>Keep what works</h3><p>If your accounting package or core system works, we keep it and integrate with it rather than replacing it.</p></div>
+    <div class="card"><h3>You own everything</h3><p>Zoho licences and data in your name, with documentation your own team can maintain.</p></div>
+  </div>
+  <div class="stack"><h3>Zoho platform</h3><div class="tags z"><span>Zoho Creator</span><span>Zoho CRM</span><span>Zoho One</span><span>Zoho Books</span><span>Zoho Inventory</span><span>Zoho Analytics</span><span>Zoho Flow</span><span>Zoho Desk</span><span>Zoho Catalyst</span><span>Zoho Projects</span><span>Zoho Forms</span><span>Zoho Sign</span><span>Zoho Cliq</span><span>Deluge</span></div></div>
+  <div class="stack"><h3>Custom development</h3><div class="tags"><span>PHP</span><span>Laravel</span><span>Node.js</span><span>JavaScript</span><span>HTML and CSS</span><span>WordPress</span><span>SQL</span><span>REST APIs</span><span>Webhooks</span><span>Middleware</span></div></div>
+  <div class="ai-box"><div><p class="kicker" style="color:#7FB6EA">AI, used carefully</p><h3>Give AI the right access, one level at a time</h3><p>We connect Zoho Zia, or Claude and ChatGPT through Zoho MCP, to narrow, checkable jobs: reading documents, drafting records and answering questions about your own data. A person always approves the result.</p></div><img src="{{IMG_MCP}}" alt="Zoho MCP permission levels"></div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">09 / 12</span></div>
+</section>
+
+<!-- 10 · Team -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>09 &middot; Who you will work with</span></div>
+  <p class="kicker">Who you will work with</p>
+  <h2 class="title">You talk to the <em>people who build it</em></h2>
+  <p class="lead">No account managers in between. Technical decisions on every project are made by an engineer who builds on Zoho every day.</p>
+  <div class="lead-card">
+    <div class="photo"><img src="{{IMG_CTO}}" alt="Arunkumar V"></div>
+    <div>
+      <h3>Arunkumar V</h3>
+      <p class="role">Chief Technology Officer</p>
+      <ul class="check">
+        <li>Leads Zoho Creator, Deluge and integration work at Zudo Works</li>
+        <li>Developer on Zoho, analytics and custom software projects in six countries</li>
+        <li>Works across Zoho Creator, CRM, Books, Analytics and custom code</li>
+      </ul>
+      <div class="award"><img src="{{IMG_CERT}}" alt="Certificate"><div><b>&ldquo;Master of Creator (Global Winner)&rdquo;</b><span>Award, Zoho Creator Partner Hackathon 2025, presented to Arunkumar Venkadesan.</span></div></div>
+    </div>
+  </div>
+  <div class="team-pts">
+    <div><h4>One team, start to finish</h4><p>The people who scope your project are the people who build and support it.</p></div>
+    <div><h4>Hours that overlap</h4><p>Working hours that overlap with the US, UK, Australia, New Zealand and the Middle East.</p></div>
+    <div><h4>Reply within 6 hours</h4><p>Every enquiry gets a reply within 6 hours, guaranteed, from the team itself.</p></div>
+  </div>
+  <div class="worked"><h3>Industries our team has worked in</h3><div class="flags"><span>Retail (USA)</span><span>Training and education (UK)</span><span>Healthcare (USA)</span><span>Manufacturing (China)</span><span>Travel (Thailand)</span><span>Legal (Saudi Arabia)</span><span>Lending and finance (India)</span></div><p class="note" style="margin-top:3mm">From the projects our team members have worked on, listed at zudoworks.com/work.</p></div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">10 / 12</span></div>
+</section>
+
+<!-- 11 · Working together -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>10 &middot; Working together</span></div>
+  <p class="kicker">Working together</p>
+  <h2 class="title">Clear terms, <em>no surprises</em></h2>
+  <p class="lead">Every engagement is quoted for your project. You see the scope, timeline and cost in writing before any work starts.</p>
+  <div class="eng">
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></span><h3>Defined projects</h3><p>A fixed price agreed up front, based on the work and complexity involved.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>Smaller work</h3><p>Fixes, reviews and small changes billed by the hour. Rates on request.</p></div>
+    <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3>Ongoing support</h3><p>After the free first month, optional monthly support for your system.</p></div>
+  </div>
+  <div class="faq"><h3>Questions we are often asked</h3><dl>
+    <dt>How much will our project cost?</dt><dd>It is quoted per project. After a discovery call we send a written proposal with scope, timeline and cost. Zoho licences are billed by Zoho, in your name. Our estimator at zudoworks.com/pricing shows typical hours and timelines.</dd>
+    <dt>How long does it take?</dt><dd>We start with the process that causes the most daily pain and aim to have it in use within weeks. Other processes and integrations follow one at a time.</dd>
+    <dt>Do we have to replace software we already use?</dt><dd>No. If a system works, such as your accounting package, we keep it and integrate with it.</dd>
+    <dt>Who owns the system?</dt><dd>You do. Licences and data stay in your Zoho account, and you receive documentation your team can maintain.</dd>
+    <dt>Do you work with businesses outside India?</dt><dd>Yes. We work remotely with businesses in the US, UK, Australia, New Zealand and the Middle East, with working hours that overlap with yours.</dd>
+  </dl></div>
+  <div class="foot"><span>zudoworks.com</span><span class="n">11 / 12</span></div>
+</section>
+
+<!-- 12 · Back cover -->
+<section class="page back">
+  <p class="kicker">Get started</p>
+  <h2>Tell us how your business runs today</h2>
+  <p class="lead">Describe one process from start to finish. We will tell you what we would build first, what we would leave alone, and how long it would take.</p>
+  <div class="back-steps">
+    <div><b>1</b><h4>We reply within 6 hours, guaranteed</h4><p>With a few questions or times for a call.</p></div>
+    <div><b>2</b><h4>A discovery call</h4><p>About how the work flows today and what has to change.</p></div>
+    <div><b>3</b><h4>A written proposal</h4><p>Scope, timeline and cost, before any work starts.</p></div>
+  </div>
+  <div class="contact">
+    <dl>
+      <dt>Website</dt><dd>zudoworks.com</dd>
+      <dt>Email</dt><dd>admin@zudoworks.com</dd>
+      <dt>Book a call</dt><dd>zudoworks.com/contact</dd>
+      <dt>Based in</dt><dd>Anna Nagar, Chennai, India</dd>
+    </dl>
+    <div class="qr"><img src="{{QR}}" alt="QR code to zudoworks.com/contact">Scan to send your project details</div>
+  </div>
+  <div class="find"><p>Find Zudo Works on</p><div><span>LinkedIn</span><span>Clutch</span><span>GoodFirms</span><span>TechBehemoths</span><span>Upwork</span><span>Product Hunt</span><span>Startup Fame</span><span>YouTube</span></div></div>
+  <div class="back-foot">
+    <div class="cover-logo"><img src="/Asset/brand/zudo-works-logo.svg" alt=""><span>Zudo Works</span></div>
+    <span>&copy; {{YEAR}} Zudo Works. zudoworks.com is the official and only website of Zudo Works.</span>
+  </div>
+</section>
+
+</body>
+</html>

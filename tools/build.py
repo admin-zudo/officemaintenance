@@ -29,8 +29,8 @@ SITE = 'https://zudoworks.com'
 SKIP_DIRS = {'.git', '.kilo', 'tools', 'Asset', 'css', 'js', 'node_modules'}
 
 CSS_SOURCES = ['variables', 'reset', 'base', 'components', 'hero', 'sections',
-               'responsive', 'cookie-consent', 'helpers', 'system', 'manufacturing', 'home']
-JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'leadform', 'salesiq', 'media', 'home']
+               'responsive', 'cookie-consent', 'helpers', 'system', 'manufacturing', 'home', 'landing']
+JS_SOURCES = ['main', 'animations', 'cookie-consent', 'booking', 'leadform', 'brochure', 'salesiq', 'media', 'home', 'landing']
 
 # Pages that should not appear in the sitemap or get a canonical tag
 NOINDEX = {'/404.html', '/thank-you/'}
@@ -62,6 +62,7 @@ KEYWORDS = {
     '/locations/australia/': 'Zoho consultants Australia, Zoho partner Australia, Zoho developers Sydney Melbourne, Zoho Xero integration',
     '/locations/new-zealand/': 'Zoho consultants New Zealand, Zoho partner NZ, Zoho developers Auckland, Zoho Xero integration',
     '/manufacturing/': 'manufacturing workflow automation, Zoho for manufacturing, manufacturing software New Zealand, production tracking, custom manufacturing apps',
+    '/manufacturing-software/': 'manufacturing software, Zoho manufacturing software, production tracking software, job tracking software, small manufacturer software',
     '/manufacturing/zoho-implementation/': 'Zoho implementation for manufacturers, Zoho Inventory manufacturing, Zoho Creator manufacturing, Zoho Books, Zoho Analytics',
     '/manufacturing/ai-automation/': 'AI in manufacturing, AI for small manufacturers, demand forecasting, document processing, Zia, manufacturing AI use cases',
     '/manufacturing/workflows/': 'manufacturing workflows, quote to cash, procure to pay, production tracking, quality workflow, maintenance workflow',
@@ -238,7 +239,9 @@ def check_links(pages):
 def main():
     css_hash = bundle_css()
     js_hash = bundle_js()
-    head_tpl = read('tools/partials/head.html').replace('{{CSS_HASH}}', css_hash)
+    org_schema = re.sub(r'^<!--.*?-->\n', '', read('tools/partials/org-schema.html'), flags=re.S).rstrip('\n')
+    head_tpl = (read('tools/partials/head.html').replace('{{CSS_HASH}}', css_hash)
+                .replace('{{ORG_SCHEMA}}', org_schema))
     header_tpl = read('tools/partials/header.html')
     footer_tpl = (read('tools/partials/footer.html')
                   .replace('{{JS_HASH}}', js_hash)

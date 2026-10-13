@@ -165,7 +165,8 @@ document.addEventListener('click', function (e) {
   // Every page: common blocks fade up as they scroll in, siblings slightly staggered
   var AUTO = '.section .section-header, .service-card, .work-card, .project-card, .loc-card, .sol-card, .post-card, ' +
     '.faq-item, .deliver-card, .problem-item, .process-step, .price-card, .area-group, .team-card, .leader-card, ' +
-    '.company-card, .contact-card, .approach-steps, .cta-banner .container, .prose > h2, .table-wrap';
+    '.company-card, .contact-card, .approach-steps, .cta-banner .container, .prose > h2, .table-wrap, ' +
+    '.lp-pain, .lp-module, .lp-steps > li, .lp-fit-col, .lp-links > div, .lp-compare-wrap, .lp-result-fig, .lp-final .lp-form-card';
   document.querySelectorAll(AUTO).forEach(function (el) {
     if (el.classList.contains('reveal') || el.closest('.page-hero, .home-hero, .fx, .reveal')) return;
     var i = Array.prototype.indexOf.call(el.parentNode.children, el) % 4;
@@ -495,6 +496,9 @@ document.addEventListener('click', function (e) {
    Without JavaScript the form posts normally and Zoho redirects
    to /thank-you/. Also fills the referrer (the page the lead came
    from), the Google Ads click id, and a sensible service area.
+   The brochure downloads beside the submit button need a valid
+   name and email; a download also sends the enquiry, noting
+   which file was taken.
    ============================================================ */
 
 (function () {
@@ -505,6 +509,7 @@ document.addEventListener('click', function (e) {
 
   var EMAIL = /^[\w]([\w\-.+&'/]*)@([a-zA-Z0-9]([a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,22}$/;
   var PHONE = /^[+]{0,1}[()0-9-. ]+$/;
+  var FILES = { brochure_pdf: 'PDF brochure', deck_pptx: 'PowerPoint deck' };
 
   // Google Ads click id, kept for the session so a later enquiry still carries it
   var gclid = '';
@@ -541,11 +546,34 @@ document.addEventListener('click', function (e) {
     msg.textContent = bad ? msg.getAttribute('data-msg') || '' : '';
   }
 
+  // Checks the given fields, shows their errors and focuses the first bad one
+  function valid(fields) {
+    var firstBad = null;
+    fields.forEach(function (f) {
+      var bad = !check(f);
+      showError(f, bad);
+      if (bad && !firstBad) firstBad = f;
+    });
+    if (firstBad) firstBad.focus();
+    return !firstBad;
+  }
+
+  function track(a) {
+    if (window.dataLayer) window.dataLayer.push({ event: 'brochure_download', file_name: a.getAttribute('data-download'), form_location: location.pathname });
+  }
+
+  // Downloads in the thank-you message (outside a form) are always allowed
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-download]');
+    if (a && !a.closest('[data-lead-form]')) track(a);
+  });
+
   forms.forEach(function (form, i) {
     var success = form.nextElementSibling;
     var submit = form.querySelector('.lead-submit');
     var status = form.querySelector('.lead-form-status');
     var fields = Array.prototype.slice.call(form.querySelectorAll('[data-check]'));
+    var needed = [form.elements.SingleLine, form.elements.Email];
 
     form.elements.zf_referrer_name.value = location.href.split('#')[0].slice(0, 1800);
     form.elements.zc_gad.value = gclid;
@@ -558,6 +586,7 @@ document.addEventListener('click', function (e) {
       f.addEventListener('blur', function () { if (f.value) showError(f, !check(f)); });
       f.addEventListener('input', function () {
         if (f.closest('.lead-field').classList.contains('is-invalid')) showError(f, !check(f));
+        if (!sent && status.textContent && needed.every(check)) status.textContent = '';
       });
     });
 
@@ -581,18 +610,7 @@ document.addEventListener('click', function (e) {
       if (window.dataLayer) window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname });
     });
 
-    form.addEventListener('submit', function (e) {
-      var firstBad = null;
-      fields.forEach(function (f) {
-        var bad = !check(f);
-        showError(f, bad);
-        if (bad && !firstBad) firstBad = f;
-      });
-      if (firstBad) {
-        e.preventDefault();
-        firstBad.focus();
-        return;
-      }
+    function sending() {
       sent = true;
       submit.disabled = true;
       submit.classList.add('is-sending');
@@ -607,7 +625,140 @@ document.addEventListener('click', function (e) {
         submit.querySelector('.lead-submit-text').textContent = 'Submit';
         status.textContent = 'That took too long. Please try again, or email admin@zudoworks.com.';
       }, 20000);
+    }
+
+    form.addEventListener('submit', function (e) {
+      if (!valid(fields)) {
+        e.preventDefault();
+        return;
+      }
+      sending();
     });
+
+    // Brochure downloads: name and email first; then the file starts and the enquiry is sent with a note
+    form.querySelectorAll('[data-download]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var file = FILES[a.getAttribute('data-download')];
+        if (sent) return;
+        if (!valid(needed)) {
+          e.preventDefault();
+          status.textContent = 'Please enter your name and email to download the ' + file + '.';
+          return;
+        }
+        if (!valid(fields)) {
+          e.preventDefault();
+          return;
+        }
+        var note = form.elements.MultiLine;
+        var line = '[Downloaded the ' + file + ']';
+        if (note.value.indexOf(line) < 0) note.value = (note.value ? note.value + '\n\n' : '') + line;
+        track(a);
+        // Let the browser start the download first, then post the enquiry
+        setTimeout(function () { sending(); form.submit(); }, 50);
+      });
+    });
+  });
+})();
+
+/* --- js/brochure.js --- */
+/* ============================================================
+   Brochure reader (#brochure-viewer in tools/partials/footer.html)
+   Opens from any [data-brochure-view] and shows the brochure page
+   images made by tools/brochure/make_brochure.py, one page at a
+   time, with thumbnails, arrow keys and swipe. Reading is open to
+   everyone; downloading the files needs a name and email (see
+   js/leadform.js).
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  var dlg = document.getElementById('brochure-viewer');
+  if (!dlg) return;
+
+  var total = parseInt(dlg.getAttribute('data-pages'), 10) || 1;
+  var img = dlg.querySelector('[data-bv-img]');
+  var count = dlg.querySelector('[data-bv-count]');
+  var thumbs = dlg.querySelector('[data-bv-thumbs]');
+  var at = 0, built = false, opener = null;
+
+  function src(i) { return '/Asset/brochure/pages/page-' + (i < 9 ? '0' : '') + (i + 1) + '.webp'; }
+
+  function build() {
+    if (built) return;
+    built = true;
+    for (var i = 0; i < total; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'bv-thumb';
+      b.setAttribute('aria-label', 'Page ' + (i + 1));
+      b.innerHTML = '<img src="' + src(i) + '" alt="" width="110" height="156" loading="lazy" decoding="async">';
+      b.addEventListener('click', go.bind(null, i));
+      thumbs.appendChild(b);
+    }
+  }
+
+  function go(i) {
+    at = Math.max(0, Math.min(total - 1, i));
+    img.src = src(at);
+    img.alt = 'Brochure page ' + (at + 1) + ' of ' + total;
+    count.textContent = 'Page ' + (at + 1) + ' of ' + total;
+    dlg.querySelector('.bv-nav--prev').disabled = at === 0;
+    dlg.querySelector('.bv-nav--next').disabled = at === total - 1;
+    var t = thumbs.children;
+    for (var k = 0; k < t.length; k++) t[k].classList.toggle('is-on', k === at);
+    if (t[at] && t[at].scrollIntoView) t[at].scrollIntoView({ block: 'nearest', inline: 'center' });
+    // Load the next page early so turning feels instant
+    if (at + 1 < total) (new Image()).src = src(at + 1);
+  }
+
+  function open(e) {
+    e.preventDefault();
+    opener = e.currentTarget || document.activeElement;
+    build();
+    dlg.hidden = false;
+    document.body.style.overflow = 'hidden';
+    document.body.classList.add('bv-open');
+    go(0);
+    dlg.querySelector('.bv-close').focus();
+    if (window.dataLayer) window.dataLayer.push({ event: 'brochure_read', form_location: location.pathname });
+  }
+
+  function close() {
+    if (dlg.hidden) return;
+    dlg.hidden = true;
+    document.body.classList.remove('bv-open');
+    // Leave scrolling locked if the project form dialog is still open underneath
+    var other = document.getElementById('project-form-modal');
+    if (!other || other.hidden) document.body.style.overflow = '';
+    if (opener && opener.focus && !opener.closest('[hidden]')) opener.focus();
+  }
+
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest && e.target.closest('[data-brochure-view]');
+    if (t) open({ preventDefault: function () { e.preventDefault(); }, currentTarget: t });
+  });
+
+  dlg.querySelectorAll('[data-bv-close]').forEach(function (b) { b.addEventListener('click', close); });
+  dlg.querySelectorAll('[data-bv-dir]').forEach(function (b) {
+    b.addEventListener('click', function () { go(at + parseInt(b.getAttribute('data-bv-dir'), 10)); });
+  });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (dlg.hidden) return;
+    if (e.key === 'Escape') { e.stopPropagation(); close(); }
+    else if (e.key === 'ArrowRight') go(at + 1);
+    else if (e.key === 'ArrowLeft') go(at - 1);
+  }, true);
+
+  // Swipe between pages on touch screens
+  var x0 = null;
+  img.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  img.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) go(at + (dx < 0 ? 1 : -1));
+    x0 = null;
   });
 })();
 
@@ -1207,4 +1358,104 @@ document.addEventListener('click', function (e) {
   render(0);
   requestAnimationFrame(loop);
   }
+})();
+
+/* --- js/landing.js --- */
+/* ============================================================
+   Campaign landing pages (css/landing.css)
+   1. The example job in the hero moves through its stages.
+   2. On phones, a bar with the two actions appears once the
+      hero form has scrolled away, and hides while a form is on
+      screen.
+   3. The hero eyebrow alternates between two descriptions.
+   4. "Download the PDF or PPT" leads to the hero form.
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // 1. Example job: each stage turns green in turn, then the next job starts
+  var route = document.querySelector('[data-lp-route]');
+  if (route) {
+    var steps = route.querySelectorAll('li');
+    var at = 0;
+    var paint = function () {
+      for (var i = 0; i < steps.length; i++) {
+        steps[i].classList.toggle('is-done', i < at);
+        steps[i].classList.toggle('is-now', i === at);
+      }
+    };
+    if (reduced) {
+      at = steps.length;
+      paint();
+    } else {
+      paint();
+      setInterval(function () {
+        if (document.hidden) return;
+        at = at >= steps.length ? 0 : at + 1;
+        paint();
+      }, 1100);
+    }
+  }
+
+  // 3. Eyebrow: the two descriptions take turns
+  var rot = document.querySelector('[data-lp-rotate]');
+  if (rot && !reduced) {
+    var words = rot.children, cur = 0;
+    setInterval(function () {
+      if (document.hidden) return;
+      var next = (cur + 1) % words.length;
+      words[cur].classList.remove('is-on');
+      words[cur].classList.add('is-out');
+      words[next].classList.remove('is-out');
+      words[next].classList.add('is-on');
+      words[cur].setAttribute('aria-hidden', 'true');
+      words[next].removeAttribute('aria-hidden');
+      cur = next;
+    }, 3200);
+  }
+
+  // 4. "Download the PDF or PPT": go to the hero form, where name and email unlock the files
+  document.querySelectorAll('[data-lp-download]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var card = document.getElementById('enquiry');
+      var form = card && card.querySelector('[data-lead-form]');
+      if (!form || form.hidden) return;
+      e.preventDefault();
+      card.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+      var status = form.querySelector('.lead-form-status');
+      status.textContent = 'Enter your name and email, then choose PDF brochure or PPT deck.';
+      setTimeout(function () { form.elements.SingleLine.focus({ preventScroll: true }); }, reduced ? 0 : 450);
+    });
+  });
+
+  // 2. Phone action bar
+  var bar = document.querySelector('[data-lp-bar]');
+  var cards = document.querySelectorAll('.lp-form-card');
+  if (!bar || !cards.length || !('IntersectionObserver' in window)) return;
+
+  var showing = 0, passedHero = false;
+  var links = bar.querySelectorAll('a');
+  var update = function () {
+    var on = passedHero && showing === 0;
+    bar.classList.toggle('is-on', on);
+    bar.setAttribute('aria-hidden', on ? 'false' : 'true');
+    for (var i = 0; i < links.length; i++) links[i].tabIndex = on ? 0 : -1;
+  };
+
+  var seen = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      showing += e.isIntersecting ? 1 : (e.target._lpSeen ? -1 : 0);
+      e.target._lpSeen = e.isIntersecting;
+      if (e.target === cards[0] && !e.isIntersecting) {
+        passedHero = e.boundingClientRect.top < 0;
+      }
+    });
+    showing = Math.max(0, showing);
+    update();
+  }, { threshold: 0.15 });
+
+  Array.prototype.forEach.call(cards, function (c) { seen.observe(c); });
 })();

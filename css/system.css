@@ -2252,3 +2252,138 @@ img.author-avatar {
   width: auto;
   height: 36px;
 }
+
+/* ── About: mission and vision, compact leadership ────────── */
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.mv-card {
+  min-width: 0;
+  padding: var(--space-6) var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-white);
+}
+
+.mv-card--mission {
+  border-top: 3px solid var(--color-primary);
+}
+
+.mv-card--vision {
+  border-top: 3px solid var(--color-secondary);
+}
+
+.mv-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: var(--space-3);
+  border-radius: 12px;
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary);
+}
+
+.mv-card--vision .mv-icon {
+  background-color: var(--color-secondary-bg);
+  color: var(--color-secondary);
+}
+
+.mv-card h3 {
+  margin-bottom: var(--space-2);
+}
+
+.mv-card p {
+  margin: 0;
+  color: var(--color-heading);
+  font-size: var(--text-md);
+  line-height: 1.55;
+}
+
+.mv-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mv-values li {
+  min-width: 0;
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.mv-values strong {
+  display: block;
+  color: var(--color-heading);
+}
+
+.leader-mini {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  max-width: 880px;
+  padding: var(--space-5) var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background-color: var(--color-white);
+}
+
+.leader-mini-photo {
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leader-mini-body {
+  min-width: 0;
+}
+
+.leader-mini-body h2 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-xl);
+}
+
+.leader-mini-body h2 small {
+  margin-left: 6px;
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.leader-mini-body > p:not(.section-label) {
+  margin: 0;
+  color: var(--color-body);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+.leader-mini .profile-links {
+  margin-top: var(--space-3);
+}
+
+@media (max-width: 760px) {
+  .mv-grid,
+  .mv-values {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .leader-mini {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leader-mini-photo {
+    width: 72px;
+    height: 72px;
+  }
+}

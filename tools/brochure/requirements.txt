@@ -1,0 +1,8 @@
+# Packages for tools/brochure/make_brochure.py (and the other tools/ scripts that render images)
+# Install into the Python your editor uses, e.g.:  py -3.12 -m pip install -r tools/brochure/requirements.txt
+#                                                  py -3.12 -m playwright install chromium
+playwright
+Pillow
+python-pptx
+qrcode
+pymupdf

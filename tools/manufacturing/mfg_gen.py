@@ -19,7 +19,8 @@ ROOT = figs.ROOT
 BASE = '/manufacturing/'
 
 SUBNAV = [(BASE, 'Overview'), (BASE + 'zoho-implementation/', 'Zoho implementation'), (BASE + 'ai-automation/', 'AI automation'),
-          (BASE + 'workflows/', 'Workflows'), (BASE + 'guides/', 'Guides'), (BASE + 'case-studies/', 'Blueprints')]
+          (BASE + 'workflows/', 'Workflows'), (BASE + 'guides/', 'Guides'), (BASE + 'case-studies/', 'Blueprints'),
+          ('/manufacturing-software/', 'Software')]
 
 ORG = {"@type": "Organization", "@id": SITE + "/#organization", "name": "Zudo Works", "url": SITE + "/",
        "logo": {"@type": "ImageObject", "url": SITE + "/Asset/brand/zudo-works-logo.svg"}}
@@ -69,7 +70,8 @@ def crumbs(trail):
 
 def subnav(route):
     cur = max((r for r, _ in SUBNAV if route.startswith(r)), key=len)
-    items = ''.join(f'<li><a href="{r}"{" aria-current=\"page\"" if r == cur and r == route else ""}>{n}</a></li>' for r, n in SUBNAV)
+    here = ' aria-current="page"'
+    items = ''.join(f'<li><a href="{r}"{here if r == cur and r == route else ""}>{n}</a></li>' for r, n in SUBNAV)
     return f'    <nav class="mfg-subnav" aria-label="Manufacturing section"><div class="container"><ul>{items}</ul></div></nav>'
 
 

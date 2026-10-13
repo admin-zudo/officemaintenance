@@ -12,7 +12,8 @@
   // Every page: common blocks fade up as they scroll in, siblings slightly staggered
   var AUTO = '.section .section-header, .service-card, .work-card, .project-card, .loc-card, .sol-card, .post-card, ' +
     '.faq-item, .deliver-card, .problem-item, .process-step, .price-card, .area-group, .team-card, .leader-card, ' +
-    '.company-card, .contact-card, .approach-steps, .cta-banner .container, .prose > h2, .table-wrap';
+    '.company-card, .contact-card, .approach-steps, .cta-banner .container, .prose > h2, .table-wrap, ' +
+    '.lp-pain, .lp-module, .lp-steps > li, .lp-fit-col, .lp-links > div, .lp-compare-wrap, .lp-result-fig, .lp-final .lp-form-card';
   document.querySelectorAll(AUTO).forEach(function (el) {
     if (el.classList.contains('reveal') || el.closest('.page-hero, .home-hero, .fx, .reveal')) return;
     var i = Array.prototype.indexOf.call(el.parentNode.children, el) % 4;

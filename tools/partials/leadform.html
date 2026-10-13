@@ -59,8 +59,15 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </button>
-        <p class="lead-form-note">We reply within one business day. Your details are only used to reply;
-            see our <a href="/privacy/">Privacy Policy</a>.</p>
+        <div class="lead-downloads" aria-label="Download our company brochure">
+            <a href="/Asset/brochure/zudo-works-brochure.pdf" class="lead-dl" download data-download="brochure_pdf"
+                title="Company brochure, 12 pages (PDF). Enter your name and email above to download."><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M12 12v6M9 15l3 3 3-3"/></svg>PDF brochure</a>
+            <a href="/Asset/brochure/zudo-works-company-deck.pptx" class="lead-dl" download data-download="deck_pptx"
+                title="Company deck, 8 slides (PowerPoint). Enter your name and email above to download."><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M12 8v6M9 11l3 3 3-3"/></svg>PPT deck</a>
+        </div>
+        <p class="lead-form-note"><strong>We reply within 6 hours, guaranteed.</strong> Name and email unlock the downloads,
+            or <button type="button" class="lead-read" data-brochure-view>read it online</button>. Your details are only
+            used to reply (<a href="/privacy/">Privacy Policy</a>).</p>
     </div>
     <p class="lead-form-status" role="status" aria-live="polite"></p>
 </form>
@@ -68,7 +75,12 @@
     <span class="lead-success-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>
     <h3>Thanks, your details are on their way</h3>
-    <p>We read every enquiry ourselves and reply within one business day, usually with a few questions or times
+    <p>We read every enquiry ourselves and reply within 6 hours, usually with a few questions or times
         for a call.</p>
-    <a href="/contact/" class="btn btn-secondary" data-booking>Book a call now instead</a>
+    <div class="lead-success-actions">
+        <a href="/contact/" class="btn btn-secondary" data-booking>Book a call now instead</a>
+        <a href="/Asset/brochure/zudo-works-brochure.pdf" class="lead-dl" download data-download="brochure_pdf">PDF brochure</a>
+        <a href="/Asset/brochure/zudo-works-company-deck.pptx" class="lead-dl" download data-download="deck_pptx">PPT deck</a>
+        <button type="button" class="lead-dl" data-brochure-view>Read online</button>
+    </div>
 </div>

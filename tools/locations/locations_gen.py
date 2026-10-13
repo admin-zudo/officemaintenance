@@ -349,7 +349,7 @@ def page(title, desc, url, schema, crumbs, body):
 CTA = '''    <section class="cta-banner">
       <div class="container">
         <h2>%s</h2>
-        <p>Tell us what you want to build or fix. We reply within one business day with next steps.</p>
+        <p>Tell us what you want to build or fix. We reply within 6 hours with next steps.</p>
         <div class="btn-group justify-center">
           <a href="/contact/" class="btn btn-white btn-lg" data-booking>Book a Discovery Call</a>
           <a href="/contact/#contact-form" class="btn btn-outline-white btn-lg">Send Project Details</a>

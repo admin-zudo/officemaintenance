@@ -68,6 +68,7 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Manufacturing: connected operations for small manufacturers (overview): https://zudoworks.com/manufacturing/
+- Manufacturing software built on Zoho (job tracking, inventory, purchasing, quality, traceability, dashboards; options compared; FAQ): https://zudoworks.com/manufacturing-software/
 - Zoho implementation for manufacturers (product map, gaps, three routes, regional notes): https://zudoworks.com/manufacturing/zoho-implementation/
 - AI in manufacturing (six use cases, each with limits, oversight and a proof of concept): https://zudoworks.com/manufacturing/ai-automation/
 - Manufacturing workflows (production, stock, purchasing, traceability, quality, maintenance, dispatch): https://zudoworks.com/manufacturing/workflows/

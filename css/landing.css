@@ -1,0 +1,1237 @@
+/* ============================================================
+   Campaign landing pages (/manufacturing-software/)
+   Lead form in the hero, the scenario explorer, modules, a
+   comparison table and a second form at the end. Flat colours;
+   the only gradient is the shared .btn-lead button. Classes use
+   the lp- prefix. Behaviour: js/landing.js.
+   ============================================================ */
+
+.lp {
+  --lp-ink: #101828;
+  --lp-muted: #667085;
+  --lp-line: #EAECF0;
+  --lp-soft: #F9FAFB;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+/* Copy starts level with the form card, so there is no gap under the breadcrumb */
+.lp-hero .hero-split {
+  align-items: start;
+}
+
+.lp-hero .hero-split-copy > .home-eyebrow {
+  max-width: none;
+  color: var(--color-heading);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+}
+
+.lp-mark {
+  color: var(--color-primary);
+}
+
+/* Eyebrow that alternates between two descriptions (js/landing.js) */
+.lp-rot {
+  display: inline-grid;
+  overflow: hidden;
+}
+
+.lp-rot > span {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.45s ease, transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lp-rot > span.is-on {
+  opacity: 1;
+  transform: none;
+}
+
+.lp-rot > span.is-out {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.lp-ticks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 20px;
+  width: 100%;
+  max-width: 620px;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-ticks li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--lp-ink);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  line-height: 1.45;
+}
+
+.lp-ticks li::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-secondary-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23089949' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+
+/* An example job moving through its routing, one stage at a time */
+.lp-route {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 620px;
+  padding: 10px 14px;
+  border: 1px solid var(--lp-line);
+  border-radius: 14px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.lp-route-id {
+  flex: none;
+  color: var(--lp-ink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--weight-bold);
+  line-height: 1.2;
+}
+
+.lp-route-id small {
+  display: block;
+  color: var(--lp-muted);
+  font-family: var(--font-primary);
+  font-size: 0.6875rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lp-route ol {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-route li {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  padding-top: 16px;
+  color: var(--lp-muted);
+  font-size: 0.75rem;
+  font-weight: var(--weight-medium);
+  text-align: center;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+/* The track between stages */
+.lp-route li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--lp-line);
+  transition: background-color 0.4s ease;
+}
+
+.lp-route li:first-child::before {
+  display: none;
+}
+
+/* The stage dot */
+.lp-route li::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  border: 2px solid #D0D5DD;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lp-route li.is-done {
+  color: var(--lp-ink);
+}
+
+.lp-route li.is-done::before,
+.lp-route li.is-now::before {
+  background-color: var(--color-secondary);
+}
+
+.lp-route li.is-done::after {
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
+}
+
+.lp-route li.is-now {
+  color: var(--color-primary);
+  font-weight: var(--weight-bold);
+}
+
+.lp-route li.is-now::after {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(34, 109, 180, 0.16);
+}
+
+/* ── Form card (hero and final section) ───────────────────── */
+.lp-form-card {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 22px 24px 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow:
+    0 0 0 1px var(--lp-line),
+    0 0 0 7px var(--lp-soft),
+    0 0 0 8px var(--lp-line),
+    0 32px 64px -24px rgba(16, 24, 40, 0.22);
+  scroll-margin-top: calc(var(--navbar-height) + 48px);
+}
+
+/* A slim brand bar on top of the card */
+.lp-form-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 24px;
+  right: 24px;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background-color: var(--color-secondary);
+}
+
+.lp-form-head {
+  margin-bottom: 16px;
+}
+
+.lp-form-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 6px;
+  color: var(--color-secondary-dark);
+  font-size: 0.75rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.lp-form-head h2 {
+  margin: 0;
+  color: var(--lp-ink);
+  font-size: 1.375rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.lp-form-head p:not(.lp-form-kicker) {
+  margin: 6px 0 0;
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.lp-form-card .lead-form-grid {
+  gap: 12px 14px;
+}
+
+.lp-form-card .lead-field input,
+.lp-form-card .lead-field select {
+  min-height: 44px;
+  padding-block: 10px;
+}
+
+.lp-form-card .lead-field textarea {
+  min-height: 92px;
+}
+
+.lp-form-card .lead-form-foot {
+  margin-top: 16px;
+}
+
+.lp-form-card .lead-submit {
+  flex: 1 1 200px;
+  min-width: 0;
+}
+
+/* ── Trust band ───────────────────────────────────────────── */
+.lp-trust {
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-border);
+  background-color: #fff;
+}
+
+.lp-trust-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4) var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-trust-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+  line-height: 1.45;
+}
+
+.lp-trust-list svg {
+  flex: none;
+  margin-top: 1px;
+  color: var(--color-primary);
+}
+
+.lp-trust-list strong {
+  display: block;
+  color: var(--lp-ink);
+}
+
+/* ── Problems ─────────────────────────────────────────────── */
+.lp-pains {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.lp-pain {
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--lp-line);
+  border-radius: var(--radius-xl);
+  background-color: #fff;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.lp-pain:hover {
+  border-color: #F5C26B;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px -14px rgba(15, 27, 45, 0.18);
+}
+
+.lp-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: var(--space-3);
+  border-radius: 12px;
+  background-color: #FDF3E1;
+  color: var(--color-accent-orange-dark);
+}
+
+.lp-pain h3 {
+  margin: 0 0 6px;
+  font-size: var(--text-md);
+}
+
+.lp-pain p {
+  margin: 0;
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+/* ── Explorer section ─────────────────────────────────────── */
+/* 35:65, so the explorer gets the room */
+.lp-see {
+  display: grid;
+  grid-template-columns: minmax(0, 35fr) minmax(0, 65fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.lp-see-copy {
+  min-width: 0;
+}
+
+.lp-see-copy h2 {
+  margin-bottom: var(--space-3);
+  text-wrap: balance;
+}
+
+.lp-see-copy > p {
+  color: var(--color-body);
+}
+
+.lp-see-copy .check-list {
+  margin-top: var(--space-4);
+}
+
+.lp-see-more {
+  margin-top: var(--space-4);
+  font-weight: var(--weight-semibold);
+}
+
+.lp-see-visual {
+  min-width: 0;
+}
+
+/* The whole section fits the window: the stage keeps its 2.15:1 shape, so the explorer's width is
+   capped by the window height (about 300px of header and captions plus the stage itself) */
+#see-it {
+  --see-y: 22px;
+  --fx-ratio: 2.15;
+  padding-block: var(--see-y);
+}
+
+.lp-see-visual .fx {
+  max-width: none;
+}
+
+@media (min-width: 761px) {
+  .lp-see-visual .fx {
+    max-width: max(470px, min(100%, calc((100svh - var(--navbar-height) - 2 * var(--see-y) - 316px) * var(--fx-ratio) + 24px)));
+  }
+}
+
+@media (min-width: 1100px) {
+  .lp-see-copy h2 {
+    font-size: clamp(1.6rem, 0.9rem + 1.3vw, 2.15rem);
+    line-height: 1.12;
+  }
+
+  .lp-see-copy > p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+
+  .lp-see-copy .check-list {
+    gap: 6px;
+    margin-top: var(--space-3);
+  }
+
+  .lp-see-copy .check-list li {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .lp-see-more {
+    margin-top: var(--space-3);
+  }
+}
+
+/* Short laptop screens: the copy column drops its bullet list so it is no taller than the explorer */
+@media (min-width: 1100px) and (max-height: 700px) {
+  .lp-see-copy .check-list {
+    display: none;
+  }
+}
+
+/* Very short screens: a wider, shorter stage keeps the explorer readable */
+@media (min-width: 761px) and (max-height: 660px) {
+  #see-it {
+    --fx-ratio: 2.6;
+  }
+
+  .lp-see-visual .fx-stage {
+    aspect-ratio: 2.6 / 1;
+  }
+}
+
+/* Phones: a slightly wider stage, so the explorer fits a small screen */
+@media (max-width: 760px) {
+  .lp-see-visual .fx-stage {
+    aspect-ratio: 1.3 / 1;
+  }
+}
+
+/* ── Modules ──────────────────────────────────────────────── */
+.lp-modules {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.lp-module {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--lp-line);
+  border-radius: var(--radius-xl);
+  background-color: #fff;
+  color: var(--color-body);
+  text-decoration: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.lp-module:hover,
+.lp-module:focus-visible {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -12px rgba(15, 27, 45, 0.18);
+}
+
+.lp-module-app {
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-dark);
+  font-size: 0.6875rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.lp-module h3 {
+  margin: 4px 0 0;
+  color: var(--lp-ink);
+  font-size: var(--text-md);
+}
+
+.lp-module p {
+  flex: 1;
+  margin: 0;
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+.lp-module-link {
+  margin-top: 4px;
+  color: var(--color-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+.lp-module-link span {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.lp-module:hover .lp-module-link span {
+  transform: translateX(4px);
+}
+
+/* ── Result ───────────────────────────────────────────────── */
+.lp-result {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.lp-result-fig {
+  min-width: 0;
+  margin: 0;
+}
+
+.lp-result-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--lp-line);
+  border-radius: var(--radius-xl);
+  background-color: #fff;
+  box-shadow: 0 24px 48px -24px rgba(16, 24, 40, 0.25);
+}
+
+.lp-result-fig figcaption {
+  margin-top: var(--space-3);
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+}
+
+.lp-result-copy {
+  min-width: 0;
+}
+
+.lp-result-copy h2 {
+  margin-bottom: var(--space-3);
+}
+
+.lp-result-copy .check-list {
+  margin-top: var(--space-4);
+}
+
+/* ── Comparison table ─────────────────────────────────────── */
+.lp-compare-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--lp-line);
+  border-radius: var(--radius-xl);
+  background-color: #fff;
+}
+
+.lp-compare {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.lp-compare th,
+.lp-compare td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--lp-line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.lp-compare tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.lp-compare thead th {
+  color: var(--lp-ink);
+  font-size: var(--text-sm);
+  background-color: var(--lp-soft);
+}
+
+.lp-compare tbody th {
+  width: 26%;
+  color: var(--lp-ink);
+  font-weight: var(--weight-semibold);
+}
+
+.lp-compare td {
+  color: var(--lp-muted);
+}
+
+.lp-compare .is-us {
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary-dark);
+  font-weight: var(--weight-semibold);
+}
+
+.lp-compare thead .is-us {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.lp-note {
+  margin-top: var(--space-4);
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+}
+
+/* ── Steps ────────────────────────────────────────────────── */
+.lp-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-6);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.lp-steps li {
+  position: relative;
+  min-width: 0;
+}
+
+/* The line joining one step to the next */
+.lp-steps li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 52px;
+  right: calc(-1 * var(--space-6) + 12px);
+  height: 2px;
+  background-color: var(--lp-line);
+}
+
+.lp-step-num {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--space-3);
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--color-primary);
+  font-weight: var(--weight-bold);
+}
+
+.lp-steps li:last-child .lp-step-num {
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.lp-steps h3 {
+  margin: 0 0 6px;
+  font-size: var(--text-md);
+}
+
+.lp-steps p {
+  margin: 0;
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+/* ── Team ─────────────────────────────────────────────────── */
+.lp-team {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.lp-team-copy,
+.lp-team-stats {
+  min-width: 0;
+}
+
+.lp-team-copy h2 {
+  margin-bottom: var(--space-3);
+}
+
+.lp-team-copy .home-proof {
+  margin-top: var(--space-5);
+}
+
+/* Two by two, so each figure has room */
+.lp-team-stats .home-stats {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 0;
+}
+
+.lp-team-stats .home-stat:nth-child(3) {
+  border-left: 0;
+}
+
+.lp-team-stats .home-stat:nth-child(n + 3) {
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Fit ──────────────────────────────────────────────────── */
+.lp-fit {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.lp-fit-col {
+  min-width: 0;
+  padding: var(--space-6);
+  border: 1px solid var(--lp-line);
+  border-radius: var(--radius-xl);
+  background-color: #fff;
+}
+
+.lp-fit-col--yes {
+  border-top: 3px solid var(--color-secondary);
+}
+
+.lp-fit-col--no {
+  border-top: 3px solid #D0D5DD;
+}
+
+.lp-fit-col h3 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-md);
+}
+
+.lp-fit-col ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-fit-col li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--color-body);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.lp-fit-col li::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-secondary-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23089949' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center / 12px no-repeat;
+}
+
+.lp-fit-col--no li::before {
+  background: var(--color-bg-alt) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23667085' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M6 6l12 12M18 6 6 18'/%3E%3C/svg%3E") center / 10px no-repeat;
+}
+
+/* ── Further reading ──────────────────────────────────────── */
+.lp-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-6);
+}
+
+.lp-links > div {
+  min-width: 0;
+}
+
+.lp-links h3 {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-base);
+}
+
+.lp-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-links li {
+  border-top: 1px solid var(--lp-line);
+}
+
+.lp-links a {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  color: var(--color-body);
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: color 0.2s ease, padding 0.2s ease;
+}
+
+.lp-links a::after {
+  content: "\2192";
+  color: var(--color-primary);
+}
+
+.lp-links a:hover {
+  padding-left: 4px;
+  color: var(--color-primary);
+}
+
+/* ── Final form ───────────────────────────────────────────── */
+.lp-final-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(1.5rem, 3.5vw, 3.5rem);
+  align-items: center;
+}
+
+.lp-final-copy {
+  min-width: 0;
+}
+
+.lp-final-copy h2 {
+  margin-bottom: var(--space-3);
+  text-wrap: balance;
+}
+
+.lp-next {
+  display: grid;
+  gap: 14px;
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-next li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.lp-next li > span {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--color-primary-bg);
+  color: var(--color-primary);
+  font-size: 0.8125rem;
+  font-weight: var(--weight-bold);
+}
+
+.lp-next strong {
+  color: var(--lp-ink);
+}
+
+.lp-final-alt {
+  margin-top: var(--space-5);
+  color: var(--lp-muted);
+  font-size: var(--text-sm);
+}
+
+.lp-final .lp-form-card {
+  margin: 0;
+  max-width: none;
+}
+
+/* ── Brochure ─────────────────────────────────────────────── */
+.lp-bro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.lp-bro-cover {
+  position: relative;
+  display: block;
+  height: 380px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.lp-bro-cover img {
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 340px;
+  border: 1px solid var(--lp-line);
+  border-radius: 6px;
+  box-shadow: 0 24px 48px -20px rgba(16, 24, 40, 0.35);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.lp-bro-cover img:first-child {
+  z-index: 1;
+  left: 8%;
+  transform: rotate(-3deg);
+}
+
+.lp-bro-cover img:nth-child(2) {
+  left: 34%;
+  top: 18px;
+  transform: rotate(4deg);
+}
+
+.lp-bro-cover:hover img:first-child,
+.lp-bro-cover:focus-visible img:first-child {
+  transform: rotate(-5deg) translateX(-12px);
+}
+
+.lp-bro-cover:hover img:nth-child(2),
+.lp-bro-cover:focus-visible img:nth-child(2) {
+  transform: rotate(7deg) translateX(14px);
+}
+
+.lp-bro-open {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background-color: var(--lp-ink);
+  color: #fff;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  transform: translateX(-50%);
+  box-shadow: 0 10px 24px -8px rgba(16, 24, 40, 0.5);
+}
+
+.lp-bro-copy {
+  min-width: 0;
+}
+
+.lp-bro-copy h2 {
+  margin-bottom: var(--space-3);
+  text-wrap: balance;
+}
+
+.lp-bro-copy .check-list {
+  margin: var(--space-4) 0 var(--space-5);
+}
+
+/* ── Phone bar: the two actions, once the hero form has scrolled away ── */
+.lp-bar {
+  display: none;
+}
+
+/* ── First screen: on laptops and desktops the whole hero, copy and form, fits without scrolling ── */
+@media (min-width: 1100px) {
+  .lp-hero.page-hero--service {
+    padding-bottom: 18px;
+  }
+
+  .lp-hero .breadcrumb {
+    margin-bottom: 0;
+  }
+
+  .lp-hero .hero-split-copy {
+    gap: 12px;
+  }
+
+  .lp-hero .hero-split-copy h1 {
+    font-size: clamp(2.1rem, 1rem + 2.1vw, 2.65rem);
+  }
+
+  .lp-hero .hero-split-copy .page-lead {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .lp-hero .lp-ticks li {
+    font-size: 0.8125rem;
+  }
+
+  /* The hero form keeps what matters: name, email, phone, company and a short note */
+  .lp-hero .lp-form-card {
+    padding: 18px 22px 16px;
+  }
+
+  .lp-hero .lp-form-head {
+    margin-bottom: 12px;
+  }
+
+  .lp-hero .lp-form-head p:not(.lp-form-kicker),
+  .lp-hero .lead-field:has(select) {
+    display: none;
+  }
+
+  .lp-hero .lead-field {
+    gap: 4px;
+  }
+
+  .lp-hero .lead-field input {
+    min-height: 42px;
+    padding-block: 9px;
+  }
+
+  .lp-hero .lead-field textarea {
+    height: 76px;
+    min-height: 0;
+  }
+
+  .lp-hero .lead-form-foot {
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .lp-hero .lead-submit {
+    flex: 1 1 150px;
+    min-height: 44px;
+  }
+
+  .lp-hero .lead-dl {
+    padding: 0 13px;
+  }
+}
+
+/* Shorter laptop screens: drop the example job strip and shorten the note field */
+@media (min-width: 1100px) and (max-height: 680px) {
+  .lp-hero .lp-route {
+    display: none;
+  }
+
+  .lp-hero .lead-field textarea {
+    height: 56px;
+  }
+}
+
+/* Very short screens: the optional note field goes too (the form at the end of the page still has it) */
+@media (min-width: 1100px) and (max-height: 640px) {
+  .lp-hero .lead-field:has(textarea) {
+    display: none;
+  }
+
+  .lp-hero .hero-split-copy h1 {
+    font-size: clamp(2rem, 1rem + 1.8vw, 2.4rem);
+  }
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1099px) {
+  .lp-hero .hero-split {
+    align-items: start;
+  }
+
+  .lp-hero .hero-split-visual {
+    max-width: 640px;
+  }
+
+  .lp-trust-list,
+  .lp-modules {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lp-pains {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lp-see,
+  .lp-result,
+  .lp-team,
+  .lp-bro,
+  .lp-final-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lp-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lp-steps li:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .lp-bar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 900;
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid var(--lp-line);
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 -8px 24px -12px rgba(16, 24, 40, 0.2);
+    transform: translateY(110%);
+    transition: transform 0.3s ease;
+  }
+
+  .lp-bar.is-on {
+    transform: none;
+  }
+
+  /* The bar does the side tab's job here, and the tab would cover the hero text */
+  body:has(.lp-bar) .side-contact {
+    display: none;
+  }
+
+  .lp-bar-btn {
+    flex: 1;
+    justify-content: center;
+    min-height: 46px;
+    padding-inline: 12px;
+    font-size: var(--text-sm);
+  }
+
+  .lp-bar-btn.btn-lead {
+    flex: 1.4;
+  }
+}
+
+@media (max-width: 599px) {
+  .lp-ticks,
+  .lp-trust-list,
+  .lp-pains,
+  .lp-modules,
+  .lp-fit,
+  .lp-links,
+  .lp-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lp-steps li::after {
+    display: none;
+  }
+
+  .lp-route {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .lp-route-id {
+    display: none;
+  }
+
+  .lp-route li {
+    font-size: 0.6875rem;
+  }
+
+  .lp-form-card {
+    padding: 20px 16px 16px;
+  }
+
+  .lp-form-card .lead-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .lp-bro-cover {
+    height: 300px;
+  }
+
+  .lp-bro-cover img {
+    height: 260px;
+  }
+
+  .lp-rot-more {
+    display: none;
+  }
+
+  .lp-hero .lp-eyebrow {
+    max-width: 100%;
+    padding-right: 12px;
+    font-size: 0.75rem;
+  }
+
+  .lp-hero .hero-split-copy .page-lead {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lp-rot > span,
+  .lp-bro-cover img {
+    transition: none;
+  }
+
+  .lp-pain,
+  .lp-module,
+  .lp-links a,
+  .lp-bar {
+    transition: none;
+  }
+
+  .lp-pain:hover,
+  .lp-module:hover,
+  .lp-module:focus-visible {
+    transform: none;
+  }
+}
