@@ -3,7 +3,8 @@
    Stores the visitor's choice in localStorage for 365 days and
    applies it to Google Consent Mode v2 (defaults are set inline
    in each page <head>).
-   Zoho PageSense (enquiry and visit analytics) loads:
+   Zoho PageSense (enquiry and visit analytics) and the Meta Pixel
+   (measuring our Meta ads; js/leadform.js sends its Lead event) load:
    - after "Accept", everywhere;
    - before any choice, only outside the UK/EEA/Switzerland
      (detected from the device time zone), mirroring the
@@ -17,6 +18,7 @@
   var COOKIE_KEY = 'zudo_cookie_consent';
   var COOKIE_EXPIRY_DAYS = 365;
   var PAGESENSE_SRC = 'https://cdn-in.pagesense.io/js/zudoworks/a082c937db01490eb591882d194fbe5a.js';
+  var META_PIXEL_ID = '1664899591891953';
 
   function read(key) {
     try { return localStorage.getItem(key); } catch (e) { return null; }
@@ -56,12 +58,34 @@
     document.head.appendChild(s);
   }
 
+  // Meta's standard pixel snippet, run only when the rules above allow it
+  function loadMetaPixel() {
+    if (window.fbq) {
+      window.fbq('consent', 'grant');
+      return;
+    }
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('init', META_PIXEL_ID);
+    window.fbq('track', 'PageView');
+  }
+
+  function loadTrackers() {
+    loadPageSense();
+    loadMetaPixel();
+  }
+
   function applyConsent(value) {
     var granted = value === 'accepted';
+    var state = granted ? 'granted' : 'denied';
     if (typeof window.gtag === 'function') {
-      window.gtag('consent', 'update', { analytics_storage: granted ? 'granted' : 'denied' });
+      window.gtag('consent', 'update', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
     }
-    if (granted) loadPageSense();
+    if (granted) loadTrackers();
+    else if (window.fbq) window.fbq('consent', 'revoke');
   }
 
   function setConsent(value) {
@@ -92,7 +116,7 @@
       '    <button type="button" id="cookie-decline">Essential Only</button>',
       '  </div>',
       '  <div class="cookie-text">',
-      '    <p>We use essential cookies to run this site. With your consent we also use analytics cookies (Google Analytics and Zoho PageSense) to understand how the site is used. Where the law requires it, analytics stay off until you accept. See our <a href="/privacy/">Privacy Policy</a>.</p>',
+      '    <p>We use essential cookies to run this site. With your consent we also use analytics and advertising cookies (Google Analytics, Zoho PageSense and the Meta Pixel) to understand how the site is used and to measure our ads. Where the law requires it, they stay off until you accept. See our <a href="/privacy/">Privacy Policy</a>.</p>',
       '  </div>',
       '</div>'
     ].join('');
@@ -122,10 +146,10 @@
   function init() {
     var consent = getConsent();
     if (consent && !hasConsentExpired()) {
-      if (consent === 'accepted') loadPageSense();
+      if (consent === 'accepted') loadTrackers();
       return;
     }
-    if (!needsOptIn()) loadPageSense();
+    if (!needsOptIn()) loadTrackers();
     showBanner();
   }
 

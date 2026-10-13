@@ -10,15 +10,16 @@
         /* India (IST) visitors also see the phone-call option; everyone else sees WhatsApp only */
         try { if (/^Asia\/(Kolkata|Calcutta)$/.test(Intl.DateTimeFormat().resolvedOptions().timeZone)) document.documentElement.classList.add('is-in'); } catch (e) { }
     </script>
-    <!-- Consent Mode v2: analytics off by default in the UK/EEA/CH until accepted; no ad storage anywhere -->
+    <!-- Consent Mode v2: analytics and ad measurement off by default in the UK/EEA/CH until accepted;
+         elsewhere on unless the visitor chooses "Essential Only" (js/cookie-consent.js) -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500, region: ['GB', 'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO', 'CH'] });
-        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
+        gtag('consent', 'default', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' });
         try {
             var zc = localStorage.getItem('zudo_cookie_consent');
-            if (zc) gtag('consent', 'update', { analytics_storage: zc === 'accepted' ? 'granted' : 'denied' });
+            if (zc) { var zv = zc === 'accepted' ? 'granted' : 'denied'; gtag('consent', 'update', { ad_storage: zv, ad_user_data: zv, ad_personalization: zv, analytics_storage: zv }); }
         } catch (e) { }
     </script>
     <!-- Google Tag Manager -->
@@ -987,7 +988,7 @@
         </div>
     </div>
 </div>
-<script defer src="/js/site.js?v=a06f5f411f"></script>
+<script defer src="/js/site.js?v=57f42349d6"></script>
     <!-- @/footer -->
 </body>
 

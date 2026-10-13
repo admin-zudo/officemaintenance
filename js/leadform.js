@@ -20,12 +20,18 @@
   var PHONE = /^[+]{0,1}[()0-9-. ]+$/;
   var FILES = { brochure_pdf: 'PDF brochure', deck_pptx: 'PowerPoint deck' };
 
-  // Google Ads click id, kept for the session so a later enquiry still carries it
-  var gclid = '';
+  // Google Ads click id, kept for the session so a later enquiry still carries it.
+  // The first page a visitor landed on with campaign tags (utm_*, gclid, fbclid) is kept too, so an
+  // enquiry sent from another page still shows which ad brought them.
+  var gclid = '', landing = '';
   try {
     var m = location.search.match(/[?&]gclid=([^&]+)/);
     if (m) sessionStorage.setItem('zw_gclid', decodeURIComponent(m[1]));
     gclid = sessionStorage.getItem('zw_gclid') || '';
+    if (/[?&](utm_[a-z]+|gclid|fbclid|msclkid)=/.test(location.search) && !sessionStorage.getItem('zw_landing')) {
+      sessionStorage.setItem('zw_landing', location.href.split('#')[0]);
+    }
+    landing = sessionStorage.getItem('zw_landing') || '';
   } catch (e) { }
 
   // Pre-select the service area from the page the visitor is on
@@ -84,7 +90,8 @@
     var fields = Array.prototype.slice.call(form.querySelectorAll('[data-check]'));
     var needed = [form.elements.SingleLine, form.elements.Email];
 
-    form.elements.zf_referrer_name.value = location.href.split('#')[0].slice(0, 1800);
+    var here = location.href.split('#')[0];
+    form.elements.zf_referrer_name.value = (landing && landing !== here ? here + ' | landed on: ' + landing : here).slice(0, 1800);
     form.elements.zc_gad.value = gclid;
     var select = form.elements.Dropdown;
     for (var k = 0; k < SERVICE.length; k++) {
@@ -117,6 +124,8 @@
       success.setAttribute('tabindex', '-1');
       success.focus();
       if (window.dataLayer) window.dataLayer.push({ event: 'generate_lead', form_location: location.pathname });
+      // Meta Pixel (only present when cookie rules allow it): tells Meta ads which visits became enquiries
+      if (window.fbq) window.fbq('track', 'Lead', { content_name: location.pathname });
     });
 
     function sending() {
