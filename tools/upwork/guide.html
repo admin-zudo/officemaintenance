@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<!-- Zudo Works capability and working guide for Upwork proposals (10 A4 pages).
+     Rendered by tools/upwork/make_upwork.py to tools/upwork/out/.
+     Upwork rule: no email, phone, WhatsApp, website address, booking link or QR code anywhere in this
+     document, because sharing contact details before a contract starts can get the account suspended.
+     Same honesty rules as the site: no prices, no client names or results, no partner claim. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Zudo Works: Capabilities and How We Work on Upwork</title>
+<meta name="author" content="Zudo Works">
+<style>
+@font-face { font-family: 'Inter'; font-weight: 400 700; src: url('/Asset/fonts/inter-latin.woff2') format('woff2'); }
+@page { size: A4; margin: 0; }
+:root {
+  --ink: #0F1B2D; --body: #3D4A5C; --muted: #6B7689; --line: #E3E8EF; --soft: #F4F7FB;
+  --blue: #226DB4; --blue-dk: #1B5A96; --blue-bg: #EBF3FA; --green: #089949; --green-bg: #E6F7EE;
+  --red: #E42527; --amber: #F9B21D; --amber-bg: #FDF3E1; --navy: #0E1E36; --navy2: #16294A; --sky: #7FB6EA;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; color: var(--body); font-size: 9.3pt; line-height: 1.5;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3, h4 { margin: 0; color: var(--ink); line-height: 1.15; letter-spacing: -0.02em; }
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+
+.page { position: relative; width: 210mm; height: 297mm; padding: 15mm 16mm 16mm; overflow: hidden; background: #fff;
+  page-break-after: always; break-after: page; display: flex; flex-direction: column; }
+.page:last-child { page-break-after: auto; break-after: auto; }
+.run { display: flex; justify-content: space-between; align-items: center; padding-bottom: 5mm; margin-bottom: 8mm;
+  border-bottom: 1px solid var(--line); font-size: 7.5pt; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+.run b { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); font-size: 9pt; letter-spacing: 0.02em; text-transform: none; }
+.run b img { width: 16px; height: 16px; }
+.foot { position: absolute; left: 16mm; right: 16mm; bottom: 9mm; display: flex; justify-content: space-between; font-size: 7.5pt; color: var(--muted); }
+.foot .n { color: var(--ink); font-weight: 700; }
+.bar { display: flex; gap: 3px; width: 64px; }
+.bar i { flex: 1; height: 4px; border-radius: 2px; }
+.bar i:nth-child(1) { background: var(--blue); } .bar i:nth-child(2) { background: var(--green); }
+.bar i:nth-child(3) { background: var(--red); } .bar i:nth-child(4) { background: var(--amber); }
+
+.kicker { margin-bottom: 2.5mm; color: var(--blue); font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.title { max-width: 165mm; font-size: 25pt; font-weight: 700; letter-spacing: -0.03em; }
+.title em { font-style: normal; color: var(--blue); }
+.lead { max-width: 158mm; margin-top: 3.5mm; font-size: 10.5pt; line-height: 1.55; }
+.note { color: var(--muted); font-size: 7.5pt; }
+.card { padding: 5.5mm; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+.chip { display: inline-block; padding: 2px 8px; border-radius: 99px; background: var(--blue-bg); color: var(--blue-dk);
+  font-size: 6.8pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.check li { position: relative; margin-top: 1.8mm; padding-left: 17px; }
+.check li::before { content: ""; position: absolute; left: 0; top: 2px; width: 11px; height: 11px; border-radius: 50%;
+  background: var(--green-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23089949' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center / 7px no-repeat; }
+.dash li { position: relative; margin-top: 1.5mm; padding-left: 12px; }
+.dash li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 1.5px; background: var(--muted); }
+.sec { margin-top: 7mm; }
+.sec > h3 { margin-bottom: 2.5mm; font-size: 12pt; }
+
+/* Cover */
+.cover { padding: 16mm; background: #F3F7FC; }
+.cover-top { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { width: 44px; height: 44px; }
+.logo span { display: block; color: var(--ink); font-size: 17pt; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; }
+.logo small { display: block; color: var(--muted); font-size: 6.5pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.cover-tag { color: var(--muted); font-size: 8pt; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.cover h1 { max-width: 168mm; margin-top: 6mm; font-size: 36pt; line-height: 1.05; letter-spacing: -0.035em; }
+.cover h1 em { font-style: normal; color: var(--blue); }
+.cover .lead { max-width: 150mm; margin-top: 6mm; font-size: 11.5pt; }
+.cover-index { display: grid; grid-template-columns: 1fr 1fr; gap: 1.8mm 10mm; max-width: 150mm; margin-top: 9mm; font-size: 9pt; }
+.cover-index li { display: flex; gap: 3mm; padding-bottom: 1.8mm; border-bottom: 1px solid #D8E2EE; color: var(--ink); }
+.cover-index b { width: 6mm; color: var(--blue); }
+.cover-art { position: absolute; left: 0; right: 0; bottom: 24mm; height: 92mm; }
+.cover-art img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+.cover-bottom { position: absolute; left: 16mm; right: 16mm; bottom: 11mm; display: flex; justify-content: space-between; align-items: flex-end; font-size: 8pt; color: var(--muted); }
+.cover-bottom strong { color: var(--ink); }
+
+/* At a glance */
+.facts { display: grid; grid-template-columns: 38mm 1fr; margin-top: 7mm; border-top: 1px solid var(--line); }
+.facts dt, .facts dd { margin: 0; padding: 2.6mm 0; border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); font-size: 8pt; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.facts dd { color: var(--ink); font-size: 9.5pt; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 7mm; border: 1px solid var(--line); border-radius: 12px; }
+.stats div { padding: 5mm 4.5mm; }
+.stats div + div { border-left: 1px solid var(--line); }
+.stats b { display: block; color: var(--ink); font-size: 21pt; font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; }
+.stats span { display: block; margin-top: 1.2mm; color: var(--muted); font-size: 7.8pt; line-height: 1.35; }
+.fit { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: auto; margin-bottom: 8mm; }
+.fit .card h3 { margin-bottom: 1mm; font-size: 10.5pt; }
+.fit .yes { border-top: 3px solid var(--green); }
+.fit .no { border-top: 3px solid #C9D2DE; }
+
+/* Services */
+.svc { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 6mm; }
+.svc .card { padding: 5mm 5.5mm; }
+.svc h3 { display: flex; align-items: center; gap: 2.5mm; margin-bottom: 1.5mm; font-size: 10.5pt; }
+.svc h3 i { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 7px;
+  background: var(--blue-bg); color: var(--blue); font-size: 7.5pt; font-style: normal; font-weight: 700; }
+.svc p { color: var(--muted); font-size: 8.3pt; }
+.svc ul { margin-top: 1mm; font-size: 8.3pt; color: var(--body); }
+.svc .gets { margin-top: 2.5mm; padding-top: 2mm; border-top: 1px dashed var(--line); font-size: 7.8pt; color: var(--ink); }
+.svc .gets b { color: var(--green); }
+
+/* Ways to work */
+.ways { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 7mm; }
+.ways .card { display: flex; flex-direction: column; }
+.ways h3 { margin: 2mm 0 1.5mm; font-size: 11pt; }
+.ways p { color: var(--muted); font-size: 8.3pt; }
+.ways .best { margin-top: auto; padding-top: 3mm; font-size: 8pt; color: var(--ink); }
+.table { width: 100%; margin-top: 3mm; border-collapse: collapse; font-size: 8.5pt; }
+.table th, .table td { padding: 2.6mm 3mm; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.table thead th { background: var(--soft); color: var(--ink); font-size: 7.8pt; letter-spacing: 0.04em; text-transform: uppercase; }
+.table td:first-child { width: 46mm; color: var(--ink); font-weight: 600; }
+
+/* Process */
+.steps { margin-top: 7mm; }
+.steps li { display: grid; grid-template-columns: 11mm 1fr 1fr; gap: 5mm; padding: 4.2mm 0; border-bottom: 1px solid var(--line); }
+.steps li:first-child { border-top: 1px solid var(--line); }
+.steps .num { width: 9mm; height: 9mm; border: 2px solid var(--blue); border-radius: 50%; color: var(--blue); font-weight: 700;
+  display: flex; align-items: center; justify-content: center; font-size: 10pt; }
+.steps li:last-child .num { border-color: var(--green); background: var(--green); color: #fff; }
+.steps h3 { margin-bottom: 1mm; font-size: 10.5pt; }
+.steps .we, .steps .you { font-size: 8.3pt; }
+.steps .you { padding-left: 4mm; border-left: 2px solid var(--line); color: var(--muted); }
+.steps .you b { display: block; margin-bottom: 0.5mm; color: var(--ink); font-size: 7.2pt; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* Communication */
+.comm { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 7mm; align-items: start; }
+.msg { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.msg-h { display: flex; justify-content: space-between; padding: 3.2mm 4.5mm; background: var(--soft); border-bottom: 1px solid var(--line); font-size: 8pt; }
+.msg-h b { color: var(--ink); }
+.msg-b { padding: 4.5mm; font-size: 8.3pt; }
+.msg-b h4 { margin: 2.5mm 0 0.8mm; font-size: 8pt; letter-spacing: 0.05em; text-transform: uppercase; color: var(--blue); }
+.msg-b h4:first-child { margin-top: 0; }
+.rules li { padding: 3mm 0; border-bottom: 1px solid var(--line); }
+.rules li:first-child { padding-top: 0; }
+.rules b { display: block; margin-bottom: 0.6mm; color: var(--ink); font-size: 9.5pt; }
+.rules span { color: var(--muted); font-size: 8.3pt; }
+
+/* Two-column text blocks */
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; margin-top: 6mm; }
+.cols h3 { margin-bottom: 2mm; font-size: 12pt; }
+.box-navy { margin-top: auto; margin-bottom: 8mm; padding: 6mm 7mm; border-radius: 14px; background: var(--navy); color: #C9D5E6; }
+.box-navy h3 { margin-bottom: 1.5mm; color: #fff; font-size: 12pt; }
+.box-navy p { font-size: 8.6pt; }
+
+/* Checklist page */
+.todo li { display: flex; gap: 3.5mm; padding: 3mm 0; border-bottom: 1px solid var(--line); }
+.todo li::before { content: ""; flex: none; width: 11px; height: 11px; margin-top: 2px; border: 1.5px solid #9AA6B8; border-radius: 3px; }
+.todo b { color: var(--ink); }
+.agenda li { display: grid; grid-template-columns: 14mm 1fr; padding: 2.4mm 0; border-bottom: 1px solid var(--line); font-size: 8.6pt; }
+.agenda li span { color: var(--blue); font-weight: 700; }
+
+/* Team and close */
+.who { display: grid; grid-template-columns: 44mm 1fr; gap: 7mm; margin-top: 6mm; align-items: start; }
+.who .photo { overflow: hidden; border-radius: 14px; aspect-ratio: 1; }
+.who .photo img { width: 100%; height: 100%; object-fit: cover; }
+.who h3 { font-size: 15pt; }
+.who .role { margin: 0.8mm 0 2.5mm; color: var(--blue); font-weight: 700; font-size: 9pt; }
+.award { display: flex; gap: 4mm; align-items: center; margin-top: 3.5mm; padding: 3.5mm; border: 1px solid #F1DFAE; border-radius: 10px; background: #FFFAEE; }
+.award img { width: 15mm; border: 1px solid #EADCB6; border-radius: 3px; }
+.award b { display: block; color: var(--ink); font-size: 9pt; }
+.award span { color: var(--muted); font-size: 7.8pt; }
+.faq dt { margin-top: 3.2mm; color: var(--ink); font-weight: 700; font-size: 9.3pt; }
+.faq dd { margin: 0.8mm 0 0; padding-bottom: 3.2mm; border-bottom: 1px solid var(--line); font-size: 8.5pt; }
+.next { margin-top: auto; margin-bottom: 8mm; padding: 6.5mm 7mm; border-radius: 16px; background: var(--navy); color: #C9D5E6; }
+.next p.k { color: var(--sky); font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+.next h3 { margin: 1.5mm 0 2mm; color: #fff; font-size: 15pt; }
+.next ol { counter-reset: n; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 4mm; }
+.next li { padding: 3.5mm; border-radius: 10px; background: var(--navy2); font-size: 8.3pt; }
+.next li b { display: block; margin-bottom: 0.8mm; color: #fff; font-size: 9pt; }
+</style>
+</head>
+<body>
+
+<!-- 1 · Cover -->
+<section class="page cover">
+  <div class="cover-top">
+    <div class="logo"><img src="/Asset/brand/zudo-works-logo.svg" alt=""><div><span>Zudo Works</span><small>Zoho &amp; custom software development</small></div></div>
+    <div class="cover-tag">Capability guide &middot; {{YEAR}}</div>
+  </div>
+  <div class="bar" style="margin-top:16mm"><i></i><i></i><i></i><i></i></div>
+  <h1>What we build, and <em>how we run your project on Upwork</em></h1>
+  <p class="lead">A short guide for clients who are considering us for Zoho or custom software work: our services, the ways we can contract, how we communicate, how we handle your data and access, and what you receive at the end.</p>
+  <ol class="cover-index">
+    <li><b>02</b>At a glance</li>
+    <li><b>06</b>How a project runs</li>
+    <li><b>03</b>Services</li>
+    <li><b>07</b>Communication and reporting</li>
+    <li><b>05</b>Ways to work together</li>
+    <li><b>08</b>Access, security and handover</li>
+    <li><b>09</b>Before we start</li>
+    <li><b>10</b>Who you work with, FAQ</li>
+  </ol>
+  <div class="cover-art"><img src="{{IMG_HANDSHAKE}}" alt=""></div>
+  <div class="cover-bottom"><span><strong>Zudo Works</strong> &middot; Chennai, India</span><span>Prepared for Upwork clients</span></div>
+</section>
+
+<!-- 2 · At a glance -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>01 &middot; At a glance</span></div>
+  <p class="kicker">At a glance</p>
+  <h2 class="title">A small team of <em>Zoho developers</em>, not a sales layer</h2>
+  <p class="lead">We design, build and fix business systems on Zoho Creator, Zoho CRM and the wider Zoho suite, connect them to the other tools you use, and write custom code when Zoho is not the right tool. The person who scopes your job is the person who builds it.</p>
+  <dl class="facts">
+    <dt>Based in</dt><dd>Chennai, India (IST, UTC+5:30)</dd>
+    <dt>Clients in</dt><dd>United States, United Kingdom, Australia, New Zealand, the Middle East and India</dd>
+    <dt>Technical lead</dt><dd>Arunkumar V, CTO. &ldquo;Master of Creator (Global Winner)&rdquo; award, Zoho Creator Partner Hackathon 2025</dd>
+    <dt>Contracts</dt><dd>Fixed-price milestones or hourly, run entirely through Upwork</dd>
+    <dt>Reply time</dt><dd>Within 6 hours on Upwork Messages, guaranteed</dd>
+    <dt>After launch</dt><dd>One month of free support and onboarding on every build</dd>
+  </dl>
+  <div class="stats">
+    <div><b>20+</b><span>Projects our team has worked on</span></div>
+    <div><b>10+</b><span>Client businesses supported</span></div>
+    <div><b>40+</b><span>Zoho products used</span></div>
+    <div><b>15+</b><span>Core Zoho apps worked in hands-on</span></div>
+  </div>
+  <p class="note" style="margin-top:2mm">Figures cover our team members&rsquo; project experience, much of it as developers at a previous organization.</p>
+  <div class="fit">
+    <div class="card yes"><h3>We are a good fit when</h3><ul class="check">
+      <li>Your business runs on Zoho, or you have decided to move to it</li>
+      <li>An existing Zoho setup needs fixing, cleaning up or extending</li>
+      <li>Two systems need to share data without anyone retyping it</li>
+      <li>You want the work documented so your own team can maintain it</li>
+    </ul></div>
+    <div class="card no"><h3>We will tell you early when</h3><ul class="dash">
+      <li>A standard Zoho feature already does what you are asking for</li>
+      <li>Zoho is the wrong platform for the job and a different tool would serve you better</li>
+      <li>The deadline or scope does not fit the budget, before any money is spent</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">02 / 10</span></div>
+</section>
+
+<!-- 3 · Services (1 of 2) -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>02 &middot; Services</span></div>
+  <p class="kicker">Services &middot; 1 of 2</p>
+  <h2 class="title">What we build on <em>Zoho</em></h2>
+  <p class="lead">Each service below can be hired on its own. Most projects combine two or three of them.</p>
+  <div class="svc">
+    <div class="card"><h3><i>01</i>Zoho Creator development</h3><p>Custom applications for processes no off-the-shelf app covers.</p>
+      <ul class="dash"><li>Data model, forms, reports and role-based access</li><li>Client and supplier portals, approvals, dashboards</li><li>Deluge workflows, schedules and custom actions</li></ul>
+      <p class="gets"><b>You receive:</b> the working app in your account, a field and workflow list, and an admin guide.</p></div>
+    <div class="card"><h3><i>02</i>Zoho CRM implementation</h3><p>A CRM set up around how your team actually sells.</p>
+      <ul class="dash"><li>Pipelines, layouts, Blueprint, validation rules</li><li>Lead assignment, scoring, web forms and SalesIQ</li><li>Migration from spreadsheets, HubSpot or Salesforce</li></ul>
+      <p class="gets"><b>You receive:</b> a configured CRM, migrated and checked data, and user training.</p></div>
+    <div class="card"><h3><i>03</i>Deluge development</h3><p>Custom functions where configuration alone runs out.</p>
+      <ul class="dash"><li>Functions, buttons, scheduled jobs and webhooks</li><li>Calls between CRM, Creator, Books, Desk and outside APIs</li><li>Review and repair of scripts someone else wrote</li></ul>
+      <p class="gets"><b>You receive:</b> commented code, a list of every function and what triggers it.</p></div>
+    <div class="card"><h3><i>04</i>Integrations</h3><p>Data moving between Zoho and your other systems without retyping.</p>
+      <ul class="dash"><li>REST APIs, webhooks, Zoho Flow and custom middleware</li><li>Accounting, e-commerce, payment gateways, forms, ads</li><li>Error alerts and retries so failures are noticed</li></ul>
+      <p class="gets"><b>You receive:</b> a diagram of what syncs where and when, plus the alert setup.</p></div>
+    <div class="card"><h3><i>05</i>Zoho suite setup</h3><p>Getting the rest of the suite working together.</p>
+      <ul class="dash"><li>Zoho One rollouts and user provisioning</li><li>Books, Inventory, Desk, Projects, Analytics, Forms, Sign</li><li>Reports and dashboards built from your real data</li></ul>
+      <p class="gets"><b>You receive:</b> configured apps, connected to each other, with a short guide per app.</p></div>
+    <div class="card"><h3><i>06</i>Data migration and cleanup</h3><p>Moving data in without losing history or creating duplicates.</p>
+      <ul class="dash"><li>Field mapping, deduplication and validation</li><li>Trial import, your review, then the final import</li><li>Attachments, notes and relationships kept intact</li></ul>
+      <p class="gets"><b>You receive:</b> a mapping sheet and a reconciliation count of records in and out.</p></div>
+  </div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">03 / 10</span></div>
+</section>
+
+<!-- 4 · Services (2 of 2) -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>02 &middot; Services</span></div>
+  <p class="kicker">Services &middot; 2 of 2</p>
+  <h2 class="title">Automation, AI, custom code <em>and support</em></h2>
+  <div class="svc">
+    <div class="card"><h3><i>07</i>Business process automation</h3><p>Removing the manual steps between people and systems.</p>
+      <ul class="dash"><li>Approvals, reminders, hand-offs and escalations</li><li>Quote-to-invoice and order-to-delivery flows</li><li>We map the process before automating it</li></ul>
+      <p class="gets"><b>You receive:</b> a before-and-after process map and the automations behind it.</p></div>
+    <div class="card"><h3><i>08</i>AI automation</h3><p>Narrow, checkable uses of AI inside your Zoho setup.</p>
+      <ul class="dash"><li>Reading emails, purchase orders and documents into draft records</li><li>Zoho Zia, or Claude and ChatGPT through Zoho MCP</li><li>A person approves every AI-created record</li></ul>
+      <p class="gets"><b>You receive:</b> the automation, its permission settings, and a review screen.</p></div>
+    <div class="card"><h3><i>09</i>Custom software</h3><p>For the cases where Zoho is the wrong tool.</p>
+      <ul class="dash"><li>Web apps, internal tools and dashboards</li><li>PHP, Laravel, Node.js, JavaScript, SQL, WordPress</li><li>Built to connect to Zoho and your other systems</li></ul>
+      <p class="gets"><b>You receive:</b> source code in your repository, set-up notes and deployment steps.</p></div>
+    <div class="card"><h3><i>10</i>Support and maintenance</h3><p>Keeping a working system working.</p>
+      <ul class="dash"><li>Fixes, small changes, new users and fields</li><li>Checking automations and integrations after Zoho updates</li><li>Hourly or a fixed monthly block of hours</li></ul>
+      <p class="gets"><b>You receive:</b> a monthly log of what was changed and why.</p></div>
+  </div>
+  <div class="sec">
+    <h3>Industries our team has worked in</h3>
+    <p style="font-size:8.6pt">Retail (USA), training and education (UK), healthcare (USA), manufacturing (China), travel (Thailand), legal (Saudi Arabia), and lending and finance (India). For manufacturers we also have a ready set of designs: job tracking, stock, purchasing, quality, batch traceability and dashboards.</p>
+  </div>
+  <figure class="sec" style="margin-left:0;margin-right:0"><img src="{{IMG_EXPLORER}}" alt="Example workflow across Zoho apps" style="width:100%;height:48mm;object-fit:cover;object-position:center 88%;border:1px solid var(--line);border-radius:12px"><figcaption class="note" style="margin-top:2mm">An example workflow from our interactive explorer: apps connected through one integration and AI layer. Example only, not a client system.</figcaption></figure>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">04 / 10</span></div>
+</section>
+
+<!-- 5 · Ways to work together -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>03 &middot; Ways to work together</span></div>
+  <p class="kicker">Ways to work together</p>
+  <h2 class="title">Three ways to contract, <em>all through Upwork</em></h2>
+  <p class="lead">Every payment, file and message stays on Upwork, so you keep Upwork&rsquo;s payment protection and a full record of the work. We suggest the type that suits the job in our proposal.</p>
+  <div class="ways">
+    <div class="card"><span class="chip">Fixed price</span><h3>Milestones</h3><p>The work is split into milestones, each with a written deliverable. You fund a milestone, we deliver it, you review and release it. The next one starts only after you approve.</p><p class="best"><b>Best for:</b> new apps, CRM rollouts, migrations and integrations with a clear scope.</p></div>
+    <div class="card"><span class="chip">Hourly</span><h3>Tracked time</h3><p>Time is logged with the Upwork desktop app and shows in your Work Diary. You set a weekly limit, and you see each week&rsquo;s hours before it is billed.</p><p class="best"><b>Best for:</b> fixes, investigations and work where the scope is still unclear.</p></div>
+    <div class="card"><span class="chip">Ongoing</span><h3>Support block</h3><p>An hourly contract with a weekly limit, or a fixed monthly milestone for an agreed number of hours, used for changes and fixes as they come up.</p><p class="best"><b>Best for:</b> keeping a live system healthy after launch.</p></div>
+  </div>
+  <div class="sec">
+    <h3>Good first milestones</h3>
+    <table class="table">
+      <thead><tr><th>Milestone</th><th>What you get</th></tr></thead>
+      <tbody>
+        <tr><td>Review and written scope</td><td>We study your current setup and send a written scope, a milestone plan and the risks we see. Useful before committing to a large build.</td></tr>
+        <tr><td>Fix one broken thing</td><td>A failing automation, a sync that stopped, a report that does not add up. A quick way to see how we work.</td></tr>
+        <tr><td>One working process</td><td>One process built end to end, for example lead to deal, or order to invoice, in use by your team.</td></tr>
+        <tr><td>Prototype</td><td>A clickable Creator app or CRM layout with sample data, so your team can react before the full build.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="box-navy"><h3>When the scope changes</h3><p>It usually does. A new request is written up as a change with its effect on time and cost, and becomes a new milestone or an hourly item only after you approve it. Nothing is added to a bill without your agreement.</p></div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">05 / 10</span></div>
+</section>
+
+<!-- 6 · How a project runs -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>04 &middot; How a project runs</span></div>
+  <p class="kicker">How a project runs</p>
+  <h2 class="title">Six steps, with <em>your sign-off between each</em></h2>
+  <p class="lead">The same sequence for a two-week integration or a three-month rollout. Only the size of each step changes.</p>
+  <ol class="steps">
+    <li><span class="num">1</span><div class="we"><h3>Understand</h3>We ask about the process, not the software: who does what, where data is typed twice, what goes wrong. A call if you want one, or written questions.</div><div class="you"><b>From you</b>30 to 60 minutes with the person who knows the process, and a few real examples.</div></li>
+    <li><span class="num">2</span><div class="we"><h3>Scope and plan</h3>A written scope: what will be built, what will not, the milestones, and the assumptions behind them.</div><div class="you"><b>From you</b>Read it, question it, approve it. Then fund the first milestone.</div></li>
+    <li><span class="num">3</span><div class="we"><h3>Build in a safe place</h3>We build in a sandbox or test copy wherever Zoho allows it, never straight on your live data.</div><div class="you"><b>From you</b>Access as listed on page 9, and quick answers to questions as they come up.</div></li>
+    <li><span class="num">4</span><div class="we"><h3>Demo and adjust</h3>Short recorded demos or calls at the end of each milestone. Changes are made while they are cheap.</div><div class="you"><b>From you</b>Try it with your own cases and tell us what feels wrong.</div></li>
+    <li><span class="num">5</span><div class="we"><h3>Test and go live</h3>We test each workflow against written cases, then you test with real scenarios. Go-live is planned with a way back if needed.</div><div class="you"><b>From you</b>Sign-off on testing and a go-live time that suits your team.</div></li>
+    <li><span class="num">6</span><div class="we"><h3>Hand over and support</h3>Documentation, training and one month of free support and onboarding after launch.</div><div class="you"><b>From you</b>Tell us what your team runs into in the first weeks.</div></li>
+  </ol>
+  <div class="box-navy"><h3>The one rule behind every step</h3><p>Nothing goes live without your sign-off, and every milestone ends with something your team can use. If a step shows the plan was wrong, we stop and agree a new one before carrying on.</p></div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">06 / 10</span></div>
+</section>
+
+<!-- 7 · Communication -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>05 &middot; Communication and reporting</span></div>
+  <p class="kicker">Communication and reporting</p>
+  <h2 class="title">You always know <em>where the work stands</em></h2>
+  <p class="lead">No chasing for updates. Everything is written down in Upwork Messages, so decisions and files are easy to find later.</p>
+  <div class="comm">
+    <ul class="rules">
+      <li><b>One channel</b><span>Upwork Messages for questions, files and decisions. Calls are booked there too.</span></li>
+      <li><b>Reply within 6 hours, guaranteed</b><span>On working days. Urgent production issues are picked up first.</span></li>
+      <li><b>A weekly written update</b><span>Same format every week, shown on the right, even when the week was quiet.</span></li>
+      <li><b>Demos, not descriptions</b><span>Short screen recordings at the end of each milestone, so you can watch them when it suits you.</span></li>
+      <li><b>Calls in your working hours</b><span>We agree a regular call window at the start, in your morning or evening.</span></li>
+      <li><b>Problems early</b><span>If something will be late or cost more, you hear it from us first, with options.</span></li>
+    </ul>
+    <div class="msg">
+      <div class="msg-h"><b>Weekly update &middot; Week 3</b><span>Example format</span></div>
+      <div class="msg-b">
+        <h4>Done this week</h4><ul class="check"><li>Quote layout and approval Blueprint in the sandbox</li><li>Deal-to-invoice function tested with 12 sample deals</li></ul>
+        <h4>Next week</h4><ul class="dash"><li>Recorded demo of milestone 2 on Tuesday</li><li>Start the Books sync for payments</li></ul>
+        <h4>Needs your decision</h4><ul class="dash"><li>Should discounts over 15% need manager approval?</li></ul>
+        <h4>Time and budget</h4><p>Milestone 2 on track. Hourly items this week: 3.5 hours (logged in your Work Diary).</p>
+        <h4>Risks</h4><p>None this week.</p>
+      </div>
+    </div>
+  </div>
+  <div class="box-navy"><h3>A shared task list for larger projects</h3><p>For projects longer than a few weeks we keep a simple task list in Zoho Projects or the tool your team already uses, so everyone can see what is open, in progress and done.</p></div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">07 / 10</span></div>
+</section>
+
+<!-- 8 · Access, security, quality, handover -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>06 &middot; Access, security and handover</span></div>
+  <p class="kicker">Access, security and handover</p>
+  <h2 class="title">Your system, your data, <em>your ownership</em></h2>
+  <div class="cols">
+    <div><h3>Access and security</h3><ul class="check">
+      <li>A separate user for us, with only the permissions the job needs</li>
+      <li>Work in a sandbox or test copy wherever Zoho allows it</li>
+      <li>No changes to your live system without your approval of the time and the change</li>
+      <li>Passwords are never sent in chat; you invite our user from your admin panel</li>
+      <li>Your data stays in your Zoho account; we do not copy it elsewhere</li>
+      <li>You remove our access when the work ends, and we confirm nothing is kept</li>
+      <li>We sign an NDA before seeing your data if you would like one</li>
+    </ul></div>
+    <div><h3>Ownership</h3><ul class="check">
+      <li>Everything built for you is yours once paid, as Upwork&rsquo;s terms set out</li>
+      <li>Zoho licences are bought in your name, so you own the account</li>
+      <li>Custom code lives in your repository, not ours</li>
+      <li>No lock-in: any capable developer can take over from the documentation</li>
+    </ul>
+    <h3 style="margin-top:6mm">Quality</h3><ul class="check">
+      <li>Written test cases for every workflow and integration</li>
+      <li>Testing with your sample data before you test</li>
+      <li>Your sign-off before anything goes live</li>
+      <li>A rollback plan for every change to a live system</li>
+    </ul></div>
+  </div>
+  <div class="sec">
+    <h3>The handover pack</h3>
+    <table class="table">
+      <thead><tr><th>Item</th><th>What it covers</th></tr></thead>
+      <tbody>
+        <tr><td>Admin guide</td><td>How the system is set up, and how to add users, fields and options safely</td></tr>
+        <tr><td>Field and workflow list</td><td>Every custom field, rule, Blueprint and automation, and what it does</td></tr>
+        <tr><td>Code and functions</td><td>Every Deluge function and script, commented, with what triggers it</td></tr>
+        <tr><td>Integration notes</td><td>What syncs where, how often, and who is alerted when a sync fails</td></tr>
+        <tr><td>User training</td><td>A live session plus short recordings your team can rewatch</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">08 / 10</span></div>
+</section>
+
+<!-- 9 · Before we start -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>07 &middot; Before we start</span></div>
+  <p class="kicker">Before we start</p>
+  <h2 class="title">What we need from you <em>in week one</em></h2>
+  <p class="lead">Having these ready usually saves a full week. You do not need all of them on day one; we will ask for each one when it is needed.</p>
+  <div class="cols">
+    <div><h3>Checklist</h3><ul class="todo">
+      <li><span><b>One decision-maker</b> who can approve scope, designs and go-live</span></li>
+      <li><span><b>A process walkthrough</b> by the person who does the work today</span></li>
+      <li><span><b>Your Zoho apps and edition</b> (for example CRM Enterprise, Creator Professional)</span></li>
+      <li><span><b>A user for us</b> with the permissions agreed in the scope</span></li>
+      <li><span><b>Sample data</b> or a sandbox, so we never test on live records</span></li>
+      <li><span><b>Access to connected systems</b> (API keys created by you, test accounts)</span></li>
+      <li><span><b>Examples</b> of the documents, emails or reports the system must produce</span></li>
+      <li><span><b>Your deadline</b> and anything it depends on, such as a launch or an audit</span></li>
+    </ul></div>
+    <div><h3>Kick-off call agenda</h3><ol class="agenda">
+      <li><span>5 min</span>Introductions and who decides what</li>
+      <li><span>20 min</span>Walk through the current process with real examples</li>
+      <li><span>10 min</span>What success looks like at the end of the project</li>
+      <li><span>10 min</span>Access, sandbox and data questions</li>
+      <li><span>10 min</span>Milestones, demo dates and the weekly update day</li>
+      <li><span>5 min</span>Open questions and next steps</li>
+    </ol>
+    <p class="note" style="margin-top:3mm">Usually one hour. We send written notes in Upwork Messages the same day.</p>
+    <h3 style="margin-top:7mm">Information that helps us quote accurately</h3><ul class="dash" style="font-size:8.6pt">
+      <li>Number of users and how many records you hold</li>
+      <li>Other systems the work must connect to</li>
+      <li>Anything that has been tried before and why it did not work</li>
+      <li>Must-have versus nice-to-have</li>
+    </ul></div>
+  </div>
+  <div class="box-navy"><h3>Your Zoho licences</h3><p>Zoho bills licences to you directly; they are not part of our fees. If you are unsure which apps or edition you need, we recommend the smallest setup that does the job, and say when a higher edition is really required.</p></div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">09 / 10</span></div>
+</section>
+
+<!-- 10 · Team, FAQ, next step -->
+<section class="page">
+  <div class="run"><b><img src="/Asset/brand/zudo-works-logo.svg" alt="">Zudo Works</b><span>08 &middot; Who you work with</span></div>
+  <p class="kicker">Who you work with</p>
+  <h2 class="title">The engineer who scopes it <em>builds it</em></h2>
+  <div class="who">
+    <div class="photo"><img src="{{IMG_CTO}}" alt="Arunkumar V"></div>
+    <div>
+      <h3>Arunkumar V</h3>
+      <p class="role">Chief Technology Officer, Zudo Works</p>
+      <ul class="check" style="font-size:8.6pt">
+        <li>Leads Zoho Creator, Deluge and integration work</li>
+        <li>Developer on Zoho, analytics and custom software projects in six countries</li>
+        <li>Works across Zoho Creator, CRM, Books, Analytics and custom code</li>
+      </ul>
+      <div class="award"><img src="{{IMG_CERT}}" alt=""><div><b>&ldquo;Master of Creator (Global Winner)&rdquo;</b><span>Award, Zoho Creator Partner Hackathon 2025, presented to Arunkumar Venkadesan.</span></div></div>
+    </div>
+  </div>
+  <dl class="faq sec">
+    <dt>Can you work on a Zoho setup someone else built?</dt><dd>Yes, and it is common. We start with a short review so we understand what is there before changing it.</dd>
+    <dt>Are you a Zoho Partner?</dt><dd>Not yet; our application is in progress. Our work is backed by hands-on experience across the Zoho suite and the award above.</dd>
+    <dt>Can we start small?</dt><dd>Yes. A review or a single fix is a good first milestone, with no commitment to anything larger.</dd>
+    <dt>What happens after the free support month?</dt><dd>You can run the system yourselves using the handover pack, or keep us on an hourly or monthly support contract.</dd>
+  </dl>
+  <div class="next">
+    <p class="k">Next step</p>
+    <h3>Reply to our proposal here on Upwork</h3>
+    <ol>
+      <li><b>Tell us the process</b>What you want to change, in a few lines.</li>
+      <li><b>Your setup</b>Which Zoho apps and edition, and what else is involved.</li>
+      <li><b>Your timing</b>The deadline and anything it depends on.</li>
+    </ol>
+    <p style="margin-top:4mm;font-size:8.6pt">We reply within 6 hours with questions or a suggested first milestone.</p>
+  </div>
+  <div class="foot"><span>Zudo Works &middot; Capability guide</span><span class="n">10 / 10</span></div>
+</section>
+
+</body>
+</html>

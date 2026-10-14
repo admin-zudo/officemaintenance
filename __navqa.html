@@ -1,0 +1,9 @@
+<body style="margin:0;display:flex;gap:10px;background:#888">
+    <iframe id="a" src="/" width="390" height="560" style="border:0"></iframe>
+    <iframe id="b" src="/" width="390" height="560" style="border:0"></iframe>
+    <iframe id="c" src="/" width="1240" height="120" style="border:0"></iframe>
+    <script>
+        function fix(f, open) { f.onload = () => setTimeout(() => { const d = f.contentDocument; const s = d.createElement('style'); s.textContent = '[class*=cookie],#cookie-consent{display:none!important}'; d.head.appendChild(s); if (open) d.querySelector('.navbar-toggle').click(); }, 300) }
+        fix(a, false); fix(b, true); fix(c, false);
+    </script>
+</body>

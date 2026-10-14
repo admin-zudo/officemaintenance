@@ -243,7 +243,6 @@ document.addEventListener('click', function (e) {
   var COOKIE_KEY = 'zudo_cookie_consent';
   var COOKIE_EXPIRY_DAYS = 365;
   var PAGESENSE_SRC = 'https://cdn-in.pagesense.io/js/zudoworks/a082c937db01490eb591882d194fbe5a.js';
-  var META_PIXEL_ID = '1664899591891953';
 
   function read(key) {
     try { return localStorage.getItem(key); } catch (e) { return null; }
@@ -283,31 +282,16 @@ document.addEventListener('click', function (e) {
     document.head.appendChild(s);
   }
 
-  // Meta's standard pixel snippet, run only when the rules above allow it
-  function loadMetaPixel() {
-    if (window.fbq) {
-      window.fbq('consent', 'grant');
-      return;
-    }
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    window.fbq('init', META_PIXEL_ID);
-    window.fbq('track', 'PageView');
-  }
-
-  // OpenAI's ads pixel is installed in <head> (tools/partials/head.html) as OpenAI supplies it;
-  // here we only switch its consent on or off. js/leadform.js sends "registration_completed" for each enquiry.
-  function openAIConsent(on) {
+  // The Meta Pixel and OpenAI's ads pixel are installed in <head> (tools/partials/head.html) exactly as Meta and
+  // OpenAI supply them; here we only switch their consent on or off. js/leadform.js sends their lead events.
+  function adPixelsConsent(on) {
+    if (window.fbq) window.fbq('consent', on ? 'grant' : 'revoke');
     if (window.oaiq) window.oaiq('consent', on);
   }
 
   function loadTrackers() {
     loadPageSense();
-    loadMetaPixel();
-    openAIConsent(true);
+    adPixelsConsent(true);
   }
 
   function applyConsent(value) {
@@ -317,10 +301,7 @@ document.addEventListener('click', function (e) {
       window.gtag('consent', 'update', { ad_storage: state, ad_user_data: state, ad_personalization: state, analytics_storage: state });
     }
     if (granted) loadTrackers();
-    else {
-      if (window.fbq) window.fbq('consent', 'revoke');
-      openAIConsent(false);
-    }
+    else adPixelsConsent(false);
   }
 
   function setConsent(value) {
