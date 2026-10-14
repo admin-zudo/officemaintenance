@@ -6,7 +6,25 @@
     <atom:link href="https://zudoworks.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Zoho Creator vs Airtable (and Zoho Tables): Which One Fits Your Business?</title>
+      <link>https://zudoworks.com/insights/zoho-creator-vs-airtable/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-creator-vs-airtable/</guid>
+      <description>Choose Airtable or its Zoho equivalent, Zoho Tables, when one team needs a flexible shared database. Choose Zoho Creator when the data drives a process with stages and owners, people outside the office or the company must use it, or it has to work directly with Zoho CRM, Books or Inventory. Airtable bills only people who edit; Creator bills every user and adds portals for outsiders.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zoho Inventory vs Katana for Small Manufacturers: Assembly or Real Production?</title>
+      <link>https://zudoworks.com/insights/zoho-inventory-vs-katana/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-inventory-vs-katana/</guid>
+      <description>Choose Zoho Inventory if production is a single assembly step and your accounts are in Zoho Books; its own knowledge base says it has no manufacturing module. Choose Katana if you run multi-step manufacturing orders, need a shop floor app, plan materials ahead or outsource production. Katana can connect to Zoho CRM through Zoho Flow.</description>
+      <category>Manufacturing</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Zoho CRM Blueprint: A Step-by-Step Setup Guide, With a Manufacturing Example</title>
       <link>https://zudoworks.com/insights/zoho-crm-blueprint-setup/</link>

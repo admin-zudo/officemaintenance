@@ -65,4 +65,14 @@ ANSWERS = {
         'Stay on TallyPrime if you record production and job work in it and most users sit in one office. Choose '
         'Zoho Books if sales, branches or owners need the same live data and you want it linked to Zoho CRM. Zoho '
         'Books has no bill of materials, so a manufacturer leaving Tally should compare Zoho ERP instead.',
+    'zoho-creator-vs-airtable':
+        'Choose Airtable or its Zoho equivalent, Zoho Tables, when one team needs a flexible shared database. Choose '
+        'Zoho Creator when the data drives a process with stages and owners, people outside the office or the company '
+        'must use it, or it has to work directly with Zoho CRM, Books or Inventory. Airtable bills only people who '
+        'edit; Creator bills every user and adds portals for outsiders.',
+    'zoho-inventory-vs-katana':
+        'Choose Zoho Inventory if production is a single assembly step and your accounts are in Zoho Books; its own '
+        'knowledge base says it has no manufacturing module. Choose Katana if you run multi-step manufacturing orders, '
+        'need a shop floor app, plan materials ahead or outsource production. Katana can connect to Zoho CRM through '
+        'Zoho Flow.',
 }

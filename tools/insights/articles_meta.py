@@ -45,4 +45,10 @@ META = {
     'zoho-books-vs-tallyprime': (
         'Zoho Books vs TallyPrime for Manufacturers',
         'Zoho Books vs TallyPrime for Indian manufacturers and traders: cloud or desktop, GST, BOM and job work, CRM links, migration, and when to keep Tally.'),
+    'zoho-creator-vs-airtable': (
+        'Zoho Creator vs Airtable (2026 Comparison)',
+        'Airtable vs Zoho Creator and Zoho Tables: who you pay for, record limits, logic, portals, mobile and AI, and when a shared database should become an app.'),
+    'zoho-inventory-vs-katana': (
+        'Zoho Inventory vs Katana for Manufacturers',
+        'Zoho Inventory vs Katana for small manufacturers: assemblies vs manufacturing orders, shop floor, outsourcing, accounting, plans and linking Katana to Zoho.'),
 }

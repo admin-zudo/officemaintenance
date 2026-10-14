@@ -389,7 +389,7 @@ ARTICLES.append(dict(
   <li><strong>Beside an ERP or an accounting system,</strong> to digitize the paper, spreadsheet and WhatsApp processes around production.</li>
   <li><strong>As the production system for a specific process</strong> that standard software models badly, for example job work with customer-supplied material, made-to-measure products or a multi-stage process with its own approvals.</li>
 </ul>
-<p>The cost is the build and its upkeep. An app that tracks jobs through stages is a contained project. A full planning engine with scheduling and capacity is a serious software project, and should be compared honestly with buying one. Our <a href="/zoho-creator-development/">Zoho Creator development</a> page explains how we scope this kind of build, and <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps</a> compares it with Microsoft&rsquo;s platform.</p>
+<p>The cost is the build and its upkeep. An app that tracks jobs through stages is a contained project. A full planning engine with scheduling and capacity is a serious software project, and should be compared honestly with buying one. Our <a href="/zoho-creator-development/">Zoho Creator development</a> page explains how we scope this kind of build, <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps</a> compares it with Microsoft&rsquo;s platform, and <a href="/insights/zoho-creator-vs-airtable/">Zoho Creator vs Airtable</a> explains when a shared database is enough.</p>
 <p><strong>Choose it when</strong> your process is the unusual part, or when you already have a system of record and need the workflows around it.</p>
 
 <h2 id="around-production">What Zoho covers well around production</h2>
@@ -408,7 +408,7 @@ ARTICLES.append(dict(
   <li><strong>MRPeasy</strong> describes itself as MRP software for small manufacturers and says it is ideal for companies with 10 to 200 employees. It covers production planning, inventory, sales, procurement and finances.</li>
   <li><strong>Odoo Manufacturing</strong> offers an MRP scheduler that plans work at each work center by capacity, tablets on the shop floor, automatic quality checks, maintenance requests and product lifecycle management.</li>
   <li><strong>ERPNext</strong> is open-source ERP with multi-level BOMs, work orders, job cards, production planning, subcontracting and capacity planning.</li>
-  <li><strong>Katana</strong> offers bills of materials with subassemblies, a shop floor app and tracking of outsourced production, aimed at small and mid-sized product businesses.</li>
+  <li><strong>Katana</strong> offers bills of materials with subassemblies, a shop floor app and tracking of outsourced production, aimed at small and mid-sized product businesses. Our <a href="/insights/zoho-inventory-vs-katana/">Zoho Inventory vs Katana comparison</a> looks at it in detail.</li>
   <li><strong>TranZact</strong> is built for Indian MSME manufacturers and says it works alongside systems such as Tally.</li>
 </ul>
 <p>Choosing one of these does not rule Zoho out. A common and sensible design is a dedicated MRP for production, with Zoho CRM in front for sales and Zoho Analytics on top for reporting.</p>

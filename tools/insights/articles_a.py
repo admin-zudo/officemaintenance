@@ -91,7 +91,7 @@ ARTICLES.append(dict(
   <li><strong>Who will maintain it?</strong> An in-house admin, an IT team or an outside developer?</li>
   <li><strong>What does year two cost?</strong> Licences for the expected number of users, plus support and changes.</li>
 </ol>
-<p>If you write those answers down, the right platform is usually obvious. If it isn&rsquo;t, a short discovery call with someone who has built on both will save you a rebuild later.</p>
+<p>If you write those answers down, the right platform is usually obvious. If it isn&rsquo;t, a short discovery call with someone who has built on both will save you a rebuild later. If your shortlist also includes a spreadsheet-style database, our <a href="/insights/zoho-creator-vs-airtable/">Zoho Creator vs Airtable comparison</a> covers Airtable and Zoho Tables.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',
