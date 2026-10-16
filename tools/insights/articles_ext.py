@@ -173,4 +173,5 @@ EXT['zoho-partner-software-development'] = '''
   <li>Agree how and how often progress is shown, for example a weekly demo.</li>
   <li>Keep the documentation they produce somewhere your whole team can find it.</li>
 </ul>
+<p>If the project is a Zoho One rollout, our <a href="/insights/zoho-one-implementation-checklist/">Zoho One implementation checklist</a> sets out the order of work to agree with your developer.</p>
 '''

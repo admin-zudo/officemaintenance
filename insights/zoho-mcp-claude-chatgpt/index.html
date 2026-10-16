@@ -191,7 +191,7 @@
   <meta property="og:site_name" content="Zudo Works">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-09">
-  <meta property="article:modified_time" content="2026-10-09">
+  <meta property="article:modified_time" content="2026-10-16">
   <meta property="article:author" content="https://zudoworks.com/about/#leadership">
   <meta property="article:section" content="AI and automation">
   <meta name="twitter:card" content="summary_large_image">
@@ -214,7 +214,7 @@
     "https://zudoworks.com/Asset/og/zoho-mcp-claude-chatgpt.jpg"
   ],
   "datePublished": "2026-10-09",
-  "dateModified": "2026-10-09",
+  "dateModified": "2026-10-16",
   "author": {
     "@type": "Person",
     "@id": "https://zudoworks.com/#arunkumar-v",
@@ -243,7 +243,7 @@
   },
   "articleSection": "AI and automation",
   "keywords": "zoho mcp",
-  "wordCount": 1743,
+  "wordCount": 1923,
   "inLanguage": "en"
 }
   </script>
@@ -471,7 +471,7 @@
             <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="44" height="44">
             <div>
               <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo Works</p>
-              <p class="post-byline-meta"><time datetime="2026-10-09">9 October 2026</time> &middot; 8 min read</p>
+              <p class="post-byline-meta">Published <time datetime="2026-10-09">9 October 2026</time> &middot; Updated <time datetime="2026-10-16">16 October 2026</time> &middot; 9 min read</p>
             </div>
           </div>
         </div>
@@ -498,6 +498,7 @@
               <li><a href="#risks">The risks to plan for</a></li>
               <li><a href="#mcp-vs-automation">MCP, workflows or Deluge: which to use</a></li>
               <li><a href="#rollout">A four-week rollout plan</a></li>
+              <li><a href="#other-direction">MCP in the other direction: Zia Chat and Catalyst</a></li>
               <li><a href="#cost">Cost and limits</a></li>
               <li><a href="#faq">Frequently asked questions</a></li>
             </ol>
@@ -510,7 +511,7 @@
             <p>Zoho MCP lets an AI assistant such as Claude or ChatGPT use tools in your Zoho apps. Create a server in the Zoho MCP console, add only the tools you need, copy the MCP URL into your assistant and authorize with your Zoho account. Start with read-only tools, keep each user on their own authorization, and require confirmation before any change.</p>
           </div>
 <p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
-<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were checked in October 2026.</p>
+<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were last checked on 16 October 2026.</p>
 
 <h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
 <p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI assistant, which Zoho calls the <strong>MCP client</strong>.</p>
@@ -528,7 +529,7 @@
   <thead><tr><th scope="col">Side</th><th scope="col">Requirement</th><th scope="col">Notes</th></tr></thead>
   <tbody>
     <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho states that MCP is free to use for now and that it will give notice before introducing pricing</td></tr>
-    <tr><th scope="row">Claude</th><td>A plan that supports custom connectors: Pro, Max, Team or Enterprise</td><td>On Team and Enterprise plans, only an Owner can add the connector; members then connect individually</td></tr>
+    <tr><th scope="row">Claude</th><td>Any plan: Free, Pro, Max, Team or Enterprise</td><td>Free plans are limited to one custom connector. On Team and Enterprise, Owners (and, on Enterprise, roles with library access) add the connector; members then connect individually</td></tr>
     <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and fetch only</td></tr>
     <tr><th scope="row">Other clients</th><td>Any client that supports MCP connections</td><td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td></tr>
   </tbody>
@@ -610,6 +611,14 @@
   <li><strong>Week 4: review logs and decide.</strong> Keep what was used, remove what was not, and write a one-page rule on what the assistant may and may not do.</li>
 </ol>
 <p>Clean data makes the biggest difference to the result. If your records are inconsistent, start with the data, as described in our <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">data foundations guide</a>.</p>
+
+<h2 id="other-direction">MCP in the other direction: Zia Chat and Catalyst</h2>
+<p>Zoho MCP lets an outside assistant use Zoho. Two newer Zoho products work the other way round, or alongside it:</p>
+<ul>
+  <li><strong>Zia Chat</strong>, launched in September 2026, is Zoho&rsquo;s own chat interface across its apps. Zoho says it can connect to non-Zoho applications through MCP and use the tools they expose, and that it supports leading models through your own API key. When we checked, it was in a free early access programme in the India and US data centres, with licensing to be announced at general availability.</li>
+  <li><strong>Catalyst</strong>, Zoho&rsquo;s cloud platform for custom applications, now has its own MCP server, so coding assistants such as Claude, Cursor, Codex and Gemini can create tables, set up authentication and deploy on it. This matters when a Zoho project needs a custom service that Deluge cannot handle.</li>
+</ul>
+<p>The same rules apply in both directions: expose as few tools as the job needs, and keep a person in the loop for anything that changes data.</p>
 
 <h2 id="cost">Cost and limits</h2>
 <p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
@@ -707,7 +716,7 @@
               <p class="post-card-category">AI and automation</p>
               <h3><a href="/insights/zoho-agentic-ai-hyperautomation/">AI Agents in Zoho CRM: What They Can Do Today and How to Prepare</a></h3>
               <p class="post-card-excerpt">A practical look at AI in Zoho CRM: what Zia and AI agents can realistically handle, where automation still needs rules and human approval, and how to prepare your CRM data and processes.</p>
-              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September 2026</time> &middot; Updated <time datetime="2026-10-09">9 October 2026</time> &middot; 7 min read</p>
+              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September 2026</time> &middot; Updated <time datetime="2026-10-16">16 October 2026</time> &middot; 7 min read</p>
             </div>
           </article>
           <article class="post-card">
@@ -718,7 +727,7 @@
               <p class="post-card-category">Deluge</p>
               <h3><a href="/insights/deluge-script-examples/">Deluge Script Examples: 10 Real Automations for Zoho CRM, Creator and Books</a></h3>
               <p class="post-card-excerpt">Ten practical Deluge script examples we use in real projects: creating invoices from won deals, blocking duplicates, follow-up tasks, scheduled reminders, API calls, Creator validation and more.</p>
-              <p class="post-card-meta">Arunkumar V &middot; <time datetime="2026-10-08">8 October 2026</time> &middot; 6 min read</p>
+              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-10-08">8 October 2026</time> &middot; Updated <time datetime="2026-10-16">16 October 2026</time> &middot; 7 min read</p>
             </div>
           </article>
           <article class="post-card">
@@ -847,6 +856,7 @@
                 <div class="footer-badges">
                     <a href="https://startupfa.me/s/zudo-works?utm_source=www.zudoworks.com" target="_blank" rel="noopener"><img src="https://startupfa.me/badges/featured-badge-small.webp" alt="Zudo Works - Featured on Startup Fame" width="224" height="36" loading="lazy" decoding="async"></a>
                     <a href="https://www.producthunt.com/products/zudo-works?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-zudo-works" target="_blank" rel="noopener noreferrer"><img alt="Zudo Works - Simplify business operations with Zoho and custom automation | Product Hunt" width="250" height="54" loading="lazy" decoding="async" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1278324&amp;theme=light&amp;t=1791843207929"></a>
+                    <a href="https://postyourstartup.co/startup/zudo-works?ref=badge" target="_blank" rel="noopener"><img src="https://postyourstartup.co/api/badge/zudo-works?theme=light" alt="Featured on PostYourStartup" width="212" height="55" loading="lazy" decoding="async"></a>
                 </div>
             </div>
             <div class="footer-col">

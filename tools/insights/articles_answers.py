@@ -75,4 +75,13 @@ ANSWERS = {
         'knowledge base says it has no manufacturing module. Choose Katana if you run multi-step manufacturing orders, '
         'need a shop floor app, plan materials ahead or outsource production. Katana can connect to Zoho CRM through '
         'Zoho Flow.',
+    'zoho-crm-vs-salesforce':
+        'Choose Zoho CRM if you want monthly or yearly billing without a contract, processes, custom modules and API '
+        'access at mid-level editions, and links to other Zoho apps. Choose Salesforce if you need its large app '
+        'marketplace and admin talent pool, or your group has standardised on it. Compare the editions you would '
+        'actually need: Salesforce adds API access from Core, and sandboxes start at Zoho CRM Enterprise.',
+    'zoho-one-implementation-checklist':
+        'Decide the licensing model first: All Employee Pricing must cover everyone on payroll, Flexible User Pricing '
+        'covers only chosen users. Then set up Zoho Directory, load data in dependency order and roll out one '
+        'business area at a time. Manufacturers should note that Zoho ERP is sold separately and is not part of Zoho One.',
 }

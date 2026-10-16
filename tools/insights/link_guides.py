@@ -10,10 +10,10 @@ from insights_gen import BY_SLUG, card  # noqa: E402
 
 GUIDES = {
     'index.html': ['zoho-for-manufacturing', 'zoho-crm-implementation-cost', 'deluge-script-examples'],
-    'services/index.html': ['zoho-crm-implementation-cost', 'zoho-partner-software-development', 'zoho-creator-vs-power-apps'],
-    'zoho-development/index.html': ['zoho-partner-program-explained', 'zoho-partner-software-development', 'zoho-crm-implementation-cost'],
+    'services/index.html': ['zoho-one-implementation-checklist', 'zoho-crm-implementation-cost', 'zoho-partner-software-development'],
+    'zoho-development/index.html': ['zoho-one-implementation-checklist', 'zoho-partner-program-explained', 'zoho-partner-software-development'],
     'zoho-creator-development/index.html': ['zoho-creator-vs-power-apps', 'zoho-creator-vs-airtable', 'zoho-for-manufacturing'],
-    'zoho-crm-development/index.html': ['zoho-crm-blueprint-setup', 'migrate-hubspot-salesforce-to-zoho-crm', 'zoho-crm-vs-hubspot'],
+    'zoho-crm-development/index.html': ['zoho-crm-vs-salesforce', 'zoho-crm-blueprint-setup', 'zoho-crm-vs-hubspot'],
     'deluge-development/index.html': ['deluge-script-examples', 'zoho-flow-vs-deluge', 'zoho-agentic-ai-hyperautomation'],
     'zoho-integrations/index.html': ['zoho-flow-vs-deluge', 'zoho-inventory-vs-katana', 'zoho-mcp-claude-chatgpt'],
     'business-process-automation/index.html': ['zoho-crm-blueprint-setup', 'zoho-agentic-ai-hyperautomation', 'zoho-flow-vs-deluge'],
@@ -22,7 +22,7 @@ GUIDES = {
     'work/index.html': ['zoho-partner-program-explained', 'zoho-partner-software-development', 'zoho-crm-implementation-cost'],
     'locations/index.html': ['zoho-partner-program-explained', 'zoho-partner-software-development', 'zoho-crm-implementation-cost'],
     'locations/india/index.html': ['zoho-erp-vs-odoo-manufacturing', 'zoho-books-vs-tallyprime', 'zoho-for-manufacturing'],
-    'locations/united-states/index.html': ['zoho-crm-vs-hubspot', 'zoho-crm-implementation-cost', 'zoho-partner-program-explained'],
+    'locations/united-states/index.html': ['zoho-crm-vs-hubspot', 'zoho-crm-vs-salesforce', 'zoho-crm-implementation-cost'],
     'locations/united-kingdom/index.html': ['zoho-partner-program-explained', 'zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps'],
     'locations/australia/index.html': ['zoho-partner-program-explained', 'zoho-crm-implementation-cost', 'zoho-inventory-vs-katana'],
     'locations/new-zealand/index.html': ['zoho-partner-program-explained', 'zoho-crm-implementation-cost', 'zoho-inventory-vs-katana'],

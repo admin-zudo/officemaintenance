@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 14 October 2026.
+Last updated: 16 October 2026.
 
 ## 1. Status against the playbook
 
@@ -65,7 +65,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho CRM implementation cost | CRM, Pricing |
 | ✓ | How to choose a Zoho developer | Zoho pillar |
 | ✓ | Zoho CRM vs HubSpot for small businesses | CRM, migration article |
-| 2 | Zoho CRM vs Salesforce: cost and fit | CRM, migration article |
+| ✓ | Zoho CRM vs Salesforce: cost and fit | CRM, migration article |
 | 3 | Zoho Books vs Xero (UK, Australia, New Zealand) | Integrations |
 | 4 | Zoho Books vs QuickBooks (US) | Integrations |
 | 5 | Zoho Desk vs Zendesk | Zoho pillar |
@@ -101,7 +101,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | 22 | Sales dashboard in Zoho Analytics: what to include | Integrations |
 | 23 | Zoho Creator mobile apps for field teams | Creator |
 | 24 | Zoho CRM API limits explained | Integrations |
-| 25 | Zoho One implementation checklist | Zoho pillar |
+| ✓ | Zoho One implementation checklist | Zoho pillar |
 | 26 | Automating Zoho Books with Deluge | Deluge |
 | 27 | Lead scoring in Zoho CRM | CRM |
 | 28 | Zoho Sign with Zoho CRM: approval workflows | Automation |

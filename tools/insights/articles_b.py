@@ -10,7 +10,7 @@ ARTICLES.append(dict(
     description='Ten practical Deluge script examples we use in real projects: creating invoices from won deals, blocking duplicates, follow-up tasks, scheduled reminders, API calls, Creator validation and more.',
     lead='Deluge is the scripting language behind Zoho CRM functions, Zoho Creator apps, Zoho Books custom functions and more. These are ten scripts based on the automations we write most often, with notes on how and where to use them.',
     category='Deluge', keyword='deluge script examples',
-    published='2026-10-08', modified='2026-10-08',
+    published='2026-10-08', modified='2026-10-16',
     cover_alt='Six of ten reusable Deluge scripts, including invoices from won deals, duplicate checks and API calls',
     caption='Small Deluge functions remove the manual steps between Zoho apps.',
     related=['zoho-creator-vs-power-apps', 'migrate-hubspot-salesforce-to-zoho-crm', 'zoho-crm-implementation-cost'],
@@ -24,6 +24,7 @@ ARTICLES.append(dict(
   <li><strong>Field names:</strong> use API names, not display labels. In Zoho CRM you can see them under <em>Setup &gt; Developer Hub &gt; APIs</em>.</li>
   <li><strong>Connections:</strong> calls to other services, including some Zoho apps, use a named connection that stores OAuth credentials. Create it once under <em>Connections</em> and reference it by name.</li>
   <li><strong>Debugging:</strong> use <code>info</code> to print values while testing. Remove noisy output before going live.</li>
+  <li><strong>Still current:</strong> we re-checked these examples against Zoho&rsquo;s Deluge release notes on 16 October 2026. None of the tasks used here has been deprecated. In April 2026 Zoho added 13 Zoho CRM integration tasks built on version 8 of the CRM API, and in August 2026 a <code>throw</code> statement, which example 10 now uses.</li>
 </ul>
 
 <h2 id="deal-to-invoice">1. Create a Zoho Books invoice when a CRM deal is won</h2>
@@ -157,13 +158,13 @@ if (daysLeft &lt;= 30)
 weekday = zoho.currentdate.getDayOfWeek();  // 1 = Sunday ... 7 = Saturday</code></pre>
 
 <h2 id="error-handling">10. Handle errors instead of failing silently</h2>
-<p>Scripts that call other systems will eventually meet a timeout or an unexpected response. Wrap risky calls and record what happened.</p>
+<p>Scripts that call other systems will eventually meet a timeout or an unexpected response. Wrap risky calls in <code>try</code> and <code>catch</code>, and use <code>throw</code> to treat an error reply as a failure too, so both cases reach the same alert.</p>
 <pre><code>try
 {
     response = zoho.books.createRecord("invoices", "YOUR_ORG_ID", invoice, "zbooks");
     if (response.get("code") != 0)
     {
-        info "Books returned an error: " + response.get("message");
+        throw "Books returned an error: " + response.get("message");
     }
 }
 catch (e)
@@ -173,9 +174,10 @@ catch (e)
         from: zoho.adminuserid
         to: "admin@yourcompany.com"
         subject: "Invoice automation failed"
-        message: "Deal: " + dealId + "<br>Error: " + e
+        message: "Deal: " + dealId + "<br>Error: " + e.message
     ]
 }</code></pre>
+<p>Without the <code>throw</code>, an error reply from Zoho Books would not be an exception, and the script would carry on as if the invoice existed. Inside <code>catch</code>, the exception&rsquo;s <code>message</code> holds the text, and its <code>type</code> tells you whether your script or Deluge raised it.</p>
 
 <h2 id="good-habits">Good habits for maintainable Deluge</h2>
 <ul>
@@ -209,7 +211,7 @@ ARTICLES.append(dict(
     description='A practical look at AI in Zoho CRM: what Zia and AI agents can realistically handle, where automation still needs rules and human approval, and how to prepare your CRM data and processes.',
     lead='&ldquo;Agentic AI&rdquo; is the phrase of the year, and every software vendor has a version of it. Underneath the marketing there is something genuinely useful for CRM teams, as long as the data and processes underneath are in good shape. Here is a grounded view.',
     category='AI and automation', keyword='zoho crm ai agents',
-    published='2026-09-15', modified='2026-10-09',
+    published='2026-09-15', modified='2026-10-16',
     cover_alt='Two lists for AI in Zoho CRM: tasks to let AI help with, and decisions to keep under rules or approval',
     caption='The useful version of AI in a CRM suggests and drafts; a person approves anything that matters.',
     related=['zoho-mcp-claude-chatgpt', 'zoho-analytics-agentic-data-foundations-2026', 'deluge-script-examples'],
@@ -229,14 +231,15 @@ ARTICLES.append(dict(
 
 <h2 id="zoho-ai-today">AI in the Zoho ecosystem today</h2>
 <p>Zoho&rsquo;s AI assistant is <strong>Zia</strong>, which has been part of Zoho CRM for years. Depending on your edition, it provides lead and deal predictions, anomaly detection in sales trends, best-time-to-contact suggestions, email sentiment, data enrichment and a conversational assistant for questions such as &ldquo;show me deals closing this month&rdquo;.</p>
-<p>Three things have changed since Zoho first announced its agent plans in 2025. These details were checked against Zoho&rsquo;s pages in October 2026.</p>
+<p>Four things have changed since Zoho first announced its agent plans in 2025. These details were last checked against Zoho&rsquo;s pages on 16 October 2026.</p>
 <ul>
   <li><strong>Zia Agents are a product you can sign up for.</strong> <a href="https://www.zoho.com/zia/agents/" target="_blank" rel="noopener">Zia Agents</a> has an Agent Studio, a low-code workshop for building and testing your own agents, and an Agent Store of prebuilt agents made by Zoho. Zoho says agents can work across more than 60 of its apps.</li>
   <li><strong>You choose the model.</strong> Agents can run on Zoho-hosted models or on a model from OpenAI, Gemini or Claude using your own API key. Zoho states that Zia Agents itself is free and that you pay for model usage, with a free monthly token allowance on Zoho-hosted models. The allowance and rates are on Zoho&rsquo;s <a href="https://www.zoho.com/agents/pricing.html" target="_blank" rel="noopener">Zia Agents pricing page</a>.</li>
-  <li><strong>CRM editions now mention AI at every paid level.</strong> Zoho CRM&rsquo;s pricing page lists building and deploying AI agents from the Standard edition, AI insights for emails from Professional, and Zia&rsquo;s predictions and recommendations from Enterprise. Edition details differ by country, so confirm them on the <a href="https://www.zoho.com/crm/zohocrm-pricing.html" target="_blank" rel="noopener">pricing page</a> for your region.</li>
+  <li><strong>AI agents start at Professional.</strong> Zoho CRM&rsquo;s US pricing page lists building and deploying AI agents, and predictions of lead conversion and deal closure, from the Professional edition, and Zia&rsquo;s insights, predictions and recommendations from Enterprise. Edition details differ by country, so confirm them on the <a href="https://www.zoho.com/crm/zohocrm-pricing.html" target="_blank" rel="noopener">pricing page</a> for your region.</li>
+  <li><strong>Leading models without your own API key.</strong> Zoho Key Service, added to Zoho CRM in late September 2026, lets Professional, Enterprise and Ultimate customers in the US, India, Australia, Japan and Canada data centres switch on OpenAI models using credits included with their edition, with Anthropic models rolling out in phases. Before this, using an outside model meant bringing your own key and billing.</li>
 </ul>
-<p>In September 2026 Zoho also announced Zia Chat, an AI interface for working across its apps. Availability details were still limited when we checked, so plan around what is enabled in your own account today.</p>
-<p>Zoho also offers an MCP service that lets outside assistants such as Claude and ChatGPT work with your Zoho data; our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> covers how to set it up safely.</p>
+<p>In September 2026 Zoho also launched Zia Chat, a chat interface for working across Zoho apps and, through MCP, non-Zoho apps. When we checked, it was in a free early access programme in the India and US data centres, with licensing to be announced at general availability. Plan around what is enabled in your own account today.</p>
+<p>Zoho also offers an MCP service that lets outside assistants such as Claude and ChatGPT work with your Zoho data; our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> covers how to set it up safely. If you are still choosing a CRM, our <a href="/insights/zoho-crm-vs-salesforce/">Zoho CRM vs Salesforce comparison</a> explains how each vendor meters AI usage.</p>
 <p>The important point for planning is this: whichever model or agent you use, it acts on your CRM data through the same modules, fields and permissions your team uses. The quality of that foundation decides whether AI helps or creates noise.</p>
 
 <h2 id="good-uses">Where AI helps most right now</h2>
@@ -278,7 +281,7 @@ ARTICLES.append(dict(
 ''',
     faqs=[
         ('Does Zoho CRM have AI agents?',
-         'Yes. Zoho CRM includes Zia, an AI assistant with predictions, recommendations and a conversational interface, depending on edition. Zoho also offers Zia Agents, with an Agent Studio for building your own agents and an Agent Store of prebuilt ones. Zoho CRM\'s pricing page lists building and deploying AI agents from the Standard edition; check what is enabled for your edition and region.'),
+         'Yes. Zoho CRM includes Zia, an AI assistant with predictions, recommendations and a conversational interface, depending on edition. Zoho also offers Zia Agents, with an Agent Studio for building your own agents and an Agent Store of prebuilt ones. Zoho CRM\'s US pricing page lists building and deploying AI agents from the Professional edition; check what is enabled for your edition and region.'),
         ('Is it safe to let AI update CRM records?',
          'For low-risk fields and suggestions, yes, with logging. For anything involving money, customer commitments, deletion or stage changes that trigger other processes, keep rules and human approval in place and let AI propose rather than act.'),
         ('What should we do before adding AI to Zoho CRM?',
@@ -294,13 +297,13 @@ ARTICLES.append(dict(
     description='What Zoho MCP is, what you need on the Zoho, Claude and ChatGPT side, how to set it up, which authorization mode to choose, and which actions an AI assistant should and should not be allowed to take.',
     lead='Zoho MCP lets an AI assistant such as Claude or ChatGPT read and change records in your Zoho apps from a chat window. Setting it up takes minutes. Deciding what the assistant is allowed to do is the part that deserves your time.',
     category='AI and automation', keyword='zoho mcp',
-    published='2026-10-09', modified='2026-10-09',
+    published='2026-10-09', modified='2026-10-16',
     cover_alt='Four permission levels for an AI assistant in Zoho CRM: read from day one, create after asking, update with confirmation, delete kept out',
     caption='The assistant can only use the tools you add to the MCP server, so the tool list is your main control.',
     related=['zoho-agentic-ai-hyperautomation', 'deluge-script-examples', 'zoho-analytics-agentic-data-foundations-2026'],
     body='''
 <p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
-<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were checked in October 2026.</p>
+<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were last checked on 16 October 2026.</p>
 
 <h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
 <p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI assistant, which Zoho calls the <strong>MCP client</strong>.</p>
@@ -318,7 +321,7 @@ ARTICLES.append(dict(
   <thead><tr><th scope="col">Side</th><th scope="col">Requirement</th><th scope="col">Notes</th></tr></thead>
   <tbody>
     <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho states that MCP is free to use for now and that it will give notice before introducing pricing</td></tr>
-    <tr><th scope="row">Claude</th><td>A plan that supports custom connectors: Pro, Max, Team or Enterprise</td><td>On Team and Enterprise plans, only an Owner can add the connector; members then connect individually</td></tr>
+    <tr><th scope="row">Claude</th><td>Any plan: Free, Pro, Max, Team or Enterprise</td><td>Free plans are limited to one custom connector. On Team and Enterprise, Owners (and, on Enterprise, roles with library access) add the connector; members then connect individually</td></tr>
     <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and fetch only</td></tr>
     <tr><th scope="row">Other clients</th><td>Any client that supports MCP connections</td><td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td></tr>
   </tbody>
@@ -400,6 +403,14 @@ ARTICLES.append(dict(
   <li><strong>Week 4: review logs and decide.</strong> Keep what was used, remove what was not, and write a one-page rule on what the assistant may and may not do.</li>
 </ol>
 <p>Clean data makes the biggest difference to the result. If your records are inconsistent, start with the data, as described in our <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">data foundations guide</a>.</p>
+
+<h2 id="other-direction">MCP in the other direction: Zia Chat and Catalyst</h2>
+<p>Zoho MCP lets an outside assistant use Zoho. Two newer Zoho products work the other way round, or alongside it:</p>
+<ul>
+  <li><strong>Zia Chat</strong>, launched in September 2026, is Zoho&rsquo;s own chat interface across its apps. Zoho says it can connect to non-Zoho applications through MCP and use the tools they expose, and that it supports leading models through your own API key. When we checked, it was in a free early access programme in the India and US data centres, with licensing to be announced at general availability.</li>
+  <li><strong>Catalyst</strong>, Zoho&rsquo;s cloud platform for custom applications, now has its own MCP server, so coding assistants such as Claude, Cursor, Codex and Gemini can create tables, set up authentication and deploy on it. This matters when a Zoho project needs a custom service that Deluge cannot handle.</li>
+</ul>
+<p>The same rules apply in both directions: expose as few tools as the job needs, and keep a person in the loop for anything that changes data.</p>
 
 <h2 id="cost">Cost and limits</h2>
 <p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>

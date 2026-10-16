@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zudoworks.com/about/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/business-process-automation/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -29,14 +29,14 @@
   </url>
   <url>
     <loc>https://zudoworks.com/contact/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/custom-software-development/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -52,7 +52,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/deluge-development/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -68,7 +68,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -90,7 +90,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/deluge-script-examples/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/deluge-script-examples.jpg</image:loc>
     </image:image>
@@ -112,29 +112,29 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/og/zoho-creator-vs-airtable.jpg</image:loc>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-crm-vs-salesforce.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-airtable.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-salesforce.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-inventory-vs-katana.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-one-implementation-checklist.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-blueprint-setup.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-mcp-claude-chatgpt.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-erp-vs-odoo-manufacturing.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/deluge-script-examples.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-books-vs-tallyprime.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-agentic-ai-hyperautomation.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/insights/migrate-hubspot-salesforce-to-zoho-crm/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/migrate-hubspot-salesforce-to-zoho-crm.jpg</image:loc>
     </image:image>
@@ -156,7 +156,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-agentic-ai-hyperautomation/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-agentic-ai-hyperautomation.jpg</image:loc>
     </image:image>
@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-analytics-agentic-data-foundations-2026/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-analytics-agentic-data-foundations-2026.jpg</image:loc>
     </image:image>
@@ -200,7 +200,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-books-vs-tallyprime/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-books-vs-tallyprime.jpg</image:loc>
     </image:image>
@@ -222,7 +222,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-creator-vs-airtable/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-creator-vs-airtable.jpg</image:loc>
     </image:image>
@@ -244,7 +244,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-creator-vs-power-apps/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-creator-vs-power-apps.jpg</image:loc>
     </image:image>
@@ -266,7 +266,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-crm-blueprint-setup/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-crm-blueprint-setup.jpg</image:loc>
     </image:image>
@@ -288,7 +288,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-crm-implementation-cost/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-crm-implementation-cost.jpg</image:loc>
     </image:image>
@@ -310,7 +310,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-crm-vs-hubspot/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-crm-vs-hubspot.jpg</image:loc>
     </image:image>
@@ -331,8 +331,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://zudoworks.com/insights/zoho-crm-vs-salesforce/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-crm-vs-salesforce.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-salesforce.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-hubspot.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://zudoworks.com/insights/zoho-erp-vs-odoo-manufacturing/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-erp-vs-odoo-manufacturing.jpg</image:loc>
     </image:image>
@@ -354,7 +376,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-flow-vs-deluge/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-flow-vs-deluge.jpg</image:loc>
     </image:image>
@@ -376,7 +398,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-for-manufacturing/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-for-manufacturing.jpg</image:loc>
     </image:image>
@@ -398,7 +420,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-inventory-vs-katana/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-inventory-vs-katana.jpg</image:loc>
     </image:image>
@@ -420,7 +442,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-mcp-claude-chatgpt.jpg</image:loc>
     </image:image>
@@ -441,8 +463,30 @@
     </image:image>
   </url>
   <url>
+    <loc>https://zudoworks.com/insights/zoho-one-implementation-checklist/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/og/zoho-one-implementation-checklist.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/team/arunkumar-v-avatar.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-one-implementation-checklist.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-for-manufacturing.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-flow-vs-deluge.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://zudoworks.com/insights/zoho-partner-program-explained/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-partner-program-explained.jpg</image:loc>
     </image:image>
@@ -464,7 +508,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/insights/zoho-partner-software-development/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zoho-partner-software-development.jpg</image:loc>
     </image:image>
@@ -486,7 +530,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/locations/australia/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -502,7 +546,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/locations/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -518,7 +562,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/locations/india/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -534,7 +578,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/locations/new-zealand/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -550,7 +594,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/locations/united-kingdom/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -566,7 +610,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/locations/united-states/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -574,15 +618,15 @@
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-hubspot.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-salesforce.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-program-explained.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing-software/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-manufacturing.jpg</image:loc>
     </image:image>
@@ -595,7 +639,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/ai-automation/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-ai.jpg</image:loc>
     </image:image>
@@ -617,7 +661,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/case-studies/ai-purchase-order-intake/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-ai-purchase-order-intake.jpg</image:loc>
     </image:image>
@@ -639,7 +683,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/case-studies/batch-traceability-food-manufacturer/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-batch-traceability-food-manufacturer.jpg</image:loc>
     </image:image>
@@ -661,7 +705,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/case-studies/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-cases.jpg</image:loc>
     </image:image>
@@ -683,7 +727,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/case-studies/job-tracking-joinery-manufacturer/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-job-tracking-joinery-manufacturer.jpg</image:loc>
     </image:image>
@@ -705,7 +749,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/ai-for-small-manufacturers/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-ai-for-small-manufacturers.jpg</image:loc>
     </image:image>
@@ -727,7 +771,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/batch-lot-traceability/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-batch-lot-traceability.jpg</image:loc>
     </image:image>
@@ -749,7 +793,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/connect-sales-production-accounts/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-connect-sales-production-accounts.jpg</image:loc>
     </image:image>
@@ -771,7 +815,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-guides.jpg</image:loc>
     </image:image>
@@ -793,7 +837,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/inventory-accuracy-for-manufacturers/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-inventory-accuracy-for-manufacturers.jpg</image:loc>
     </image:image>
@@ -815,7 +859,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/manufacturing-dashboards-kpis/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-manufacturing-dashboards-kpis.jpg</image:loc>
     </image:image>
@@ -837,7 +881,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/production-tracking-zoho-creator/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-production-tracking-zoho-creator.jpg</image:loc>
     </image:image>
@@ -859,7 +903,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/purchasing-reorder-points/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-purchasing-reorder-points.jpg</image:loc>
     </image:image>
@@ -881,7 +925,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/quality-ncr-capa-workflow/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-quality-ncr-capa-workflow.jpg</image:loc>
     </image:image>
@@ -903,7 +947,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/spreadsheets-to-connected-system-roadmap/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-spreadsheets-to-connected-system-roadmap.jpg</image:loc>
     </image:image>
@@ -925,7 +969,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/guides/zoho-or-manufacturing-erp/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-zoho-or-manufacturing-erp.jpg</image:loc>
     </image:image>
@@ -947,7 +991,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-manufacturing.jpg</image:loc>
     </image:image>
@@ -969,7 +1013,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/workflows/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-workflows.jpg</image:loc>
     </image:image>
@@ -991,7 +1035,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/manufacturing/zoho-implementation/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/mfg-hub-zoho.jpg</image:loc>
     </image:image>
@@ -1013,23 +1057,26 @@
   </url>
   <url>
     <loc>https://zudoworks.com/pricing/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/privacy/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/services/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-one-implementation-checklist.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
@@ -1037,20 +1084,17 @@
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-creator-vs-power-apps.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/solutions/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/support-maintenance/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -1066,14 +1110,14 @@
   </url>
   <url>
     <loc>https://zudoworks.com/terms/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/work/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -1089,7 +1133,7 @@
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-creator-development/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
@@ -1105,15 +1149,15 @@
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-crm-development/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-blueprint-setup.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-salesforce.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/migrate-hubspot-salesforce-to-zoho-crm.webp</image:loc>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-blueprint-setup.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-vs-hubspot.webp</image:loc>
@@ -1121,9 +1165,12 @@
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-development/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-one-implementation-checklist.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-program-explained.webp</image:loc>
@@ -1131,13 +1178,10 @@
     <image:image>
       <image:loc>https://zudoworks.com/Asset/img/insights/zoho-partner-software-development.webp</image:loc>
     </image:image>
-    <image:image>
-      <image:loc>https://zudoworks.com/Asset/img/insights/zoho-crm-implementation-cost.webp</image:loc>
-    </image:image>
   </url>
   <url>
     <loc>https://zudoworks.com/zoho-integrations/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <image:image>
       <image:loc>https://zudoworks.com/Asset/og/zudo-works.jpg</image:loc>
     </image:image>

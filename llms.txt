@@ -67,6 +67,8 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Zoho Books vs TallyPrime for manufacturers and traders (cloud vs desktop, BOM and job work, keeping Tally): https://zudoworks.com/insights/zoho-books-vs-tallyprime/
 - Zoho Inventory vs Katana for small manufacturers (assemblies vs manufacturing orders, outsourcing, accounting, Zoho Flow connector): https://zudoworks.com/insights/zoho-inventory-vs-katana/
 - Zoho Creator vs Airtable and Zoho Tables (who you pay for, record limits, portals, AI, when to build an app): https://zudoworks.com/insights/zoho-creator-vs-airtable/
+- Zoho CRM vs Salesforce for small and mid-size businesses (editions, contracts, API and sandbox access, AI credits, Salesforce's 2026 Core, Advanced and Max editions): https://zudoworks.com/insights/zoho-crm-vs-salesforce/
+- Zoho One implementation checklist (All Employee vs Flexible User pricing, Zoho Directory, data load order, rollout waves, Zoho ERP sold separately): https://zudoworks.com/insights/zoho-one-implementation-checklist/
 - How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Manufacturing: connected operations for small manufacturers (overview): https://zudoworks.com/manufacturing/

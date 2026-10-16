@@ -376,7 +376,7 @@ ARTICLES.append(dict(
 <p>Three limits matter before you plan around it:</p>
 <ol>
   <li><strong>Availability.</strong> At the time of writing, Zoho&rsquo;s ERP site, its rupee pricing and its tax and payroll features are published for India. We could not find an announced date for other countries. If you are outside India, ask Zoho first.</li>
-  <li><strong>It is not in Zoho One.</strong> Zoho&rsquo;s pricing page states this plainly. Zoho ERP is licensed separately, per user, and each plan has a yearly cap on transactions.</li>
+  <li><strong>It is not in Zoho One.</strong> Zoho&rsquo;s pricing page states this plainly. Zoho ERP is licensed separately, per user, and each plan has a yearly cap on transactions. If you are planning a wider Zoho One rollout, our <a href="/insights/zoho-one-implementation-checklist/">Zoho One implementation checklist</a> covers how to fit the two together.</li>
   <li><strong>It is an ERP project.</strong> Moving finance, stock and production into one system needs data migration, opening balances, process design and training.</li>
 </ol>
 <p><strong>Choose it when</strong> you are in India, you want finance and production in one Zoho system, and your process fits a standard BOM, job card and work center model. If Odoo is also on your list, our <a href="/insights/zoho-erp-vs-odoo-manufacturing/">Zoho ERP vs Odoo comparison</a> goes through the differences.</p>

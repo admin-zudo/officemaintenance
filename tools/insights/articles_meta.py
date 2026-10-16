@@ -51,4 +51,10 @@ META = {
     'zoho-inventory-vs-katana': (
         'Zoho Inventory vs Katana for Manufacturers',
         'Zoho Inventory vs Katana for small manufacturers: assemblies vs manufacturing orders, shop floor, outsourcing, accounting, plans and linking Katana to Zoho.'),
+    'zoho-crm-vs-salesforce': (
+        'Zoho CRM vs Salesforce for SMBs (2026)',
+        'Zoho CRM vs Salesforce for small and mid-size businesses: editions, contracts, API and sandbox access, AI credits, India data residency and migration.'),
+    'zoho-one-implementation-checklist': (
+        'Zoho One Implementation Checklist (2026)',
+        'Zoho One implementation checklist: All Employee vs Flexible pricing, Zoho Directory setup, data load order, rollout waves and what manufacturers need.'),
 }

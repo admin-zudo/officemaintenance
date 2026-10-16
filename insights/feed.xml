@@ -6,7 +6,25 @@
     <atom:link href="https://zudoworks.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Zoho CRM vs Salesforce for Small and Mid-Size Businesses: Cost, Fit and the 2026 Changes</title>
+      <link>https://zudoworks.com/insights/zoho-crm-vs-salesforce/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-crm-vs-salesforce/</guid>
+      <description>Choose Zoho CRM if you want monthly or yearly billing without a contract, processes, custom modules and API access at mid-level editions, and links to other Zoho apps. Choose Salesforce if you need its large app marketplace and admin talent pool, or your group has standardised on it. Compare the editions you would actually need: Salesforce adds API access from Core, and sandboxes start at Zoho CRM Enterprise.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zoho One Implementation Checklist: Licensing, Rollout Order and What Manufacturers Need on Top</title>
+      <link>https://zudoworks.com/insights/zoho-one-implementation-checklist/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-one-implementation-checklist/</guid>
+      <description>Decide the licensing model first: All Employee Pricing must cover everyone on payroll, Flexible User Pricing covers only chosen users. Then set up Zoho Directory, load data in dependency order and roll out one business area at a time. Manufacturers should note that Zoho ERP is sold separately and is not part of Zoho One.</description>
+      <category>Buying guide</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Zoho Creator vs Airtable (and Zoho Tables): Which One Fits Your Business?</title>
       <link>https://zudoworks.com/insights/zoho-creator-vs-airtable/</link>

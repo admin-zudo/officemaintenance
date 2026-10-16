@@ -121,7 +121,7 @@ ARTICLES.append(dict(
     related=['zoho-crm-vs-hubspot', 'zoho-crm-implementation-cost', 'deluge-script-examples'],
     body='''
 <p>Teams move to Zoho CRM for different reasons: per-user pricing that scales better, the rest of the Zoho suite (Books, Desk, Campaigns, Analytics) working together, or simply wanting more control over customization. Whatever the reason, the migration itself follows the same shape.</p>
-<p>This guide covers moves from both HubSpot and Salesforce, because the steps are almost identical. Where the two differ, we say so. If you are still deciding whether to move, start with our <a href="/insights/zoho-crm-vs-hubspot/">Zoho CRM vs HubSpot comparison</a>.</p>
+<p>This guide covers moves from both HubSpot and Salesforce, because the steps are almost identical. Where the two differ, we say so. If you are still deciding whether to move, start with our <a href="/insights/zoho-crm-vs-hubspot/">Zoho CRM vs HubSpot comparison</a> or our <a href="/insights/zoho-crm-vs-salesforce/">Zoho CRM vs Salesforce comparison</a>.</p>
 
 <h2 id="before-you-start">Before you start: decide what not to migrate</h2>
 <p>The cheapest record to migrate is the one you leave behind. Before exporting anything, agree on:</p>
@@ -294,7 +294,7 @@ ARTICLES.append(dict(
   <li>Custom dashboards or Zoho Analytics, plus admin training</li>
 </ul>
 <p><strong>Typical effort:</strong> 200 to 400 hours. Usually eight to sixteen weeks.</p>
-<p>Want a figure for your own scope? Our <a href="/pricing/#calculator">project calculator</a> uses the same approach and estimates the hours and timeline as you choose options.</p>
+<p>Want a figure for your own scope? Our <a href="/pricing/#calculator">project calculator</a> uses the same approach and estimates the hours and timeline as you choose options. If you are still weighing Zoho CRM against Salesforce, our <a href="/insights/zoho-crm-vs-salesforce/">Zoho CRM vs Salesforce comparison</a> shows which editions include API access and sandboxes, which changes the licence side of the budget.</p>
 
 <h2 id="hidden-costs">Costs people forget</h2>
 <ul>
@@ -433,7 +433,7 @@ ARTICLES.append(dict(
   <li><strong>What else must it connect to?</strong> Accounting, support, your website and any industry software.</li>
   <li><strong>Who will look after it?</strong> An in-house admin, an agency or an outside developer?</li>
 </ol>
-<p>If the answers point both ways, run a two-week trial of each with real leads and the same three tasks. The one your team keeps using is the right one.</p>
+<p>If the answers point both ways, run a two-week trial of each with real leads and the same three tasks. The one your team keeps using is the right one. If Salesforce is also on your shortlist, our <a href="/insights/zoho-crm-vs-salesforce/">Zoho CRM vs Salesforce comparison</a> covers its 2026 editions and contract terms.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',
