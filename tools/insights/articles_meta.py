@@ -57,4 +57,10 @@ META = {
     'zoho-one-implementation-checklist': (
         'Zoho One Implementation Checklist (2026)',
         'Zoho One implementation checklist: All Employee vs Flexible pricing, Zoho Directory setup, data load order, rollout waves and what manufacturers need.'),
+    'tranzact-vs-zoho-erp': (
+        'TranZact vs Zoho ERP for Manufacturers',
+        'TranZact vs Zoho ERP for Indian manufacturers: where the accounts live, BOMs, job work, GST documents, plans, and running TranZact with Zoho Books.'),
+    'zoho-desk-vs-zendesk': (
+        'Zoho Desk vs Zendesk (2026 Comparison)',
+        'Zoho Desk vs Zendesk: editions and billing, AI agents and automated resolutions, routing, SLAs, sandboxes, the CRM link, data residency and switching.'),
 }

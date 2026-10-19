@@ -77,7 +77,7 @@ ARTICLES.append(dict(
 
 <h2 id="rest-of-business">Connecting the rest of the business</h2>
 <p>A CRM rarely stands alone. Quotes become orders, orders become invoices, and in a manufacturing business they become production jobs.</p>
-<p><strong>Zoho&rsquo;s strength is that the other systems are in the same family.</strong> Zoho CRM connects to Zoho Books, Zoho Inventory, Zoho Desk and Zoho Creator with built-in integrations, and all of them are in the Zoho One bundle. For Indian manufacturers, Zoho ERP adds bills of materials, manufacturing orders and job cards, sold separately from Zoho One; our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> explains the options.</p>
+<p><strong>Zoho&rsquo;s strength is that the other systems are in the same family.</strong> Zoho CRM connects to Zoho Books, Zoho Inventory, <a href="/insights/zoho-desk-vs-zendesk/">Zoho Desk</a> and Zoho Creator with built-in integrations, and all of them are in the Zoho One bundle. For Indian manufacturers, Zoho ERP adds bills of materials, manufacturing orders and job cards, sold separately from Zoho One; our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> explains the options.</p>
 <p><strong>Salesforce&rsquo;s strength is reach.</strong> Its marketplace and integration partners cover almost any system you might already run, including large ERPs. If your accounting and operations are already on a non-Zoho ERP, that ecosystem can outweigh the convenience of a single vendor.</p>
 
 <h2 id="data-residency">Data residency for Indian businesses</h2>
@@ -208,7 +208,7 @@ ARTICLES.append(dict(
 
 <h2 id="rollout-order">Step 5: Roll out one business area at a time</h2>
 <p>Pick the first area by the problem that costs you most today, not by the order of apps in the menu. Zoho&rsquo;s own checklist asks the same question: what is the first objective, which team, which apps, which data.</p>
-<p>A sensible first wave for many small manufacturers and distributors is <strong>sales to cash</strong>: Zoho CRM for enquiries and quotes, Zoho Books for invoices and GST, and Zoho Inventory or Zoho ERP for stock. It touches the most people and shows value quickly. A service business might start with Zoho Desk instead.</p>
+<p>A sensible first wave for many small manufacturers and distributors is <strong>sales to cash</strong>: Zoho CRM for enquiries and quotes, Zoho Books for invoices and GST, and Zoho Inventory or Zoho ERP for stock. It touches the most people and shows value quickly. A service business might start with Zoho Desk instead; our <a href="/insights/zoho-desk-vs-zendesk/">Zoho Desk vs Zendesk comparison</a> helps if you are still choosing a help desk.</p>
 <p>For each wave:</p>
 <ul class="checklist">
   <li>Configure only the apps in that wave, and leave the rest switched off for users.</li>

@@ -205,7 +205,7 @@ ARTICLES.append(dict(
   <li><strong>Zoho ERP</strong> has a subcontract manufacturing section with subcontract BOMs, subcontract orders, purchase orders and material transfers to the subcontractor.</li>
   <li><strong>Odoo</strong> documents subcontracting as part of Manufacturing, including a basic flow where components are supplied to the subcontractor and finished goods are received back.</li>
 </ul>
-<p>In a demo, ask each vendor to show stock lying with a job worker as a separate figure, and how the records support your GST reporting on goods sent for job work. That one scenario tells you more than a feature list.</p>
+<p>In a demo, ask each vendor to show stock lying with a job worker as a separate figure, and how the records support your GST reporting on goods sent for job work. That one scenario tells you more than a feature list. Our <a href="/insights/tranzact-vs-zoho-erp/">TranZact vs Zoho ERP comparison</a> applies the same test to TranZact.</p>
 
 <h2 id="gst">GST, e-invoicing and payroll</h2>
 <p>Both handle Indian compliance, in different ways.</p>
@@ -301,7 +301,7 @@ ARTICLES.append(dict(
 <p>TallyPrime lets you define one or more bills of materials for an item, including by-products, co-products and scrap. A Manufacturing Journal records components consumed and finished goods produced in one entry, and a cost estimation report shows production cost. Tally&rsquo;s own guidance is to track work in progress by moving stock between godowns such as raw material store, shop floor and quality check.</p>
 <p>Job work is built in. A principal manufacturer records a Job Work Out order, sends material with a Material Out voucher and receives finished goods with a Material In voucher; a job worker does the reverse with Job Work In orders. Reports include stock with each job worker and issue and receipt variances.</p>
 <p>Zoho Books has none of this. It tracks stock, and its higher plans add composite items and warehouses, but it has no bill of materials, no production entry and no job work orders. That is not a weakness of the product so much as its scope: Zoho Books is accounting software. In Zoho&rsquo;s range, production lives in <a href="/insights/zoho-erp-vs-odoo-manufacturing/">Zoho ERP</a>, or in a custom app, as our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> explains.</p>
-<p>So a manufacturer who records production in Tally today should not move to Zoho Books alone and expect the same coverage.</p>
+<p>So a manufacturer who records production in Tally today should not move to Zoho Books alone and expect the same coverage. If you want to keep Tally and add a production system beside it, our <a href="/insights/tranzact-vs-zoho-erp/">TranZact vs Zoho ERP comparison</a> covers that route.</p>
 
 <h2 id="connected">Connected data: where Zoho Books is stronger</h2>
 <p>Zoho Books is at its best when other people need the same numbers. Its integration with Zoho CRM syncs CRM accounts and contacts with Books customers both ways, can sync vendors and products, and lets sales staff raise quotes, sales orders and invoices from a Zoho Finance module inside CRM. Sales and accounts then work from the same customer records.</p>

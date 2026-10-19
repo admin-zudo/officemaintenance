@@ -6,7 +6,25 @@
     <atom:link href="https://zudoworks.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>TranZact vs Zoho ERP for Indian Manufacturers: One System, or Operations Beside Your Accounts?</title>
+      <link>https://zudoworks.com/insights/tranzact-vs-zoho-erp/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/tranzact-vs-zoho-erp/</guid>
+      <description>Choose TranZact if your accounts stay in Tally, Busy or Zoho Books and you want to digitise sales, purchase, stores and production beside them. Choose Zoho ERP if you want accounts, GST, e-invoices and production in one system. Test your own job work scenario in both demos before you decide.</description>
+      <category>Manufacturing</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zoho Desk vs Zendesk: Editions, AI Pricing and CRM Fit for Growing Support Teams</title>
+      <link>https://zudoworks.com/insights/zoho-desk-vs-zendesk/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-desk-vs-zendesk/</guid>
+      <description>Choose Zoho Desk for a free three-user edition, no lock-in contracts, Blueprint processes and a native link to Zoho CRM. Choose Zendesk if you want AI agents charged per automated resolution and its large app marketplace. On both, skills-based routing and sandboxes sit in the upper editions, so compare the edition you need.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Zoho CRM vs Salesforce for Small and Mid-Size Businesses: Cost, Fit and the 2026 Changes</title>
       <link>https://zudoworks.com/insights/zoho-crm-vs-salesforce/</link>

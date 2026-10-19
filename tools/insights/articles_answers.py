@@ -84,4 +84,12 @@ ANSWERS = {
         'Decide the licensing model first: All Employee Pricing must cover everyone on payroll, Flexible User Pricing '
         'covers only chosen users. Then set up Zoho Directory, load data in dependency order and roll out one '
         'business area at a time. Manufacturers should note that Zoho ERP is sold separately and is not part of Zoho One.',
+    'tranzact-vs-zoho-erp':
+        'Choose TranZact if your accounts stay in Tally, Busy or Zoho Books and you want to digitise sales, purchase, '
+        'stores and production beside them. Choose Zoho ERP if you want accounts, GST, e-invoices and production in '
+        'one system. Test your own job work scenario in both demos before you decide.',
+    'zoho-desk-vs-zendesk':
+        'Choose Zoho Desk for a free three-user edition, no lock-in contracts, Blueprint processes and a native link '
+        'to Zoho CRM. Choose Zendesk if you want AI agents charged per automated resolution and its large app '
+        'marketplace. On both, skills-based routing and sandboxes sit in the upper editions, so compare the edition you need.',
 }

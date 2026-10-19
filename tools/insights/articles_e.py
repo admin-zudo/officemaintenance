@@ -226,7 +226,7 @@ ARTICLES.append(dict(
 </ul>
 
 <h2 id="other-routes">When neither is the answer</h2>
-<p>Two other routes are worth a look. If you are in India and want finance, GST and production in one Zoho system, Zoho ERP has bills of materials, manufacturing orders, job cards, work centers and quality checks; it is sold separately from Zoho One. If your process is unusual, such as made-to-measure products or job work on customer-supplied material, a Zoho Creator app built around it may fit better than either product. Our overview of <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> compares these routes, and our <a href="/manufacturing/guides/zoho-or-manufacturing-erp/">guide to Zoho or a manufacturing ERP</a> helps decide when dedicated software is the safer choice.</p>
+<p>Two other routes are worth a look. If you are in India and want finance, GST and production in one Zoho system, Zoho ERP has bills of materials, manufacturing orders, job cards, work centers and quality checks; it is sold separately from Zoho One, and our <a href="/insights/tranzact-vs-zoho-erp/">TranZact vs Zoho ERP comparison</a> sets it against another Indian option. If your process is unusual, such as made-to-measure products or job work on customer-supplied material, a Zoho Creator app built around it may fit better than either product. Our overview of <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> compares these routes, and our <a href="/manufacturing/guides/zoho-or-manufacturing-erp/">guide to Zoho or a manufacturing ERP</a> helps decide when dedicated software is the safer choice.</p>
 
 <h2 id="how-to-decide">How to decide: five questions</h2>
 <ol>

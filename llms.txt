@@ -69,6 +69,8 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Zoho Creator vs Airtable and Zoho Tables (who you pay for, record limits, portals, AI, when to build an app): https://zudoworks.com/insights/zoho-creator-vs-airtable/
 - Zoho CRM vs Salesforce for small and mid-size businesses (editions, contracts, API and sandbox access, AI credits, Salesforce's 2026 Core, Advanced and Max editions): https://zudoworks.com/insights/zoho-crm-vs-salesforce/
 - Zoho One implementation checklist (All Employee vs Flexible User pricing, Zoho Directory, data load order, rollout waves, Zoho ERP sold separately): https://zudoworks.com/insights/zoho-one-implementation-checklist/
+- TranZact vs Zoho ERP for Indian manufacturers (where the accounts live, BOMs, job work and ITC-04, plans, TranZact with Zoho Books): https://zudoworks.com/insights/tranzact-vs-zoho-erp/
+- Zoho Desk vs Zendesk (editions and billing, AI agents and automated resolutions, routing and SLAs, sandboxes, Zoho CRM link, data residency): https://zudoworks.com/insights/zoho-desk-vs-zendesk/
 - How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Manufacturing: connected operations for small manufacturers (overview): https://zudoworks.com/manufacturing/

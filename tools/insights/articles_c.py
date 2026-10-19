@@ -290,7 +290,7 @@ ARTICLES.append(dict(
     description='What Zoho actually offers a manufacturer: assemblies in Zoho Inventory, the manufacturing module in Zoho ERP, and custom apps on Zoho Creator, plus when dedicated MRP software is the better choice.',
     lead='Manufacturers ask one question about Zoho more than any other: can it run production? The answer depends on which Zoho product you mean, and the three options are very different. This guide separates them, using Zoho&rsquo;s own documentation.',
     category='Manufacturing', keyword='zoho for manufacturing',
-    published='2026-10-09', modified='2026-10-09',
+    published='2026-10-09', modified='2026-10-19',
     cover_alt='Three Zoho routes for a manufacturer: Zoho Inventory for simple assembly, Zoho ERP for bills of materials and job cards, and Zoho Creator for custom processes',
     caption='Zoho gives a manufacturer three routes. They suit different factories, and one of them is sold only in India today.',
     related=['zoho-flow-vs-deluge', 'zoho-creator-vs-power-apps', 'zoho-analytics-agentic-data-foundations-2026'],
@@ -405,11 +405,11 @@ ARTICLES.append(dict(
 <h2 id="dedicated-mrp">When dedicated manufacturing software is the better choice</h2>
 <p>If scheduling and planning are the hard part of your business, look at software built for exactly that. These are fair descriptions taken from each vendor&rsquo;s own site:</p>
 <ul>
-  <li><strong>MRPeasy</strong> describes itself as MRP software for small manufacturers and says it is ideal for companies with 10 to 200 employees. It covers production planning, inventory, sales, procurement and finances.</li>
+  <li><strong>MRPeasy</strong> describes itself as AI-powered MRP software for small manufacturers, aimed at companies with roughly 10 to 200 employees. It covers production planning, inventory, sales, procurement, workforce and finances.</li>
   <li><strong>Odoo Manufacturing</strong> offers an MRP scheduler that plans work at each work center by capacity, tablets on the shop floor, automatic quality checks, maintenance requests and product lifecycle management.</li>
   <li><strong>ERPNext</strong> is open-source ERP with multi-level BOMs, work orders, job cards, production planning, subcontracting and capacity planning.</li>
   <li><strong>Katana</strong> offers bills of materials with subassemblies, a shop floor app and tracking of outsourced production, aimed at small and mid-sized product businesses. Our <a href="/insights/zoho-inventory-vs-katana/">Zoho Inventory vs Katana comparison</a> looks at it in detail.</li>
-  <li><strong>TranZact</strong> is built for Indian MSME manufacturers and says it works alongside systems such as Tally.</li>
+  <li><strong>TranZact</strong> describes its product as a &ldquo;Factory AI OS&rdquo; for sales, purchase, inventory and production, and leaves accounting to Tally, Busy or Zoho Books through integrations. Our <a href="/insights/tranzact-vs-zoho-erp/">TranZact vs Zoho ERP comparison</a> looks at it in detail.</li>
 </ul>
 <p>Choosing one of these does not rule Zoho out. A common and sensible design is a dedicated MRP for production, with Zoho CRM in front for sales and Zoho Analytics on top for reporting.</p>
 

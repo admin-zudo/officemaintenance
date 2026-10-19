@@ -178,3 +178,14 @@
 .tbl,.vt{gap:0}
 .head.solid .brand img{background:#fff;border-radius:10px;padding:5px}
 .tile b{font-size:25px}.tile span{font-size:19.5px}
+/* ---- lanes: two ways the same work flows, each lane a row of steps (TranZact vs Zoho ERP) */
+.m-lanes{grid-auto-rows:minmax(0,1fr)}
+.lane{padding:26px 30px;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.lane .lh{display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.lane .lh p{font-size:19px;color:var(--muted)}
+.flow{display:flex;align-items:stretch;gap:12px}
+.flow .st{flex:1 1 0;min-width:0;background:var(--tint);border-radius:16px;padding:26px 20px;font-size:22px;font-weight:700;line-height:1.25;display:flex;align-items:center}
+.flow .st.out{background:transparent;border:2px dashed var(--accent);color:var(--accent-deep)}
+.flow .st.one{flex:4 1 0;padding:34px 20px;font-size:24px;justify-content:center;text-align:center;background:var(--solid);color:var(--on)}
+.flow .ar{flex:none;align-self:center;font-size:30px;font-weight:800;color:var(--accent)}
+.lane .lf{font-size:18.5px;line-height:1.35;color:var(--muted)}

@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 16 October 2026.
+Last updated: 19 October 2026.
 
 ## 1. Status against the playbook
 
@@ -68,7 +68,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho CRM vs Salesforce: cost and fit | CRM, migration article |
 | 3 | Zoho Books vs Xero (UK, Australia, New Zealand) | Integrations |
 | 4 | Zoho Books vs QuickBooks (US) | Integrations |
-| 5 | Zoho Desk vs Zendesk | Zoho pillar |
+| ✓ | Zoho Desk vs Zendesk | Zoho pillar |
 | ✓ | Zoho Creator vs Airtable (and Zoho Tables) | Creator |
 | 7 | Zoho Creator pricing explained (plans and limits) | Creator, Pricing |
 | 8 | Zoho developer hourly rates: what to expect | Pricing, hiring article |
@@ -81,6 +81,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | 32 | Job work (subcontracting) in Zoho ERP | Manufacturing article |
 | ✓ | Zoho Books vs TallyPrime for manufacturers (India) | Manufacturing, ERP vs Odoo article |
 | ✓ | Zoho Inventory vs Katana for small manufacturers | Manufacturing article, Flow vs Deluge |
+| ✓ | TranZact vs Zoho ERP for Indian manufacturers | Manufacturing article, ERP vs Odoo, Books vs Tally |
 
 ### Informational (breadth and authority)
 | # | Topic (target query) | Cluster / links to |

@@ -42,6 +42,7 @@ Each article has one scene file here, `<slug>.html`, rendered by `render_cover.p
 | groups | Named groups of short items | 27 |
 | question | A buyer's question and the short answer | 23 |
 | statement | One strong line, attributed | 22 |
+| lanes | Two ways the same work flows, each a row of steps | `tranzact-vs-zoho-erp.html` |
 
 Older hand-built scenes also work as layouts: `_template-panel.html` (a flow of circles),
 `zoho-crm-vs-hubspot.html`, `zoho-mcp-claude-chatgpt.html`, `zoho-flow-vs-deluge.html`, `zoho-for-manufacturing.html`.
