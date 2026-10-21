@@ -174,4 +174,16 @@ EXT['zoho-partner-software-development'] = '''
   <li>Keep the documentation they produce somewhere your whole team can find it.</li>
 </ul>
 <p>If the project is a Zoho One rollout, our <a href="/insights/zoho-one-implementation-checklist/">Zoho One implementation checklist</a> sets out the order of work to agree with your developer.</p>
+
+<h2 id="verify-partner">How to check a provider&rsquo;s Zoho partner status</h2>
+<p>Zoho runs a public <a href="https://www.zoho.com/partners/find-zoho-partner.html" target="_blank" rel="noopener">Find a Zoho Partner</a> directory. Choose a country first, then filter by product, industry, Zoho certifications, languages and experience. Partners are shown under three tiers, Premium, Advanced and Authorized, which Zoho ranks by revenue, certifications and a partner value score; our <a href="/insights/zoho-partner-program-explained/">guide to the Zoho partner program</a> explains what each tier requires. If a provider says it is a Zoho Partner and you cannot find it in the directory, ask why before you sign.</p>
+<p>Zoho describes what partners can do for you as implementation, data migration, training and support, and selling and managing your Zoho licences. None of that has to come from one firm, and a tier tells you about a partner&rsquo;s business with Zoho, not about the person who will build your system.</p>
+
+<h2 id="technical-questions">Technical questions for integration projects</h2>
+<p>If the work includes integrations with other software, add three questions to the ten above:</p>
+<ul>
+  <li><strong>How will you stay within Zoho&rsquo;s API limits?</strong> A good answer mentions batched writes, concurrency and what happens on a 429 error. Our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains the figures.</li>
+  <li><strong>Where will the integration run?</strong> In Zoho Flow, in Deluge or in separate middleware, and who pays for and monitors it. See our <a href="/insights/zoho-flow-vs-deluge/">Zoho Flow vs Deluge comparison</a>.</li>
+  <li><strong>How will we know when it fails?</strong> Ask for error logs and alerts that reach someone on your side, not only the developer.</li>
+</ul>
 '''

@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 19 October 2026.
+Last updated: 21 October 2026.
 
 ## 1. Status against the playbook
 
@@ -72,7 +72,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho Creator vs Airtable (and Zoho Tables) | Creator |
 | 7 | Zoho Creator pricing explained (plans and limits) | Creator, Pricing |
 | 8 | Zoho developer hourly rates: what to expect | Pricing, hiring article |
-| 9 | Zoho One vs Microsoft 365 for small businesses | Zoho pillar |
+| ✓ | Zoho One vs Microsoft 365 for small businesses | Zoho pillar |
 | 10 | Zoho Creator vs Zoho CRM: which do you need? | Creator, CRM |
 | 11 | Best Zoho CRM integrations for e-commerce | Integrations |
 | 12 | Zoho Creator alternatives (and when to stay) | Creator |
@@ -82,6 +82,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho Books vs TallyPrime for manufacturers (India) | Manufacturing, ERP vs Odoo article |
 | ✓ | Zoho Inventory vs Katana for small manufacturers | Manufacturing article, Flow vs Deluge |
 | ✓ | TranZact vs Zoho ERP for Indian manufacturers | Manufacturing article, ERP vs Odoo, Books vs Tally |
+| ✓ | ERPNext vs Zoho ERP for Indian manufacturers | Manufacturing article, ERP vs Odoo, TranZact vs Zoho ERP |
 
 ### Informational (breadth and authority)
 | # | Topic (target query) | Cluster / links to |
@@ -101,7 +102,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | 21 | Zoho CRM workflow rule examples | Automation |
 | 22 | Sales dashboard in Zoho Analytics: what to include | Integrations |
 | 23 | Zoho Creator mobile apps for field teams | Creator |
-| 24 | Zoho CRM API limits explained | Integrations |
+| ✓ | Zoho CRM API limits explained | Integrations |
 | ✓ | Zoho One implementation checklist | Zoho pillar |
 | 26 | Automating Zoho Books with Deluge | Deluge |
 | 27 | Lead scoring in Zoho CRM | CRM |

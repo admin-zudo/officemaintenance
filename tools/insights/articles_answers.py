@@ -92,4 +92,18 @@ ANSWERS = {
         'Choose Zoho Desk for a free three-user edition, no lock-in contracts, Blueprint processes and a native link '
         'to Zoho CRM. Choose Zendesk if you want AI agents charged per automated resolution and its large app '
         'marketplace. On both, skills-based routing and sandboxes sit in the upper editions, so compare the edition you need.',
+    'erpnext-vs-zoho-erp':
+        'Choose ERPNext if you want free, open-source software with no per-user licence and have an in-house '
+        'technical person or partner to host and maintain it. Choose Zoho ERP if you want a per-user subscription '
+        'that Zoho hosts, with GST and production built in. Both have BOMs, job cards and subcontracting, so test '
+        'your own job work scenario in each trial.',
+    'zoho-one-vs-microsoft-365':
+        'Microsoft 365 is a productivity and security suite: email, Office apps, Teams and device management. Zoho One '
+        'is a bundle of business applications such as CRM, accounting, inventory, helpdesk and HR, with its own email '
+        'and chat. Choose by the jobs you need done; many businesses keep Microsoft 365 for email and documents and '
+        'add Zoho One for the business processes.',
+    'zoho-crm-api-limits':
+        'Zoho CRM paid editions get 50,000 API credits per rolling 24 hours plus 250 to 2,000 per user licence, '
+        'depending on edition, up to an edition maximum; most calls cost 1 credit. Separately, each organisation can '
+        'run 10 to 25 calls at once per app, and 10 heavy calls at once. Exceeding either returns HTTP 429.',
 }

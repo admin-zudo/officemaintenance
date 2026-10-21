@@ -6,7 +6,34 @@
     <atom:link href="https://zudoworks.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>ERPNext vs Zoho ERP for Indian Manufacturers: Open Source You Run, or a Subscription Zoho Runs?</title>
+      <link>https://zudoworks.com/insights/erpnext-vs-zoho-erp/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/erpnext-vs-zoho-erp/</guid>
+      <description>Choose ERPNext if you want free, open-source software with no per-user licence and have an in-house technical person or partner to host and maintain it. Choose Zoho ERP if you want a per-user subscription that Zoho hosts, with GST and production built in. Both have BOMs, job cards and subcontracting, so test your own job work scenario in each trial.</description>
+      <category>Manufacturing</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zoho One vs Microsoft 365: Different Suites, and When to Run Both</title>
+      <link>https://zudoworks.com/insights/zoho-one-vs-microsoft-365/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-one-vs-microsoft-365/</guid>
+      <description>Microsoft 365 is a productivity and security suite: email, Office apps, Teams and device management. Zoho One is a bundle of business applications such as CRM, accounting, inventory, helpdesk and HR, with its own email and chat. Choose by the jobs you need done; many businesses keep Microsoft 365 for email and documents and add Zoho One for the business processes.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zoho CRM API Limits Explained: Credits, Concurrency and How to Stay Under Them</title>
+      <link>https://zudoworks.com/insights/zoho-crm-api-limits/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-crm-api-limits/</guid>
+      <description>Zoho CRM paid editions get 50,000 API credits per rolling 24 hours plus 250 to 2,000 per user licence, depending on edition, up to an edition maximum; most calls cost 1 credit. Separately, each organisation can run 10 to 25 calls at once per app, and 10 heavy calls at once. Exceeding either returns HTTP 429.</description>
+      <category>Integrations</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>TranZact vs Zoho ERP for Indian Manufacturers: One System, or Operations Beside Your Accounts?</title>
       <link>https://zudoworks.com/insights/tranzact-vs-zoho-erp/</link>

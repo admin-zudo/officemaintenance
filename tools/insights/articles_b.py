@@ -99,7 +99,7 @@ for each deal in deals
 <p>Search results are paginated, so for large pipelines loop through pages with the page parameter of <code>searchRecords</code>.</p>
 
 <h2 id="call-api">5. Call an external API and save the result</h2>
-<p>This pattern fetches data from another system with <code>invokeurl</code> and writes it back to the record. Here a custom button looks up a company in an external service using a stored connection.</p>
+<p>This pattern fetches data from another system with <code>invokeurl</code> and writes it back to the record. Here a custom button looks up a company in an external service using a stored connection. Calls like this use API credits, as our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains.</p>
 <pre><code>// Argument: accountId
 account = zoho.crm.getRecordById("Accounts", accountId);
 response = invokeurl
@@ -413,7 +413,7 @@ ARTICLES.append(dict(
 <p>The same rules apply in both directions: expose as few tools as the job needs, and keep a person in the loop for anything that changes data.</p>
 
 <h2 id="cost">Cost and limits</h2>
-<p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
+<p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits; our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains the credits and concurrency involved. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
 <p>If you want help deciding which tools to expose, or need the underlying <a href="/business-process-automation/">automation</a> and <a href="/zoho-integrations/">integrations</a> tidied up first, that is the kind of work we do.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
@@ -461,7 +461,7 @@ ARTICLES.append(dict(
 <h2 id="what-each-is">What each one is</h2>
 <p><strong>Zoho Flow</strong> is Zoho&rsquo;s integration builder. You pick a trigger, add actions and connect them on a canvas. Zoho says it connects more than 1,000 cloud and on-premise apps, and flows can start from app events, polling, webhooks, emails or RSS feeds. It has logic steps for decisions, if/else branches, delays and reusable subflows.</p>
 <p><strong>Deluge</strong> is Zoho&rsquo;s scripting language. It runs inside Zoho apps: custom functions in Zoho CRM, workflows in Zoho Creator, custom functions in Zoho Books and Desk, and more. It reads and writes Zoho records directly and calls outside systems with the <code>invokeurl</code> task. Our <a href="/insights/deluge-script-examples/">Deluge script examples</a> show what it looks like.</p>
-<p><strong>Custom middleware</strong> is a small application you own, sitting between the systems. It can run on Zoho Catalyst, which offers serverless functions in Java, Node.js and Python, a managed app platform, job scheduling and an event bus, or on any cloud you already use. It talks to Zoho through the REST APIs and webhooks.</p>
+<p><strong>Custom middleware</strong> is a small application you own, sitting between the systems. It can run on Zoho Catalyst, which offers serverless functions in Java, Node.js and Python, a managed app platform, job scheduling and an event bus, or on any cloud you already use. It talks to Zoho through the REST APIs and webhooks, so size it against the daily credits and concurrency in our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a>.</p>
 
 <h2 id="comparison-table">Side-by-side comparison</h2>
 <div class="table-wrap">

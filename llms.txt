@@ -71,7 +71,10 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Zoho One implementation checklist (All Employee vs Flexible User pricing, Zoho Directory, data load order, rollout waves, Zoho ERP sold separately): https://zudoworks.com/insights/zoho-one-implementation-checklist/
 - TranZact vs Zoho ERP for Indian manufacturers (where the accounts live, BOMs, job work and ITC-04, plans, TranZact with Zoho Books): https://zudoworks.com/insights/tranzact-vs-zoho-erp/
 - Zoho Desk vs Zendesk (editions and billing, AI agents and automated resolutions, routing and SLAs, sandboxes, Zoho CRM link, data residency): https://zudoworks.com/insights/zoho-desk-vs-zendesk/
-- How to choose a Zoho developer or partner: https://zudoworks.com/insights/zoho-partner-software-development/
+- ERPNext vs Zoho ERP for Indian manufacturers (open source vs subscription, BOMs and job cards, job work and subcontracting, GST via India Compliance, trial test plan): https://zudoworks.com/insights/erpnext-vs-zoho-erp/
+- Zoho One vs Microsoft 365 (what each suite covers, 2026 plans and licensing rules, email coexistence, running both, manufacturers): https://zudoworks.com/insights/zoho-one-vs-microsoft-365/
+- Zoho CRM API limits explained (v8 credits by edition, call costs, concurrency and 429 errors, Bulk Read and COQL caps, alerts): https://zudoworks.com/insights/zoho-crm-api-limits/
+- How to choose a Zoho developer or partner (ten questions, red flags, checking partner status, integration questions): https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Manufacturing: connected operations for small manufacturers (overview): https://zudoworks.com/manufacturing/
 - Manufacturing software built on Zoho (job tracking, inventory, purchasing, quality, traceability, dashboards; options compared; FAQ): https://zudoworks.com/manufacturing-software/

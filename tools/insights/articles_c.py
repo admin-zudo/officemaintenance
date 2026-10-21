@@ -100,8 +100,8 @@ ARTICLES.append(dict(
     description='What the Zoho Partner program means, when an independent Zoho developer is a better fit, the questions to ask before hiring, red flags to watch for and what your contract should cover.',
     lead='Choosing who builds your Zoho system matters more than which edition you buy. A good developer saves you money for years; a poor one leaves you with automations nobody understands. This checklist is what we would want a client to ask us.',
     category='Buying guide', keyword='how to choose a zoho developer',
-    published='2026-09-15', modified='2026-10-08',
-    cover_alt='Six questions to ask before hiring a Zoho developer, beside an illustrated buyer',
+    published='2026-09-15', modified='2026-10-21',
+    cover_alt='How to choose a Zoho developer: six questions as numbered tiles, asking about similar projects, who does the work, data migration, partner status in Zoho\'s Find a Partner directory, API limits and who owns the Zoho account, with three facts: you do not need an official Zoho Partner, put scope, ownership and support in writing, and start with one small paid piece of work',
     caption='A short checklist protects you from the most common problems in Zoho projects.',
     related=['zoho-crm-implementation-cost', 'zoho-creator-vs-power-apps', 'migrate-hubspot-salesforce-to-zoho-crm'],
     body='''
@@ -174,6 +174,10 @@ ARTICLES.append(dict(
          'Our Zoho Partner application is in progress. Until it is approved we do not describe ourselves as a Zoho Partner. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award at the Zoho Creator Partner Hackathon 2025.'),
         ('Who should own the Zoho account?',
          'You should. Keep the subscription and the super-admin account in your company\'s name, and give your developer an admin user. That way you keep control of your data and configuration if you change providers.'),
+        ('How can I check whether a company is really a Zoho Partner?',
+         'Search Zoho\'s public Find a Zoho Partner directory. Choose a country, then filter by product or industry. Listed partners appear under the Premium, Advanced or Authorized tier. If a provider claims partner status and is not listed, ask them to explain.'),
+        ('Can a Zoho partner sell us Zoho licences?',
+         'Yes. Zoho says partners can sell Zoho licences and manage your subscription for you. You can also buy directly from Zoho and hire any developer for the work. Either way, keep the super-admin account in your own company\'s name.'),
     ],
 ))
 
@@ -379,7 +383,7 @@ ARTICLES.append(dict(
   <li><strong>It is not in Zoho One.</strong> Zoho&rsquo;s pricing page states this plainly. Zoho ERP is licensed separately, per user, and each plan has a yearly cap on transactions. If you are planning a wider Zoho One rollout, our <a href="/insights/zoho-one-implementation-checklist/">Zoho One implementation checklist</a> covers how to fit the two together.</li>
   <li><strong>It is an ERP project.</strong> Moving finance, stock and production into one system needs data migration, opening balances, process design and training.</li>
 </ol>
-<p><strong>Choose it when</strong> you are in India, you want finance and production in one Zoho system, and your process fits a standard BOM, job card and work center model. If Odoo is also on your list, our <a href="/insights/zoho-erp-vs-odoo-manufacturing/">Zoho ERP vs Odoo comparison</a> goes through the differences.</p>
+<p><strong>Choose it when</strong> you are in India, you want finance and production in one Zoho system, and your process fits a standard BOM, job card and work center model. If Odoo is also on your list, our <a href="/insights/zoho-erp-vs-odoo-manufacturing/">Zoho ERP vs Odoo comparison</a> goes through the differences, and our <a href="/insights/erpnext-vs-zoho-erp/">ERPNext vs Zoho ERP comparison</a> covers the open-source alternative.</p>
 
 <h2 id="zoho-creator">Route 3: Zoho Creator, built around your process</h2>
 <p>Zoho Creator is a low-code platform: forms, a database, workflows, Deluge scripts, mobile apps and portals. It contains no manufacturing logic until someone builds it.</p>

@@ -63,4 +63,13 @@ META = {
     'zoho-desk-vs-zendesk': (
         'Zoho Desk vs Zendesk (2026 Comparison)',
         'Zoho Desk vs Zendesk: editions and billing, AI agents and automated resolutions, routing, SLAs, sandboxes, the CRM link, data residency and switching.'),
+    'erpnext-vs-zoho-erp': (
+        'ERPNext vs Zoho ERP for Manufacturers (India)',
+        'ERPNext vs Zoho ERP for Indian manufacturers: open source vs subscription, BOMs and job cards, job work, GST via India Compliance, and a trial test plan.'),
+    'zoho-one-vs-microsoft-365': (
+        'Zoho One vs Microsoft 365 (2026 Comparison)',
+        'Zoho One vs Microsoft 365: what each suite covers, 2026 plans and licensing rules, email and documents, security, and how to run both side by side.'),
+    'zoho-crm-api-limits': (
+        'Zoho CRM API Limits Explained (v8, 2026)',
+        'Zoho CRM API limits: daily credits by edition, call costs, concurrency and 429 errors, Bulk Read and COQL caps, alerts, and how to stay under them.'),
 }

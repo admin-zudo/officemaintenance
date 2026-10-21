@@ -126,7 +126,7 @@ ARTICLES.append(dict(
     caption='Roll Zoho One out one business area at a time. Licensing and the directory come first.',
     related=['zoho-for-manufacturing', 'zoho-partner-software-development', 'zoho-flow-vs-deluge'],
     body='''
-<p>Zoho One bundles CRM, finance, inventory, HR, support, analytics, a low-code platform and collaboration tools under a single subscription. Zoho&rsquo;s pricing page describes the Standard plan as more than 50 unified business apps. Having them all is useful. Trying to set them all up at once is the most common reason a Zoho One rollout stalls.</p>
+<p>Zoho One bundles CRM, finance, inventory, HR, support, analytics, a low-code platform and collaboration tools under a single subscription. Zoho&rsquo;s pricing page describes the Standard plan as more than 50 unified business apps. Having them all is useful. Trying to set them all up at once is the most common reason a Zoho One rollout stalls. If you are still deciding whether Zoho One should replace or sit beside Microsoft 365, read our <a href="/insights/zoho-one-vs-microsoft-365/">Zoho One vs Microsoft 365 comparison</a> first.</p>
 <p>This checklist is ordered the way we would run the work. The licensing and plan details were checked on Zoho&rsquo;s own pages on 16 October 2026; follow the links for current prices, which vary by country.</p>
 
 <h2 id="before-you-buy">Step 1: Choose the plan and the licensing model</h2>

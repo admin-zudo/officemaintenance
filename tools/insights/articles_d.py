@@ -164,7 +164,7 @@ ARTICLES.append(dict(
     caption='Both now run production in India. They differ most in planning depth, licensing and how much of the rest of your business already runs on Zoho.',
     related=['zoho-for-manufacturing', 'zoho-books-vs-tallyprime', 'zoho-flow-vs-deluge'],
     body='''
-<p>Zoho ERP and Odoo are now both credible ways for an Indian manufacturer to run finance, stock and production in one system. They come from very different places. Zoho ERP grew out of Zoho&rsquo;s finance and operations apps and is sold as a cloud subscription in India. Odoo is a modular suite with an open-source Community edition and a licensed Enterprise edition, used worldwide.</p>
+<p>Zoho ERP and Odoo are now both credible ways for an Indian manufacturer to run finance, stock and production in one system. They come from very different places. Zoho ERP grew out of Zoho&rsquo;s finance and operations apps and is sold as a cloud subscription in India. Odoo is a modular suite with an open-source Community edition and a licensed Enterprise edition, used worldwide. If a fully open-source ERP is on your list too, see our <a href="/insights/erpnext-vs-zoho-erp/">ERPNext vs Zoho ERP comparison</a>.</p>
 <p>We build on Zoho, so read this with that in mind. We have kept every claim to what each vendor publishes on its own site, checked in October 2026, and we say where one product is the better fit.</p>
 
 <h2 id="short-answer">The short answer</h2>
