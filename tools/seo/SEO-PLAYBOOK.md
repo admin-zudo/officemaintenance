@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 21 October 2026.
+Last updated: 23 October 2026.
 
 ## 1. Status against the playbook
 
@@ -83,6 +83,8 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho Inventory vs Katana for small manufacturers | Manufacturing article, Flow vs Deluge |
 | ✓ | TranZact vs Zoho ERP for Indian manufacturers | Manufacturing article, ERP vs Odoo, Books vs Tally |
 | ✓ | ERPNext vs Zoho ERP for Indian manufacturers | Manufacturing article, ERP vs Odoo, TranZact vs Zoho ERP |
+| ✓ | Zoho Analytics vs Power BI (Zoho, Microsoft and Tally data) | Analytics foundations, Zoho One vs Microsoft 365, Books vs Tally |
+| ✓ | Preventive maintenance: Zoho Creator, Zoho FSM or a CMMS (MaintainX, Fiix) | Manufacturing article, ERP vs Odoo, Flow vs Deluge, /manufacturing/workflows/ |
 
 ### Informational (breadth and authority)
 | # | Topic (target query) | Cluster / links to |

@@ -209,7 +209,7 @@ ARTICLES.append(dict(
 
 <h2 id="only-zoho">What only Zoho One covers</h2>
 <p>This is the bigger side of the comparison. A sales team needs a CRM; finance needs accounting with local tax; operations needs inventory; support needs a helpdesk; HR needs records, leave and payroll. Zoho One includes all of these, and they share users and customer records. A quote in Zoho CRM can become an invoice in Zoho Books without a connector.</p>
-<p>It also includes <strong>Zoho Creator</strong> for custom apps and <strong>Zoho Analytics</strong> for reporting across all of them. Microsoft&rsquo;s nearest equivalent for custom apps, Power Apps, needs its own Premium licence for Dataverse and premium connectors; our <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps comparison</a> covers that choice in detail.</p>
+<p>It also includes <strong>Zoho Creator</strong> for custom apps and <strong>Zoho Analytics</strong> for reporting across all of them. Microsoft&rsquo;s nearest equivalent for custom apps, Power Apps, needs its own Premium licence for Dataverse and premium connectors; our <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps comparison</a> covers that choice in detail, and our <a href="/insights/zoho-analytics-vs-power-bi/">Zoho Analytics vs Power BI comparison</a> does the same for reporting.</p>
 
 <h2 id="only-microsoft">What only Microsoft 365 covers</h2>
 <ul>

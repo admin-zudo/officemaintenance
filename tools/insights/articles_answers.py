@@ -106,4 +106,14 @@ ANSWERS = {
         'Zoho CRM paid editions get 50,000 API credits per rolling 24 hours plus 250 to 2,000 per user licence, '
         'depending on edition, up to an edition maximum; most calls cost 1 credit. Separately, each organisation can '
         'run 10 to 25 calls at once per app, and 10 heavy calls at once. Exceeding either returns HTTP 429.',
+    'zoho-analytics-vs-power-bi':
+        'Choose Zoho Analytics if your data lives mostly in Zoho apps or TallyPrime and many people need to view '
+        'dashboards, since its plans bundle users and rows. Choose Power BI if you run on Microsoft 365 and your '
+        'analysts work in Excel and Power BI Desktop. With Power BI Pro, people who view shared reports also need a '
+        'paid licence unless the content sits on Fabric capacity of F64 or larger.',
+    'zoho-preventive-maintenance-vs-cmms':
+        'Zoho has no CMMS product, but a Zoho Creator app can run preventive maintenance tied to your Zoho stock and '
+        'production data, and Zoho FSM schedules maintenance for equipment at customer sites. Choose a dedicated '
+        'CMMS such as MaintainX or Fiix if you want ready-made maintenance software quickly; their parts, purchasing '
+        'and API features sit mostly in the higher tiers.',
 }

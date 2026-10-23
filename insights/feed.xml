@@ -6,7 +6,25 @@
     <atom:link href="https://zudoworks.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Zoho Analytics vs Power BI: Licences, Data Sources and Fit for Zoho and Tally Users</title>
+      <link>https://zudoworks.com/insights/zoho-analytics-vs-power-bi/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-analytics-vs-power-bi/</guid>
+      <description>Choose Zoho Analytics if your data lives mostly in Zoho apps or TallyPrime and many people need to view dashboards, since its plans bundle users and rows. Choose Power BI if you run on Microsoft 365 and your analysts work in Excel and Power BI Desktop. With Power BI Pro, people who view shared reports also need a paid licence unless the content sits on Fabric capacity of F64 or larger.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Preventive Maintenance on Zoho or a CMMS? Zoho Creator, Zoho FSM, MaintainX and Fiix Compared</title>
+      <link>https://zudoworks.com/insights/zoho-preventive-maintenance-vs-cmms/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-preventive-maintenance-vs-cmms/</guid>
+      <description>Zoho has no CMMS product, but a Zoho Creator app can run preventive maintenance tied to your Zoho stock and production data, and Zoho FSM schedules maintenance for equipment at customer sites. Choose a dedicated CMMS such as MaintainX or Fiix if you want ready-made maintenance software quickly; their parts, purchasing and API features sit mostly in the higher tiers.</description>
+      <category>Manufacturing</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>ERPNext vs Zoho ERP for Indian Manufacturers: Open Source You Run, or a Subscription Zoho Runs?</title>
       <link>https://zudoworks.com/insights/erpnext-vs-zoho-erp/</link>

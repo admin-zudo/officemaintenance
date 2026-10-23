@@ -78,7 +78,7 @@ ARTICLES.append(dict(
   <li>Build one dashboard that answers the five questions, with user filters.</li>
   <li>Only then, try Ask Zia on the same questions and compare answers.</li>
 </ol>
-<p>Need help connecting Zoho Analytics to your CRM, Books or other systems? See our <a href="/zoho-integrations/">Zoho integrations</a> service. If you run a factory, our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> covers where production data comes from.</p>
+<p>Need help connecting Zoho Analytics to your CRM, Books or other systems? See our <a href="/zoho-integrations/">Zoho integrations</a> service. If you run a factory, our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> covers where production data comes from. Still deciding on the tool? Our <a href="/insights/zoho-analytics-vs-power-bi/">Zoho Analytics vs Power BI comparison</a> covers licences, refresh limits and Tally data.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',
@@ -402,7 +402,7 @@ ARTICLES.append(dict(
   <li><strong>Zoho CRM</strong> for enquiries, quotes, dealers and distributors, samples and repeat orders, with custom modules where a standard pipeline does not fit.</li>
   <li><strong>Zoho Books</strong> for invoicing, purchases and tax, linked to Zoho Inventory for stock.</li>
   <li><strong>Zoho Analytics</strong> for dashboards that combine sales, stock, purchase and production data. The same rules apply as in our guide to <a href="/insights/zoho-analytics-agentic-data-foundations-2026/">building a data foundation in Zoho Analytics</a>.</li>
-  <li><strong>Zoho IoT,</strong> a separate low-code platform that Zoho positions for machine monitoring, predictive maintenance and energy tracking.</li>
+  <li><strong>Zoho IoT,</strong> a separate low-code platform that Zoho positions for machine monitoring, predictive maintenance and energy tracking. For the maintenance work itself, see our comparison of <a href="/insights/zoho-preventive-maintenance-vs-cmms/">preventive maintenance on Zoho or a CMMS</a>.</li>
 </ul>
 <p>Connecting these to a non-Zoho production system is an integration job; our guide to <a href="/insights/zoho-flow-vs-deluge/">Zoho Flow, Deluge and custom middleware</a> explains which tool suits which integration.</p>
 

@@ -72,4 +72,10 @@ META = {
     'zoho-crm-api-limits': (
         'Zoho CRM API Limits Explained (v8, 2026)',
         'Zoho CRM API limits: daily credits by edition, call costs, concurrency and 429 errors, Bulk Read and COQL caps, alerts, and how to stay under them.'),
+    'zoho-analytics-vs-power-bi': (
+        'Zoho Analytics vs Power BI (2026 Comparison)',
+        'Zoho Analytics vs Power BI: plans and per-user licences, who pays to view reports, refresh limits, Tally and local data, AI, and which suits Zoho users.'),
+    'zoho-preventive-maintenance-vs-cmms': (
+        'Zoho for Preventive Maintenance vs a CMMS',
+        'Run machine maintenance on Zoho Creator, Zoho FSM or a CMMS like MaintainX or Fiix? What each plan includes, spare parts, mobile use and how to choose.'),
 }

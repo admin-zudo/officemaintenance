@@ -61,7 +61,7 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Zoho MCP: connecting Claude or ChatGPT to Zoho CRM safely: https://zudoworks.com/insights/zoho-mcp-claude-chatgpt/
 - Zoho Analytics data foundations: https://zudoworks.com/insights/zoho-analytics-agentic-data-foundations-2026/
 - Zoho for manufacturing (Zoho ERP, Zoho Inventory assemblies and Zoho Creator compared): https://zudoworks.com/insights/zoho-for-manufacturing/
-- Zoho Flow vs Deluge vs custom middleware (task counting, time and statement limits): https://zudoworks.com/insights/zoho-flow-vs-deluge/
+- Zoho Flow vs Deluge vs custom middleware (task counting, Flow AI features, time and statement limits, CRM function credits): https://zudoworks.com/insights/zoho-flow-vs-deluge/
 - Zoho CRM Blueprint setup guide (edition limits, transitions, SLAs, manufacturing example): https://zudoworks.com/insights/zoho-crm-blueprint-setup/
 - Zoho ERP vs Odoo for manufacturers in India (BOM, job cards, planning, GST, licensing): https://zudoworks.com/insights/zoho-erp-vs-odoo-manufacturing/
 - Zoho Books vs TallyPrime for manufacturers and traders (cloud vs desktop, BOM and job work, keeping Tally): https://zudoworks.com/insights/zoho-books-vs-tallyprime/
@@ -74,6 +74,8 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - ERPNext vs Zoho ERP for Indian manufacturers (open source vs subscription, BOMs and job cards, job work and subcontracting, GST via India Compliance, trial test plan): https://zudoworks.com/insights/erpnext-vs-zoho-erp/
 - Zoho One vs Microsoft 365 (what each suite covers, 2026 plans and licensing rules, email coexistence, running both, manufacturers): https://zudoworks.com/insights/zoho-one-vs-microsoft-365/
 - Zoho CRM API limits explained (v8 credits by edition, call costs, concurrency and 429 errors, Bulk Read and COQL caps, alerts): https://zudoworks.com/insights/zoho-crm-api-limits/
+- Zoho Analytics vs Power BI (plans vs per-user licences, who pays to view reports, refresh limits, Databridge and the gateway, TallyPrime data, AI): https://zudoworks.com/insights/zoho-analytics-vs-power-bi/
+- Preventive maintenance on Zoho or a CMMS (Zoho Creator maintenance app, Zoho FSM scheduled maintenance, MaintainX and Fiix plans, spare parts and integrations): https://zudoworks.com/insights/zoho-preventive-maintenance-vs-cmms/
 - How to choose a Zoho developer or partner (ten questions, red flags, checking partner status, integration questions): https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Manufacturing: connected operations for small manufacturers (overview): https://zudoworks.com/manufacturing/

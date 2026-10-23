@@ -442,7 +442,7 @@ ARTICLES.append(dict(
     description='How to choose between Zoho Flow, Deluge functions and custom middleware for a Zoho integration, with the task counting, time limits and statement limits that Zoho documents for each.',
     lead='Every Zoho integration can be built three ways: a no-code flow, a Deluge function or your own code on a server. All three work on day one. They differ in what happens at volume, when something fails and when the person who built it has moved on.',
     category='Integrations', keyword='zoho flow vs deluge',
-    published='2026-10-09', modified='2026-10-09',
+    published='2026-10-09', modified='2026-10-23',
     cover_alt='Zoho Flow compared with Deluge: Flow is a no-code builder metered by tasks, Deluge is a script inside the Zoho app with time and statement limits, and middleware handles high volume',
     caption='Zoho Flow and Deluge solve the same problem at different levels of control. Middleware takes over where both run out.',
     related=['deluge-script-examples', 'zoho-mcp-claude-chatgpt', 'zoho-for-manufacturing'],
@@ -459,7 +459,7 @@ ARTICLES.append(dict(
 <p>Real projects often use two of them together, and that is a sound design, not a compromise.</p>
 
 <h2 id="what-each-is">What each one is</h2>
-<p><strong>Zoho Flow</strong> is Zoho&rsquo;s integration builder. You pick a trigger, add actions and connect them on a canvas. Zoho says it connects more than 1,000 cloud and on-premise apps, and flows can start from app events, polling, webhooks, emails or RSS feeds. It has logic steps for decisions, if/else branches, delays and reusable subflows.</p>
+<p><strong>Zoho Flow</strong> is Zoho&rsquo;s integration builder. You pick a trigger, add actions and connect them on a canvas. Zoho says it connects more than 1,000 cloud and on-premise apps, and flows can start from app events, polling, webhooks, emails or RSS feeds. It has logic steps for decisions, if/else branches, delays and reusable subflows. Zoho&rsquo;s Flow page now also describes AI features: you can describe a workflow in plain English and have Zia build a first version to refine on the canvas, and add AI steps that summarise, rephrase or extract content within a flow.</p>
 <p><strong>Deluge</strong> is Zoho&rsquo;s scripting language. It runs inside Zoho apps: custom functions in Zoho CRM, workflows in Zoho Creator, custom functions in Zoho Books and Desk, and more. It reads and writes Zoho records directly and calls outside systems with the <code>invokeurl</code> task. Our <a href="/insights/deluge-script-examples/">Deluge script examples</a> show what it looks like.</p>
 <p><strong>Custom middleware</strong> is a small application you own, sitting between the systems. It can run on Zoho Catalyst, which offers serverless functions in Java, Node.js and Python, a managed app platform, job scheduling and an event bus, or on any cloud you already use. It talks to Zoho through the REST APIs and webhooks, so size it against the daily credits and concurrency in our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a>.</p>
 
@@ -500,9 +500,9 @@ ARTICLES.append(dict(
 <p>Zoho CRM&rsquo;s <a href="https://www.zoho.com/crm/developer/docs/functions/limits-quotas.html" target="_blank" rel="noopener">platform limits page</a> gives a timeout by where the function is called from: 10 seconds for buttons, related lists, validation rules and REST API functions; 30 seconds for automation such as workflow rules, Blueprint and approvals; and 15 minutes for scheduled functions. A function that runs over is terminated.</p>
 <p>The practical lesson is to keep anything a user is waiting on short, and to move slow work, such as a chain of external API calls, into a scheduled function or out to middleware.</p>
 <h3>Statements</h3>
-<p>Zoho&rsquo;s general <a href="https://www.zoho.com/deluge/help/limitations.html" target="_blank" rel="noopener">Deluge limitations page</a> lists 5,000 executed statements per function, and a loop body counts once for every iteration. Zoho Creator&rsquo;s documentation gives a range of 5,000 to 50,000 depending on the plan, and Zoho CRM&rsquo;s page lists 200,000 lines of execution per invocation. The safe reading is that the limit depends on the product, and that a loop over a few thousand records with several statements inside it is at risk everywhere.</p>
+<p>Zoho&rsquo;s general <a href="https://www.zoho.com/deluge/help/limitations.html" target="_blank" rel="noopener">Deluge limitations page</a> lists 5,000 executed statements per function, and a loop body counts once for every iteration. Zoho Creator documents its own limits, which depend on the plan, and Zoho CRM&rsquo;s page lists 200,000 lines of execution per invocation, counting every loop iteration and child function that actually runs. The safe reading is that the limit depends on the product, and that a loop over a few thousand records with several statements inside it is at risk everywhere.</p>
 <h3>Daily use</h3>
-<p>In Zoho CRM, each Deluge function run uses one credit from a daily allowance that depends on the edition and the number of users. The general Deluge page also lists a 5 MB limit on an <code>invokeurl</code> response and a limit of 75 function calls from within one function.</p>
+<p>In Zoho CRM, each Deluge function run uses one credit from a daily allowance that depends on the edition and the number of users. Zoho CRM functions can also be written in Java, Node.js or Python; those use one credit for every 10 seconds of execution, so a slow function costs more than a quick one. The general Deluge page also lists a 5 MB limit on an <code>invokeurl</code> response and a limit of 75 function calls from within one function.</p>
 <p>None of this makes Deluge fragile. It means a function should do one job on one record, or on a small batch, and finish.</p>
 
 <h2 id="when-flow">When Zoho Flow is the right tool</h2>
@@ -531,7 +531,7 @@ ARTICLES.append(dict(
   <li><strong>Two-way sync:</strong> both systems can edit the same record and you need rules for conflicts.</li>
   <li><strong>Reach:</strong> the other system uses a database connection, files on a server or a protocol that Flow and <code>invokeurl</code> do not handle.</li>
 </ul>
-<p>This is common with factory and warehouse systems; our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> covers where Zoho meets production software. The trade-off is ownership: middleware needs hosting, monitoring, logging and someone responsible for it. Build it only when the first two options cannot do the job.</p>
+<p>This is common with factory and warehouse systems; our guide to <a href="/insights/zoho-for-manufacturing/">Zoho for manufacturing</a> covers where Zoho meets production software, and our comparison of <a href="/insights/zoho-preventive-maintenance-vs-cmms/">preventive maintenance on Zoho or a CMMS</a> shows the same choice for a maintenance system. The trade-off is ownership: middleware needs hosting, monitoring, logging and someone responsible for it. Build it only when the first two options cannot do the job.</p>
 
 <h2 id="combining">Combining them</h2>
 <p>The three fit together cleanly:</p>
@@ -563,7 +563,7 @@ ARTICLES.append(dict(
         ('Can I use Deluge inside Zoho Flow?',
          'Yes. Zoho Flow supports custom functions written in Deluge on its Standard and Professional plans. A flow can pass data to a function and use the value it returns in later steps.'),
         ('What is the Deluge statement limit?',
-         'Zoho\'s general Deluge documentation lists 5,000 executed statements per function, with each loop iteration counted. Zoho Creator documents 5,000 to 50,000 depending on the plan, and Zoho CRM lists 200,000 lines of execution per invocation. Check the limits page for the product you are building in.'),
+         'Zoho\'s general Deluge documentation lists 5,000 executed statements per function, with each loop iteration counted. Zoho Creator documents its own plan-dependent limits, and Zoho CRM lists 200,000 lines of execution per invocation. Check the limits page for the product you are building in.'),
         ('When do I need middleware instead of Zoho Flow or Deluge?',
          'When the integration handles high volume, runs for minutes, needs queues and automatic retries, syncs in both directions with conflict rules, or connects to a system that Flow and Deluge cannot reach. Middleware can run on Zoho Catalyst or any cloud platform.'),
         ('Can Zoho Flow connect to on-premise software?',
