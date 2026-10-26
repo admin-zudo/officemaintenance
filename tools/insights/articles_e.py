@@ -117,7 +117,7 @@ ARTICLES.append(dict(
   <li><strong>Choose Zoho Tables</strong> if you want the same kind of tool and already pay for Zoho One, or want your data in the same account as your other Zoho apps.</li>
   <li><strong>Choose Zoho Creator</strong> if the data drives a process with stages and owners, people outside the office or the company must use it, or it has to work with Zoho CRM, Books or Inventory records directly.</li>
 </ol>
-<p>If you are also weighing Microsoft&rsquo;s platform, read our <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps comparison</a>. When an app is clearly needed, our <a href="/zoho-creator-development/">Zoho Creator development</a> page explains how we scope it.</p>
+<p>If you are also weighing Microsoft&rsquo;s platform, read our <a href="/insights/zoho-creator-vs-power-apps/">Zoho Creator vs Power Apps comparison</a>; for an operations platform priced by plan minimums and reads, see <a href="/insights/zoho-creator-vs-quickbase/">Zoho Creator vs Quickbase</a>. When an app is clearly needed, our <a href="/zoho-creator-development/">Zoho Creator development</a> page explains how we scope it.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',

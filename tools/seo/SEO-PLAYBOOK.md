@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 23 October 2026.
+Last updated: 26 October 2026.
 
 ## 1. Status against the playbook
 
@@ -85,6 +85,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | ERPNext vs Zoho ERP for Indian manufacturers | Manufacturing article, ERP vs Odoo, TranZact vs Zoho ERP |
 | ✓ | Zoho Analytics vs Power BI (Zoho, Microsoft and Tally data) | Analytics foundations, Zoho One vs Microsoft 365, Books vs Tally |
 | ✓ | Preventive maintenance: Zoho Creator, Zoho FSM or a CMMS (MaintainX, Fiix) | Manufacturing article, ERP vs Odoo, Flow vs Deluge, /manufacturing/workflows/ |
+| ✓ | Zoho Creator vs Quickbase (operations and shop-floor apps) | Creator vs Power Apps, Creator vs Airtable, preventive maintenance article |
 
 ### Informational (breadth and authority)
 | # | Topic (target query) | Cluster / links to |
@@ -97,7 +98,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | 14 | How to connect Xero to Zoho CRM | Integrations |
 | ✓ | Zoho CRM Blueprint: step-by-step setup | CRM |
 | 16 | Zoho CRM custom functions: beginner's guide | Deluge |
-| 17 | Deluge invokeurl: calling external APIs (with code) | Deluge, Integrations |
+| ✓ | Deluge invokeurl: calling external APIs (with code) | Deluge, Integrations, Flow vs Deluge, API limits |
 | 18 | Zoho Creator customer portal: setup guide | Creator |
 | ✓ | Zoho Flow vs Deluge vs custom middleware | Integrations |
 | 20 | Zoho CRM data migration checklist (downloadable) | CRM |

@@ -76,6 +76,8 @@ Based in Chennai, India. Works remotely with businesses in the United States, Un
 - Zoho CRM API limits explained (v8 credits by edition, call costs, concurrency and 429 errors, Bulk Read and COQL caps, alerts): https://zudoworks.com/insights/zoho-crm-api-limits/
 - Zoho Analytics vs Power BI (plans vs per-user licences, who pays to view reports, refresh limits, Databridge and the gateway, TallyPrime data, AI): https://zudoworks.com/insights/zoho-analytics-vs-power-bi/
 - Preventive maintenance on Zoho or a CMMS (Zoho Creator maintenance app, Zoho FSM scheduled maintenance, MaintainX and Fiix plans, spare parts and integrations): https://zudoworks.com/insights/zoho-preventive-maintenance-vs-cmms/
+- Zoho Creator vs Quickbase (per-user plans vs platform minimum and reads, record and call limits, offline shop-floor apps, portals, SSO, AI): https://zudoworks.com/insights/zoho-creator-vs-quickbase/
+- Deluge invokeurl guide (syntax, connections, JSON requests, status codes, 40-second timeout, allowed ports by data centre, limits, inbound REST functions): https://zudoworks.com/insights/deluge-invokeurl-api-calls/
 - How to choose a Zoho developer or partner (ten questions, red flags, checking partner status, integration questions): https://zudoworks.com/insights/zoho-partner-software-development/
 - Zoho Partner Program explained (Authorized, Advanced and Premium tiers; how to verify a partner): https://zudoworks.com/insights/zoho-partner-program-explained/
 - Manufacturing: connected operations for small manufacturers (overview): https://zudoworks.com/manufacturing/

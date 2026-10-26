@@ -388,7 +388,7 @@ ARTICLES.append(dict(
 <p>For a nightly export of a large module, one Bulk Read job is far cheaper than thousands of paged reads. For a quick lookup of a few hundred records, COQL is simpler.</p>
 
 <h2 id="deluge-mcp">Deluge, Zoho Flow and AI assistants count too</h2>
-<p>API usage is not only from outside systems. Zoho&rsquo;s limits page says integration tasks in Deluge functions use credits at the same rate as the matching API, and count toward concurrency at the organisation level, although sub-concurrency does not apply to them. The API dashboard includes them in its figures.</p>
+<p>API usage is not only from outside systems. Zoho&rsquo;s limits page says integration tasks in Deluge functions use credits at the same rate as the matching API, and count toward concurrency at the organisation level, although sub-concurrency does not apply to them. The API dashboard includes them in its figures. Calls from Deluge to systems outside Zoho have their own limits, covered in our <a href="/insights/deluge-invokeurl-api-calls/">Deluge invokeurl guide</a>.</p>
 <p>The same goes for AI. Zoho&rsquo;s MCP FAQ says calls through Zoho MCP follow the normal API limits of each app, with no separate allowance. If you connect Claude or ChatGPT to Zoho CRM, as in our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a>, an assistant that loops through records spends the same credits as any other integration. Our <a href="/insights/zoho-flow-vs-deluge/">Zoho Flow vs Deluge comparison</a> covers how Flow and Deluge are metered.</p>
 
 <h2 id="monitor">Watching usage before it becomes a problem</h2>

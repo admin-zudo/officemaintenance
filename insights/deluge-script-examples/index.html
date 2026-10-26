@@ -243,7 +243,7 @@
   },
   "articleSection": "Deluge",
   "keywords": "deluge script examples",
-  "wordCount": 1460,
+  "wordCount": 1477,
   "inLanguage": "en"
 }
   </script>
@@ -581,7 +581,7 @@ for each deal in deals
 <p>Search results are paginated, so for large pipelines loop through pages with the page parameter of <code>searchRecords</code>.</p>
 
 <h2 id="call-api">5. Call an external API and save the result</h2>
-<p>This pattern fetches data from another system with <code>invokeurl</code> and writes it back to the record. Here a custom button looks up a company in an external service using a stored connection. Calls like this use API credits, as our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains.</p>
+<p>This pattern fetches data from another system with <code>invokeurl</code> and writes it back to the record. Here a custom button looks up a company in an external service using a stored connection. Calls like this use API credits, as our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains. For status codes, timeouts, JSON bodies and the ports Zoho allows, see our full <a href="/insights/deluge-invokeurl-api-calls/">Deluge invokeurl guide</a>.</p>
 <pre><code>// Argument: accountId
 account = zoho.crm.getRecordById("Accounts", accountId);
 response = invokeurl

@@ -3,10 +3,10 @@ import html, json, os, re, sys
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import articles_a, articles_b, articles_c, articles_d, articles_e, articles_f, articles_g, articles_h, articles_i, articles_ext, articles_meta, articles_answers, articles_watch  # noqa: E402
+import articles_a, articles_b, articles_c, articles_d, articles_e, articles_f, articles_g, articles_h, articles_i, articles_j, articles_ext, articles_meta, articles_answers, articles_watch  # noqa: E402
 
 SITE = 'https://zudoworks.com'
-ARTICLES = articles_a.ARTICLES + articles_b.ARTICLES + articles_c.ARTICLES + articles_d.ARTICLES + articles_e.ARTICLES + articles_f.ARTICLES + articles_g.ARTICLES + articles_h.ARTICLES + articles_i.ARTICLES
+ARTICLES = articles_a.ARTICLES + articles_b.ARTICLES + articles_c.ARTICLES + articles_d.ARTICLES + articles_e.ARTICLES + articles_f.ARTICLES + articles_g.ARTICLES + articles_h.ARTICLES + articles_i.ARTICLES + articles_j.ARTICLES
 for _a in ARTICLES:  # insert extra sections before the FAQ heading
     _x = articles_ext.EXT.get(_a['slug'])
     if _x:
@@ -50,6 +50,8 @@ SERVICES_FOR = {
     'zoho-crm-api-limits': ['/zoho-integrations/', '/deluge-development/', '/custom-software-development/'],
     'zoho-analytics-vs-power-bi': ['/zoho-integrations/', '/zoho-development/', '/custom-software-development/'],
     'zoho-preventive-maintenance-vs-cmms': ['/zoho-creator-development/', '/zoho-integrations/', '/custom-software-development/'],
+    'zoho-creator-vs-quickbase': ['/zoho-creator-development/', '/custom-software-development/', '/zoho-integrations/'],
+    'deluge-invokeurl-api-calls': ['/deluge-development/', '/zoho-integrations/', '/custom-software-development/'],
 }
 
 

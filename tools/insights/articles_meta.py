@@ -78,4 +78,10 @@ META = {
     'zoho-preventive-maintenance-vs-cmms': (
         'Zoho for Preventive Maintenance vs a CMMS',
         'Run machine maintenance on Zoho Creator, Zoho FSM or a CMMS like MaintainX or Fiix? What each plan includes, spare parts, mobile use and how to choose.'),
+    'zoho-creator-vs-quickbase': (
+        'Zoho Creator vs Quickbase (2026 Comparison)',
+        'Zoho Creator vs Quickbase: per-user plans vs a platform minimum and reads, record limits, offline shop-floor apps, portals, SSO and AI, and which fits.'),
+    'deluge-invokeurl-api-calls': (
+        'Deluge invokeurl: Calling APIs [With Code]',
+        'Call external APIs from Zoho with Deluge invokeurl: syntax, connections, JSON, status codes, the 40-second timeout, allowed ports and limits, with code.'),
 }

@@ -116,4 +116,14 @@ ANSWERS = {
         'production data, and Zoho FSM schedules maintenance for equipment at customer sites. Choose a dedicated '
         'CMMS such as MaintainX or Fiix if you want ready-made maintenance software quickly; their parts, purchasing '
         'and API features sit mostly in the higher tiers.',
+    'zoho-creator-vs-quickbase':
+        'Choose Zoho Creator if you want per-user pricing you can start monthly, a free plan, offline forms in its '
+        'mobile apps and links to other Zoho apps. Choose Quickbase if you want SSO, a sandbox and Pipelines on its '
+        'Business plan and can commit to an annual contract with a platform minimum. Quickbase also meters integration '
+        'reads, so count integrations and public users as well as staff.',
+    'deluge-invokeurl-api-calls':
+        'In Deluge, invokeurl calls an external REST API with a URL, a method, optional headers and body, and a '
+        'connection that holds the credentials. Add detailed: true and check responseCode before using the reply. '
+        'Calls time out after 40 seconds, count against daily limits, and outside Creator the Indian and EU data '
+        'centres allow only ports 8011, 9001 and 8082 beyond the standard ones.',
 }

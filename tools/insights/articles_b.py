@@ -99,7 +99,7 @@ for each deal in deals
 <p>Search results are paginated, so for large pipelines loop through pages with the page parameter of <code>searchRecords</code>.</p>
 
 <h2 id="call-api">5. Call an external API and save the result</h2>
-<p>This pattern fetches data from another system with <code>invokeurl</code> and writes it back to the record. Here a custom button looks up a company in an external service using a stored connection. Calls like this use API credits, as our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains.</p>
+<p>This pattern fetches data from another system with <code>invokeurl</code> and writes it back to the record. Here a custom button looks up a company in an external service using a stored connection. Calls like this use API credits, as our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains. For status codes, timeouts, JSON bodies and the ports Zoho allows, see our full <a href="/insights/deluge-invokeurl-api-calls/">Deluge invokeurl guide</a>.</p>
 <pre><code>// Argument: accountId
 account = zoho.crm.getRecordById("Accounts", accountId);
 response = invokeurl
@@ -537,7 +537,7 @@ ARTICLES.append(dict(
 <p>The three fit together cleanly:</p>
 <ul>
   <li><strong>Flow calling Deluge.</strong> A flow handles the trigger and the connections, and a custom function does the one calculation that a canvas cannot.</li>
-  <li><strong>Deluge calling middleware.</strong> A CRM function sends a small request with <code>invokeurl</code> and returns at once; the middleware does the slow work and writes the result back through the API.</li>
+  <li><strong>Deluge calling middleware.</strong> A CRM function sends a small request with <code>invokeurl</code> and returns at once; the middleware does the slow work and writes the result back through the API. Our <a href="/insights/deluge-invokeurl-api-calls/">invokeurl guide</a> shows how to write that call and check its response.</li>
   <li><strong>Middleware calling Flow.</strong> Your service posts to a webhook trigger, and a flow fans the event out to several apps.</li>
 </ul>
 <p>Whichever you choose, give every integration three things: a log of what it did, an alert when it fails, and a named owner. AI assistants are a fourth route for people asking questions of the same data; see our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> for that.</p>
