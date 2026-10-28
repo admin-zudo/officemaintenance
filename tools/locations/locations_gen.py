@@ -30,11 +30,11 @@ SERVICES = [
 ]
 
 PROJECTS = {
-    'trakas': ('Trakas Smokers Shop', 'USA &middot; Retail', 'A point-of-sale application and design system integrated with Zoho One, including Zoho CRM, Zoho Books and Zoho Analytics.'),
+    'pos': ('Retail point-of-sale system', 'USA &middot; Retail', 'A point-of-sale application and design system integrated with Zoho One, including Zoho CRM, Zoho Books and Zoho Analytics.'),
     'healthcare': ('Healthcare management', 'USA &middot; Healthcare', 'Custom injury-mapping widgets built in JavaScript and SVG, with full create, read, update and delete operations.'),
-    'bestaccess': ('Best Access Doors', 'USA', 'Business application work for a US door and access-panel supplier.'),
-    'avalon': ('Avalon Care Training', 'UK &middot; Training and education', 'A student management system with portals, automated PDF documents and role-based security.'),
-    'asquare': ('A Square Loans', 'India &middot; Lending', 'A financial processing engine and a secure loan-management architecture.'),
+    'doors': ('Door and access-panel supplier', 'USA', 'Business application work for a US door and access-panel supplier.'),
+    'students': ('Student management system', 'UK &middot; Training and education', 'A student management system with portals, automated PDF documents and role-based security.'),
+    'loans': ('Loan management system', 'India &middot; Lending', 'A financial processing engine and a secure loan-management architecture.'),
 }
 
 COUNTRIES = [
@@ -64,7 +64,7 @@ COUNTRIES = [
         areas=[('States', ['Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chhattisgarh', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jharkhand', 'Karnataka', 'Kerala', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal']),
                ('Union territories', ['Andaman and Nicobar Islands', 'Chandigarh', 'Dadra and Nagar Haveli and Daman and Diu', 'Delhi', 'Jammu and Kashmir', 'Ladakh', 'Lakshadweep', 'Puducherry'])],
         cities='Chennai, Coimbatore, Madurai, Bengaluru, Hyderabad, Mumbai, Pune, Delhi, Noida, Gurugram, Kolkata, Ahmedabad, Jaipur, Kochi, Lucknow and Chandigarh',
-        projects=['asquare'],
+        projects=['loans'],
         faqs=[
             ('Is Zudo Works an authorized Zoho partner in India?',
              'Not yet. Our Zoho Partner application is in progress, so we do not describe ourselves as a Zoho Partner or an authorized Zoho partner. We are an independent Zoho development team in Chennai. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award from Zoho Creator at the Zoho Creator Partner Hackathon 2025.'),
@@ -104,7 +104,7 @@ COUNTRIES = [
         areas=[('States', ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming']),
                ('Federal district', ['Washington, D.C.'])],
         cities='New York, Los Angeles, Chicago, Houston, Dallas, Austin, Phoenix, Miami, Atlanta, Seattle, San Francisco, Denver, Boston and Philadelphia',
-        projects=['trakas', 'healthcare', 'bestaccess'],
+        projects=['pos', 'healthcare', 'doors'],
         faqs=[
             ('Is Zudo Works a Zoho partner in the US?',
              'Not yet. Our Zoho Partner application is in progress, so we do not describe ourselves as a Zoho Partner. We are an independent Zoho development team working with US businesses remotely. Our CTO, Arunkumar V, received the "Master of Creator (Global Winner)" award from Zoho Creator at the Zoho Creator Partner Hackathon 2025.'),
@@ -141,7 +141,7 @@ COUNTRIES = [
         areas_intro='We work remotely with businesses in all four nations of the UK.',
         areas=[('Nations', ['England', 'Scotland', 'Wales', 'Northern Ireland'])],
         cities='London, Manchester, Birmingham, Leeds, Liverpool, Bristol, Sheffield, Newcastle, Nottingham, Leicester, Glasgow, Edinburgh, Aberdeen, Cardiff, Swansea and Belfast',
-        projects=['avalon'],
+        projects=['students'],
         faqs=[
             ('Is Zudo Works a Zoho partner in the UK?',
              'Not yet. Our Zoho Partner application is in progress, so we do not describe ourselves as a Zoho Partner. We are an independent Zoho development team working with UK businesses remotely, with a working day that overlaps the UK morning.'),
