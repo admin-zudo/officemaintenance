@@ -404,7 +404,7 @@ ARTICLES.append(dict(
 <p>If your business does not sell in a simple lead-to-deal pattern, customization decides the outcome. A training company tracks courses and enrolments. A manufacturer tracks samples, quotes and repeat orders. A services firm tracks projects and renewals.</p>
 <p>Zoho CRM is built for this. You can add custom modules, relate them to each other, design different layouts for different teams and write functions for the logic. When a process is too large for the CRM, it can live in a <a href="/zoho-creator-development/">Zoho Creator app</a> that shares the same data.</p>
 <p>HubSpot is more opinionated. It works very well when your process fits its model, and it has a large app marketplace and a good API. Deeper changes to the data model are reserved for higher tiers.</p>
-<p>For accounting, Zoho has a clear advantage if you use Zoho Books: quotes, invoices and payments flow between the two without a third-party connector. HubSpot connects to accounting tools through integrations.</p>
+<p>For accounting, Zoho has a clear advantage if you use Zoho Books: quotes, invoices and payments flow between the two without a third-party connector. HubSpot connects to accounting tools through integrations. If you are choosing the accounting system too, see our <a href="/insights/zoho-books-vs-quickbooks/">Zoho Books vs QuickBooks Online</a> comparison.</p>
 
 <h2 id="when-zoho">When Zoho CRM is the better choice</h2>
 <ul>

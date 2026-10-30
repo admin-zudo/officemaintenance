@@ -191,7 +191,7 @@
   <meta property="og:site_name" content="Zudo Works">
   <meta property="og:locale" content="en_US">
   <meta property="article:published_time" content="2026-10-09">
-  <meta property="article:modified_time" content="2026-10-16">
+  <meta property="article:modified_time" content="2026-10-30">
   <meta property="article:author" content="https://zudoworks.com/about/#leadership">
   <meta property="article:section" content="AI and automation">
   <meta name="twitter:card" content="summary_large_image">
@@ -214,7 +214,7 @@
     "https://zudoworks.com/Asset/og/zoho-mcp-claude-chatgpt.jpg"
   ],
   "datePublished": "2026-10-09",
-  "dateModified": "2026-10-16",
+  "dateModified": "2026-10-30",
   "author": {
     "@type": "Person",
     "@id": "https://zudoworks.com/#arunkumar-v",
@@ -243,7 +243,7 @@
   },
   "articleSection": "AI and automation",
   "keywords": "zoho mcp",
-  "wordCount": 1936,
+  "wordCount": 2016,
   "inLanguage": "en"
 }
   </script>
@@ -283,7 +283,7 @@
       "name": "Is Zoho MCP free?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "At the time of writing, Zoho states that Zoho MCP is free to use and that it will notify users in advance if pricing is introduced. Calls made through MCP follow each Zoho app's normal API limits. You still pay for your Zoho apps and for the AI assistant you connect."
+        "text": "At the time of writing, yes. Zoho's MCP pricing page lists it at no additional cost for Zoho users, and its FAQ says Zoho will notify users in advance if pricing is introduced. Calls made through MCP use each Zoho app's normal API quota. You still pay for your Zoho apps and for the AI assistant you connect."
       }
     },
     {
@@ -471,7 +471,7 @@
             <img class="author-avatar" src="/Asset/img/team/arunkumar-v-avatar.webp" alt="Arunkumar V" width="44" height="44">
             <div>
               <p class="post-byline-name">By <a href="/about/#leadership" rel="author">Arunkumar V</a>, CTO at Zudo Works</p>
-              <p class="post-byline-meta">Published <time datetime="2026-10-09">9 October 2026</time> &middot; Updated <time datetime="2026-10-16">16 October 2026</time> &middot; 9 min read</p>
+              <p class="post-byline-meta">Published <time datetime="2026-10-09">9 October 2026</time> &middot; Updated <time datetime="2026-10-30">30 October 2026</time> &middot; 9 min read</p>
             </div>
           </div>
         </div>
@@ -511,7 +511,7 @@
             <p>Zoho MCP lets an AI assistant such as Claude or ChatGPT use tools in your Zoho apps. Create a server in the Zoho MCP console, add only the tools you need, copy the MCP URL into your assistant and authorize with your Zoho account. Start with read-only tools, keep each user on their own authorization, and require confirmation before any change.</p>
           </div>
 <p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
-<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were last checked on 16 October 2026.</p>
+<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were last checked on 30 October 2026.</p>
 
 <h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
 <p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI assistant, which Zoho calls the <strong>MCP client</strong>.</p>
@@ -528,9 +528,9 @@
 <table>
   <thead><tr><th scope="col">Side</th><th scope="col">Requirement</th><th scope="col">Notes</th></tr></thead>
   <tbody>
-    <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho states that MCP is free to use for now and that it will give notice before introducing pricing</td></tr>
-    <tr><th scope="row">Claude</th><td>Any plan: Free, Pro, Max, Team or Enterprise</td><td>Free plans are limited to one custom connector. On Team and Enterprise, Owners (and, on Enterprise, roles with library access) add the connector; members then connect individually</td></tr>
-    <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and fetch only</td></tr>
+    <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho&rsquo;s MCP pricing page lists it at no additional cost; its FAQ says Zoho will give notice before introducing pricing</td></tr>
+    <tr><th scope="row">Claude</th><td>Any plan: Free, Pro, Max, Team or Enterprise</td><td>Free plans are limited to one custom connector. On Team, Owners and Primary Owners add the connector; on Enterprise, so can roles with access to manage libraries. Members then connect individually</td></tr>
+    <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Which plans can use custom MCP apps, and which can write as well as read, has changed several times; check OpenAI&rsquo;s help centre for your plan</td></tr>
     <tr><th scope="row">Other clients</th><td>Any client that supports MCP connections</td><td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td></tr>
   </tbody>
 </table>
@@ -543,7 +543,7 @@
   <li><strong>Add tools.</strong> Open <em>Tools</em>, choose <em>Add Tools</em>, pick the app and tick only the actions you need. For a first server, search and get tools are enough.</li>
   <li><strong>Check authorization.</strong> Under <em>Connections</em>, confirm how users will authorize. The next section explains the two options.</li>
   <li><strong>Copy the MCP URL.</strong> The <em>Connect</em> section shows the server&rsquo;s URL. Treat it like a password.</li>
-  <li><strong>Add it to your assistant.</strong> In Claude, add a custom connector under <em>Customize &gt; Connectors</em>, paste the URL and click <em>Connect</em>. In ChatGPT, create an app under <em>Settings &gt; Apps</em>, paste the URL and choose OAuth.</li>
+  <li><strong>Add it to your assistant.</strong> In Claude Pro or Max, add a custom connector under <em>Customize &gt; Connectors</em>; on Team and Enterprise, an Owner adds it under <em>Organization settings &gt; Connectors</em>. Paste the URL and connect. In ChatGPT, turn on developer mode and add the server as an app; OpenAI&rsquo;s help centre has the current steps for your plan.</li>
   <li><strong>Test with a read-only question.</strong> For example: <em>&ldquo;List open deals over 500,000 with no activity in the last 14 days.&rdquo;</em> Check the answer against a CRM report before you trust it.</li>
 </ol>
 <p>Menu names change as the product develops. Zoho&rsquo;s <a href="https://help.zoho.com/portal/en/kb/mcp/implementation-guide/articles/zoho-mcp-implementation-guide" target="_blank" rel="noopener">implementation guide</a> has the current screens for each client.</p>
@@ -615,13 +615,13 @@
 <h2 id="other-direction">MCP in the other direction: Zia Chat and Catalyst</h2>
 <p>Zoho MCP lets an outside assistant use Zoho. Two newer Zoho products work the other way round, or alongside it:</p>
 <ul>
-  <li><strong>Zia Chat</strong>, launched in September 2026, is Zoho&rsquo;s own chat interface across its apps. Zoho says it can connect to non-Zoho applications through MCP and use the tools they expose, and that it supports leading models through your own API key. When we checked, it was in a free early access programme in the India and US data centres, with licensing to be announced at general availability.</li>
+  <li><strong>Zia Chat</strong>, launched in September 2026, is Zoho&rsquo;s own chat interface across its apps. Zoho says it can connect to non-Zoho applications through MCP and use the tools they expose. For outside models it currently supports OpenAI through your own API key, with Anthropic and other models planned. On 30 October 2026 it was still in a free early access programme in the India and US data centres, with licensing to be announced at general availability.</li>
   <li><strong>Catalyst</strong>, Zoho&rsquo;s cloud platform for custom applications, now has its own MCP server, so coding assistants such as Claude, Cursor, Codex and Gemini can create tables, set up authentication and deploy on it. This matters when a Zoho project needs a custom service that Deluge cannot handle.</li>
 </ul>
 <p>The same rules apply in both directions: expose as few tools as the job needs, and keep a person in the loop for anything that changes data.</p>
 
 <h2 id="cost">Cost and limits</h2>
-<p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits; our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains the credits and concurrency involved. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
+<p>At the time of writing, Zoho&rsquo;s <a href="https://www.zoho.com/mcp/pricing.html" target="_blank" rel="noopener">MCP pricing page</a> lists MCP at no additional cost for Zoho users, with no separate billing. Each action uses the API quota of the app it touches, so creating a lead uses one Zoho CRM API call, and an action that spans CRM and Desk draws on both; our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains the credits and concurrency involved. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
 <p>If you want help deciding which tools to expose, or need the underlying <a href="/business-process-automation/">automation</a> and <a href="/zoho-integrations/">integrations</a> tidied up first, that is the kind of work we do.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
@@ -632,7 +632,7 @@
               <svg class="faq-toggle" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
             <div class="faq-answer">
-              <p>At the time of writing, Zoho states that Zoho MCP is free to use and that it will notify users in advance if pricing is introduced. Calls made through MCP follow each Zoho app's normal API limits. You still pay for your Zoho apps and for the AI assistant you connect.</p>
+              <p>At the time of writing, yes. Zoho's MCP pricing page lists it at no additional cost for Zoho users, and its FAQ says Zoho will notify users in advance if pricing is introduced. Calls made through MCP use each Zoho app's normal API quota. You still pay for your Zoho apps and for the AI assistant you connect.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -716,7 +716,7 @@
               <p class="post-card-category">AI and automation</p>
               <h3><a href="/insights/zoho-agentic-ai-hyperautomation/">AI Agents in Zoho CRM: What They Can Do Today and How to Prepare</a></h3>
               <p class="post-card-excerpt">A practical look at AI in Zoho CRM: what Zia and AI agents can realistically handle, where automation still needs rules and human approval, and how to prepare your CRM data and processes.</p>
-              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September 2026</time> &middot; Updated <time datetime="2026-10-16">16 October 2026</time> &middot; 7 min read</p>
+              <p class="post-card-meta">Arunkumar V &middot; Published <time datetime="2026-09-15">15 September 2026</time> &middot; Updated <time datetime="2026-10-30">30 October 2026</time> &middot; 8 min read</p>
             </div>
           </article>
           <article class="post-card">

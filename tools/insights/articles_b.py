@@ -211,7 +211,7 @@ ARTICLES.append(dict(
     description='A practical look at AI in Zoho CRM: what Zia and AI agents can realistically handle, where automation still needs rules and human approval, and how to prepare your CRM data and processes.',
     lead='&ldquo;Agentic AI&rdquo; is the phrase of the year, and every software vendor has a version of it. Underneath the marketing there is something genuinely useful for CRM teams, as long as the data and processes underneath are in good shape. Here is a grounded view.',
     category='AI and automation', keyword='zoho crm ai agents',
-    published='2026-09-15', modified='2026-10-16',
+    published='2026-09-15', modified='2026-10-30',
     cover_alt='Two lists for AI in Zoho CRM: tasks to let AI help with, and decisions to keep under rules or approval',
     caption='The useful version of AI in a CRM suggests and drafts; a person approves anything that matters.',
     related=['zoho-mcp-claude-chatgpt', 'zoho-analytics-agentic-data-foundations-2026', 'deluge-script-examples'],
@@ -231,14 +231,14 @@ ARTICLES.append(dict(
 
 <h2 id="zoho-ai-today">AI in the Zoho ecosystem today</h2>
 <p>Zoho&rsquo;s AI assistant is <strong>Zia</strong>, which has been part of Zoho CRM for years. Depending on your edition, it provides lead and deal predictions, anomaly detection in sales trends, best-time-to-contact suggestions, email sentiment, data enrichment and a conversational assistant for questions such as &ldquo;show me deals closing this month&rdquo;.</p>
-<p>Four things have changed since Zoho first announced its agent plans in 2025. These details were last checked against Zoho&rsquo;s pages on 16 October 2026.</p>
+<p>Four things have changed since Zoho first announced its agent plans in 2025. These details were last checked against Zoho&rsquo;s pages on 30 October 2026.</p>
 <ul>
-  <li><strong>Zia Agents are a product you can sign up for.</strong> <a href="https://www.zoho.com/zia/agents/" target="_blank" rel="noopener">Zia Agents</a> has an Agent Studio, a low-code workshop for building and testing your own agents, and an Agent Store of prebuilt agents made by Zoho. Zoho says agents can work across more than 60 of its apps.</li>
-  <li><strong>You choose the model.</strong> Agents can run on Zoho-hosted models or on a model from OpenAI, Gemini or Claude using your own API key. Zoho states that Zia Agents itself is free and that you pay for model usage, with a free monthly token allowance on Zoho-hosted models. The allowance and rates are on Zoho&rsquo;s <a href="https://www.zoho.com/agents/pricing.html" target="_blank" rel="noopener">Zia Agents pricing page</a>.</li>
+  <li><strong>Zia Agents are a product you can sign up for.</strong> <a href="https://www.zoho.com/zia/agents/" target="_blank" rel="noopener">Zia Agents</a> has an Agent Studio, which Zoho describes as a no-code, prompt-based studio for building your own agents, and an Agent Store of more than 40 prebuilt agents made by Zoho. Agents can be deployed across the Zoho apps that support them, and their access is limited to the services you subscribe to.</li>
+  <li><strong>You choose the model.</strong> Agents can run on Zoho-hosted models, on a model from OpenAI, Gemini or Claude using your own API key, or through Zoho Key Service, which currently offers OpenAI models billed at the vendor&rsquo;s token rates through an agent wallet. Zoho states that Zia Agents itself is free and that you pay for model usage, with a free monthly token allowance on Zoho-hosted models. The allowance and rates are on Zoho&rsquo;s <a href="https://www.zoho.com/agents/pricing.html" target="_blank" rel="noopener">Zia Agents pricing page</a>.</li>
   <li><strong>AI agents start at Professional.</strong> Zoho CRM&rsquo;s US pricing page lists building and deploying AI agents, and predictions of lead conversion and deal closure, from the Professional edition, and Zia&rsquo;s insights, predictions and recommendations from Enterprise. Edition details differ by country, so confirm them on the <a href="https://www.zoho.com/crm/zohocrm-pricing.html" target="_blank" rel="noopener">pricing page</a> for your region.</li>
-  <li><strong>Leading models without your own API key.</strong> Zoho Key Service, added to Zoho CRM in late September 2026, lets Professional, Enterprise and Ultimate customers in the US, India, Australia, Japan and Canada data centres switch on OpenAI models using credits included with their edition, with Anthropic models rolling out in phases. Before this, using an outside model meant bringing your own key and billing.</li>
+  <li><strong>Leading models without your own API key.</strong> Zoho Key Service, added to Zoho CRM in late September 2026, lets Professional, Enterprise and Ultimate customers switch on OpenAI models with a toggle, using complimentary credits that depend on the edition (2,000 on Professional, 4,000 on Enterprise and 6,000 on Ultimate), with Anthropic models rolling out in phases. Availability depends on your data centre. Before this, using an outside model meant bringing your own key and billing.</li>
 </ul>
-<p>In September 2026 Zoho also launched Zia Chat, a chat interface for working across Zoho apps and, through MCP, non-Zoho apps. When we checked, it was in a free early access programme in the India and US data centres, with licensing to be announced at general availability. Plan around what is enabled in your own account today.</p>
+<p>In September 2026 Zoho also launched Zia Chat, a chat interface for working across Zoho apps and, through MCP, non-Zoho apps. On 30 October 2026 it was still in a free early access programme in the India and US data centres, supporting OpenAI models through your own key for now, with licensing to be announced at general availability. Plan around what is enabled in your own account today.</p>
 <p>Zoho also offers an MCP service that lets outside assistants such as Claude and ChatGPT work with your Zoho data; our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> covers how to set it up safely. If you are still choosing a CRM, our <a href="/insights/zoho-crm-vs-salesforce/">Zoho CRM vs Salesforce comparison</a> explains how each vendor meters AI usage.</p>
 <p>The important point for planning is this: whichever model or agent you use, it acts on your CRM data through the same modules, fields and permissions your team uses. The quality of that foundation decides whether AI helps or creates noise.</p>
 
@@ -297,13 +297,13 @@ ARTICLES.append(dict(
     description='What Zoho MCP is, what you need on the Zoho, Claude and ChatGPT side, how to set it up, which authorization mode to choose, and which actions an AI assistant should and should not be allowed to take.',
     lead='Zoho MCP lets an AI assistant such as Claude or ChatGPT read and change records in your Zoho apps from a chat window. Setting it up takes minutes. Deciding what the assistant is allowed to do is the part that deserves your time.',
     category='AI and automation', keyword='zoho mcp',
-    published='2026-10-09', modified='2026-10-16',
+    published='2026-10-09', modified='2026-10-30',
     cover_alt='Four permission levels for an AI assistant in Zoho CRM: read from day one, create after asking, update with confirmation, delete kept out',
     caption='The assistant can only use the tools you add to the MCP server, so the tool list is your main control.',
     related=['zoho-agentic-ai-hyperautomation', 'deluge-script-examples', 'zoho-analytics-agentic-data-foundations-2026'],
     body='''
 <p>Until recently, asking an AI assistant about your CRM meant exporting a spreadsheet and pasting it into a chat. The Model Context Protocol (MCP) removes that step. It is an open standard, introduced by Anthropic in late 2024, that lets an AI assistant call tools in other systems. Zoho now offers its own MCP service, so an assistant can search deals, create tasks or draft invoices in your Zoho account directly.</p>
-<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were last checked on 16 October 2026.</p>
+<p>This guide covers what Zoho MCP is, how to set it up, and the decisions that keep it safe. The product is new and changing quickly, so we link to Zoho&rsquo;s own documentation for anything that is likely to move. The details here were last checked on 30 October 2026.</p>
 
 <h2 id="what-is-zoho-mcp">What Zoho MCP is</h2>
 <p>Zoho MCP is a service where you create <strong>MCP servers</strong>. A server is a named set of <strong>tools</strong>, and each tool is one action in one app, such as &ldquo;search records&rdquo; in Zoho CRM or &ldquo;create invoice&rdquo; in Zoho Books. You then give the server&rsquo;s address to an AI assistant, which Zoho calls the <strong>MCP client</strong>.</p>
@@ -320,9 +320,9 @@ ARTICLES.append(dict(
 <table>
   <thead><tr><th scope="col">Side</th><th scope="col">Requirement</th><th scope="col">Notes</th></tr></thead>
   <tbody>
-    <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho states that MCP is free to use for now and that it will give notice before introducing pricing</td></tr>
-    <tr><th scope="row">Claude</th><td>Any plan: Free, Pro, Max, Team or Enterprise</td><td>Free plans are limited to one custom connector. On Team and Enterprise, Owners (and, on Enterprise, roles with library access) add the connector; members then connect individually</td></tr>
-    <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Write actions are in beta on Business, Enterprise and Edu plans; Pro can connect for read and fetch only</td></tr>
+    <tr><th scope="row">Zoho</th><td>A Zoho account with the apps you want to connect, and access to the Zoho MCP console</td><td>Zoho&rsquo;s MCP pricing page lists it at no additional cost; its FAQ says Zoho will give notice before introducing pricing</td></tr>
+    <tr><th scope="row">Claude</th><td>Any plan: Free, Pro, Max, Team or Enterprise</td><td>Free plans are limited to one custom connector. On Team, Owners and Primary Owners add the connector; on Enterprise, so can roles with access to manage libraries. Members then connect individually</td></tr>
+    <tr><th scope="row">ChatGPT</th><td>Developer mode with MCP apps</td><td>Which plans can use custom MCP apps, and which can write as well as read, has changed several times; check OpenAI&rsquo;s help centre for your plan</td></tr>
     <tr><th scope="row">Other clients</th><td>Any client that supports MCP connections</td><td>Zoho names Cursor, VS Code and Windsurf alongside Claude and ChatGPT</td></tr>
   </tbody>
 </table>
@@ -335,7 +335,7 @@ ARTICLES.append(dict(
   <li><strong>Add tools.</strong> Open <em>Tools</em>, choose <em>Add Tools</em>, pick the app and tick only the actions you need. For a first server, search and get tools are enough.</li>
   <li><strong>Check authorization.</strong> Under <em>Connections</em>, confirm how users will authorize. The next section explains the two options.</li>
   <li><strong>Copy the MCP URL.</strong> The <em>Connect</em> section shows the server&rsquo;s URL. Treat it like a password.</li>
-  <li><strong>Add it to your assistant.</strong> In Claude, add a custom connector under <em>Customize &gt; Connectors</em>, paste the URL and click <em>Connect</em>. In ChatGPT, create an app under <em>Settings &gt; Apps</em>, paste the URL and choose OAuth.</li>
+  <li><strong>Add it to your assistant.</strong> In Claude Pro or Max, add a custom connector under <em>Customize &gt; Connectors</em>; on Team and Enterprise, an Owner adds it under <em>Organization settings &gt; Connectors</em>. Paste the URL and connect. In ChatGPT, turn on developer mode and add the server as an app; OpenAI&rsquo;s help centre has the current steps for your plan.</li>
   <li><strong>Test with a read-only question.</strong> For example: <em>&ldquo;List open deals over 500,000 with no activity in the last 14 days.&rdquo;</em> Check the answer against a CRM report before you trust it.</li>
 </ol>
 <p>Menu names change as the product develops. Zoho&rsquo;s <a href="https://help.zoho.com/portal/en/kb/mcp/implementation-guide/articles/zoho-mcp-implementation-guide" target="_blank" rel="noopener">implementation guide</a> has the current screens for each client.</p>
@@ -407,20 +407,20 @@ ARTICLES.append(dict(
 <h2 id="other-direction">MCP in the other direction: Zia Chat and Catalyst</h2>
 <p>Zoho MCP lets an outside assistant use Zoho. Two newer Zoho products work the other way round, or alongside it:</p>
 <ul>
-  <li><strong>Zia Chat</strong>, launched in September 2026, is Zoho&rsquo;s own chat interface across its apps. Zoho says it can connect to non-Zoho applications through MCP and use the tools they expose, and that it supports leading models through your own API key. When we checked, it was in a free early access programme in the India and US data centres, with licensing to be announced at general availability.</li>
+  <li><strong>Zia Chat</strong>, launched in September 2026, is Zoho&rsquo;s own chat interface across its apps. Zoho says it can connect to non-Zoho applications through MCP and use the tools they expose. For outside models it currently supports OpenAI through your own API key, with Anthropic and other models planned. On 30 October 2026 it was still in a free early access programme in the India and US data centres, with licensing to be announced at general availability.</li>
   <li><strong>Catalyst</strong>, Zoho&rsquo;s cloud platform for custom applications, now has its own MCP server, so coding assistants such as Claude, Cursor, Codex and Gemini can create tables, set up authentication and deploy on it. This matters when a Zoho project needs a custom service that Deluge cannot handle.</li>
 </ul>
 <p>The same rules apply in both directions: expose as few tools as the job needs, and keep a person in the loop for anything that changes data.</p>
 
 <h2 id="cost">Cost and limits</h2>
-<p>At the time of writing, Zoho says MCP is free to use and that calls made through it count against each app&rsquo;s normal API limits; our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains the credits and concurrency involved. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
+<p>At the time of writing, Zoho&rsquo;s <a href="https://www.zoho.com/mcp/pricing.html" target="_blank" rel="noopener">MCP pricing page</a> lists MCP at no additional cost for Zoho users, with no separate billing. Each action uses the API quota of the app it touches, so creating a lead uses one Zoho CRM API call, and an action that spans CRM and Desk draws on both; our guide to <a href="/insights/zoho-crm-api-limits/">Zoho CRM API limits</a> explains the credits and concurrency involved. There is no stated limit on the number of servers. The real costs are the AI subscription for each user and the time spent on setup, permissions and review.</p>
 <p>If you want help deciding which tools to expose, or need the underlying <a href="/business-process-automation/">automation</a> and <a href="/zoho-integrations/">integrations</a> tidied up first, that is the kind of work we do.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',
     faqs=[
         ('Is Zoho MCP free?',
-         'At the time of writing, Zoho states that Zoho MCP is free to use and that it will notify users in advance if pricing is introduced. Calls made through MCP follow each Zoho app\'s normal API limits. You still pay for your Zoho apps and for the AI assistant you connect.'),
+         'At the time of writing, yes. Zoho\'s MCP pricing page lists it at no additional cost for Zoho users, and its FAQ says Zoho will notify users in advance if pricing is introduced. Calls made through MCP use each Zoho app\'s normal API quota. You still pay for your Zoho apps and for the AI assistant you connect.'),
         ('Which AI assistants work with Zoho MCP?',
          'Any client that supports MCP connections. Zoho names Claude, ChatGPT, Cursor, VS Code and Windsurf. Each has its own plan requirements for custom connectors, so check your provider\'s help centre.'),
         ('Can the assistant see records I cannot see?',

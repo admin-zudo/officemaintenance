@@ -1,7 +1,7 @@
 # Zudo Works SEO, AEO and GEO playbook
 
 How the site maps to the growth playbook, what is already built, and the routine that grows impressions and clicks.
-Last updated: 26 October 2026.
+Last updated: 30 October 2026.
 
 ## 1. Status against the playbook
 
@@ -67,7 +67,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho CRM vs HubSpot for small businesses | CRM, migration article |
 | ✓ | Zoho CRM vs Salesforce: cost and fit | CRM, migration article |
 | 3 | Zoho Books vs Xero (UK, Australia, New Zealand) | Integrations |
-| 4 | Zoho Books vs QuickBooks (US) | Integrations |
+| ✓ | Zoho Books vs QuickBooks Online (US; QuickBooks left India in 2023) | Integrations, Books vs Tally, Inventory vs Katana, MRPeasy vs Zoho |
 | ✓ | Zoho Desk vs Zendesk | Zoho pillar |
 | ✓ | Zoho Creator vs Airtable (and Zoho Tables) | Creator |
 | 7 | Zoho Creator pricing explained (plans and limits) | Creator, Pricing |
@@ -86,6 +86,7 @@ Intent mix: about 40% commercial or comparison, 60% informational. Published art
 | ✓ | Zoho Analytics vs Power BI (Zoho, Microsoft and Tally data) | Analytics foundations, Zoho One vs Microsoft 365, Books vs Tally |
 | ✓ | Preventive maintenance: Zoho Creator, Zoho FSM or a CMMS (MaintainX, Fiix) | Manufacturing article, ERP vs Odoo, Flow vs Deluge, /manufacturing/workflows/ |
 | ✓ | Zoho Creator vs Quickbase (operations and shop-floor apps) | Creator vs Power Apps, Creator vs Airtable, preventive maintenance article |
+| ✓ | MRPeasy vs Zoho (Zoho ERP, Inventory or Creator) for small manufacturers | Manufacturing article, Inventory vs Katana, ERP vs Odoo, Books vs QuickBooks |
 
 ### Informational (breadth and authority)
 | # | Topic (target query) | Cluster / links to |

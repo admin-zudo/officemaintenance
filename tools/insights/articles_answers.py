@@ -126,4 +126,13 @@ ANSWERS = {
         'connection that holds the credentials. Add detailed: true and check responseCode before using the reply. '
         'Calls time out after 40 seconds, count against daily limits, and outside Creator the Indian and EU data '
         'centres allow only ports 8011, 9001 and 8082 beyond the standard ones.',
+    'mrpeasy-vs-zoho':
+        'Choose MRPeasy if you want ready-made MRP with BOMs, production planning, purchasing and stock in one per-user '
+        'subscription, and keep your accounts in QuickBooks Online or Xero. Choose Zoho ERP if you are an Indian '
+        'manufacturer that wants production, GST and accounting in one system; outside India, Zoho\'s routes are Zoho '
+        'Inventory for simple assemblies or a Zoho Creator app built around your process.',
+    'zoho-books-vs-quickbooks':
+        'Choose QuickBooks Online if your accountant works in it, you depend on its app marketplace or need up to 25 '
+        'users on one plan. Choose Zoho Books if you need warehouses, composite items and batch tracking inside the '
+        'accounting system, or a native link to Zoho CRM. In India, Intuit withdrew QuickBooks in April 2023.',
 }

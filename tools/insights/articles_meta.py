@@ -84,4 +84,10 @@ META = {
     'deluge-invokeurl-api-calls': (
         'Deluge invokeurl: Calling APIs [With Code]',
         'Call external APIs from Zoho with Deluge invokeurl: syntax, connections, JSON, status codes, the 40-second timeout, allowed ports and limits, with code.'),
+    'mrpeasy-vs-zoho': (
+        'MRPeasy vs Zoho for Manufacturers (2026)',
+        'MRPeasy vs Zoho ERP, Inventory and Creator for small manufacturers: plans, planning, subcontracting, GST and accounting, Zoho CRM links and which fits.'),
+    'zoho-books-vs-quickbooks': (
+        'Zoho Books vs QuickBooks Online (2026)',
+        'Zoho Books vs QuickBooks Online: free plans, users and accountants, usage limits, inventory and costing, assemblies, CRM links and the India exit.'),
 }

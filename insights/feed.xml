@@ -6,7 +6,25 @@
     <atom:link href="https://zudoworks.com/insights/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical guides on Zoho CRM, Zoho Creator, Deluge and integrations from the Zudo Works team.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>MRPeasy vs Zoho for Small Manufacturers: Zoho ERP, Inventory or Creator?</title>
+      <link>https://zudoworks.com/insights/mrpeasy-vs-zoho/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/mrpeasy-vs-zoho/</guid>
+      <description>Choose MRPeasy if you want ready-made MRP with BOMs, production planning, purchasing and stock in one per-user subscription, and keep your accounts in QuickBooks Online or Xero. Choose Zoho ERP if you are an Indian manufacturer that wants production, GST and accounting in one system; outside India, Zoho's routes are Zoho Inventory for simple assemblies or a Zoho Creator app built around your process.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Zoho Books vs QuickBooks Online: Plans, Limits and Inventory for Product Businesses</title>
+      <link>https://zudoworks.com/insights/zoho-books-vs-quickbooks/</link>
+      <guid isPermaLink="true">https://zudoworks.com/insights/zoho-books-vs-quickbooks/</guid>
+      <description>Choose QuickBooks Online if your accountant works in it, you depend on its app marketplace or need up to 25 users on one plan. Choose Zoho Books if you need warehouses, composite items and batch tracking inside the accounting system, or a native link to Zoho CRM. In India, Intuit withdrew QuickBooks in April 2023.</description>
+      <category>Comparisons</category>
+      <dc:creator>Arunkumar V</dc:creator>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Zoho Creator vs Quickbase: Pricing Models, Limits and Fit for Operations Teams</title>
       <link>https://zudoworks.com/insights/zoho-creator-vs-quickbase/</link>

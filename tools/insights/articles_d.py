@@ -224,7 +224,7 @@ ARTICLES.append(dict(
 
 <h2 id="decide">How to decide: six questions</h2>
 <ol>
-  <li><strong>Where will you operate?</strong> If you need the same ERP outside India today, Zoho ERP is not yet published there. For a small manufacturer elsewhere, our <a href="/insights/zoho-inventory-vs-katana/">Zoho Inventory vs Katana comparison</a> covers a lighter option.</li>
+  <li><strong>Where will you operate?</strong> If you need the same ERP outside India today, Zoho ERP is not yet published there. For a small manufacturer elsewhere, our <a href="/insights/zoho-inventory-vs-katana/">Zoho Inventory vs Katana</a> and <a href="/insights/mrpeasy-vs-zoho/">MRPeasy vs Zoho</a> comparisons cover other options.</li>
   <li><strong>How hard is your planning?</strong> If finite scheduling, maintenance and engineering changes are central, Odoo&rsquo;s published features go further.</li>
   <li><strong>How many transactions a year?</strong> Count sales, purchase and manufacturing orders against Zoho ERP&rsquo;s plan caps.</li>
   <li><strong>What else runs on Zoho?</strong> CRM, Analytics and Creator apps make Zoho ERP easier to connect.</li>
@@ -330,7 +330,7 @@ ARTICLES.append(dict(
   <li>How many users need access, and which Zoho Books plan would that need?</li>
   <li>Is your accountant comfortable with the change, or will they keep a Tally copy anyway?</li>
 </ol>
-<p>Answer them honestly and the choice is usually clear. If production is central, compare Zoho ERP, not Zoho Books. If it is not, and people need shared live data, Zoho Books is the better fit.</p>
+<p>Answer them honestly and the choice is usually clear. If production is central, compare Zoho ERP, not Zoho Books. If it is not, and people need shared live data, Zoho Books is the better fit. If a parent or sister company outside India runs QuickBooks Online, our <a href="/insights/zoho-books-vs-quickbooks/">Zoho Books vs QuickBooks Online</a> comparison explains how the two differ.</p>
 
 <h2 id="faq">Frequently asked questions</h2>
 ''',

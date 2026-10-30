@@ -10,13 +10,13 @@ ARTICLES.append(dict(
     description='Airtable, Zoho Tables and Zoho Creator compared: what each is built for, record limits, who you pay for, logic, external users, mobile and AI, plus Airtable\'s change of ownership and when to move from a shared database to a business app.',
     lead='Most &ldquo;Zoho Creator vs Airtable&rdquo; pages compare two products that are not quite the same kind of thing. Airtable&rsquo;s closest Zoho match is Zoho Tables. Zoho Creator is what you move to when a shared database has to become a business app. This guide compares all three, fairly.',
     category='Comparisons', keyword='zoho creator vs airtable',
-    published='2026-10-14', modified='2026-10-14',
+    published='2026-10-14', modified='2026-10-30',
     cover_alt='Airtable, Zoho Tables and Zoho Creator compared in a table: what each is built for, record limits, logic, outside users and whether it is in Zoho One',
     caption='Two shared databases and one app platform. The right choice depends on who uses the data, not on how the grid looks.',
     related=['zoho-creator-vs-power-apps', 'deluge-script-examples', 'zoho-mcp-claude-chatgpt'],
     body='''
 <p>Airtable made the spreadsheet-database popular: a grid that looks familiar, with linked records, views and automations behind it. Zoho offers two answers to it. <strong>Zoho Tables</strong> is the like-for-like product. <strong>Zoho Creator</strong> is a low-code platform for building complete business applications, with its own scripting language, mobile apps and portals.</p>
-<p>Every plan, limit and feature below was checked on Airtable&rsquo;s and Zoho&rsquo;s own pricing pages and help articles on 14 October 2026. We do not quote prices, because they change and vary by country; follow the links to the official pricing pages for those.</p>
+<p>Every plan, limit and feature below was checked on Airtable&rsquo;s and Zoho&rsquo;s own pricing pages and help articles on 14 October 2026 and re-checked on 30 October 2026. We do not quote prices, because they change and vary by country; follow the links to the official pricing pages for those.</p>
 
 <h2 id="what-each-is">What each product is built for</h2>
 <ul>
@@ -72,11 +72,12 @@ ARTICLES.append(dict(
 <p>On phones, Airtable&rsquo;s iOS and Android apps run its interfaces, though Airtable notes that interface pages cannot be opened in mobile browsers and that the apps may slow down with tens of thousands of records. Creator publishes each app you build as a native mobile app, which suits people who record work away from a desk.</p>
 
 <h2 id="ai">AI and MCP</h2>
-<p>Both vendors are moving fast here. Airtable offers Omni and Field Agents, which act as researchers or content creators across records, with AI credits included in each plan. Zoho Creator offers Zia, agents that plan, build and test an app from a description, a choice of Zoho&rsquo;s own models or your own key for OpenAI, Google or Anthropic models, and access from AI assistants through MCP.</p>
+<p>Both vendors are moving fast here. Airtable offers Omni, now in its 2.0 version on all plans, and Field Agents, which act as researchers or content creators across records, with a monthly allowance of AI credits in each plan. Its MCP server lets assistants such as Claude, ChatGPT and Gemini work with Airtable data, and admins can switch it off, approve tools and limit them to chosen bases. Zoho Creator offers Zia, agents that plan, build and test an app from a description, a choice of Zoho&rsquo;s own models or your own key for OpenAI, Google or Anthropic models, and access from AI assistants through MCP.</p>
 <p>Zoho MCP lists both Creator and Tables among the Zoho services an assistant such as Claude or ChatGPT can use; our <a href="/insights/zoho-mcp-claude-chatgpt/">Zoho MCP guide</a> explains the setup and which actions to allow.</p>
 
 <h2 id="airtable-ownership">Airtable&rsquo;s change of ownership</h2>
 <p>Airtable was acquired by Bending Spoons, and its newsroom says the deal closed in early September 2026. In a post on 12 October 2026, Airtable said that plans, prices and service offerings are unchanged, and announced an upgraded Omni assistant, Airtable Canvas for custom apps, a more powerful MCP and options to bring your own agents and keys.</p>
+<p>Some of that has since shipped. Airtable&rsquo;s Fall 2026 release made Omni 2.0 and the upgraded MCP generally available, and added audit logs that show whether a person or an agent made each change. Canvas, for building apps, dashboards and presentations, is moving to an open beta; Airtable says it needs AI and Anthropic enabled as an AI provider across the organisation, and is not yet available to HIPAA or non-US data residency customers. Bringing your own agents and keys, and field- and record-level permissions for agents, are listed as coming soon. The release announced no price changes.</p>
 <p>For a current customer this is a reason to watch the roadmap, not to move. For a new project it is one more question to ask any vendor: what happens to your data and pricing if the company changes hands.</p>
 
 <h2 id="example">An example: replacing a production tracker spreadsheet</h2>
@@ -131,7 +132,7 @@ ARTICLES.append(dict(
         ('Do read-only users cost money in Airtable or Zoho Creator?',
          'Airtable does not charge for read-only collaborators, form submissions or share links on its paid plans. Zoho Creator is priced per user, with external customers or suppliers handled as portal users: three are free and more are bought as an add-on.'),
         ('Did Airtable change its pricing after the Bending Spoons acquisition?',
-         'Not so far. In a post on 12 October 2026, Airtable said its plans, prices and service offerings are unchanged after the acquisition closed in early September 2026. Check Airtable\'s pricing page for current terms.'),
+         'Not so far. In a post on 12 October 2026, Airtable said its plans, prices and service offerings are unchanged after the acquisition closed in early September 2026, and its Fall 2026 release announced no price changes. Check Airtable\'s pricing page for current terms.'),
     ],
 ))
 
@@ -212,7 +213,7 @@ ARTICLES.append(dict(
 
 <h2 id="channels-accounts">Sales channels and accounting</h2>
 <p>Both sell through the usual channels. Zoho Inventory&rsquo;s US edition lists Amazon, Etsy and eBay as marketplaces, and Shopify and Zoho Commerce as shopping carts. Katana names Shopify, Amazon, WooCommerce, BigCommerce and eBay among its integrations; on its Free plan, Shopify is the only e-commerce integration.</p>
-<p>Accounting is where the two take opposite approaches. Zoho Inventory works with Zoho Books in the same Zoho account, and with Zoho CRM for the sales side. Katana does not present an accounting module of its own; it connects to QuickBooks Online and Xero. For a business outside the US, UK, Australia or New Zealand, check that the accounting product it pairs with handles your local tax rules.</p>
+<p>Accounting is where the two take opposite approaches. Zoho Inventory works with Zoho Books in the same Zoho account, and with Zoho CRM for the sales side. Katana does not present an accounting module of its own; it connects to QuickBooks Online and Xero. For a business outside the US, UK, Australia or New Zealand, check that the accounting product it pairs with handles your local tax rules. Our <a href="/insights/zoho-books-vs-quickbooks/">Zoho Books vs QuickBooks Online</a> comparison covers that side of the choice, and <a href="/insights/mrpeasy-vs-zoho/">MRPeasy vs Zoho</a> looks at another MRP that pairs with QuickBooks and Xero.</p>
 
 <h2 id="zoho-connection">Running Katana alongside Zoho</h2>
 <p>Choosing Katana for production does not mean leaving Zoho. Zoho Flow has a Katana connector. Its triggers include a sales order created, packed or delivered, a product created and a purchase order created; its actions include creating customers, products, sales orders and purchase orders, updating batch stock and fetching inventory. A common design is Zoho CRM for enquiries and quotes, with a won deal creating the sales order in Katana, and stock levels read back for the sales team.</p>
