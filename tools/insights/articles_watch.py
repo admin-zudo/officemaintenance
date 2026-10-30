@@ -463,7 +463,7 @@ WATCH = {
                  'https://www.zoho.com/en-in/erp/help/manufacturing-order/manufacturing-order-overview.html',
                  'https://www.zoho.com/us/inventory/kb/general-overview/zom-manufacturing-support.html']),
     'zoho-books-vs-quickbooks': dict(
-        cover='compare / amber',
+        cover='compare / navy',
         checked='2026-10-30', volatility='high',
         facts=['Zoho Books US plans Free, Standard, Professional, Premium, Elite, Ultimate; users 1 (+1 accountant) / 3 / 5 / 10 / 10 / 15; extra users add-on; monthly or yearly; 14-day trial; Free while revenue under $50K',
                'Zoho Books US caps invoices and bills per year: 1,000 / 5,000 / 10,000 / 25,000 / 100,000 / 100,000',
